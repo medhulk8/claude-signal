@@ -2,7 +2,7 @@
  * Normalization pipeline: dedup → sort → retain.
  */
 
-const RETAIN_COUNT = 60;
+const RETAIN_COUNT = 90;
 
 /**
  * Remove duplicate items by id.

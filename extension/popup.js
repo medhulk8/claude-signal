@@ -120,7 +120,7 @@ function renderItems(digest, seenIds) {
     const sourceConfig = SOURCE_LABELS[item.source] ?? { label: item.source_label, color: '#888' };
 
     const el = document.createElement('a');
-    el.href = item.url;
+    el.href = chrome.runtime.getURL('detail.html') + '?id=' + item.id;
     el.target = '_blank';
     el.rel = 'noopener noreferrer';
     el.className = `item${isRead ? ' item--read' : ''}`;

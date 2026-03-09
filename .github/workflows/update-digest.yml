@@ -27,6 +27,8 @@ jobs:
 
       - name: Generate digest
         run: npm run generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit and push if digest changed
         run: |
