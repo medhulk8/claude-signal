@@ -69,8 +69,8 @@ async function generate() {
 
   let explainedNew = newItems;
   if (newItems.length > 0) {
-    if (!process.env.GEMINI_API_KEY) {
-      console.warn('GEMINI_API_KEY not set — skipping explanations');
+    if (!process.env.GROQ_API_KEY) {
+      console.warn('GROQ_API_KEY not set — skipping explanations');
     } else {
       console.log('Generating explanations...');
       explainedNew = await addExplanations(newItems);

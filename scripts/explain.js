@@ -1,15 +1,14 @@
 /**
- * Generates plain-English explanations for digest items using Gemini.
+ * Generates plain-English explanations for digest items using Groq.
  *
  * Only called for items that are new (not already in the published digest).
  * Each item gets { what, why } added to its explanation field.
  * Failures are non-fatal — item passes through without explanation.
  */
 
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import Groq from 'groq-sdk';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 async function explainItem(item) {
   const sourceLabel =
@@ -32,8 +31,13 @@ Be concrete and specific. Avoid marketing language. If details are uncertain, sa
 Respond in this exact JSON format with no other text:
 {"what": "...", "why": "..."}`;
 
-  const result = await model.generateContent(prompt);
-  const text = result.response.text().trim();
+  const response = await groq.chat.completions.create({
+    model: 'llama-3.3-70b-versatile',
+    messages: [{ role: 'user', content: prompt }],
+    temperature: 0.3,
+  });
+
+  const text = response.choices[0].message.content.trim();
 
   // Model sometimes wraps in markdown code blocks — strip them
   const jsonMatch = text.match(/\{[\s\S]*\}/);
@@ -42,9 +46,14 @@ Respond in this exact JSON format with no other text:
   return JSON.parse(jsonMatch[0]);
 }
 
+// 2s between requests → ~30 RPM, safely within Groq free tier limit
+const RATE_LIMIT_DELAY_MS = 2000;
+
 export async function addExplanations(items) {
   const results = [];
-  for (const item of items) {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (i > 0) await new Promise((r) => setTimeout(r, RATE_LIMIT_DELAY_MS));
     try {
       const explanation = await explainItem(item);
       results.push({ ...item, explanation });
