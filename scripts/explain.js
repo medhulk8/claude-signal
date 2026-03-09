@@ -13,25 +13,79 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 function buildPrompt(item) {
   const sourceLabel =
     item.source === 'github_releases' ? 'Claude Code' : 'Anthropic API / developer platform';
-  const context =
-    item.summary && item.summary !== item.title ? `\nAdditional context: ${item.summary}` : '';
 
-  return `You are a technical explainer writing for software developers who actively use Claude Code or the Anthropic API.
+  // For changelog items, summary contains the full bullet text — richer than title alone.
+  // For release items, summary is just the version number — not useful as raw_text.
+  const rawText =
+    item.source === 'anthropic_changelog' && item.summary && item.summary !== item.title
+      ? item.summary
+      : item.title;
 
-Item: "${item.title}"
-Source: ${sourceLabel}${context}
+  const summaryLine =
+    item.summary && item.summary !== item.title && item.source === 'github_releases'
+      ? `\nSummary: ${item.summary}`
+      : '';
 
-Explain this update for a technically literate Claude Code user. Return valid JSON only, no other text:
+  return `You are generating a short, practical explainer for a technically literate Claude Code user.
+
+Your job is to explain a single update item in a way that is:
+- concrete
+- useful
+- grounded in the source text
+- free of generic filler
+
+You must return valid JSON only.
+
+## Output schema
+
 {
-  "what_it_is": "1-2 sentences. What this feature or change actually does, in plain language. No hype.",
-  "why_it_matters": "1-2 sentences. Specific practical value for a Claude Code or Anthropic API user. Avoid generic phrases like 'improves productivity' or 'saves time'.",
-  "how_to_use": ["concrete example 1", "concrete example 2"]
+  "what_it_is": "string",
+  "why_it_matters": "string",
+  "how_to_use": ["string", "string"]
 }
 
-Rules:
-- Stay grounded in the item text. Do not invent capabilities not described.
-- how_to_use: 1-3 items. Real, specific usage scenarios starting with an action verb. If you cannot form concrete examples from the available text, return 1 short example rather than hallucinating.
-- No filler. No repetition of the title. No marketing language.`;
+## Writing rules
+
+1. Write for someone who already knows what Claude Code is.
+2. Be specific. Do not use vague filler like:
+   - "improves productivity"
+   - "enhances user experience"
+   - "useful for users"
+   - "helps automate tasks"
+   unless you immediately explain exactly how.
+3. Do not simply restate the title or source text in slightly different words.
+4. "what_it_is" should explain the actual capability in plain English.
+5. "why_it_matters" should explain what changes in practice for a Claude Code user.
+6. "how_to_use" should contain 1 to 3 realistic usage examples.
+7. Only include examples that are reasonably supported by the source text.
+8. If the source text is too thin to support multiple examples, return fewer examples.
+9. Do not invent product behavior that is not supported by the input.
+10. Keep it concise:
+   - what_it_is: 1 to 2 sentences
+   - why_it_matters: 1 to 2 sentences
+   - how_to_use: 1 to 3 short bullet-style strings
+
+## Style rules
+
+- Sound like a technical explainer, not marketing copy.
+- Prefer concrete workflow implications over abstract benefits.
+- If the feature is minor, say what changed plainly without overselling it.
+- If the update is a command, explain what the command enables.
+- If the update is a platform-specific feature, mention the platform.
+- If the update is a breaking change or deprecation, make that clear.
+
+## Inputs
+
+Title: ${item.title}
+Source: ${sourceLabel}
+Type: ${item.type}${summaryLine}
+Original text: ${rawText}
+
+## Return format
+
+Return JSON only.
+No markdown.
+No explanation outside JSON.`;
 }
 
 async function explainItem(item) {
