@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T13:00:17.900Z",
-  "item_count": 60,
+  "generated_at": "2026-03-09T13:59:01.527Z",
+  "item_count": 90,
   "items": [
     {
       "id": "c3bd5c4c",
@@ -662,6 +662,336 @@
       "published_at": "2025-11-19T00:00:00.000Z",
       "summary": "We've launched a new documentation platform at platform.claude.com/docs. Our documentation now lives side by side with the Claude Console, providing a unified developer experience. The previous docs…",
       "fetched_at": "2026-03-09T13:00:19.151Z"
+    },
+    {
+      "id": "1f0d999f",
+      "title": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-18T00:00:00.000Z",
+      "summary": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure customers with Azure billing and OAuth authentication. Access the full Messages API including extended thinking, prompt…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "150c45ac",
+      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-14T00:00:00.000Z",
+      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "d4d99051",
+      "title": "We announced the deprecation of the Claude Sonnet 3.7 model",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in our documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "3ccea7fb",
+      "title": "We've retired the Claude Sonnet 3.5 models",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We've retired the Claude Sonnet 3.5 models. All requests to these models will now return an error.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "4df22af5",
+      "title": "We've expanded context editing with thinking block clearing…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We've expanded context editing with thinking block clearing (clear_thinking_20251015), enabling automatic management of thinking blocks. Learn more in our context editing documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "8dba46a0",
+      "title": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-16-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-16T00:00:00.000Z",
+      "summary": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend Claude's capabilities. Skills are organized folders of instructions, scripts, and resources that Claude loads dynamically to…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "e6bd8a7d",
+      "title": "We've launched Claude Haiku 4.5, our fastest and most intelligent Haiku model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-15-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-15T00:00:00.000Z",
+      "summary": "We've launched Claude Haiku 4.5, our fastest and most intelligent Haiku model with near-frontier performance. Ideal for real-time applications, high-volume processing, and cost-sensitive deployments…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "94fdb0ca",
+      "title": "We've launched Claude Sonnet 4.5, our best model for complex agents and coding,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-29T00:00:00.000Z",
+      "summary": "We've launched Claude Sonnet 4.5, our best model for complex agents and coding, with the highest intelligence across most tasks. Learn more in the models overview.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "a0457807",
+      "title": "We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-29T00:00:00.000Z",
+      "summary": "We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI. The Claude API (1P) pricing is unaffected.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "17ac1c1a",
+      "title": "We've introduced a new stop reason model_context_window_exceeded that allows…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-29T00:00:00.000Z",
+      "summary": "We've introduced a new stop reason model_context_window_exceeded that allows you to request the maximum possible tokens without calculating input size. Learn more in our handling stop reasons…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "a2ac55ea",
+      "title": "We've launched the memory tool in beta, enabling Claude to store and consult…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-29T00:00:00.000Z",
+      "summary": "We've launched the memory tool in beta, enabling Claude to store and consult information across conversations. Learn more in our memory tool documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "8e75a728",
+      "title": "We've launched context editing in beta, providing strategies to automatically…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-29T00:00:00.000Z",
+      "summary": "We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "a6ef8a20",
+      "title": "We've launched tool helpers in beta for the Python and TypeScript SDKs,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-17-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-17T00:00:00.000Z",
+      "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "1f79d078",
+      "title": "We've unified our developer offerings under the Claude brand",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-16-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-16T00:00:00.000Z",
+      "summary": "We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "047cf5e1",
+      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-10T00:00:00.000Z",
+      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in our web fetch tool documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "9a654a18",
+      "title": "We've launched the Claude Code Analytics API, enabling organizations to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-10T00:00:00.000Z",
+      "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "4db94bfb",
+      "title": "We launched a beta version of the CSDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-08T00:00:00.000Z",
+      "summary": "We launched a beta version of the CSDK.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "8e01098c",
+      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-05T00:00:00.000Z",
+      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "981621a3",
+      "title": "We've launched support for citable documents in client-side tool results",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-03T00:00:00.000Z",
+      "summary": "We've launched support for citable documents in client-side tool results. Learn more in our tool use documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "c1a02cd0",
+      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-02T00:00:00.000Z",
+      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "275cc454",
+      "title": "We launched a beta version of the PHP SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-27T00:00:00.000Z",
+      "summary": "We launched a beta version of the PHP SDK.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "459474e9",
+      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-26T00:00:00.000Z",
+      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API. For more information, see Long context rate limits.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "eefe6869",
+      "title": "The 1m token context window is now available on Google Cloud's Vertex AI",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-26T00:00:00.000Z",
+      "summary": "The 1m token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "bdee7c3e",
+      "title": "Request IDs are now included directly in error response bodies alongside the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-19T00:00:00.000Z",
+      "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in our error documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "db35219a",
+      "title": "We've released the Usage & Cost API, allowing administrators to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "cdf7f3fc",
+      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "74c31538",
+      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "0f2c5310",
+      "title": "The 1-hour cache duration for prompt caching is now generally available",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in our prompt caching documentation.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "44bee3b8",
+      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-12T00:00:00.000Z",
+      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
+    },
+    {
+      "id": "0d1b2e50",
+      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-11T00:00:00.000Z",
+      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
+      "fetched_at": "2026-03-09T13:56:59.460Z"
     }
   ]
 }
