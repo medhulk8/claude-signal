@@ -56,14 +56,30 @@ async function main() {
     }
   }
 
+  let activeTab = 'unread';
+
   renderStatusBar(digest, fetchError, usingStaleCache, lastFetchedAt);
-  renderItems(digest, seenIds);
+  renderItems(digest, seenIds, activeTab);
   renderFooter(digest);
   updateBadge(digest, seenIds);
 
   document.getElementById('markAllRead').addEventListener('click', () =>
     markAllRead(digest, seenIds)
   );
+
+  document.getElementById('tabUnread').addEventListener('click', () => {
+    activeTab = 'unread';
+    document.getElementById('tabUnread').classList.add('tab--active');
+    document.getElementById('tabAll').classList.remove('tab--active');
+    renderItems(digest, seenIds, activeTab);
+  });
+
+  document.getElementById('tabAll').addEventListener('click', () => {
+    activeTab = 'all';
+    document.getElementById('tabAll').classList.add('tab--active');
+    document.getElementById('tabUnread').classList.remove('tab--active');
+    renderItems(digest, seenIds, activeTab);
+  });
 }
 
 // --- Render ---
@@ -100,7 +116,7 @@ function renderStatusBar(digest, fetchError, usingStaleCache, lastFetchedAt) {
   bar.className = 'status-bar hidden';
 }
 
-function renderItems(digest, seenIds) {
+function renderItems(digest, seenIds, tab = 'unread') {
   const list = document.getElementById('itemList');
 
   if (!digest) {
@@ -113,9 +129,18 @@ function renderItems(digest, seenIds) {
     return;
   }
 
+  const items = tab === 'unread'
+    ? digest.items.filter((item) => !seenIds[item.id])
+    : digest.items;
+
   list.innerHTML = '';
 
-  for (const item of digest.items) {
+  if (items.length === 0) {
+    list.innerHTML = '<div class="state-msg">All caught up.</div>';
+    return;
+  }
+
+  for (const item of items) {
     const isRead = !!seenIds[item.id];
     const sourceConfig = SOURCE_LABELS[item.source] ?? { label: item.source_label, color: '#888' };
 

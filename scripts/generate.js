@@ -63,6 +63,11 @@ async function generate() {
   const items = normalize(releases, changelog);
   console.log(`Normalized to ${items.length} items (after dedup + sort + retain)`);
 
+  if (items.length === 0) {
+    console.error('Normalization returned 0 items. Aborting.');
+    process.exit(1);
+  }
+
   // --- Explain new items only ---
   // An item is "new" if it has no existing explanation in the published digest.
   const newItems = items.filter((item) => !existingById[item.id]?.explanation);
