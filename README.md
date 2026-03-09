@@ -55,4 +55,4 @@ The extension fetches that file — no backend, no account, no tracking.
 
 ## Want your own feed or custom version?
 
-Fork the repo and follow the self-hosting instructions in [CLAUDE.md](CLAUDE.md).
+Fork the repo and follow the steps in [SELF_HOSTING.md](SELF_HOSTING.md).
