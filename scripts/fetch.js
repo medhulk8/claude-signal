@@ -70,7 +70,11 @@ function slugFromText(text) {
  */
 function isSignalBullet(text) {
   // "Added X" or "[VSCode] Added X" — new capability
-  if (/^(?:\[[^\]]+\]\s+)?added\b/i.test(text)) return true;
+  if (/^(?:\[[^\]]+\]\s+)?added\b/i.test(text)) {
+    // Exclude allowlist expansions — just adding unix tool names, not a user-facing feature
+    if (/auto-approval allowlist/i.test(text)) return false;
+    return true;
+  }
   // Deprecations and breaking changes are important to surface
   if (/\bdeprecate[sd]?\b|\bbreaking change\b/i.test(text)) return true;
   return false;
