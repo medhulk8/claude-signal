@@ -32,8 +32,8 @@ jobs:
 
       - name: Commit and push if digest changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "medhulk8"
+          git config user.email "medhulk8@users.noreply.github.com"
           git add digest.json
           if git diff --staged --quiet; then
             echo "No changes to digest.json, skipping commit."
