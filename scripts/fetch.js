@@ -35,10 +35,6 @@ export function normalizeUrl(url) {
   }
 }
 
-function stripHtml(html) {
-  const $ = cheerio.load(html);
-  return $.text().trim();
-}
 
 function stripMarkdown(text) {
   return text
@@ -66,6 +62,20 @@ function slugFromText(text) {
 
 // --- GitHub Releases ---
 
+/**
+ * A bullet is signal if it describes a new capability, command, or feature.
+ * Pattern: starts with "Added" (optionally prefixed by a platform tag like [VSCode]).
+ * Also keeps deprecation/breaking change notices.
+ * Everything else (Fixed, Improved, Reduced, Updated, Removed noise) is dropped.
+ */
+function isSignalBullet(text) {
+  // "Added X" or "[VSCode] Added X" — new capability
+  if (/^(?:\[[^\]]+\]\s+)?added\b/i.test(text)) return true;
+  // Deprecations and breaking changes are important to surface
+  if (/\bdeprecate[sd]?\b|\bbreaking change\b/i.test(text)) return true;
+  return false;
+}
+
 export async function fetchGithubReleases() {
   const res = await fetch(GITHUB_RELEASES_URL);
   if (!res.ok) throw new Error(`GitHub releases fetch failed: ${res.status}`);
@@ -81,42 +91,54 @@ export async function fetchGithubReleases() {
   const entries = parsed?.feed?.entry ?? [];
   const now = new Date().toISOString();
 
-  return entries
-    .map((entry) => {
-      // link can be an object with @_href or a string
-      const rawUrl =
-        typeof entry.link === 'string'
-          ? entry.link
-          : Array.isArray(entry.link)
-          ? (entry.link.find((l) => l['@_rel'] === 'alternate') ?? entry.link[0])?.['@_href']
-          : entry.link?.['@_href'] ?? '';
+  return entries.flatMap((entry) => {
+    // link can be an object with @_href or a string
+    const rawUrl =
+      typeof entry.link === 'string'
+        ? entry.link
+        : Array.isArray(entry.link)
+        ? (entry.link.find((l) => l['@_rel'] === 'alternate') ?? entry.link[0])?.['@_href']
+        : entry.link?.['@_href'] ?? '';
 
-      const url = normalizeUrl(rawUrl);
-      if (!url) return null;
+    const url = normalizeUrl(rawUrl);
+    if (!url) return [];
 
-      // Content is HTML (XML-decoded by fast-xml-parser)
-      const rawContent =
-        typeof entry.content === 'object'
-          ? entry.content['#text'] ?? ''
-          : entry.content ?? '';
+    // Content is HTML (XML-decoded by fast-xml-parser)
+    const rawContent =
+      typeof entry.content === 'object'
+        ? entry.content['#text'] ?? ''
+        : entry.content ?? '';
 
-      const bodyText = stripHtml(rawContent);
-      // GitHub uses "No content." for empty release bodies — suppress it
-      const summary = bodyText && bodyText !== 'No content.' ? truncate(bodyText) : null;
+    const published_at = entry.published ?? entry.updated ?? null;
+    const version = String(entry.title ?? '').trim(); // e.g. "v2.1.71"
 
-      return {
-        id: makeId(url),
-        title: String(entry.title ?? '').trim(),
-        url,
-        source: 'github_releases',
-        source_label: 'Claude Code',
-        type: 'release',
-        published_at: entry.published ?? entry.updated ?? null,
-        summary,
-        fetched_at: now,
-      };
-    })
-    .filter((item) => item && item.url && item.title);
+    // Parse HTML into individual bullets, keep only signal ones
+    const $ = cheerio.load(rawContent);
+    const signalBullets = [];
+
+    $('li').each((_, el) => {
+      const text = $(el).text().trim();
+      if (text && isSignalBullet(text)) {
+        signalBullets.push(text);
+      }
+    });
+
+    // If a release is all fixes/noise, don't surface it at all
+    if (signalBullets.length === 0) return [];
+
+    return signalBullets.map((bulletText) => ({
+      id: makeId(url + '::' + bulletText.slice(0, 100)),
+      title: truncate(bulletText, 150),
+      url,
+      source: 'github_releases',
+      source_label: 'Claude Code',
+      type: 'release',
+      published_at,
+      // Version as summary gives context without cluttering the title
+      summary: version,
+      fetched_at: now,
+    }));
+  });
 }
 
 // --- Anthropic Developer Changelog ---
