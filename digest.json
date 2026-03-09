@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T17:37:51.298Z",
+  "generated_at": "2026-03-09T18:34:05.404Z",
   "item_count": 90,
   "items": [
     {
@@ -1310,7 +1310,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI. The Claude API (1P) pricing is unaffected.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "Global endpoint pricing is now available for AWS Bedrock and Google Vertex AI, allowing for more unified cost management across these platforms.",
+        "why_it_matters": "This change simplifies cost tracking and budgeting for Claude Code users who deploy models on AWS Bedrock or Google Vertex AI, as they can now manage costs in a more centralized manner.",
+        "how_to_use": [
+          "Check the updated pricing documentation to understand the costs associated with using AWS Bedrock and Google Vertex AI endpoints",
+          "Review your current deployment costs to identify potential savings or areas for optimization"
+        ]
+      }
     },
     {
       "id": "17ac1c1a",
@@ -1321,7 +1329,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've introduced a new stop reason model_context_window_exceeded that allows you to request the maximum possible tokens without calculating input size. Learn more in our handling stop reasons…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "A new stop reason called model_context_window_exceeded that stops the model when the context window is exceeded, allowing users to request the maximum possible tokens without calculating input size.",
+        "why_it_matters": "This update allows Claude Code users to make requests without having to manually calculate the input size, simplifying the workflow and reducing potential errors.",
+        "how_to_use": [
+          "Request the maximum possible tokens without specifying input size",
+          "Handle the model_context_window_exceeded stop reason in your error handling code"
+        ]
+      }
     },
     {
       "id": "a2ac55ea",
@@ -1332,7 +1348,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've launched the memory tool in beta, enabling Claude to store and consult information across conversations. Learn more in our memory tool documentation.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "The memory tool is a beta feature that allows Claude to store and retrieve information across multiple conversations.",
+        "why_it_matters": "This feature enables Claude to maintain context and provide more accurate responses based on previous interactions, changing how users can engage with Claude in multi-turn conversations.",
+        "how_to_use": [
+          "Use the memory tool to store user preferences or previous conversation history",
+          "Consult the memory tool documentation to learn how to implement and utilize this feature in your application"
+        ]
+      }
     },
     {
       "id": "8e75a728",
@@ -1343,7 +1367,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "Context editing is a beta feature that automatically manages conversation context by clearing older tool results and calls when approaching token limits.",
+        "why_it_matters": "This feature helps prevent context overflow and allows for more efficient conversation management, particularly when working with large or complex conversations.",
+        "how_to_use": [
+          "Use context editing to clear older tool results and calls when approaching token limits",
+          "Implement strategies to automatically manage conversation context and prevent context overflow"
+        ]
+      }
     },
     {
       "id": "a6ef8a20",
@@ -1354,7 +1386,15 @@
       "type": "changelog",
       "published_at": "2025-09-17T00:00:00.000Z",
       "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "Tool helpers are a new beta feature in the Python and TypeScript SDKs that provide type-safe input validation and a tool runner for automated tool handling.",
+        "why_it_matters": "This simplifies the process of creating and executing tools, making it easier for developers to automate tasks and validate user input.",
+        "how_to_use": [
+          "Use the tool helpers to create tools with validated input parameters",
+          "Run automated tools using the tool runner in your Python or TypeScript application"
+        ]
+      }
     },
     {
       "id": "1f79d078",
@@ -1365,7 +1405,15 @@
       "type": "changelog",
       "published_at": "2025-09-16T00:00:00.000Z",
       "summary": "We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "The developer offerings are now unified under the Claude brand, resulting in updated naming and URLs across the platform and documentation.",
+        "why_it_matters": "This change simplifies the developer experience by providing a consistent brand identity, but does not affect the existing developer interfaces.",
+        "how_to_use": [
+          "Update bookmarks and links to reflect the new Claude branding and URLs",
+          "Verify that existing API integrations and code continue to work as expected"
+        ]
+      }
     },
     {
       "id": "047cf5e1",
@@ -1376,7 +1424,7 @@
       "type": "changelog",
       "published_at": "2025-09-10T00:00:00.000Z",
       "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in our web fetch tool documentation.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "9a654a18",
@@ -1387,7 +1435,7 @@
       "type": "changelog",
       "published_at": "2025-09-10T00:00:00.000Z",
       "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "4db94bfb",
@@ -1417,7 +1465,7 @@
       "type": "changelog",
       "published_at": "2025-09-05T00:00:00.000Z",
       "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "981621a3",
@@ -1428,7 +1476,7 @@
       "type": "changelog",
       "published_at": "2025-09-03T00:00:00.000Z",
       "summary": "We've launched support for citable documents in client-side tool results. Learn more in our tool use documentation.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "c1a02cd0",
@@ -1439,7 +1487,7 @@
       "type": "changelog",
       "published_at": "2025-09-02T00:00:00.000Z",
       "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "275cc454",
@@ -1450,7 +1498,7 @@
       "type": "changelog",
       "published_at": "2025-08-27T00:00:00.000Z",
       "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "459474e9",
@@ -1461,7 +1509,7 @@
       "type": "changelog",
       "published_at": "2025-08-26T00:00:00.000Z",
       "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API. For more information, see Long context rate limits.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "eefe6869",
@@ -1472,7 +1520,7 @@
       "type": "changelog",
       "published_at": "2025-08-26T00:00:00.000Z",
       "summary": "The 1m token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "bdee7c3e",
@@ -1483,7 +1531,7 @@
       "type": "changelog",
       "published_at": "2025-08-19T00:00:00.000Z",
       "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in our error documentation.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "db35219a",
@@ -1494,7 +1542,7 @@
       "type": "changelog",
       "published_at": "2025-08-18T00:00:00.000Z",
       "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "cdf7f3fc",
@@ -1505,7 +1553,7 @@
       "type": "changelog",
       "published_at": "2025-08-18T00:00:00.000Z",
       "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "74c31538",
@@ -1516,7 +1564,7 @@
       "type": "changelog",
       "published_at": "2025-08-13T00:00:00.000Z",
       "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "0f2c5310",
@@ -1527,7 +1575,7 @@
       "type": "changelog",
       "published_at": "2025-08-13T00:00:00.000Z",
       "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in our prompt caching documentation.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "44bee3b8",
@@ -1538,7 +1586,7 @@
       "type": "changelog",
       "published_at": "2025-08-12T00:00:00.000Z",
       "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     },
     {
       "id": "0d1b2e50",
@@ -1549,7 +1597,7 @@
       "type": "changelog",
       "published_at": "2025-08-11T00:00:00.000Z",
       "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-03-09T17:37:52.701Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z"
     }
   ]
 }
