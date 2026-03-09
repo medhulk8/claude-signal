@@ -64,7 +64,7 @@ async function generate() {
   console.log(`Normalized to ${items.length} items (after dedup + sort + retain)`);
 
   // --- Explain new items only ---
-  const newItems = items.filter((item) => !existingById[item.id]);
+  const newItems = items.filter((item) => !existingById[item.id]?.explanation);
   console.log(`${newItems.length} new items, ${items.length - newItems.length} carried over`);
 
   let explainedNew = newItems;
