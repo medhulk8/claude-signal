@@ -1,0 +1,34 @@
+name: Release Extension
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package extension
+        run: |
+          cd extension
+          zip -r ../claude-signal-extension.zip .
+          cd ..
+          echo "Packaged $(unzip -l claude-signal-extension.zip | tail -1)"
+
+      - name: Publish as latest release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete latest --yes 2>/dev/null || true
+          git push --delete origin latest 2>/dev/null || true
+          gh release create latest claude-signal-extension.zip \
+            --title "Claude Signal — Latest" \
+            --notes "Pre-packaged extension. Download, unzip, and load unpacked in Chrome." \
+            --prerelease \
+            --target main

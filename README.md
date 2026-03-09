@@ -22,12 +22,9 @@ Noise like "Fixed a bug" or "Improved performance" is filtered out automatically
 
 > No Chrome Web Store listing yet — takes about 30 seconds to load manually.
 
-1. **Download the repo**
+1. **Download the extension**
 
-   ```
-   git clone https://github.com/medhulk8/claude-signal.git
-   ```
-   Or download as a ZIP from the green **Code** button → **Download ZIP**, then unzip it.
+   Go to the [Releases page](https://github.com/medhulk8/claude-signal/releases/latest) and download `claude-signal-extension.zip`. Unzip it anywhere.
 
 2. **Open Chrome extensions**
 
@@ -39,7 +36,7 @@ Noise like "Fixed a bug" or "Improved performance" is filtered out automatically
 
 4. **Load the extension**
 
-   Click **Load unpacked** → select the `extension/` folder inside the repo.
+   Click **Load unpacked** → select the unzipped folder.
 
 That's it. The extension is now installed and will fetch updates automatically.
 
