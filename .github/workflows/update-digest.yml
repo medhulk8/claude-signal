@@ -2,8 +2,8 @@ name: Update Digest
 
 on:
   schedule:
-    # Every 4 hours
-    - cron: '0 */4 * * *'
+    # Every hour
+    - cron: '0 * * * *'
   # Allow manual runs for debugging
   workflow_dispatch:
 
