@@ -3,7 +3,7 @@
 ## Current Status
 **Phase: v1 complete and live.**
 
-- Pipeline running on GitHub Actions every 4h
+- Pipeline running on GitHub Actions every 1h
 - Extension loaded unpacked in Chrome, rendering correctly
 - GitHub Pages serving `https://medhulk8.github.io/claude-signal/digest.json`
 - Repo: `https://github.com/medhulk8/claude-signal`
