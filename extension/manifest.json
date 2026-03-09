@@ -3,12 +3,22 @@
   "name": "Claude Signal",
   "version": "0.1.0",
   "description": "High-signal updates from Claude Code and Anthropic developer platform.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "alarms", "notifications"],
   "host_permissions": [
     "https://medhulk8.github.io/*"
   ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "action": {
     "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
     "default_badge_background_color": "#CC785C"
   },
   "background": {
