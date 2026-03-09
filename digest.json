@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T19:31:29.772Z",
+  "generated_at": "2026-03-09T20:19:01.099Z",
   "item_count": 90,
   "items": [
     {
@@ -1577,7 +1577,15 @@
       "type": "changelog",
       "published_at": "2025-08-26T00:00:00.000Z",
       "summary": "The 1m token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "The 1m token context window is a feature that allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, when running on Google Cloud's Vertex AI.",
+        "why_it_matters": "This update enables Claude Code users to work with longer documents or more extensive text datasets on Vertex AI, potentially improving the accuracy of their models and applications.",
+        "how_to_use": [
+          "Run your Claude Code models on Google Cloud's Vertex AI to take advantage of the increased context window",
+          "Use the 1m token context window to process and analyze larger documents, such as books or research papers"
+        ]
+      }
     },
     {
       "id": "bdee7c3e",
@@ -1588,7 +1596,15 @@
       "type": "changelog",
       "published_at": "2025-08-19T00:00:00.000Z",
       "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in our error documentation.",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
+        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
+        "how_to_use": [
+          "Access the request ID in error responses to identify specific failed requests",
+          "Use the included request ID to look up detailed error information in the error documentation"
+        ]
+      }
     },
     {
       "id": "db35219a",
@@ -1599,7 +1615,15 @@
       "type": "changelog",
       "published_at": "2025-08-18T00:00:00.000Z",
       "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data.",
+        "why_it_matters": "This API allows administrators to automate the monitoring of their organization's usage and cost data, enabling more efficient management and decision-making.",
+        "how_to_use": [
+          "Use the API to fetch daily or monthly usage reports for your organization",
+          "Integrate the API with your existing monitoring tools to track costs in real-time"
+        ]
+      }
     },
     {
       "id": "cdf7f3fc",
@@ -1610,7 +1634,15 @@
       "type": "changelog",
       "published_at": "2025-08-18T00:00:00.000Z",
       "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
+        "why_it_matters": "This update enables Claude Code users to programmatically access organization details, which can be used for automation, reporting, or integration with other systems.",
+        "how_to_use": [
+          "Use the new endpoint to fetch organization data for display in a custom dashboard",
+          "Integrate the endpoint with an existing workflow to automate organization-specific tasks"
+        ]
+      }
     },
     {
       "id": "74c31538",
@@ -1621,7 +1653,16 @@
       "type": "changelog",
       "published_at": "2025-08-13T00:00:00.000Z",
       "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, are being deprecated and will be retired on October 28, 2025.",
+        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications that rely on these models.",
+        "how_to_use": [
+          "Migrate existing applications to use the recommended replacement models",
+          "Update API requests to use the new model names",
+          "Test and validate workflows with the new models before the retirement date"
+        ]
+      }
     },
     {
       "id": "0f2c5310",
@@ -1632,7 +1673,7 @@
       "type": "changelog",
       "published_at": "2025-08-13T00:00:00.000Z",
       "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in our prompt caching documentation.",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z"
     },
     {
       "id": "44bee3b8",
@@ -1643,7 +1684,7 @@
       "type": "changelog",
       "published_at": "2025-08-12T00:00:00.000Z",
       "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z"
     },
     {
       "id": "0d1b2e50",
@@ -1654,7 +1695,7 @@
       "type": "changelog",
       "published_at": "2025-08-11T00:00:00.000Z",
       "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-03-09T19:31:31.661Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z"
     }
   ]
 }
