@@ -147,6 +147,18 @@ export async function fetchGithubReleases() {
 
 // --- Anthropic Developer Changelog ---
 
+/**
+ * Drop obvious noise bullets. Changelog is already curated/user-facing,
+ * so we use a blacklist (drop known low-value prefixes) rather than a whitelist.
+ * Keeps: launches, new features, deprecations, GA announcements, pricing, API changes.
+ * Drops: bug fixes, minor improvements, internal updates.
+ */
+function isChangelogSignal(text) {
+  if (/^fixed\b|^resolved\b/i.test(text)) return false;
+  if (/^improved\b|^updated\b|^reduced\b|^enhanced\b/i.test(text)) return false;
+  return true;
+}
+
 export async function fetchChangelog() {
   const res = await fetch(CHANGELOG_URL, {
     headers: { 'User-Agent': 'claude-signal/0.1 (personal feed aggregator)' },
@@ -179,7 +191,7 @@ export async function fetchChangelog() {
       if (sibling.is('ul, ol')) {
         sibling.find('> li').each((_, li) => {
           const rawText = $(li).text().trim();
-          if (!rawText) return;
+          if (!rawText || !isChangelogSignal(rawText)) return;
 
           const clean = stripMarkdown(rawText);
           // Title: first sentence or first 80 chars
