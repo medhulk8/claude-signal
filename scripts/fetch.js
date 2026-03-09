@@ -101,6 +101,8 @@ export async function fetchGithubReleases() {
           : entry.content ?? '';
 
       const bodyText = stripHtml(rawContent);
+      // GitHub uses "No content." for empty release bodies — suppress it
+      const summary = bodyText && bodyText !== 'No content.' ? truncate(bodyText) : null;
 
       return {
         id: makeId(url),
@@ -110,7 +112,7 @@ export async function fetchGithubReleases() {
         source_label: 'Claude Code',
         type: 'release',
         published_at: entry.published ?? entry.updated ?? null,
-        summary: truncate(bodyText),
+        summary,
         fetched_at: now,
       };
     })
