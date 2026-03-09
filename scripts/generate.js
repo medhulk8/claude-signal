@@ -2,21 +2,37 @@
  * Entry point for the digest generation pipeline.
  * Run with: node scripts/generate.js
  *
- * Fetches both sources, normalizes, validates, writes digest.json.
+ * Fetches both sources, normalizes, generates explanations for new items only
+ * (idempotent — items already in digest.json keep their existing explanation),
+ * validates, writes digest.json.
  * Exits with code 1 on any failure to prevent publishing a broken digest.
  */
 
-import { writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { fetchGithubReleases, fetchChangelog } from './fetch.js';
 import { normalize } from './normalize.js';
+import { addExplanations } from './explain.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = join(__dirname, '..', 'digest.json');
 
 async function generate() {
   const generatedAt = new Date().toISOString();
+
+  // --- Load existing digest for idempotency ---
+  // Items that already have an explanation are carried over as-is.
+  let existingById = {};
+  try {
+    const existing = JSON.parse(readFileSync(OUT_PATH, 'utf8'));
+    for (const item of existing.items ?? []) {
+      existingById[item.id] = item;
+    }
+    console.log(`Loaded ${Object.keys(existingById).length} existing items for idempotency`);
+  } catch {
+    console.log('No existing digest — all items are new');
+  }
 
   // --- Fetch sources ---
   console.log('Fetching GitHub releases...');
@@ -47,12 +63,39 @@ async function generate() {
   const items = normalize(releases, changelog);
   console.log(`Normalized to ${items.length} items (after dedup + sort + retain)`);
 
+  // --- Explain new items only ---
+  // An item is "new" if it has no existing explanation in the published digest.
+  const newItems = items.filter((item) => !existingById[item.id]?.explanation);
+  console.log(`${newItems.length} new items to explain, ${items.length - newItems.length} carried over`);
+
+  let explainedNew = newItems;
+  if (newItems.length > 0) {
+    if (!process.env.GROQ_API_KEY) {
+      console.warn('GROQ_API_KEY not set — skipping explanations');
+    } else {
+      console.log('Generating explanations...');
+      explainedNew = await addExplanations(newItems);
+    }
+  }
+
+  // --- Merge: carried-over items use their existing (explanation-enriched) version ---
+  const enrichedById = {};
+  for (const item of explainedNew) {
+    enrichedById[item.id] = item;
+  }
+  for (const item of items) {
+    if (!enrichedById[item.id] && existingById[item.id]) {
+      enrichedById[item.id] = existingById[item.id];
+    }
+  }
+  const enrichedItems = items.map((item) => enrichedById[item.id] ?? item);
+
   // --- Build digest ---
   const digest = {
     version: 1,
     generated_at: generatedAt,
-    item_count: items.length,
-    items,
+    item_count: enrichedItems.length,
+    items: enrichedItems,
   };
 
   // --- Validate ---

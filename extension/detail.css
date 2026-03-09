@@ -71,6 +71,30 @@
   margin-bottom: 12px;
 }
 
+.detail-usage-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-usage-list li {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+  padding-left: 12px;
+  position: relative;
+}
+
+.detail-usage-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
 .divider {
   border: none;
   border-top: 1px solid var(--border);
