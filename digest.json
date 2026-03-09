@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T20:19:01.099Z",
+  "generated_at": "2026-03-09T21:20:08.191Z",
   "item_count": 90,
   "items": [
     {
@@ -1673,7 +1673,15 @@
       "type": "changelog",
       "published_at": "2025-08-13T00:00:00.000Z",
       "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in our prompt caching documentation.",
-      "fetched_at": "2026-03-09T20:19:02.566Z"
+      "fetched_at": "2026-03-09T21:20:09.766Z",
+      "explanation": {
+        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature was previously only available in beta.",
+        "why_it_matters": "With the 1-hour cache duration now generally available, users can optimize their workflows by minimizing redundant computations and improving overall performance. This change simplifies the development process by removing the need for a beta header to access the extended cache TTL.",
+        "how_to_use": [
+          "Use the extended cache TTL to store prompt results for up to 1 hour without requiring a beta header",
+          "Review the prompt caching documentation to learn more about implementing the 1-hour cache duration in your Claude Code applications"
+        ]
+      }
     },
     {
       "id": "44bee3b8",
@@ -1684,7 +1692,15 @@
       "type": "changelog",
       "published_at": "2025-08-12T00:00:00.000Z",
       "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-03-09T20:19:02.566Z"
+      "fetched_at": "2026-03-09T21:20:09.766Z",
+      "explanation": {
+        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
+        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer pieces of text, such as full articles or lengthy user inputs.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more accurate and informed responses.",
+          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications."
+        ]
+      }
     },
     {
       "id": "0d1b2e50",
@@ -1695,7 +1711,15 @@
       "type": "changelog",
       "published_at": "2025-08-11T00:00:00.000Z",
       "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-03-09T20:19:02.566Z"
+      "fetched_at": "2026-03-09T21:20:09.766Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
+        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
+        "how_to_use": [
+          "Check your API usage patterns to avoid sudden spikes that trigger rate limiting",
+          "Handle 429 errors explicitly in your code to implement retry logic or adjust your usage"
+        ]
+      }
     }
   ]
 }
