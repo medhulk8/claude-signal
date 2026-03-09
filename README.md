@@ -1,82 +1,58 @@
 # Claude Signal
 
-A Chrome extension that surfaces high-signal updates from Claude Code and the Anthropic developer platform — filtered, explained, and delivered as a browser badge.
+**High-signal updates from Claude Code and the Anthropic developer platform — delivered as a browser extension.**
 
-## What it does
+No accounts. No newsletters. Just the updates that actually matter, explained in plain English.
 
-- Pulls Claude Code GitHub releases and Anthropic changelog entries
-- Filters out noise (bug fixes, minor improvements) — keeps new features, breaking changes, deprecations
-- Generates a plain-English explanation for each item using an LLM (what it is, why it matters, how to use it)
-- Shows unread count as a browser badge
-- Detail page per item with structured explainer
+---
 
-## Architecture
+## What you get
 
-```
-GitHub Actions (every 1h)
-  → scripts/fetch.js       — fetches Atom feed + scrapes changelog
-  → scripts/normalize.js   — deduplicates, sorts, retains top 90 items
-  → scripts/explain.js     — generates explanations via Groq (idempotent)
-  → digest.json            — published to GitHub Pages
+- New Claude Code features, breaking changes, and deprecations — extracted from release notes
+- Anthropic developer platform updates — filtered to meaningful changes only
+- A plain-English explainer for each item: what it is, why it matters, how to use it
+- Unread badge on your browser toolbar
+- Click any item to read the full explanation
 
-Chrome Extension (MV3)
-  → popup.js               — fetches digest.json, renders Unread/All tabs
-  → detail.js              — shows full explanation for a clicked item
-  → chrome.storage.local   — caches digest + read state
-```
+Noise like "Fixed a bug" or "Improved performance" is filtered out automatically.
 
-No backend. No database. No user accounts.
+---
 
-## Setup (self-hosting)
+## Install
 
-### 1. Fork the repo
+> No Chrome Web Store listing yet — takes about 30 seconds to load manually.
 
-### 2. Enable GitHub Pages
-Go to **Settings → Pages** and set source to the root of `main`.
+1. **Download the repo**
 
-### 3. Add your Groq API key
-Go to **Settings → Secrets → Actions** and add:
-```
-GROQ_API_KEY = your_key_here
-```
-Free tier at [console.groq.com](https://console.groq.com) is sufficient.
+   ```
+   git clone https://github.com/medhulk8/claude-signal.git
+   ```
+   Or download as a ZIP from the green **Code** button → **Download ZIP**, then unzip it.
 
-### 4. Update the digest URL in the extension
-In `extension/popup.js`, set `DIGEST_URL` to your Pages URL:
-```js
-const DIGEST_URL = 'https://YOUR_USERNAME.github.io/claude-signal/digest.json';
-```
-Also update `host_permissions` in `extension/manifest.json` to match.
+2. **Open Chrome extensions**
 
-### 5. Load the extension in Chrome
-Go to `chrome://extensions`, enable Developer mode, click **Load unpacked**, select the `extension/` folder.
+   Go to `chrome://extensions` in your browser.
 
-### 6. Trigger the first run
-Push a commit or manually trigger the **Update digest** workflow under **Actions**.
+3. **Enable Developer mode**
 
-## Manual digest generation
+   Toggle it on in the top-right corner.
 
-```bash
-npm install
-GROQ_API_KEY=your_key npm run generate
-```
+4. **Load the extension**
 
-## Signal filtering
+   Click **Load unpacked** → select the `extension/` folder inside the repo.
 
-**GitHub releases** — whitelist: keeps only `Added X` bullets, deprecations, breaking changes.
+That's it. The extension is now installed and will fetch updates automatically.
 
-**Anthropic changelog** — blacklist: drops bullets starting with Fixed / Resolved / Improved / Updated / Reduced / Enhanced.
+---
 
-## Explanation schema
+## How it works
 
-Each item in `digest.json` may contain:
+A scheduled pipeline runs every hour on GitHub Actions. It fetches the latest Claude Code releases and Anthropic changelog entries, filters for signal, generates explanations using an LLM, and publishes a `digest.json` file to GitHub Pages.
 
-```json
-"explanation": {
-  "what_it_is": "...",
-  "why_it_matters": "...",
-  "how_to_use": ["...", "..."]
-}
-```
+The extension fetches that file — no backend, no account, no tracking.
 
-Explanations are generated once per item and carried over in subsequent runs (idempotent).
+---
+
+## Want your own feed or custom version?
+
+Fork the repo and follow the self-hosting instructions in [CLAUDE.md](CLAUDE.md).
