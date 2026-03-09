@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude Signal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">Claude Signal</span>
+    <button id="markAllRead" title="Mark all read">Mark all read</button>
+  </header>
+
+  <div id="statusBar" class="status-bar hidden"></div>
+
+  <main id="itemList">
+    <div class="state-msg" id="loadingState">Loading…</div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

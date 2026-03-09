@@ -1,0 +1,41 @@
+name: Update Digest
+
+on:
+  schedule:
+    # Every 4 hours
+    - cron: '0 */4 * * *'
+  # Allow manual runs for debugging
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate digest
+        run: npm run generate
+
+      - name: Commit and push if digest changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add digest.json
+          if git diff --staged --quiet; then
+            echo "No changes to digest.json, skipping commit."
+          else
+            git commit -m "Update digest $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

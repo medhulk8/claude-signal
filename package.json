@@ -1,0 +1,16 @@
+{
+  "name": "claude-signal",
+  "version": "0.1.0",
+  "description": "Signal reader for Claude, Claude Code, and Anthropic developer updates",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "fast-xml-parser": "^4.4.0"
+  }
+}

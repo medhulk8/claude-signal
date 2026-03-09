@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Signal",
+  "version": "0.1.0",
+  "description": "High-signal updates from Claude Code and Anthropic developer platform.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://YOUR_GITHUB_USERNAME.github.io/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_badge_background_color": "#CC785C"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
