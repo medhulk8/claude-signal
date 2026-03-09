@@ -1,9 +1,12 @@
 # claude-signal
 
 ## Current Status
-**Phase: Pre-implementation. Planning complete. Ready to build data pipeline.**
+**Phase: v1 complete and live.**
 
-Sources locked. Schema locked. Architecture locked. No code written yet.
+- Pipeline running on GitHub Actions every 4h
+- Extension loaded unpacked in Chrome, rendering correctly
+- GitHub Pages serving `https://medhulk8.github.io/claude-signal/digest.json`
+- Repo: `https://github.com/medhulk8/claude-signal`
 
 ---
 
@@ -17,7 +20,7 @@ Do not re-litigate these.
 - **Stale data indicator:** popup shows "last updated X hours ago" using `generated_at`
 - **Source labels + type badges in UI**
 - **No settings UI, no user accounts, no notifications (badge only)**
-- **MV3 service worker:** badge updates on popup open, not persistent background timer (service workers can be terminated)
+- **MV3 service worker:** badge updates on popup open + on startup from cache
 
 ---
 
@@ -25,9 +28,9 @@ Do not re-litigate these.
 
 | Priority | Source | Feed | Type | Status |
 |----------|--------|------|------|--------|
-| 1 | Claude Code GitHub releases | `github.com/anthropics/claude-code/releases.atom` | Atom feed | **CONFIRMED VALID** — daily releases (v2.1.71 as of 2026-03-07) |
-| 2 | Anthropic Developer Platform changelog | `platform.claude.com/docs/en/release-notes/overview` | HTML scrape | **IN** — no RSS, but structured `### Date` headers, stable, high-signal |
-| Deferred | Anthropic blog/news | `anthropic.com/news` | HTML scrape | **DEFERRED** — no RSS, noisy, requires keyword filtering, low dev-relevance ratio |
+| 1 | Claude Code GitHub releases | `github.com/anthropics/claude-code/releases.atom` | Atom feed | Live, daily releases |
+| 2 | Anthropic Developer Platform changelog | `platform.claude.com/docs/en/release-notes/overview` | HTML scrape | Live, 134 items |
+| Deferred | Anthropic blog/news | `anthropic.com/news` | HTML scrape | No RSS, noisy, skip for now |
 
 ---
 
@@ -36,115 +39,71 @@ Do not re-litigate these.
 ```json
 {
   "version": 1,
-  "generated_at": "2026-03-09T12:00:00Z",
-  "item_count": 42,
-  "items": [
-    {
-      "id": "abc12345",
-      "title": "Claude Code v2.1.71",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-07T00:12:46Z",
-      "summary": "First 200 chars of release body, markdown stripped",
-      "fetched_at": "2026-03-09T12:00:00Z"
-    }
-  ]
+  "generated_at": "ISO 8601",
+  "item_count": 60,
+  "items": [{
+    "id": "8-char sha1 of url",
+    "title": "string",
+    "url": "string",
+    "source": "github_releases | anthropic_changelog",
+    "source_label": "Claude Code | Anthropic Changelog",
+    "type": "release | changelog",
+    "published_at": "ISO 8601",
+    "summary": "string | null (max 200 chars, markdown stripped)",
+    "fetched_at": "ISO 8601"
+  }]
 }
 ```
 
-Field rules:
-- `id`: first 8 chars of SHA-1 of URL
-- `source`: enum — `github_releases` | `anthropic_changelog`
-- `type`: enum — `release` | `changelog`
-- `summary`: optional, max 200 chars, markdown stripped, first sentence preferred
-- `published_at`: ISO 8601 from feed/page, sort key
-- `fetched_at`: when pipeline ran
-- `is_read`: never in digest — lives in `chrome.storage.local` on client
-- `version: 2` check in extension: show "please update extension" if unknown version
+- `is_read` lives in `chrome.storage.local`, never in digest
+- GitHub empty release bodies ("No content.") → `summary: null`
+- Changelog bullet IDs: `sha1(sectionUrl + '::' + rawText[:100])`
 
 ---
 
-## Extension Behavior (Locked)
+## chrome.storage.local shape
 
-- On popup open: if `cached_at > 60 min`, fetch new `digest.json`
-- Store items + `cached_at` in `chrome.storage.local`
-- Track seen item IDs in `chrome.storage.local`
-- Badge = count of unseen items
-- Popup: flat list, newest first, source label, relative time ("2 days ago"), click opens URL
-- "Mark all read" button
-- Footer: "Last updated X hours ago" using `generated_at`
-- If `generated_at` > 12 hours old: show warning "data may be stale"
-
----
-
-## Build Order
-
-1. **Data pipeline** — fetch + normalize + deduplicate + write `digest.json` (Node.js script)
-2. **Validate pipeline** — run manually, inspect output, check item volume
-3. **GitHub Action** — schedule pipeline every 4 hours, publish to GitHub Pages
-4. **Extension popup** — read `digest.json`, render list, cache logic
-5. **Badge logic** — MV3 service worker, update on popup open
-6. **Polish** — relative timestamps, stale data warning, source label colors
-
----
-
-## Folder Structure (Planned)
-
-```
-claude-signal/
-├── CLAUDE.md
-├── .github/
-│   └── workflows/
-│       └── update-digest.yml
-├── scripts/
-│   ├── fetch.js          # fetch + parse both sources
-│   ├── normalize.js      # common schema, dedup, sort
-│   └── generate.js       # entry point, writes digest.json
-├── digest.json           # published artifact (GitHub Pages)
-├── extension/
-│   ├── manifest.json
-│   ├── popup.html
-│   ├── popup.js
-│   ├── background.js     # MV3 service worker
-│   └── styles.css
-└── package.json
+```json
+{
+  "cachedDigest": { "...": "..." },
+  "seenIds": { "abc12345": true },
+  "lastFetchedAt": "ISO 8601"
+}
 ```
 
 ---
 
 ## Key Risks
 
-- **Changelog scraper fragility:** `platform.claude.com/docs/en/release-notes/overview` has no RSS. If Anthropic redesigns the page, scraper breaks silently. Mitigation: log item count per run; alert (or fail the action) if 0 items returned.
-- **GitHub releases titles are just version numbers:** (`v2.1.71`) — meaningful content is in the release body. Must fetch/parse body for summary. Atom feed includes body content.
-- **Stale digest.json:** GitHub Actions can fail silently. Extension must check `generated_at` and warn if >12 hours old.
-- **GitHub Pages propagation delay:** up to 10 min after commit. Acceptable.
-- **Open-sourceable from day 1:** No hardcoded secrets. Use GitHub Actions secrets for any tokens. Include `.env.example`.
+- **Changelog scraper fragility:** hard-fails on 0 items so it never overwrites a healthy digest
+- **Digest conflict with Actions:** if you run `npm run generate` locally while Action also ran, `git pull` before pushing
+- **AGENTS.md:** created by Codex reviewer, gitignored, do not commit
 
 ---
 
 ## Session Log
 
 ### 2026-03-09 — Session 1
-- Full planning discussion completed
-- Evaluated product direction, MVP scope, architecture, sources
-- Ran source audit: confirmed GitHub releases feed valid (daily), changelog scrapeable (high signal), blog deferred (no RSS, noisy)
-- Locked all architecture decisions (see above)
-- Next: build data pipeline scripts
+- Full planning + source audit completed
+- Built pipeline (fetch.js, normalize.js, generate.js), GitHub Action, full MV3 extension
+- Confirmed live: 10 GitHub releases + 134 changelog items → 60 normalized items
+- Extension screenshot confirmed working in Chrome
+- Fixed: empty GitHub release bodies suppressed ("No content." → null summary)
+- AGENTS.md added to .gitignore (Codex reviewer file, keep locally)
 
 ---
 
 ## Next Session Priority
 
-**Build the data pipeline first. Start here:**
-
-```bash
-cd /Users/medhul/Desktop/projects/claude-signal
-npm init -y
-npm install node-fetch fast-xml-parser cheerio crypto
-node scripts/generate.js
+**Reload the extension after any popup.js/styles.css changes:**
+```
+chrome://extensions → Claude Signal → reload icon (↺)
 ```
 
-Before running: create `scripts/generate.js`, `scripts/fetch.js`, `scripts/normalize.js`.
-Inspect `digest.json` output manually. Verify item count > 0 for both sources.
+**To regenerate digest manually:**
+```bash
+npm run generate && git add digest.json && git commit -m "Manual digest update" && git push
+```
+
+**Watch for:** changelog scraper breaking silently if Anthropic redesigns the docs page.
+Check Action run history at: `https://github.com/medhulk8/claude-signal/actions`
