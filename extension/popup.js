@@ -13,7 +13,7 @@
 
 // !! Set this to your GitHub Pages URL after enabling Pages on the repo.
 // e.g. https://medhul.github.io/claude-signal/digest.json
-const DIGEST_URL = 'https://YOUR_GITHUB_USERNAME.github.io/claude-signal/digest.json';
+const DIGEST_URL = 'https://medhulk8.github.io/claude-signal/digest.json';
 
 const CACHE_TTL_MS = 60 * 60 * 1000;         // Refresh if cache older than 60 min
 const PIPELINE_STALE_MS = 12 * 60 * 60 * 1000; // Warn if generated_at older than 12h
@@ -58,7 +58,7 @@ async function main() {
 
   renderStatusBar(digest, fetchError, usingStaleCache, lastFetchedAt);
   renderItems(digest, seenIds);
-  renderFooter(digest, lastFetchedAt, usingStaleCache);
+  renderFooter(digest);
   updateBadge(digest, seenIds);
 
   document.getElementById('markAllRead').addEventListener('click', () =>
@@ -140,7 +140,7 @@ function renderItems(digest, seenIds) {
   }
 }
 
-function renderFooter(digest, lastFetchedAt, usingStaleCache) {
+function renderFooter(digest) {
   const footer = document.getElementById('footer');
   if (!digest?.generated_at) {
     footer.textContent = '';

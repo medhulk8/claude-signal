@@ -5,7 +5,7 @@
   "description": "High-signal updates from Claude Code and Anthropic developer platform.",
   "permissions": ["storage"],
   "host_permissions": [
-    "https://YOUR_GITHUB_USERNAME.github.io/*"
+    "https://medhulk8.github.io/*"
   ],
   "action": {
     "default_popup": "popup.html",
