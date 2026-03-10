@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-10T21:19:08.455Z",
+  "generated_at": "2026-03-10T22:14:23.401Z",
   "item_count": 90,
   "items": [
     {
@@ -1017,25 +1017,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-03-10T21:19:10.280Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and it is now available on all models and platforms. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to have more flexibility and control over their model outputs, and it simplifies the configuration process by standardizing the output format parameter location.",
-        "how_to_use": [
-          "Use the output_config.format parameter to specify the format of structured outputs from models.",
-          "Update existing code to reflect the new location of the output_format parameter."
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1718,6 +1699,25 @@
         "how_to_use": [
           "Access the request ID in error responses to identify specific failed requests",
           "Use the included request ID to look up detailed error information in the error documentation"
+        ]
+      }
+    },
+    {
+      "id": "db35219a",
+      "title": "We've released the Usage & Cost API, allowing administrators to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
+      "fetched_at": "2026-03-10T22:14:24.542Z",
+      "explanation": {
+        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data.",
+        "why_it_matters": "This API allows administrators to automate the monitoring of their organization's usage and cost, enabling more efficient management and planning.",
+        "how_to_use": [
+          "Use the API to fetch daily or monthly usage reports for your organization",
+          "Integrate the API with your existing monitoring tools to track costs in real-time"
         ]
       }
     }
