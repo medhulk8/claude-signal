@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude Signal — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 680px; margin: 48px auto; padding: 0 24px; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.5rem; margin-bottom: 4px; }
+    h2 { font-size: 1rem; margin-top: 32px; margin-bottom: 6px; }
+    p, li { font-size: 0.95rem; color: #333; }
+    .updated { font-size: 0.85rem; color: #888; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+  <h1>Claude Signal — Privacy Policy</h1>
+  <p class="updated">Last updated: March 2026</p>
+
+  <p>Claude Signal is a Chrome extension that surfaces high-signal updates from Claude Code and the Anthropic developer platform. This policy explains what data the extension accesses and how it is used.</p>
+
+  <h2>Data we collect</h2>
+  <p>We do not collect any personal data. The extension does not transmit any information about you, your browser, or your activity to any server we operate.</p>
+
+  <h2>Data stored locally</h2>
+  <p>The extension stores the following data in your browser's local storage (<code>chrome.storage.local</code>), which never leaves your device:</p>
+  <ul>
+    <li><strong>cachedDigest</strong> — a cached copy of the public update feed fetched from GitHub Pages</li>
+    <li><strong>seenIds</strong> — a record of which items you have already read</li>
+    <li><strong>notifiedIds</strong> — a record of which items have already triggered a notification, to prevent repeat alerts</li>
+    <li><strong>lastFetchedAt</strong> — the timestamp of the last successful feed fetch</li>
+  </ul>
+  <p>This data is stored solely to provide the extension's core functionality. It is not shared with or accessible by anyone other than you.</p>
+
+  <h2>Network requests</h2>
+  <p>The extension periodically fetches a publicly available JSON file from GitHub Pages (<code>medhulk8.github.io/claude-signal/digest.json</code>). This is a one-way read — no data about you is included in this request beyond standard HTTP headers sent by your browser.</p>
+
+  <h2>Permissions used</h2>
+  <ul>
+    <li><strong>storage</strong> — to save the digest cache and your read state locally in your browser</li>
+    <li><strong>alarms</strong> — to schedule a background fetch of the update feed every 60 minutes</li>
+    <li><strong>notifications</strong> — to show a browser notification when new updates are available</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>The update feed is hosted on GitHub Pages. Fetching it is subject to GitHub's privacy policy. No other third-party services are used by the extension.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or concerns: open an issue at <a href="https://github.com/medhulk8/claude-signal">github.com/medhulk8/claude-signal</a>.</p>
+</body>
+</html>
