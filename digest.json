@@ -1,8 +1,123 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T23:15:44.681Z",
+  "generated_at": "2026-03-10T00:53:42.202Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "45008c56",
+      "title": "Added w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The w key in the /copy command allows you to write the currently selected text directly to a file, skipping the clipboard. This is done within the Claude Code environment.",
+        "why_it_matters": "This feature is particularly useful when working over SSH, as it avoids the need to copy and paste between remote and local systems. It streamlines the workflow when you need to save selected text to a file on a remote machine.",
+        "how_to_use": [
+          "Press w while in /copy mode to trigger the file write operation",
+          "Use this feature over SSH to save selections directly to remote files"
+        ]
+      }
+    },
+    {
+      "id": "f64cfc29",
+      "title": "Added optional description argument to /plan (e.g., /plan fix the auth bug) that enters plan mode and immediately starts",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The /plan command now accepts an optional description argument, allowing you to enter plan mode with a specific task in mind.",
+        "why_it_matters": "This update streamlines your workflow by enabling you to start planning a task immediately after invoking the command, without needing to enter a separate description step.",
+        "how_to_use": [
+          "/plan fix the auth bug",
+          "/plan refactor the database schema",
+          "/plan implement new feature request"
+        ]
+      }
+    },
+    {
+      "id": "f9e013a6",
+      "title": "Added claude plugins as an alias for claude plugin",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The 'claude plugins' command is now an alias for 'claude plugin', allowing users to access plugin functionality with either phrase.",
+        "why_it_matters": "This change provides an alternative way to interact with plugins, making it easier for users to manage and utilize them within Claude Code.",
+        "how_to_use": [
+          "Use 'claude plugins' to list and manage available plugins",
+          "Use 'claude plugins' to install or update a specific plugin"
+        ]
+      }
+    },
+    {
+      "id": "8c26cb4e",
+      "title": "Added ExitWorktree tool to leave an EnterWorktree session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The ExitWorktree tool allows you to exit a session that was entered using the EnterWorktree command, returning to the previous workflow state.",
+        "why_it_matters": "This addition provides a clear way to exit an EnterWorktree session, making it easier to manage workflow states and avoid potential issues caused by remaining in an unintended state.",
+        "how_to_use": [
+          "Use the ExitWorktree tool to leave an EnterWorktree session when you need to return to the previous workflow state.",
+          "Invoke the ExitWorktree command to exit the current EnterWorktree session and resume normal workflow operations."
+        ]
+      }
+    },
+    {
+      "id": "36858029",
+      "title": "Added CLAUDE_CODE_DISABLE_CRON environment variable to immediately stop scheduled cron jobs mid-session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_DISABLE_CRON environment variable allows you to immediately stop scheduled cron jobs in the middle of a session.",
+        "why_it_matters": "This variable gives you more control over your cron jobs, enabling you to pause or stop them as needed, even after they've started running.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_DISABLE_CRON to 'true' to stop all scheduled cron jobs mid-session",
+          "Use this variable in scenarios where you need to pause or stop cron jobs due to changes in your workflow or environment"
+        ]
+      }
+    },
+    {
+      "id": "bf8164ca",
+      "title": "Added support for marketplace git URLs without .git suffix (Azure DevOps, AWS CodeCommit)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "Claude Code now supports Git URLs from Azure DevOps and AWS CodeCommit that do not include the .git suffix, allowing for more flexible repository cloning and management.",
+        "why_it_matters": "This update simplifies the process of working with Git repositories from these platforms, as users no longer need to manually append the .git suffix to the URL.",
+        "how_to_use": [
+          "Use the updated Git URL format to clone a repository from Azure DevOps or AWS CodeCommit directly within Claude Code",
+          "Update existing repository connections to use the simplified URL format for easier management"
+        ]
+      }
+    },
     {
       "id": "c3bd5c4c",
       "title": "Added /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)",
@@ -1603,121 +1718,6 @@
         "how_to_use": [
           "Access the request ID in error responses to identify specific failed requests",
           "Use the included request ID to look up detailed error information in the error documentation"
-        ]
-      }
-    },
-    {
-      "id": "db35219a",
-      "title": "We've released the Usage & Cost API, allowing administrators to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-03-09T20:19:02.566Z",
-      "explanation": {
-        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data.",
-        "why_it_matters": "This API allows administrators to automate the monitoring of their organization's usage and cost data, enabling more efficient management and decision-making.",
-        "how_to_use": [
-          "Use the API to fetch daily or monthly usage reports for your organization",
-          "Integrate the API with your existing monitoring tools to track costs in real-time"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-03-09T20:19:02.566Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update enables Claude Code users to programmatically access organization details, which can be used for automation, reporting, or integration with other systems.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization data for display in a custom dashboard",
-          "Integrate the endpoint with an existing workflow to automate organization-specific tasks"
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-03-09T20:19:02.566Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, are being deprecated and will be retired on October 28, 2025.",
-        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications that rely on these models.",
-        "how_to_use": [
-          "Migrate existing applications to use the recommended replacement models",
-          "Update API requests to use the new model names",
-          "Test and validate workflows with the new models before the retirement date"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in our prompt caching documentation.",
-      "fetched_at": "2026-03-09T21:20:09.766Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature was previously only available in beta.",
-        "why_it_matters": "With the 1-hour cache duration now generally available, users can optimize their workflows by minimizing redundant computations and improving overall performance. This change simplifies the development process by removing the need for a beta header to access the extended cache TTL.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for up to 1 hour without requiring a beta header",
-          "Review the prompt caching documentation to learn more about implementing the 1-hour cache duration in your Claude Code applications"
-        ]
-      }
-    },
-    {
-      "id": "44bee3b8",
-      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-12T00:00:00.000Z",
-      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-03-09T21:20:09.766Z",
-      "explanation": {
-        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
-        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer pieces of text, such as full articles or lengthy user inputs.",
-        "how_to_use": [
-          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more accurate and informed responses.",
-          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications."
-        ]
-      }
-    },
-    {
-      "id": "0d1b2e50",
-      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-11T00:00:00.000Z",
-      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-03-09T21:20:09.766Z",
-      "explanation": {
-        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
-        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
-        "how_to_use": [
-          "Check your API usage patterns to avoid sudden spikes that trigger rate limiting",
-          "Handle 429 errors explicitly in your code to implement retry logic or adjust your usage"
         ]
       }
     }
