@@ -1,8 +1,123 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T15:44:21.887Z",
+  "generated_at": "2026-03-10T09:31:42.675Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "45008c56",
+      "title": "Added w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The w key in the /copy command allows you to write the currently selected text directly to a file, skipping the clipboard. This is done within the Claude Code environment.",
+        "why_it_matters": "This feature is particularly useful when working over SSH, as it avoids the need to copy and paste between remote and local systems. It streamlines the workflow when you need to save selected text to a file on a remote machine.",
+        "how_to_use": [
+          "Press w while in /copy mode to trigger the file write operation",
+          "Use this feature over SSH to save selections directly to remote files"
+        ]
+      }
+    },
+    {
+      "id": "f64cfc29",
+      "title": "Added optional description argument to /plan (e.g., /plan fix the auth bug) that enters plan mode and immediately starts",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The /plan command now accepts an optional description argument, allowing you to enter plan mode with a specific task in mind.",
+        "why_it_matters": "This update streamlines your workflow by enabling you to start planning a task immediately after invoking the command, without needing to enter a separate description step.",
+        "how_to_use": [
+          "/plan fix the auth bug",
+          "/plan refactor the database schema",
+          "/plan implement new feature request"
+        ]
+      }
+    },
+    {
+      "id": "f9e013a6",
+      "title": "Added claude plugins as an alias for claude plugin",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The 'claude plugins' command is now an alias for 'claude plugin', allowing users to access plugin functionality with either phrase.",
+        "why_it_matters": "This change provides an alternative way to interact with plugins, making it easier for users to manage and utilize them within Claude Code.",
+        "how_to_use": [
+          "Use 'claude plugins' to list and manage available plugins",
+          "Use 'claude plugins' to install or update a specific plugin"
+        ]
+      }
+    },
+    {
+      "id": "8c26cb4e",
+      "title": "Added ExitWorktree tool to leave an EnterWorktree session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The ExitWorktree tool allows you to exit a session that was entered using the EnterWorktree command, returning to the previous workflow state.",
+        "why_it_matters": "This addition provides a clear way to exit an EnterWorktree session, making it easier to manage workflow states and avoid potential issues caused by remaining in an unintended state.",
+        "how_to_use": [
+          "Use the ExitWorktree tool to leave an EnterWorktree session when you need to return to the previous workflow state.",
+          "Invoke the ExitWorktree command to exit the current EnterWorktree session and resume normal workflow operations."
+        ]
+      }
+    },
+    {
+      "id": "36858029",
+      "title": "Added CLAUDE_CODE_DISABLE_CRON environment variable to immediately stop scheduled cron jobs mid-session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_DISABLE_CRON environment variable allows you to immediately stop scheduled cron jobs in the middle of a session.",
+        "why_it_matters": "This variable gives you more control over your cron jobs, enabling you to pause or stop them as needed, even after they've started running.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_DISABLE_CRON to 'true' to stop all scheduled cron jobs mid-session",
+          "Use this variable in scenarios where you need to pause or stop cron jobs due to changes in your workflow or environment"
+        ]
+      }
+    },
+    {
+      "id": "bf8164ca",
+      "title": "Added support for marketplace git URLs without .git suffix (Azure DevOps, AWS CodeCommit)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-10T00:43:03Z",
+      "summary": "v2.1.72",
+      "fetched_at": "2026-03-10T00:53:42.436Z",
+      "explanation": {
+        "what_it_is": "Claude Code now supports Git URLs from Azure DevOps and AWS CodeCommit that do not include the .git suffix, allowing for more flexible repository cloning and management.",
+        "why_it_matters": "This update simplifies the process of working with Git repositories from these platforms, as users no longer need to manually append the .git suffix to the URL.",
+        "how_to_use": [
+          "Use the updated Git URL format to clone a repository from Azure DevOps or AWS CodeCommit directly within Claude Code",
+          "Update existing repository connections to use the simplified URL format for easier management"
+        ]
+      }
+    },
     {
       "id": "c3bd5c4c",
       "title": "Added /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)",
@@ -1101,7 +1216,15 @@
       "type": "changelog",
       "published_at": "2025-11-24T00:00:00.000Z",
       "summary": "We've added client-side compaction to our Python and TypeScript SDKs, automatically managing conversation context through summarization when using tool_runner.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "Client-side compaction is a feature in the Python and TypeScript SDKs that automatically manages conversation context by summarizing it when using the tool_runner.",
+        "why_it_matters": "This feature reduces the need for manual context management, making it easier to integrate the Anthropic API into applications that rely on tool_runner.",
+        "how_to_use": [
+          "Use the tool_runner with the updated SDKs to automatically summarize conversation context",
+          "Enable client-side compaction in your application to reduce context management overhead"
+        ]
+      }
     },
     {
       "id": "aa364fdd",
@@ -1112,7 +1235,15 @@
       "type": "changelog",
       "published_at": "2025-11-21T00:00:00.000Z",
       "summary": "Search result content blocks are now generally available on Amazon Bedrock. Learn more in our search results documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks allow developers to embed search results directly into their applications, and this feature is now available for use on Amazon Bedrock.",
+        "why_it_matters": "This update enables Claude Code users to integrate search functionality into their Amazon Bedrock applications, making it easier to provide relevant search results to their users.",
+        "how_to_use": [
+          "Use the search result content blocks to display relevant search results within your Amazon Bedrock application",
+          "Refer to the search results documentation for implementation details and best practices"
+        ]
+      }
     },
     {
       "id": "755df7b8",
@@ -1123,7 +1254,15 @@
       "type": "changelog",
       "published_at": "2025-11-19T00:00:00.000Z",
       "summary": "We've launched a new documentation platform at platform.claude.com/docs. Our documentation now lives side by side with the Claude Console, providing a unified developer experience. The previous docs…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "A new documentation platform for Claude Code, hosted at platform.claude.com/docs, which unifies documentation and the Claude Console.",
+        "why_it_matters": "This change streamlines the developer experience by providing a single location for documentation and console access, making it easier to find information and work with Claude Code.",
+        "how_to_use": [
+          "Access the new documentation platform at platform.claude.com/docs to find information on using Claude Code",
+          "Use the unified platform to switch between documentation and the Claude Console without navigating to separate sites"
+        ]
+      }
     },
     {
       "id": "1f0d999f",
@@ -1134,7 +1273,15 @@
       "type": "changelog",
       "published_at": "2025-11-18T00:00:00.000Z",
       "summary": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure customers with Azure billing and OAuth authentication. Access the full Messages API including extended thinking, prompt…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "Claude models are now available in Microsoft Foundry, allowing Azure customers to access the full Messages API, including extended thinking and prompt capabilities, with Azure billing and OAuth authentication.",
+        "why_it_matters": "This integration enables Azure customers to leverage Claude's capabilities with the convenience of Azure billing and authentication, streamlining the development process.",
+        "how_to_use": [
+          "Use Azure OAuth to authenticate and authorize access to Claude models",
+          "Access the Messages API to integrate Claude's extended thinking and prompt capabilities into Azure-based applications"
+        ]
+      }
     },
     {
       "id": "150c45ac",
@@ -1145,7 +1292,15 @@
       "type": "changelog",
       "published_at": "2025-11-14T00:00:00.000Z",
       "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "Structured outputs provide a guaranteed schema for Claude's responses, allowing for more reliable and consistent data exchange. This is achieved through JSON outputs for structured data responses.",
+        "why_it_matters": "With structured outputs, Claude Code users can now rely on a consistent data format, making it easier to integrate and process responses in their applications. This enables more robust and automated workflows.",
+        "how_to_use": [
+          "Use JSON outputs to receive structured data responses from Claude",
+          "Enable strict tool use for validated tool outputs with guaranteed schema conformance"
+        ]
+      }
     },
     {
       "id": "d4d99051",
@@ -1156,7 +1311,15 @@
       "type": "changelog",
       "published_at": "2025-10-28T00:00:00.000Z",
       "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in our documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.7 model has been deprecated, meaning it will no longer be supported or maintained.",
+        "why_it_matters": "This change affects Claude Code users who rely on the 3.7 model, as they will need to migrate to a newer model to ensure continued support and compatibility.",
+        "how_to_use": [
+          "Review the documentation to understand the deprecation timeline and recommended replacement models",
+          "Update existing code to use a supported Claude model version"
+        ]
+      }
     },
     {
       "id": "3ccea7fb",
@@ -1167,7 +1330,15 @@
       "type": "changelog",
       "published_at": "2025-10-28T00:00:00.000Z",
       "summary": "We've retired the Claude Sonnet 3.5 models. All requests to these models will now return an error.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T17:37:52.701Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.5 models have been removed from the Anthropic API and developer platform, resulting in an error for any requests to these models.",
+        "why_it_matters": "Any existing code or workflows relying on the Claude Sonnet 3.5 models will need to be updated to use alternative models to avoid errors.",
+        "how_to_use": [
+          "Update API requests to use a supported model version",
+          "Test existing workflows for errors related to the retired models"
+        ]
+      }
     },
     {
       "id": "4df22af5",
@@ -1178,7 +1349,15 @@
       "type": "changelog",
       "published_at": "2025-10-28T00:00:00.000Z",
       "summary": "We've expanded context editing with thinking block clearing (clear_thinking_20251015), enabling automatic management of thinking blocks. Learn more in our context editing documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T17:37:52.701Z",
+      "explanation": {
+        "what_it_is": "The clear_thinking_20251015 feature allows automatic management of thinking blocks in context editing, enabling the removal of unnecessary blocks.",
+        "why_it_matters": "This update simplifies the context editing process by automatically clearing thinking blocks, reducing manual effort and potential errors.",
+        "how_to_use": [
+          "Use the clear_thinking_20251015 feature to automatically remove unnecessary thinking blocks in your context editing workflow.",
+          "Refer to the context editing documentation for more information on implementing this feature."
+        ]
+      }
     },
     {
       "id": "8dba46a0",
@@ -1189,7 +1368,15 @@
       "type": "changelog",
       "published_at": "2025-10-16T00:00:00.000Z",
       "summary": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend Claude's capabilities. Skills are organized folders of instructions, scripts, and resources that Claude loads dynamically to…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T17:37:52.701Z",
+      "explanation": {
+        "what_it_is": "Agent Skills are organized folders of instructions, scripts, and resources that Claude loads dynamically to extend its capabilities.",
+        "why_it_matters": "This update allows Claude Code users to create and load custom skills, enabling more flexible and dynamic interactions with the model.",
+        "how_to_use": [
+          "Create a skill folder with instructions and scripts to teach Claude a new task",
+          "Load a custom skill dynamically to extend Claude's capabilities for a specific use case"
+        ]
+      }
     },
     {
       "id": "e6bd8a7d",
@@ -1200,7 +1387,15 @@
       "type": "changelog",
       "published_at": "2025-10-15T00:00:00.000Z",
       "summary": "We've launched Claude Haiku 4.5, our fastest and most intelligent Haiku model with near-frontier performance. Ideal for real-time applications, high-volume processing, and cost-sensitive deployments…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T17:37:52.701Z",
+      "explanation": {
+        "what_it_is": "Claude Haiku 4.5 is an updated Haiku model that offers near-frontier performance, making it suitable for applications requiring speed and efficiency.",
+        "why_it_matters": "This update matters because it enables Claude Code users to deploy Haiku models in real-time applications, handle high-volume processing, and reduce costs in their deployments.",
+        "how_to_use": [
+          "Use Claude Haiku 4.5 for real-time applications that require fast and accurate responses",
+          "Deploy Haiku 4.5 in high-volume processing workflows to take advantage of its improved performance"
+        ]
+      }
     },
     {
       "id": "94fdb0ca",
@@ -1211,7 +1406,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've launched Claude Sonnet 4.5, our best model for complex agents and coding, with the highest intelligence across most tasks. Learn more in the models overview.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T17:37:52.701Z",
+      "explanation": {
+        "what_it_is": "Claude Sonnet 4.5 is a model update that provides the highest intelligence across most tasks, particularly for complex agents and coding.",
+        "why_it_matters": "This update matters because it enables Claude Code users to tackle more complex tasks with improved accuracy and efficiency.",
+        "how_to_use": [
+          "Use Claude Sonnet 4.5 for coding tasks that require advanced problem-solving and critical thinking",
+          "Leverage the model's improved intelligence for complex agent-based tasks, such as simulations and decision-making"
+        ]
+      }
     },
     {
       "id": "a0457807",
@@ -1222,7 +1425,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI. The Claude API (1P) pricing is unaffected.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "Global endpoint pricing is now available for AWS Bedrock and Google Vertex AI, allowing for more unified cost management across these platforms.",
+        "why_it_matters": "This change simplifies cost tracking and budgeting for Claude Code users who deploy models on AWS Bedrock or Google Vertex AI, as they can now manage costs in a more centralized manner.",
+        "how_to_use": [
+          "Check the updated pricing documentation to understand the costs associated with using AWS Bedrock and Google Vertex AI endpoints",
+          "Review your current deployment costs to identify potential savings or areas for optimization"
+        ]
+      }
     },
     {
       "id": "17ac1c1a",
@@ -1233,7 +1444,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've introduced a new stop reason model_context_window_exceeded that allows you to request the maximum possible tokens without calculating input size. Learn more in our handling stop reasons…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "A new stop reason called model_context_window_exceeded that stops the model when the context window is exceeded, allowing users to request the maximum possible tokens without calculating input size.",
+        "why_it_matters": "This update allows Claude Code users to make requests without having to manually calculate the input size, simplifying the workflow and reducing potential errors.",
+        "how_to_use": [
+          "Request the maximum possible tokens without specifying input size",
+          "Handle the model_context_window_exceeded stop reason in your error handling code"
+        ]
+      }
     },
     {
       "id": "a2ac55ea",
@@ -1244,7 +1463,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've launched the memory tool in beta, enabling Claude to store and consult information across conversations. Learn more in our memory tool documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "The memory tool is a beta feature that allows Claude to store and retrieve information across multiple conversations.",
+        "why_it_matters": "This feature enables Claude to maintain context and provide more accurate responses based on previous interactions, changing how users can engage with Claude in multi-turn conversations.",
+        "how_to_use": [
+          "Use the memory tool to store user preferences or previous conversation history",
+          "Consult the memory tool documentation to learn how to implement and utilize this feature in your application"
+        ]
+      }
     },
     {
       "id": "8e75a728",
@@ -1255,7 +1482,15 @@
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
       "summary": "We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "Context editing is a beta feature that automatically manages conversation context by clearing older tool results and calls when approaching token limits.",
+        "why_it_matters": "This feature helps prevent context overflow and allows for more efficient conversation management, particularly when working with large or complex conversations.",
+        "how_to_use": [
+          "Use context editing to clear older tool results and calls when approaching token limits",
+          "Implement strategies to automatically manage conversation context and prevent context overflow"
+        ]
+      }
     },
     {
       "id": "a6ef8a20",
@@ -1266,7 +1501,15 @@
       "type": "changelog",
       "published_at": "2025-09-17T00:00:00.000Z",
       "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "Tool helpers are a new beta feature in the Python and TypeScript SDKs that provide type-safe input validation and a tool runner for automated tool handling.",
+        "why_it_matters": "This simplifies the process of creating and executing tools, making it easier for developers to automate tasks and validate user input.",
+        "how_to_use": [
+          "Use the tool helpers to create tools with validated input parameters",
+          "Run automated tools using the tool runner in your Python or TypeScript application"
+        ]
+      }
     },
     {
       "id": "1f79d078",
@@ -1277,7 +1520,15 @@
       "type": "changelog",
       "published_at": "2025-09-16T00:00:00.000Z",
       "summary": "We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T18:34:07.010Z",
+      "explanation": {
+        "what_it_is": "The developer offerings are now unified under the Claude brand, resulting in updated naming and URLs across the platform and documentation.",
+        "why_it_matters": "This change simplifies the developer experience by providing a consistent brand identity, but does not affect the existing developer interfaces.",
+        "how_to_use": [
+          "Update bookmarks and links to reflect the new Claude branding and URLs",
+          "Verify that existing API integrations and code continue to work as expected"
+        ]
+      }
     },
     {
       "id": "047cf5e1",
@@ -1288,7 +1539,15 @@
       "type": "changelog",
       "published_at": "2025-09-10T00:00:00.000Z",
       "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in our web fetch tool documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
+        "why_it_matters": "This update allows Claude Code users to access and process web-based content directly, expanding the scope of potential inputs for their applications.",
+        "how_to_use": [
+          "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
+          "Fetch PDF documents to extract and utilize their content in Claude-based workflows"
+        ]
+      }
     },
     {
       "id": "9a654a18",
@@ -1299,7 +1558,15 @@
       "type": "changelog",
       "published_at": "2025-09-10T00:00:00.000Z",
       "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "The Claude Code Analytics API provides daily aggregated usage metrics, including productivity metrics and tool usage statistics, allowing organizations to access this data programmatically.",
+        "why_it_matters": "This API enables organizations to track and analyze their Claude Code usage in a more automated and scalable way, potentially informing decisions about tool adoption and workflow optimization.",
+        "how_to_use": [
+          "Use the API to fetch daily usage metrics for your organization and integrate them into your internal analytics dashboards.",
+          "Automate the generation of weekly or monthly reports on Claude Code tool usage and productivity metrics."
+        ]
+      }
     },
     {
       "id": "4db94bfb",
@@ -1310,7 +1577,15 @@
       "type": "changelog",
       "published_at": "2025-09-08T00:00:00.000Z",
       "summary": "We launched a beta version of the CSDK.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "explanation": {
+        "what_it_is": "The CSDK beta is a software development kit that allows developers to integrate Claude Code functionality into their applications.",
+        "why_it_matters": "This beta release provides developers with early access to the CSDK, enabling them to start building custom integrations and testing its capabilities before the full release.",
+        "how_to_use": [
+          "Use the CSDK beta to develop custom applications that leverage Claude Code's features",
+          "Test and provide feedback on the CSDK beta to shape its development"
+        ]
+      }
     },
     {
       "id": "8e01098c",
@@ -1321,7 +1596,15 @@
       "type": "changelog",
       "published_at": "2025-09-05T00:00:00.000Z",
       "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "Rate limit charts in the Console Usage page that display API rate limit usage and caching rates over time.",
+        "why_it_matters": "This allows you to monitor and track your API usage patterns, helping you identify potential rate limit issues before they occur.",
+        "how_to_use": [
+          "Check the Console Usage page to view your current API rate limit usage",
+          "Use the charts to identify trends and patterns in your API usage over time"
+        ]
+      }
     },
     {
       "id": "981621a3",
@@ -1332,7 +1615,15 @@
       "type": "changelog",
       "published_at": "2025-09-03T00:00:00.000Z",
       "summary": "We've launched support for citable documents in client-side tool results. Learn more in our tool use documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
+        "why_it_matters": "This update enables Claude Code users to generate results that can be easily cited and referenced, improving the reliability and credibility of their work.",
+        "how_to_use": [
+          "Use the updated client-side tool to generate citable documents for research and academic purposes",
+          "Reference the tool use documentation for implementation details and best practices"
+        ]
+      }
     },
     {
       "id": "c1a02cd0",
@@ -1343,7 +1634,16 @@
       "type": "changelog",
       "published_at": "2025-09-02T00:00:00.000Z",
       "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
+        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python execution.",
+        "how_to_use": [
+          "Execute Bash commands to automate system tasks",
+          "Write code in languages other than Python, such as JavaScript or Ruby",
+          "Manipulate files directly from within the Code Execution Tool"
+        ]
+      }
     },
     {
       "id": "275cc454",
@@ -1354,7 +1654,15 @@
       "type": "changelog",
       "published_at": "2025-08-27T00:00:00.000Z",
       "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
+        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, within their PHP workflows.",
+        "how_to_use": [
+          "Install the PHP SDK using Composer",
+          "Use the SDK to send API requests to the Anthropic API from your PHP application"
+        ]
+      }
     },
     {
       "id": "459474e9",
@@ -1365,7 +1673,15 @@
       "type": "changelog",
       "published_at": "2025-08-26T00:00:00.000Z",
       "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API. For more information, see Long context rate limits.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "explanation": {
+        "what_it_is": "The rate limits for the 1M token context window on Claude Sonnet 4 have been increased, allowing for more requests to be made within a given time frame.",
+        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, which can speed up development and testing workflows.",
+        "how_to_use": [
+          "Make more frequent API calls to Claude Sonnet 4 with large context windows",
+          "Process longer texts or larger datasets without reducing request frequency"
+        ]
+      }
     },
     {
       "id": "eefe6869",
@@ -1376,7 +1692,15 @@
       "type": "changelog",
       "published_at": "2025-08-26T00:00:00.000Z",
       "summary": "The 1m token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "The 1m token context window is a feature that allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, when running on Google Cloud's Vertex AI.",
+        "why_it_matters": "This update enables Claude Code users to work with longer documents or more extensive text datasets on Vertex AI, potentially improving the accuracy of their models and applications.",
+        "how_to_use": [
+          "Run your Claude Code models on Google Cloud's Vertex AI to take advantage of the increased context window",
+          "Use the 1m token context window to process and analyze larger documents, such as books or research papers"
+        ]
+      }
     },
     {
       "id": "bdee7c3e",
@@ -1387,73 +1711,15 @@
       "type": "changelog",
       "published_at": "2025-08-19T00:00:00.000Z",
       "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in our error documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
-    },
-    {
-      "id": "db35219a",
-      "title": "We've released the Usage & Cost API, allowing administrators to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in our prompt caching documentation.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
-    },
-    {
-      "id": "44bee3b8",
-      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-12T00:00:00.000Z",
-      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
-    },
-    {
-      "id": "0d1b2e50",
-      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-11T00:00:00.000Z",
-      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-03-09T15:44:22.964Z"
+      "fetched_at": "2026-03-09T20:19:02.566Z",
+      "explanation": {
+        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
+        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
+        "how_to_use": [
+          "Access the request ID in error responses to identify specific failed requests",
+          "Use the included request ID to look up detailed error information in the error documentation"
+        ]
+      }
     }
   ]
 }
