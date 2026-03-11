@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-03-11T17:39:17.064Z",
+  "generated_at": "2026-03-11T18:36:57.310Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "ce5f5e5a",
+      "title": "Added modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-11T18:26:43Z",
+      "summary": "v2.1.73",
+      "fetched_at": "2026-03-11T18:36:57.534Z",
+      "explanation": {
+        "what_it_is": "The modelOverrides setting allows mapping model picker entries to custom provider model IDs, such as Bedrock inference profile ARNs.",
+        "why_it_matters": "This setting gives Claude Code users more control over which models are used for inference, enabling more flexibility in their workflows.",
+        "how_to_use": [
+          "Use the modelOverrides setting to map a model picker entry to a specific Bedrock inference profile ARN",
+          "Configure the setting to override the default model IDs used by the model picker"
+        ]
+      }
+    },
+    {
+      "id": "6e427824",
+      "title": "Added actionable guidance when OAuth login or connectivity checks fail due to SSL certificate errors (corporate proxies, NODE_EXTRA_CA_CERTS)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-11T18:26:43Z",
+      "summary": "v2.1.73",
+      "fetched_at": "2026-03-11T18:36:57.534Z",
+      "explanation": {
+        "what_it_is": "When OAuth login or connectivity checks fail due to SSL certificate errors, Claude Code now provides actionable guidance to help resolve the issue, particularly in scenarios involving corporate proxies or the NODE_EXTRA_CA_CERTS environment variable.",
+        "why_it_matters": "This update saves users time and effort by providing clear instructions on how to address SSL certificate errors, which can occur when working behind corporate proxies or with custom certificate configurations.",
+        "how_to_use": [
+          "Check the error message for specific guidance on resolving the SSL certificate error",
+          "Use the NODE_EXTRA_CA_CERTS environment variable to specify additional trusted certificates"
+        ]
+      }
+    },
+    {
+      "id": "2ec9c5f6",
+      "title": "Deprecated /output-style command — use /config instead. Output style is now fixed at session start for better prompt caching",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-11T18:26:43Z",
+      "summary": "v2.1.73",
+      "fetched_at": "2026-03-11T18:36:57.534Z",
+      "explanation": {
+        "what_it_is": "The /output-style command has been deprecated in favor of using /config, and output style is now determined at the start of each session.",
+        "why_it_matters": "This change allows for better prompt caching, which can improve performance by reducing the need for repeated computations.",
+        "how_to_use": [
+          "Use the /config command to set output style instead of /output-style",
+          "Set output style at the start of each session for optimal caching"
+        ]
+      }
+    },
     {
       "id": "45008c56",
       "title": "Added w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)",
@@ -747,25 +804,6 @@
         "how_to_use": [
           "Select the 'Always copy full response' option in the /copy picker to enable this feature.",
           "Use the /copy command to copy the full response without being prompted to select a code block."
-        ]
-      }
-    },
-    {
-      "id": "1a5e8351",
-      "title": "Added /copy command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-02-26T00:59:24Z",
-      "summary": "v2.1.59",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "The /copy command is a new feature that displays an interactive picker when code blocks are present in a response, enabling users to select either individual code blocks or the entire response for copying.",
-        "why_it_matters": "This update streamlines the process of copying specific code snippets from Claude Code responses, saving users time and reducing manual effort.",
-        "how_to_use": [
-          "Use the /copy command in a conversation with code blocks to open the interactive picker.",
-          "Select individual code blocks or the full response from the picker to copy them to your clipboard."
         ]
       }
     },
@@ -1680,44 +1718,6 @@
         "how_to_use": [
           "Make more frequent API calls to Claude Sonnet 4 with large context windows",
           "Process longer texts or larger datasets without reducing request frequency"
-        ]
-      }
-    },
-    {
-      "id": "eefe6869",
-      "title": "The 1m token context window is now available on Google Cloud's Vertex AI",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "The 1m token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-03-09T20:19:02.566Z",
-      "explanation": {
-        "what_it_is": "The 1m token context window is a feature that allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, when running on Google Cloud's Vertex AI.",
-        "why_it_matters": "This update enables Claude Code users to work with longer documents or more extensive text datasets on Vertex AI, potentially improving the accuracy of their models and applications.",
-        "how_to_use": [
-          "Run your Claude Code models on Google Cloud's Vertex AI to take advantage of the increased context window",
-          "Use the 1m token context window to process and analyze larger documents, such as books or research papers"
-        ]
-      }
-    },
-    {
-      "id": "bdee7c3e",
-      "title": "Request IDs are now included directly in error response bodies alongside the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-19T00:00:00.000Z",
-      "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in our error documentation.",
-      "fetched_at": "2026-03-09T20:19:02.566Z",
-      "explanation": {
-        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
-        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
-        "how_to_use": [
-          "Access the request ID in error responses to identify specific failed requests",
-          "Use the included request ID to look up detailed error information in the error documentation"
         ]
       }
     }
