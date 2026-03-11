@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-11T21:20:02.030Z",
+  "generated_at": "2026-03-11T22:15:53.530Z",
   "item_count": 90,
   "items": [
     {
@@ -1132,21 +1132,22 @@
       }
     },
     {
-      "id": "b33f4230",
+      "id": "4d87b8e1",
       "title": "We announced the deprecation of the Claude Haiku 3.5 model",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#december-19-2025",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2025-12-19T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Haiku 3.5 model. Read more in our documentation.",
-      "fetched_at": "2026-03-09T15:28:58.170Z",
+      "summary": "We announced the deprecation of the Claude Haiku 3.5 model. Read more in Model deprecations.",
+      "fetched_at": "2026-03-11T22:15:55.430Z",
       "explanation": {
         "what_it_is": "The Claude Haiku 3.5 model is being deprecated, meaning it will no longer be supported or maintained.",
         "why_it_matters": "This change affects Claude Code users who currently rely on the Haiku 3.5 model, as they will need to migrate to a different model to ensure continued support and compatibility.",
         "how_to_use": [
-          "Review the documentation to understand the deprecation timeline and recommended replacement models",
-          "Update existing code to use a supported model, such as the latest Haiku version"
+          "Review the Model deprecations documentation to understand the timeline and alternatives",
+          "Assess your current codebase for dependencies on the Haiku 3.5 model",
+          "Plan a migration to a recommended replacement model"
         ]
       }
     },
@@ -1265,21 +1266,21 @@
       }
     },
     {
-      "id": "aa364fdd",
+      "id": "85f658a3",
       "title": "Search result content blocks are now generally available on Amazon Bedrock",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#november-21-2025",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2025-11-21T00:00:00.000Z",
-      "summary": "Search result content blocks are now generally available on Amazon Bedrock. Learn more in our search results documentation.",
-      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "summary": "Search result content blocks are now generally available on Amazon Bedrock. Learn more in Search results.",
+      "fetched_at": "2026-03-11T22:15:55.430Z",
       "explanation": {
-        "what_it_is": "Search result content blocks allow developers to embed search results directly into their applications, and this feature is now available for use on Amazon Bedrock.",
-        "why_it_matters": "This update enables Claude Code users to integrate search functionality into their Amazon Bedrock applications, making it easier to provide relevant search results to their users.",
+        "what_it_is": "Search result content blocks are now available for general use on the Amazon Bedrock platform, allowing developers to integrate search functionality into their applications.",
+        "why_it_matters": "This update enables Claude Code users to build more comprehensive search features into their Amazon Bedrock-based projects, providing a more seamless user experience.",
         "how_to_use": [
-          "Use the search result content blocks to display relevant search results within your Amazon Bedrock application",
-          "Refer to the search results documentation for implementation details and best practices"
+          "Use search result content blocks to display relevant search results within your Amazon Bedrock application",
+          "Integrate search functionality into your application's workflow to enhance user engagement"
         ]
       }
     },
@@ -1341,20 +1342,20 @@
       }
     },
     {
-      "id": "d4d99051",
+      "id": "4b7efbfc",
       "title": "We announced the deprecation of the Claude Sonnet 3.7 model",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2025-10-28T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in our documentation.",
-      "fetched_at": "2026-03-09T16:43:29.565Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in Model deprecations.",
+      "fetched_at": "2026-03-11T22:15:55.430Z",
       "explanation": {
-        "what_it_is": "The Claude Sonnet 3.7 model has been deprecated, meaning it will no longer be supported or maintained.",
-        "why_it_matters": "This change affects Claude Code users who rely on the 3.7 model, as they will need to migrate to a newer model to ensure continued support and compatibility.",
+        "what_it_is": "The Claude Sonnet 3.7 model is being deprecated, meaning it will no longer be supported or maintained.",
+        "why_it_matters": "This change affects Claude Code users who currently rely on the 3.7 model, as they will need to migrate to a newer model to ensure continued support and compatibility.",
         "how_to_use": [
-          "Review the documentation to understand the deprecation timeline and recommended replacement models",
+          "Review the Model deprecations documentation to understand the timeline and alternatives",
           "Update existing code to use a supported Claude model version"
         ]
       }
@@ -1645,21 +1646,21 @@
       }
     },
     {
-      "id": "981621a3",
+      "id": "3b27ba73",
       "title": "We've launched support for citable documents in client-side tool results",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2025-09-03T00:00:00.000Z",
-      "summary": "We've launched support for citable documents in client-side tool results. Learn more in our tool use documentation.",
-      "fetched_at": "2026-03-09T19:31:31.661Z",
+      "summary": "We've launched support for citable documents in client-side tool results. Learn more in How to implement tool use.",
+      "fetched_at": "2026-03-11T22:15:55.430Z",
       "explanation": {
-        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
-        "why_it_matters": "This update enables Claude Code users to generate results that can be easily cited and referenced, improving the reliability and credibility of their work.",
+        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and trustworthy output from tools.",
+        "why_it_matters": "This update enables Claude Code users to generate more reliable and verifiable results, which is particularly important for applications where accuracy and transparency are crucial.",
         "how_to_use": [
-          "Use the updated client-side tool to generate citable documents for research and academic purposes",
-          "Reference the tool use documentation for implementation details and best practices"
+          "Use the updated client-side tool results to generate citable documents for research or academic purposes",
+          "Implement tool use as described in the 'How to implement tool use' guide to take advantage of this new feature"
         ]
       }
     },
