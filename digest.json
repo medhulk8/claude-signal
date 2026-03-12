@@ -1,8 +1,47 @@
 {
   "version": 1,
-  "generated_at": "2026-03-11T23:14:08.763Z",
+  "generated_at": "2026-03-12T00:51:12.295Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "af8015e5",
+      "title": "Added actionable suggestions to /context command — identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-12T00:34:23Z",
+      "summary": "v2.1.74",
+      "fetched_at": "2026-03-12T00:51:12.636Z",
+      "explanation": {
+        "what_it_is": "The /context command now provides actionable suggestions to help optimize context-heavy tools, memory bloat, and capacity warnings.",
+        "why_it_matters": "This update enables Claude Code users to identify and address performance issues more efficiently, with specific tips for optimization.",
+        "how_to_use": [
+          "Run the /context command to receive suggestions for optimizing context-heavy tools",
+          "Use the command to identify memory bloat and receive tips for reducing it",
+          "Address capacity warnings with specific optimization recommendations"
+        ]
+      }
+    },
+    {
+      "id": "04f6f6a1",
+      "title": "Added autoMemoryDirectory setting to configure a custom directory for auto-memory storage",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-12T00:34:23Z",
+      "summary": "v2.1.74",
+      "fetched_at": "2026-03-12T00:51:12.636Z",
+      "explanation": {
+        "what_it_is": "The autoMemoryDirectory setting allows you to specify a custom directory for storing auto-memory data in Claude Code.",
+        "why_it_matters": "This setting gives you control over where auto-memory data is stored, which can be useful for managing disk space or organizing project files.",
+        "how_to_use": [
+          "Set autoMemoryDirectory to a custom path in your project settings to store auto-memory data outside the default directory.",
+          "Use this setting to keep auto-memory data separate from other project files for easier cleanup or archiving."
+        ]
+      }
+    },
     {
       "id": "ce5f5e5a",
       "title": "Added modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)",
@@ -1681,44 +1720,6 @@
           "Execute Bash commands to automate system tasks",
           "Write code in languages other than Python, such as JavaScript or Ruby",
           "Manipulate files directly from within the Code Execution Tool"
-        ]
-      }
-    },
-    {
-      "id": "275cc454",
-      "title": "We launched a beta version of the PHP SDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-27T00:00:00.000Z",
-      "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-03-09T19:31:31.661Z",
-      "explanation": {
-        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
-        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, within their PHP workflows.",
-        "how_to_use": [
-          "Install the PHP SDK using Composer",
-          "Use the SDK to send API requests to the Anthropic API from your PHP application"
-        ]
-      }
-    },
-    {
-      "id": "459474e9",
-      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API. For more information, see Long context rate limits.",
-      "fetched_at": "2026-03-09T19:31:31.661Z",
-      "explanation": {
-        "what_it_is": "The rate limits for the 1M token context window on Claude Sonnet 4 have been increased, allowing for more requests to be made within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, which can speed up development and testing workflows.",
-        "how_to_use": [
-          "Make more frequent API calls to Claude Sonnet 4 with large context windows",
-          "Process longer texts or larger datasets without reducing request frequency"
         ]
       }
     }
