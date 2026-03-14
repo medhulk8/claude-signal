@@ -1,8 +1,143 @@
 {
   "version": 1,
-  "generated_at": "2026-03-14T00:56:15.736Z",
+  "generated_at": "2026-03-14T03:22:02.895Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "988e29d7",
+      "title": "Added MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "MCP elicitation support allows MCP servers to request structured input from users mid-task through interactive dialogs, which can be filled out using form fields or by providing a browser URL.",
+        "why_it_matters": "This update enables more dynamic and interactive tasks in Claude Code, as MCP servers can now collect specific information from users at any point during a task.",
+        "how_to_use": [
+          "Use the MCP elicitation support to request user input for tasks that require dynamic data, such as filling out a form or providing a URL for further processing.",
+          "Implement interactive dialogs in your MCP servers to collect structured input from users and create more flexible workflows."
+        ]
+      }
+    },
+    {
+      "id": "564e51e9",
+      "title": "Added new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "New hooks for Elicitation and ElicitationResult that allow interception and override of responses before they are sent back",
+        "why_it_matters": "This update gives Claude Code users more control over the response pipeline, enabling custom modifications or filtering of responses",
+        "how_to_use": [
+          "Use the Elicitation hook to modify input data before it's processed",
+          "Use the ElicitationResult hook to override or transform the response before it's returned to the user"
+        ]
+      }
+    },
+    {
+      "id": "f4d1b237",
+      "title": "Added -n / --name <name> CLI flag to set a display name for the session at startup",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "The -n or --name CLI flag allows you to specify a custom display name for your Claude Code session when starting up from the command line.",
+        "why_it_matters": "This feature enables you to easily identify and distinguish between multiple Claude Code sessions running concurrently, making it simpler to manage your workflow.",
+        "how_to_use": [
+          "Use the flag by appending -n or --name followed by your desired session name, e.g., `claude-code -n my_session`",
+          "Replace `my_session` with any name that helps you identify the purpose or context of the session"
+        ]
+      }
+    },
+    {
+      "id": "dbad6dd7",
+      "title": "Added worktree.sparsePaths setting for claude --worktree in large monorepos to check out only the directories you need via git sparse-checkout",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "The worktree.sparsePaths setting allows you to specify directories to check out when using claude --worktree in large monorepos, utilizing git sparse-checkout to only retrieve necessary files.",
+        "why_it_matters": "This setting helps reduce the amount of data that needs to be checked out, making it faster and more efficient to work with large monorepos.",
+        "how_to_use": [
+          "Use the worktree.sparsePaths setting to specify directories to check out, such as 'claude --worktree --sparse-paths=dir1,dir2'",
+          "Configure git sparse-checkout to only retrieve necessary files, reducing the amount of data that needs to be checked out"
+        ]
+      }
+    },
+    {
+      "id": "9130a067",
+      "title": "Added PostCompact hook that fires after compaction completes",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "The PostCompact hook is a new event that triggers after the compaction process is complete, allowing for custom actions to be taken after data has been compacted.",
+        "why_it_matters": "This hook enables Claude Code users to automate tasks or run custom scripts immediately after compaction, streamlining their workflow and reducing manual intervention.",
+        "how_to_use": [
+          "Use the PostCompact hook to send a notification when compaction is complete",
+          "Run a custom script to analyze compacted data",
+          "Trigger a data export after compaction"
+        ]
+      }
+    },
+    {
+      "id": "54d61793",
+      "title": "Added /effort slash command to set model effort level",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "The /effort slash command allows you to set the model effort level, controlling the trade-off between response speed and accuracy.",
+        "why_it_matters": "This command gives Claude Code users more control over the model's behavior, enabling them to adjust the effort level based on their specific needs and priorities.",
+        "how_to_use": [
+          "Use /effort low to prioritize speed for simple queries",
+          "Use /effort medium for a balance between speed and accuracy",
+          "Use /effort high for complex queries that require more accurate responses"
+        ]
+      }
+    },
+    {
+      "id": "f61e4b99",
+      "title": "Added session quality survey — enterprise admins can configure the sample rate via the feedbackSurveyRate setting",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-14T01:23:58Z",
+      "summary": "v2.1.76",
+      "fetched_at": "2026-03-14T03:22:03.276Z",
+      "explanation": {
+        "what_it_is": "A session quality survey that collects feedback from users, with a configurable sample rate set by enterprise admins via the feedbackSurveyRate setting.",
+        "why_it_matters": "This feature allows enterprise admins to gather targeted feedback from users, helping to identify and improve the quality of sessions in Claude Code.",
+        "how_to_use": [
+          "Set the feedbackSurveyRate to a specific percentage, such as 10%, to control how often users are prompted to take the survey.",
+          "Use the survey feedback to inform improvements to session quality, such as adjusting settings or optimizing workflows."
+        ]
+      }
+    },
     {
       "id": "9b97d133",
       "title": "The 1M token context window is now generally available for Claude Opus 4.6 and…",
@@ -810,101 +945,6 @@
       }
     },
     {
-      "id": "ab3c8f01",
-      "title": "Added /simplify and /batch bundled slash commands",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-02-28T03:45:37Z",
-      "summary": "v2.1.63",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "The /simplify and /batch commands are two new bundled slash commands in Claude Code, allowing users to simplify code and process batches of data respectively.",
-        "why_it_matters": "These commands simplify workflows by providing quick access to code simplification and batch processing, reducing the need for manual intervention.",
-        "how_to_use": [
-          "Use /simplify to reduce complexity in your code",
-          "Use /batch to process multiple data sets at once"
-        ]
-      }
-    },
-    {
-      "id": "a050133b",
-      "title": "Added ENABLE_CLAUDEAI_MCP_SERVERS=false env var to opt out from making claude.ai MCP servers available",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-02-28T03:45:37Z",
-      "summary": "v2.1.63",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "A new environment variable ENABLE_CLAUDEAI_MCP_SERVERS that can be set to false to prevent Claude AI MCP servers from being available.",
-        "why_it_matters": "This update allows Claude Code users to opt out of using Claude AI MCP servers, providing more control over their environment.",
-        "how_to_use": [
-          "Set ENABLE_CLAUDEAI_MCP_SERVERS=false in your environment variables to disable Claude AI MCP servers",
-          "Use this setting when you want to restrict access to Claude AI MCP servers for security or compliance reasons"
-        ]
-      }
-    },
-    {
-      "id": "a3b7580e",
-      "title": "Added HTTP hooks, which can POST JSON to a URL and receive JSON instead of running a shell command",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-02-28T03:45:37Z",
-      "summary": "v2.1.63",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "HTTP hooks allow Claude Code to send JSON data to a specified URL and receive JSON in response, bypassing the need for shell commands.",
-        "why_it_matters": "This update enables Claude Code users to integrate with web services and APIs directly, simplifying workflows and reducing reliance on local command-line tools.",
-        "how_to_use": [
-          "Configure an HTTP hook to send JSON data to a web service for processing",
-          "Use the received JSON response to inform subsequent actions in your Claude Code workflow"
-        ]
-      }
-    },
-    {
-      "id": "cd53f6fa",
-      "title": "Added manual URL paste fallback during MCP OAuth authentication. If the automatic localhost redirect doesn't work, you can paste the callback URL to…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-02-28T03:45:37Z",
-      "summary": "v2.1.63",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "A manual URL paste fallback for MCP OAuth authentication, allowing users to paste the callback URL when the automatic localhost redirect fails.",
-        "why_it_matters": "This fallback ensures that users can still complete the OAuth authentication process even if the automatic redirect doesn't work, preventing authentication failures.",
-        "how_to_use": [
-          "When the automatic localhost redirect fails, copy the callback URL from the authentication page",
-          "Paste the callback URL into the prompt to complete the authentication process"
-        ]
-      }
-    },
-    {
-      "id": "49bb3c17",
-      "title": "Added \"Always copy full response\" option to the /copy picker. When selected, future /copy commands will skip the code block picker and copy the full…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-02-28T03:45:37Z",
-      "summary": "v2.1.63",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "The 'Always copy full response' option allows you to skip the code block picker and copy the full response when using the /copy command.",
-        "why_it_matters": "This option saves time by eliminating the need to select a code block every time you want to copy a full response, streamlining your workflow in Claude Code.",
-        "how_to_use": [
-          "Select the 'Always copy full response' option in the /copy picker to enable this feature.",
-          "Use the /copy command to copy the full response without being prompted to select a code block."
-        ]
-      }
-    },
-    {
       "id": "c1c9ea77",
       "title": "We've launched automatic caching for the Messages API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#february-19-2026",
@@ -1682,44 +1722,6 @@
         "how_to_use": [
           "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
           "Fetch PDF documents to extract and utilize their content in Claude-based workflows"
-        ]
-      }
-    },
-    {
-      "id": "9a654a18",
-      "title": "We've launched the Claude Code Analytics API, enabling organizations to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
-      "fetched_at": "2026-03-09T19:31:31.661Z",
-      "explanation": {
-        "what_it_is": "The Claude Code Analytics API provides daily aggregated usage metrics, including productivity metrics and tool usage statistics, allowing organizations to access this data programmatically.",
-        "why_it_matters": "This API enables organizations to track and analyze their Claude Code usage in a more automated and scalable way, potentially informing decisions about tool adoption and workflow optimization.",
-        "how_to_use": [
-          "Use the API to fetch daily usage metrics for your organization and integrate them into your internal analytics dashboards.",
-          "Automate the generation of weekly or monthly reports on Claude Code tool usage and productivity metrics."
-        ]
-      }
-    },
-    {
-      "id": "4db94bfb",
-      "title": "We launched a beta version of the CSDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-08T00:00:00.000Z",
-      "summary": "We launched a beta version of the CSDK.",
-      "fetched_at": "2026-03-09T16:43:29.565Z",
-      "explanation": {
-        "what_it_is": "The CSDK beta is a software development kit that allows developers to integrate Claude Code functionality into their applications.",
-        "why_it_matters": "This beta release provides developers with early access to the CSDK, enabling them to start building custom integrations and testing its capabilities before the full release.",
-        "how_to_use": [
-          "Use the CSDK beta to develop custom applications that leverage Claude Code's features",
-          "Test and provide feedback on the CSDK beta to shape its development"
         ]
       }
     }
