@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-14T13:36:58.909Z",
+  "generated_at": "2026-03-14T14:17:43.779Z",
   "item_count": 90,
   "items": [
     {
@@ -1192,6 +1192,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-03-14T14:17:45.580Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without beta restrictions, and requires updating the output_format parameter location for structured outputs. This affects how users configure output formats in their code.",
+        "how_to_use": [
+          "Update your code to use output_config.format instead of output_format for structured outputs",
+          "Test your code with fine-grained tool streaming on different models and platforms to ensure compatibility"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1703,25 +1722,6 @@
         "how_to_use": [
           "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
           "Fetch PDF documents to extract and utilize their content in Claude-based workflows"
-        ]
-      }
-    },
-    {
-      "id": "9a654a18",
-      "title": "We've launched the Claude Code Analytics API, enabling organizations to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
-      "fetched_at": "2026-03-14T13:37:00.344Z",
-      "explanation": {
-        "what_it_is": "The Claude Code Analytics API provides daily aggregated usage metrics, including productivity metrics and tool usage statistics, allowing organizations to access this data programmatically.",
-        "why_it_matters": "This API enables organizations to track and analyze their Claude Code usage in a more automated and scalable way, which can inform decisions about tool adoption and optimization.",
-        "how_to_use": [
-          "Use the API to fetch daily usage metrics for your organization and integrate them into your internal analytics dashboards",
-          "Leverage the API to automate reporting on Claude Code tool usage and productivity metrics"
         ]
       }
     }
