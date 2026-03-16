@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-03-16T19:44:50.103Z",
+  "generated_at": "2026-03-16T20:24:39.266Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "b5983bf0",
+      "title": "We've launched the display field for extended thinking, letting you omit…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#march-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-03-16T00:00:00.000Z",
+      "summary": "We've launched the display field for extended thinking, letting you omit thinking content from responses for faster streaming. Set thinking.display: \"omitted\" to receive thinking blocks with an empty…",
+      "fetched_at": "2026-03-16T20:24:40.897Z",
+      "explanation": {
+        "what_it_is": "The display field for extended thinking allows you to control whether thinking content is included in responses, with the option to omit it for faster streaming.",
+        "why_it_matters": "This change enables faster response times by excluding unnecessary thinking content, which can be beneficial for applications where speed is critical.",
+        "how_to_use": [
+          "Set thinking.display: 'omitted' to receive thinking blocks with empty content",
+          "Use this feature to optimize streaming performance in applications with tight latency requirements"
+        ]
+      }
+    },
     {
       "id": "988e29d7",
       "title": "Added MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)",
@@ -1703,25 +1722,6 @@
         "how_to_use": [
           "Update bookmarks and links to reflect the new Claude branding and URLs",
           "Verify that existing API integrations and code continue to work as expected"
-        ]
-      }
-    },
-    {
-      "id": "047cf5e1",
-      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in our web fetch tool documentation.",
-      "fetched_at": "2026-03-09T19:31:31.661Z",
-      "explanation": {
-        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
-        "why_it_matters": "This update allows Claude Code users to access and process web-based content directly, expanding the scope of potential inputs for their applications.",
-        "how_to_use": [
-          "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
-          "Fetch PDF documents to extract and utilize their content in Claude-based workflows"
         ]
       }
     }
