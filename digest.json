@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-03-16T23:18:59.982Z",
+  "generated_at": "2026-03-17T00:58:32.698Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "0f859748",
+      "title": "Added allowRead sandbox filesystem setting to re-allow read access within denyRead regions",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-17T00:28:12Z",
+      "summary": "v2.1.77",
+      "fetched_at": "2026-03-17T00:58:33.196Z",
+      "explanation": {
+        "what_it_is": "The allowRead sandbox filesystem setting allows read access to specific regions of the filesystem that were previously blocked by denyRead settings.",
+        "why_it_matters": "This update gives Claude Code users more fine-grained control over filesystem access, enabling read operations in areas where they were previously restricted.",
+        "how_to_use": [
+          "Set allowRead to true in your sandbox filesystem configuration to override denyRead settings for specific regions.",
+          "Use this setting to enable read access to specific files or directories within a denyRead region."
+        ]
+      }
+    },
     {
       "id": "b5983bf0",
       "title": "We've launched the display field for extended thinking, letting you omit…",
@@ -1703,25 +1722,6 @@
         "how_to_use": [
           "Use the tool helpers to create tools with validated input parameters",
           "Run automated tools using the tool runner in your Python or TypeScript application"
-        ]
-      }
-    },
-    {
-      "id": "1f79d078",
-      "title": "We've unified our developer offerings under the Claude brand",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-16-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-16T00:00:00.000Z",
-      "summary": "We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are…",
-      "fetched_at": "2026-03-09T18:34:07.010Z",
-      "explanation": {
-        "what_it_is": "The developer offerings are now unified under the Claude brand, resulting in updated naming and URLs across the platform and documentation.",
-        "why_it_matters": "This change simplifies the developer experience by providing a consistent brand identity, but does not affect the existing developer interfaces.",
-        "how_to_use": [
-          "Update bookmarks and links to reflect the new Claude branding and URLs",
-          "Verify that existing API integrations and code continue to work as expected"
         ]
       }
     }
