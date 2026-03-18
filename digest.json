@@ -1,8 +1,85 @@
 {
   "version": 1,
-  "generated_at": "2026-03-17T23:20:10.729Z",
+  "generated_at": "2026-03-18T01:02:46.033Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "67742e1f",
+      "title": "Added StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-17T23:42:55Z",
+      "summary": "v2.1.78",
+      "fetched_at": "2026-03-18T01:02:46.440Z",
+      "explanation": {
+        "what_it_is": "The StopFailure hook event is a new event in Claude Code that triggers when a turn ends due to an API error, such as rate limiting or authentication failure.",
+        "why_it_matters": "This event allows developers to handle and respond to API errors in a more explicit way, enabling better error handling and debugging in their applications.",
+        "how_to_use": [
+          "Use the StopFailure hook to log API error events for debugging purposes",
+          "Implement retry logic in response to StopFailure events to handle transient API errors"
+        ]
+      }
+    },
+    {
+      "id": "b17a445a",
+      "title": "Added ${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-17T23:42:55Z",
+      "summary": "v2.1.78",
+      "fetched_at": "2026-03-18T01:02:46.440Z",
+      "explanation": {
+        "what_it_is": "The ${CLAUDE_PLUGIN_DATA} variable allows plugins to store persistent state that remains intact even after plugin updates. This variable enables plugins to retain data across different versions.",
+        "why_it_matters": "This update changes how plugins manage data, allowing them to maintain consistency and avoid data loss after updates. It also introduces a prompt before uninstalling a plugin to prevent accidental data deletion.",
+        "how_to_use": [
+          "Use ${CLAUDE_PLUGIN_DATA} to store plugin settings or user preferences that should persist across updates",
+          "Access the stored data in your plugin to provide a consistent user experience",
+          "Confirm or cancel the uninstallation of a plugin when prompted to avoid unintentionally deleting persistent data"
+        ]
+      }
+    },
+    {
+      "id": "6c317bfe",
+      "title": "Added effort, maxTurns, and disallowedTools frontmatter support for plugin-shipped agents",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-17T23:42:55Z",
+      "summary": "v2.1.78",
+      "fetched_at": "2026-03-18T01:02:46.440Z",
+      "explanation": {
+        "what_it_is": "The effort, maxTurns, and disallowedTools frontmatter options are now supported for agents shipped with plugins, allowing for more fine-grained control over agent behavior.",
+        "why_it_matters": "This update gives developers more flexibility in configuring plugin-shipped agents, enabling them to tailor agent behavior to specific use cases.",
+        "how_to_use": [
+          "Add effort, maxTurns, and disallowedTools options to an agent's frontmatter to customize its behavior",
+          "Use these options to limit the number of turns an agent can take or restrict the tools it can use"
+        ]
+      }
+    },
+    {
+      "id": "ad3028ea",
+      "title": "Added ANTHROPIC_CUSTOM_MODEL_OPTION env var to add a custom entry to the /model picker, with optional _NAME and _DESCRIPTION suffixed vars for display",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-17T23:42:55Z",
+      "summary": "v2.1.78",
+      "fetched_at": "2026-03-18T01:02:46.440Z",
+      "explanation": {
+        "what_it_is": "The ANTHROPIC_CUSTOM_MODEL_OPTION environment variable allows you to add a custom model to the model picker in Claude Code. You can also specify a custom name and description for the model using the _NAME and _DESCRIPTION suffixed variables.",
+        "why_it_matters": "This update gives Claude Code users more flexibility in managing their models, allowing them to easily add and identify custom models. It simplifies the workflow for users who need to work with multiple custom models.",
+        "how_to_use": [
+          "Set the ANTHROPIC_CUSTOM_MODEL_OPTION environment variable to the path of your custom model",
+          "Optionally, set ANTHROPIC_CUSTOM_MODEL_OPTION_NAME and ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION to customize the display name and description of your model"
+        ]
+      }
+    },
     {
       "id": "0f859748",
       "title": "Added allowRead sandbox filesystem setting to re-allow read access within denyRead regions",
@@ -1646,82 +1723,6 @@
         "how_to_use": [
           "Check the updated pricing documentation to understand the costs associated with using AWS Bedrock and Google Vertex AI endpoints",
           "Review your current deployment costs to identify potential savings or areas for optimization"
-        ]
-      }
-    },
-    {
-      "id": "17ac1c1a",
-      "title": "We've introduced a new stop reason model_context_window_exceeded that allows…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-29T00:00:00.000Z",
-      "summary": "We've introduced a new stop reason model_context_window_exceeded that allows you to request the maximum possible tokens without calculating input size. Learn more in our handling stop reasons…",
-      "fetched_at": "2026-03-09T18:34:07.010Z",
-      "explanation": {
-        "what_it_is": "A new stop reason called model_context_window_exceeded that stops the model when the context window is exceeded, allowing users to request the maximum possible tokens without calculating input size.",
-        "why_it_matters": "This update allows Claude Code users to make requests without having to manually calculate the input size, simplifying the workflow and reducing potential errors.",
-        "how_to_use": [
-          "Request the maximum possible tokens without specifying input size",
-          "Handle the model_context_window_exceeded stop reason in your error handling code"
-        ]
-      }
-    },
-    {
-      "id": "a2ac55ea",
-      "title": "We've launched the memory tool in beta, enabling Claude to store and consult…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-29T00:00:00.000Z",
-      "summary": "We've launched the memory tool in beta, enabling Claude to store and consult information across conversations. Learn more in our memory tool documentation.",
-      "fetched_at": "2026-03-09T18:34:07.010Z",
-      "explanation": {
-        "what_it_is": "The memory tool is a beta feature that allows Claude to store and retrieve information across multiple conversations.",
-        "why_it_matters": "This feature enables Claude to maintain context and provide more accurate responses based on previous interactions, changing how users can engage with Claude in multi-turn conversations.",
-        "how_to_use": [
-          "Use the memory tool to store user preferences or previous conversation history",
-          "Consult the memory tool documentation to learn how to implement and utilize this feature in your application"
-        ]
-      }
-    },
-    {
-      "id": "8e75a728",
-      "title": "We've launched context editing in beta, providing strategies to automatically…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-29T00:00:00.000Z",
-      "summary": "We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token…",
-      "fetched_at": "2026-03-09T18:34:07.010Z",
-      "explanation": {
-        "what_it_is": "Context editing is a beta feature that automatically manages conversation context by clearing older tool results and calls when approaching token limits.",
-        "why_it_matters": "This feature helps prevent context overflow and allows for more efficient conversation management, particularly when working with large or complex conversations.",
-        "how_to_use": [
-          "Use context editing to clear older tool results and calls when approaching token limits",
-          "Implement strategies to automatically manage conversation context and prevent context overflow"
-        ]
-      }
-    },
-    {
-      "id": "a6ef8a20",
-      "title": "We've launched tool helpers in beta for the Python and TypeScript SDKs,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-17-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-17T00:00:00.000Z",
-      "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
-      "fetched_at": "2026-03-09T18:34:07.010Z",
-      "explanation": {
-        "what_it_is": "Tool helpers are a new beta feature in the Python and TypeScript SDKs that provide type-safe input validation and a tool runner for automated tool handling.",
-        "why_it_matters": "This simplifies the process of creating and executing tools, making it easier for developers to automate tasks and validate user input.",
-        "how_to_use": [
-          "Use the tool helpers to create tools with validated input parameters",
-          "Run automated tools using the tool runner in your Python or TypeScript application"
         ]
       }
     }
