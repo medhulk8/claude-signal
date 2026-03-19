@@ -1,8 +1,104 @@
 {
   "version": 1,
-  "generated_at": "2026-03-19T21:23:06.627Z",
+  "generated_at": "2026-03-19T22:14:55.326Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f6589288",
+      "title": "Added rate_limits field to statusline scripts for displaying Claude.ai rate limit usage (5-hour and 7-day windows with used_percentage and resets_at)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-19T22:08:48Z",
+      "summary": "v2.1.80",
+      "fetched_at": "2026-03-19T22:14:55.631Z",
+      "explanation": {
+        "what_it_is": "The rate_limits field is a new addition to statusline scripts, allowing users to display their Claude.ai rate limit usage. It provides data for 5-hour and 7-day windows, including used_percentage and resets_at.",
+        "why_it_matters": "This update enables Claude Code users to monitor their rate limit usage directly within their statusline scripts, helping them avoid unexpected rate limit errors. It provides more transparency into their API usage.",
+        "how_to_use": [
+          "Access the rate_limits field in your statusline script to display current rate limit usage",
+          "Use the used_percentage value to create custom warnings when approaching rate limits",
+          "Utilize the resets_at value to schedule tasks around rate limit resets"
+        ]
+      }
+    },
+    {
+      "id": "4fc6f903",
+      "title": "Added source: 'settings' plugin marketplace source — declare plugin entries inline in settings.json",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-19T22:08:48Z",
+      "summary": "v2.1.80",
+      "fetched_at": "2026-03-19T22:14:55.631Z",
+      "explanation": {
+        "what_it_is": "The 'settings' plugin marketplace source allows declaring plugin entries directly in the settings.json file, streamlining plugin management.",
+        "why_it_matters": "This update simplifies plugin configuration by eliminating the need for separate plugin configuration files, making it easier to manage and track plugin entries in a single location.",
+        "how_to_use": [
+          "Declare a plugin entry in settings.json by adding a 'plugins' section with the plugin name and version",
+          "Use the 'settings' source to manage plugin dependencies and updates from the plugin marketplace"
+        ]
+      }
+    },
+    {
+      "id": "fd3bb7f6",
+      "title": "Added CLI tool usage detection to plugin tips, in addition to file pattern matching",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-19T22:08:48Z",
+      "summary": "v2.1.80",
+      "fetched_at": "2026-03-19T22:14:55.631Z",
+      "explanation": {
+        "what_it_is": "The Claude Code plugin now detects CLI tool usage in addition to file pattern matching to provide more accurate tips.",
+        "why_it_matters": "This update allows Claude Code to offer more relevant suggestions based on the tools being used, potentially reducing the time spent searching for the right commands or configurations.",
+        "how_to_use": [
+          "Run a CLI tool in your project to see tool-specific tips in the Claude Code plugin",
+          "Use file pattern matching in conjunction with CLI tool detection for more precise plugin suggestions"
+        ]
+      }
+    },
+    {
+      "id": "745c4ec1",
+      "title": "Added effort frontmatter support for skills and slash commands to override the model effort level when invoked",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-19T22:08:48Z",
+      "summary": "v2.1.80",
+      "fetched_at": "2026-03-19T22:14:55.631Z",
+      "explanation": {
+        "what_it_is": "Effort frontmatter support allows you to specify a custom effort level for skills and slash commands, overriding the default model effort level when invoked.",
+        "why_it_matters": "This update gives Claude Code users more control over the effort level applied to specific skills and commands, enabling more fine-grained customization of model behavior.",
+        "how_to_use": [
+          "Add effort frontmatter to a skill to override the default effort level for that skill",
+          "Use effort frontmatter with a slash command to customize the effort level for a specific command invocation"
+        ]
+      }
+    },
+    {
+      "id": "8fbc1d19",
+      "title": "Added --channels (research preview) — allow MCP servers to push messages into your session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-19T22:08:48Z",
+      "summary": "v2.1.80",
+      "fetched_at": "2026-03-19T22:14:55.631Z",
+      "explanation": {
+        "what_it_is": "The --channels option allows MCP servers to push messages directly into your Claude Code session, enabling real-time communication.",
+        "why_it_matters": "This feature enables MCP servers to proactively send messages to users, changing how users interact with these servers in their Claude Code workflow.",
+        "how_to_use": [
+          "Use the --channels option when connecting to an MCP server to enable push messages",
+          "Test the --channels option in a research preview environment to explore its capabilities"
+        ]
+      }
+    },
     {
       "id": "263f75b3",
       "title": "Added --console flag to claude auth login for Anthropic Console (API billing) authentication",
@@ -660,64 +756,6 @@
       }
     },
     {
-      "id": "ef3cbd05",
-      "title": "[VSCode] Added spark icon in VS Code activity bar that lists all Claude Code sessions, with sessions opening as full editors",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.70",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-06T01:20:02Z",
-      "summary": "v2.1.70",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "A spark icon has been added to the VS Code activity bar, which lists all active Claude Code sessions. These sessions can now be opened as full editors.",
-        "why_it_matters": "This update allows for easier management and access to multiple Claude Code sessions within the VS Code environment. It streamlines workflow by providing a centralized location to view and interact with all sessions.",
-        "how_to_use": [
-          "Click the spark icon in the VS Code activity bar to view a list of all active Claude Code sessions.",
-          "Select a session from the list to open it as a full editor in VS Code."
-        ]
-      }
-    },
-    {
-      "id": "9ca97c3f",
-      "title": "[VSCode] Added full markdown document view for plans in VS Code, with support for adding comments to provide feedback",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.70",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-06T01:20:02Z",
-      "summary": "v2.1.70",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "A full markdown document view for plans in VS Code, allowing users to view and interact with plans in a more readable format, and add comments to provide feedback.",
-        "why_it_matters": "This update enables Claude Code users to collaborate more effectively on plans within VS Code, by providing a clear and readable view of the plan and allowing for direct feedback.",
-        "how_to_use": [
-          "Open a plan in VS Code to view it in the new markdown document view",
-          "Add comments to specific sections of the plan to provide feedback to team members"
-        ]
-      }
-    },
-    {
-      "id": "23f16b30",
-      "title": "[VSCode] Added native MCP server management dialog — use /mcp in the chat panel to enable/disable servers, reconnect, and manage OAuth authentication…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.70",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-06T01:20:02Z",
-      "summary": "v2.1.70",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "A native MCP server management dialog in VSCode that can be accessed using the /mcp command in the chat panel, allowing for server management and OAuth authentication.",
-        "why_it_matters": "This update streamlines MCP server management within the VSCode environment, eliminating the need to switch between tools or interfaces to manage servers and authentication.",
-        "how_to_use": [
-          "Use /mcp in the chat panel to open the server management dialog",
-          "Enable or disable servers directly from the dialog",
-          "Reconnect to servers or manage OAuth authentication using the dialog"
-        ]
-      }
-    },
-    {
       "id": "c1c9ea77",
       "title": "We've launched automatic caching for the Messages API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#february-19-2026",
@@ -962,6 +1000,25 @@
         "how_to_use": [
           "Use the 1M token context window in Claude Opus 4.6 to process large documents or texts that exceed 200k tokens",
           "Test the beta feature with input requests that exceed 200k tokens to take advantage of the increased context window"
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-03-19T22:14:56.718Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings into a single location.",
+        "how_to_use": [
+          "Use the output_config.format parameter to specify the desired output format for structured outputs",
+          "Update existing code to reflect the new location of the output_format parameter"
         ]
       }
     },
@@ -1668,65 +1725,6 @@
         "how_to_use": [
           "Use the API to fetch daily or monthly usage reports for your organization",
           "Integrate the API with your existing monitoring tools to track costs in real-time"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-03-19T18:38:11.307Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update provides Claude Code users with programmatic access to organization data, enabling automation and integration of organization information into their workflows.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization details, such as name, ID, and other relevant information.",
-          "Integrate the organization information into custom dashboards or analytics tools.",
-          "Automate organization-specific tasks by leveraging the retrieved information in scripts or applications."
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-03-19T18:38:11.307Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, are being deprecated and will be retired on October 28, 2025.",
-        "why_it_matters": "This deprecation requires users to migrate to alternative models to avoid disruption to their workflows and applications that rely on these models.",
-        "how_to_use": [
-          "Migrate existing applications to use recommended replacement models before October 28, 2025",
-          "Update API calls to reference the new model names",
-          "Test workflows with the new models to ensure compatibility and desired output"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-03-19T21:23:07.806Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
-        "why_it_matters": "With the 1-hour cache duration, users can optimize their workflows by minimizing redundant computations and improving overall performance. This is particularly useful for applications that require frequent reuse of prompt results.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for up to 1 hour, eliminating the need for a beta header",
-          "Optimize workflows by caching prompt results for repeated use cases, such as data processing or information retrieval"
         ]
       }
     }
