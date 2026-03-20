@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-03-20T22:14:48.423Z",
+  "generated_at": "2026-03-20T23:17:09.277Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "0ff3985b",
+      "title": "Added --bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-20T22:24:50Z",
+      "summary": "v2.1.81",
+      "fetched_at": "2026-03-20T23:17:09.860Z",
+      "explanation": {
+        "what_it_is": "The --bare flag is a new option for scripted -p calls in Claude Code, which skips certain features like hooks, LSP, plugin sync, and skill directory walks to simplify the process.",
+        "why_it_matters": "This flag matters because it allows for faster and more lightweight scripted calls, which can be useful for automation or testing purposes, and it requires either an ANTHROPIC_API_KEY or an apiKeyHelper for authentication.",
+        "how_to_use": [
+          "Use the --bare flag with a scripted -p call to bypass unnecessary features and speed up the process, for example: `claude-code -p --bare`",
+          "Make sure to set an ANTHROPIC_API_KEY or use an apiKeyHelper to authenticate your scripted calls when using the --bare flag"
+        ]
+      }
+    },
+    {
+      "id": "0aed0207",
+      "title": "Added --channels permission relay — channel servers that declare the permission capability can forward tool approval prompts to your phone",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-20T22:24:50Z",
+      "summary": "v2.1.81",
+      "fetched_at": "2026-03-20T23:17:09.860Z",
+      "explanation": {
+        "what_it_is": "The --channels permission relay allows channel servers to forward tool approval prompts to your phone, if they declare the permission capability.",
+        "why_it_matters": "This update enables more flexible approval workflows, as users can now receive and respond to prompts on their phone instead of being tied to their computer.",
+        "how_to_use": [
+          "Run Claude Code with the --channels flag to enable permission relay",
+          "Configure your channel server to declare the permission capability"
+        ]
+      }
+    },
     {
       "id": "f6589288",
       "title": "Added rate_limits field to statusline scripts for displaying Claude.ai rate limit usage (5-hour and 7-day windows with used_percentage and resets_at)",
@@ -693,65 +731,6 @@
         "how_to_use": [
           "Use the updated Git URL format to clone a repository from Azure DevOps or AWS CodeCommit directly within Claude Code",
           "Update existing repository connections to use the simplified URL format for easier management"
-        ]
-      }
-    },
-    {
-      "id": "c3bd5c4c",
-      "title": "Added /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-07T00:12:46Z",
-      "summary": "v2.1.71",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "The /loop command allows you to run a prompt or slash command at a specified recurring interval, such as every 5 minutes.",
-        "why_it_matters": "This enables Claude Code users to automate repetitive tasks or checks, such as monitoring deployment status, without manual intervention.",
-        "how_to_use": [
-          "/loop 5m check the deploy",
-          "/loop 1h run daily report"
-        ]
-      }
-    },
-    {
-      "id": "0d2d8f79",
-      "title": "Added cron scheduling tools for recurring prompts within a session",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-07T00:12:46Z",
-      "summary": "v2.1.71",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "Cron scheduling tools allow you to schedule recurring prompts within a Claude Code session, enabling automated execution of tasks at specified intervals. This feature utilizes cron syntax to define the schedule.",
-        "why_it_matters": "With cron scheduling, Claude Code users can automate repetitive tasks, such as data imports or report generation, to run at regular intervals without manual intervention. This streamlines workflows and reduces the need for manual prompting.",
-        "how_to_use": [
-          "Use the cron scheduling tool to schedule a daily prompt to fetch and process new data",
-          "Set up a recurring prompt to generate a weekly report at a specified time",
-          "Define a cron schedule to automate a task that requires regular execution, such as cleaning up temporary files"
-        ]
-      }
-    },
-    {
-      "id": "5348d9fe",
-      "title": "Added voice:pushToTalk keybinding to make the voice activation key rebindable in keybindings.json (default: space) — modifier+letter combos like…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-07T00:12:46Z",
-      "summary": "v2.1.71",
-      "fetched_at": "2026-03-09T15:28:57.312Z",
-      "explanation": {
-        "what_it_is": "The voice:pushToTalk keybinding allows you to rebind the voice activation key in Claude Code, which is set to the space bar by default. This keybinding can be customized in the keybindings.json file.",
-        "why_it_matters": "This update gives users more flexibility in choosing a voice activation key that suits their workflow, potentially reducing conflicts with other keyboard shortcuts. Users can now choose modifier+letter combinations as their voice activation key.",
-        "how_to_use": [
-          "Open the keybindings.json file and add a custom keybinding for voice:pushToTalk, such as 'ctrl+shift+v'",
-          "Use the default space bar keybinding for voice activation",
-          "Experiment with different modifier+letter combinations to find a voice activation key that works best for your workflow"
         ]
       }
     },
@@ -1725,6 +1704,25 @@
         "how_to_use": [
           "Use the API to fetch daily or monthly usage reports for your organization",
           "Integrate the API with your existing monitoring tools to track costs in real-time"
+        ]
+      }
+    },
+    {
+      "id": "cdf7f3fc",
+      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
+      "fetched_at": "2026-03-20T23:17:10.877Z",
+      "explanation": {
+        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
+        "why_it_matters": "This update enables Claude Code users to programmatically access organization data, which can be used for automation, reporting, or integration with other systems.",
+        "how_to_use": [
+          "Use the new endpoint to fetch organization details, such as name, ID, or settings, for use in custom scripts or applications.",
+          "Integrate the organization information with other Anthropic API endpoints to build more comprehensive workflows."
         ]
       }
     }
