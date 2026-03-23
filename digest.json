@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-23T16:41:52.382Z",
+  "generated_at": "2026-03-23T17:41:14.623Z",
   "item_count": 90,
   "items": [
     {
@@ -982,6 +982,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-03-23T17:41:16.907Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more precise control over tool output, and the output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change affects how Claude Code users configure and receive structured output from models, providing more flexibility and consistency across all models and platforms.",
+        "how_to_use": [
+          "Update your API requests to use output_config.format instead of output_format for structured outputs",
+          "Verify that your existing workflows still function as expected with the relocated output_format parameter"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1703,25 +1722,6 @@
         "how_to_use": [
           "Use the new endpoint to fetch organization details, such as name, ID, and other relevant information.",
           "Integrate the organization information into custom dashboards or analytics tools for better insights."
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-03-23T16:41:54.245Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, are being deprecated and will be retired on October 28, 2025.",
-        "why_it_matters": "This deprecation requires Claude Code users to migrate to alternative models to avoid service disruptions after the retirement date.",
-        "how_to_use": [
-          "Migrate existing applications using the deprecated models to newer models before October 28, 2025",
-          "Update code references to use the recommended replacement models"
         ]
       }
     }
