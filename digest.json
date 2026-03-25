@@ -1,8 +1,161 @@
 {
   "version": 1,
-  "generated_at": "2026-03-25T05:52:43.747Z",
+  "generated_at": "2026-03-25T06:45:57.731Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "1754dfdd",
+      "title": "Added managed-settings.d/ drop-in directory alongside managed-settings.json, letting separate teams deploy independent policy fragments that merge…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "A new drop-in directory called managed-settings.d/ that allows separate teams to deploy independent policy fragments, which merge with the existing managed-settings.json file.",
+        "why_it_matters": "This update enables multiple teams to manage their own policy settings independently, without having to coordinate changes to a single file, making it easier to manage complex configurations.",
+        "how_to_use": [
+          "Create a new file in the managed-settings.d/ directory to define a policy fragment specific to your team",
+          "Use this file to override or extend settings defined in the main managed-settings.json file"
+        ]
+      }
+    },
+    {
+      "id": "695fb59b",
+      "title": "Added CwdChanged and FileChanged hook events for reactive environment management (e.g., direnv)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "The CwdChanged and FileChanged hook events allow Claude Code to detect changes in the current working directory and file system, enabling reactive environment management.",
+        "why_it_matters": "This update enables Claude Code users to automate tasks and manage their environment in response to changes in the file system, such as when using direnv.",
+        "how_to_use": [
+          "Use the CwdChanged event to trigger actions when the current working directory changes",
+          "Use the FileChanged event to trigger actions when a file is modified or updated"
+        ]
+      }
+    },
+    {
+      "id": "8a027abc",
+      "title": "Added sandbox.failIfUnavailable setting to exit with an error when sandbox is enabled but cannot start, instead of running unsandboxed",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "The sandbox.failIfUnavailable setting allows Claude Code to exit with an error when the sandbox is enabled but cannot start, preventing the application from running unsandboxed.",
+        "why_it_matters": "This setting ensures that Claude Code maintains its sandboxed environment, preventing potential security risks when the sandbox cannot be initialized.",
+        "how_to_use": [
+          "Set sandbox.failIfUnavailable to true in your configuration to enable this behavior",
+          "Use this setting in environments where sandboxing is required for security or compliance reasons"
+        ]
+      }
+    },
+    {
+      "id": "f61d3a09",
+      "title": "Added disableDeepLinkRegistration setting to prevent claude-cli:// protocol handler registration",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "The disableDeepLinkRegistration setting prevents the registration of the claude-cli:// protocol handler, which is used to handle deep links in Claude Code.",
+        "why_it_matters": "This setting gives users control over whether Claude Code registers the protocol handler, which can be useful in environments where such registrations are not desired or are restricted.",
+        "how_to_use": [
+          "Set disableDeepLinkRegistration to true in your configuration to prevent the claude-cli:// protocol handler from being registered.",
+          "Use this setting on platforms where protocol handler registration is not allowed or is unwanted."
+        ]
+      }
+    },
+    {
+      "id": "a1da092a",
+      "title": "Added CLAUDE_CODE_SUBPROCESS_ENV_SCRUB=1 to strip Anthropic and cloud provider credentials from subprocess environments (Bash tool, hooks, MCP stdio…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "A new environment variable CLAUDE_CODE_SUBPROCESS_ENV_SCRUB=1 that removes Anthropic and cloud provider credentials from subprocess environments in Claude Code.",
+        "why_it_matters": "This update helps prevent accidental exposure of sensitive credentials when running subprocesses, such as Bash tools or hooks, in Claude Code.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_SUBPROCESS_ENV_SCRUB=1 in your environment to enable credential stripping for subprocesses.",
+          "Use this variable in conjunction with Bash tools or hooks to ensure credentials are removed from subprocess environments."
+        ]
+      }
+    },
+    {
+      "id": "ba8ccca2",
+      "title": "Added transcript search — press / in transcript mode (Ctrl+O) to search, n/N to step through matches",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "Transcript search allows you to find specific text within a transcript by pressing / in transcript mode, with Ctrl+O as a shortcut. This enables a search function within the transcript.",
+        "why_it_matters": "This update streamlines the process of locating specific parts of a transcript, saving time for Claude Code users who need to review or reference particular sections. It simplifies navigation within transcripts.",
+        "how_to_use": [
+          "Press / in transcript mode to initiate a search",
+          "Use Ctrl+O as a shortcut to start searching",
+          "Press n/N to step through search matches"
+        ]
+      }
+    },
+    {
+      "id": "0b31442c",
+      "title": "Added Ctrl+X Ctrl+E as an alias for opening the external editor (readline-native binding; Ctrl+G still works)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "A new keyboard shortcut, Ctrl+X Ctrl+E, that opens the external editor in Claude Code, in addition to the existing Ctrl+G shortcut.",
+        "why_it_matters": "This update provides an alternative way to access the external editor, which may be more familiar or convenient for some users, particularly those accustomed to readline-native bindings.",
+        "how_to_use": [
+          "Press Ctrl+X Ctrl+E to open the external editor from within Claude Code",
+          "Use Ctrl+G as an alternative shortcut to achieve the same result"
+        ]
+      }
+    },
+    {
+      "id": "ac1a774f",
+      "title": "Deprecated TaskOutput tool in favor of using Read on the background task's output file path",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-25T06:08:12Z",
+      "summary": "v2.1.83",
+      "fetched_at": "2026-03-25T06:45:58.271Z",
+      "explanation": {
+        "what_it_is": "The TaskOutput tool has been deprecated, and users are now expected to use the Read function to access the output file path of a background task.",
+        "why_it_matters": "This change requires users to update their workflows to use the Read function, which provides a more direct way to access task output.",
+        "how_to_use": [
+          "Replace TaskOutput with Read('/path/to/background/task/output') in your code",
+          "Update your task output handling to use the Read function's file path parameter"
+        ]
+      }
+    },
     {
       "id": "0ff3985b",
       "title": "Added --bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via…",
@@ -615,121 +768,6 @@
         "how_to_use": [
           "Use the /config command to set output style instead of /output-style",
           "Set output style at the start of each session for optimal caching"
-        ]
-      }
-    },
-    {
-      "id": "45008c56",
-      "title": "Added w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-10T00:43:03Z",
-      "summary": "v2.1.72",
-      "fetched_at": "2026-03-10T00:53:42.436Z",
-      "explanation": {
-        "what_it_is": "The w key in the /copy command allows you to write the currently selected text directly to a file, skipping the clipboard. This is done within the Claude Code environment.",
-        "why_it_matters": "This feature is particularly useful when working over SSH, as it avoids the need to copy and paste between remote and local systems. It streamlines the workflow when you need to save selected text to a file on a remote machine.",
-        "how_to_use": [
-          "Press w while in /copy mode to trigger the file write operation",
-          "Use this feature over SSH to save selections directly to remote files"
-        ]
-      }
-    },
-    {
-      "id": "f64cfc29",
-      "title": "Added optional description argument to /plan (e.g., /plan fix the auth bug) that enters plan mode and immediately starts",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-10T00:43:03Z",
-      "summary": "v2.1.72",
-      "fetched_at": "2026-03-10T00:53:42.436Z",
-      "explanation": {
-        "what_it_is": "The /plan command now accepts an optional description argument, allowing you to enter plan mode with a specific task in mind.",
-        "why_it_matters": "This update streamlines your workflow by enabling you to start planning a task immediately after invoking the command, without needing to enter a separate description step.",
-        "how_to_use": [
-          "/plan fix the auth bug",
-          "/plan refactor the database schema",
-          "/plan implement new feature request"
-        ]
-      }
-    },
-    {
-      "id": "f9e013a6",
-      "title": "Added claude plugins as an alias for claude plugin",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-10T00:43:03Z",
-      "summary": "v2.1.72",
-      "fetched_at": "2026-03-10T00:53:42.436Z",
-      "explanation": {
-        "what_it_is": "The 'claude plugins' command is now an alias for 'claude plugin', allowing users to access plugin functionality with either phrase.",
-        "why_it_matters": "This change provides an alternative way to interact with plugins, making it easier for users to manage and utilize them within Claude Code.",
-        "how_to_use": [
-          "Use 'claude plugins' to list and manage available plugins",
-          "Use 'claude plugins' to install or update a specific plugin"
-        ]
-      }
-    },
-    {
-      "id": "8c26cb4e",
-      "title": "Added ExitWorktree tool to leave an EnterWorktree session",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-10T00:43:03Z",
-      "summary": "v2.1.72",
-      "fetched_at": "2026-03-10T00:53:42.436Z",
-      "explanation": {
-        "what_it_is": "The ExitWorktree tool allows you to exit a session that was entered using the EnterWorktree command, returning to the previous workflow state.",
-        "why_it_matters": "This addition provides a clear way to exit an EnterWorktree session, making it easier to manage workflow states and avoid potential issues caused by remaining in an unintended state.",
-        "how_to_use": [
-          "Use the ExitWorktree tool to leave an EnterWorktree session when you need to return to the previous workflow state.",
-          "Invoke the ExitWorktree command to exit the current EnterWorktree session and resume normal workflow operations."
-        ]
-      }
-    },
-    {
-      "id": "36858029",
-      "title": "Added CLAUDE_CODE_DISABLE_CRON environment variable to immediately stop scheduled cron jobs mid-session",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-10T00:43:03Z",
-      "summary": "v2.1.72",
-      "fetched_at": "2026-03-10T00:53:42.436Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_DISABLE_CRON environment variable allows you to immediately stop scheduled cron jobs in the middle of a session.",
-        "why_it_matters": "This variable gives you more control over your cron jobs, enabling you to pause or stop them as needed, even after they've started running.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_DISABLE_CRON to 'true' to stop all scheduled cron jobs mid-session",
-          "Use this variable in scenarios where you need to pause or stop cron jobs due to changes in your workflow or environment"
-        ]
-      }
-    },
-    {
-      "id": "bf8164ca",
-      "title": "Added support for marketplace git URLs without .git suffix (Azure DevOps, AWS CodeCommit)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-10T00:43:03Z",
-      "summary": "v2.1.72",
-      "fetched_at": "2026-03-10T00:53:42.436Z",
-      "explanation": {
-        "what_it_is": "Claude Code now supports Git URLs from Azure DevOps and AWS CodeCommit that do not include the .git suffix, allowing for more flexible repository cloning and management.",
-        "why_it_matters": "This update simplifies the process of working with Git repositories from these platforms, as users no longer need to manually append the .git suffix to the URL.",
-        "how_to_use": [
-          "Use the updated Git URL format to clone a repository from Azure DevOps or AWS CodeCommit directly within Claude Code",
-          "Update existing repository connections to use the simplified URL format for easier management"
         ]
       }
     },
@@ -1684,44 +1722,6 @@
         "how_to_use": [
           "Access the request ID in error responses to identify specific failed requests",
           "Use the included request ID to look up detailed error information in the Errors documentation"
-        ]
-      }
-    },
-    {
-      "id": "db35219a",
-      "title": "We've released the Usage & Cost API, allowing administrators to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-03-24T17:44:34.494Z",
-      "explanation": {
-        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data.",
-        "why_it_matters": "This API allows administrators to automate the monitoring of their organization's usage and cost data, enabling more efficient management and cost optimization.",
-        "how_to_use": [
-          "Use the API to fetch daily or monthly usage reports for your organization",
-          "Integrate the API with your existing monitoring tools to track costs in real-time"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-03-24T17:44:34.494Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update provides Claude Code users with programmatic access to organization data, enabling automation and integration of organization-related workflows.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization details for display in custom dashboards or applications",
-          "Integrate the endpoint with existing workflows to automate organization-related tasks, such as user management or reporting"
         ]
       }
     }
