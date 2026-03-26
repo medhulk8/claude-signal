@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-26T17:00:36.707Z",
+  "generated_at": "2026-03-26T18:45:53.626Z",
   "item_count": 90,
   "items": [
     {
@@ -1136,25 +1136,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-03-26T17:00:38.861Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without restrictions, and requires updating code to use the new output_config.format parameter for structured outputs.",
-        "how_to_use": [
-          "Update your API calls to use output_config.format instead of output_format for structured outputs",
-          "Test your code to ensure compatibility with the new output_config.format parameter"
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1723,6 +1704,25 @@
         "how_to_use": [
           "Check the Console Usage page to view your current rate limit usage",
           "Use the charts to identify trends in your API usage and adjust your application accordingly"
+        ]
+      }
+    },
+    {
+      "id": "3b27ba73",
+      "title": "We've launched support for citable documents in client-side tool results",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-03T00:00:00.000Z",
+      "summary": "We've launched support for citable documents in client-side tool results. Learn more in How to implement tool use.",
+      "fetched_at": "2026-03-26T18:45:55.074Z",
+      "explanation": {
+        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and trustworthy outputs.",
+        "why_it_matters": "This update enables Claude Code users to generate more reliable and verifiable results, which is particularly important for applications where accuracy and transparency are crucial.",
+        "how_to_use": [
+          "Use the updated client-side tool to generate citable documents for your specific use case, such as fact-checking or research applications.",
+          "Refer to the 'How to implement tool use' documentation for implementation details and best practices."
         ]
       }
     }
