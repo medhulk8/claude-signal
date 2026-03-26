@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-03-26T22:14:43.390Z",
+  "generated_at": "2026-03-26T23:17:46.154Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "7b1f2418",
+      "title": "Added CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to serve…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-26T22:52:12Z",
+      "summary": "v2.1.85",
+      "fetched_at": "2026-03-26T23:17:46.393Z",
+      "explanation": {
+        "what_it_is": "Two new environment variables, CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL, have been added to MCP headersHelper scripts, enabling a single helper to serve multiple servers.",
+        "why_it_matters": "This update allows for more flexibility in managing multiple servers with a single helper script, reducing the need for duplicate scripts.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to specify the server name and URL for your helper script.",
+          "Use a single helper script to manage multiple servers by switching between different environment variable values."
+        ]
+      }
+    },
+    {
+      "id": "fe212049",
+      "title": "Added conditional if field for hooks using permission rule syntax (e.g., Bash(git *)) to filter when they run, reducing process spawning overhead",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-26T22:52:12Z",
+      "summary": "v2.1.85",
+      "fetched_at": "2026-03-26T23:17:46.393Z",
+      "explanation": {
+        "what_it_is": "A conditional if field for hooks that uses permission rule syntax to filter when they run, allowing for more targeted hook execution.",
+        "why_it_matters": "This update reduces process spawning overhead by only running hooks when specific conditions are met, resulting in more efficient workflow execution.",
+        "how_to_use": [
+          "Use Bash(git *) syntax to specify conditions under which hooks should run, such as only running a hook when a git command is executed.",
+          "Configure hooks to run conditionally based on specific permissions or commands, reducing unnecessary hook executions."
+        ]
+      }
+    },
+    {
+      "id": "a9466598",
+      "title": "Added timestamp markers in transcripts when scheduled tasks (/loop, CronCreate) fire",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-26T22:52:12Z",
+      "summary": "v2.1.85",
+      "fetched_at": "2026-03-26T23:17:46.393Z",
+      "explanation": {
+        "what_it_is": "Timestamp markers are now added to transcripts when scheduled tasks, such as /loop and CronCreate, are executed.",
+        "why_it_matters": "This update allows Claude Code users to track when automated tasks are run, making it easier to monitor and debug their workflows.",
+        "how_to_use": [
+          "Use the timestamp markers to identify when a scheduled task was executed in a transcript",
+          "Compare the timestamps to troubleshoot issues with automated tasks"
+        ]
+      }
+    },
+    {
+      "id": "d592641e",
+      "title": "Added trailing space after [Image #N] placeholder when pasting images",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-26T22:52:12Z",
+      "summary": "v2.1.85",
+      "fetched_at": "2026-03-26T23:17:46.393Z",
+      "explanation": {
+        "what_it_is": "When pasting images into Claude Code, a trailing space is now automatically added after the [Image #N] placeholder.",
+        "why_it_matters": "This change helps maintain consistent formatting and prevents images from running into adjacent text, making it easier to read and edit documents.",
+        "how_to_use": [
+          "Paste an image into a Claude Code document to see the trailing space added after the placeholder",
+          "Use this feature to ensure proper spacing between images and text in your documents"
+        ]
+      }
+    },
     {
       "id": "50f328d9",
       "title": "Added PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool",
@@ -849,45 +925,6 @@
       }
     },
     {
-      "id": "af8015e5",
-      "title": "Added actionable suggestions to /context command — identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-12T00:34:23Z",
-      "summary": "v2.1.74",
-      "fetched_at": "2026-03-12T00:51:12.636Z",
-      "explanation": {
-        "what_it_is": "The /context command now provides actionable suggestions to help optimize context-heavy tools, memory bloat, and capacity warnings.",
-        "why_it_matters": "This update enables Claude Code users to identify and address performance issues more efficiently, with specific tips for optimization.",
-        "how_to_use": [
-          "Run the /context command to receive suggestions for optimizing context-heavy tools",
-          "Use the command to identify memory bloat and receive tips for reducing it",
-          "Address capacity warnings with specific optimization recommendations"
-        ]
-      }
-    },
-    {
-      "id": "04f6f6a1",
-      "title": "Added autoMemoryDirectory setting to configure a custom directory for auto-memory storage",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-12T00:34:23Z",
-      "summary": "v2.1.74",
-      "fetched_at": "2026-03-12T00:51:12.636Z",
-      "explanation": {
-        "what_it_is": "The autoMemoryDirectory setting allows you to specify a custom directory for storing auto-memory data in Claude Code.",
-        "why_it_matters": "This setting gives you control over where auto-memory data is stored, which can be useful for managing disk space or organizing project files.",
-        "how_to_use": [
-          "Set autoMemoryDirectory to a custom path in your project settings to store auto-memory data outside the default directory.",
-          "Use this setting to keep auto-memory data separate from other project files for easier cleanup or archiving."
-        ]
-      }
-    },
-    {
       "id": "c1c9ea77",
       "title": "We've launched automatic caching for the Messages API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#february-19-2026",
@@ -1685,44 +1722,6 @@
         "how_to_use": [
           "Use the API to fetch daily usage metrics for your organization and integrate them into your internal dashboards or reporting tools.",
           "Access tool usage statistics to identify trends and patterns in your team's development workflow and optimize your tooling and processes accordingly."
-        ]
-      }
-    },
-    {
-      "id": "4db94bfb",
-      "title": "We launched a beta version of the CSDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-08T00:00:00.000Z",
-      "summary": "We launched a beta version of the CSDK.",
-      "fetched_at": "2026-03-26T14:17:17.153Z",
-      "explanation": {
-        "what_it_is": "The CSDK (Claude Software Development Kit) beta version is a set of tools for interacting with the Anthropic API and developer platform.",
-        "why_it_matters": "This beta release provides Claude Code users with a new set of tools to build and integrate applications with the Anthropic platform, potentially simplifying development workflows.",
-        "how_to_use": [
-          "Use the CSDK to create custom applications that leverage Anthropic API capabilities",
-          "Explore the CSDK documentation to learn about available tools and integration options"
-        ]
-      }
-    },
-    {
-      "id": "8e01098c",
-      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-05T00:00:00.000Z",
-      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
-      "fetched_at": "2026-03-26T14:17:17.153Z",
-      "explanation": {
-        "what_it_is": "Rate limit charts in the Console Usage page that display API rate limit usage and caching rates over time.",
-        "why_it_matters": "This allows you to monitor and track your API usage patterns, helping you identify potential rate limit issues before they occur.",
-        "how_to_use": [
-          "Check the Console Usage page to view your current rate limit usage",
-          "Use the charts to identify trends in your API usage and adjust your application accordingly"
         ]
       }
     }
