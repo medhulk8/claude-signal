@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-03-27T21:22:54.029Z",
+  "generated_at": "2026-03-27T22:18:18.192Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "3f8ff4e6",
+      "title": "Added X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.86",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-27T21:42:09Z",
+      "summary": "v2.1.86",
+      "fetched_at": "2026-03-27T22:18:18.396Z",
+      "explanation": {
+        "what_it_is": "The X-Claude-Code-Session-Id header is now included in API requests, allowing proxies to identify and group requests by session.",
+        "why_it_matters": "This change enables proxies to aggregate requests by session without needing to parse the request body, simplifying logging and analytics.",
+        "how_to_use": [
+          "Use the X-Claude-Code-Session-Id header to track user sessions in your proxy logs",
+          "Configure your proxy to group requests by the X-Claude-Code-Session-Id header for easier analytics"
+        ]
+      }
+    },
+    {
+      "id": "abaebaeb",
+      "title": "Added .jj and .sl to VCS directory exclusion lists so Grep and file autocomplete don't descend into Jujutsu or Sapling metadata",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.86",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-03-27T21:42:09Z",
+      "summary": "v2.1.86",
+      "fetched_at": "2026-03-27T22:18:18.396Z",
+      "explanation": {
+        "what_it_is": "The .jj and .sl directories, used by Jujutsu and Sapling metadata, are now excluded from version control system (VCS) directory searches. This exclusion applies to Grep and file autocomplete operations.",
+        "why_it_matters": "This change prevents unnecessary searches and suggestions, improving the relevance and speed of Grep results and file autocomplete suggestions within Claude Code.",
+        "how_to_use": [
+          "Run Grep commands without inadvertently searching Jujutsu or Sapling metadata directories",
+          "Use file autocomplete to quickly find relevant files, without suggestions from .jj and .sl directories"
+        ]
+      }
+    },
     {
       "id": "7b1f2418",
       "title": "Added CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to serve…",
@@ -1684,44 +1722,6 @@
         "how_to_use": [
           "Update bookmarks and references to reflect the new Claude branding and URLs",
           "Verify that existing integrations and code continue to work as expected"
-        ]
-      }
-    },
-    {
-      "id": "047cf5e1",
-      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in Web fetch tool.",
-      "fetched_at": "2026-03-26T14:17:17.153Z",
-      "explanation": {
-        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
-        "why_it_matters": "This update allows Claude Code users to access and process web-based content directly, expanding the scope of potential inputs for their applications.",
-        "how_to_use": [
-          "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
-          "Fetch PDF documents to extract and utilize their content in Claude-based workflows"
-        ]
-      }
-    },
-    {
-      "id": "9a654a18",
-      "title": "We've launched the Claude Code Analytics API, enabling organizations to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
-      "fetched_at": "2026-03-26T14:17:17.153Z",
-      "explanation": {
-        "what_it_is": "The Claude Code Analytics API provides daily aggregated usage metrics, including productivity metrics and tool usage statistics, that can be accessed programmatically.",
-        "why_it_matters": "This API enables organizations to track and analyze their Claude Code usage in a more automated and scalable way, allowing for better decision-making and optimization of their development workflows.",
-        "how_to_use": [
-          "Use the API to fetch daily usage metrics for your organization and integrate them into your internal dashboards or reporting tools.",
-          "Access tool usage statistics to identify trends and patterns in your team's development workflow and optimize your tooling and processes accordingly."
         ]
       }
     }
