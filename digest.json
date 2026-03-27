@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-27T08:36:14.148Z",
+  "generated_at": "2026-03-27T09:41:06.508Z",
   "item_count": 90,
   "items": [
     {
@@ -1173,25 +1173,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-03-26T22:14:44.645Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change simplifies the process of specifying output formats for structured data, making it easier to integrate Claude Code with other tools and workflows. It also removes the need for a beta header, making the feature more accessible.",
-        "how_to_use": [
-          "Use the output_config.format parameter to specify the format for structured outputs, such as JSON or CSV.",
-          "Update existing code to reflect the new location of the output_format parameter, now found in output_config.format."
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1722,6 +1703,25 @@
         "how_to_use": [
           "Use the API to fetch daily usage metrics for your organization and integrate them into your internal dashboards or reporting tools.",
           "Access tool usage statistics to identify trends and patterns in your team's development workflow and optimize your tooling and processes accordingly."
+        ]
+      }
+    },
+    {
+      "id": "4db94bfb",
+      "title": "We launched a beta version of the CSDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-08T00:00:00.000Z",
+      "summary": "We launched a beta version of the CSDK.",
+      "fetched_at": "2026-03-27T09:41:08.377Z",
+      "explanation": {
+        "what_it_is": "The CSDK beta version is a software development kit that allows developers to integrate Claude Code functionality into their applications.",
+        "why_it_matters": "This beta release provides developers with early access to the CSDK, enabling them to start building and testing integrations with Claude Code before the full release.",
+        "how_to_use": [
+          "Sign up for the Anthropic API developer platform to access the CSDK beta",
+          "Use the CSDK to integrate Claude Code features into custom applications"
         ]
       }
     }
