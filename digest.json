@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-28T07:36:12.212Z",
+  "generated_at": "2026-03-28T08:24:18.048Z",
   "item_count": 90,
   "items": [
     {
@@ -1211,25 +1211,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-03-28T06:41:46.366Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and the output_format parameter has been relocated to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming on all models and platforms without beta restrictions, and requires updating the output_format parameter location in their code.",
-        "how_to_use": [
-          "Update your code to use output_config.format instead of output_format for structured outputs",
-          "Test your code with fine-grained tool streaming on different models and platforms to ensure compatibility"
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1722,6 +1703,25 @@
         "how_to_use": [
           "Update bookmarks and references to reflect the new Claude branding and URLs",
           "Verify that existing integrations and code continue to work as expected"
+        ]
+      }
+    },
+    {
+      "id": "047cf5e1",
+      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-10T00:00:00.000Z",
+      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in Web fetch tool.",
+      "fetched_at": "2026-03-28T08:24:19.605Z",
+      "explanation": {
+        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
+        "why_it_matters": "This update allows Claude Code users to access and process web-based data and documents directly, streamlining workflows that rely on external data sources.",
+        "how_to_use": [
+          "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
+          "Fetch PDF documents to extract and process specific information, such as text or tables"
         ]
       }
     }
