@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-30T21:30:24.753Z",
+  "generated_at": "2026-03-30T22:21:32.538Z",
   "item_count": 90,
   "items": [
     {
@@ -1096,25 +1096,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-03-30T20:31:54.974Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is a feature that allows for more controlled and efficient output from models, and it's now available on all models and platforms. The output_format parameter has been relocated to output_config.format for structured outputs.",
-        "why_it_matters": "This change simplifies the configuration process for structured outputs, making it easier to manage and customize output formats. It also removes the need for a beta header, indicating that the feature is now stable and widely available.",
-        "how_to_use": [
-          "Update your API requests to use output_config.format instead of output_format for structured outputs",
-          "Test your existing workflows to ensure compatibility with the new output configuration parameter"
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1721,6 +1702,25 @@
           "Execute Bash commands to automate system tasks",
           "Write code in languages other than Python and run it directly",
           "Manipulate files directly from within Claude Code"
+        ]
+      }
+    },
+    {
+      "id": "275cc454",
+      "title": "We launched a beta version of the PHP SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-27T00:00:00.000Z",
+      "summary": "We launched a beta version of the PHP SDK.",
+      "fetched_at": "2026-03-30T22:21:34.123Z",
+      "explanation": {
+        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
+        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, in their projects.",
+        "how_to_use": [
+          "Install the PHP SDK using Composer",
+          "Use the SDK to send API requests to the Anthropic API from your PHP application"
         ]
       }
     }
