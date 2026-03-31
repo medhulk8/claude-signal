@@ -1,65 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-03-31T14:20:08.951Z",
+  "generated_at": "2026-03-31T15:56:01.174Z",
   "item_count": 90,
   "items": [
-    {
-      "id": "5f42f2cf",
-      "title": "Added CLAUDE_CODE_NO_FLICKER=1 environment variable to opt into flicker-free alt-screen rendering with virtualized scrollback",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.88",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-30T23:53:06Z",
-      "summary": "v2.1.88",
-      "fetched_at": "2026-03-31T01:07:21.486Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_NO_FLICKER=1 environment variable allows users to opt into flicker-free rendering of alternate screens with virtualized scrollback in Claude Code.",
-        "why_it_matters": "This update reduces screen flicker when using alternate screens, resulting in a smoother user experience, especially when working with virtualized scrollback.",
-        "how_to_use": [
-          "Set the CLAUDE_CODE_NO_FLICKER=1 environment variable before running Claude Code to enable flicker-free rendering.",
-          "Use this variable in conjunction with virtualized scrollback to minimize screen flicker in your workflow."
-        ]
-      }
-    },
-    {
-      "id": "0638143c",
-      "title": "Added PermissionDenied hook that fires after auto mode classifier denials — return {retry: true} to tell the model it can retry",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.88",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-30T23:53:06Z",
-      "summary": "v2.1.88",
-      "fetched_at": "2026-03-31T01:07:21.486Z",
-      "explanation": {
-        "what_it_is": "The PermissionDenied hook is a new event that triggers after the auto mode classifier denies a request, allowing developers to intervene and potentially retry the request.",
-        "why_it_matters": "This hook gives developers more control over the request flow, enabling them to handle permission denials in a more customized way, such as by retrying the request or providing alternative actions.",
-        "how_to_use": [
-          "Return {retry: true} from the PermissionDenied hook to instruct the model to retry the denied request",
-          "Use the hook to log permission denial events for auditing or debugging purposes"
-        ]
-      }
-    },
-    {
-      "id": "0088e23e",
-      "title": "Added named subagents to @ mention typeahead suggestions",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.88",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-30T23:53:06Z",
-      "summary": "v2.1.88",
-      "fetched_at": "2026-03-31T01:07:21.486Z",
-      "explanation": {
-        "what_it_is": "Named subagents are now included in the typeahead suggestions when using the @ mention feature in Claude Code, allowing for more specific and targeted mentions.",
-        "why_it_matters": "This update makes it easier for users to address specific subagents directly, streamlining communication and workflow within Claude Code.",
-        "how_to_use": [
-          "Type @ in a message to see a list of suggested subagents and users to mention",
-          "Select a named subagent from the typeahead suggestions to address them directly in a message"
-        ]
-      }
-    },
     {
       "id": "9a361ec0",
       "title": "We've raised the max_tokens cap to 300k on the Message Batches API for Claude…",
@@ -1720,6 +1663,64 @@
         "how_to_use": [
           "Check the Console Usage page to view your current API rate limit usage",
           "Use the charts to identify trends in your caching rates over time"
+        ]
+      }
+    },
+    {
+      "id": "7ed38b19",
+      "title": "We've launched support for citable documents in client-side tool results",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-03T00:00:00.000Z",
+      "summary": "We've launched support for citable documents in client-side tool results. Learn more in Handle tool calls.",
+      "fetched_at": "2026-03-31T15:56:02.658Z",
+      "explanation": {
+        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
+        "why_it_matters": "This update enables Claude Code users to provide more reliable and trustworthy results, particularly in applications where data provenance is crucial.",
+        "how_to_use": [
+          "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
+          "Update your existing tool calls to take advantage of citable documents for improved result transparency"
+        ]
+      }
+    },
+    {
+      "id": "c1a02cd0",
+      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-02T00:00:00.000Z",
+      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
+      "fetched_at": "2026-03-31T15:56:02.658Z",
+      "explanation": {
+        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
+        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python execution.",
+        "how_to_use": [
+          "Execute Bash commands to automate system tasks",
+          "Write code in languages other than Python for execution",
+          "Manipulate files directly from within the Code Execution Tool"
+        ]
+      }
+    },
+    {
+      "id": "275cc454",
+      "title": "We launched a beta version of the PHP SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-27T00:00:00.000Z",
+      "summary": "We launched a beta version of the PHP SDK.",
+      "fetched_at": "2026-03-31T15:56:02.658Z",
+      "explanation": {
+        "what_it_is": "The PHP SDK is a software development kit that allows developers to interact with the Anthropic API using the PHP programming language, now available in beta.",
+        "why_it_matters": "This beta release enables PHP developers to integrate Anthropic API functionality into their applications, expanding the range of languages supported by the platform.",
+        "how_to_use": [
+          "Use the PHP SDK to send API requests to the Anthropic platform from PHP applications",
+          "Test and provide feedback on the beta SDK to help shape its development"
         ]
       }
     }
