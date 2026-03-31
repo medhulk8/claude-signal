@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-03-31T11:38:16.416Z",
+  "generated_at": "2026-03-31T12:43:28.896Z",
   "item_count": 90,
   "items": [
     {
@@ -1153,6 +1153,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-03-31T12:43:30.828Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings.",
+        "how_to_use": [
+          "Use the output_config.format parameter to specify the desired output format for structured outputs",
+          "Update existing code to reflect the new location of the output_format parameter"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1701,25 +1720,6 @@
         "how_to_use": [
           "Use the CSDK to create custom applications that leverage Claude Code's capabilities",
           "Test and provide feedback on the CSDK beta to shape its development"
-        ]
-      }
-    },
-    {
-      "id": "8e01098c",
-      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-05T00:00:00.000Z",
-      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
-      "fetched_at": "2026-03-31T10:41:43.560Z",
-      "explanation": {
-        "what_it_is": "Rate limit charts are now available in the Console Usage page, providing a visual representation of API rate limit usage and caching rates over time.",
-        "why_it_matters": "This change allows Claude Code users to monitor their API usage more effectively, making it easier to identify trends and potential issues with rate limits and caching.",
-        "how_to_use": [
-          "Check the Console Usage page to view rate limit charts and track usage over time",
-          "Use the charts to identify peak usage periods and optimize API requests accordingly"
         ]
       }
     }
