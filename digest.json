@@ -1,8 +1,103 @@
 {
   "version": 1,
-  "generated_at": "2026-03-31T23:22:08.719Z",
+  "generated_at": "2026-04-01T01:14:08.188Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "64a855ba",
+      "title": "Added \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T01:07:06Z",
+      "summary": "v2.1.89",
+      "fetched_at": "2026-04-01T01:14:08.676Z",
+      "explanation": {
+        "what_it_is": "The 'defer' permission decision allows PreToolUse hooks to pause headless sessions at a tool call, enabling resumption with the --resume flag.",
+        "why_it_matters": "This change enables more fine-grained control over headless sessions, allowing for more flexible automation workflows.",
+        "how_to_use": [
+          "Use the 'defer' decision in a PreToolUse hook to pause a headless session at a specific tool call.",
+          "Resume the paused session with the -p --resume flag to continue execution."
+        ]
+      }
+    },
+    {
+      "id": "7c6e3a48",
+      "title": "Added CLAUDE_CODE_NO_FLICKER=1 environment variable to opt into flicker-free alt-screen rendering with virtualized scrollback",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T01:07:06Z",
+      "summary": "v2.1.89",
+      "fetched_at": "2026-04-01T01:14:08.676Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_NO_FLICKER=1 environment variable allows users to opt into flicker-free rendering of alternate screens with virtualized scrollback in Claude Code.",
+        "why_it_matters": "This update reduces screen flicker when using alternate screens, making for a smoother user experience, especially in situations where virtualized scrollback is utilized.",
+        "how_to_use": [
+          "Set the CLAUDE_CODE_NO_FLICKER=1 environment variable before launching Claude Code to enable flicker-free rendering.",
+          "Use this feature in conjunction with virtualized scrollback to minimize visual distractions."
+        ]
+      }
+    },
+    {
+      "id": "9e2d8282",
+      "title": "Added PermissionDenied hook that fires after auto mode classifier denials — return {retry: true} to tell the model it can retry",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T01:07:06Z",
+      "summary": "v2.1.89",
+      "fetched_at": "2026-04-01T01:14:08.676Z",
+      "explanation": {
+        "what_it_is": "The PermissionDenied hook is a new event that triggers after the auto mode classifier denies a request, allowing developers to intervene in the decision-making process. It can be used to retry the denied request by returning {retry: true}.",
+        "why_it_matters": "This hook gives developers more control over the auto mode classifier's decisions, enabling them to handle denied requests in a more customized way. By retrying denied requests, developers can potentially increase the accuracy of their models.",
+        "how_to_use": [
+          "Return {retry: true} from the PermissionDenied hook to retry a denied request",
+          "Use the hook to log denied requests for further analysis and debugging"
+        ]
+      }
+    },
+    {
+      "id": "897e34f1",
+      "title": "Added named subagents to @ mention typeahead suggestions",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T01:07:06Z",
+      "summary": "v2.1.89",
+      "fetched_at": "2026-04-01T01:14:08.676Z",
+      "explanation": {
+        "what_it_is": "Named subagents are now included in the typeahead suggestions when using the @ mention feature in Claude Code, allowing for more specific and targeted mentions.",
+        "why_it_matters": "This update enables Claude Code users to more easily and accurately mention specific subagents in their code, reducing errors and improving collaboration.",
+        "how_to_use": [
+          "Type @ in the code editor to trigger typeahead suggestions, then select a named subagent from the list",
+          "Use named subagents in @ mentions to clarify and specify the intended recipient or reference"
+        ]
+      }
+    },
+    {
+      "id": "913e32c7",
+      "title": "Added MCP_CONNECTION_NONBLOCKING=true for -p mode to skip the MCP connection wait entirely, and bounded --mcp-config server connections at 5s instead…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T01:07:06Z",
+      "summary": "v2.1.89",
+      "fetched_at": "2026-04-01T01:14:08.676Z",
+      "explanation": {
+        "what_it_is": "The MCP_CONNECTION_NONBLOCKING=true flag allows Claude Code to skip waiting for an MCP connection when running in -p mode, and limits --mcp-config server connections to 5 seconds.",
+        "why_it_matters": "This update reduces the time spent waiting for MCP connections, making Claude Code more responsive in certain workflows.",
+        "how_to_use": [
+          "Run Claude Code with -p mode and MCP_CONNECTION_NONBLOCKING=true to skip MCP connection waits",
+          "Use --mcp-config with a timeout of 5 seconds or less to bound server connection times"
+        ]
+      }
+    },
     {
       "id": "9a361ec0",
       "title": "We've raised the max_tokens cap to 300k on the Message Batches API for Claude…",
@@ -693,83 +788,6 @@
       }
     },
     {
-      "id": "67742e1f",
-      "title": "Added StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-17T23:42:55Z",
-      "summary": "v2.1.78",
-      "fetched_at": "2026-03-18T01:02:46.440Z",
-      "explanation": {
-        "what_it_is": "The StopFailure hook event is a new event in Claude Code that triggers when a turn ends due to an API error, such as rate limiting or authentication failure.",
-        "why_it_matters": "This event allows developers to handle and respond to API errors in a more explicit way, enabling better error handling and debugging in their applications.",
-        "how_to_use": [
-          "Use the StopFailure hook to log API error events for debugging purposes",
-          "Implement retry logic in response to StopFailure events to handle transient API errors"
-        ]
-      }
-    },
-    {
-      "id": "b17a445a",
-      "title": "Added ${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-17T23:42:55Z",
-      "summary": "v2.1.78",
-      "fetched_at": "2026-03-18T01:02:46.440Z",
-      "explanation": {
-        "what_it_is": "The ${CLAUDE_PLUGIN_DATA} variable allows plugins to store persistent state that remains intact even after plugin updates. This variable enables plugins to retain data across different versions.",
-        "why_it_matters": "This update changes how plugins manage data, allowing them to maintain consistency and avoid data loss after updates. It also introduces a prompt before uninstalling a plugin to prevent accidental data deletion.",
-        "how_to_use": [
-          "Use ${CLAUDE_PLUGIN_DATA} to store plugin settings or user preferences that should persist across updates",
-          "Access the stored data in your plugin to provide a consistent user experience",
-          "Confirm or cancel the uninstallation of a plugin when prompted to avoid unintentionally deleting persistent data"
-        ]
-      }
-    },
-    {
-      "id": "6c317bfe",
-      "title": "Added effort, maxTurns, and disallowedTools frontmatter support for plugin-shipped agents",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-17T23:42:55Z",
-      "summary": "v2.1.78",
-      "fetched_at": "2026-03-18T01:02:46.440Z",
-      "explanation": {
-        "what_it_is": "The effort, maxTurns, and disallowedTools frontmatter options are now supported for agents shipped with plugins, allowing for more fine-grained control over agent behavior.",
-        "why_it_matters": "This update gives developers more flexibility in configuring plugin-shipped agents, enabling them to tailor agent behavior to specific use cases.",
-        "how_to_use": [
-          "Add effort, maxTurns, and disallowedTools options to an agent's frontmatter to customize its behavior",
-          "Use these options to limit the number of turns an agent can take or restrict the tools it can use"
-        ]
-      }
-    },
-    {
-      "id": "ad3028ea",
-      "title": "Added ANTHROPIC_CUSTOM_MODEL_OPTION env var to add a custom entry to the /model picker, with optional _NAME and _DESCRIPTION suffixed vars for display",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-17T23:42:55Z",
-      "summary": "v2.1.78",
-      "fetched_at": "2026-03-18T01:02:46.440Z",
-      "explanation": {
-        "what_it_is": "The ANTHROPIC_CUSTOM_MODEL_OPTION environment variable allows you to add a custom model to the model picker in Claude Code. You can also specify a custom name and description for the model using the _NAME and _DESCRIPTION suffixed variables.",
-        "why_it_matters": "This update gives Claude Code users more flexibility in managing their models, allowing them to easily add and identify custom models. It simplifies the workflow for users who need to work with multiple custom models.",
-        "how_to_use": [
-          "Set the ANTHROPIC_CUSTOM_MODEL_OPTION environment variable to the path of your custom model",
-          "Optionally, set ANTHROPIC_CUSTOM_MODEL_OPTION_NAME and ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION to customize the display name and description of your model"
-        ]
-      }
-    },
-    {
       "id": "b5983bf0",
       "title": "We've launched the display field for extended thinking, letting you omit…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#march-16-2026",
@@ -1090,6 +1108,25 @@
         "how_to_use": [
           "Use the 1M token context window to process lengthy documents, such as books or research papers, in a single request.",
           "Take advantage of the increased context window when working with long conversations or dialogues that require understanding of previous interactions."
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-01T01:14:09.799Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows developers to have more control over the output format of their models, making it easier to integrate with other tools and platforms. It also simplifies the configuration process by consolidating output format settings into a single location.",
+        "how_to_use": [
+          "Update your API requests to use output_config.format instead of output_format for structured outputs",
+          "Test your models with different output formats to ensure compatibility"
         ]
       }
     },
@@ -1679,45 +1716,6 @@
         "how_to_use": [
           "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
           "Update your existing tool calls to take advantage of citable documents and improve the accuracy of your outputs"
-        ]
-      }
-    },
-    {
-      "id": "c1a02cd0",
-      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-02T00:00:00.000Z",
-      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-03-31T22:22:26.784Z",
-      "explanation": {
-        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
-        "why_it_matters": "This update enables Claude Code users to automate more tasks and interact with the file system, going beyond Python-only execution.",
-        "how_to_use": [
-          "Execute Bash commands to automate system tasks",
-          "Write code in languages other than Python for more flexibility",
-          "Manipulate files directly to integrate with other tools and workflows"
-        ]
-      }
-    },
-    {
-      "id": "275cc454",
-      "title": "We launched a beta version of the PHP SDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-27T00:00:00.000Z",
-      "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-03-31T23:22:10.003Z",
-      "explanation": {
-        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
-        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, in their projects.",
-        "how_to_use": [
-          "Install the PHP SDK using Composer",
-          "Use the SDK to send API requests to the Anthropic API from your PHP application"
         ]
       }
     }
