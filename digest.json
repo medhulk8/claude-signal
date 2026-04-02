@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-02T10:39:26.831Z",
+  "generated_at": "2026-04-02T11:35:49.385Z",
   "item_count": 90,
   "items": [
     {
@@ -1111,6 +1111,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-02T11:35:50.720Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more controlled and efficient streaming of tools, now available on all models and platforms. The output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This update simplifies the process of streaming tools by removing the beta header requirement, making it more accessible to all users. The parameter change for structured outputs requires updates to existing code to ensure compatibility.",
+        "how_to_use": [
+          "Update your code to use output_config.format instead of output_format for structured outputs",
+          "Remove the beta header from your tool streaming requests, as it is no longer required"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1696,25 +1715,6 @@
         "how_to_use": [
           "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
           "Update your existing tool calls to take advantage of citable documents and improve the accuracy of your outputs"
-        ]
-      }
-    },
-    {
-      "id": "c1a02cd0",
-      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-02T00:00:00.000Z",
-      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-04-02T09:47:43.087Z",
-      "explanation": {
-        "what_it_is": "The Code Execution Tool v2 allows users to execute Bash commands and directly manipulate files, in addition to writing code in other languages.",
-        "why_it_matters": "This update enables Claude Code users to automate more complex workflows and interact with the file system, going beyond the limitations of the original Python-only tool.",
-        "how_to_use": [
-          "Use the Code Execution Tool v2 to automate Bash scripts and integrate them with your Claude Code projects",
-          "Leverage the tool's direct file manipulation capabilities to read and write files as part of your workflows"
         ]
       }
     }
