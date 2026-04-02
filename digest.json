@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-04-01T23:25:23.381Z",
+  "generated_at": "2026-04-02T01:04:10.668Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f5b4a344",
+      "title": "Added /powerup — interactive lessons teaching Claude Code features with animated demos",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.90",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T23:41:31Z",
+      "summary": "v2.1.90",
+      "fetched_at": "2026-04-02T01:04:11.000Z",
+      "explanation": {
+        "what_it_is": "The /powerup command provides interactive lessons with animated demos to teach Claude Code features.",
+        "why_it_matters": "This update allows users to learn Claude Code features in a more engaging and visual way, potentially reducing the time it takes to get familiar with the platform.",
+        "how_to_use": [
+          "Type /powerup to access the interactive lessons and start learning Claude Code features.",
+          "Use the animated demos to understand how to apply specific features in your workflow."
+        ]
+      }
+    },
+    {
+      "id": "4d6bcb33",
+      "title": "Added CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE env var to keep the existing marketplace cache when git pull fails, useful in offline…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.90",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T23:41:31Z",
+      "summary": "v2.1.90",
+      "fetched_at": "2026-04-02T01:04:11.000Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE environment variable allows you to preserve the existing marketplace cache when a git pull operation fails. This variable is particularly useful in offline or unstable network environments.",
+        "why_it_matters": "By keeping the marketplace cache intact, you can avoid having to re-download or re-install plugins when a git pull fails, saving time and reducing frustration. This is especially important in offline environments where re-downloading plugins may not be possible.",
+        "how_to_use": [
+          "Set the CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE environment variable to 'true' to enable this feature",
+          "Use this variable in conjunction with git pull to preserve the marketplace cache in case of a failure"
+        ]
+      }
+    },
+    {
+      "id": "8b7f18b3",
+      "title": "Added .husky to protected directories (acceptEdits mode)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.90",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-01T23:41:31Z",
+      "summary": "v2.1.90",
+      "fetched_at": "2026-04-02T01:04:11.000Z",
+      "explanation": {
+        "what_it_is": "The .husky directory is now protected from accidental edits or deletions when acceptEdits mode is enabled in Claude Code.",
+        "why_it_matters": "This change helps prevent unintended modifications to husky hooks, which can disrupt automated workflows and Git version control processes.",
+        "how_to_use": [
+          "Enable acceptEdits mode to safeguard .husky directories from unwanted changes",
+          "Verify that .husky is listed in protected directories to ensure hooks remain intact"
+        ]
+      }
+    },
     {
       "id": "64a855ba",
       "title": "Added \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook…",
@@ -711,64 +768,6 @@
       }
     },
     {
-      "id": "263f75b3",
-      "title": "Added --console flag to claude auth login for Anthropic Console (API billing) authentication",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-18T22:29:36Z",
-      "summary": "v2.1.79",
-      "fetched_at": "2026-03-18T23:19:25.665Z",
-      "explanation": {
-        "what_it_is": "The --console flag is a new option for the claude auth login command, specifically for Anthropic Console API billing authentication.",
-        "why_it_matters": "This update allows Claude Code users to authenticate with Anthropic Console using the API billing method, which may be required for certain workflows or billing setups.",
-        "how_to_use": [
-          "Use the --console flag with claude auth login to authenticate with Anthropic Console API billing",
-          "Example: claude auth login --console"
-        ]
-      }
-    },
-    {
-      "id": "f5785ee3",
-      "title": "Added \"Show turn duration\" toggle to the /config menu",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-18T22:29:36Z",
-      "summary": "v2.1.79",
-      "fetched_at": "2026-03-18T23:19:25.665Z",
-      "explanation": {
-        "what_it_is": "A toggle in the /config menu that controls the display of turn duration in Claude Code.",
-        "why_it_matters": "This feature allows users to customize their workflow by choosing whether or not to see turn duration, which can be useful for optimizing conversation flows.",
-        "how_to_use": [
-          "Go to the /config menu and toggle 'Show turn duration' to enable or disable the feature.",
-          "Use this toggle to hide turn duration when it's not relevant to your current task, reducing visual clutter."
-        ]
-      }
-    },
-    {
-      "id": "0bc3963a",
-      "title": "[VSCode] Added /remote-control — bridge your session to claude.ai/code to continue from a browser or phone",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-18T22:29:36Z",
-      "summary": "v2.1.79",
-      "fetched_at": "2026-03-18T23:19:25.665Z",
-      "explanation": {
-        "what_it_is": "The /remote-control command allows you to bridge your current VSCode session to claude.ai/code, enabling continuation of work from a browser or phone.",
-        "why_it_matters": "This feature matters because it provides flexibility in workflow, allowing Claude Code users to switch between devices and environments seamlessly.",
-        "how_to_use": [
-          "Run the /remote-control command in VSCode to initiate the bridging process",
-          "Access your bridged session from a browser by visiting claude.ai/code",
-          "Use your phone's browser to continue working on your session from anywhere"
-        ]
-      }
-    },
-    {
       "id": "452904c9",
       "title": "We've added model capability fields to the Models API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#march-18-2026",
@@ -1108,6 +1107,25 @@
         "how_to_use": [
           "Use the 1M token context window to process lengthy documents, such as books or research papers, in a single request.",
           "Take advantage of the increased context window when working with long conversations or dialogues that require understanding of previous interactions."
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-02T01:04:12.553Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without restrictions, and requires updating the output_format parameter location in their code. This affects how users configure structured output formats.",
+        "how_to_use": [
+          "Update your code to use output_config.format instead of output_format for structured outputs",
+          "Test your existing workflows to ensure compatibility with the new output_config.format parameter location"
         ]
       }
     },
@@ -1697,25 +1715,6 @@
         "how_to_use": [
           "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
           "Update your existing tool calls to take advantage of citable documents and improve the accuracy of your outputs"
-        ]
-      }
-    },
-    {
-      "id": "c1a02cd0",
-      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-02T00:00:00.000Z",
-      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-04-01T22:23:46.531Z",
-      "explanation": {
-        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
-        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python execution.",
-        "how_to_use": [
-          "Execute Bash commands to automate system tasks",
-          "Write code in multiple languages and manipulate files directly"
         ]
       }
     }
