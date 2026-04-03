@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-03T14:33:50.939Z",
+  "generated_at": "2026-04-03T15:30:28.565Z",
   "item_count": 90,
   "items": [
     {
@@ -1072,6 +1072,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-03T15:30:30.010Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without beta restrictions, and requires updating the output_format parameter location for structured outputs. This affects how users configure output formats for their models.",
+        "how_to_use": [
+          "Update your code to use output_config.format instead of output_format for structured outputs",
+          "Test your models with fine-grained tool streaming enabled to optimize output"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1696,25 +1715,6 @@
         "how_to_use": [
           "Install the PHP SDK using Composer",
           "Use the SDK to send API requests to the Anthropic API from your PHP code"
-        ]
-      }
-    },
-    {
-      "id": "33e23d23",
-      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API.",
-      "fetched_at": "2026-04-03T12:33:07.654Z",
-      "explanation": {
-        "what_it_is": "The rate limits for the 1M token context window on Claude Sonnet 4 have been increased, allowing for more requests within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, reducing the need for workarounds or optimizations.",
-        "how_to_use": [
-          "Use the increased rate limits to process larger datasets in a single request",
-          "Take advantage of the higher limits to reduce the complexity of your text processing workflows"
         ]
       }
     }
