@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-04-02T23:21:29.560Z",
+  "generated_at": "2026-04-03T01:06:41.498Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "6d565ba5",
+      "title": "Added MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-02T23:45:35Z",
+      "summary": "v2.1.91",
+      "fetched_at": "2026-04-03T01:06:41.818Z",
+      "explanation": {
+        "what_it_is": "The MCP tool now allows result persistence override via a _meta annotation, enabling larger results of up to 500K characters. This is achieved by setting _meta['anthropic/maxResultSizeChars'] to the desired size.",
+        "why_it_matters": "This update matters because it allows Claude Code users to work with larger results, such as database schemas, that previously exceeded the character limit. This change enables more complex workflows and larger data processing tasks.",
+        "how_to_use": [
+          "Set _meta['anthropic/maxResultSizeChars'] to 500000 to allow for larger results like DB schemas",
+          "Use the annotation to override the default result size limit in MCP tool outputs"
+        ]
+      }
+    },
+    {
+      "id": "037f973d",
+      "title": "Added disableSkillShellExecution setting to disable inline shell execution in skills, custom slash commands, and plugin commands",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-02T23:45:35Z",
+      "summary": "v2.1.91",
+      "fetched_at": "2026-04-03T01:06:41.818Z",
+      "explanation": {
+        "what_it_is": "The disableSkillShellExecution setting allows you to disable inline shell execution in skills, custom slash commands, and plugin commands within Claude Code.",
+        "why_it_matters": "This setting gives Claude Code users more control over security and execution permissions, allowing them to restrict potentially risky shell execution in specific contexts.",
+        "how_to_use": [
+          "Set disableSkillShellExecution to true in your configuration to prevent skills and custom commands from executing shell commands inline.",
+          "Use this setting to enforce security policies in environments where shell execution poses a risk."
+        ]
+      }
+    },
+    {
+      "id": "305da734",
+      "title": "Added support for multi-line prompts in claude-cli://open?q= deep links (encoded newlines %0A no longer rejected)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-02T23:45:35Z",
+      "summary": "v2.1.91",
+      "fetched_at": "2026-04-03T01:06:41.818Z",
+      "explanation": {
+        "what_it_is": "The ability to use multi-line prompts in claude-cli://open?q= deep links by encoding newlines as %0A, which are no longer rejected.",
+        "why_it_matters": "This update allows Claude Code users to create more complex and formatted prompts when opening links, enabling more precise and detailed queries.",
+        "how_to_use": [
+          "Use %0A to encode newlines in your prompts, such as 'prompt line 1%0Aprompt line 2'",
+          "Create multi-line prompts in claude-cli://open?q= deep links to test and refine your queries"
+        ]
+      }
+    },
     {
       "id": "f5b4a344",
       "title": "Added /powerup — interactive lessons teaching Claude Code features with animated demos",
@@ -672,102 +729,6 @@
       }
     },
     {
-      "id": "f6589288",
-      "title": "Added rate_limits field to statusline scripts for displaying Claude.ai rate limit usage (5-hour and 7-day windows with used_percentage and resets_at)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-19T22:08:48Z",
-      "summary": "v2.1.80",
-      "fetched_at": "2026-03-19T22:14:55.631Z",
-      "explanation": {
-        "what_it_is": "The rate_limits field is a new addition to statusline scripts, allowing users to display their Claude.ai rate limit usage. It provides data for 5-hour and 7-day windows, including used_percentage and resets_at.",
-        "why_it_matters": "This update enables Claude Code users to monitor their rate limit usage directly within their statusline scripts, helping them avoid unexpected rate limit errors. It provides more transparency into their API usage.",
-        "how_to_use": [
-          "Access the rate_limits field in your statusline script to display current rate limit usage",
-          "Use the used_percentage value to create custom warnings when approaching rate limits",
-          "Utilize the resets_at value to schedule tasks around rate limit resets"
-        ]
-      }
-    },
-    {
-      "id": "4fc6f903",
-      "title": "Added source: 'settings' plugin marketplace source — declare plugin entries inline in settings.json",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-19T22:08:48Z",
-      "summary": "v2.1.80",
-      "fetched_at": "2026-03-19T22:14:55.631Z",
-      "explanation": {
-        "what_it_is": "The 'settings' plugin marketplace source allows declaring plugin entries directly in the settings.json file, streamlining plugin management.",
-        "why_it_matters": "This update simplifies plugin configuration by eliminating the need for separate plugin configuration files, making it easier to manage and track plugin entries in a single location.",
-        "how_to_use": [
-          "Declare a plugin entry in settings.json by adding a 'plugins' section with the plugin name and version",
-          "Use the 'settings' source to manage plugin dependencies and updates from the plugin marketplace"
-        ]
-      }
-    },
-    {
-      "id": "fd3bb7f6",
-      "title": "Added CLI tool usage detection to plugin tips, in addition to file pattern matching",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-19T22:08:48Z",
-      "summary": "v2.1.80",
-      "fetched_at": "2026-03-19T22:14:55.631Z",
-      "explanation": {
-        "what_it_is": "The Claude Code plugin now detects CLI tool usage in addition to file pattern matching to provide more accurate tips.",
-        "why_it_matters": "This update allows Claude Code to offer more relevant suggestions based on the tools being used, potentially reducing the time spent searching for the right commands or configurations.",
-        "how_to_use": [
-          "Run a CLI tool in your project to see tool-specific tips in the Claude Code plugin",
-          "Use file pattern matching in conjunction with CLI tool detection for more precise plugin suggestions"
-        ]
-      }
-    },
-    {
-      "id": "745c4ec1",
-      "title": "Added effort frontmatter support for skills and slash commands to override the model effort level when invoked",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-19T22:08:48Z",
-      "summary": "v2.1.80",
-      "fetched_at": "2026-03-19T22:14:55.631Z",
-      "explanation": {
-        "what_it_is": "Effort frontmatter support allows you to specify a custom effort level for skills and slash commands, overriding the default model effort level when invoked.",
-        "why_it_matters": "This update gives Claude Code users more control over the effort level applied to specific skills and commands, enabling more fine-grained customization of model behavior.",
-        "how_to_use": [
-          "Add effort frontmatter to a skill to override the default effort level for that skill",
-          "Use effort frontmatter with a slash command to customize the effort level for a specific command invocation"
-        ]
-      }
-    },
-    {
-      "id": "8fbc1d19",
-      "title": "Added --channels (research preview) — allow MCP servers to push messages into your session",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-19T22:08:48Z",
-      "summary": "v2.1.80",
-      "fetched_at": "2026-03-19T22:14:55.631Z",
-      "explanation": {
-        "what_it_is": "The --channels option allows MCP servers to push messages directly into your Claude Code session, enabling real-time communication.",
-        "why_it_matters": "This feature enables MCP servers to proactively send messages to users, changing how users interact with these servers in their Claude Code workflow.",
-        "how_to_use": [
-          "Use the --channels option when connecting to an MCP server to enable push messages",
-          "Test the --channels option in a research preview environment to explore its capabilities"
-        ]
-      }
-    },
-    {
       "id": "452904c9",
       "title": "We've added model capability fields to the Models API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#march-18-2026",
@@ -1107,25 +1068,6 @@
         "how_to_use": [
           "Use the 1M token context window to process lengthy documents, such as books or research papers, in a single request.",
           "Take advantage of the increased context window when working with long conversations or dialogues that require understanding of previous interactions."
-        ]
-      }
-    },
-    {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-02T23:21:31.334Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without restrictions, and requires updating code to reflect the new location of the output_format parameter.",
-        "how_to_use": [
-          "Update your API calls to use output_config.format instead of output_format for structured outputs",
-          "Test your code to ensure compatibility with the new output_config.format parameter"
         ]
       }
     },
@@ -1715,6 +1657,64 @@
         "how_to_use": [
           "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
           "Update your existing tool calls to take advantage of citable documents and improve the accuracy of your outputs"
+        ]
+      }
+    },
+    {
+      "id": "c1a02cd0",
+      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-02T00:00:00.000Z",
+      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
+      "fetched_at": "2026-04-03T01:06:42.882Z",
+      "explanation": {
+        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in other languages.",
+        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python.",
+        "how_to_use": [
+          "Execute Bash commands to automate system tasks",
+          "Write code in languages other than Python and execute it directly",
+          "Manipulate files directly from within the Code Execution Tool"
+        ]
+      }
+    },
+    {
+      "id": "275cc454",
+      "title": "We launched a beta version of the PHP SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-27T00:00:00.000Z",
+      "summary": "We launched a beta version of the PHP SDK.",
+      "fetched_at": "2026-04-03T01:06:42.882Z",
+      "explanation": {
+        "what_it_is": "A beta version of the PHP SDK for the Anthropic API, allowing developers to integrate Anthropic's capabilities into their PHP applications.",
+        "why_it_matters": "This update enables PHP developers to access Anthropic's API features, such as text generation and processing, directly within their PHP workflows.",
+        "how_to_use": [
+          "Install the PHP SDK using Composer",
+          "Use the SDK to send API requests to the Anthropic API from your PHP code"
+        ]
+      }
+    },
+    {
+      "id": "33e23d23",
+      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-26T00:00:00.000Z",
+      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API.",
+      "fetched_at": "2026-04-03T01:06:42.882Z",
+      "explanation": {
+        "what_it_is": "The rate limits for the 1M token context window on Claude Sonnet 4 have been increased, allowing for more requests within a given time frame.",
+        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, reducing the need for workarounds or optimizations.",
+        "how_to_use": [
+          "Use the increased rate limits to process larger datasets in a single request",
+          "Take advantage of the higher limits to reduce the complexity of your text processing workflows"
         ]
       }
     }
