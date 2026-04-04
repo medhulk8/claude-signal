@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-04-03T23:22:02.911Z",
+  "generated_at": "2026-04-04T01:01:10.882Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "a9e4e3c6",
+      "title": "Added forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-04T00:42:02Z",
+      "summary": "v2.1.92",
+      "fetched_at": "2026-04-04T01:01:11.185Z",
+      "explanation": {
+        "what_it_is": "The forceRemoteSettingsRefresh policy setting is a new option that, when enabled, forces the CLI to wait for fresh remote managed settings before starting up.",
+        "why_it_matters": "This setting ensures that the CLI always uses the latest remote managed settings, which can be particularly important in environments where settings are frequently updated.",
+        "how_to_use": [
+          "Set forceRemoteSettingsRefresh to true in your policy settings to enable the feature",
+          "Use this setting in environments where remote managed settings are frequently updated, such as in large-scale deployments"
+        ]
+      }
+    },
+    {
+      "id": "b2e66ee4",
+      "title": "Added interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication,…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-04T00:42:02Z",
+      "summary": "v2.1.92",
+      "fetched_at": "2026-04-04T01:01:11.185Z",
+      "explanation": {
+        "what_it_is": "An interactive Bedrock setup wizard that guides users through AWS authentication when selecting a 3rd-party platform from the login screen.",
+        "why_it_matters": "This wizard simplifies the process of setting up Bedrock with AWS, reducing the complexity and potential errors associated with manual configuration.",
+        "how_to_use": [
+          "Select '3rd-party platform' from the login screen to access the wizard",
+          "Follow the wizard's prompts to authenticate with AWS and complete the Bedrock setup"
+        ]
+      }
+    },
+    {
+      "id": "4bcb7292",
+      "title": "Added per-model and cache-hit breakdown to /cost for subscription users",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-04T00:42:02Z",
+      "summary": "v2.1.92",
+      "fetched_at": "2026-04-04T01:01:11.185Z",
+      "explanation": {
+        "what_it_is": "The /cost endpoint now provides a breakdown of costs by model and cache hits for subscription users, giving more detailed insights into cost distribution.",
+        "why_it_matters": "This change allows subscription users to better understand and optimize their costs by identifying which models are driving expenses and how cache hits are impacting their bills.",
+        "how_to_use": [
+          "Use the /cost endpoint to retrieve a detailed breakdown of your costs, including per-model and cache-hit metrics.",
+          "Analyze the breakdown to identify areas where you can optimize model usage and cache hits to reduce costs."
+        ]
+      }
+    },
     {
       "id": "6d565ba5",
       "title": "Added MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas…",
@@ -687,44 +744,6 @@
         "how_to_use": [
           "Replace TaskOutput with Read('/path/to/background/task/output') in your code",
           "Update your task output handling to use the Read function's file path parameter"
-        ]
-      }
-    },
-    {
-      "id": "0ff3985b",
-      "title": "Added --bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-20T22:24:50Z",
-      "summary": "v2.1.81",
-      "fetched_at": "2026-03-20T23:17:09.860Z",
-      "explanation": {
-        "what_it_is": "The --bare flag is a new option for scripted -p calls in Claude Code, which skips certain features like hooks, LSP, plugin sync, and skill directory walks to simplify the process.",
-        "why_it_matters": "This flag matters because it allows for faster and more lightweight scripted calls, which can be useful for automation or testing purposes, and it requires either an ANTHROPIC_API_KEY or an apiKeyHelper for authentication.",
-        "how_to_use": [
-          "Use the --bare flag with a scripted -p call to bypass unnecessary features and speed up the process, for example: `claude-code -p --bare`",
-          "Make sure to set an ANTHROPIC_API_KEY or use an apiKeyHelper to authenticate your scripted calls when using the --bare flag"
-        ]
-      }
-    },
-    {
-      "id": "0aed0207",
-      "title": "Added --channels permission relay — channel servers that declare the permission capability can forward tool approval prompts to your phone",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-20T22:24:50Z",
-      "summary": "v2.1.81",
-      "fetched_at": "2026-03-20T23:17:09.860Z",
-      "explanation": {
-        "what_it_is": "The --channels permission relay allows channel servers to forward tool approval prompts to your phone, if they declare the permission capability.",
-        "why_it_matters": "This update enables more flexible approval workflows, as users can now receive and respond to prompts on their phone instead of being tied to their computer.",
-        "how_to_use": [
-          "Run Claude Code with the --channels flag to enable permission relay",
-          "Configure your channel server to declare the permission capability"
         ]
       }
     },
@@ -1696,25 +1715,6 @@
           "Execute Bash commands to automate system tasks",
           "Write code in languages other than Python and execute it directly",
           "Manipulate files directly from within the Code Execution Tool"
-        ]
-      }
-    },
-    {
-      "id": "275cc454",
-      "title": "We launched a beta version of the PHP SDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-27T00:00:00.000Z",
-      "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-04-03T01:06:42.882Z",
-      "explanation": {
-        "what_it_is": "A beta version of the PHP SDK for the Anthropic API, allowing developers to integrate Anthropic's capabilities into their PHP applications.",
-        "why_it_matters": "This update enables PHP developers to access Anthropic's API features, such as text generation and processing, directly within their PHP workflows.",
-        "how_to_use": [
-          "Install the PHP SDK using Composer",
-          "Use the SDK to send API requests to the Anthropic API from your PHP code"
         ]
       }
     }
