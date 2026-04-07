@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-07T18:42:35.749Z",
+  "generated_at": "2026-04-07T19:46:58.385Z",
   "item_count": 90,
   "items": [
     {
@@ -19,6 +19,25 @@
         "how_to_use": [
           "Apply for invitation-only access to explore defensive cybersecurity features",
           "Utilize Claude Mythos Preview as part of Project Glasswing for advanced cybersecurity research"
+        ]
+      }
+    },
+    {
+      "id": "284a3d70",
+      "title": "The Messages API is now available on Amazon Bedrock as a research preview",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-07T00:00:00.000Z",
+      "summary": "The Messages API is now available on Amazon Bedrock as a research preview. The new Claude in Amazon Bedrock endpoint at /anthropic/v1/messages uses the same request shape as the first-party Claude…",
+      "fetched_at": "2026-04-07T19:47:00.894Z",
+      "explanation": {
+        "what_it_is": "The Messages API is now available on Amazon Bedrock, allowing Claude Code users to access the API through a new endpoint at /anthropic/v1/messages. This endpoint uses the same request shape as the first-party Claude API.",
+        "why_it_matters": "This update enables Claude Code users to integrate the Messages API with Amazon Bedrock, potentially expanding the reach and capabilities of their applications. It is currently available as a research preview.",
+        "how_to_use": [
+          "Use the new endpoint at /anthropic/v1/messages to send requests to the Messages API on Amazon Bedrock",
+          "Test and evaluate the Messages API on Amazon Bedrock for research and development purposes"
         ]
       }
     },
@@ -1697,25 +1716,6 @@
           "Check the Console Usage page to view your current rate limit usage",
           "Use the charts to identify peak usage periods and plan accordingly",
           "Monitor caching rates to optimize API performance"
-        ]
-      }
-    },
-    {
-      "id": "7ed38b19",
-      "title": "We've launched support for citable documents in client-side tool results",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-03T00:00:00.000Z",
-      "summary": "We've launched support for citable documents in client-side tool results. Learn more in Handle tool calls.",
-      "fetched_at": "2026-04-06T17:34:25.533Z",
-      "explanation": {
-        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable output from tools.",
-        "why_it_matters": "This update enables Claude Code users to work with tools that provide citable documents, making it easier to verify and reference the sources of information in their workflows.",
-        "how_to_use": [
-          "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
-          "Update your existing tool calls to take advantage of citable documents for more accurate and reliable output"
         ]
       }
     }
