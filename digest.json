@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-04-07T17:45:16.179Z",
+  "generated_at": "2026-04-07T18:42:35.749Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "919a8889",
+      "title": "We announced Claude Mythos Preview is available as a gated research preview for…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-07T00:00:00.000Z",
+      "summary": "We announced Claude Mythos Preview is available as a gated research preview for defensive cybersecurity work as part of Project Glasswing. Access is invitation-only.",
+      "fetched_at": "2026-04-07T18:42:37.697Z",
+      "explanation": {
+        "what_it_is": "Claude Mythos Preview is a gated research preview for defensive cybersecurity work, available as part of Project Glasswing.",
+        "why_it_matters": "This preview provides Claude Code users with access to new cybersecurity capabilities, but access is limited to invitation-only.",
+        "how_to_use": [
+          "Apply for invitation-only access to explore defensive cybersecurity features",
+          "Utilize Claude Mythos Preview as part of Project Glasswing for advanced cybersecurity research"
+        ]
+      }
+    },
     {
       "id": "a9e4e3c6",
       "title": "Added forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the…",
@@ -1697,26 +1716,6 @@
         "how_to_use": [
           "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
           "Update your existing tool calls to take advantage of citable documents for more accurate and reliable output"
-        ]
-      }
-    },
-    {
-      "id": "c1a02cd0",
-      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-02T00:00:00.000Z",
-      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-04-06T17:34:25.533Z",
-      "explanation": {
-        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
-        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python execution.",
-        "how_to_use": [
-          "Execute Bash commands to automate system tasks",
-          "Write code in languages other than Python for execution",
-          "Manipulate files directly from within the Code Execution Tool"
         ]
       }
     }
