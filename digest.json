@@ -1,8 +1,103 @@
 {
   "version": 1,
-  "generated_at": "2026-04-08T21:32:15.976Z",
+  "generated_at": "2026-04-08T22:27:11.851Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "75845b4d",
+      "title": "Added focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-08T21:52:34Z",
+      "summary": "v2.1.97",
+      "fetched_at": "2026-04-08T22:27:12.244Z",
+      "explanation": {
+        "what_it_is": "A focus view toggle feature, accessible via Ctrl+O, that displays the prompt, a one-line tool summary with edit diffstats, and the final response in NO_FLICKER mode.",
+        "why_it_matters": "This feature allows Claude Code users to quickly toggle between views, reducing visual distractions and making it easier to focus on specific parts of the code and response.",
+        "how_to_use": [
+          "Press Ctrl+O to toggle the focus view on and off in NO_FLICKER mode",
+          "Use the focus view to quickly review edit diffstats and the final response"
+        ]
+      }
+    },
+    {
+      "id": "dd415f12",
+      "title": "Added refreshInterval status line setting to re-run the status line command every N seconds",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-08T21:52:34Z",
+      "summary": "v2.1.97",
+      "fetched_at": "2026-04-08T22:27:12.244Z",
+      "explanation": {
+        "what_it_is": "The refreshInterval setting allows you to configure the status line to re-run its command at a specified interval, measured in seconds.",
+        "why_it_matters": "This setting enables dynamic updates to the status line, allowing for real-time information and reducing the need for manual refreshes.",
+        "how_to_use": [
+          "Set refreshInterval to 5 to update the status line every 5 seconds",
+          "Use refreshInterval to periodically re-run a command that fetches external data"
+        ]
+      }
+    },
+    {
+      "id": "0643686c",
+      "title": "Added workspace.git_worktree to the status line JSON input, set when the current directory is inside a linked git worktree",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-08T21:52:34Z",
+      "summary": "v2.1.97",
+      "fetched_at": "2026-04-08T22:27:12.244Z",
+      "explanation": {
+        "what_it_is": "The workspace.git_worktree property is now included in the status line JSON input when the current directory is part of a linked Git worktree.",
+        "why_it_matters": "This update allows Claude Code users to programmatically detect when they are working within a linked Git worktree, enabling more precise automation and scripting.",
+        "how_to_use": [
+          "Check the status line JSON input for the workspace.git_worktree property to determine if the current directory is inside a linked Git worktree.",
+          "Use this property to trigger custom scripts or actions when working within a linked worktree."
+        ]
+      }
+    },
+    {
+      "id": "06d260cf",
+      "title": "Added ● N running indicator in /agents next to agent types with live subagent instances",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-08T21:52:34Z",
+      "summary": "v2.1.97",
+      "fetched_at": "2026-04-08T22:27:12.244Z",
+      "explanation": {
+        "what_it_is": "A running indicator, denoted by ● N, is now displayed next to agent types in the /agents section when there are live subagent instances.",
+        "why_it_matters": "This indicator provides a visual cue for Claude Code users to quickly identify which agent types have active subagents, making it easier to monitor and manage their agents.",
+        "how_to_use": [
+          "Check the /agents section to see which agent types have live subagent instances indicated by ● N",
+          "Use this indicator to quickly identify and investigate agents with active subagents"
+        ]
+      }
+    },
+    {
+      "id": "059d28a6",
+      "title": "Added syntax highlighting for Cedar policy files (.cedar, .cedarpolicy)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-08T21:52:34Z",
+      "summary": "v2.1.97",
+      "fetched_at": "2026-04-08T22:27:12.244Z",
+      "explanation": {
+        "what_it_is": "Syntax highlighting for Cedar policy files (.cedar, .cedarpolicy) is now supported in Claude Code, making it easier to read and understand policy file contents.",
+        "why_it_matters": "This update simplifies the process of writing and editing Cedar policy files by providing visual cues for syntax, reducing errors and improving overall workflow efficiency.",
+        "how_to_use": [
+          "Open a .cedar or .cedarpolicy file in Claude Code to see syntax highlighting in action",
+          "Use the highlighting to quickly identify policy file structure and syntax"
+        ]
+      }
+    },
     {
       "id": "7a98ba10",
       "title": "We've launched Claude Managed Agents in public beta, a fully managed agent…",
@@ -515,82 +610,6 @@
         "how_to_use": [
           "Run Grep commands without inadvertently searching Jujutsu or Sapling metadata directories",
           "Use file autocomplete to quickly find relevant files, without suggestions from .jj and .sl directories"
-        ]
-      }
-    },
-    {
-      "id": "7b1f2418",
-      "title": "Added CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to serve…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T22:52:12Z",
-      "summary": "v2.1.85",
-      "fetched_at": "2026-03-26T23:17:46.393Z",
-      "explanation": {
-        "what_it_is": "Two new environment variables, CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL, have been added to MCP headersHelper scripts, enabling a single helper to serve multiple servers.",
-        "why_it_matters": "This update allows for more flexibility in managing multiple servers with a single helper script, reducing the need for duplicate scripts.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to specify the server name and URL for your helper script.",
-          "Use a single helper script to manage multiple servers by switching between different environment variable values."
-        ]
-      }
-    },
-    {
-      "id": "fe212049",
-      "title": "Added conditional if field for hooks using permission rule syntax (e.g., Bash(git *)) to filter when they run, reducing process spawning overhead",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T22:52:12Z",
-      "summary": "v2.1.85",
-      "fetched_at": "2026-03-26T23:17:46.393Z",
-      "explanation": {
-        "what_it_is": "A conditional if field for hooks that uses permission rule syntax to filter when they run, allowing for more targeted hook execution.",
-        "why_it_matters": "This update reduces process spawning overhead by only running hooks when specific conditions are met, resulting in more efficient workflow execution.",
-        "how_to_use": [
-          "Use Bash(git *) syntax to specify conditions under which hooks should run, such as only running a hook when a git command is executed.",
-          "Configure hooks to run conditionally based on specific permissions or commands, reducing unnecessary hook executions."
-        ]
-      }
-    },
-    {
-      "id": "a9466598",
-      "title": "Added timestamp markers in transcripts when scheduled tasks (/loop, CronCreate) fire",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T22:52:12Z",
-      "summary": "v2.1.85",
-      "fetched_at": "2026-03-26T23:17:46.393Z",
-      "explanation": {
-        "what_it_is": "Timestamp markers are now added to transcripts when scheduled tasks, such as /loop and CronCreate, are executed.",
-        "why_it_matters": "This update allows Claude Code users to track when automated tasks are run, making it easier to monitor and debug their workflows.",
-        "how_to_use": [
-          "Use the timestamp markers to identify when a scheduled task was executed in a transcript",
-          "Compare the timestamps to troubleshoot issues with automated tasks"
-        ]
-      }
-    },
-    {
-      "id": "d592641e",
-      "title": "Added trailing space after [Image #N] placeholder when pasting images",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T22:52:12Z",
-      "summary": "v2.1.85",
-      "fetched_at": "2026-03-26T23:17:46.393Z",
-      "explanation": {
-        "what_it_is": "When pasting images into Claude Code, a trailing space is now automatically added after the [Image #N] placeholder.",
-        "why_it_matters": "This change helps maintain consistent formatting and prevents images from running into adjacent text, making it easier to read and edit documents.",
-        "how_to_use": [
-          "Paste an image into a Claude Code document to see the trailing space added after the placeholder",
-          "Use this feature to ensure proper spacing between images and text in your documents"
         ]
       }
     },
@@ -1699,25 +1718,6 @@
         "how_to_use": [
           "Use the extended cache TTL to store prompt results for up to 1 hour, reducing the load on your application",
           "Remove the beta header from your API requests to access the 1-hour cache duration"
-        ]
-      }
-    },
-    {
-      "id": "44bee3b8",
-      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-12T00:00:00.000Z",
-      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-04-08T21:32:17.032Z",
-      "explanation": {
-        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
-        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer documents or conversations, potentially leading to more accurate and informative outputs.",
-        "how_to_use": [
-          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for processing",
-          "Integrate with Amazon Bedrock to leverage the expanded context window in workflows"
         ]
       }
     }
