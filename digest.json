@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-08T04:24:44.732Z",
+  "generated_at": "2026-04-08T06:13:14.559Z",
   "item_count": 90,
   "items": [
     {
@@ -555,179 +555,6 @@
       }
     },
     {
-      "id": "50f328d9",
-      "title": "Added PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The PowerShell tool is a new opt-in preview feature for Windows users, allowing them to utilize PowerShell within Claude Code.",
-        "why_it_matters": "This addition enables Windows users to leverage PowerShell's capabilities, such as automating tasks and executing scripts, directly within Claude Code.",
-        "how_to_use": [
-          "Opt-in to the PowerShell tool preview through the Claude Code settings",
-          "Use the PowerShell tool to run scripts and automate tasks on Windows",
-          "Refer to the tools reference documentation at https://code.claude.com/docs/en/tools-reference#powershell-tool for more information"
-        ]
-      }
-    },
-    {
-      "id": "1264103c",
-      "title": "Added ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection for pinned default models for 3p…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS environment variables allow you to override the default effort and thinking capability detection for pinned models.",
-        "why_it_matters": "This update gives Claude Code users more control over model behavior, particularly when working with third-party models, by enabling them to manually specify the capabilities of their default models.",
-        "how_to_use": [
-          "Set ANTHROPIC_DEFAULT_OPUS_MODEL_SUPPORTS to override the default OPUS model capabilities",
-          "Set ANTHROPIC_DEFAULT_SONNET_MODEL_SUPPORTS to override the default SONNET model capabilities",
-          "Set ANTHROPIC_DEFAULT_HAIKU_MODEL_SUPPORTS to override the default HAIKU model capabilities"
-        ]
-      }
-    },
-    {
-      "id": "4eda9dcd",
-      "title": "Added CLAUDE_STREAM_IDLE_TIMEOUT_MS env var to configure the streaming idle watchdog threshold (default 90s)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_STREAM_IDLE_TIMEOUT_MS environment variable allows you to configure the threshold for the streaming idle watchdog, which determines how long a stream can be idle before it is considered inactive.",
-        "why_it_matters": "This update gives Claude Code users more control over the streaming idle timeout, allowing them to adjust the threshold to suit their specific use cases and avoid unnecessary stream closures.",
-        "how_to_use": [
-          "Set CLAUDE_STREAM_IDLE_TIMEOUT_MS to a higher value (e.g., 300000) to increase the idle timeout for long-running streams",
-          "Set CLAUDE_STREAM_IDLE_TIMEOUT_MS to a lower value (e.g., 30000) to decrease the idle timeout for streams that require more frequent activity"
-        ]
-      }
-    },
-    {
-      "id": "804c5243",
-      "title": "Added TaskCreated hook that fires when a task is created via TaskCreate",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The TaskCreated hook is a new event trigger in Claude Code that activates when a task is created using the TaskCreate function.",
-        "why_it_matters": "This hook allows developers to execute custom code or workflows immediately after a new task is created, enabling automated reactions to task creation events.",
-        "how_to_use": [
-          "Use the TaskCreated hook to send notifications to team members when a new task is assigned to them.",
-          "Implement custom logging or analytics when tasks are created to track project activity."
-        ]
-      }
-    },
-    {
-      "id": "63fb76be",
-      "title": "Added WorktreeCreate hook support for type: \"http\" — return the created worktree path via hookSpecificOutput.worktreePath in the response JSON",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The WorktreeCreate hook now supports type 'http', allowing you to create a worktree and receive the created worktree path in the response JSON.",
-        "why_it_matters": "This update enables Claude Code users to automate worktree creation over HTTP and retrieve the created worktree path for further processing or integration with other tools.",
-        "how_to_use": [
-          "Use the WorktreeCreate hook with type 'http' to create a worktree and retrieve the created path",
-          "Access the created worktree path via the hookSpecificOutput.worktreePath field in the response JSON"
-        ]
-      }
-    },
-    {
-      "id": "04945075",
-      "title": "Added allowedChannelPlugins managed setting for team/enterprise admins to define a channel plugin allowlist",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The allowedChannelPlugins managed setting allows team and enterprise admins to define a list of approved channel plugins that can be used within their organization.",
-        "why_it_matters": "This setting gives admins control over which channel plugins are allowed, enabling them to enforce security and compliance policies within their team or enterprise.",
-        "how_to_use": [
-          "Define a list of approved channel plugins in the allowedChannelPlugins setting",
-          "Use this setting to restrict access to specific plugins for security or compliance reasons"
-        ]
-      }
-    },
-    {
-      "id": "18a8ca0b",
-      "title": "Added x-client-request-id header to API requests for debugging timeouts",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "The x-client-request-id header is now included in API requests made by Claude Code, providing a unique identifier for each request.",
-        "why_it_matters": "This addition facilitates debugging of timeouts by allowing users to track and identify specific requests that are timing out.",
-        "how_to_use": [
-          "Include the x-client-request-id header in API request logs to correlate requests with timeout errors",
-          "Use the x-client-request-id to identify and retry failed requests"
-        ]
-      }
-    },
-    {
-      "id": "a76dec86",
-      "title": "Added idle-return prompt that nudges users returning after 75+ minutes to /clear, reducing unnecessary token re-caching on stale sessions",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "A prompt that appears when a user returns to Claude Code after 75+ minutes of inactivity, suggesting they run the /clear command to reset their session.",
-        "why_it_matters": "This reduces unnecessary token re-caching on stale sessions, which can help prevent issues with outdated session data.",
-        "how_to_use": [
-          "When prompted, run the /clear command to reset your session and avoid potential issues with stale data.",
-          "Use this prompt as a reminder to regularly clear your session when working with sensitive or frequently updated data."
-        ]
-      }
-    },
-    {
-      "id": "a3f4f8e1",
-      "title": "[VSCode] Added rate limit warning banner with usage percentage and reset time",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-26T00:31:05Z",
-      "summary": "v2.1.84",
-      "fetched_at": "2026-03-26T01:05:55.654Z",
-      "explanation": {
-        "what_it_is": "A rate limit warning banner in VSCode that displays the current usage percentage and reset time.",
-        "why_it_matters": "This banner helps Claude Code users in VSCode track their rate limit usage and plan accordingly to avoid hitting the limit, reducing the likelihood of interrupted workflows.",
-        "how_to_use": [
-          "Monitor the banner to stay aware of your current usage percentage",
-          "Plan your tasks around the reset time to minimize disruptions"
-        ]
-      }
-    },
-    {
       "id": "452904c9",
       "title": "We've added model capability fields to the Models API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#march-18-2026",
@@ -1067,6 +894,25 @@
         "how_to_use": [
           "Use the 1M token context window to process lengthy documents, such as articles or reports, and generate summaries or analyses.",
           "Take advantage of the increased context window to engage in longer conversations or dialogues, allowing for more nuanced and context-dependent responses."
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and it's now available on all models and platforms. The output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change gives developers more flexibility in how they handle model outputs, and simplifies the process of working with different models and platforms. It also standardizes the output configuration across all models.",
+        "how_to_use": [
+          "Update your API calls to use output_config.format instead of output_format for structured outputs",
+          "Test your existing workflows to ensure compatibility with the new output configuration"
         ]
       }
     },
@@ -1717,6 +1563,159 @@
         "how_to_use": [
           "Use the increased rate limits to process larger datasets in a single request",
           "Take advantage of the higher limits to run more frequent tests or iterations in your development workflow"
+        ]
+      }
+    },
+    {
+      "id": "0c0437da",
+      "title": "The 1M token context window is now available on Google Cloud's Vertex AI",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-26T00:00:00.000Z",
+      "summary": "The 1M token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "The 1M token context window allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, when running on Google Cloud's Vertex AI.",
+        "why_it_matters": "This increase in context window size enables Claude Code to handle more complex and longer-form text-based tasks, such as document analysis or extended conversations, on Vertex AI.",
+        "how_to_use": [
+          "Use the 1M token context window to analyze lengthy documents or reports on Vertex AI",
+          "Develop conversational AI models that can engage in extended discussions on Vertex AI"
+        ]
+      }
+    },
+    {
+      "id": "bdee7c3e",
+      "title": "Request IDs are now included directly in error response bodies alongside the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-19T00:00:00.000Z",
+      "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in Errors.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
+        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
+        "how_to_use": [
+          "Access the request ID in error responses to identify and debug specific requests",
+          "Use the included request ID to correlate errors with request logs and other monitoring data"
+        ]
+      }
+    },
+    {
+      "id": "db35219a",
+      "title": "We've released the Usage & Cost API, allowing administrators to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data, allowing administrators to monitor and manage their resources more effectively.",
+        "why_it_matters": "This API enables administrators to automate the process of tracking usage and costs, making it easier to optimize resource allocation and stay within budget.",
+        "how_to_use": [
+          "Use the API to fetch daily or monthly usage reports for your organization",
+          "Integrate the API with your existing monitoring tools to set up custom alerts and notifications for unusual usage patterns"
+        ]
+      }
+    },
+    {
+      "id": "cdf7f3fc",
+      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
+        "why_it_matters": "This update enables Claude Code users to programmatically access organization data, which can be used for automation, reporting, or integration with other systems.",
+        "how_to_use": [
+          "Use the new endpoint to fetch organization details, such as name, ID, or settings, for use in custom applications or scripts.",
+          "Integrate the organization information with other Anthropic API endpoints to build more comprehensive administrative tools."
+        ]
+      }
+    },
+    {
+      "id": "74c31538",
+      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
+        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications that rely on these models.",
+        "how_to_use": [
+          "Migrate existing applications to use recommended replacement models",
+          "Update API requests to use new model identifiers",
+          "Test workflows with new models before the retirement date"
+        ]
+      }
+    },
+    {
+      "id": "0f2c5310",
+      "title": "The 1-hour cache duration for prompt caching is now generally available",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for a longer period, reducing the need for repeated computations.",
+        "why_it_matters": "This change allows for more efficient use of resources, as users no longer need to include a beta header to access the extended cache TTL, making it easier to optimize workflows.",
+        "how_to_use": [
+          "Use the extended cache TTL to store prompt results for up to 1 hour, reducing the load on your application",
+          "Remove the beta header from your API requests to access the 1-hour cache duration"
+        ]
+      }
+    },
+    {
+      "id": "44bee3b8",
+      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-12T00:00:00.000Z",
+      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
+        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer pieces of text, such as full articles or lengthy user inputs.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more informed response generation.",
+          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications."
+        ]
+      }
+    },
+    {
+      "id": "0d1b2e50",
+      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-11T00:00:00.000Z",
+      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
+      "fetched_at": "2026-04-08T06:13:15.722Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
+        "why_it_matters": "This change affects how Claude Code users handle errors, as they need to specifically catch and handle 429 errors to manage rate limiting, potentially adjusting their API usage patterns.",
+        "how_to_use": [
+          "Catch 429 errors in your API calls to handle rate limiting",
+          "Implement retry logic with exponential backoff to manage rate limiting"
         ]
       }
     }
