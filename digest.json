@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-09T07:06:46.184Z",
+  "generated_at": "2026-04-09T08:56:44.857Z",
   "item_count": 90,
   "items": [
     {
@@ -957,6 +957,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-09T08:56:46.171Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and it's now available on all models and platforms. The output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to have more precise control over their model outputs, and the relocation of the output_format parameter simplifies configuration for structured outputs. This affects how users configure their models for specific output formats.",
+        "how_to_use": [
+          "Update your model configurations to use output_config.format instead of output_format for structured outputs",
+          "Test your models with fine-grained tool streaming to see the more detailed output"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1699,25 +1718,6 @@
           "Migrate existing applications to use recommended replacement models",
           "Update API requests to use new model identifiers",
           "Test workflows with new models before the retirement date"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-04-09T00:58:51.343Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
-        "why_it_matters": "With the 1-hour cache duration, users can optimize their workflows by minimizing redundant computations and improving overall performance. This is particularly useful for applications that require frequent reuse of prompt results.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for up to 1 hour, eliminating the need for a beta header.",
-          "Optimize your workflow by caching prompt results for repeated use cases, such as data preprocessing or model fine-tuning."
         ]
       }
     }
