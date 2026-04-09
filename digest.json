@@ -1,8 +1,140 @@
 {
   "version": 1,
-  "generated_at": "2026-04-09T18:42:50.072Z",
+  "generated_at": "2026-04-09T19:55:13.019Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "afbf1edf",
+      "title": "Added interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "An interactive setup wizard for Google Vertex AI, accessible from the login screen when selecting '3rd-party platform', which guides users through the Google Cloud Platform (GCP) setup process.",
+        "why_it_matters": "This wizard simplifies the process of setting up Google Vertex AI with Claude Code, reducing the complexity and potential errors associated with manual configuration.",
+        "how_to_use": [
+          "Select '3rd-party platform' on the login screen to access the wizard",
+          "Follow the wizard's prompts to configure your GCP setup for Google Vertex AI"
+        ]
+      }
+    },
+    {
+      "id": "cdfbe29b",
+      "title": "Added CLAUDE_CODE_PERFORCE_MODE env var: when set, Edit/Write/NotebookEdit fail on read-only files with a p4 edit hint instead of silently…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_PERFORCE_MODE environment variable, when set, changes the behavior of Edit, Write, and NotebookEdit operations on read-only files with a Perforce edit hint.",
+        "why_it_matters": "This change prevents silent overwrites of read-only files, instead failing the operation and alerting the user to the need for a Perforce edit.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_PERFORCE_MODE to enable explicit edit checks for read-only files",
+          "Use this variable in Perforce-managed projects to avoid accidental overwrites"
+        ]
+      }
+    },
+    {
+      "id": "a16b0749",
+      "title": "Added Monitor tool for streaming events from background scripts",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "The Monitor tool is a feature that allows users to stream events from background scripts, providing real-time visibility into script activity.",
+        "why_it_matters": "This update enables Claude Code users to debug and monitor their background scripts more effectively, allowing for faster issue identification and resolution.",
+        "how_to_use": [
+          "Use the Monitor tool to stream events from background scripts and identify performance bottlenecks",
+          "Monitor script activity in real-time to quickly detect and respond to errors"
+        ]
+      }
+    },
+    {
+      "id": "97af0882",
+      "title": "Added subprocess sandboxing with PID namespace isolation on Linux when CLAUDE_CODE_SUBPROCESS_ENV_SCRUB is set, and CLAUDE_CODE_SCRIPT_CAPS env var…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "Subprocess sandboxing with PID namespace isolation on Linux, enabled when CLAUDE_CODE_SUBPROCESS_ENV_SCRUB and CLAUDE_CODE_SCRIPT_CAPS environment variables are set.",
+        "why_it_matters": "This update enhances security by isolating subprocesses from the main process, reducing the risk of privilege escalation attacks on Linux systems.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_SUBPROCESS_ENV_SCRUB and CLAUDE_CODE_SCRIPT_CAPS environment variables to enable subprocess sandboxing",
+          "Run Claude Code on Linux with the enabled environment variables to utilize PID namespace isolation"
+        ]
+      }
+    },
+    {
+      "id": "00a28863",
+      "title": "Added --exclude-dynamic-system-prompt-sections flag to print mode for improved cross-user prompt caching",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "The --exclude-dynamic-system-prompt-sections flag is a new option in Claude Code's print mode that allows users to exclude dynamic system prompt sections from the output.",
+        "why_it_matters": "This flag improves cross-user prompt caching by preventing dynamic sections from interfering with the caching process, resulting in more efficient caching across different users.",
+        "how_to_use": [
+          "Use the --exclude-dynamic-system-prompt-sections flag in print mode to exclude dynamic system prompt sections from the output, like this: `claude print --exclude-dynamic-system-prompt-sections`"
+        ]
+      }
+    },
+    {
+      "id": "79413a8d",
+      "title": "Added workspace.git_worktree to the status line JSON input, set whenever the current directory is inside a linked git worktree",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "The workspace.git_worktree property is now included in the status line JSON input when the current directory is part of a linked Git worktree.",
+        "why_it_matters": "This update allows Claude Code users to programmatically detect and respond to the presence of a linked Git worktree, enabling more customized workflows and automation.",
+        "how_to_use": [
+          "Check the workspace.git_worktree property in your status line JSON input to determine if the current directory is inside a linked Git worktree",
+          "Use this property to trigger custom scripts or actions when working within a linked worktree"
+        ]
+      }
+    },
+    {
+      "id": "ba0e0b3f",
+      "title": "Added W3C TRACEPARENT env var to Bash tool subprocesses when OTEL tracing is enabled, so child-process spans correctly parent to Claude Code's trace…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-09T19:18:28Z",
+      "summary": "v2.1.98",
+      "fetched_at": "2026-04-09T19:55:13.486Z",
+      "explanation": {
+        "what_it_is": "The W3C TRACEPARENT environment variable is now added to Bash tool subprocesses when OpenTelemetry (OTEL) tracing is enabled, allowing child-process spans to be correctly linked to Claude Code's trace.",
+        "why_it_matters": "This update ensures that tracing information is accurately propagated to child processes, providing a more complete view of the execution flow in Claude Code.",
+        "how_to_use": [
+          "Enable OTEL tracing in your Claude Code project to automatically include the W3C TRACEPARENT env var in Bash tool subprocesses",
+          "Verify that child-process spans are correctly parented to Claude Code's trace in your tracing output"
+        ]
+      }
+    },
     {
       "id": "75845b4d",
       "title": "Added focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response",
@@ -572,44 +704,6 @@
         "how_to_use": [
           "Update your API requests to remove the context-1m-2025-08-07 beta header after April 30, 2026",
           "Test your workflows to ensure they function as expected without the 1M token context window beta"
-        ]
-      }
-    },
-    {
-      "id": "3f8ff4e6",
-      "title": "Added X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.86",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-27T21:42:09Z",
-      "summary": "v2.1.86",
-      "fetched_at": "2026-03-27T22:18:18.396Z",
-      "explanation": {
-        "what_it_is": "The X-Claude-Code-Session-Id header is now included in API requests, allowing proxies to identify and group requests by session.",
-        "why_it_matters": "This change enables proxies to aggregate requests by session without needing to parse the request body, simplifying logging and analytics.",
-        "how_to_use": [
-          "Use the X-Claude-Code-Session-Id header to track user sessions in your proxy logs",
-          "Configure your proxy to group requests by the X-Claude-Code-Session-Id header for easier analytics"
-        ]
-      }
-    },
-    {
-      "id": "abaebaeb",
-      "title": "Added .jj and .sl to VCS directory exclusion lists so Grep and file autocomplete don't descend into Jujutsu or Sapling metadata",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.86",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-03-27T21:42:09Z",
-      "summary": "v2.1.86",
-      "fetched_at": "2026-03-27T22:18:18.396Z",
-      "explanation": {
-        "what_it_is": "The .jj and .sl directories, used by Jujutsu and Sapling metadata, are now excluded from version control system (VCS) directory searches. This exclusion applies to Grep and file autocomplete operations.",
-        "why_it_matters": "This change prevents unnecessary searches and suggestions, improving the relevance and speed of Grep results and file autocomplete suggestions within Claude Code.",
-        "how_to_use": [
-          "Run Grep commands without inadvertently searching Jujutsu or Sapling metadata directories",
-          "Use file autocomplete to quickly find relevant files, without suggestions from .jj and .sl directories"
         ]
       }
     },
@@ -1622,103 +1716,6 @@
         "how_to_use": [
           "Use the 1M token context window to analyze lengthy documents or reports on Vertex AI",
           "Develop conversational AI models that can engage in extended discussions on Vertex AI"
-        ]
-      }
-    },
-    {
-      "id": "bdee7c3e",
-      "title": "Request IDs are now included directly in error response bodies alongside the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-19T00:00:00.000Z",
-      "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in Errors.",
-      "fetched_at": "2026-04-08T06:13:15.722Z",
-      "explanation": {
-        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
-        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
-        "how_to_use": [
-          "Access the request ID in error responses to identify and debug specific requests",
-          "Use the included request ID to correlate errors with request logs and other monitoring data"
-        ]
-      }
-    },
-    {
-      "id": "db35219a",
-      "title": "We've released the Usage & Cost API, allowing administrators to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-04-08T06:13:15.722Z",
-      "explanation": {
-        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data, allowing administrators to monitor and manage their resources more effectively.",
-        "why_it_matters": "This API enables administrators to automate the process of tracking usage and costs, making it easier to optimize resource allocation and stay within budget.",
-        "how_to_use": [
-          "Use the API to fetch daily or monthly usage reports for your organization",
-          "Integrate the API with your existing monitoring tools to set up custom alerts and notifications for unusual usage patterns"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-04-08T06:13:15.722Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update enables Claude Code users to programmatically access organization data, which can be used for automation, reporting, or integration with other systems.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization details, such as name, ID, or settings, for use in custom applications or scripts.",
-          "Integrate the organization information with other Anthropic API endpoints to build more comprehensive administrative tools."
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-04-08T06:13:15.722Z",
-      "explanation": {
-        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
-        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications that rely on these models.",
-        "how_to_use": [
-          "Migrate existing applications to use recommended replacement models",
-          "Update API requests to use new model identifiers",
-          "Test workflows with new models before the retirement date"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-04-09T18:42:51.918Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature was previously only available in beta.",
-        "why_it_matters": "With the 1-hour cache duration now generally available, users can optimize their workflows by minimizing redundant computations and improving overall performance. This change simplifies the development process by eliminating the need for a beta header to access the extended cache TTL.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for up to 1 hour without requiring a beta header",
-          "Optimize workflows by reducing repeated computations for prompts with infrequently changing results",
-          "Review the Prompt caching documentation to learn more about implementing the 1-hour cache duration in your application"
         ]
       }
     }
