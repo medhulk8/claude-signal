@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-09T22:28:25.197Z",
+  "generated_at": "2026-04-09T23:28:11.681Z",
   "item_count": 90,
   "items": [
     {
@@ -132,6 +132,25 @@
         "how_to_use": [
           "Enable OTEL tracing in your Claude Code project to automatically include the W3C TRACEPARENT env var in Bash tool subprocesses",
           "Verify that child-process spans are correctly parented to Claude Code's trace in your tracing output"
+        ]
+      }
+    },
+    {
+      "id": "a6b71809",
+      "title": "We've launched the advisor tool in public beta",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-09T00:00:00.000Z",
+      "summary": "We've launched the advisor tool in public beta. Pair a faster executor model with a higher-intelligence advisor model that provides strategic guidance mid-generation, so long-horizon agentic…",
+      "fetched_at": "2026-04-09T23:28:13.148Z",
+      "explanation": {
+        "what_it_is": "The advisor tool is a feature that pairs a faster executor model with a higher-intelligence advisor model, providing strategic guidance mid-generation for long-horizon tasks.",
+        "why_it_matters": "This tool allows Claude Code users to generate more coherent and effective outputs, especially for tasks that require planning and strategic decision-making.",
+        "how_to_use": [
+          "Use the advisor tool to guide the generation of complex, multi-step plans",
+          "Pair the advisor tool with a faster executor model to accelerate task completion while maintaining strategic oversight"
         ]
       }
     },
@@ -1051,6 +1070,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-09T23:28:13.148Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more precise control over tool output, and the output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change affects how Claude Code users configure and receive structured output from models, providing more flexibility and consistency across all models and platforms.",
+        "how_to_use": [
+          "Update your API requests to use output_config.format instead of output_format for structured outputs",
+          "Verify that your existing workflows still function as expected with the relocated output_format parameter"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1678,44 +1716,6 @@
         "how_to_use": [
           "Install the PHP SDK using Composer",
           "Use the SDK to send API requests to the Anthropic API from your PHP application"
-        ]
-      }
-    },
-    {
-      "id": "33e23d23",
-      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API.",
-      "fetched_at": "2026-04-08T04:24:46.459Z",
-      "explanation": {
-        "what_it_is": "The rate limits for the 1M token context window in Claude Sonnet 4 have been increased, allowing for more requests within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, which can speed up development and testing workflows.",
-        "how_to_use": [
-          "Use the increased rate limits to process larger datasets in a single request",
-          "Take advantage of the higher limits to run more frequent tests or iterations in your development workflow"
-        ]
-      }
-    },
-    {
-      "id": "0c0437da",
-      "title": "The 1M token context window is now available on Google Cloud's Vertex AI",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "The 1M token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-04-09T21:35:20.273Z",
-      "explanation": {
-        "what_it_is": "The 1M token context window is a feature that allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, on Google Cloud's Vertex AI platform.",
-        "why_it_matters": "This update enables Claude Code users to work with longer documents and more complex text-based workflows on Vertex AI, potentially improving the accuracy and effectiveness of their applications.",
-        "how_to_use": [
-          "Use the 1M token context window to analyze lengthy documents, such as books or research papers, on Vertex AI",
-          "Integrate the feature into your existing text processing workflows to handle larger input sizes"
         ]
       }
     }
