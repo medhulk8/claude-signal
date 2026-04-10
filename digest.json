@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-04-10T18:35:57.669Z",
+  "generated_at": "2026-04-10T19:34:57.476Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "d0fb4c3e",
+      "title": "Added /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-10T19:03:41Z",
+      "summary": "v2.1.101",
+      "fetched_at": "2026-04-10T19:34:57.794Z",
+      "explanation": {
+        "what_it_is": "The /team-onboarding command generates a guide to help new teammates get up to speed with your local Claude Code usage.",
+        "why_it_matters": "This command saves time and effort when onboarding new team members by automatically creating a personalized ramp-up guide based on your existing Claude Code setup.",
+        "how_to_use": [
+          "Run the /team-onboarding command in your Claude Code environment to generate a teammate ramp-up guide.",
+          "Use the generated guide to walk new teammates through your local Claude Code usage and best practices."
+        ]
+      }
+    },
+    {
+      "id": "57109118",
+      "title": "Added OS CA certificate store trust by default, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-10T19:03:41Z",
+      "summary": "v2.1.101",
+      "fetched_at": "2026-04-10T19:34:57.794Z",
+      "explanation": {
+        "what_it_is": "Claude Code now trusts the OS CA certificate store by default, allowing TLS proxies to work without additional configuration.",
+        "why_it_matters": "This change simplifies the setup process for enterprise users who rely on TLS proxies, as they no longer need to manually configure certificate trust.",
+        "how_to_use": [
+          "Run Claude Code without extra setup to use the OS CA certificate store trust",
+          "Set CLAUDE_CODE_CERT_STORE=bundled to revert to using only the bundled certificate store"
+        ]
+      }
+    },
     {
       "id": "afbf1edf",
       "title": "Added interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP…",
@@ -1677,45 +1715,6 @@
         "how_to_use": [
           "Use the updated Handle tool calls to generate citable documents from client-side tool results",
           "Integrate citable documents into your workflow to improve the accuracy and trustworthiness of your tool outputs"
-        ]
-      }
-    },
-    {
-      "id": "c1a02cd0",
-      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-02T00:00:00.000Z",
-      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-04-07T21:32:23.570Z",
-      "explanation": {
-        "what_it_is": "The Code Execution Tool v2 allows users to execute Bash commands and directly manipulate files, in addition to writing code in other languages.",
-        "why_it_matters": "This update expands the capabilities of the Code Execution Tool beyond Python, enabling users to perform a wider range of tasks and automate workflows that require Bash scripting or file manipulation.",
-        "how_to_use": [
-          "Use the Code Execution Tool to execute Bash scripts that interact with files and directories",
-          "Write code in languages other than Python and execute it using the Code Execution Tool",
-          "Manipulate files directly using the Code Execution Tool's file manipulation capabilities"
-        ]
-      }
-    },
-    {
-      "id": "275cc454",
-      "title": "We launched a beta version of the PHP SDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-27T00:00:00.000Z",
-      "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-04-07T21:32:23.570Z",
-      "explanation": {
-        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
-        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, in their projects.",
-        "how_to_use": [
-          "Install the PHP SDK using Composer",
-          "Use the SDK to send API requests to the Anthropic API from your PHP application"
         ]
       }
     }
