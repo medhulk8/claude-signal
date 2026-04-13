@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-13T01:14:54.524Z",
+  "generated_at": "2026-04-13T04:46:54.361Z",
   "item_count": 90,
   "items": [
     {
@@ -632,101 +632,6 @@
       }
     },
     {
-      "id": "64a855ba",
-      "title": "Added \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-01T01:07:06Z",
-      "summary": "v2.1.89",
-      "fetched_at": "2026-04-01T01:14:08.676Z",
-      "explanation": {
-        "what_it_is": "The 'defer' permission decision allows PreToolUse hooks to pause headless sessions at a tool call, enabling resumption with the --resume flag.",
-        "why_it_matters": "This change enables more fine-grained control over headless sessions, allowing for more flexible automation workflows.",
-        "how_to_use": [
-          "Use the 'defer' decision in a PreToolUse hook to pause a headless session at a specific tool call.",
-          "Resume the paused session with the -p --resume flag to continue execution."
-        ]
-      }
-    },
-    {
-      "id": "7c6e3a48",
-      "title": "Added CLAUDE_CODE_NO_FLICKER=1 environment variable to opt into flicker-free alt-screen rendering with virtualized scrollback",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-01T01:07:06Z",
-      "summary": "v2.1.89",
-      "fetched_at": "2026-04-01T01:14:08.676Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_NO_FLICKER=1 environment variable allows users to opt into flicker-free rendering of alternate screens with virtualized scrollback in Claude Code.",
-        "why_it_matters": "This update reduces screen flicker when using alternate screens, making for a smoother user experience, especially in situations where virtualized scrollback is utilized.",
-        "how_to_use": [
-          "Set the CLAUDE_CODE_NO_FLICKER=1 environment variable before launching Claude Code to enable flicker-free rendering.",
-          "Use this feature in conjunction with virtualized scrollback to minimize visual distractions."
-        ]
-      }
-    },
-    {
-      "id": "9e2d8282",
-      "title": "Added PermissionDenied hook that fires after auto mode classifier denials — return {retry: true} to tell the model it can retry",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-01T01:07:06Z",
-      "summary": "v2.1.89",
-      "fetched_at": "2026-04-01T01:14:08.676Z",
-      "explanation": {
-        "what_it_is": "The PermissionDenied hook is a new event that triggers after the auto mode classifier denies a request, allowing developers to intervene in the decision-making process. It can be used to retry the denied request by returning {retry: true}.",
-        "why_it_matters": "This hook gives developers more control over the auto mode classifier's decisions, enabling them to handle denied requests in a more customized way. By retrying denied requests, developers can potentially increase the accuracy of their models.",
-        "how_to_use": [
-          "Return {retry: true} from the PermissionDenied hook to retry a denied request",
-          "Use the hook to log denied requests for further analysis and debugging"
-        ]
-      }
-    },
-    {
-      "id": "897e34f1",
-      "title": "Added named subagents to @ mention typeahead suggestions",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-01T01:07:06Z",
-      "summary": "v2.1.89",
-      "fetched_at": "2026-04-01T01:14:08.676Z",
-      "explanation": {
-        "what_it_is": "Named subagents are now included in the typeahead suggestions when using the @ mention feature in Claude Code, allowing for more specific and targeted mentions.",
-        "why_it_matters": "This update enables Claude Code users to more easily and accurately mention specific subagents in their code, reducing errors and improving collaboration.",
-        "how_to_use": [
-          "Type @ in the code editor to trigger typeahead suggestions, then select a named subagent from the list",
-          "Use named subagents in @ mentions to clarify and specify the intended recipient or reference"
-        ]
-      }
-    },
-    {
-      "id": "913e32c7",
-      "title": "Added MCP_CONNECTION_NONBLOCKING=true for -p mode to skip the MCP connection wait entirely, and bounded --mcp-config server connections at 5s instead…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-01T01:07:06Z",
-      "summary": "v2.1.89",
-      "fetched_at": "2026-04-01T01:14:08.676Z",
-      "explanation": {
-        "what_it_is": "The MCP_CONNECTION_NONBLOCKING=true flag allows Claude Code to skip waiting for an MCP connection when running in -p mode, and limits --mcp-config server connections to 5 seconds.",
-        "why_it_matters": "This update reduces the time spent waiting for MCP connections, making Claude Code more responsive in certain workflows.",
-        "how_to_use": [
-          "Run Claude Code with -p mode and MCP_CONNECTION_NONBLOCKING=true to skip MCP connection waits",
-          "Use --mcp-config with a timeout of 5 seconds or less to bound server connection times"
-        ]
-      }
-    },
-    {
       "id": "9a361ec0",
       "title": "We've raised the max_tokens cap to 300k on the Message Batches API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#march-30-2026",
@@ -1106,6 +1011,25 @@
         "how_to_use": [
           "Use the 1M token context window in Claude Opus 4.6 to analyze lengthy documents or transcripts",
           "Test the feature with large input sizes to see how it affects response quality and pricing"
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-13T04:46:55.836Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more controlled and efficient output. The output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change simplifies the process of managing output formats for structured data, making it easier to work with different models and platforms. It also removes the need for a beta header, streamlining development workflows.",
+        "how_to_use": [
+          "Update your API calls to use output_config.format instead of output_format for structured outputs",
+          "Test your existing workflows to ensure compatibility with the new output configuration parameter"
         ]
       }
     },
@@ -1716,6 +1640,82 @@
           "Execute Bash commands to automate system tasks",
           "Write code in languages other than Python for more flexibility",
           "Manipulate files directly to integrate with other tools and workflows"
+        ]
+      }
+    },
+    {
+      "id": "275cc454",
+      "title": "We launched a beta version of the PHP SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-27T00:00:00.000Z",
+      "summary": "We launched a beta version of the PHP SDK.",
+      "fetched_at": "2026-04-13T04:46:55.836Z",
+      "explanation": {
+        "what_it_is": "The PHP SDK is a software development kit that allows developers to interact with the Anthropic API using the PHP programming language, now available in beta.",
+        "why_it_matters": "This beta release enables PHP developers to integrate Anthropic API functionality into their applications, expanding the range of languages supported by the platform.",
+        "how_to_use": [
+          "Use the PHP SDK to send API requests to the Anthropic platform from PHP applications",
+          "Test and provide feedback on the beta SDK to help shape its development"
+        ]
+      }
+    },
+    {
+      "id": "33e23d23",
+      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-26T00:00:00.000Z",
+      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API.",
+      "fetched_at": "2026-04-13T04:46:55.836Z",
+      "explanation": {
+        "what_it_is": "The Claude API has increased rate limits for the 1M token context window on Claude Sonnet 4, allowing for more requests within a given time frame.",
+        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, reducing the need for workarounds like batching or retry logic.",
+        "how_to_use": [
+          "Use the increased rate limits to process larger datasets in a single request",
+          "Take advantage of the higher limits to reduce the complexity of your text processing workflows"
+        ]
+      }
+    },
+    {
+      "id": "0c0437da",
+      "title": "The 1M token context window is now available on Google Cloud's Vertex AI",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-26T00:00:00.000Z",
+      "summary": "The 1M token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
+      "fetched_at": "2026-04-13T04:46:55.836Z",
+      "explanation": {
+        "what_it_is": "The 1M token context window is a feature that allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, when running on Google Cloud's Vertex AI platform.",
+        "why_it_matters": "This update matters because it enables Claude Code users to work with longer documents or more extensive text datasets on Vertex AI, potentially leading to more accurate and comprehensive results.",
+        "how_to_use": [
+          "Run Claude Code models on Google Cloud's Vertex AI to take advantage of the increased context window",
+          "Use the 1M token context window to process large documents, such as books or research papers, and extract relevant information"
+        ]
+      }
+    },
+    {
+      "id": "bdee7c3e",
+      "title": "Request IDs are now included directly in error response bodies alongside the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-19T00:00:00.000Z",
+      "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in Errors.",
+      "fetched_at": "2026-04-13T04:46:55.836Z",
+      "explanation": {
+        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
+        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
+        "how_to_use": [
+          "Access the request ID in error responses to identify specific failed requests",
+          "Use the included request ID to look up detailed error information in the Errors documentation"
         ]
       }
     }
