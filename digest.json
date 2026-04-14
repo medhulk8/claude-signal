@@ -1,8 +1,103 @@
 {
   "version": 1,
-  "generated_at": "2026-04-14T18:53:59.585Z",
+  "generated_at": "2026-04-14T19:57:40.434Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "8dd2d5ba",
+      "title": "Added ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-14T19:57:40.691Z",
+      "explanation": {
+        "what_it_is": "The ENABLE_PROMPT_CACHING_1H environment variable allows you to set a 1-hour time-to-live (TTL) for prompt caching on specific platforms, including API key, Bedrock, Vertex, and Foundry.",
+        "why_it_matters": "This update gives Claude Code users more control over prompt caching, enabling them to balance performance and data freshness according to their needs.",
+        "how_to_use": [
+          "Set ENABLE_PROMPT_CACHING_1H to opt into 1-hour prompt caching on your API key",
+          "Use ENABLE_PROMPT_CACHING_1H_BEDROCK to enable 1-hour caching specifically on Bedrock"
+        ]
+      }
+    },
+    {
+      "id": "01e17bf8",
+      "title": "Added recap feature to provide context when returning to a session, configurable in /config and manually invocable with /recap; force with…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-14T19:57:40.691Z",
+      "explanation": {
+        "what_it_is": "The recap feature provides context when returning to a session, allowing users to quickly understand the current state of their work. It can be configured in the /config settings and manually invoked with the /recap command.",
+        "why_it_matters": "This feature helps users save time when re-engaging with a session, as they no longer need to manually review previous work to understand the context. It also reduces the likelihood of errors caused by a lack of context.",
+        "how_to_use": [
+          "Configure the recap feature in /config to automatically provide context when returning to a session",
+          "Manually invoke the recap feature with the /recap command to quickly understand the current state of your work"
+        ]
+      }
+    },
+    {
+      "id": "60b51a79",
+      "title": "Added \"verbose\" indicator when viewing the detailed transcript (Ctrl+O)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-14T19:57:40.691Z",
+      "explanation": {
+        "what_it_is": "A 'verbose' indicator is now displayed when viewing the detailed transcript in Claude Code, accessible via Ctrl+O.",
+        "why_it_matters": "This indicator helps users quickly identify when a transcript is in verbose mode, allowing for more efficient debugging and log analysis.",
+        "how_to_use": [
+          "Press Ctrl+O to view the detailed transcript and look for the 'verbose' indicator.",
+          "Use the indicator to determine if a transcript is showing detailed or condensed information."
+        ]
+      }
+    },
+    {
+      "id": "006c0090",
+      "title": "Added a warning at startup when prompt caching is disabled via DISABLE_PROMPT_CACHING* environment variables",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-14T19:57:40.691Z",
+      "explanation": {
+        "what_it_is": "A warning message is now displayed at startup when prompt caching is disabled using the DISABLE_PROMPT_CACHING environment variable.",
+        "why_it_matters": "This change helps developers notice when prompt caching is intentionally or unintentionally disabled, which can impact performance.",
+        "how_to_use": [
+          "Check the warning message at startup to ensure prompt caching is enabled as intended.",
+          "Review environment variables to verify DISABLE_PROMPT_CACHING is set correctly."
+        ]
+      }
+    },
+    {
+      "id": "0fc54559",
+      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-14T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
+      "fetched_at": "2026-04-14T19:57:41.546Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models are being deprecated, with the specific models being claud-sonnet-4-20250514 and claud-opus-4-20250514.",
+        "why_it_matters": "After June 15, these models will no longer be available on the Claude API, requiring users to switch to alternative models to maintain functionality.",
+        "how_to_use": [
+          "Update API requests to use a non-deprecated model before June 15",
+          "Test alternative models to ensure compatibility with existing workflows"
+        ]
+      }
+    },
     {
       "id": "b61de965",
       "title": "Added path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository",
@@ -514,63 +609,6 @@
         "how_to_use": [
           "Use the /anthropic/v1/messages endpoint to send and receive messages in Amazon Bedrock",
           "Test and validate Messages API workflows on Amazon Bedrock during the research preview phase"
-        ]
-      }
-    },
-    {
-      "id": "a9e4e3c6",
-      "title": "Added forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-04T00:42:02Z",
-      "summary": "v2.1.92",
-      "fetched_at": "2026-04-04T01:01:11.185Z",
-      "explanation": {
-        "what_it_is": "The forceRemoteSettingsRefresh policy setting is a new option that, when enabled, forces the CLI to wait for fresh remote managed settings before starting up.",
-        "why_it_matters": "This setting ensures that the CLI always uses the latest remote managed settings, which can be particularly important in environments where settings are frequently updated.",
-        "how_to_use": [
-          "Set forceRemoteSettingsRefresh to true in your policy settings to enable the feature",
-          "Use this setting in environments where remote managed settings are frequently updated, such as in large-scale deployments"
-        ]
-      }
-    },
-    {
-      "id": "b2e66ee4",
-      "title": "Added interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication,…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-04T00:42:02Z",
-      "summary": "v2.1.92",
-      "fetched_at": "2026-04-04T01:01:11.185Z",
-      "explanation": {
-        "what_it_is": "An interactive Bedrock setup wizard that guides users through AWS authentication when selecting a 3rd-party platform from the login screen.",
-        "why_it_matters": "This wizard simplifies the process of setting up Bedrock with AWS, reducing the complexity and potential errors associated with manual configuration.",
-        "how_to_use": [
-          "Select '3rd-party platform' from the login screen to access the wizard",
-          "Follow the wizard's prompts to authenticate with AWS and complete the Bedrock setup"
-        ]
-      }
-    },
-    {
-      "id": "4bcb7292",
-      "title": "Added per-model and cache-hit breakdown to /cost for subscription users",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-04T00:42:02Z",
-      "summary": "v2.1.92",
-      "fetched_at": "2026-04-04T01:01:11.185Z",
-      "explanation": {
-        "what_it_is": "The /cost endpoint now provides a breakdown of costs by model and cache hits for subscription users, giving more detailed insights into cost distribution.",
-        "why_it_matters": "This change allows subscription users to better understand and optimize their costs by identifying which models are driving expenses and how cache hits are impacting their bills.",
-        "how_to_use": [
-          "Use the /cost endpoint to retrieve a detailed breakdown of your costs, including per-model and cache-hit metrics.",
-          "Analyze the breakdown to identify areas where you can optimize model usage and cache hits to reduce costs."
         ]
       }
     },
@@ -1679,44 +1717,6 @@
         "how_to_use": [
           "Use the new endpoint to fetch organization details for display in a custom dashboard",
           "Integrate the organization information into an automated reporting script"
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-04-14T06:23:20.874Z",
-      "explanation": {
-        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
-        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows after the retirement date.",
-        "how_to_use": [
-          "Migrate existing applications to use recommended replacement models before October 28, 2025",
-          "Update API requests to use non-deprecated models for new developments"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-04-14T17:02:39.963Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
-        "why_it_matters": "With the 1-hour cache duration, users can optimize their workflows by minimizing redundant computations and improving overall performance. This is particularly useful for applications that require frequent reuse of prompt results.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for up to 1 hour, eliminating the need for a beta header",
-          "Optimize workflows by caching prompt results for repeated use cases, such as data processing or information retrieval"
         ]
       }
     }
