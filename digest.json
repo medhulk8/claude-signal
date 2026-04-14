@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-14T04:34:19.927Z",
+  "generated_at": "2026-04-14T06:23:19.496Z",
   "item_count": 90,
   "items": [
     {
@@ -571,63 +571,6 @@
         "how_to_use": [
           "Use the /cost endpoint to retrieve a detailed breakdown of your costs, including per-model and cache-hit metrics.",
           "Analyze the breakdown to identify areas where you can optimize model usage and cache hits to reduce costs."
-        ]
-      }
-    },
-    {
-      "id": "6d565ba5",
-      "title": "Added MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-02T23:45:35Z",
-      "summary": "v2.1.91",
-      "fetched_at": "2026-04-03T01:06:41.818Z",
-      "explanation": {
-        "what_it_is": "The MCP tool now allows result persistence override via a _meta annotation, enabling larger results of up to 500K characters. This is achieved by setting _meta['anthropic/maxResultSizeChars'] to the desired size.",
-        "why_it_matters": "This update matters because it allows Claude Code users to work with larger results, such as database schemas, that previously exceeded the character limit. This change enables more complex workflows and larger data processing tasks.",
-        "how_to_use": [
-          "Set _meta['anthropic/maxResultSizeChars'] to 500000 to allow for larger results like DB schemas",
-          "Use the annotation to override the default result size limit in MCP tool outputs"
-        ]
-      }
-    },
-    {
-      "id": "037f973d",
-      "title": "Added disableSkillShellExecution setting to disable inline shell execution in skills, custom slash commands, and plugin commands",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-02T23:45:35Z",
-      "summary": "v2.1.91",
-      "fetched_at": "2026-04-03T01:06:41.818Z",
-      "explanation": {
-        "what_it_is": "The disableSkillShellExecution setting allows you to disable inline shell execution in skills, custom slash commands, and plugin commands within Claude Code.",
-        "why_it_matters": "This setting gives Claude Code users more control over security and execution permissions, allowing them to restrict potentially risky shell execution in specific contexts.",
-        "how_to_use": [
-          "Set disableSkillShellExecution to true in your configuration to prevent skills and custom commands from executing shell commands inline.",
-          "Use this setting to enforce security policies in environments where shell execution poses a risk."
-        ]
-      }
-    },
-    {
-      "id": "305da734",
-      "title": "Added support for multi-line prompts in claude-cli://open?q= deep links (encoded newlines %0A no longer rejected)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-02T23:45:35Z",
-      "summary": "v2.1.91",
-      "fetched_at": "2026-04-03T01:06:41.818Z",
-      "explanation": {
-        "what_it_is": "The ability to use multi-line prompts in claude-cli://open?q= deep links by encoding newlines as %0A, which are no longer rejected.",
-        "why_it_matters": "This update allows Claude Code users to create more complex and formatted prompts when opening links, enabling more precise and detailed queries.",
-        "how_to_use": [
-          "Use %0A to encode newlines in your prompts, such as 'prompt line 1%0Aprompt line 2'",
-          "Create multi-line prompts in claude-cli://open?q= deep links to test and refine your queries"
         ]
       }
     },
@@ -1717,6 +1660,63 @@
         "how_to_use": [
           "Access the request ID in error responses to identify specific failed requests",
           "Use the included request ID to look up detailed error information in the Errors documentation"
+        ]
+      }
+    },
+    {
+      "id": "db35219a",
+      "title": "We've released the Usage & Cost API, allowing administrators to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
+      "fetched_at": "2026-04-14T06:23:20.874Z",
+      "explanation": {
+        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data.",
+        "why_it_matters": "This API allows administrators to automate the monitoring of their organization's usage and cost data, enabling more efficient management and decision-making.",
+        "how_to_use": [
+          "Use the API to fetch daily or monthly usage reports for your organization",
+          "Integrate the API with your existing monitoring tools to track costs in real-time"
+        ]
+      }
+    },
+    {
+      "id": "cdf7f3fc",
+      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
+      "fetched_at": "2026-04-14T06:23:20.874Z",
+      "explanation": {
+        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
+        "why_it_matters": "This update provides Claude Code users with programmatic access to organization data, enabling automation and integration of organization information into their workflows.",
+        "how_to_use": [
+          "Use the new endpoint to fetch organization details for display in a custom dashboard",
+          "Integrate the organization information into an automated reporting script"
+        ]
+      }
+    },
+    {
+      "id": "74c31538",
+      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
+      "fetched_at": "2026-04-14T06:23:20.874Z",
+      "explanation": {
+        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
+        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows after the retirement date.",
+        "how_to_use": [
+          "Migrate existing applications to use recommended replacement models before October 28, 2025",
+          "Update API requests to use non-deprecated models for new developments"
         ]
       }
     }
