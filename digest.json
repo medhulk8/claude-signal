@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-14T20:45:47.463Z",
+  "generated_at": "2026-04-14T21:39:08.031Z",
   "item_count": 90,
   "items": [
     {
@@ -996,25 +996,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-14T20:45:49.122Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings into a single location.",
-        "how_to_use": [
-          "Update your API requests to use output_config.format instead of output_format for structured outputs",
-          "Test your existing workflows to ensure compatibility with the new output configuration"
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1717,6 +1698,25 @@
         "how_to_use": [
           "Use the API to fetch daily or monthly usage reports for your organization",
           "Integrate the API with your existing monitoring tools to track costs in real-time"
+        ]
+      }
+    },
+    {
+      "id": "cdf7f3fc",
+      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
+      "fetched_at": "2026-04-14T21:39:09.230Z",
+      "explanation": {
+        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
+        "why_it_matters": "This update enables Claude Code users to programmatically access organization data, which can be used for automation, reporting, or integration with other systems.",
+        "how_to_use": [
+          "Use the new endpoint to fetch organization details, such as name, ID, or settings, for use in custom applications or scripts.",
+          "Integrate the organization information with other Anthropic API endpoints to build more comprehensive administrative tools."
         ]
       }
     }
