@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-15T22:30:52.359Z",
+  "generated_at": "2026-04-15T23:31:28.013Z",
   "item_count": 90,
   "items": [
     {
@@ -19,6 +19,25 @@
         "how_to_use": [
           "Run /tui fullscreen to activate flicker-free rendering in the current conversation",
           "Use the tui setting to customize your rendering preferences"
+        ]
+      }
+    },
+    {
+      "id": "0f0d266c",
+      "title": "Added push notification tool — Claude can send mobile push notifications when Remote Control and \"Push when Claude decides\" config are enabled",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T23:21:43Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-15T23:31:28.260Z",
+      "explanation": {
+        "what_it_is": "Claude can now send mobile push notifications when the Remote Control feature is enabled and the 'Push when Claude decides' configuration is set.",
+        "why_it_matters": "This allows users to receive timely notifications on their mobile devices when Claude takes a decision, enabling more flexible and remote monitoring of Claude-controlled workflows.",
+        "how_to_use": [
+          "Enable Remote Control in your Claude configuration",
+          "Set 'Push when Claude decides' to receive push notifications on your mobile device"
         ]
       }
     },
@@ -952,25 +971,6 @@
           "Use the 1M token context window to analyze lengthy documents or articles",
           "Process large datasets that exceed the previous token limit",
           "Test the beta feature with input requests over 200k tokens to explore its capabilities"
-        ]
-      }
-    },
-    {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-15T22:30:53.960Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings into a single parameter.",
-        "how_to_use": [
-          "Update your API requests to use output_config.format instead of output_format for structured outputs",
-          "Test your existing workflows to ensure compatibility with the new output configuration parameter"
         ]
       }
     },
