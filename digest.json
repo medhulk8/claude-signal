@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-04-15T21:39:47.548Z",
+  "generated_at": "2026-04-15T22:30:52.359Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "952ea498",
+      "title": "Added /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T22:07:18Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-15T22:30:52.901Z",
+      "explanation": {
+        "what_it_is": "The /tui command allows you to switch to a flicker-free rendering mode in the same conversation. This mode can be activated by running /tui fullscreen.",
+        "why_it_matters": "This update matters because it enables a smoother visual experience for users, particularly in conversations where rendering issues may have been noticeable. It provides an option to minimize distractions and improve the overall interaction with Claude Code.",
+        "how_to_use": [
+          "Run /tui fullscreen to activate flicker-free rendering in the current conversation",
+          "Use the tui setting to customize your rendering preferences"
+        ]
+      }
+    },
+    {
+      "id": "4b3634cf",
+      "title": "Added autoScrollEnabled config to disable conversation auto-scroll in fullscreen mode",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T22:07:18Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-15T22:30:52.901Z",
+      "explanation": {
+        "what_it_is": "The autoScrollEnabled config is a setting that controls whether the conversation automatically scrolls when in fullscreen mode.",
+        "why_it_matters": "This matters because it allows users to control the scrolling behavior of the conversation in fullscreen mode, which can be useful for presentations or demonstrations where auto-scrolling might be distracting.",
+        "how_to_use": [
+          "Set autoScrollEnabled to false in your config to disable auto-scrolling in fullscreen mode",
+          "Use this setting to prevent accidental scrolling during presentations"
+        ]
+      }
+    },
+    {
+      "id": "63b74eec",
+      "title": "Added option to show Claude's last response as commented context in the Ctrl+G external editor (enable via /config)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T22:07:18Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-15T22:30:52.901Z",
+      "explanation": {
+        "what_it_is": "The Ctrl+G external editor in Claude Code now has an optional feature to display Claude's last response as commented context, which can be enabled through the /config settings.",
+        "why_it_matters": "This update allows users to reference Claude's previous responses directly within the external editor, streamlining their workflow and reducing the need to switch between windows.",
+        "how_to_use": [
+          "Enable the feature via the /config settings to start seeing Claude's last response as commented context in the Ctrl+G external editor",
+          "Use this feature to quickly reference and build upon previous conversations with Claude while working in the external editor"
+        ]
+      }
+    },
     {
       "id": "8dd2d5ba",
       "title": "Added ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK…",
@@ -899,6 +956,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-15T22:30:53.960Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings into a single parameter.",
+        "how_to_use": [
+          "Update your API requests to use output_config.format instead of output_format for structured outputs",
+          "Test your existing workflows to ensure compatibility with the new output configuration parameter"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1638,82 +1714,6 @@
         "how_to_use": [
           "Migrate existing applications to use recommended replacement models",
           "Update API requests to use non-deprecated model versions"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-04-15T08:19:29.034Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for a longer period, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
-        "why_it_matters": "With the 1-hour cache duration, users can optimize their workflows by minimizing redundant computations and improving overall performance. This is particularly useful for applications that require frequent reuse of prompt results.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for 1 hour, reducing the need for repeated computations",
-          "Remove the beta header from your API requests to access the 1-hour cache duration feature"
-        ]
-      }
-    },
-    {
-      "id": "44bee3b8",
-      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-12T00:00:00.000Z",
-      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-04-15T08:19:29.034Z",
-      "explanation": {
-        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
-        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer, more complex inputs, such as lengthy documents or conversations.",
-        "how_to_use": [
-          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more accurate and informed responses.",
-          "Integrate with Amazon Bedrock to leverage the expanded context window in cloud-based applications."
-        ]
-      }
-    },
-    {
-      "id": "0d1b2e50",
-      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-11T00:00:00.000Z",
-      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-04-15T08:19:29.034Z",
-      "explanation": {
-        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
-        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive 429 errors instead of 529 errors when they exceed the API's acceleration limits.",
-        "how_to_use": [
-          "Check your API usage patterns to anticipate when you might hit acceleration limits",
-          "Handle 429 (rate_limit_error) errors in your code to gracefully manage rate limiting"
-        ]
-      }
-    },
-    {
-      "id": "2e5adcc2",
-      "title": "Search result content blocks are now generally available on the Claude API and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-08T00:00:00.000Z",
-      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
-      "fetched_at": "2026-04-15T21:39:49.283Z",
-      "explanation": {
-        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
-        "why_it_matters": "This update allows Claude Code users to access search result content blocks with proper source attribution, making it easier to integrate reliable sources into their RAG applications.",
-        "how_to_use": [
-          "Use the Claude API to retrieve search result content blocks with natural citations for RAG applications",
-          "Integrate search result content blocks into Vertex AI workflows for improved source attribution"
         ]
       }
     }
