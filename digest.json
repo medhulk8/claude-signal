@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-15T01:11:59.085Z",
+  "generated_at": "2026-04-15T04:34:12.640Z",
   "item_count": 90,
   "items": [
     {
@@ -480,101 +480,6 @@
       }
     },
     {
-      "id": "32cb20ff",
-      "title": "Added support for Amazon Bedrock powered by Mantle, set CLAUDE_CODE_USE_MANTLE=1",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-07T21:18:51Z",
-      "summary": "v2.1.94",
-      "fetched_at": "2026-04-07T21:32:22.014Z",
-      "explanation": {
-        "what_it_is": "Claude Code now supports Amazon Bedrock powered by Mantle, which can be enabled by setting the CLAUDE_CODE_USE_MANTLE environment variable to 1.",
-        "why_it_matters": "This update allows Claude Code users to leverage the capabilities of Amazon Bedrock and Mantle, potentially expanding their deployment options.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_USE_MANTLE=1 to enable Mantle support",
-          "Use Claude Code with Amazon Bedrock to deploy models"
-        ]
-      }
-    },
-    {
-      "id": "cfa7f5c7",
-      "title": "Added compact Slacked #channel header with a clickable channel link for Slack MCP send-message tool calls",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-07T21:18:51Z",
-      "summary": "v2.1.94",
-      "fetched_at": "2026-04-07T21:32:22.014Z",
-      "explanation": {
-        "what_it_is": "A compact header with a clickable link to the Slack channel has been added to the send-message tool calls in the Slack MCP tool in Claude Code.",
-        "why_it_matters": "This update makes it easier for users to quickly navigate to the relevant Slack channel when sending messages, streamlining their workflow.",
-        "how_to_use": [
-          "Use the send-message tool in the Slack MCP tool to send a message to a Slack channel and click on the channel link in the compact header to navigate to the channel.",
-          "Click on the channel link in the compact header to open the Slack channel in your browser or Slack app."
-        ]
-      }
-    },
-    {
-      "id": "e0a1cea1",
-      "title": "Added keep-coding-instructions frontmatter field support for plugin output styles",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-07T21:18:51Z",
-      "summary": "v2.1.94",
-      "fetched_at": "2026-04-07T21:32:22.014Z",
-      "explanation": {
-        "what_it_is": "The keep-coding-instructions frontmatter field is now supported for plugin output styles, allowing users to preserve coding instructions in their output.",
-        "why_it_matters": "This update enables Claude Code users to maintain coding instructions in their plugin output, making it easier to review and understand the generated code.",
-        "how_to_use": [
-          "Add a keep-coding-instructions field to your frontmatter to preserve coding instructions in plugin output",
-          "Use this feature to maintain documentation and comments in your generated code"
-        ]
-      }
-    },
-    {
-      "id": "cfc0ce0e",
-      "title": "Added hookSpecificOutput.sessionTitle to UserPromptSubmit hooks for setting the session title",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-07T21:18:51Z",
-      "summary": "v2.1.94",
-      "fetched_at": "2026-04-07T21:32:22.014Z",
-      "explanation": {
-        "what_it_is": "The hookSpecificOutput.sessionTitle is a new property added to UserPromptSubmit hooks, allowing you to set the title of a session. This property enables more fine-grained control over session metadata.",
-        "why_it_matters": "With this update, Claude Code users can now programmatically set the session title when submitting a user prompt, making it easier to organize and track sessions. This change simplifies workflow management and session tracking.",
-        "how_to_use": [
-          "Use hookSpecificOutput.sessionTitle to set a descriptive title for a session when submitting a user prompt, such as 'Initial User Input' or 'Follow-up Question'.",
-          "Update existing UserPromptSubmit hooks to include the sessionTitle property for better session organization."
-        ]
-      }
-    },
-    {
-      "id": "29510c16",
-      "title": "[VSCode] Added a warning banner when settings.json files fail to parse, so users know their permission rules are not being applied",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-07T21:18:51Z",
-      "summary": "v2.1.94",
-      "fetched_at": "2026-04-07T21:32:22.014Z",
-      "explanation": {
-        "what_it_is": "A warning banner in VSCode that appears when a settings.json file fails to parse, indicating that permission rules are not being applied.",
-        "why_it_matters": "This change helps users identify and fix issues with their settings.json files, ensuring that their intended permission rules are actually in effect.",
-        "how_to_use": [
-          "Check the warning banner in VSCode to see if your settings.json file has parsing errors",
-          "Fix any syntax errors in your settings.json file to ensure permission rules are applied correctly"
-        ]
-      }
-    },
-    {
       "id": "919a8889",
       "title": "We announced Claude Mythos Preview is available as a gated research preview for…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
@@ -992,6 +897,25 @@
         "how_to_use": [
           "Use the 1M token context window to process large documents, such as ebooks or technical papers, in a single request.",
           "Take advantage of the increased context window to generate more accurate and informative responses to long-form user input."
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-15T04:34:14.372Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and it is now available on all models and platforms. The output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without restrictions, and the parameter relocation simplifies output configuration for structured data. This enables more precise control over model outputs.",
+        "how_to_use": [
+          "Use fine-grained tool streaming to generate more detailed and customized outputs from your models.",
+          "Update your code to reflect the new location of the output_format parameter, now found at output_config.format, for structured output configurations."
         ]
       }
     },
@@ -1717,6 +1641,82 @@
         "how_to_use": [
           "Use the new endpoint to fetch organization details, such as name, ID, and other relevant information, for use in custom applications or scripts.",
           "Integrate the organization information into existing workflows, such as user management or analytics tools, to enhance their functionality."
+        ]
+      }
+    },
+    {
+      "id": "74c31538",
+      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
+      "fetched_at": "2026-04-15T04:34:14.372Z",
+      "explanation": {
+        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claud-3-5-sonnet-20240620 and claud-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
+        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications.",
+        "how_to_use": [
+          "Migrate existing applications to use recommended replacement models",
+          "Update API requests to use non-deprecated model versions"
+        ]
+      }
+    },
+    {
+      "id": "0f2c5310",
+      "title": "The 1-hour cache duration for prompt caching is now generally available",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
+      "fetched_at": "2026-04-15T04:34:14.372Z",
+      "explanation": {
+        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for a longer period, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
+        "why_it_matters": "With the 1-hour cache duration, users can optimize their workflows by minimizing redundant computations and improving overall performance. This is particularly useful for applications that require frequent access to similar prompt results.",
+        "how_to_use": [
+          "Use the extended cache TTL to store prompt results for 1 hour, reducing the number of repeat requests to the API.",
+          "Remove the beta header from your API requests to access the 1-hour cache duration feature."
+        ]
+      }
+    },
+    {
+      "id": "44bee3b8",
+      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-12T00:00:00.000Z",
+      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
+      "fetched_at": "2026-04-15T04:34:14.372Z",
+      "explanation": {
+        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
+        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer pieces of text, such as full articles or lengthy user inputs.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more accurate and contextually aware responses.",
+          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications."
+        ]
+      }
+    },
+    {
+      "id": "0d1b2e50",
+      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-11T00:00:00.000Z",
+      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
+      "fetched_at": "2026-04-15T04:34:14.372Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
+        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
+        "how_to_use": [
+          "Check API usage patterns to anticipate when rate limits might be exceeded",
+          "Implement retry logic to handle 429 errors and prevent failed requests"
         ]
       }
     }
