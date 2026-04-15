@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-15T17:56:15.549Z",
+  "generated_at": "2026-04-15T19:00:10.460Z",
   "item_count": 90,
   "items": [
     {
@@ -899,25 +899,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-15T17:56:16.741Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change simplifies the process of generating structured outputs by consolidating format configuration into a single location. It also removes the need for a beta header, making it easier to integrate fine-grained tool streaming into production workflows.",
-        "how_to_use": [
-          "Update your API requests to use output_config.format instead of output_format for structured outputs",
-          "Test your existing workflows to ensure compatibility with the new output configuration parameter"
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1714,6 +1695,25 @@
         "how_to_use": [
           "Check your API usage patterns to anticipate when you might hit acceleration limits",
           "Handle 429 (rate_limit_error) errors in your code to gracefully manage rate limiting"
+        ]
+      }
+    },
+    {
+      "id": "2e5adcc2",
+      "title": "Search result content blocks are now generally available on the Claude API and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-08T00:00:00.000Z",
+      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
+      "fetched_at": "2026-04-15T19:00:12.796Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
+        "why_it_matters": "This update allows Claude Code users to access search result content blocks with proper source attribution, making it easier to integrate reliable information into their RAG applications.",
+        "how_to_use": [
+          "Use the Claude API to retrieve search result content blocks with attributed sources for RAG applications",
+          "Integrate search result content blocks into Vertex AI workflows on Google Cloud for enhanced natural language understanding"
         ]
       }
     }
