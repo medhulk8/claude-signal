@@ -1,8 +1,104 @@
 {
   "version": 1,
-  "generated_at": "2026-04-16T14:49:37.102Z",
+  "generated_at": "2026-04-16T16:13:34.287Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "41cef029",
+      "title": "Added xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other models fall back to…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-16T16:13:34.696Z",
+      "explanation": {
+        "what_it_is": "The xhigh effort level is a new setting for Opus 4.7 that offers more computational resources than the high setting but less than the max setting.",
+        "why_it_matters": "This addition gives Claude Code users more fine-grained control over the tradeoff between processing time and output quality for Opus 4.7, allowing for more tailored performance.",
+        "how_to_use": [
+          "Use the /effort command to switch to the xhigh effort level",
+          "Specify --effort xhigh in your command-line arguments",
+          "Select the xhigh effort level via the model picker in the UI"
+        ]
+      }
+    },
+    {
+      "id": "4fa118ff",
+      "title": "Added \"Auto (match terminal)\" theme option that matches your terminal's dark/light mode — select it from /theme",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-16T16:13:34.696Z",
+      "explanation": {
+        "what_it_is": "The 'Auto (match terminal)' theme option automatically switches between dark and light modes based on your terminal's current mode.",
+        "why_it_matters": "This feature allows Claude Code to seamlessly adapt to your existing terminal theme, reducing visual discrepancies and improving overall workflow consistency.",
+        "how_to_use": [
+          "Select the 'Auto (match terminal)' option from the /theme menu to enable automatic theme switching.",
+          "Switch your terminal's dark/light mode to see the Claude Code theme update accordingly."
+        ]
+      }
+    },
+    {
+      "id": "1300c16e",
+      "title": "Added /less-permission-prompts skill — scans transcripts for common read-only Bash and MCP tool calls and proposes a prioritized allowlist for…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-16T16:13:34.696Z",
+      "explanation": {
+        "what_it_is": "The /less-permission-prompts skill scans Claude Code transcripts for common read-only Bash and MCP tool calls to identify potential allowlist candidates.",
+        "why_it_matters": "This skill helps reduce the number of permission prompts by proposing a prioritized allowlist, streamlining the development process and minimizing interruptions.",
+        "how_to_use": [
+          "Run the /less-permission-prompts skill on your Claude Code transcripts to generate a proposed allowlist",
+          "Review and apply the recommended allowlist to reduce permission prompts for read-only Bash and MCP tool calls"
+        ]
+      }
+    },
+    {
+      "id": "2bb5771c",
+      "title": "Added /ultrareview for running comprehensive code review in the cloud using parallel multi-agent analysis and critique — invoke with no arguments to…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-16T16:13:34.696Z",
+      "explanation": {
+        "what_it_is": "The /ultrareview command runs a comprehensive code review in the cloud, utilizing parallel multi-agent analysis and critique. It can be invoked with no arguments to initiate the review process.",
+        "why_it_matters": "This update enables Claude Code users to perform more thorough and efficient code reviews, leveraging cloud-based parallel processing to speed up the analysis. This can significantly reduce the time spent on code reviews, allowing for faster iteration and development.",
+        "how_to_use": [
+          "Invoke /ultrareview with no arguments to start a comprehensive code review",
+          "Use /ultrareview to analyze large codebases, taking advantage of parallel multi-agent analysis for faster results"
+        ]
+      }
+    },
+    {
+      "id": "085a73b1",
+      "title": "Added OTEL_LOG_RAW_API_BODIES environment variable to emit full API request and response bodies as OpenTelemetry log events for debugging",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-16T16:13:34.696Z",
+      "explanation": {
+        "what_it_is": "The OTEL_LOG_RAW_API_BODIES environment variable allows Claude Code to log full API request and response bodies as OpenTelemetry log events.",
+        "why_it_matters": "This enables more detailed debugging of API interactions, providing full context of requests and responses.",
+        "how_to_use": [
+          "Set OTEL_LOG_RAW_API_BODIES to enable logging of API request and response bodies",
+          "Use OpenTelemetry tools to view and analyze the logged events"
+        ]
+      }
+    },
     {
       "id": "a9fa5e48",
       "title": "We've launched Claude Opus 4.7, our most capable generally available model for…",
@@ -435,101 +531,6 @@
         "how_to_use": [
           "Use the advisor tool to guide the generation of complex, multi-step plans",
           "Pair the advisor tool with a faster executor model to accelerate task completion while maintaining strategic oversight"
-        ]
-      }
-    },
-    {
-      "id": "75845b4d",
-      "title": "Added focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-08T21:52:34Z",
-      "summary": "v2.1.97",
-      "fetched_at": "2026-04-08T22:27:12.244Z",
-      "explanation": {
-        "what_it_is": "A focus view toggle feature, accessible via Ctrl+O, that displays the prompt, a one-line tool summary with edit diffstats, and the final response in NO_FLICKER mode.",
-        "why_it_matters": "This feature allows Claude Code users to quickly toggle between views, reducing visual distractions and making it easier to focus on specific parts of the code and response.",
-        "how_to_use": [
-          "Press Ctrl+O to toggle the focus view on and off in NO_FLICKER mode",
-          "Use the focus view to quickly review edit diffstats and the final response"
-        ]
-      }
-    },
-    {
-      "id": "dd415f12",
-      "title": "Added refreshInterval status line setting to re-run the status line command every N seconds",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-08T21:52:34Z",
-      "summary": "v2.1.97",
-      "fetched_at": "2026-04-08T22:27:12.244Z",
-      "explanation": {
-        "what_it_is": "The refreshInterval setting allows you to configure the status line to re-run its command at a specified interval, measured in seconds.",
-        "why_it_matters": "This setting enables dynamic updates to the status line, allowing for real-time information and reducing the need for manual refreshes.",
-        "how_to_use": [
-          "Set refreshInterval to 5 to update the status line every 5 seconds",
-          "Use refreshInterval to periodically re-run a command that fetches external data"
-        ]
-      }
-    },
-    {
-      "id": "0643686c",
-      "title": "Added workspace.git_worktree to the status line JSON input, set when the current directory is inside a linked git worktree",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-08T21:52:34Z",
-      "summary": "v2.1.97",
-      "fetched_at": "2026-04-08T22:27:12.244Z",
-      "explanation": {
-        "what_it_is": "The workspace.git_worktree property is now included in the status line JSON input when the current directory is part of a linked Git worktree.",
-        "why_it_matters": "This update allows Claude Code users to programmatically detect when they are working within a linked Git worktree, enabling more precise automation and scripting.",
-        "how_to_use": [
-          "Check the status line JSON input for the workspace.git_worktree property to determine if the current directory is inside a linked Git worktree.",
-          "Use this property to trigger custom scripts or actions when working within a linked worktree."
-        ]
-      }
-    },
-    {
-      "id": "06d260cf",
-      "title": "Added ● N running indicator in /agents next to agent types with live subagent instances",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-08T21:52:34Z",
-      "summary": "v2.1.97",
-      "fetched_at": "2026-04-08T22:27:12.244Z",
-      "explanation": {
-        "what_it_is": "A running indicator, denoted by ● N, is now displayed next to agent types in the /agents section when there are live subagent instances.",
-        "why_it_matters": "This indicator provides a visual cue for Claude Code users to quickly identify which agent types have active subagents, making it easier to monitor and manage their agents.",
-        "how_to_use": [
-          "Check the /agents section to see which agent types have live subagent instances indicated by ● N",
-          "Use this indicator to quickly identify and investigate agents with active subagents"
-        ]
-      }
-    },
-    {
-      "id": "059d28a6",
-      "title": "Added syntax highlighting for Cedar policy files (.cedar, .cedarpolicy)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-08T21:52:34Z",
-      "summary": "v2.1.97",
-      "fetched_at": "2026-04-08T22:27:12.244Z",
-      "explanation": {
-        "what_it_is": "Syntax highlighting for Cedar policy files (.cedar, .cedarpolicy) is now supported in Claude Code, making it easier to read and understand policy file contents.",
-        "why_it_matters": "This update simplifies the process of writing and editing Cedar policy files by providing visual cues for syntax, reducing errors and improving overall workflow efficiency.",
-        "how_to_use": [
-          "Open a .cedar or .cedarpolicy file in Claude Code to see syntax highlighting in action",
-          "Use the highlighting to quickly identify policy file structure and syntax"
         ]
       }
     },
@@ -989,6 +990,25 @@
           "Use the 1M token context window to analyze lengthy documents or articles",
           "Process large datasets that exceed the previous token limit",
           "Test the beta feature with input requests over 200k tokens to explore its capabilities"
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-16T16:13:36.124Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and the output_format parameter has been relocated to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming on all models and platforms without beta restrictions, and requires updating the output_format parameter location for structured outputs.",
+        "how_to_use": [
+          "Update your code to use output_config.format instead of output_format for structured outputs",
+          "Test your workflows with fine-grained tool streaming on different models and platforms"
         ]
       }
     },
@@ -1694,25 +1714,6 @@
         "how_to_use": [
           "Use the API to fetch daily or monthly usage reports for your organization",
           "Integrate the API with your existing monitoring tools to track costs in real-time"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-04-15T08:19:29.034Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update enables Claude Code users to programmatically access organization details, which can be used for automation, reporting, or integration with other systems.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization data for display in a custom dashboard",
-          "Integrate the endpoint with an existing workflow to automate organization-specific tasks"
         ]
       }
     }
