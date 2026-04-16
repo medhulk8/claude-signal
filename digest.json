@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-16T19:53:29.806Z",
+  "generated_at": "2026-04-16T20:36:11.382Z",
   "item_count": 90,
   "items": [
     {
@@ -380,138 +380,6 @@
         "how_to_use": [
           "Run Claude Code without extra setup to use the OS CA certificate store trust",
           "Set CLAUDE_CODE_CERT_STORE=bundled to revert to using only the bundled certificate store"
-        ]
-      }
-    },
-    {
-      "id": "afbf1edf",
-      "title": "Added interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "An interactive setup wizard for Google Vertex AI, accessible from the login screen when selecting '3rd-party platform', which guides users through the Google Cloud Platform (GCP) setup process.",
-        "why_it_matters": "This wizard simplifies the process of setting up Google Vertex AI with Claude Code, reducing the complexity and potential errors associated with manual configuration.",
-        "how_to_use": [
-          "Select '3rd-party platform' on the login screen to access the wizard",
-          "Follow the wizard's prompts to configure your GCP setup for Google Vertex AI"
-        ]
-      }
-    },
-    {
-      "id": "cdfbe29b",
-      "title": "Added CLAUDE_CODE_PERFORCE_MODE env var: when set, Edit/Write/NotebookEdit fail on read-only files with a p4 edit hint instead of silently…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_PERFORCE_MODE environment variable, when set, changes the behavior of Edit, Write, and NotebookEdit operations on read-only files with a Perforce edit hint.",
-        "why_it_matters": "This change prevents silent overwrites of read-only files, instead failing the operation and alerting the user to the need for a Perforce edit.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_PERFORCE_MODE to enable explicit edit checks for read-only files",
-          "Use this variable in Perforce-managed projects to avoid accidental overwrites"
-        ]
-      }
-    },
-    {
-      "id": "a16b0749",
-      "title": "Added Monitor tool for streaming events from background scripts",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "The Monitor tool is a feature that allows users to stream events from background scripts, providing real-time visibility into script activity.",
-        "why_it_matters": "This update enables Claude Code users to debug and monitor their background scripts more effectively, allowing for faster issue identification and resolution.",
-        "how_to_use": [
-          "Use the Monitor tool to stream events from background scripts and identify performance bottlenecks",
-          "Monitor script activity in real-time to quickly detect and respond to errors"
-        ]
-      }
-    },
-    {
-      "id": "97af0882",
-      "title": "Added subprocess sandboxing with PID namespace isolation on Linux when CLAUDE_CODE_SUBPROCESS_ENV_SCRUB is set, and CLAUDE_CODE_SCRIPT_CAPS env var…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "Subprocess sandboxing with PID namespace isolation on Linux, enabled when CLAUDE_CODE_SUBPROCESS_ENV_SCRUB and CLAUDE_CODE_SCRIPT_CAPS environment variables are set.",
-        "why_it_matters": "This update enhances security by isolating subprocesses from the main process, reducing the risk of privilege escalation attacks on Linux systems.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_SUBPROCESS_ENV_SCRUB and CLAUDE_CODE_SCRIPT_CAPS environment variables to enable subprocess sandboxing",
-          "Run Claude Code on Linux with the enabled environment variables to utilize PID namespace isolation"
-        ]
-      }
-    },
-    {
-      "id": "00a28863",
-      "title": "Added --exclude-dynamic-system-prompt-sections flag to print mode for improved cross-user prompt caching",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "The --exclude-dynamic-system-prompt-sections flag is a new option in Claude Code's print mode that allows users to exclude dynamic system prompt sections from the output.",
-        "why_it_matters": "This flag improves cross-user prompt caching by preventing dynamic sections from interfering with the caching process, resulting in more efficient caching across different users.",
-        "how_to_use": [
-          "Use the --exclude-dynamic-system-prompt-sections flag in print mode to exclude dynamic system prompt sections from the output, like this: `claude print --exclude-dynamic-system-prompt-sections`"
-        ]
-      }
-    },
-    {
-      "id": "79413a8d",
-      "title": "Added workspace.git_worktree to the status line JSON input, set whenever the current directory is inside a linked git worktree",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "The workspace.git_worktree property is now included in the status line JSON input when the current directory is part of a linked Git worktree.",
-        "why_it_matters": "This update allows Claude Code users to programmatically detect and respond to the presence of a linked Git worktree, enabling more customized workflows and automation.",
-        "how_to_use": [
-          "Check the workspace.git_worktree property in your status line JSON input to determine if the current directory is inside a linked Git worktree",
-          "Use this property to trigger custom scripts or actions when working within a linked worktree"
-        ]
-      }
-    },
-    {
-      "id": "ba0e0b3f",
-      "title": "Added W3C TRACEPARENT env var to Bash tool subprocesses when OTEL tracing is enabled, so child-process spans correctly parent to Claude Code's trace…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-09T19:18:28Z",
-      "summary": "v2.1.98",
-      "fetched_at": "2026-04-09T19:55:13.486Z",
-      "explanation": {
-        "what_it_is": "The W3C TRACEPARENT environment variable is now added to Bash tool subprocesses when OpenTelemetry (OTEL) tracing is enabled, allowing child-process spans to be correctly linked to Claude Code's trace.",
-        "why_it_matters": "This update ensures that tracing information is accurately propagated to child processes, providing a more complete view of the execution flow in Claude Code.",
-        "how_to_use": [
-          "Enable OTEL tracing in your Claude Code project to automatically include the W3C TRACEPARENT env var in Bash tool subprocesses",
-          "Verify that child-process spans are correctly parented to Claude Code's trace in your tracing output"
         ]
       }
     },
@@ -990,6 +858,25 @@
           "Use the 1M token context window to analyze lengthy documents or articles",
           "Process large datasets that exceed the previous token limit",
           "Test the beta feature with input requests over 200k tokens to explore its capabilities"
+        ]
+      }
+    },
+    {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without beta restrictions, and requires updating the output_format parameter location for structured outputs. This affects how users configure output formats in their workflows.",
+        "how_to_use": [
+          "Update your code to use output_config.format instead of output_format for structured outputs",
+          "Test your workflows to ensure compatibility with the new output_config.format parameter"
         ]
       }
     },
@@ -1714,6 +1601,120 @@
         "how_to_use": [
           "Use the new endpoint to fetch organization details for display in custom dashboards or applications",
           "Integrate the endpoint with existing workflows to automate organization data updates"
+        ]
+      }
+    },
+    {
+      "id": "74c31538",
+      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, are being deprecated. This means they will no longer be supported or available after a certain date.",
+        "why_it_matters": "After October 28, 2025, any workflows or applications relying on these models will need to be updated to use alternative models to maintain functionality. This change requires users to migrate their dependencies to ensure continuity.",
+        "how_to_use": [
+          "Migrate applications currently using claude-3-5-sonnet-20240620 to a recommended replacement model",
+          "Update workflows that depend on claude-3-5-sonnet-20241022 to use a supported model"
+        ]
+      }
+    },
+    {
+      "id": "0f2c5310",
+      "title": "The 1-hour cache duration for prompt caching is now generally available",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for a longer period, reducing the need for repeated computations.",
+        "why_it_matters": "This change allows for more efficient use of resources, as users no longer need to include a beta header to access the extended cache TTL, making it easier to optimize workflows.",
+        "how_to_use": [
+          "Use the 1-hour cache duration to store results of expensive computations, reducing latency in your applications",
+          "Remove the beta header from your API requests to take advantage of the extended cache TTL"
+        ]
+      }
+    },
+    {
+      "id": "44bee3b8",
+      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-12T00:00:00.000Z",
+      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider more text when generating responses.",
+        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer pieces of text, such as full articles or large documents.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more accurate and informed responses.",
+          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications."
+        ]
+      }
+    },
+    {
+      "id": "0d1b2e50",
+      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-11T00:00:00.000Z",
+      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it reaches acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
+        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
+        "how_to_use": [
+          "Check API usage patterns to anticipate potential rate limiting",
+          "Handle 429 errors by implementing retry logic or reducing API request rates"
+        ]
+      }
+    },
+    {
+      "id": "2e5adcc2",
+      "title": "Search result content blocks are now generally available on the Claude API and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-08T00:00:00.000Z",
+      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
+        "why_it_matters": "This update allows Claude Code users to access search result content blocks with proper source attribution, making it easier to integrate reliable information into their RAG applications.",
+        "how_to_use": [
+          "Use the Claude API to retrieve search result content blocks with attributed sources",
+          "Integrate search result content blocks into RAG applications on Google Cloud's Vertex AI for more accurate and reliable outputs"
+        ]
+      }
+    },
+    {
+      "id": "38bc1347",
+      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-05T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
+      "fetched_at": "2026-04-16T20:36:12.919Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, featuring enhanced capabilities and performance improvements.",
+        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
+        "how_to_use": [
+          "Access the updated capabilities through the Anthropic API or developer platform",
+          "Review the Models overview for more information on the enhancements and improvements"
         ]
       }
     }
