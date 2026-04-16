@@ -1,8 +1,26 @@
 {
   "version": 1,
-  "generated_at": "2026-04-16T12:57:08.175Z",
+  "generated_at": "2026-04-16T14:49:37.102Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "a9fa5e48",
+      "title": "We've launched Claude Opus 4.7, our most capable generally available model for…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.7, our most capable generally available model for complex reasoning and agentic coding, at the same $5 / $25 per MTok pricing as Opus 4.6. See What's new in Claude Opus…",
+      "fetched_at": "2026-04-16T14:49:38.661Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.7 is a generally available model that supports complex reasoning and agentic coding, available at the same pricing as Opus 4.6.",
+        "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
+        "how_to_use": [
+          "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code."
+        ]
+      }
+    },
     {
       "id": "952ea498",
       "title": "Added /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation",
@@ -971,25 +989,6 @@
           "Use the 1M token context window to analyze lengthy documents or articles",
           "Process large datasets that exceed the previous token limit",
           "Test the beta feature with input requests over 200k tokens to explore its capabilities"
-        ]
-      }
-    },
-    {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-16T10:03:48.965Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings.",
-        "how_to_use": [
-          "Update your API requests to use output_config.format instead of output_format for structured outputs",
-          "Test your existing workflows to ensure compatibility with the new output configuration"
         ]
       }
     },
