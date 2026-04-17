@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-04-17T18:38:43.041Z",
+  "generated_at": "2026-04-17T19:48:41.880Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "45727dd6",
+      "title": "Added sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-17T19:34:41Z",
+      "summary": "v2.1.113",
+      "fetched_at": "2026-04-17T19:48:42.195Z",
+      "explanation": {
+        "what_it_is": "The sandbox.network.deniedDomains setting allows you to block specific domains from being accessed, even if they would normally be permitted by a wildcard in the allowedDomains setting.",
+        "why_it_matters": "This setting gives you more fine-grained control over network access, enabling you to exclude specific domains that may be security risks or otherwise undesirable, even if they match a broader allowed pattern.",
+        "how_to_use": [
+          "Add a list of denied domains to the sandbox.network.deniedDomains setting to block them, e.g. ['example.com', 'sub.example.com']",
+          "Use this setting in conjunction with allowedDomains wildcards to create more nuanced network access policies"
+        ]
+      }
+    },
     {
       "id": "41cef029",
       "title": "Added xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other models fall back to…",
@@ -1696,25 +1715,6 @@
         "how_to_use": [
           "Use the Claude API to retrieve search result content blocks with attributed sources",
           "Integrate search result content blocks into RAG applications on Google Cloud's Vertex AI for more accurate and reliable outputs"
-        ]
-      }
-    },
-    {
-      "id": "38bc1347",
-      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-05T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
-      "fetched_at": "2026-04-16T20:36:12.919Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, featuring enhanced capabilities and performance improvements.",
-        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
-        "how_to_use": [
-          "Access the updated capabilities through the Anthropic API or developer platform",
-          "Review the Models overview for more information on the enhancements and improvements"
         ]
       }
     }
