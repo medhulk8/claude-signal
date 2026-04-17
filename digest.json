@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-17T01:14:07.354Z",
+  "generated_at": "2026-04-17T04:37:38.121Z",
   "item_count": 90,
   "items": [
     {
@@ -862,6 +862,25 @@
       }
     },
     {
+      "id": "ce773463",
+      "title": "Fine-grained tool streaming is now generally available on all models and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
+      "fetched_at": "2026-04-17T04:37:39.500Z",
+      "explanation": {
+        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output. The output_format parameter has been moved to output_config.format for structured outputs.",
+        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming without restrictions, and requires updating code to use the new output_config.format parameter for structured outputs.",
+        "how_to_use": [
+          "Update your API calls to use output_config.format instead of output_format for structured outputs",
+          "Test your code to ensure compatibility with the new output_config.format parameter"
+        ]
+      }
+    },
+    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1696,25 +1715,6 @@
         "how_to_use": [
           "Access the updated capabilities through the Anthropic API or developer platform",
           "Review the Models overview for more information on the enhancements and improvements"
-        ]
-      }
-    },
-    {
-      "id": "3b3ac203",
-      "title": "We've released text_editor_20250728, an updated text editor tool that fixes…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-28T00:00:00.000Z",
-      "summary": "We've released text_editor_20250728, an updated text editor tool that fixes some issues from the previous versions and adds an optional max_characters parameter that allows you to control the…",
-      "fetched_at": "2026-04-17T01:14:08.802Z",
-      "explanation": {
-        "what_it_is": "The updated text_editor_20250728 tool fixes previous issues and adds an optional max_characters parameter to control character limits.",
-        "why_it_matters": "This update gives Claude Code users more control over text output, allowing them to specify a maximum number of characters for their use cases.",
-        "how_to_use": [
-          "Use the max_characters parameter to limit text output to a specific length, such as when generating text for display on a mobile device.",
-          "Specify a maximum character count when calling the text_editor_20250728 tool to prevent excessively long text outputs."
         ]
       }
     }
