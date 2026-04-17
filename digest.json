@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-17T21:30:28.264Z",
+  "generated_at": "2026-04-17T22:25:26.575Z",
   "item_count": 90,
   "items": [
     {
@@ -133,6 +133,25 @@
         "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
         "how_to_use": [
           "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code."
+        ]
+      }
+    },
+    {
+      "id": "9bdf5c12",
+      "title": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers. Claude Opus 4.7 and Claude Haiku 4.5 are available self-serve from the Bedrock console through the Messages API endpoint at…",
+      "fetched_at": "2026-04-17T22:25:27.913Z",
+      "explanation": {
+        "what_it_is": "Claude in Amazon Bedrock is a self-serve integration available through the Messages API endpoint, offering access to Claude Opus 4.7 and Claude Haiku 4.5 models.",
+        "why_it_matters": "This update allows all Amazon Bedrock customers to leverage Claude's capabilities without requiring special access or setup, streamlining the integration process.",
+        "how_to_use": [
+          "Access Claude Opus 4.7 and Claude Haiku 4.5 models through the Bedrock console",
+          "Use the Messages API endpoint to integrate Claude into your Amazon Bedrock workflow"
         ]
       }
     },
@@ -1696,25 +1715,6 @@
         "how_to_use": [
           "Check API usage patterns to anticipate potential rate limiting",
           "Handle 429 errors by implementing retry logic or reducing API request rates"
-        ]
-      }
-    },
-    {
-      "id": "2e5adcc2",
-      "title": "Search result content blocks are now generally available on the Claude API and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-08T00:00:00.000Z",
-      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
-      "fetched_at": "2026-04-16T20:36:12.919Z",
-      "explanation": {
-        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
-        "why_it_matters": "This update allows Claude Code users to access search result content blocks with proper source attribution, making it easier to integrate reliable information into their RAG applications.",
-        "how_to_use": [
-          "Use the Claude API to retrieve search result content blocks with attributed sources",
-          "Integrate search result content blocks into RAG applications on Google Cloud's Vertex AI for more accurate and reliable outputs"
         ]
       }
     }
