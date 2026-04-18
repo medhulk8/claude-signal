@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-18T01:07:27.746Z",
+  "generated_at": "2026-04-18T04:19:46.518Z",
   "item_count": 90,
   "items": [
     {
@@ -380,44 +380,6 @@
         "how_to_use": [
           "Add a monitors key to your plugin's manifest to specify the events to monitor",
           "Use the auto-arming feature to start monitoring at session start or when a skill is invoked"
-        ]
-      }
-    },
-    {
-      "id": "d0fb4c3e",
-      "title": "Added /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-10T19:03:41Z",
-      "summary": "v2.1.101",
-      "fetched_at": "2026-04-10T19:34:57.794Z",
-      "explanation": {
-        "what_it_is": "The /team-onboarding command generates a guide to help new teammates get up to speed with your local Claude Code usage.",
-        "why_it_matters": "This command saves time and effort when onboarding new team members by automatically creating a personalized ramp-up guide based on your existing Claude Code setup.",
-        "how_to_use": [
-          "Run the /team-onboarding command in your Claude Code environment to generate a teammate ramp-up guide.",
-          "Use the generated guide to walk new teammates through your local Claude Code usage and best practices."
-        ]
-      }
-    },
-    {
-      "id": "57109118",
-      "title": "Added OS CA certificate store trust by default, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-10T19:03:41Z",
-      "summary": "v2.1.101",
-      "fetched_at": "2026-04-10T19:34:57.794Z",
-      "explanation": {
-        "what_it_is": "Claude Code now trusts the OS CA certificate store by default, allowing TLS proxies to work without additional configuration.",
-        "why_it_matters": "This change simplifies the setup process for enterprise users who rely on TLS proxies, as they no longer need to manually configure certificate trust.",
-        "how_to_use": [
-          "Run Claude Code without extra setup to use the OS CA certificate store trust",
-          "Set CLAUDE_CODE_CERT_STORE=bundled to revert to using only the bundled certificate store"
         ]
       }
     },
@@ -1715,6 +1677,44 @@
         "how_to_use": [
           "Check API usage patterns to anticipate potential rate limiting",
           "Handle 429 errors by implementing retry logic or reducing API request rates"
+        ]
+      }
+    },
+    {
+      "id": "2e5adcc2",
+      "title": "Search result content blocks are now generally available on the Claude API and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-08T00:00:00.000Z",
+      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
+      "fetched_at": "2026-04-18T04:19:47.974Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
+        "why_it_matters": "This update allows Claude Code users to access search result content blocks with proper source attribution, making it easier to integrate reliable information into their RAG applications.",
+        "how_to_use": [
+          "Use the Claude API to retrieve search result content blocks with attributed sources for RAG applications",
+          "Integrate search result content blocks into Vertex AI workflows on Google Cloud for more informed model outputs"
+        ]
+      }
+    },
+    {
+      "id": "38bc1347",
+      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-05T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
+      "fetched_at": "2026-04-18T04:19:47.974Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, featuring enhanced capabilities and performance improvements.",
+        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow and processing.",
+        "how_to_use": [
+          "Check the Models overview for details on the updated capabilities",
+          "Test your existing workflows to take advantage of the performance improvements"
         ]
       }
     }
