@@ -1,8 +1,123 @@
 {
   "version": 1,
-  "generated_at": "2026-04-18T18:28:44.749Z",
+  "generated_at": "2026-04-18T19:32:07.463Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "45727dd6",
+      "title": "Added sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-17T19:34:41Z",
+      "summary": "v2.1.113",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The sandbox.network.deniedDomains setting allows you to block specific domains from being accessed, even if they would normally be permitted by a wildcard in the allowedDomains setting.",
+        "why_it_matters": "This setting gives you more fine-grained control over network access, enabling you to exclude specific domains that may be security risks or otherwise undesirable, even if they match a broader allowed pattern.",
+        "how_to_use": [
+          "Add a list of denied domains to the sandbox.network.deniedDomains setting to block them, e.g. ['example.com', 'sub.example.com']",
+          "Use this setting in conjunction with allowedDomains wildcards to create more nuanced network access policies"
+        ]
+      }
+    },
+    {
+      "id": "41cef029",
+      "title": "Added xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other models fall back to…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The xhigh effort level is a new setting for Opus 4.7 that offers more computational resources than the high setting but less than the max setting.",
+        "why_it_matters": "This addition gives Claude Code users more fine-grained control over the tradeoff between processing time and output quality, allowing for more efficient use of resources.",
+        "how_to_use": [
+          "Use the /effort command to switch to the xhigh effort level",
+          "Specify the --effort flag with the value xhigh when running a task",
+          "Select the xhigh effort level from the model picker in the UI"
+        ]
+      }
+    },
+    {
+      "id": "4fa118ff",
+      "title": "Added \"Auto (match terminal)\" theme option that matches your terminal's dark/light mode — select it from /theme",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "A new theme option called 'Auto (match terminal)' that automatically switches between dark and light mode based on the terminal's current mode.",
+        "why_it_matters": "This feature allows Claude Code users to seamlessly integrate their editor's theme with their terminal's theme, reducing visual discontinuity and improving overall workflow consistency.",
+        "how_to_use": [
+          "Select the 'Auto (match terminal)' theme option from the /theme menu to enable automatic theme switching.",
+          "Switch your terminal's dark/light mode to see the Claude Code theme update accordingly."
+        ]
+      }
+    },
+    {
+      "id": "1300c16e",
+      "title": "Added /less-permission-prompts skill — scans transcripts for common read-only Bash and MCP tool calls and proposes a prioritized allowlist for…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The /less-permission-prompts skill scans transcripts for common read-only Bash and MCP tool calls and proposes a prioritized allowlist.",
+        "why_it_matters": "This skill helps reduce the number of permission prompts by identifying and allowing common read-only tool calls, streamlining the development workflow.",
+        "how_to_use": [
+          "Run the /less-permission-prompts skill on your transcripts to generate a proposed allowlist",
+          "Review and apply the proposed allowlist to reduce permission prompts"
+        ]
+      }
+    },
+    {
+      "id": "2bb5771c",
+      "title": "Added /ultrareview for running comprehensive code review in the cloud using parallel multi-agent analysis and critique — invoke with no arguments to…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The /ultrareview command runs a comprehensive code review in the cloud, utilizing parallel multi-agent analysis and critique. It can be invoked with no arguments to initiate the review process.",
+        "why_it_matters": "This update enables Claude Code users to perform more thorough and efficient code reviews, leveraging cloud-based processing and multi-agent analysis. This can lead to improved code quality and reduced review times.",
+        "how_to_use": [
+          "Invoke /ultrareview with no arguments to start a comprehensive code review",
+          "Use /ultrareview to analyze large codebases, taking advantage of parallel processing"
+        ]
+      }
+    },
+    {
+      "id": "085a73b1",
+      "title": "Added OTEL_LOG_RAW_API_BODIES environment variable to emit full API request and response bodies as OpenTelemetry log events for debugging",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-16T15:18:45Z",
+      "summary": "v2.1.111",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The OTEL_LOG_RAW_API_BODIES environment variable allows Claude Code to log full API request and response bodies as OpenTelemetry log events.",
+        "why_it_matters": "This enables more detailed debugging of API interactions, providing full context of requests and responses.",
+        "how_to_use": [
+          "Set OTEL_LOG_RAW_API_BODIES to 'true' to enable logging of API request and response bodies",
+          "Use OpenTelemetry tools to view and analyze the logged API events"
+        ]
+      }
+    },
     {
       "id": "a9fa5e48",
       "title": "We've launched Claude Opus 4.7, our most capable generally available model for…",
@@ -41,6 +156,157 @@
       }
     },
     {
+      "id": "952ea498",
+      "title": "Added /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T23:21:43Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The /tui command allows switching to a flicker-free rendering mode in the same conversation. This mode can be activated by running /tui fullscreen.",
+        "why_it_matters": "This update enables a smoother visual experience for users, reducing distractions caused by screen flicker. It's particularly useful for conversations with dynamic or graphical content.",
+        "how_to_use": [
+          "Run /tui fullscreen to activate flicker-free rendering in the current conversation",
+          "Use the tui setting to customize the behavior of the /tui command"
+        ]
+      }
+    },
+    {
+      "id": "0f0d266c",
+      "title": "Added push notification tool — Claude can send mobile push notifications when Remote Control and \"Push when Claude decides\" config are enabled",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T23:21:43Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "Claude can now send mobile push notifications when the Remote Control feature is enabled and the 'Push when Claude decides' configuration is set.",
+        "why_it_matters": "This update allows Claude Code users to receive timely notifications on their mobile devices when Claude takes a decision, enabling more flexible and remote monitoring of Claude's activities.",
+        "how_to_use": [
+          "Enable Remote Control in your Claude Code settings",
+          "Configure 'Push when Claude decides' to receive notifications when Claude makes a decision"
+        ]
+      }
+    },
+    {
+      "id": "4b3634cf",
+      "title": "Added autoScrollEnabled config to disable conversation auto-scroll in fullscreen mode",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T23:21:43Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "A new configuration option called autoScrollEnabled that allows you to disable automatic scrolling of conversations when in fullscreen mode.",
+        "why_it_matters": "This change gives you more control over the behavior of Claude Code in fullscreen mode, which can be useful when presenting or sharing screens.",
+        "how_to_use": [
+          "Set autoScrollEnabled to false in your config to prevent conversations from scrolling automatically in fullscreen mode."
+        ]
+      }
+    },
+    {
+      "id": "63b74eec",
+      "title": "Added option to show Claude's last response as commented context in the Ctrl+G external editor (enable via /config)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-15T23:21:43Z",
+      "summary": "v2.1.110",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The ability to display Claude's last response as commented context in the external editor invoked by Ctrl+G, which can be enabled through the /config option.",
+        "why_it_matters": "This feature allows users to reference Claude's previous responses directly within the external editor, streamlining their workflow and reducing the need to switch between windows.",
+        "how_to_use": [
+          "Enable the feature via the /config option",
+          "Invoke the external editor with Ctrl+G to see Claude's last response as commented context"
+        ]
+      }
+    },
+    {
+      "id": "8dd2d5ba",
+      "title": "Added ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The ENABLE_PROMPT_CACHING_1H environment variable allows you to set a 1-hour time-to-live (TTL) for prompt caching on API keys, as well as on Bedrock, Vertex, and Foundry platforms.",
+        "why_it_matters": "This update gives Claude Code users more control over prompt caching, enabling them to balance performance and data freshness according to their specific needs.",
+        "how_to_use": [
+          "Set ENABLE_PROMPT_CACHING_1H to opt into a 1-hour prompt cache TTL on your API key",
+          "Use ENABLE_PROMPT_CACHING_1H_BEDROCK to enable the feature on Bedrock specifically"
+        ]
+      }
+    },
+    {
+      "id": "01e17bf8",
+      "title": "Added recap feature to provide context when returning to a session, configurable in /config and manually invocable with /recap; force with…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The recap feature provides context when returning to a session, allowing users to quickly get up to speed on previous conversations or work.",
+        "why_it_matters": "This feature saves users time and mental effort when re-engaging with a session, as they no longer need to manually review previous interactions to recall important details.",
+        "how_to_use": [
+          "Configure the recap feature in /config to automatically provide context when returning to a session",
+          "Manually invoke the recap feature with /recap to get an instant summary of the session"
+        ]
+      }
+    },
+    {
+      "id": "60b51a79",
+      "title": "Added \"verbose\" indicator when viewing the detailed transcript (Ctrl+O)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "A 'verbose' indicator is now displayed when viewing the detailed transcript in Claude Code, accessible via Ctrl+O.",
+        "why_it_matters": "This indicator helps users quickly identify when a transcript is in verbose mode, allowing for more efficient debugging and log analysis.",
+        "how_to_use": [
+          "Press Ctrl+O to view the detailed transcript and look for the 'verbose' indicator.",
+          "Use the indicator to determine if a transcript is showing detailed or condensed information."
+        ]
+      }
+    },
+    {
+      "id": "006c0090",
+      "title": "Added a warning at startup when prompt caching is disabled via DISABLE_PROMPT_CACHING* environment variables",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-14T19:12:01Z",
+      "summary": "v2.1.108",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "A warning message is now displayed at startup when prompt caching is disabled using the DISABLE_PROMPT_CACHING environment variable.",
+        "why_it_matters": "This change helps Claude Code users avoid unintentionally disabling prompt caching, which can impact performance, by explicitly notifying them when it's disabled.",
+        "how_to_use": [
+          "Check the warning message at startup to ensure prompt caching is enabled as intended.",
+          "Review your environment variables to verify if DISABLE_PROMPT_CACHING is set unintentionally."
+        ]
+      }
+    },
+    {
       "id": "0fc54559",
       "title": "We announced the deprecation of the Claude Sonnet 4 model…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
@@ -56,6 +322,63 @@
         "how_to_use": [
           "Update API requests to use a non-deprecated model before June 15",
           "Test alternative models to ensure compatibility with existing workflows"
+        ]
+      }
+    },
+    {
+      "id": "b61de965",
+      "title": "Added path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-13T21:53:13Z",
+      "summary": "v2.1.105",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "The EnterWorktree tool in Claude Code now accepts a path parameter, allowing users to switch into an existing worktree of the current repository.",
+        "why_it_matters": "This update enables Claude Code users to easily switch between different worktrees in their repository, streamlining their workflow and reducing the need for manual navigation.",
+        "how_to_use": [
+          "Use the EnterWorktree tool with the path parameter to switch to an existing worktree, e.g., EnterWorktree /path/to/existing/worktree",
+          "Switch between worktrees to manage different branches or features of your project"
+        ]
+      }
+    },
+    {
+      "id": "d4b55255",
+      "title": "Added PreCompact hook support: hooks can now block compaction by exiting with code 2 or returning {\"decision\":\"block\"}",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-13T21:53:13Z",
+      "summary": "v2.1.105",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "PreCompact hook support allows hooks to block compaction by exiting with a specific code or returning a decision to block. This is done by exiting with code 2 or returning {\"decision\":\"block\"}.",
+        "why_it_matters": "This update gives Claude Code users more control over the compaction process, allowing them to prevent compaction from occurring under certain conditions. This can be useful for ensuring data integrity or preventing unintended changes.",
+        "how_to_use": [
+          "Exit a hook with code 2 to block compaction",
+          "Return {\"decision\":\"block\"} from a hook to prevent compaction"
+        ]
+      }
+    },
+    {
+      "id": "1be79972",
+      "title": "Added background monitor support for plugins via a top-level monitors manifest key that auto-arms at session start or on skill invoke",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-13T21:53:13Z",
+      "summary": "v2.1.105",
+      "fetched_at": "2026-04-18T19:32:07.721Z",
+      "explanation": {
+        "what_it_is": "A top-level monitors manifest key that allows plugins to run background monitors, which can be automatically armed at the start of a session or when a skill is invoked.",
+        "why_it_matters": "This update enables Claude Code users to create plugins that can continuously monitor and respond to events in the background, without requiring manual intervention.",
+        "how_to_use": [
+          "Add a monitors key to your plugin's manifest to define background monitors",
+          "Use the auto-arm feature to start monitors at session start or when a specific skill is invoked"
         ]
       }
     },
@@ -1393,331 +1716,6 @@
         "why_it_matters": "This update brings improved performance to Claude Code users, potentially leading to more efficient and accurate results in their workflows.",
         "how_to_use": [
           "Use the updated model by selecting Claude Opus 4.1 in the Models overview section of the Anthropic API developer platform"
-        ]
-      }
-    },
-    {
-      "id": "3b3ac203",
-      "title": "We've released text_editor_20250728, an updated text editor tool that fixes…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-28T00:00:00.000Z",
-      "summary": "We've released text_editor_20250728, an updated text editor tool that fixes some issues from the previous versions and adds an optional max_characters parameter that allows you to control the…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The text_editor_20250728 tool is an updated text editor that fixes previous issues and adds a max_characters parameter to control character limits.",
-        "why_it_matters": "This update gives Claude Code users more control over text output, allowing them to specify a maximum number of characters for editing tasks.",
-        "how_to_use": [
-          "Use the max_characters parameter to limit text length in editing tasks, such as 'text_editor_20250728(input_text, max_characters=100)'",
-          "Test the updated tool to ensure previous issues are resolved and character limits are enforced as expected"
-        ]
-      }
-    },
-    {
-      "id": "7406ee3b",
-      "title": "We've increased rate limits for Claude Opus 4 on the Claude API to give you…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-24T00:00:00.000Z",
-      "summary": "We've increased rate limits for Claude Opus 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The rate limits for Claude Opus 4 on the Claude API have been increased, allowing for more requests to be made within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, for customers on usage tiers 1-4.",
-        "how_to_use": [
-          "Make more frequent API calls to Claude Opus 4 without incurring rate limit errors",
-          "Scale your application to handle increased traffic or workload"
-        ]
-      }
-    },
-    {
-      "id": "a5dc8cdc",
-      "title": "We've retired the Claude 2.0, Claude 2.1, and Claude Sonnet 3 models",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-21-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-21T00:00:00.000Z",
-      "summary": "We've retired the Claude 2.0, Claude 2.1, and Claude Sonnet 3 models. All requests to these models will now return an error. Read more in Model deprecations.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The Claude 2.0, Claude 2.1, and Claude Sonnet 3 models have been retired and are no longer available for use. Any requests to these models will now return an error.",
-        "why_it_matters": "This change affects any existing workflows or integrations that rely on these models, which will need to be updated to use alternative models. This ensures that users are using the most current and supported models for their applications.",
-        "how_to_use": [
-          "Update API requests to use currently supported models",
-          "Review and modify existing code to handle the error response from retired models",
-          "Consult the Model deprecations documentation for guidance on migrating to alternative models"
-        ]
-      }
-    },
-    {
-      "id": "b6a16fb1",
-      "title": "We've increased rate limits for Claude Sonnet 4 on the Claude API to give you…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-17T00:00:00.000Z",
-      "summary": "We've increased rate limits for Claude Sonnet 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "Increased rate limits for Claude Sonnet 4 on the Claude API, allowing for more requests within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, particularly for those on usage tiers 1-4.",
-        "how_to_use": [
-          "Make more frequent API calls to Claude Sonnet 4 without incurring rate limit errors",
-          "Scale your application to handle increased traffic or larger workloads"
-        ]
-      }
-    },
-    {
-      "id": "5de919c7",
-      "title": "We've launched search result content blocks in beta, enabling natural citations…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-3-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-03T00:00:00.000Z",
-      "summary": "We've launched search result content blocks in beta, enabling natural citations for RAG applications. Tools can now return search results with proper source attribution, and Claude will automatically…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "Search result content blocks allow tools to return search results with proper source attribution, enabling natural citations for RAG applications.",
-        "why_it_matters": "This update enables Claude Code users to provide more accurate and transparent search results, with automatic source attribution.",
-        "how_to_use": [
-          "Use search result content blocks to return search results with proper source attribution in RAG applications",
-          "Leverage Claude's automatic source attribution to simplify citation management"
-        ]
-      }
-    },
-    {
-      "id": "66df1341",
-      "title": "We announced the deprecation of the Claude Opus 3 model",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-06-30T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Opus 3 model. Read more in Model deprecations.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The Claude Opus 3 model is being deprecated, meaning it will no longer be supported or maintained.",
-        "why_it_matters": "This change affects Claude Code users who currently rely on the Opus 3 model, as they will need to migrate to a different model to ensure continued support and compatibility.",
-        "how_to_use": [
-          "Review the Model deprecations documentation to understand the timeline and alternatives",
-          "Update existing code to use a recommended replacement model"
-        ]
-      }
-    },
-    {
-      "id": "4c336847",
-      "title": "Console users with the Developer role can now access the Cost page",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-23-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-06-23T00:00:00.000Z",
-      "summary": "Console users with the Developer role can now access the Cost page. Previously, the Developer role allowed access to the Usage page, but not the Cost page.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "Console users with the Developer role can now view the Cost page, which was previously inaccessible to them.",
-        "why_it_matters": "This change allows developers to access cost information directly, reducing the need to request access from other roles or rely on external reporting.",
-        "how_to_use": [
-          "Navigate to the Cost page in the Console to view cost information",
-          "Use the Cost page to track and manage costs associated with your projects"
-        ]
-      }
-    },
-    {
-      "id": "c68df1c0",
-      "title": "We've launched fine-grained tool streaming in public beta, a feature that…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-06-11T00:00:00.000Z",
-      "summary": "We've launched fine-grained tool streaming in public beta, a feature that enables Claude to stream tool use parameters without buffering / JSON validation. To enable fine-grained tool streaming, use…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming allows Claude to stream tool use parameters without buffering or JSON validation, enabling more efficient and flexible tool interactions.",
-        "why_it_matters": "This feature enables Claude Code users to work with tools in a more seamless and responsive way, without interruptions from buffering or validation checks.",
-        "how_to_use": [
-          "Use the fine-grained tool streaming feature to stream parameters for tools that require real-time interactions",
-          "Enable fine-grained tool streaming by using the specified command in the Anthropic API / developer platform"
-        ]
-      }
-    },
-    {
-      "id": "e72fe61d",
-      "title": "We've launched Claude Opus 4 and Claude Sonnet 4, our latest models with…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4 and Claude Sonnet 4, our latest models with extended thinking capabilities. Learn more in Models overview.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4 and Claude Sonnet 4 are the latest models with extended thinking capabilities, available on the Anthropic API and developer platform.",
-        "why_it_matters": "These new models provide Claude Code users with more advanced thinking capabilities, potentially leading to more accurate and informative outputs.",
-        "how_to_use": [
-          "Access the Models overview to learn more about the capabilities of Claude Opus 4 and Claude Sonnet 4",
-          "Update your API requests to utilize the new models for improved performance"
-        ]
-      }
-    },
-    {
-      "id": "dd13d1fd",
-      "title": "The default behavior of extended thinking in Claude 4 models returns a summary…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "The default behavior of extended thinking in Claude 4 models returns a summary of Claude's full thinking process, with the full thinking encrypted and returned in the signature field of thinking…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The default behavior of extended thinking in Claude 4 models now returns a summary of the full thinking process, with the full process encrypted and included in the signature field of the thinking output.",
-        "why_it_matters": "This change allows developers to access a summary of the thinking process while keeping the full process secure, enabling more informed decision-making and debugging.",
-        "how_to_use": [
-          "Access the summary of the thinking process from the main output of the Claude 4 model",
-          "Retrieve the full encrypted thinking process from the signature field for further analysis or auditing"
-        ]
-      }
-    },
-    {
-      "id": "66578d5c",
-      "title": "We've launched interleaved thinking in public beta, a feature that enables…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've launched interleaved thinking in public beta, a feature that enables Claude to think in between tool calls. To enable interleaved thinking, use the beta header interleaved-thinking-2025-05-14.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "Interleaved thinking is a feature that allows Claude to think and process information between tool calls, enabling more complex and dynamic workflows.",
-        "why_it_matters": "This feature allows Claude to make more informed decisions and take actions based on the output of previous tool calls, leading to more sophisticated automation scenarios.",
-        "how_to_use": [
-          "Use the beta header 'interleaved-thinking-2025-05-14' to enable interleaved thinking in your Claude API requests",
-          "Design workflows that take advantage of Claude's ability to think between tool calls, such as using output from one tool as input for another"
-        ]
-      }
-    },
-    {
-      "id": "7b5751a2",
-      "title": "We've launched the Files API in public beta, enabling you to upload files and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've launched the Files API in public beta, enabling you to upload files and reference them in the Messages API and code execution tool.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The Files API allows you to upload files and reference them in the Messages API and code execution tool.",
-        "why_it_matters": "This enables Claude Code users to work with files in their workflows, such as uploading data for processing or referencing external resources.",
-        "how_to_use": [
-          "Upload a dataset file to use in a code execution task",
-          "Reference an uploaded file in a Messages API call to include it in a conversation"
-        ]
-      }
-    },
-    {
-      "id": "88f57c39",
-      "title": "We've launched the Code execution tool in public beta, a tool that enables…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've launched the Code execution tool in public beta, a tool that enables Claude to execute Python code in a secure, sandboxed environment.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The Code execution tool is a feature that allows Claude to run Python code in a secure, sandboxed environment. This enables Claude to perform tasks that require executing custom code.",
-        "why_it_matters": "With this tool, Claude Code users can now leverage Python code to perform complex tasks, extending the capabilities of the platform. This change enables more flexible and customized workflows.",
-        "how_to_use": [
-          "Use the Code execution tool to execute Python scripts that interact with the Anthropic API",
-          "Run custom data processing tasks using Python code, within the secure sandboxed environment"
-        ]
-      }
-    },
-    {
-      "id": "3034e4e2",
-      "title": "We've launched the MCP connector in public beta, a feature that allows you to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've launched the MCP connector in public beta, a feature that allows you to connect to remote MCP servers directly from the Messages API.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The MCP connector is a feature that enables direct connections to remote MCP servers from the Messages API.",
-        "why_it_matters": "This allows Claude Code users to integrate with MCP servers without needing intermediate infrastructure, simplifying their workflow.",
-        "how_to_use": [
-          "Use the MCP connector to send messages to remote MCP servers",
-          "Configure the connector to receive messages from MCP servers and process them in your application"
-        ]
-      }
-    },
-    {
-      "id": "d7eb27f8",
-      "title": "To increase answer quality and decrease tool errors, we've changed the default…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "To increase answer quality and decrease tool errors, we've changed the default value for the top_p nucleus sampling parameter in the Messages API from 0.999 to 0.99 for all models. To revert this…",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The default value for the top_p nucleus sampling parameter in the Messages API has been changed from 0.999 to 0.99 for all models.",
-        "why_it_matters": "This change aims to increase answer quality and decrease tool errors in the Anthropic API, potentially affecting the accuracy and reliability of model outputs.",
-        "how_to_use": [
-          "Use the updated default value of 0.99 for top_p nucleus sampling parameter in your Messages API requests",
-          "Revert to the previous default value of 0.999 if needed, as described in the API documentation"
-        ]
-      }
-    },
-    {
-      "id": "ad251b5d",
-      "title": "We've moved our Go SDK from beta to GA",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've moved our Go SDK from beta to GA.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The Go SDK for the Anthropic API has been promoted from beta to general availability (GA), indicating it is now stable and fully supported.",
-        "why_it_matters": "This change means Claude Code users can rely on the Go SDK for production environments, as it is no longer considered experimental or subject to significant changes.",
-        "how_to_use": [
-          "Use the Go SDK to build production-ready applications integrated with the Anthropic API",
-          "Update existing beta versions of the Go SDK to the GA version for stability and support"
-        ]
-      }
-    },
-    {
-      "id": "1c7b733f",
-      "title": "We've included minute and hour level granularity to the Usage page of Console…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-22-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-05-22T00:00:00.000Z",
-      "summary": "We've included minute and hour level granularity to the Usage page of Console alongside 429 error rates on the Usage page.",
-      "fetched_at": "2026-04-18T18:28:57.304Z",
-      "explanation": {
-        "what_it_is": "The Usage page of the Console now displays usage data at minute and hour levels, in addition to showing 429 error rates.",
-        "why_it_matters": "This change allows Claude Code users to monitor their usage patterns more precisely and identify potential issues with their API requests, such as sudden spikes in errors.",
-        "how_to_use": [
-          "Check the Usage page to view minute-level usage data for fine-grained insights into your API activity.",
-          "Use the hour-level granularity to track daily usage trends and optimize your API requests accordingly.",
-          "Monitor 429 error rates on the Usage page to quickly detect and address rate limiting issues."
         ]
       }
     }
