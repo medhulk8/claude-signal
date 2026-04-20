@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-04-20T18:46:03.685Z",
+  "generated_at": "2026-04-20T19:51:09.368Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "5374dd90",
+      "title": "We've retired the Claude Haiku 3 model (claude-3-haiku-20240307)",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-20-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-20T00:00:00.000Z",
+      "summary": "We've retired the Claude Haiku 3 model (claude-3-haiku-20240307). All requests to this model will now return an error. We recommend upgrading to Claude Haiku 4.5.",
+      "fetched_at": "2026-04-20T19:51:11.058Z",
+      "explanation": {
+        "what_it_is": "The Claude Haiku 3 model has been retired and is no longer available for use, with all requests to it now returning an error.",
+        "why_it_matters": "This change requires users to upgrade to the Claude Haiku 4.5 model to continue using the service without errors.",
+        "how_to_use": [
+          "Update your API requests to use the Claude Haiku 4.5 model instead of the retired Claude Haiku 3 model",
+          "Test your application with the new model to ensure compatibility and handle any differences in behavior or output"
+        ]
+      }
+    },
     {
       "id": "45727dd6",
       "title": "Added sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them",
@@ -1696,25 +1715,6 @@
         "how_to_use": [
           "Use the Claude API to retrieve search result content blocks with source attribution for RAG applications",
           "Integrate search result content blocks into Vertex AI workflows on Google Cloud for more informed model outputs"
-        ]
-      }
-    },
-    {
-      "id": "38bc1347",
-      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-05T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
-      "fetched_at": "2026-04-19T15:26:13.194Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, featuring enhanced capabilities and performance improvements.",
-        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
-        "how_to_use": [
-          "Check the Models overview documentation to learn about the updated capabilities",
-          "Test your existing workflows with Claude Opus 4.1 to take advantage of performance improvements"
         ]
       }
     }
