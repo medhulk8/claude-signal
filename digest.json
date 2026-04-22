@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-21T23:25:11.527Z",
+  "generated_at": "2026-04-22T01:11:48.550Z",
   "item_count": 90,
   "items": [
     {
@@ -341,63 +341,6 @@
         "how_to_use": [
           "Update your code to use alternative models before June 15 to avoid disruptions.",
           "Review your existing workflows that depend on the deprecated models and plan for migration."
-        ]
-      }
-    },
-    {
-      "id": "b61de965",
-      "title": "Added path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-13T21:53:13Z",
-      "summary": "v2.1.105",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The EnterWorktree tool in Claude Code now accepts a path parameter, allowing users to switch into an existing worktree of the current repository.",
-        "why_it_matters": "This update enables Claude Code users to easily switch between different worktrees in their repository, streamlining their workflow and reducing the need for manual navigation.",
-        "how_to_use": [
-          "Use the EnterWorktree tool with the path parameter to switch to an existing worktree, e.g., EnterWorktree /path/to/existing/worktree",
-          "Switch between worktrees to manage different branches or features of your project"
-        ]
-      }
-    },
-    {
-      "id": "d4b55255",
-      "title": "Added PreCompact hook support: hooks can now block compaction by exiting with code 2 or returning {\"decision\":\"block\"}",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-13T21:53:13Z",
-      "summary": "v2.1.105",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "PreCompact hook support allows hooks to block compaction by exiting with a specific code or returning a decision to block. This is done by exiting with code 2 or returning {\"decision\":\"block\"}.",
-        "why_it_matters": "This update gives Claude Code users more control over the compaction process, allowing them to prevent compaction from occurring under certain conditions. This can be useful for ensuring data integrity or preventing unintended changes.",
-        "how_to_use": [
-          "Exit a hook with code 2 to block compaction",
-          "Return {\"decision\":\"block\"} from a hook to prevent compaction"
-        ]
-      }
-    },
-    {
-      "id": "1be79972",
-      "title": "Added background monitor support for plugins via a top-level monitors manifest key that auto-arms at session start or on skill invoke",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-13T21:53:13Z",
-      "summary": "v2.1.105",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "A top-level monitors manifest key that allows plugins to run background monitors, which can be automatically armed at the start of a session or when a skill is invoked.",
-        "why_it_matters": "This update enables Claude Code users to create plugins that can continuously monitor and respond to events in the background, without requiring manual intervention.",
-        "how_to_use": [
-          "Add a monitors key to your plugin's manifest to define background monitors",
-          "Use the auto-arm feature to start monitors at session start or when a specific skill is invoked"
         ]
       }
     },
@@ -1716,6 +1659,63 @@
         "how_to_use": [
           "Use the Claude API to retrieve search result content blocks for RAG applications",
           "Integrate search result content blocks into Vertex AI workflows for enhanced natural language understanding"
+        ]
+      }
+    },
+    {
+      "id": "38bc1347",
+      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-05T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
+      "fetched_at": "2026-04-22T01:11:50.198Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, providing enhanced capabilities and performance improvements.",
+        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
+        "how_to_use": [
+          "Review the Models overview documentation to understand the updated capabilities",
+          "Test your existing workflows with Claude Opus 4.1 to observe performance improvements"
+        ]
+      }
+    },
+    {
+      "id": "3b3ac203",
+      "title": "We've released text_editor_20250728, an updated text editor tool that fixes…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-07-28T00:00:00.000Z",
+      "summary": "We've released text_editor_20250728, an updated text editor tool that fixes some issues from the previous versions and adds an optional max_characters parameter that allows you to control the…",
+      "fetched_at": "2026-04-22T01:11:50.198Z",
+      "explanation": {
+        "what_it_is": "The text_editor_20250728 tool is an updated version of the text editor that fixes previous issues and adds a max_characters parameter to control output length.",
+        "why_it_matters": "This update gives Claude Code users more control over the text editor's output, allowing them to specify a maximum number of characters to prevent excessively long responses.",
+        "how_to_use": [
+          "Use the max_characters parameter to limit the length of generated text, for example, to fit within specific character limits of a database field or UI component.",
+          "Test the updated text editor with different max_characters values to find the optimal balance between response length and content quality."
+        ]
+      }
+    },
+    {
+      "id": "7406ee3b",
+      "title": "We've increased rate limits for Claude Opus 4 on the Claude API to give you…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-07-24T00:00:00.000Z",
+      "summary": "We've increased rate limits for Claude Opus 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
+      "fetched_at": "2026-04-22T01:11:50.198Z",
+      "explanation": {
+        "what_it_is": "The rate limits for Claude Opus 4 on the Claude API have been increased, allowing for more requests to be made within a given time frame.",
+        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, for customers on usage tiers 1-4.",
+        "how_to_use": [
+          "Make more frequent API calls to Claude Opus 4 without incurring rate limit errors",
+          "Scale your application to handle increased traffic without rate limit constraints"
         ]
       }
     }
