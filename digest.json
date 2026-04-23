@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-23T18:50:06.852Z",
+  "generated_at": "2026-04-23T19:59:07.007Z",
   "item_count": 90,
   "items": [
     {
@@ -77,6 +77,25 @@
         "how_to_use": [
           "Use the claude plugin tag command to create a release Git tag for a plugin, automatically validating its version.",
           "Integrate the claude plugin tag into your existing workflow to maintain consistent and organized plugin releases."
+        ]
+      }
+    },
+    {
+      "id": "73c13b1c",
+      "title": "Memory for Claude Managed Agents is now in public beta under the standard…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-23-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-23T00:00:00.000Z",
+      "summary": "Memory for Claude Managed Agents is now in public beta under the standard managed-agents-2026-04-01 header. See Using agent memory for the full integration guide.",
+      "fetched_at": "2026-04-23T19:59:09.388Z",
+      "explanation": {
+        "what_it_is": "Memory for Claude Managed Agents allows agents to store and recall information, enabling more complex and contextual interactions. This feature is now available in public beta.",
+        "why_it_matters": "With agent memory, Claude Code users can build more sophisticated agents that can learn from past conversations and adapt to user behavior. This changes how users design and implement agent interactions, allowing for more personalized and efficient experiences.",
+        "how_to_use": [
+          "Use the managed-agents-2026-04-01 header to access the memory feature in the Anthropic API",
+          "Follow the integration guide in the 'Using agent memory' documentation to implement memory in your agents"
         ]
       }
     },
@@ -1698,25 +1717,6 @@
         "how_to_use": [
           "Use the Claude API to send requests with input sequences up to 1M tokens to Claude Sonnet 4",
           "Integrate with Amazon Bedrock to leverage the expanded context window in your applications"
-        ]
-      }
-    },
-    {
-      "id": "0d1b2e50",
-      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-11T00:00:00.000Z",
-      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
-        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
-        "how_to_use": [
-          "Check your API usage patterns to anticipate when you might hit acceleration limits",
-          "Handle 429 (rate_limit_error) errors in your code to implement retry logic or reduce API usage"
         ]
       }
     }
