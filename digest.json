@@ -1,8 +1,85 @@
 {
   "version": 1,
-  "generated_at": "2026-04-22T23:35:34.521Z",
+  "generated_at": "2026-04-23T01:17:15.516Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "50b274a2",
+      "title": "Added vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-23T00:42:21Z",
+      "summary": "v2.1.118",
+      "fetched_at": "2026-04-23T01:17:15.807Z",
+      "explanation": {
+        "what_it_is": "Vim visual mode (v) and visual-line mode (V) have been added to Claude Code, allowing users to select text and perform operations on it with visual feedback.",
+        "why_it_matters": "This update brings Claude Code's editing experience closer to that of Vim, making it more familiar and efficient for users who are accustomed to Vim's visual modes.",
+        "how_to_use": [
+          "Use 'v' to enter visual mode and select characters",
+          "Use 'V' to enter visual-line mode and select lines",
+          "Combine visual modes with operators like 'd' for deletion or 'y' for yanking"
+        ]
+      }
+    },
+    {
+      "id": "72062577",
+      "title": "Added DISABLE_UPDATES env var to completely block all update paths including manual claude update — stricter than DISABLE_AUTOUPDATER",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-23T00:42:21Z",
+      "summary": "v2.1.118",
+      "fetched_at": "2026-04-23T01:17:15.807Z",
+      "explanation": {
+        "what_it_is": "The DISABLE_UPDATES environment variable is a new setting that completely blocks all update paths, including manual updates, in Claude Code.",
+        "why_it_matters": "This provides a stricter control over updates compared to the existing DISABLE_AUTOUPDATER variable, allowing for a more locked-down environment.",
+        "how_to_use": [
+          "Set DISABLE_UPDATES to prevent any updates from being applied, even if a user attempts to update manually.",
+          "Use this variable in environments where updates need to be strictly controlled, such as in production or sensitive systems."
+        ]
+      }
+    },
+    {
+      "id": "3c013183",
+      "title": "Added a \"Don't ask again\" option to the auto mode opt-in prompt",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-23T00:42:21Z",
+      "summary": "v2.1.118",
+      "fetched_at": "2026-04-23T01:17:15.807Z",
+      "explanation": {
+        "what_it_is": "A 'Don't ask again' option has been added to the auto mode opt-in prompt, allowing users to suppress future prompts.",
+        "why_it_matters": "This change allows users to avoid repeated prompts and streamline their workflow by opting out of future auto mode invitations.",
+        "how_to_use": [
+          "Select 'Don't ask again' when prompted to opt-in to auto mode to prevent future prompts.",
+          "Use this option to avoid interruptions when working on tasks that don't require auto mode."
+        ]
+      }
+    },
+    {
+      "id": "61947aff",
+      "title": "Added claude plugin tag to create release git tags for plugins with version validation",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-23T00:42:21Z",
+      "summary": "v2.1.118",
+      "fetched_at": "2026-04-23T01:17:15.807Z",
+      "explanation": {
+        "what_it_is": "The claude plugin tag is a new feature that creates release Git tags for plugins, including version validation to ensure consistency.",
+        "why_it_matters": "This update streamlines the process of managing plugin releases, allowing Claude Code users to easily track and validate plugin versions.",
+        "how_to_use": [
+          "Use the claude plugin tag command to create a release Git tag for a plugin, automatically validating its version.",
+          "Integrate the claude plugin tag into your existing workflow to maintain consistent and organized plugin releases."
+        ]
+      }
+    },
     {
       "id": "5374dd90",
       "title": "We've retired the Claude Haiku 3 model (claude-3-haiku-20240307)",
@@ -1640,82 +1717,6 @@
         "how_to_use": [
           "Check your API usage patterns to anticipate when you might hit acceleration limits",
           "Handle 429 (rate_limit_error) errors in your code to implement retry logic or reduce API usage"
-        ]
-      }
-    },
-    {
-      "id": "2e5adcc2",
-      "title": "Search result content blocks are now generally available on the Claude API and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-08T00:00:00.000Z",
-      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
-        "why_it_matters": "This change allows Claude Code users to access search result content blocks in their RAG applications, making it easier to provide accurate and attributed information.",
-        "how_to_use": [
-          "Use the Claude API to retrieve search result content blocks for RAG applications",
-          "Integrate search result content blocks into Vertex AI workflows for enhanced natural language understanding"
-        ]
-      }
-    },
-    {
-      "id": "38bc1347",
-      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-05T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
-      "fetched_at": "2026-04-22T01:11:50.198Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, providing enhanced capabilities and performance improvements.",
-        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
-        "how_to_use": [
-          "Review the Models overview documentation to understand the updated capabilities",
-          "Test your existing workflows with Claude Opus 4.1 to observe performance improvements"
-        ]
-      }
-    },
-    {
-      "id": "3b3ac203",
-      "title": "We've released text_editor_20250728, an updated text editor tool that fixes…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-28T00:00:00.000Z",
-      "summary": "We've released text_editor_20250728, an updated text editor tool that fixes some issues from the previous versions and adds an optional max_characters parameter that allows you to control the…",
-      "fetched_at": "2026-04-22T01:11:50.198Z",
-      "explanation": {
-        "what_it_is": "The text_editor_20250728 tool is an updated version of the text editor that fixes previous issues and adds a max_characters parameter to control output length.",
-        "why_it_matters": "This update gives Claude Code users more control over the text editor's output, allowing them to specify a maximum number of characters to prevent excessively long responses.",
-        "how_to_use": [
-          "Use the max_characters parameter to limit the length of generated text, for example, to fit within specific character limits of a database field or UI component.",
-          "Test the updated text editor with different max_characters values to find the optimal balance between response length and content quality."
-        ]
-      }
-    },
-    {
-      "id": "7406ee3b",
-      "title": "We've increased rate limits for Claude Opus 4 on the Claude API to give you…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-24T00:00:00.000Z",
-      "summary": "We've increased rate limits for Claude Opus 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
-      "fetched_at": "2026-04-22T01:11:50.198Z",
-      "explanation": {
-        "what_it_is": "The rate limits for Claude Opus 4 on the Claude API have been increased, allowing for more requests to be made within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, for customers on usage tiers 1-4.",
-        "how_to_use": [
-          "Make more frequent API calls to Claude Opus 4 without incurring rate limit errors",
-          "Scale your application to handle increased traffic without rate limit constraints"
         ]
       }
     }
