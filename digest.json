@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-04-23T22:31:14.023Z",
+  "generated_at": "2026-04-23T23:33:29.111Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "d7310cff",
+      "title": "Added prUrlTemplate setting to point the footer PR badge at a custom code-review URL instead of github.com",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-23T23:24:19Z",
+      "summary": "v2.1.119",
+      "fetched_at": "2026-04-23T23:33:29.335Z",
+      "explanation": {
+        "what_it_is": "The prUrlTemplate setting allows you to customize the URL that the footer PR badge points to, instead of defaulting to github.com. This setting enables you to use a custom code-review URL.",
+        "why_it_matters": "This change matters because it gives you more control over the code review process, especially if your project uses a different platform or workflow. You can now direct users to your preferred code review tool or platform.",
+        "how_to_use": [
+          "Set prUrlTemplate to a custom URL, such as a GitLab or Bitbucket repository, to redirect the PR badge to your preferred code review platform.",
+          "Use the prUrlTemplate setting in your Claude Code configuration file to override the default github.com URL."
+        ]
+      }
+    },
+    {
+      "id": "320acee2",
+      "title": "Added CLAUDE_CODE_HIDE_CWD environment variable to hide the working directory in the startup logo",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-23T23:24:19Z",
+      "summary": "v2.1.119",
+      "fetched_at": "2026-04-23T23:33:29.335Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_HIDE_CWD environment variable allows you to hide the working directory displayed in the Claude Code startup logo.",
+        "why_it_matters": "This change gives users more control over the information displayed during startup, which can be useful for presentations, demos, or shared screenshots.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_HIDE_CWD to 1 to hide the working directory in the startup logo",
+          "Use this variable in your environment configuration or startup scripts to persist the setting"
+        ]
+      }
+    },
     {
       "id": "50b274a2",
       "title": "Added vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback",
@@ -342,82 +380,6 @@
         "how_to_use": [
           "Enable the feature via the /config option",
           "Invoke the external editor with Ctrl+G to see Claude's last response as commented context"
-        ]
-      }
-    },
-    {
-      "id": "8dd2d5ba",
-      "title": "Added ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-14T19:12:01Z",
-      "summary": "v2.1.108",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The ENABLE_PROMPT_CACHING_1H environment variable allows you to set a 1-hour time-to-live (TTL) for prompt caching on API keys, as well as on Bedrock, Vertex, and Foundry platforms.",
-        "why_it_matters": "This update gives Claude Code users more control over prompt caching, enabling them to balance performance and data freshness according to their specific needs.",
-        "how_to_use": [
-          "Set ENABLE_PROMPT_CACHING_1H to opt into a 1-hour prompt cache TTL on your API key",
-          "Use ENABLE_PROMPT_CACHING_1H_BEDROCK to enable the feature on Bedrock specifically"
-        ]
-      }
-    },
-    {
-      "id": "01e17bf8",
-      "title": "Added recap feature to provide context when returning to a session, configurable in /config and manually invocable with /recap; force with…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-14T19:12:01Z",
-      "summary": "v2.1.108",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The recap feature provides context when returning to a session, allowing users to quickly get up to speed on previous conversations or work.",
-        "why_it_matters": "This feature saves users time and mental effort when re-engaging with a session, as they no longer need to manually review previous interactions to recall important details.",
-        "how_to_use": [
-          "Configure the recap feature in /config to automatically provide context when returning to a session",
-          "Manually invoke the recap feature with /recap to get an instant summary of the session"
-        ]
-      }
-    },
-    {
-      "id": "60b51a79",
-      "title": "Added \"verbose\" indicator when viewing the detailed transcript (Ctrl+O)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-14T19:12:01Z",
-      "summary": "v2.1.108",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "A 'verbose' indicator is now displayed when viewing the detailed transcript in Claude Code, accessible via Ctrl+O.",
-        "why_it_matters": "This indicator helps users quickly identify when a transcript is in verbose mode, allowing for more efficient debugging and log analysis.",
-        "how_to_use": [
-          "Press Ctrl+O to view the detailed transcript and look for the 'verbose' indicator.",
-          "Use the indicator to determine if a transcript is showing detailed or condensed information."
-        ]
-      }
-    },
-    {
-      "id": "006c0090",
-      "title": "Added a warning at startup when prompt caching is disabled via DISABLE_PROMPT_CACHING* environment variables",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-14T19:12:01Z",
-      "summary": "v2.1.108",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "A warning message is now displayed at startup when prompt caching is disabled using the DISABLE_PROMPT_CACHING environment variable.",
-        "why_it_matters": "This change helps Claude Code users avoid unintentionally disabling prompt caching, which can impact performance, by explicitly notifying them when it's disabled.",
-        "how_to_use": [
-          "Check the warning message at startup to ensure prompt caching is enabled as intended.",
-          "Review your environment variables to verify if DISABLE_PROMPT_CACHING is set unintentionally."
         ]
       }
     },
@@ -1717,6 +1679,44 @@
         "how_to_use": [
           "Use the Claude API to send requests with input sequences up to 1M tokens to Claude Sonnet 4",
           "Integrate with Amazon Bedrock to leverage the expanded context window in your applications"
+        ]
+      }
+    },
+    {
+      "id": "0d1b2e50",
+      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-11T00:00:00.000Z",
+      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
+      "fetched_at": "2026-04-23T23:33:30.459Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now returns 429 rate_limit_error instead of 529 overloaded_error when it reaches acceleration limits due to a sharp increase in API usage.",
+        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive a 429 error when the API reaches its acceleration limits, rather than a 529 error.",
+        "how_to_use": [
+          "Check your API usage and adjust your code to handle 429 rate_limit_error responses",
+          "Implement retry logic with exponential backoff to handle temporary rate limiting"
+        ]
+      }
+    },
+    {
+      "id": "2e5adcc2",
+      "title": "Search result content blocks are now generally available on the Claude API and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-08T00:00:00.000Z",
+      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
+      "fetched_at": "2026-04-23T23:33:30.459Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations for RAG applications with proper source attribution.",
+        "why_it_matters": "This update allows Claude Code users to access search result content blocks with proper source attribution, making it easier to integrate reliable sources into their RAG applications.",
+        "how_to_use": [
+          "Use the Claude API to retrieve search result content blocks with attributed sources",
+          "Integrate these blocks into RAG applications on Google Cloud's Vertex AI for more accurate and reliable outputs"
         ]
       }
     }
