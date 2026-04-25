@@ -1,27 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-04-25T01:09:59.511Z",
+  "generated_at": "2026-04-25T04:24:52.405Z",
   "item_count": 90,
   "items": [
-    {
-      "id": "5b9d7551",
-      "title": "Added claude ultrareview [target] subcommand to run /ultrareview non-interactively from CI or scripts — prints findings to stdout (--json for raw…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.120",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-25T00:14:31Z",
-      "summary": "v2.1.120",
-      "fetched_at": "2026-04-25T01:10:00.030Z",
-      "explanation": {
-        "what_it_is": "The claude ultrareview subcommand allows you to run /ultrareview non-interactively from Continuous Integration (CI) or scripts, printing findings to stdout. It also supports a --json option for raw output.",
-        "why_it_matters": "This update enables Claude Code users to automate code reviews in their CI pipelines, streamlining their development workflow. It also facilitates scripting and automation of review processes.",
-        "how_to_use": [
-          "Run `claude ultrareview [target]` in your CI script to automate code reviews",
-          "Use the `--json` option to parse review findings in your scripts, e.g., `claude ultrareview [target] --json`"
-        ]
-      }
-    },
     {
       "id": "aedab74c",
       "title": "We've released the Rate Limits API, allowing administrators to programmatically…",
@@ -1717,6 +1698,25 @@
         "how_to_use": [
           "Use the Claude API to send requests with input sequences up to 1M tokens to Claude Sonnet 4",
           "Integrate with Amazon Bedrock to leverage the expanded context window in your applications"
+        ]
+      }
+    },
+    {
+      "id": "0d1b2e50",
+      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-11T00:00:00.000Z",
+      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
+      "fetched_at": "2026-04-25T04:24:53.794Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
+        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
+        "how_to_use": [
+          "Check API usage patterns to anticipate when rate limits might be exceeded",
+          "Implement retry logic to handle 429 errors and prevent failed requests"
         ]
       }
     }
