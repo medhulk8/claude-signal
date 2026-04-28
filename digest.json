@@ -1,8 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-04-28T21:47:35.409Z",
+  "generated_at": "2026-04-28T22:43:00.190Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "9ca99bbb",
+      "title": "Added ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-28T22:05:15Z",
+      "summary": "v2.1.122",
+      "fetched_at": "2026-04-28T22:43:00.692Z",
+      "explanation": {
+        "what_it_is": "The ANTHROPIC_BEDROCK_SERVICE_TIER environment variable allows you to select a specific Bedrock service tier, choosing from default, flex, or priority.",
+        "why_it_matters": "This update gives Claude Code users more control over their Bedrock service tier, enabling them to tailor their setup to specific needs.",
+        "how_to_use": [
+          "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'default' for standard service",
+          "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'flex' for flexible service options",
+          "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'priority' for priority service handling"
+        ]
+      }
+    },
     {
       "id": "01137bb4",
       "title": "Added alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available",
@@ -248,102 +268,6 @@
         "how_to_use": [
           "Add a list of denied domains to the sandbox.network.deniedDomains setting to block them, e.g. ['example.com', 'sub.example.com']",
           "Use this setting in conjunction with allowedDomains wildcards to create more nuanced network access policies"
-        ]
-      }
-    },
-    {
-      "id": "41cef029",
-      "title": "Added xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other models fall back to…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-16T15:18:45Z",
-      "summary": "v2.1.111",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The xhigh effort level is a new setting for Opus 4.7 that offers more computational resources than the high setting but less than the max setting.",
-        "why_it_matters": "This addition gives Claude Code users more fine-grained control over the tradeoff between processing time and output quality, allowing for more efficient use of resources.",
-        "how_to_use": [
-          "Use the /effort command to switch to the xhigh effort level",
-          "Specify the --effort flag with the value xhigh when running a task",
-          "Select the xhigh effort level from the model picker in the UI"
-        ]
-      }
-    },
-    {
-      "id": "4fa118ff",
-      "title": "Added \"Auto (match terminal)\" theme option that matches your terminal's dark/light mode — select it from /theme",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-16T15:18:45Z",
-      "summary": "v2.1.111",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "A new theme option called 'Auto (match terminal)' that automatically switches between dark and light mode based on the terminal's current mode.",
-        "why_it_matters": "This feature allows Claude Code users to seamlessly integrate their editor's theme with their terminal's theme, reducing visual discontinuity and improving overall workflow consistency.",
-        "how_to_use": [
-          "Select the 'Auto (match terminal)' theme option from the /theme menu to enable automatic theme switching.",
-          "Switch your terminal's dark/light mode to see the Claude Code theme update accordingly."
-        ]
-      }
-    },
-    {
-      "id": "1300c16e",
-      "title": "Added /less-permission-prompts skill — scans transcripts for common read-only Bash and MCP tool calls and proposes a prioritized allowlist for…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-16T15:18:45Z",
-      "summary": "v2.1.111",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The /less-permission-prompts skill scans transcripts for common read-only Bash and MCP tool calls and proposes a prioritized allowlist.",
-        "why_it_matters": "This skill helps reduce the number of permission prompts by identifying and allowing common read-only tool calls, streamlining the development workflow.",
-        "how_to_use": [
-          "Run the /less-permission-prompts skill on your transcripts to generate a proposed allowlist",
-          "Review and apply the proposed allowlist to reduce permission prompts"
-        ]
-      }
-    },
-    {
-      "id": "2bb5771c",
-      "title": "Added /ultrareview for running comprehensive code review in the cloud using parallel multi-agent analysis and critique — invoke with no arguments to…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-16T15:18:45Z",
-      "summary": "v2.1.111",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The /ultrareview command runs a comprehensive code review in the cloud, utilizing parallel multi-agent analysis and critique. It can be invoked with no arguments to initiate the review process.",
-        "why_it_matters": "This update enables Claude Code users to perform more thorough and efficient code reviews, leveraging cloud-based processing and multi-agent analysis. This can lead to improved code quality and reduced review times.",
-        "how_to_use": [
-          "Invoke /ultrareview with no arguments to start a comprehensive code review",
-          "Use /ultrareview to analyze large codebases, taking advantage of parallel processing"
-        ]
-      }
-    },
-    {
-      "id": "085a73b1",
-      "title": "Added OTEL_LOG_RAW_API_BODIES environment variable to emit full API request and response bodies as OpenTelemetry log events for debugging",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-16T15:18:45Z",
-      "summary": "v2.1.111",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The OTEL_LOG_RAW_API_BODIES environment variable allows Claude Code to log full API request and response bodies as OpenTelemetry log events.",
-        "why_it_matters": "This enables more detailed debugging of API interactions, providing full context of requests and responses.",
-        "how_to_use": [
-          "Set OTEL_LOG_RAW_API_BODIES to 'true' to enable logging of API request and response bodies",
-          "Use OpenTelemetry tools to view and analyze the logged API events"
         ]
       }
     },
@@ -1718,6 +1642,82 @@
         "how_to_use": [
           "Use the Claude API to retrieve search result content blocks with source attribution for RAG applications",
           "Integrate Vertex AI with the Claude API to leverage search result content blocks in machine learning workflows"
+        ]
+      }
+    },
+    {
+      "id": "38bc1347",
+      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-05T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
+      "fetched_at": "2026-04-28T22:43:01.983Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, providing enhanced capabilities and performance improvements.",
+        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
+        "how_to_use": [
+          "Check the Models overview documentation to learn about the new capabilities",
+          "Test your existing workflows with Claude Opus 4.1 to take advantage of performance improvements"
+        ]
+      }
+    },
+    {
+      "id": "3b3ac203",
+      "title": "We've released text_editor_20250728, an updated text editor tool that fixes…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-07-28T00:00:00.000Z",
+      "summary": "We've released text_editor_20250728, an updated text editor tool that fixes some issues from the previous versions and adds an optional max_characters parameter that allows you to control the…",
+      "fetched_at": "2026-04-28T22:43:01.983Z",
+      "explanation": {
+        "what_it_is": "The text_editor_20250728 tool is an updated version of the text editor that fixes previous issues and adds a max_characters parameter to control output length.",
+        "why_it_matters": "This update gives Claude Code users more control over the text editor's output, allowing them to specify a maximum number of characters to prevent excessively long responses.",
+        "how_to_use": [
+          "Use the max_characters parameter to limit the length of generated text, for example, to fit within specific character limits of a database field or UI component.",
+          "Test the updated text editor with different max_characters values to find the optimal balance between response length and content quality."
+        ]
+      }
+    },
+    {
+      "id": "7406ee3b",
+      "title": "We've increased rate limits for Claude Opus 4 on the Claude API to give you…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-07-24T00:00:00.000Z",
+      "summary": "We've increased rate limits for Claude Opus 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
+      "fetched_at": "2026-04-28T22:43:01.983Z",
+      "explanation": {
+        "what_it_is": "The rate limits for Claude Opus 4 on the Claude API have been increased, allowing for more requests to be made within a given time frame.",
+        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, for customers on usage tiers 1-4.",
+        "how_to_use": [
+          "Make more frequent API calls to Claude Opus 4 without incurring rate limit errors",
+          "Scale your application to handle increased traffic, relying on the higher rate limits"
+        ]
+      }
+    },
+    {
+      "id": "a5dc8cdc",
+      "title": "We've retired the Claude 2.0, Claude 2.1, and Claude Sonnet 3 models",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-21-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-07-21T00:00:00.000Z",
+      "summary": "We've retired the Claude 2.0, Claude 2.1, and Claude Sonnet 3 models. All requests to these models will now return an error. Read more in Model deprecations.",
+      "fetched_at": "2026-04-28T22:43:01.983Z",
+      "explanation": {
+        "what_it_is": "The Claude 2.0, 2.1, and Sonnet 3 models have been retired and are no longer available for use. Any requests to these models will now return an error.",
+        "why_it_matters": "This change affects any existing workflows or applications that rely on these models, which will need to be updated to use alternative models. This ensures that users are using the most current and supported models for their tasks.",
+        "how_to_use": [
+          "Update your API requests to use a currently supported model, such as the latest Claude model version.",
+          "Review the Model deprecations documentation for guidance on migrating to alternative models."
         ]
       }
     }
