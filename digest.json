@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-04-27T23:39:40.448Z",
+  "generated_at": "2026-04-28T01:26:29.750Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "01137bb4",
+      "title": "Added alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-28T00:31:31Z",
+      "summary": "v2.1.121",
+      "fetched_at": "2026-04-28T01:26:30.109Z",
+      "explanation": {
+        "what_it_is": "The alwaysLoad option is a new configuration setting for MCP servers in Claude Code, which when enabled, loads all tools from that server immediately, bypassing the usual tool-search deferral mechanism.",
+        "why_it_matters": "This change allows Claude Code users to ensure that specific tools are always available, without having to wait for the tool-search deferral process to complete, which can improve workflow efficiency in certain scenarios.",
+        "how_to_use": [
+          "Set alwaysLoad to true in the MCP server config to load all tools from that server immediately",
+          "Use this option for servers that provide critical tools that are frequently used in your workflow"
+        ]
+      }
+    },
+    {
+      "id": "29d4fee2",
+      "title": "Added claude plugin prune to remove orphaned auto-installed plugin dependencies; plugin uninstall --prune cascades",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-28T00:31:31Z",
+      "summary": "v2.1.121",
+      "fetched_at": "2026-04-28T01:26:30.109Z",
+      "explanation": {
+        "what_it_is": "The `claude plugin prune` command removes unused dependencies that were automatically installed by plugins, and the `plugin uninstall --prune` command now also removes these orphaned dependencies.",
+        "why_it_matters": "This update helps keep your Claude Code environment clean by removing unnecessary dependencies, reducing clutter and potential version conflicts.",
+        "how_to_use": [
+          "Run `claude plugin prune` to remove all orphaned dependencies",
+          "Use `plugin uninstall --prune` to remove a plugin and its unused dependencies in one step"
+        ]
+      }
+    },
+    {
+      "id": "c963bf87",
+      "title": "Added a type-to-filter search box to /skills so you can find a skill in long lists without scrolling",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-04-28T00:31:31Z",
+      "summary": "v2.1.121",
+      "fetched_at": "2026-04-28T01:26:30.109Z",
+      "explanation": {
+        "what_it_is": "A search box has been added to the /skills page, allowing users to filter skills by typing keywords.",
+        "why_it_matters": "This feature saves time when searching for specific skills in long lists, eliminating the need to scroll through numerous options.",
+        "how_to_use": [
+          "Type a keyword in the search box to filter skills",
+          "Use the search box to quickly find a specific skill by name or description"
+        ]
+      }
+    },
     {
       "id": "aedab74c",
       "title": "We've released the Rate Limits API, allowing administrators to programmatically…",
@@ -324,81 +381,6 @@
         "how_to_use": [
           "Access Claude Opus 4.7 and Claude Haiku 4.5 models through the Bedrock console",
           "Use the Messages API endpoint to integrate Claude into your Amazon Bedrock workflow"
-        ]
-      }
-    },
-    {
-      "id": "952ea498",
-      "title": "Added /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-15T23:21:43Z",
-      "summary": "v2.1.110",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The /tui command allows switching to a flicker-free rendering mode in the same conversation. This mode can be activated by running /tui fullscreen.",
-        "why_it_matters": "This update enables a smoother visual experience for users, reducing distractions caused by screen flicker. It's particularly useful for conversations with dynamic or graphical content.",
-        "how_to_use": [
-          "Run /tui fullscreen to activate flicker-free rendering in the current conversation",
-          "Use the tui setting to customize the behavior of the /tui command"
-        ]
-      }
-    },
-    {
-      "id": "0f0d266c",
-      "title": "Added push notification tool — Claude can send mobile push notifications when Remote Control and \"Push when Claude decides\" config are enabled",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-15T23:21:43Z",
-      "summary": "v2.1.110",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "Claude can now send mobile push notifications when the Remote Control feature is enabled and the 'Push when Claude decides' configuration is set.",
-        "why_it_matters": "This update allows Claude Code users to receive timely notifications on their mobile devices when Claude takes a decision, enabling more flexible and remote monitoring of Claude's activities.",
-        "how_to_use": [
-          "Enable Remote Control in your Claude Code settings",
-          "Configure 'Push when Claude decides' to receive notifications when Claude makes a decision"
-        ]
-      }
-    },
-    {
-      "id": "4b3634cf",
-      "title": "Added autoScrollEnabled config to disable conversation auto-scroll in fullscreen mode",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-15T23:21:43Z",
-      "summary": "v2.1.110",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "A new configuration option called autoScrollEnabled that allows you to disable automatic scrolling of conversations when in fullscreen mode.",
-        "why_it_matters": "This change gives you more control over the behavior of Claude Code in fullscreen mode, which can be useful when presenting or sharing screens.",
-        "how_to_use": [
-          "Set autoScrollEnabled to false in your config to prevent conversations from scrolling automatically in fullscreen mode."
-        ]
-      }
-    },
-    {
-      "id": "63b74eec",
-      "title": "Added option to show Claude's last response as commented context in the Ctrl+G external editor (enable via /config)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-15T23:21:43Z",
-      "summary": "v2.1.110",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The ability to display Claude's last response as commented context in the external editor invoked by Ctrl+G, which can be enabled through the /config option.",
-        "why_it_matters": "This feature allows users to reference Claude's previous responses directly within the external editor, streamlining their workflow and reducing the need to switch between windows.",
-        "how_to_use": [
-          "Enable the feature via the /config option",
-          "Invoke the external editor with Ctrl+G to see Claude's last response as commented context"
         ]
       }
     },
@@ -1717,6 +1699,25 @@
         "how_to_use": [
           "Check API usage patterns to anticipate when rate limits might be exceeded",
           "Implement retry logic to handle 429 errors and prevent failed requests"
+        ]
+      }
+    },
+    {
+      "id": "2e5adcc2",
+      "title": "Search result content blocks are now generally available on the Claude API and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-08T00:00:00.000Z",
+      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
+      "fetched_at": "2026-04-28T01:26:31.483Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations with proper source attribution.",
+        "why_it_matters": "This feature allows developers to create RAG applications with accurate and transparent sourcing, improving the reliability of their outputs.",
+        "how_to_use": [
+          "Use the Claude API to retrieve search result content blocks with source attribution for RAG applications",
+          "Integrate Vertex AI with the Claude API to leverage search result content blocks in machine learning workflows"
         ]
       }
     }
