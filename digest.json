@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-30T05:18:03.020Z",
+  "generated_at": "2026-04-30T07:56:12.634Z",
   "item_count": 90,
   "items": [
     {
@@ -803,25 +803,6 @@
         "how_to_use": [
           "Use the 1M token context window to process large documents, such as books or research papers, and generate summaries or analyses.",
           "Apply this feature to long conversations or dialogues to better understand context and generate more accurate responses."
-        ]
-      }
-    },
-    {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is now available on all models and platforms, allowing for more precise control over output formatting. The output_format parameter has been moved to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to have more consistent and flexible output formatting across all models and platforms. It also simplifies the configuration process by consolidating output format settings.",
-        "how_to_use": [
-          "Update your API requests to use output_config.format instead of output_format for structured outputs",
-          "Test your existing workflows to ensure compatibility with the new output configuration"
         ]
       }
     },
@@ -1718,6 +1699,25 @@
         "how_to_use": [
           "Update your API requests to use a currently supported model, such as the latest Claude model version.",
           "Review the Model deprecations documentation for guidance on migrating to alternative models."
+        ]
+      }
+    },
+    {
+      "id": "b6a16fb1",
+      "title": "We've increased rate limits for Claude Sonnet 4 on the Claude API to give you…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-07-17T00:00:00.000Z",
+      "summary": "We've increased rate limits for Claude Sonnet 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
+      "fetched_at": "2026-04-30T07:56:14.381Z",
+      "explanation": {
+        "what_it_is": "The rate limits for Claude Sonnet 4 on the Claude API have been increased, allowing for more requests to be made within a given time frame.",
+        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, particularly for those on usage tiers 1-4.",
+        "how_to_use": [
+          "Make more frequent API calls to Claude Sonnet 4 without incurring rate limit errors",
+          "Scale your application to handle increased traffic or usage without rate limit constraints"
         ]
       }
     }
