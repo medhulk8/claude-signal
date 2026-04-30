@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-04-30T21:43:12.001Z",
+  "generated_at": "2026-04-30T22:38:37.352Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "4834d913",
+      "title": "We've retired the 1M token context window beta (context-1m-2025-08-07) for…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-30T00:00:00.000Z",
+      "summary": "We've retired the 1M token context window beta (context-1m-2025-08-07) for Claude Sonnet 4.5 and Claude Sonnet 4. The beta header now has no effect on these models, and requests exceeding the…",
+      "fetched_at": "2026-04-30T22:38:38.865Z",
+      "explanation": {
+        "what_it_is": "The 1M token context window beta has been retired for Claude Sonnet 4.5 and Claude Sonnet 4, meaning the beta header no longer affects these models.",
+        "why_it_matters": "Requests to these models that exceed the standard context window will now be handled without the beta behavior, potentially changing how your application handles long input sequences.",
+        "how_to_use": [
+          "Update your API requests to remove the context-1m-2025-08-07 beta header for Claude Sonnet 4.5 and Claude Sonnet 4",
+          "Test your application's handling of long input sequences to ensure compatibility with the retired beta"
+        ]
+      }
+    },
     {
       "id": "9ca99bbb",
       "title": "Added ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the…",
@@ -1699,25 +1718,6 @@
         "how_to_use": [
           "Make more frequent API calls to Claude Opus 4 without incurring rate limit errors",
           "Scale your application to handle increased traffic, relying on the higher rate limits"
-        ]
-      }
-    },
-    {
-      "id": "a5dc8cdc",
-      "title": "We've retired the Claude 2.0, Claude 2.1, and Claude Sonnet 3 models",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-21-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-21T00:00:00.000Z",
-      "summary": "We've retired the Claude 2.0, Claude 2.1, and Claude Sonnet 3 models. All requests to these models will now return an error. Read more in Model deprecations.",
-      "fetched_at": "2026-04-28T22:43:01.983Z",
-      "explanation": {
-        "what_it_is": "The Claude 2.0, 2.1, and Sonnet 3 models have been retired and are no longer available for use. Any requests to these models will now return an error.",
-        "why_it_matters": "This change affects any existing workflows or applications that rely on these models, which will need to be updated to use alternative models. This ensures that users are using the most current and supported models for their tasks.",
-        "how_to_use": [
-          "Update your API requests to use a currently supported model, such as the latest Claude model version.",
-          "Review the Model deprecations documentation for guidance on migrating to alternative models."
         ]
       }
     }
