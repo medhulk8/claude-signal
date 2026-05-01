@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-05-01T01:30:45.964Z",
+  "generated_at": "2026-05-01T05:29:53.894Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "55aafaee",
+      "title": "Added claude project purge [path] to delete all Claude Code state for a project (transcripts, tasks, file history, config entry) — supports…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.126",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-01T03:11:36Z",
+      "summary": "v2.1.126",
+      "fetched_at": "2026-05-01T05:29:54.116Z",
+      "explanation": {
+        "what_it_is": "The claude project purge command deletes all Claude Code state for a specified project, including transcripts, tasks, file history, and config entries.",
+        "why_it_matters": "This command allows users to completely reset a project's state, which can be useful for starting fresh or removing sensitive data.",
+        "how_to_use": [
+          "Run 'claude project purge [path]' to delete all project state, replacing [path] with the project's file path.",
+          "Use this command to remove all project data before sharing or archiving a project."
+        ]
+      }
+    },
     {
       "id": "4834d913",
       "title": "We've retired the 1M token context window beta (context-1m-2025-08-07) for…",
@@ -268,25 +287,6 @@
         "how_to_use": [
           "Update your API requests to use the Claude Haiku 4.5 model instead of the retired Claude Haiku 3 model",
           "Test your application with the new model to ensure compatibility and handle any differences in behavior or output"
-        ]
-      }
-    },
-    {
-      "id": "45727dd6",
-      "title": "Added sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-17T19:34:41Z",
-      "summary": "v2.1.113",
-      "fetched_at": "2026-04-18T19:32:07.721Z",
-      "explanation": {
-        "what_it_is": "The sandbox.network.deniedDomains setting allows you to block specific domains from being accessed, even if they would normally be permitted by a wildcard in the allowedDomains setting.",
-        "why_it_matters": "This setting gives you more fine-grained control over network access, enabling you to exclude specific domains that may be security risks or otherwise undesirable, even if they match a broader allowed pattern.",
-        "how_to_use": [
-          "Add a list of denied domains to the sandbox.network.deniedDomains setting to block them, e.g. ['example.com', 'sub.example.com']",
-          "Use this setting in conjunction with allowedDomains wildcards to create more nuanced network access policies"
         ]
       }
     },
