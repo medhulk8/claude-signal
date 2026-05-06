@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-05-06T21:54:26.875Z",
+  "generated_at": "2026-05-06T22:36:46.046Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "742238a2",
+      "title": "Added CLAUDE_CODE_SESSION_ID environment variable to the Bash tool subprocess environment, matching the session_id passed to hooks",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-06T22:08:13Z",
+      "summary": "v2.1.132",
+      "fetched_at": "2026-05-06T22:36:46.292Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_SESSION_ID environment variable is now available in the Bash tool subprocess environment, containing the same session ID passed to hooks.",
+        "why_it_matters": "This allows scripts running in the Bash tool subprocess to access and utilize the current session ID, enabling more informed and session-aware automation.",
+        "how_to_use": [
+          "Access the session ID in a Bash script using $CLAUDE_CODE_SESSION_ID",
+          "Use the session ID to customize script behavior or logging"
+        ]
+      }
+    },
+    {
+      "id": "1a3306e2",
+      "title": "Added CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1 env var to opt out of the fullscreen alternate-screen renderer and keep the conversation in the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-06T22:08:13Z",
+      "summary": "v2.1.132",
+      "fetched_at": "2026-05-06T22:36:46.292Z",
+      "explanation": {
+        "what_it_is": "A new environment variable CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN that allows opting out of the fullscreen alternate-screen renderer.",
+        "why_it_matters": "This change allows Claude Code users to keep conversations in the main terminal window instead of switching to a fullscreen alternate screen.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1 in your environment variables to disable the fullscreen renderer.",
+          "Run your Claude Code application with the environment variable set to keep conversations in the main terminal window."
+        ]
+      }
+    },
+    {
+      "id": "3aa6f75b",
+      "title": "Added a \"Pasting…\" footer hint while a Ctrl+V image paste is being read from the clipboard",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-06T22:08:13Z",
+      "summary": "v2.1.132",
+      "fetched_at": "2026-05-06T22:36:46.292Z",
+      "explanation": {
+        "what_it_is": "A 'Pasting…' footer hint is now displayed when using Ctrl+V to paste an image from the clipboard, indicating that the paste operation is in progress.",
+        "why_it_matters": "This update provides visual feedback to the user, reducing uncertainty about whether the paste operation has been registered by the application.",
+        "how_to_use": [
+          "Use Ctrl+V to paste an image from the clipboard and observe the 'Pasting…' footer hint.",
+          "Wait for the hint to disappear, indicating that the image has been successfully pasted."
+        ]
+      }
+    },
     {
       "id": "bbb782e3",
       "title": "Added --plugin-url <url> flag to fetch a plugin .zip archive from a URL for the current session",
@@ -307,83 +364,6 @@
         "how_to_use": [
           "Set CLAUDE_CODE_HIDE_CWD to 1 to hide the working directory in the startup logo",
           "Use this variable in your environment configuration or startup scripts to persist the setting"
-        ]
-      }
-    },
-    {
-      "id": "50b274a2",
-      "title": "Added vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-23T00:42:21Z",
-      "summary": "v2.1.118",
-      "fetched_at": "2026-04-23T01:17:15.807Z",
-      "explanation": {
-        "what_it_is": "Vim visual mode (v) and visual-line mode (V) have been added to Claude Code, allowing users to select text and perform operations on it with visual feedback.",
-        "why_it_matters": "This update brings Claude Code's editing experience closer to that of Vim, making it more familiar and efficient for users who are accustomed to Vim's visual modes.",
-        "how_to_use": [
-          "Use 'v' to enter visual mode and select characters",
-          "Use 'V' to enter visual-line mode and select lines",
-          "Combine visual modes with operators like 'd' for deletion or 'y' for yanking"
-        ]
-      }
-    },
-    {
-      "id": "72062577",
-      "title": "Added DISABLE_UPDATES env var to completely block all update paths including manual claude update — stricter than DISABLE_AUTOUPDATER",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-23T00:42:21Z",
-      "summary": "v2.1.118",
-      "fetched_at": "2026-04-23T01:17:15.807Z",
-      "explanation": {
-        "what_it_is": "The DISABLE_UPDATES environment variable is a new setting that completely blocks all update paths, including manual updates, in Claude Code.",
-        "why_it_matters": "This provides a stricter control over updates compared to the existing DISABLE_AUTOUPDATER variable, allowing for a more locked-down environment.",
-        "how_to_use": [
-          "Set DISABLE_UPDATES to prevent any updates from being applied, even if a user attempts to update manually.",
-          "Use this variable in environments where updates need to be strictly controlled, such as in production or sensitive systems."
-        ]
-      }
-    },
-    {
-      "id": "3c013183",
-      "title": "Added a \"Don't ask again\" option to the auto mode opt-in prompt",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-23T00:42:21Z",
-      "summary": "v2.1.118",
-      "fetched_at": "2026-04-23T01:17:15.807Z",
-      "explanation": {
-        "what_it_is": "A 'Don't ask again' option has been added to the auto mode opt-in prompt, allowing users to suppress future prompts.",
-        "why_it_matters": "This change allows users to avoid repeated prompts and streamline their workflow by opting out of future auto mode invitations.",
-        "how_to_use": [
-          "Select 'Don't ask again' when prompted to opt-in to auto mode to prevent future prompts.",
-          "Use this option to avoid interruptions when working on tasks that don't require auto mode."
-        ]
-      }
-    },
-    {
-      "id": "61947aff",
-      "title": "Added claude plugin tag to create release git tags for plugins with version validation",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-23T00:42:21Z",
-      "summary": "v2.1.118",
-      "fetched_at": "2026-04-23T01:17:15.807Z",
-      "explanation": {
-        "what_it_is": "The claude plugin tag is a new feature that creates release Git tags for plugins, including version validation to ensure consistency.",
-        "why_it_matters": "This update streamlines the process of managing plugin releases, allowing Claude Code users to easily track and validate plugin versions.",
-        "how_to_use": [
-          "Use the claude plugin tag command to create a release Git tag for a plugin, automatically validating its version.",
-          "Integrate the claude plugin tag into your existing workflow to maintain consistent and organized plugin releases."
         ]
       }
     },
@@ -1720,6 +1700,25 @@
           "Migrate existing applications to use recommended replacement models",
           "Update API requests to use non-deprecated model versions",
           "Review and update dependencies that may be affected by the deprecation"
+        ]
+      }
+    },
+    {
+      "id": "0f2c5310",
+      "title": "The 1-hour cache duration for prompt caching is now generally available",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
+      "fetched_at": "2026-05-06T22:36:47.673Z",
+      "explanation": {
+        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
+        "why_it_matters": "This change allows for more efficient use of resources, as users can avoid recomputing results that have been recently cached. It also simplifies development, as users no longer need to include a beta header to access the extended cache duration.",
+        "how_to_use": [
+          "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
+          "Remove the beta header from API requests that previously used the extended cache duration"
         ]
       }
     }
