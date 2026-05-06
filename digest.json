@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-05-06T01:22:00.169Z",
+  "generated_at": "2026-05-06T05:15:37.406Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "bbb782e3",
+      "title": "Added --plugin-url <url> flag to fetch a plugin .zip archive from a URL for the current session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-06T01:40:18Z",
+      "summary": "v2.1.129",
+      "fetched_at": "2026-05-06T05:15:37.664Z",
+      "explanation": {
+        "what_it_is": "The --plugin-url flag allows you to fetch a plugin .zip archive from a specified URL for the current Claude Code session.",
+        "why_it_matters": "This flag enables users to load plugins from external sources without having to manually download and install them, streamlining the plugin installation process.",
+        "how_to_use": [
+          "Run Claude Code with the --plugin-url flag followed by the URL of the plugin .zip archive, e.g. --plugin-url https://example.com/plugin.zip",
+          "Use this flag to load plugins from GitHub releases or other external repositories"
+        ]
+      }
+    },
+    {
+      "id": "1b876c3a",
+      "title": "Added CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 env var to force-enable synchronized output on terminals that auto-detection misses (e.g. Emacs eat)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-06T01:40:18Z",
+      "summary": "v2.1.129",
+      "fetched_at": "2026-05-06T05:15:37.664Z",
+      "explanation": {
+        "what_it_is": "A new environment variable CLAUDE_CODE_FORCE_SYNC_OUTPUT that allows you to force-enable synchronized output in terminals where auto-detection fails.",
+        "why_it_matters": "This update matters because it ensures that Claude Code's output is properly synchronized in terminals like Emacs, where auto-detection may not work correctly.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 in your environment variables to enable synchronized output in terminals that are not auto-detected.",
+          "Use this variable in Emacs or other terminals where Claude Code's output was previously not synchronized."
+        ]
+      }
+    },
+    {
+      "id": "756a148a",
+      "title": "Added CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE: when set on Homebrew or WinGet installations, Claude Code runs the upgrade command in the background…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-06T01:40:18Z",
+      "summary": "v2.1.129",
+      "fetched_at": "2026-05-06T05:15:37.664Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE setting allows Claude Code to automatically run the upgrade command in the background for installations managed by Homebrew or WinGet.",
+        "why_it_matters": "This setting streamlines the upgrade process for users who install or manage Claude Code via package managers, reducing the need for manual updates.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE on your Homebrew installation to enable automatic background updates.",
+          "Set CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE on your WinGet installation to enable automatic background updates."
+        ]
+      }
+    },
     {
       "id": "55aafaee",
       "title": "Added claude project purge [path] to delete all Claude Code state for a project (transcripts, tasks, file history, config entry) — supports…",
@@ -1661,63 +1718,6 @@
         "how_to_use": [
           "Use the Claude API to retrieve search result content blocks with source attribution for RAG applications",
           "Integrate Vertex AI with the Claude API to leverage search result content blocks in machine learning workflows"
-        ]
-      }
-    },
-    {
-      "id": "38bc1347",
-      "title": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-05T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.",
-      "fetched_at": "2026-04-28T22:43:01.983Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.1 is an incremental update to Claude Opus 4, providing enhanced capabilities and performance improvements.",
-        "why_it_matters": "This update brings improved performance to Claude Code users, allowing for more efficient workflow execution.",
-        "how_to_use": [
-          "Check the Models overview documentation to learn about the new capabilities",
-          "Test your existing workflows with Claude Opus 4.1 to take advantage of performance improvements"
-        ]
-      }
-    },
-    {
-      "id": "3b3ac203",
-      "title": "We've released text_editor_20250728, an updated text editor tool that fixes…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-28T00:00:00.000Z",
-      "summary": "We've released text_editor_20250728, an updated text editor tool that fixes some issues from the previous versions and adds an optional max_characters parameter that allows you to control the…",
-      "fetched_at": "2026-04-28T22:43:01.983Z",
-      "explanation": {
-        "what_it_is": "The text_editor_20250728 tool is an updated version of the text editor that fixes previous issues and adds a max_characters parameter to control output length.",
-        "why_it_matters": "This update gives Claude Code users more control over the text editor's output, allowing them to specify a maximum number of characters to prevent excessively long responses.",
-        "how_to_use": [
-          "Use the max_characters parameter to limit the length of generated text, for example, to fit within specific character limits of a database field or UI component.",
-          "Test the updated text editor with different max_characters values to find the optimal balance between response length and content quality."
-        ]
-      }
-    },
-    {
-      "id": "7406ee3b",
-      "title": "We've increased rate limits for Claude Opus 4 on the Claude API to give you…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-07-24T00:00:00.000Z",
-      "summary": "We've increased rate limits for Claude Opus 4 on the Claude API to give you more capacity to build and scale with Claude. For customers with usage tier 1-4 rate limits, these changes apply…",
-      "fetched_at": "2026-04-28T22:43:01.983Z",
-      "explanation": {
-        "what_it_is": "The rate limits for Claude Opus 4 on the Claude API have been increased, allowing for more requests to be made within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to build and scale their applications more efficiently, without hitting rate limits as quickly, for customers on usage tiers 1-4.",
-        "how_to_use": [
-          "Make more frequent API calls to Claude Opus 4 without incurring rate limit errors",
-          "Scale your application to handle increased traffic, relying on the higher rate limits"
         ]
       }
     }
