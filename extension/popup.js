@@ -42,7 +42,7 @@ async function main() {
 
   if (needsFetch) {
     try {
-      const res = await fetch(DIGEST_URL);
+      const res = await fetch(DIGEST_URL, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       digest = await res.json();
       await chrome.storage.local.set({
@@ -64,7 +64,7 @@ async function main() {
   updateBadge(digest, seenIds);
 
   document.getElementById('markAllRead').addEventListener('click', () =>
-    markAllRead(digest, seenIds)
+    markAllRead(digest, seenIds, activeTab)
   );
 
   document.getElementById('tabUnread').addEventListener('click', () => {
@@ -187,15 +187,14 @@ async function markRead(id, el) {
   updateBadge(cachedDigest, seenIds);
 }
 
-async function markAllRead(digest, currentSeenIds) {
+async function markAllRead(digest, currentSeenIds, activeTab) {
   if (!digest?.items) return;
   const seenIds = { ...currentSeenIds };
   for (const item of digest.items) {
     seenIds[item.id] = true;
   }
   await chrome.storage.local.set({ seenIds });
-  // Re-render all items as read
-  document.querySelectorAll('.item').forEach((el) => el.classList.add('item--read'));
+  renderItems(digest, seenIds, activeTab);
   updateBadge(digest, seenIds);
 }
 

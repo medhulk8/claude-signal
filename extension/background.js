@@ -59,7 +59,7 @@ async function scheduleAlarm() {
 async function fetchAndNotify() {
   let digest;
   try {
-    const res = await fetch(DIGEST_URL);
+    const res = await fetch(DIGEST_URL, { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     digest = await res.json();
   } catch {

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Claude Signal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-signal updates from Claude Code and Anthropic developer platform.",
   "homepage_url": "https://github.com/medhulk8/claude-signal",
   "permissions": ["storage", "alarms", "notifications"],
