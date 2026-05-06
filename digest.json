@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-06T15:17:28.559Z",
+  "generated_at": "2026-05-06T17:18:02.251Z",
   "item_count": 90,
   "items": [
     {
@@ -57,6 +57,84 @@
         "how_to_use": [
           "Set CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE on your Homebrew installation to enable automatic background updates.",
           "Set CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE on your WinGet installation to enable automatic background updates."
+        ]
+      }
+    },
+    {
+      "id": "91d9718c",
+      "title": "Multiagent sessions and Outcomes are now in public beta under the standard…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-06T00:00:00.000Z",
+      "summary": "Multiagent sessions and Outcomes are now in public beta under the standard managed-agents-2026-04-01 beta header.",
+      "fetched_at": "2026-05-06T17:18:03.733Z",
+      "explanation": {
+        "what_it_is": "Multiagent sessions and Outcomes are now available in public beta, allowing developers to create and manage multiple agents and track outcomes in their applications.",
+        "why_it_matters": "This update enables Claude Code users to build more complex and interactive applications, such as multi-player games or collaborative workflows, and to measure the effectiveness of their agents.",
+        "how_to_use": [
+          "Use the managed-agents-2026-04-01 beta header to access multiagent sessions and Outcomes in your API requests",
+          "Create multiple agents with distinct roles and behaviors to simulate real-world scenarios",
+          "Track and analyze outcomes to refine your application's decision-making and optimization processes"
+        ]
+      }
+    },
+    {
+      "id": "bd97d559",
+      "title": "Vault credential background refresh is now supported for mcp_oauth credentials",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-06T00:00:00.000Z",
+      "summary": "Vault credential background refresh is now supported for mcp_oauth credentials. See Authenticate with vaults.",
+      "fetched_at": "2026-05-06T17:18:03.733Z",
+      "explanation": {
+        "what_it_is": "Vault credential background refresh allows Claude Code to automatically update mcp_oauth credentials in the background, ensuring that authentication with vaults remains valid without requiring manual intervention.",
+        "why_it_matters": "This update eliminates the need for manual credential updates, reducing the likelihood of authentication errors and streamlining the development workflow.",
+        "how_to_use": [
+          "Use the Authenticate with vaults documentation to configure background refresh for mcp_oauth credentials",
+          "Verify that your application can automatically refresh credentials without interrupting the authentication flow"
+        ]
+      }
+    },
+    {
+      "id": "ce68d3c5",
+      "title": "Webhooks for Claude Managed Agents are now supported",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-06T00:00:00.000Z",
+      "summary": "Webhooks for Claude Managed Agents are now supported. Webhook event types include session and vault lifecycle events. See Subscribe to webhooks.",
+      "fetched_at": "2026-05-06T17:18:03.733Z",
+      "explanation": {
+        "what_it_is": "Webhooks for Claude Managed Agents allow you to receive notifications for specific events, such as session and vault lifecycle events, enabling real-time monitoring and automation.",
+        "why_it_matters": "This update enables Claude Code users to integrate their applications with Claude Managed Agents in a more seamless and automated way, allowing for more efficient workflow management.",
+        "how_to_use": [
+          "Subscribe to webhooks to receive notifications when a session is created or updated",
+          "Use webhook events to automate vault lifecycle management, such as archiving or deleting vaults when they are no longer needed"
+        ]
+      }
+    },
+    {
+      "id": "7da12cde",
+      "title": "Additional filtering and sorting options are now supported",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-06T00:00:00.000Z",
+      "summary": "Additional filtering and sorting options are now supported. Sessions can be filtered by status, and events can be filtered by type. Events can now be filtered by creation time.",
+      "fetched_at": "2026-05-06T17:18:03.733Z",
+      "explanation": {
+        "what_it_is": "The Anthropic API now supports additional filtering and sorting options for sessions and events, including filtering sessions by status and events by type or creation time.",
+        "why_it_matters": "This update allows Claude Code users to more precisely manage and analyze their sessions and events, enabling more efficient data retrieval and processing.",
+        "how_to_use": [
+          "Filter sessions by status to track active or completed sessions",
+          "Filter events by type to focus on specific event categories",
+          "Filter events by creation time to analyze recent or historical events"
         ]
       }
     },
@@ -1642,82 +1720,6 @@
           "Migrate existing applications to use recommended replacement models",
           "Update API requests to use non-deprecated model versions",
           "Review and update dependencies that may be affected by the deprecation"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for a longer period, reducing the need for repeated computations.",
-        "why_it_matters": "This change enables users to optimize their workflows by minimizing redundant calculations and improving overall performance.",
-        "how_to_use": [
-          "Use the extended cache TTL to store prompt results for 1 hour without requiring a beta header",
-          "Update existing code to take advantage of the longer cache duration for improved performance"
-        ]
-      }
-    },
-    {
-      "id": "44bee3b8",
-      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-12T00:00:00.000Z",
-      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
-        "why_it_matters": "This update enables Claude Code users to process and respond to longer input sequences, potentially improving performance on tasks that require more context.",
-        "how_to_use": [
-          "Use the Claude API to send requests with input sequences up to 1M tokens to Claude Sonnet 4",
-          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications"
-        ]
-      }
-    },
-    {
-      "id": "0d1b2e50",
-      "title": "Some customers might encounter 429 (rate_limit_error) errors following a sharp…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-11T00:00:00.000Z",
-      "summary": "Some customers might encounter 429 (rate_limit_error) errors following a sharp increase in API usage due to acceleration limits on the API. Previously, 529 (overloaded_error) errors would occur in…",
-      "fetched_at": "2026-04-25T04:24:53.794Z",
-      "explanation": {
-        "what_it_is": "The Anthropic API now returns 429 (rate_limit_error) errors when it hits acceleration limits due to a sharp increase in API usage, replacing the previous 529 (overloaded_error) errors.",
-        "why_it_matters": "This change affects how Claude Code users handle rate limiting, as they will now receive more specific error messages when they exceed the API's acceleration limits.",
-        "how_to_use": [
-          "Check API usage patterns to anticipate when rate limits might be exceeded",
-          "Implement retry logic to handle 429 errors and prevent failed requests"
-        ]
-      }
-    },
-    {
-      "id": "2e5adcc2",
-      "title": "Search result content blocks are now generally available on the Claude API and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-08T00:00:00.000Z",
-      "summary": "Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution.…",
-      "fetched_at": "2026-04-28T01:26:31.483Z",
-      "explanation": {
-        "what_it_is": "Search result content blocks are now available on the Claude API and Google Cloud's Vertex AI, enabling natural citations with proper source attribution.",
-        "why_it_matters": "This feature allows developers to create RAG applications with accurate and transparent sourcing, improving the reliability of their outputs.",
-        "how_to_use": [
-          "Use the Claude API to retrieve search result content blocks with source attribution for RAG applications",
-          "Integrate Vertex AI with the Claude API to leverage search result content blocks in machine learning workflows"
         ]
       }
     }
