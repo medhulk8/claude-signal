@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-07T17:28:59.866Z",
+  "generated_at": "2026-05-07T19:20:41.277Z",
   "item_count": 90,
   "items": [
     {
@@ -941,25 +941,6 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The output_format parameter for structured outputs has been moved to output_config.format.",
-      "fetched_at": "2026-04-30T09:57:15.782Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming is a feature that allows for more detailed and controlled output from models, and the output_format parameter has been relocated to output_config.format for structured outputs.",
-        "why_it_matters": "This change allows Claude Code users to access fine-grained tool streaming on all models and platforms without restrictions, and requires updating the output_format parameter location in their code.",
-        "how_to_use": [
-          "Update your code to use output_config.format instead of output_format for structured outputs",
-          "Test your code with fine-grained tool streaming on different models and platforms to ensure compatibility"
-        ]
-      }
-    },
-    {
       "id": "4e863825",
       "title": "Structured outputs are now generally available on the Claude API for Claude…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
@@ -1719,6 +1700,25 @@
         "how_to_use": [
           "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
           "Remove the beta header from API requests that previously used the extended cache duration"
+        ]
+      }
+    },
+    {
+      "id": "44bee3b8",
+      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-12T00:00:00.000Z",
+      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
+      "fetched_at": "2026-05-07T19:20:43.716Z",
+      "explanation": {
+        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
+        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer pieces of text, such as full documents or extended conversations.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for more accurate and contextually aware responses.",
+          "Integrate with Amazon Bedrock to leverage the expanded context window in workflows and applications."
         ]
       }
     }
