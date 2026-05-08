@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-05-08T18:01:39.186Z",
+  "generated_at": "2026-05-08T20:01:09.425Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "7ac21c33",
+      "title": "Added CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-08T18:39:08Z",
+      "summary": "v2.1.136",
+      "fetched_at": "2026-05-08T20:01:09.861Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL setting allows enterprises to re-enable the session quality survey for users, specifically when responses are captured through OpenTelemetry.",
+        "why_it_matters": "This update matters because it gives enterprises the option to collect user feedback on session quality again, which can inform improvements to their Claude Code implementation.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to true in your environment variables to re-enable the session quality survey.",
+          "Use OpenTelemetry to capture user responses to the survey and integrate them into your enterprise's feedback loop."
+        ]
+      }
+    },
+    {
+      "id": "71041253",
+      "title": "Added settings.autoMode.hard_deny for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-08T18:39:08Z",
+      "summary": "v2.1.136",
+      "fetched_at": "2026-05-08T20:01:09.861Z",
+      "explanation": {
+        "what_it_is": "The settings.autoMode.hard_deny setting allows auto mode classifier rules to block unconditionally, ignoring user intent or allow exceptions. This setting provides a way to enforce strict rules in auto mode.",
+        "why_it_matters": "This update gives Claude Code users more control over auto mode classifier rules, enabling them to enforce strict rules without exceptions. This can be particularly useful for sensitive or high-stakes applications where flexibility is not desired.",
+        "how_to_use": [
+          "Set settings.autoMode.hard_deny to true to enable unconditional blocking for specific classifier rules",
+          "Use this setting to enforce strict rules for certain topics or keywords, such as profanity or sensitive information"
+        ]
+      }
+    },
     {
       "id": "530735a8",
       "title": "Added worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/<default>…",
@@ -1680,45 +1718,6 @@
           "Use the API to fetch daily or monthly usage reports",
           "Integrate the API with your organization's billing system to automate expense tracking",
           "Utilize the API to set up custom alerts for unusual usage patterns or cost spikes"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update enables Claude Code users to programmatically access organization data, which can be used for automation, reporting, or integration with other systems.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization details, such as name, ID, or settings, for use in custom applications or scripts.",
-          "Integrate the organization information with other Anthropic API endpoints to build more comprehensive administrative tools."
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
-        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications that rely on these models.",
-        "how_to_use": [
-          "Migrate existing applications to use recommended replacement models",
-          "Update API requests to use non-deprecated model versions",
-          "Review and update dependencies that may be affected by the deprecation"
         ]
       }
     }
