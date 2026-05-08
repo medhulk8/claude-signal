@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-05-07T23:40:27.481Z",
+  "generated_at": "2026-05-08T01:30:27.514Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "530735a8",
+      "title": "Added worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/<default>…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-07T23:49:04Z",
+      "summary": "v2.1.133",
+      "fetched_at": "2026-05-08T01:30:27.984Z",
+      "explanation": {
+        "what_it_is": "The worktree.baseRef setting allows you to choose whether new worktrees branch from the origin's default branch or the current head, with options 'fresh' or 'head'.",
+        "why_it_matters": "This setting gives Claude Code users more control over their workflow, allowing them to decide whether new worktrees should start from a stable default branch or the latest changes in the repository.",
+        "how_to_use": [
+          "Set worktree.baseRef to 'fresh' to create worktrees that branch from the origin's default branch",
+          "Set worktree.baseRef to 'head' to create worktrees that branch from the current head"
+        ]
+      }
+    },
+    {
+      "id": "e6d94232",
+      "title": "Added sandbox.bwrapPath and sandbox.socatPath managed settings (Linux/WSL) to specify custom bubblewrap and socat binary locations",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-07T23:49:04Z",
+      "summary": "v2.1.133",
+      "fetched_at": "2026-05-08T01:30:27.984Z",
+      "explanation": {
+        "what_it_is": "Two new managed settings, sandbox.bwrapPath and sandbox.socatPath, allow you to specify custom locations for bubblewrap and socat binaries on Linux and WSL systems.",
+        "why_it_matters": "This update gives you more control over the dependencies used by Claude Code's sandboxing feature, which can be useful for custom or restricted environments.",
+        "how_to_use": [
+          "Set sandbox.bwrapPath to a custom bubblewrap binary location, e.g. /usr/local/bin/bwrap",
+          "Set sandbox.socatPath to a custom socat binary location, e.g. /usr/local/bin/socat"
+        ]
+      }
+    },
+    {
+      "id": "2edb9afc",
+      "title": "Added parentSettingsBehavior admin-tier key ('first-wins' | 'merge') to let admins opt SDK managedSettings (parent tier) into the policy merge",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-07T23:49:04Z",
+      "summary": "v2.1.133",
+      "fetched_at": "2026-05-08T01:30:27.984Z",
+      "explanation": {
+        "what_it_is": "The parentSettingsBehavior admin-tier key allows admins to control how SDK managed settings from the parent tier are merged into the policy, with options 'first-wins' or 'merge'.",
+        "why_it_matters": "This update gives admins more flexibility in managing settings inheritance, enabling them to choose whether parent settings override or merge with child settings.",
+        "how_to_use": [
+          "Set parentSettingsBehavior to 'first-wins' to prioritize parent settings over child settings",
+          "Set parentSettingsBehavior to 'merge' to combine parent and child settings"
+        ]
+      }
+    },
     {
       "id": "742238a2",
       "title": "Added CLAUDE_CODE_SESSION_ID environment variable to the Bash tool subprocess environment, matching the session_id passed to hooks",
@@ -326,44 +383,6 @@
         "how_to_use": [
           "Use the API to query rate limits for a specific workspace",
           "Integrate the API with existing monitoring tools to receive alerts when rate limits are approached"
-        ]
-      }
-    },
-    {
-      "id": "d7310cff",
-      "title": "Added prUrlTemplate setting to point the footer PR badge at a custom code-review URL instead of github.com",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-23T23:24:19Z",
-      "summary": "v2.1.119",
-      "fetched_at": "2026-04-23T23:33:29.335Z",
-      "explanation": {
-        "what_it_is": "The prUrlTemplate setting allows you to customize the URL that the footer PR badge points to, instead of defaulting to github.com. This setting enables you to use a custom code-review URL.",
-        "why_it_matters": "This change matters because it gives you more control over the code review process, especially if your project uses a different platform or workflow. You can now direct users to your preferred code review tool or platform.",
-        "how_to_use": [
-          "Set prUrlTemplate to a custom URL, such as a GitLab or Bitbucket repository, to redirect the PR badge to your preferred code review platform.",
-          "Use the prUrlTemplate setting in your Claude Code configuration file to override the default github.com URL."
-        ]
-      }
-    },
-    {
-      "id": "320acee2",
-      "title": "Added CLAUDE_CODE_HIDE_CWD environment variable to hide the working directory in the startup logo",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-23T23:24:19Z",
-      "summary": "v2.1.119",
-      "fetched_at": "2026-04-23T23:33:29.335Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_HIDE_CWD environment variable allows you to hide the working directory displayed in the Claude Code startup logo.",
-        "why_it_matters": "This change gives users more control over the information displayed during startup, which can be useful for presentations, demos, or shared screenshots.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_HIDE_CWD to 1 to hide the working directory in the startup logo",
-          "Use this variable in your environment configuration or startup scripts to persist the setting"
         ]
       }
     },
@@ -1700,25 +1719,6 @@
           "Migrate existing applications to use recommended replacement models",
           "Update API requests to use non-deprecated model versions",
           "Review and update dependencies that may be affected by the deprecation"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-05-06T22:36:47.673Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
-        "why_it_matters": "This change allows for more efficient use of resources, as users can avoid recomputing results that have been recently cached. It also simplifies development, as users no longer need to include a beta header to access the extended cache duration.",
-        "how_to_use": [
-          "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
-          "Remove the beta header from API requests that previously used the extended cache duration"
         ]
       }
     }
