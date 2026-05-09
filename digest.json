@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-08T23:43:00.334Z",
+  "generated_at": "2026-05-09T01:27:21.559Z",
   "item_count": 90,
   "items": [
     {
@@ -345,63 +345,6 @@
           "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'default' for standard service",
           "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'flex' for flexible service options",
           "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'priority' for priority service handling"
-        ]
-      }
-    },
-    {
-      "id": "01137bb4",
-      "title": "Added alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-28T00:31:31Z",
-      "summary": "v2.1.121",
-      "fetched_at": "2026-04-28T01:26:30.109Z",
-      "explanation": {
-        "what_it_is": "The alwaysLoad option is a new configuration setting for MCP servers in Claude Code, which when enabled, loads all tools from that server immediately, bypassing the usual tool-search deferral mechanism.",
-        "why_it_matters": "This change allows Claude Code users to ensure that specific tools are always available, without having to wait for the tool-search deferral process to complete, which can improve workflow efficiency in certain scenarios.",
-        "how_to_use": [
-          "Set alwaysLoad to true in the MCP server config to load all tools from that server immediately",
-          "Use this option for servers that provide critical tools that are frequently used in your workflow"
-        ]
-      }
-    },
-    {
-      "id": "29d4fee2",
-      "title": "Added claude plugin prune to remove orphaned auto-installed plugin dependencies; plugin uninstall --prune cascades",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-28T00:31:31Z",
-      "summary": "v2.1.121",
-      "fetched_at": "2026-04-28T01:26:30.109Z",
-      "explanation": {
-        "what_it_is": "The `claude plugin prune` command removes unused dependencies that were automatically installed by plugins, and the `plugin uninstall --prune` command now also removes these orphaned dependencies.",
-        "why_it_matters": "This update helps keep your Claude Code environment clean by removing unnecessary dependencies, reducing clutter and potential version conflicts.",
-        "how_to_use": [
-          "Run `claude plugin prune` to remove all orphaned dependencies",
-          "Use `plugin uninstall --prune` to remove a plugin and its unused dependencies in one step"
-        ]
-      }
-    },
-    {
-      "id": "c963bf87",
-      "title": "Added a type-to-filter search box to /skills so you can find a skill in long lists without scrolling",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-28T00:31:31Z",
-      "summary": "v2.1.121",
-      "fetched_at": "2026-04-28T01:26:30.109Z",
-      "explanation": {
-        "what_it_is": "A search box has been added to the /skills page, allowing users to filter skills by typing keywords.",
-        "why_it_matters": "This feature saves time when searching for specific skills in long lists, eliminating the need to scroll through numerous options.",
-        "how_to_use": [
-          "Type a keyword in the search box to filter skills",
-          "Use the search box to quickly find a specific skill by name or description"
         ]
       }
     },
@@ -1718,6 +1661,63 @@
           "Use the API to fetch daily or monthly usage reports",
           "Integrate the API with your organization's billing system to automate expense tracking",
           "Utilize the API to set up custom alerts for unusual usage patterns or cost spikes"
+        ]
+      }
+    },
+    {
+      "id": "cdf7f3fc",
+      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-18T00:00:00.000Z",
+      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
+      "fetched_at": "2026-05-09T01:27:22.895Z",
+      "explanation": {
+        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
+        "why_it_matters": "This update provides Claude Code users with programmatic access to organization data, enabling automation and integration with other systems.",
+        "how_to_use": [
+          "Use the new endpoint to fetch organization details for display in custom dashboards",
+          "Integrate the endpoint with existing workflows to automate organization-specific tasks"
+        ]
+      }
+    },
+    {
+      "id": "74c31538",
+      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
+      "fetched_at": "2026-05-09T01:27:22.895Z",
+      "explanation": {
+        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
+        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications.",
+        "how_to_use": [
+          "Migrate existing applications using claude-3-5-sonnet-20240620 to a recommended replacement model",
+          "Update API requests to use a non-deprecated Claude model before October 28, 2025"
+        ]
+      }
+    },
+    {
+      "id": "0f2c5310",
+      "title": "The 1-hour cache duration for prompt caching is now generally available",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-13T00:00:00.000Z",
+      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
+      "fetched_at": "2026-05-09T01:27:22.895Z",
+      "explanation": {
+        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
+        "why_it_matters": "With the 1-hour cache duration, users can improve the performance of their applications by minimizing redundant computations and reducing the load on the API. This change simplifies the development process by removing the need for a beta header.",
+        "how_to_use": [
+          "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
+          "Remove the beta header from API requests to utilize the 1-hour cache duration"
         ]
       }
     }
