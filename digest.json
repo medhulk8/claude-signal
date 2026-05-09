@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-09T04:56:58.112Z",
+  "generated_at": "2026-05-09T07:02:31.650Z",
   "item_count": 90,
   "items": [
     {
@@ -325,26 +325,6 @@
         "how_to_use": [
           "Update your API requests to remove the context-1m-2025-08-07 beta header for Claude Sonnet 4.5 and Claude Sonnet 4",
           "Test your application's handling of long input sequences to ensure compatibility with the retired beta"
-        ]
-      }
-    },
-    {
-      "id": "9ca99bbb",
-      "title": "Added ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-04-28T22:05:15Z",
-      "summary": "v2.1.122",
-      "fetched_at": "2026-04-28T22:43:00.692Z",
-      "explanation": {
-        "what_it_is": "The ANTHROPIC_BEDROCK_SERVICE_TIER environment variable allows you to select a specific Bedrock service tier, choosing from default, flex, or priority.",
-        "why_it_matters": "This update gives Claude Code users more control over their Bedrock service tier, enabling them to tailor their setup to specific needs.",
-        "how_to_use": [
-          "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'default' for standard service",
-          "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'flex' for flexible service options",
-          "Set ANTHROPIC_BEDROCK_SERVICE_TIER to 'priority' for priority service handling"
         ]
       }
     },
@@ -1718,6 +1698,25 @@
         "how_to_use": [
           "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
           "Remove the beta header from API requests to utilize the 1-hour cache duration"
+        ]
+      }
+    },
+    {
+      "id": "44bee3b8",
+      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-12T00:00:00.000Z",
+      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
+      "fetched_at": "2026-05-09T07:02:36.155Z",
+      "explanation": {
+        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
+        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer documents or conversations, potentially leading to more accurate and informative outputs.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for processing",
+          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications"
         ]
       }
     }
