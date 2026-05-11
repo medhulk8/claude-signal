@@ -1,8 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-05-11T14:14:22.512Z",
+  "generated_at": "2026-05-11T17:14:56.710Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "383d29f2",
+      "title": "We've launched Claude Platform on AWS, bringing the Claude API to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-11-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-11T00:00:00.000Z",
+      "summary": "We've launched Claude Platform on AWS, bringing the Claude API to Anthropic-managed infrastructure accessible through AWS, with AWS billing and IAM authentication. Access the full Messages API, Files…",
+      "fetched_at": "2026-05-11T17:15:12.228Z",
+      "explanation": {
+        "what_it_is": "The Claude Platform is now available on AWS, allowing access to the Claude API through Anthropic-managed infrastructure with AWS billing and IAM authentication.",
+        "why_it_matters": "This change allows Claude Code users to leverage AWS's infrastructure and authentication capabilities, streamlining their workflow and potentially reducing costs.",
+        "how_to_use": [
+          "Access the full Messages API through AWS",
+          "Use AWS IAM authentication to manage access to the Claude API",
+          "Utilize AWS billing for Claude API usage"
+        ]
+      }
+    },
     {
       "id": "7ac21c33",
       "title": "Added CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry",
@@ -1320,21 +1340,21 @@
       }
     },
     {
-      "id": "a0457807",
-      "title": "We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI",
+      "id": "ec8d88db",
+      "title": "We've introduced global endpoint pricing for Amazon Bedrock and Vertex AI",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2025-09-29T00:00:00.000Z",
-      "summary": "We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI. The Claude API (1P) pricing is unaffected.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
+      "summary": "We've introduced global endpoint pricing for Amazon Bedrock and Vertex AI. The Claude API (1P) pricing is unaffected.",
+      "fetched_at": "2026-05-11T17:15:12.228Z",
       "explanation": {
-        "what_it_is": "Global endpoint pricing is now available for AWS Bedrock and Google Vertex AI, allowing for more consistent pricing across different regions and services.",
-        "why_it_matters": "This change simplifies cost estimation and budgeting for Claude Code users who deploy models on AWS Bedrock or Google Vertex AI, as they can now expect uniform pricing regardless of the endpoint location.",
+        "what_it_is": "Global endpoint pricing is now available for Amazon Bedrock and Vertex AI, allowing for more unified cost management across these services.",
+        "why_it_matters": "This change simplifies cost tracking and budgeting for Claude Code users who utilize Amazon Bedrock and Vertex AI, as they can now manage pricing from a single endpoint.",
         "how_to_use": [
-          "Check the updated pricing documentation for AWS Bedrock and Google Vertex AI to understand the new global endpoint pricing structure",
-          "Review your current model deployment costs to see how the global endpoint pricing affects your budget"
+          "Use the global endpoint to retrieve unified pricing information for Amazon Bedrock and Vertex AI",
+          "Integrate the global endpoint into your existing cost management workflows to streamline budgeting and tracking"
         ]
       }
     },
@@ -1587,21 +1607,21 @@
       }
     },
     {
-      "id": "0c0437da",
-      "title": "The 1M token context window is now available on Google Cloud's Vertex AI",
+      "id": "38174c90",
+      "title": "The 1M token context window is now available on Vertex AI",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "The 1M token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
+      "summary": "The 1M token context window is now available on Vertex AI. For more information, see Claude on Vertex AI.",
+      "fetched_at": "2026-05-11T17:15:12.228Z",
       "explanation": {
-        "what_it_is": "The 1M token context window allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, when running on Google Cloud's Vertex AI.",
-        "why_it_matters": "This increase in context window size enables Claude Code to handle more complex and longer-form text-based tasks, such as document analysis or extended conversations, on Vertex AI.",
+        "what_it_is": "The 1M token context window allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, on the Vertex AI platform.",
+        "why_it_matters": "This update enables Claude Code users to work with longer documents and more extensive codebases on Vertex AI, potentially improving their ability to analyze and generate code.",
         "how_to_use": [
-          "Use the 1M token context window to analyze large documents or datasets on Vertex AI",
-          "Leverage the increased context window to build more sophisticated conversational AI models on Google Cloud's platform"
+          "Use the 1M token context window on Vertex AI to analyze large code repositories",
+          "Process lengthy documents, such as technical papers or books, to generate summaries or extracts"
         ]
       }
     },
@@ -1698,25 +1718,6 @@
         "how_to_use": [
           "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
           "Remove the beta header from API requests to utilize the 1-hour cache duration"
-        ]
-      }
-    },
-    {
-      "id": "44bee3b8",
-      "title": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-12-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-12T00:00:00.000Z",
-      "summary": "We've launched beta support for a 1M token context window in Claude Sonnet 4 on the Claude API and Amazon Bedrock.",
-      "fetched_at": "2026-05-09T07:02:36.155Z",
-      "explanation": {
-        "what_it_is": "Beta support for a 1M token context window in Claude Sonnet 4, allowing models to consider larger amounts of text when generating responses.",
-        "why_it_matters": "This increase in context window size enables Claude Code users to process and respond to longer documents or conversations, potentially leading to more accurate and informative outputs.",
-        "how_to_use": [
-          "Use the Claude API to send requests with up to 1M tokens to Claude Sonnet 4 for processing",
-          "Integrate with Amazon Bedrock to leverage the expanded context window in your applications"
         ]
       }
     }
