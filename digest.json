@@ -1,8 +1,143 @@
 {
   "version": 1,
-  "generated_at": "2026-05-11T17:14:56.710Z",
+  "generated_at": "2026-05-11T19:22:19.041Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "a497ff1e",
+      "title": "Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run claude agents to get started.…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "The agent view is a single list that displays all Claude Code sessions, including running, blocked, and completed sessions. This view is currently in Research Preview.",
+        "why_it_matters": "This feature allows Claude Code users to easily track and manage all their sessions from one place, simplifying workflow and reducing the need to switch between multiple views.",
+        "how_to_use": [
+          "Run the command 'claude agents' to access the agent view",
+          "Use the agent view to monitor running sessions and identify blocked sessions that require user input"
+        ]
+      }
+    },
+    {
+      "id": "6452239e",
+      "title": "Added /goal command: set a completion condition and Claude keeps working across turns until it's met. Works in interactive, -p, and Remote Control.…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "The /goal command allows you to set a completion condition for Claude to work towards, enabling it to continue working across multiple turns until the condition is met.",
+        "why_it_matters": "This update enables Claude Code users to create more complex and open-ended tasks that require multiple interactions to complete, streamlining their workflow and reducing the need for manual intervention.",
+        "how_to_use": [
+          "Use /goal to set a specific completion condition, such as 'generate 5 code snippets' or 'reach a certain accuracy threshold'",
+          "Combine /goal with interactive or -p modes to work on tasks that require multiple iterations",
+          "Utilize /goal in Remote Control to automate tasks that need to run across multiple turns without manual intervention"
+        ]
+      }
+    },
+    {
+      "id": "6d3a5b55",
+      "title": "Added /scroll-speed command to tune mouse wheel scroll speed with a live preview",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "The /scroll-speed command allows users to adjust the speed of their mouse wheel scroll in Claude Code, with a live preview to see the changes in real-time.",
+        "why_it_matters": "This update gives users more control over their workflow, enabling them to customize the scroll speed to their preference, which can be particularly useful for tasks that require precise scrolling.",
+        "how_to_use": [
+          "Use the /scroll-speed command to adjust the scroll speed, and observe the live preview to find the optimal setting for your needs.",
+          "Experiment with different scroll speeds to find the one that works best for your specific tasks, such as scrolling through long code files or navigating complex interfaces."
+        ]
+      }
+    },
+    {
+      "id": "6aac70df",
+      "title": "Added claude plugin details <name> to show a plugin's component inventory and projected per-session token cost",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "The `claude plugin details <name>` command displays a plugin's component inventory and estimated per-session token cost.",
+        "why_it_matters": "This update allows Claude Code users to better understand the composition and potential costs of their plugins, enabling more informed decisions about plugin usage.",
+        "how_to_use": [
+          "Run `claude plugin details my_plugin` to view the component inventory and projected token cost for a specific plugin.",
+          "Use this command to compare the costs of different plugins and optimize token usage."
+        ]
+      }
+    },
+    {
+      "id": "0c12dcaa",
+      "title": "Added transcript view navigation: ? for keyboard shortcuts, {/} to jump between user prompts, v to toggle shortcut panel",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "Transcript view navigation allows users to move through transcripts using keyboard shortcuts, including ? for shortcut lists, {/} to jump between user prompts, and v to toggle the shortcut panel.",
+        "why_it_matters": "This update streamlines the process of reviewing and navigating transcripts, making it easier for users to work with large conversations.",
+        "how_to_use": [
+          "Press ? to view available keyboard shortcuts",
+          "Use {/} to quickly jump between user prompts in a transcript",
+          "Toggle the shortcut panel with v to customize your workflow"
+        ]
+      }
+    },
+    {
+      "id": "6c452c2f",
+      "title": "Added hook args: string[] field (exec form) that spawns the command directly without a shell, so path placeholders never need quoting",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "A new hook args field that allows spawning commands directly without a shell, using an array of strings as arguments.",
+        "why_it_matters": "This change eliminates the need to quote path placeholders, simplifying command execution and reducing potential errors.",
+        "how_to_use": [
+          "Pass command arguments as an array of strings to avoid shell interpretation",
+          "Use this feature to execute commands with file paths containing special characters without quoting"
+        ]
+      }
+    },
+    {
+      "id": "a9b2e68b",
+      "title": "Added hook continueOnBlock config option for PostToolUse — set to true to feed the hook's rejection reason back to Claude and continue the turn",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-11T18:43:42Z",
+      "summary": "v2.1.139",
+      "fetched_at": "2026-05-11T19:22:19.294Z",
+      "explanation": {
+        "what_it_is": "The continueOnBlock config option for PostToolUse hooks allows you to feed the hook's rejection reason back to Claude and continue the turn when set to true.",
+        "why_it_matters": "This update enables Claude Code users to handle hook rejections more gracefully, allowing the conversation to continue even when a hook is blocked.",
+        "how_to_use": [
+          "Set continueOnBlock to true in your PostToolUse hook config to enable this behavior",
+          "Use this option to provide a better user experience by handling hook rejections and continuing the conversation"
+        ]
+      }
+    },
     {
       "id": "383d29f2",
       "title": "We've launched Claude Platform on AWS, bringing the Claude API to…",
@@ -1584,140 +1719,6 @@
         "how_to_use": [
           "Install the PHP SDK using Composer",
           "Use the SDK to send API requests to the Anthropic API from your PHP application"
-        ]
-      }
-    },
-    {
-      "id": "33e23d23",
-      "title": "We've increased rate limits on the 1M token context window for Claude Sonnet 4…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The rate limit for the 1M token context window on Claude Sonnet 4 has been increased, allowing for more requests within a given time frame.",
-        "why_it_matters": "This change enables Claude Code users to process larger volumes of text data without hitting rate limits as frequently, reducing the need for workarounds or optimizations.",
-        "how_to_use": [
-          "Use the increased rate limit to process longer documents or larger datasets with Claude Sonnet 4 on the Claude API",
-          "Take advantage of the higher rate limit to run more frequent or concurrent requests for applications that rely on the 1M token context window"
-        ]
-      }
-    },
-    {
-      "id": "38174c90",
-      "title": "The 1M token context window is now available on Vertex AI",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-26T00:00:00.000Z",
-      "summary": "The 1M token context window is now available on Vertex AI. For more information, see Claude on Vertex AI.",
-      "fetched_at": "2026-05-11T17:15:12.228Z",
-      "explanation": {
-        "what_it_is": "The 1M token context window allows Claude Code to process and understand larger amounts of text, up to 1 million tokens, on the Vertex AI platform.",
-        "why_it_matters": "This update enables Claude Code users to work with longer documents and more extensive codebases on Vertex AI, potentially improving their ability to analyze and generate code.",
-        "how_to_use": [
-          "Use the 1M token context window on Vertex AI to analyze large code repositories",
-          "Process lengthy documents, such as technical papers or books, to generate summaries or extracts"
-        ]
-      }
-    },
-    {
-      "id": "bdee7c3e",
-      "title": "Request IDs are now included directly in error response bodies alongside the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-19T00:00:00.000Z",
-      "summary": "Request IDs are now included directly in error response bodies alongside the existing request-id header. Learn more in Errors.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "Request IDs are now included in error response bodies, in addition to the existing request-id header.",
-        "why_it_matters": "This change allows for easier error tracking and debugging, as the request ID is now directly accessible in the error response.",
-        "how_to_use": [
-          "Access the request ID in error responses to identify specific failed requests",
-          "Use the included request ID to look up detailed error information in the Errors documentation"
-        ]
-      }
-    },
-    {
-      "id": "db35219a",
-      "title": "We've released the Usage & Cost API, allowing administrators to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've released the Usage & Cost API, allowing administrators to programmatically monitor their organization's usage and cost data.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The Usage & Cost API is a programmatic interface that provides access to an organization's usage and cost data, allowing administrators to monitor and track their organization's expenses.",
-        "why_it_matters": "This API enables administrators to automate the process of monitoring their organization's usage and cost data, making it easier to track expenses and make informed decisions.",
-        "how_to_use": [
-          "Use the API to fetch daily or monthly usage reports",
-          "Integrate the API with your organization's billing system to automate expense tracking",
-          "Utilize the API to set up custom alerts for unusual usage patterns or cost spikes"
-        ]
-      }
-    },
-    {
-      "id": "cdf7f3fc",
-      "title": "We've added a new endpoint to the Admin API for retrieving organization…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-18T00:00:00.000Z",
-      "summary": "We've added a new endpoint to the Admin API for retrieving organization information. For details, see the Organization Info Admin API reference.",
-      "fetched_at": "2026-05-09T01:27:22.895Z",
-      "explanation": {
-        "what_it_is": "A new endpoint in the Admin API that allows retrieval of organization information.",
-        "why_it_matters": "This update provides Claude Code users with programmatic access to organization data, enabling automation and integration with other systems.",
-        "how_to_use": [
-          "Use the new endpoint to fetch organization details for display in custom dashboards",
-          "Integrate the endpoint with existing workflows to automate organization-specific tasks"
-        ]
-      }
-    },
-    {
-      "id": "74c31538",
-      "title": "We announced the deprecation of the Claude Sonnet 3.5 models…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.5 models (claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022). These models will be retired on October 28, 2025. We recommend migrating to…",
-      "fetched_at": "2026-05-09T01:27:22.895Z",
-      "explanation": {
-        "what_it_is": "The deprecation of Claude Sonnet 3.5 models, specifically claude-3-5-sonnet-20240620 and claude-3-5-sonnet-20241022, which will be retired on October 28, 2025.",
-        "why_it_matters": "This change requires users to migrate to alternative models to avoid disruption to their workflows and applications.",
-        "how_to_use": [
-          "Migrate existing applications using claude-3-5-sonnet-20240620 to a recommended replacement model",
-          "Update API requests to use a non-deprecated Claude model before October 28, 2025"
-        ]
-      }
-    },
-    {
-      "id": "0f2c5310",
-      "title": "The 1-hour cache duration for prompt caching is now generally available",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-13-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-13T00:00:00.000Z",
-      "summary": "The 1-hour cache duration for prompt caching is now generally available. You can now use the extended cache TTL without a beta header. Learn more in Prompt caching.",
-      "fetched_at": "2026-05-09T01:27:22.895Z",
-      "explanation": {
-        "what_it_is": "The 1-hour cache duration for prompt caching allows Claude Code users to store prompt results for up to 1 hour, reducing the need for repeated computations. This feature is now available without requiring a beta header.",
-        "why_it_matters": "With the 1-hour cache duration, users can improve the performance of their applications by minimizing redundant computations and reducing the load on the API. This change simplifies the development process by removing the need for a beta header.",
-        "how_to_use": [
-          "Use the extended cache TTL to optimize performance in applications with frequent repeated prompts",
-          "Remove the beta header from API requests to utilize the 1-hour cache duration"
         ]
       }
     }
