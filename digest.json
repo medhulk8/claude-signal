@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-05-12T16:09:55.189Z",
+  "generated_at": "2026-05-12T18:27:54.381Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "0c46d801",
+      "title": "Fast mode (research preview) now supports Claude Opus 4.7",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-12-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-12T00:00:00.000Z",
+      "summary": "Fast mode (research preview) now supports Claude Opus 4.7. Set speed: \"fast\" with model: \"claude-opus-4-7\" and the fast-mode-2026-02-01 beta header for significantly faster output token generation at…",
+      "fetched_at": "2026-05-12T18:27:55.724Z",
+      "explanation": {
+        "what_it_is": "Fast mode is a research preview feature that generates output tokens significantly faster than standard mode, now compatible with Claude Opus 4.7 model.",
+        "why_it_matters": "This update allows Claude Code users to leverage the faster output token generation of fast mode with the capabilities of the Claude Opus 4.7 model, potentially accelerating development and testing workflows.",
+        "how_to_use": [
+          "Set speed: 'fast' with model: 'claude-opus-4-7' to enable fast mode",
+          "Include the fast-mode-2026-02-01 beta header in your API requests"
+        ]
+      }
+    },
     {
       "id": "a497ff1e",
       "title": "Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run claude agents to get started.…",
@@ -1700,25 +1719,6 @@
           "Execute Bash commands to automate system tasks",
           "Write code in languages other than Python, such as JavaScript or Ruby",
           "Manipulate files directly, such as reading or writing to a file"
-        ]
-      }
-    },
-    {
-      "id": "275cc454",
-      "title": "We launched a beta version of the PHP SDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-27T00:00:00.000Z",
-      "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
-        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, in their projects.",
-        "how_to_use": [
-          "Install the PHP SDK using Composer",
-          "Use the SDK to send API requests to the Anthropic API from your PHP application"
         ]
       }
     }
