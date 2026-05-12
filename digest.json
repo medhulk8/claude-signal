@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-12T20:22:19.108Z",
+  "generated_at": "2026-05-12T21:59:10.739Z",
   "item_count": 90,
   "items": [
     {
@@ -461,25 +461,6 @@
           "Filter sessions by status to track active or completed sessions",
           "Filter events by type to focus on specific event categories",
           "Filter events by creation time to analyze recent or historical events"
-        ]
-      }
-    },
-    {
-      "id": "55aafaee",
-      "title": "Added claude project purge [path] to delete all Claude Code state for a project (transcripts, tasks, file history, config entry) — supports…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.126",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-01T03:11:36Z",
-      "summary": "v2.1.126",
-      "fetched_at": "2026-05-01T05:29:54.116Z",
-      "explanation": {
-        "what_it_is": "The claude project purge command deletes all Claude Code state for a specified project, including transcripts, tasks, file history, and config entries.",
-        "why_it_matters": "This command allows users to completely reset a project's state, which can be useful for starting fresh or removing sensitive data.",
-        "how_to_use": [
-          "Run 'claude project purge [path]' to delete all project state, replacing [path] with the project's file path.",
-          "Use this command to remove all project data before sharing or archiving a project."
         ]
       }
     },
@@ -1719,6 +1700,25 @@
           "Execute Bash commands to automate system tasks",
           "Write code in languages other than Python, such as JavaScript or Ruby",
           "Manipulate files directly, such as reading or writing to a file"
+        ]
+      }
+    },
+    {
+      "id": "275cc454",
+      "title": "We launched a beta version of the PHP SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-08-27T00:00:00.000Z",
+      "summary": "We launched a beta version of the PHP SDK.",
+      "fetched_at": "2026-05-12T21:59:12.304Z",
+      "explanation": {
+        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
+        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, in their projects.",
+        "how_to_use": [
+          "Install the PHP SDK using Composer",
+          "Use the SDK to send API requests to the Anthropic API from your PHP application"
         ]
       }
     }
