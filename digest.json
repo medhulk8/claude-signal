@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-05-13T22:01:59.473Z",
+  "generated_at": "2026-05-13T23:44:53.292Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "782d909e",
+      "title": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-13T23:19:16Z",
+      "summary": "v2.1.141",
+      "fetched_at": "2026-05-13T23:44:53.448Z",
+      "explanation": {
+        "what_it_is": "The terminalSequence field is a new addition to hook JSON output, allowing hooks to generate specific terminal sequences, such as desktop notifications, window titles, and bells, even when not connected to a controlling terminal.",
+        "why_it_matters": "This update enables Claude Code users to create more interactive and attention-grabbing hooks, even in headless or automated environments, by providing a way to emit visual and auditory cues.",
+        "how_to_use": [
+          "Use the terminalSequence field to trigger desktop notifications when a hook completes or encounters an error",
+          "Set the terminalSequence field to change the window title of the terminal running the hook",
+          "Emit a bell sound using the terminalSequence field to draw attention to a completed hook"
+        ]
+      }
+    },
+    {
+      "id": "2dea6464",
+      "title": "Added CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-13T23:19:16Z",
+      "summary": "v2.1.141",
+      "fetched_at": "2026-05-13T23:44:53.448Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_PLUGIN_PREFER_HTTPS setting allows cloning GitHub plugin sources over HTTPS instead of SSH.",
+        "why_it_matters": "This setting is useful for environments that don't have a GitHub SSH key, enabling them to clone plugins without additional setup.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_PLUGIN_PREFER_HTTPS to true in your environment variables to clone GitHub plugins over HTTPS."
+        ]
+      }
+    },
+    {
+      "id": "c395050e",
+      "title": "Added ANTHROPIC_WORKSPACE_ID environment variable for workload identity federation — scopes the minted token to a specific workspace when the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-13T23:19:16Z",
+      "summary": "v2.1.141",
+      "fetched_at": "2026-05-13T23:44:53.448Z",
+      "explanation": {
+        "what_it_is": "The ANTHROPIC_WORKSPACE_ID environment variable allows scoping of minted tokens to a specific workspace for workload identity federation.",
+        "why_it_matters": "This update enables more fine-grained control over access and authentication within Claude Code, particularly in multi-workspace environments.",
+        "how_to_use": [
+          "Set the ANTHROPIC_WORKSPACE_ID environment variable to the ID of the workspace you want to scope the minted token to.",
+          "Use this variable in conjunction with workload identity federation to manage access to specific workspaces."
+        ]
+      }
+    },
+    {
+      "id": "fdc271c1",
+      "title": "Added claude agents --cwd <path> to scope the session list to a directory",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-13T23:19:16Z",
+      "summary": "v2.1.141",
+      "fetched_at": "2026-05-13T23:44:53.448Z",
+      "explanation": {
+        "what_it_is": "The claude agents command now accepts a --cwd option, which allows you to specify a directory to scope the session list to.",
+        "why_it_matters": "This change enables Claude Code users to filter the session list by a specific directory, making it easier to manage sessions for projects with multiple directories.",
+        "how_to_use": [
+          "Run `claude agents --cwd /path/to/project` to list sessions only for the specified project directory",
+          "Use `--cwd` to narrow down the session list when working with multiple projects in different directories"
+        ]
+      }
+    },
     {
       "id": "0c46d801",
       "title": "Fast mode (research preview) now supports Claude Opus 4.7",
@@ -1642,83 +1718,6 @@
         "how_to_use": [
           "Use the CSDK to create custom applications that leverage Claude Code's capabilities",
           "Test and provide feedback on the CSDK beta to shape its development"
-        ]
-      }
-    },
-    {
-      "id": "8e01098c",
-      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-05T00:00:00.000Z",
-      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "Rate limit charts are now available in the Console Usage page, providing a visual representation of API rate limit usage and caching rates over time.",
-        "why_it_matters": "This change allows Claude Code users to monitor their API usage more effectively, making it easier to identify trends and potential issues before they become critical.",
-        "how_to_use": [
-          "Check the Console Usage page to view rate limit charts and track API usage over time",
-          "Use the charts to identify peak usage periods and optimize API requests accordingly"
-        ]
-      }
-    },
-    {
-      "id": "7ed38b19",
-      "title": "We've launched support for citable documents in client-side tool results",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-03T00:00:00.000Z",
-      "summary": "We've launched support for citable documents in client-side tool results. Learn more in Handle tool calls.",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
-        "why_it_matters": "This update enables Claude Code users to generate results that can be easily cited or referenced, making it easier to track the origin of information and maintain transparency in their workflows.",
-        "how_to_use": [
-          "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
-          "Update your existing tool calls to take advantage of citable documents and improve the accuracy of your outputs"
-        ]
-      }
-    },
-    {
-      "id": "c1a02cd0",
-      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-02T00:00:00.000Z",
-      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
-      "fetched_at": "2026-04-21T19:56:32.037Z",
-      "explanation": {
-        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
-        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python execution.",
-        "how_to_use": [
-          "Execute Bash commands to automate system tasks",
-          "Write code in languages other than Python, such as JavaScript or Ruby",
-          "Manipulate files directly, such as reading or writing to a file"
-        ]
-      }
-    },
-    {
-      "id": "275cc454",
-      "title": "We launched a beta version of the PHP SDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-08-27T00:00:00.000Z",
-      "summary": "We launched a beta version of the PHP SDK.",
-      "fetched_at": "2026-05-12T21:59:12.304Z",
-      "explanation": {
-        "what_it_is": "The PHP SDK is a software development kit that allows developers to integrate Claude Code functionality into their PHP applications.",
-        "why_it_matters": "This beta release enables PHP developers to access Claude Code capabilities, such as AI-powered text processing, in their projects.",
-        "how_to_use": [
-          "Install the PHP SDK using Composer",
-          "Use the SDK to send API requests to the Anthropic API from your PHP application"
         ]
       }
     }
