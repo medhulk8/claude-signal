@@ -1,8 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-05-14T22:50:14.691Z",
+  "generated_at": "2026-05-14T23:42:53.210Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f3a893cf",
+      "title": "Added new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-14T22:55:10Z",
+      "summary": "v2.1.142",
+      "fetched_at": "2026-05-14T23:42:53.472Z",
+      "explanation": {
+        "what_it_is": "New command-line flags for Claude agents, including options to specify directories, settings, and configuration files.",
+        "why_it_matters": "These flags provide more fine-grained control over Claude agent behavior, allowing for customized setups and configurations.",
+        "how_to_use": [
+          "Use --add-dir to specify a directory to add to the agent's scope",
+          "Use --settings to override default settings with a custom configuration file",
+          "Use --plugin-dir to specify a directory for plugins"
+        ]
+      }
+    },
     {
       "id": "782d909e",
       "title": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal",
@@ -402,63 +422,6 @@
         "how_to_use": [
           "Use Ctrl+V to paste an image from the clipboard and observe the 'Pasting…' footer hint.",
           "Wait for the hint to disappear, indicating that the image has been successfully pasted."
-        ]
-      }
-    },
-    {
-      "id": "bbb782e3",
-      "title": "Added --plugin-url <url> flag to fetch a plugin .zip archive from a URL for the current session",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-06T01:40:18Z",
-      "summary": "v2.1.129",
-      "fetched_at": "2026-05-06T05:15:37.664Z",
-      "explanation": {
-        "what_it_is": "The --plugin-url flag allows you to fetch a plugin .zip archive from a specified URL for the current Claude Code session.",
-        "why_it_matters": "This flag enables users to load plugins from external sources without having to manually download and install them, streamlining the plugin installation process.",
-        "how_to_use": [
-          "Run Claude Code with the --plugin-url flag followed by the URL of the plugin .zip archive, e.g. --plugin-url https://example.com/plugin.zip",
-          "Use this flag to load plugins from GitHub releases or other external repositories"
-        ]
-      }
-    },
-    {
-      "id": "1b876c3a",
-      "title": "Added CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 env var to force-enable synchronized output on terminals that auto-detection misses (e.g. Emacs eat)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-06T01:40:18Z",
-      "summary": "v2.1.129",
-      "fetched_at": "2026-05-06T05:15:37.664Z",
-      "explanation": {
-        "what_it_is": "A new environment variable CLAUDE_CODE_FORCE_SYNC_OUTPUT that allows you to force-enable synchronized output in terminals where auto-detection fails.",
-        "why_it_matters": "This update matters because it ensures that Claude Code's output is properly synchronized in terminals like Emacs, where auto-detection may not work correctly.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 in your environment variables to enable synchronized output in terminals that are not auto-detected.",
-          "Use this variable in Emacs or other terminals where Claude Code's output was previously not synchronized."
-        ]
-      }
-    },
-    {
-      "id": "756a148a",
-      "title": "Added CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE: when set on Homebrew or WinGet installations, Claude Code runs the upgrade command in the background…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-06T01:40:18Z",
-      "summary": "v2.1.129",
-      "fetched_at": "2026-05-06T05:15:37.664Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE setting allows Claude Code to automatically run the upgrade command in the background for installations managed by Homebrew or WinGet.",
-        "why_it_matters": "This setting streamlines the upgrade process for users who install or manage Claude Code via package managers, reducing the need for manual updates.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE on your Homebrew installation to enable automatic background updates.",
-          "Set CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE on your WinGet installation to enable automatic background updates."
         ]
       }
     },
@@ -1723,6 +1686,44 @@
         "how_to_use": [
           "Use the CSDK beta to develop and test applications that leverage Anthropic API features",
           "Provide feedback to the Anthropic developer platform team on the CSDK's functionality and usability"
+        ]
+      }
+    },
+    {
+      "id": "8e01098c",
+      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-05T00:00:00.000Z",
+      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
+      "fetched_at": "2026-05-14T23:42:55.017Z",
+      "explanation": {
+        "what_it_is": "Rate limit charts are now available in the Console Usage page, providing a visual representation of API rate limit usage and caching rates over time.",
+        "why_it_matters": "This change allows Claude Code users to monitor their API usage more effectively, making it easier to identify trends and potential issues with rate limits.",
+        "how_to_use": [
+          "View rate limit usage charts to track daily or weekly API request limits",
+          "Monitor caching rates to optimize API performance"
+        ]
+      }
+    },
+    {
+      "id": "7ed38b19",
+      "title": "We've launched support for citable documents in client-side tool results",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-03T00:00:00.000Z",
+      "summary": "We've launched support for citable documents in client-side tool results. Learn more in Handle tool calls.",
+      "fetched_at": "2026-05-14T23:42:55.017Z",
+      "explanation": {
+        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
+        "why_it_matters": "This update enables Claude Code users to generate results that can be easily cited or referenced, making it easier to track the origin of information.",
+        "how_to_use": [
+          "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
+          "Update your existing tool calls to take advantage of citable documents for more accurate and transparent outputs"
         ]
       }
     }
