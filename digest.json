@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-05-15T21:44:46.156Z",
+  "generated_at": "2026-05-15T22:40:58.060Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "c6537fda",
+      "title": "Added plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-15T22:28:22Z",
+      "summary": "v2.1.143",
+      "fetched_at": "2026-05-15T22:40:58.304Z",
+      "explanation": {
+        "what_it_is": "Claude Code now enforces plugin dependencies, preventing the disabling of a plugin if another enabled plugin depends on it.",
+        "why_it_matters": "This change helps prevent accidental disabling of critical plugins and reduces potential errors caused by unresolved dependencies.",
+        "how_to_use": [
+          "Use the 'claude plugin disable' command to attempt to disable a plugin and receive an error message if another plugin depends on it",
+          "Copy and paste the suggested command from the error message to identify and address the dependency issue"
+        ]
+      }
+    },
+    {
+      "id": "b26ccca4",
+      "title": "Added projected context cost (per-turn and per-invocation token estimates) to the /plugin marketplace browse pane",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-15T22:28:22Z",
+      "summary": "v2.1.143",
+      "fetched_at": "2026-05-15T22:40:58.304Z",
+      "explanation": {
+        "what_it_is": "The projected context cost feature provides estimates of the token cost per turn and per invocation for plugins in the marketplace browse pane.",
+        "why_it_matters": "This feature allows Claude Code users to better anticipate and manage the costs associated with using plugins, enabling more informed decision-making when selecting plugins.",
+        "how_to_use": [
+          "View estimated token costs for plugins in the marketplace browse pane to compare costs before installation",
+          "Use the estimated costs to plan and optimize plugin usage within your Claude Code projects"
+        ]
+      }
+    },
+    {
+      "id": "15eceaf2",
+      "title": "Added worktree.bgIsolation: \"none\" setting to let background sessions edit the working copy directly without EnterWorktree, for repos where worktrees…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-15T22:28:22Z",
+      "summary": "v2.1.143",
+      "fetched_at": "2026-05-15T22:40:58.304Z",
+      "explanation": {
+        "what_it_is": "The worktree.bgIsolation setting allows background sessions to edit the working copy directly without using EnterWorktree, by setting it to 'none'.",
+        "why_it_matters": "This setting matters for repositories that use worktrees, as it enables background sessions to make changes to the working copy without requiring EnterWorktree.",
+        "how_to_use": [
+          "Set worktree.bgIsolation to 'none' in your repository settings to enable direct editing by background sessions.",
+          "Use this setting for repos where worktrees are used to manage multiple working copies."
+        ]
+      }
+    },
     {
       "id": "f3a893cf",
       "title": "Added new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and…",
@@ -1667,63 +1724,6 @@
           "Use the API to fetch daily usage metrics for specific teams or users",
           "Integrate the API with internal analytics tools to track Claude Code adoption over time",
           "Leverage the API to inform decisions about tooling and workflow optimization"
-        ]
-      }
-    },
-    {
-      "id": "4db94bfb",
-      "title": "We launched a beta version of the CSDK",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-08T00:00:00.000Z",
-      "summary": "We launched a beta version of the CSDK.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The CSDK beta version is a software development kit that allows developers to integrate Anthropic API capabilities into their applications.",
-        "why_it_matters": "This beta release provides developers with early access to the CSDK, enabling them to test and provide feedback on its functionality before the full release.",
-        "how_to_use": [
-          "Use the CSDK beta to develop and test applications that leverage Anthropic API features",
-          "Provide feedback to the Anthropic developer platform team on the CSDK's functionality and usability"
-        ]
-      }
-    },
-    {
-      "id": "8e01098c",
-      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-05T00:00:00.000Z",
-      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
-      "fetched_at": "2026-05-14T23:42:55.017Z",
-      "explanation": {
-        "what_it_is": "Rate limit charts are now available in the Console Usage page, providing a visual representation of API rate limit usage and caching rates over time.",
-        "why_it_matters": "This change allows Claude Code users to monitor their API usage more effectively, making it easier to identify trends and potential issues with rate limits.",
-        "how_to_use": [
-          "View rate limit usage charts to track daily or weekly API request limits",
-          "Monitor caching rates to optimize API performance"
-        ]
-      }
-    },
-    {
-      "id": "7ed38b19",
-      "title": "We've launched support for citable documents in client-side tool results",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-03T00:00:00.000Z",
-      "summary": "We've launched support for citable documents in client-side tool results. Learn more in Handle tool calls.",
-      "fetched_at": "2026-05-14T23:42:55.017Z",
-      "explanation": {
-        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
-        "why_it_matters": "This update enables Claude Code users to generate results that can be easily cited or referenced, making it easier to track the origin of information.",
-        "how_to_use": [
-          "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
-          "Update your existing tool calls to take advantage of citable documents for more accurate and transparent outputs"
         ]
       }
     }
