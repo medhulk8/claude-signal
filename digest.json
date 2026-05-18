@@ -1,8 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-05-18T14:21:17.494Z",
+  "generated_at": "2026-05-18T17:21:57.811Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f910a11d",
+      "title": "The web search tool now returns richer SEC filing data, making it easier to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-18-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-18T00:00:00.000Z",
+      "summary": "The web search tool now returns richer SEC filing data, making it easier to ground financial research agents, earnings analysis, and due-diligence workflows in primary sources with citations.",
+      "fetched_at": "2026-05-18T17:22:00.541Z",
+      "explanation": {
+        "what_it_is": "The web search tool now returns more detailed SEC filing data, including primary sources with citations.",
+        "why_it_matters": "This update enables Claude Code users to build more accurate financial research agents, earnings analysis, and due-diligence workflows.",
+        "how_to_use": [
+          "Use the web search tool to retrieve detailed SEC filing data for a specific company",
+          "Integrate the returned data into a financial research agent to analyze earnings trends",
+          "Cite primary sources from the returned data to support due-diligence workflows"
+        ]
+      }
+    },
     {
       "id": "c6537fda",
       "title": "Added plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable…",
@@ -153,6 +173,25 @@
         "how_to_use": [
           "Run `claude agents --cwd /path/to/project` to list sessions only for the specified project directory",
           "Use `--cwd` to narrow down the session list when working with multiple projects in different directories"
+        ]
+      }
+    },
+    {
+      "id": "51fb9812",
+      "title": "We've launched cache diagnostics in public beta",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-13-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-13T00:00:00.000Z",
+      "summary": "We've launched cache diagnostics in public beta. Pass diagnostics.previous_message_id on a Messages request and the API reports a cache_miss_reason explaining where the prompt cache prefix diverged…",
+      "fetched_at": "2026-05-18T17:22:00.541Z",
+      "explanation": {
+        "what_it_is": "Cache diagnostics is a feature that allows you to pass a previous message ID on a Messages request to receive a cache_miss_reason, explaining where the prompt cache prefix diverged.",
+        "why_it_matters": "This feature helps Claude Code users identify and troubleshoot cache-related issues, allowing for more efficient debugging and optimization of their applications.",
+        "how_to_use": [
+          "Pass diagnostics.previous_message_id on a Messages request to receive cache_miss_reason",
+          "Use the cache_miss_reason to identify where the prompt cache prefix diverged and adjust your application accordingly"
         ]
       }
     },
@@ -1685,45 +1724,6 @@
         "how_to_use": [
           "Update bookmarks and links to reflect the new Claude branding and URLs",
           "Verify that existing API integrations and code continue to work as expected"
-        ]
-      }
-    },
-    {
-      "id": "047cf5e1",
-      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in Web fetch tool.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
-        "why_it_matters": "This update allows Claude Code users to access and process web-based content directly, expanding the scope of potential inputs for their applications.",
-        "how_to_use": [
-          "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
-          "Fetch PDF documents to extract and utilize their content in Claude-based workflows"
-        ]
-      }
-    },
-    {
-      "id": "9a654a18",
-      "title": "We've launched the Claude Code Analytics API, enabling organizations to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The Claude Code Analytics API provides programmatic access to daily aggregated usage metrics, including productivity metrics and tool usage statistics.",
-        "why_it_matters": "This API enables organizations to track and analyze Claude Code usage at scale, allowing for more informed decisions about tool adoption and optimization.",
-        "how_to_use": [
-          "Use the API to fetch daily usage metrics for specific teams or users",
-          "Integrate the API with internal analytics tools to track Claude Code adoption over time",
-          "Leverage the API to inform decisions about tooling and workflow optimization"
         ]
       }
     }
