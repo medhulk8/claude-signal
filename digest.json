@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-05-18T23:52:35.380Z",
+  "generated_at": "2026-05-19T01:54:31.725Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f7381621",
+      "title": "Added /resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-19T00:48:51Z",
+      "summary": "v2.1.144",
+      "fetched_at": "2026-05-19T01:54:31.965Z",
+      "explanation": {
+        "what_it_is": "The /resume command now supports background sessions, allowing users to resume sessions started via 'claude --bg' or the agent view.",
+        "why_it_matters": "This update enables users to easily resume and manage background sessions alongside interactive ones, with background sessions marked as 'bg' for identification.",
+        "how_to_use": [
+          "Use 'claude --bg' to start a background session and then resume it with /resume",
+          "Start a session from the agent view and resume it later with /resume, where it will be marked as 'bg'"
+        ]
+      }
+    },
+    {
+      "id": "b90c92ab",
+      "title": "Added elapsed duration to background subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\")",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-19T00:48:51Z",
+      "summary": "v2.1.144",
+      "fetched_at": "2026-05-19T01:54:31.965Z",
+      "explanation": {
+        "what_it_is": "The elapsed duration is now included in background subagent completion notifications, displaying the time taken to complete a task.",
+        "why_it_matters": "This update allows Claude Code users to better track the time spent on tasks and monitor the efficiency of their subagents.",
+        "how_to_use": [
+          "Check the notification message for the elapsed duration after a subagent completes a task, e.g. 'Agent completed · 3h 2m 5s'",
+          "Use this information to optimize subagent workflows and identify potential bottlenecks"
+        ]
+      }
+    },
     {
       "id": "f910a11d",
       "title": "The web search tool now returns richer SEC filing data, making it easier to…",
@@ -461,63 +499,6 @@
         "how_to_use": [
           "Set parentSettingsBehavior to 'first-wins' to prioritize parent settings over child settings",
           "Set parentSettingsBehavior to 'merge' to combine parent and child settings"
-        ]
-      }
-    },
-    {
-      "id": "742238a2",
-      "title": "Added CLAUDE_CODE_SESSION_ID environment variable to the Bash tool subprocess environment, matching the session_id passed to hooks",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-06T22:08:13Z",
-      "summary": "v2.1.132",
-      "fetched_at": "2026-05-06T22:36:46.292Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_SESSION_ID environment variable is now available in the Bash tool subprocess environment, containing the same session ID passed to hooks.",
-        "why_it_matters": "This allows scripts running in the Bash tool subprocess to access and utilize the current session ID, enabling more informed and session-aware automation.",
-        "how_to_use": [
-          "Access the session ID in a Bash script using $CLAUDE_CODE_SESSION_ID",
-          "Use the session ID to customize script behavior or logging"
-        ]
-      }
-    },
-    {
-      "id": "1a3306e2",
-      "title": "Added CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1 env var to opt out of the fullscreen alternate-screen renderer and keep the conversation in the…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-06T22:08:13Z",
-      "summary": "v2.1.132",
-      "fetched_at": "2026-05-06T22:36:46.292Z",
-      "explanation": {
-        "what_it_is": "A new environment variable CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN that allows opting out of the fullscreen alternate-screen renderer.",
-        "why_it_matters": "This change allows Claude Code users to keep conversations in the main terminal window instead of switching to a fullscreen alternate screen.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1 in your environment variables to disable the fullscreen renderer.",
-          "Run your Claude Code application with the environment variable set to keep conversations in the main terminal window."
-        ]
-      }
-    },
-    {
-      "id": "3aa6f75b",
-      "title": "Added a \"Pasting…\" footer hint while a Ctrl+V image paste is being read from the clipboard",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-06T22:08:13Z",
-      "summary": "v2.1.132",
-      "fetched_at": "2026-05-06T22:36:46.292Z",
-      "explanation": {
-        "what_it_is": "A 'Pasting…' footer hint is now displayed when using Ctrl+V to paste an image from the clipboard, indicating that the paste operation is in progress.",
-        "why_it_matters": "This update provides visual feedback to the user, reducing uncertainty about whether the paste operation has been registered by the application.",
-        "how_to_use": [
-          "Use Ctrl+V to paste an image from the clipboard and observe the 'Pasting…' footer hint.",
-          "Wait for the hint to disappear, indicating that the image has been successfully pasted."
         ]
       }
     },
@@ -1724,6 +1705,25 @@
         "how_to_use": [
           "Update bookmarks and links to reflect the new Claude branding and URLs",
           "Verify that existing API integrations and code continue to work as expected"
+        ]
+      }
+    },
+    {
+      "id": "047cf5e1",
+      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-10T00:00:00.000Z",
+      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in Web fetch tool.",
+      "fetched_at": "2026-05-19T01:54:33.212Z",
+      "explanation": {
+        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
+        "why_it_matters": "This update allows Claude Code users to access and process web-based data and documents directly, streamlining their workflows and expanding the scope of possible applications.",
+        "how_to_use": [
+          "Use the web fetch tool to retrieve data from web pages for text analysis or processing",
+          "Fetch PDF documents to extract and process their content"
         ]
       }
     }
