@@ -1,8 +1,67 @@
 {
   "version": 1,
-  "generated_at": "2026-05-19T21:08:32.477Z",
+  "generated_at": "2026-05-19T22:54:09.191Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "de94368e",
+      "title": "Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-19T21:31:07Z",
+      "summary": "v2.1.145",
+      "fetched_at": "2026-05-19T22:54:09.434Z",
+      "explanation": {
+        "what_it_is": "The claude agents --json command lists live Claude sessions in JSON format, enabling scripting and integration with tools like tmux-resurrect, status bars, and session pickers.",
+        "why_it_matters": "This update allows Claude Code users to automate tasks and create custom workflows by accessing live session data in a machine-readable format.",
+        "how_to_use": [
+          "Use claude agents --json to generate a JSON list of live sessions for use in scripts or external tools",
+          "Integrate the JSON output with tmux-resurrect to automate session restoration",
+          "Feed the JSON output to a status bar or session picker for customized visualization and management"
+        ]
+      }
+    },
+    {
+      "id": "210b4ca9",
+      "title": "Added agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-19T21:31:07Z",
+      "summary": "v2.1.145",
+      "fetched_at": "2026-05-19T22:54:09.434Z",
+      "explanation": {
+        "what_it_is": "The claude_code.tool OTEL spans now include agent_id and parent_agent_id attributes, and trace parenting has been fixed to correctly nest background subagent spans.",
+        "why_it_matters": "This change allows for more accurate tracing and monitoring of Claude Code tool usage, particularly in scenarios involving subagents.",
+        "how_to_use": [
+          "Use the agent_id attribute to identify the specific agent responsible for a span",
+          "Use the parent_agent_id attribute to track the hierarchy of subagents",
+          "Verify that background subagent spans are now correctly nested under their parent agents in your tracing output"
+        ]
+      }
+    },
+    {
+      "id": "744eba49",
+      "title": "Fixed /review using a deprecated projectCards GraphQL query that errored on repos with Classic Projects",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-19T21:31:07Z",
+      "summary": "v2.1.145",
+      "fetched_at": "2026-05-19T22:54:09.434Z",
+      "explanation": {
+        "what_it_is": "The /review feature in Claude Code now uses a updated GraphQL query to fetch project cards, replacing a deprecated query that caused errors on repositories with Classic Projects.",
+        "why_it_matters": "This change resolves errors that occurred when trying to review projects on repositories using Classic Projects, ensuring a smoother workflow for Claude Code users.",
+        "how_to_use": [
+          "Use the /review command on a repository with Classic Projects to verify that project cards are displayed correctly.",
+          "Test the /review feature on multiple repositories with different project configurations to ensure compatibility."
+        ]
+      }
+    },
     {
       "id": "f7381621",
       "title": "Added /resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg",
@@ -518,63 +577,6 @@
         "how_to_use": [
           "Set settings.autoMode.hard_deny to true to enable unconditional blocking for specific classifier rules",
           "Use this setting to enforce strict rules for certain topics or keywords, such as profanity or sensitive information"
-        ]
-      }
-    },
-    {
-      "id": "530735a8",
-      "title": "Added worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/<default>…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-07T23:49:04Z",
-      "summary": "v2.1.133",
-      "fetched_at": "2026-05-08T01:30:27.984Z",
-      "explanation": {
-        "what_it_is": "The worktree.baseRef setting allows you to choose whether new worktrees branch from the origin's default branch or the current head, with options 'fresh' or 'head'.",
-        "why_it_matters": "This setting gives Claude Code users more control over their workflow, allowing them to decide whether new worktrees should start from a stable default branch or the latest changes in the repository.",
-        "how_to_use": [
-          "Set worktree.baseRef to 'fresh' to create worktrees that branch from the origin's default branch",
-          "Set worktree.baseRef to 'head' to create worktrees that branch from the current head"
-        ]
-      }
-    },
-    {
-      "id": "e6d94232",
-      "title": "Added sandbox.bwrapPath and sandbox.socatPath managed settings (Linux/WSL) to specify custom bubblewrap and socat binary locations",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-07T23:49:04Z",
-      "summary": "v2.1.133",
-      "fetched_at": "2026-05-08T01:30:27.984Z",
-      "explanation": {
-        "what_it_is": "Two new managed settings, sandbox.bwrapPath and sandbox.socatPath, allow you to specify custom locations for bubblewrap and socat binaries on Linux and WSL systems.",
-        "why_it_matters": "This update gives you more control over the dependencies used by Claude Code's sandboxing feature, which can be useful for custom or restricted environments.",
-        "how_to_use": [
-          "Set sandbox.bwrapPath to a custom bubblewrap binary location, e.g. /usr/local/bin/bwrap",
-          "Set sandbox.socatPath to a custom socat binary location, e.g. /usr/local/bin/socat"
-        ]
-      }
-    },
-    {
-      "id": "2edb9afc",
-      "title": "Added parentSettingsBehavior admin-tier key ('first-wins' | 'merge') to let admins opt SDK managedSettings (parent tier) into the policy merge",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-07T23:49:04Z",
-      "summary": "v2.1.133",
-      "fetched_at": "2026-05-08T01:30:27.984Z",
-      "explanation": {
-        "what_it_is": "The parentSettingsBehavior admin-tier key allows admins to control how SDK managed settings from the parent tier are merged into the policy, with options 'first-wins' or 'merge'.",
-        "why_it_matters": "This update gives admins more flexibility in managing settings inheritance, enabling them to choose whether parent settings override or merge with child settings.",
-        "how_to_use": [
-          "Set parentSettingsBehavior to 'first-wins' to prioritize parent settings over child settings",
-          "Set parentSettingsBehavior to 'merge' to combine parent and child settings"
         ]
       }
     },
