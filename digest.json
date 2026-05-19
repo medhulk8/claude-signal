@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-19T05:54:51.157Z",
+  "generated_at": "2026-05-19T08:53:05.050Z",
   "item_count": 90,
   "items": [
     {
@@ -38,6 +38,82 @@
         "how_to_use": [
           "Check the notification message for the elapsed duration after a subagent completes a task, e.g. 'Agent completed · 3h 2m 5s'",
           "Use this information to optimize subagent workflows and identify potential bottlenecks"
+        ]
+      }
+    },
+    {
+      "id": "f1e3a522",
+      "title": "MCP tunnels is now available as a Research Preview, so you can connect to MCP…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-19T00:00:00.000Z",
+      "summary": "MCP tunnels is now available as a Research Preview, so you can connect to MCP servers in your private network.",
+      "fetched_at": "2026-05-19T08:53:06.374Z",
+      "explanation": {
+        "what_it_is": "MCP tunnels is a feature that allows connecting to MCP servers within a private network.",
+        "why_it_matters": "This enables Claude Code users to access MCP servers that are not publicly exposed, expanding the range of potential use cases and integrations.",
+        "how_to_use": [
+          "Connect to MCP servers in your private network using the MCP tunnels Research Preview",
+          "Integrate MCP tunnels with your existing private network infrastructure to leverage Claude Code capabilities"
+        ]
+      }
+    },
+    {
+      "id": "f70e3c48",
+      "title": "Self-hosted sandboxes are now available for Claude Managed Agents, as an…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-19T00:00:00.000Z",
+      "summary": "Self-hosted sandboxes are now available for Claude Managed Agents, as an alternative to running tool execution in Anthropic's infrastructure. See Self-hosted sandboxes.",
+      "fetched_at": "2026-05-19T08:53:06.374Z",
+      "explanation": {
+        "what_it_is": "Self-hosted sandboxes allow Claude Managed Agents to run tool execution on the user's own infrastructure, rather than relying on Anthropic's infrastructure.",
+        "why_it_matters": "This change gives users more control over their environment and potentially improves security and compliance by keeping sensitive data on-premises.",
+        "how_to_use": [
+          "Set up a self-hosted sandbox as an alternative to Anthropic's infrastructure for tool execution",
+          "Configure Claude Managed Agents to use the self-hosted sandbox for running tools"
+        ]
+      }
+    },
+    {
+      "id": "b93868cf",
+      "title": "With Claude Managed Agents, you can now update the agent's MCP server and tool…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-19T00:00:00.000Z",
+      "summary": "With Claude Managed Agents, you can now update the agent's MCP server and tool configurations associated with an active session.",
+      "fetched_at": "2026-05-19T08:53:06.374Z",
+      "explanation": {
+        "what_it_is": "The ability to update an agent's MCP server and tool configurations while an active session is in progress, using Claude Managed Agents.",
+        "why_it_matters": "This update allows for more flexibility and control over agent configurations without having to interrupt or restart active sessions, streamlining workflow and reducing potential downtime.",
+        "how_to_use": [
+          "Use the Claude API to update MCP server configurations for an active agent session",
+          "Modify tool configurations associated with an active session using the developer platform"
+        ]
+      }
+    },
+    {
+      "id": "ae2528f9",
+      "title": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-19T00:00:00.000Z",
+      "summary": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools exceeding 100K tokens are now automatically spilled to a file in the sandbox. The model receives a truncated preview with…",
+      "fetched_at": "2026-05-19T08:53:06.374Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents now automatically spill large outputs from agent_toolset and MCP tools to a file in the sandbox when they exceed 100K tokens, providing a truncated preview to the model.",
+        "why_it_matters": "This change allows Claude Code users to handle large outputs more efficiently, preventing potential issues with output size limits and enabling smoother workflow execution.",
+        "how_to_use": [
+          "Use agent_toolset and MCP tools with large output expectations, relying on automatic spilling to manage output size",
+          "Access spilled output files in the sandbox for further processing or analysis"
         ]
       }
     },
@@ -523,21 +599,21 @@
       }
     },
     {
-      "id": "bd97d559",
-      "title": "Vault credential background refresh is now supported for mcp_oauth credentials",
+      "id": "b9170b2c",
+      "title": "Claude Managed Agents vault credential background refresh is now supported for…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Vault credential background refresh is now supported for mcp_oauth credentials. See Authenticate with vaults.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
+      "summary": "Claude Managed Agents vault credential background refresh is now supported for mcp_oauth credentials. See Authenticate with vaults.",
+      "fetched_at": "2026-05-19T08:53:06.374Z",
       "explanation": {
-        "what_it_is": "Vault credential background refresh allows Claude Code to automatically update credentials for mcp_oauth in the background, ensuring that authentication with vaults remains valid.",
-        "why_it_matters": "This update eliminates the need for manual credential updates, reducing the likelihood of authentication errors and interruptions to workflows that rely on mcp_oauth credentials.",
+        "what_it_is": "Claude Managed Agents now supports background refresh of vault credentials for mcp_oauth credentials, allowing for automatic updating of credentials without interrupting workflows.",
+        "why_it_matters": "This update streamlines authentication with vaults, reducing the need for manual credential updates and minimizing potential disruptions to automated tasks.",
         "how_to_use": [
-          "Use the Authenticate with vaults guide to set up background refresh for mcp_oauth credentials",
-          "Verify that your application can handle automatic credential updates without requiring manual intervention"
+          "Use the Authenticate with vaults documentation to set up mcp_oauth credentials with background refresh",
+          "Configure Claude Managed Agents to utilize the updated credential refresh mechanism for automated tasks"
         ]
       }
     },
@@ -561,20 +637,20 @@
       }
     },
     {
-      "id": "7da12cde",
-      "title": "Additional filtering and sorting options are now supported",
+      "id": "90acd5c7",
+      "title": "Additional filtering and sorting options are now supported for Claude Managed…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Additional filtering and sorting options are now supported. Sessions can be filtered by status, and events can be filtered by type. Events can now be filtered by creation time.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
+      "summary": "Additional filtering and sorting options are now supported for Claude Managed Agents. Sessions can be filtered by status, and events can be filtered by type. Events can now be filtered by creation…",
+      "fetched_at": "2026-05-19T08:53:06.374Z",
       "explanation": {
-        "what_it_is": "The Anthropic API now supports additional filtering options for sessions and events, including filtering sessions by status and events by type or creation time, as well as new sorting options.",
-        "why_it_matters": "This update allows Claude Code users to more precisely manage and analyze their sessions and events, enabling more efficient workflow and data inspection.",
+        "what_it_is": "Additional filtering and sorting options for Claude Managed Agents, including filtering sessions by status and events by type or creation time.",
+        "why_it_matters": "This update allows for more precise management and analysis of agent sessions and events, enabling more efficient workflow and debugging.",
         "how_to_use": [
-          "Filter sessions by status to track active or completed sessions",
+          "Filter sessions by status to quickly identify active or inactive sessions",
           "Filter events by type to focus on specific event categories",
           "Filter events by creation time to analyze recent activity"
         ]
@@ -1647,83 +1723,6 @@
         "how_to_use": [
           "Use the memory tool to create conversational flows that span multiple interactions",
           "Test the memory tool's ability to recall specific details from previous conversations"
-        ]
-      }
-    },
-    {
-      "id": "8e75a728",
-      "title": "We've launched context editing in beta, providing strategies to automatically…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-29T00:00:00.000Z",
-      "summary": "We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "Context editing is a beta feature that automatically manages conversation context by clearing older tool results and calls when approaching token limits.",
-        "why_it_matters": "This feature helps prevent context overflow and ensures that conversations remain relevant and efficient, particularly when working with large amounts of data or complex workflows.",
-        "how_to_use": [
-          "Use context editing to clear older tool results and calls when approaching token limits, allowing for more efficient conversation management.",
-          "Implement context editing strategies to automatically manage conversation context and prevent context overflow."
-        ]
-      }
-    },
-    {
-      "id": "a6ef8a20",
-      "title": "We've launched tool helpers in beta for the Python and TypeScript SDKs,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-17-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-17T00:00:00.000Z",
-      "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "Tool helpers are a new beta feature in the Python and TypeScript SDKs that provide type-safe input validation and a tool runner for automated tool handling.",
-        "why_it_matters": "This simplifies the process of creating and executing tools, making it easier for developers to automate tasks and validate input data.",
-        "how_to_use": [
-          "Use the tool helpers to create tools with validated input parameters",
-          "Run tools automatically using the tool runner",
-          "Integrate tool helpers into your existing workflow to streamline tool creation and execution"
-        ]
-      }
-    },
-    {
-      "id": "1f79d078",
-      "title": "We've unified our developer offerings under the Claude brand",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-16-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-16T00:00:00.000Z",
-      "summary": "We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The developer offerings are now unified under the Claude brand, resulting in updated naming and URLs across the platform and documentation.",
-        "why_it_matters": "This change simplifies the branding and navigation for developers, but does not affect the existing developer interfaces.",
-        "how_to_use": [
-          "Update bookmarks and links to reflect the new Claude branding and URLs",
-          "Verify that existing API integrations and code continue to work as expected"
-        ]
-      }
-    },
-    {
-      "id": "047cf5e1",
-      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-09-10T00:00:00.000Z",
-      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in Web fetch tool.",
-      "fetched_at": "2026-05-19T01:54:33.212Z",
-      "explanation": {
-        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
-        "why_it_matters": "This update allows Claude Code users to access and process web-based data and documents directly, streamlining their workflows and expanding the scope of possible applications.",
-        "how_to_use": [
-          "Use the web fetch tool to retrieve data from web pages for text analysis or processing",
-          "Fetch PDF documents to extract and process their content"
         ]
       }
     }
