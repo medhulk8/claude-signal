@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-20T23:01:23.734Z",
+  "generated_at": "2026-05-21T01:53:37.937Z",
   "item_count": 90,
   "items": [
     {
@@ -539,44 +539,6 @@
           "Access the full Messages API through AWS",
           "Use AWS IAM authentication to manage access to the Claude API",
           "Utilize AWS billing for Claude API usage"
-        ]
-      }
-    },
-    {
-      "id": "7ac21c33",
-      "title": "Added CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-08T18:39:08Z",
-      "summary": "v2.1.136",
-      "fetched_at": "2026-05-08T20:01:09.861Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL setting allows enterprises to re-enable the session quality survey for users, specifically when responses are captured through OpenTelemetry.",
-        "why_it_matters": "This update matters because it gives enterprises the option to collect user feedback on session quality again, which can inform improvements to their Claude Code implementation.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to true in your environment variables to re-enable the session quality survey.",
-          "Use OpenTelemetry to capture user responses to the survey and integrate them into your enterprise's feedback loop."
-        ]
-      }
-    },
-    {
-      "id": "71041253",
-      "title": "Added settings.autoMode.hard_deny for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-08T18:39:08Z",
-      "summary": "v2.1.136",
-      "fetched_at": "2026-05-08T20:01:09.861Z",
-      "explanation": {
-        "what_it_is": "The settings.autoMode.hard_deny setting allows auto mode classifier rules to block unconditionally, ignoring user intent or allow exceptions. This setting provides a way to enforce strict rules in auto mode.",
-        "why_it_matters": "This update gives Claude Code users more control over auto mode classifier rules, enabling them to enforce strict rules without exceptions. This can be particularly useful for sensitive or high-stakes applications where flexibility is not desired.",
-        "how_to_use": [
-          "Set settings.autoMode.hard_deny to true to enable unconditional blocking for specific classifier rules",
-          "Use this setting to enforce strict rules for certain topics or keywords, such as profanity or sensitive information"
         ]
       }
     },
@@ -1725,6 +1687,45 @@
         "how_to_use": [
           "Use the memory tool to create conversational flows that span multiple interactions",
           "Test the memory tool's ability to recall specific details from previous conversations"
+        ]
+      }
+    },
+    {
+      "id": "8e75a728",
+      "title": "We've launched context editing in beta, providing strategies to automatically…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-29-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-29T00:00:00.000Z",
+      "summary": "We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token…",
+      "fetched_at": "2026-05-21T01:53:39.088Z",
+      "explanation": {
+        "what_it_is": "Context editing is a beta feature that automatically manages conversation context by clearing older tool results and calls when approaching token limits.",
+        "why_it_matters": "This feature helps prevent context overflow and ensures that conversations remain relevant and efficient, particularly when working with large amounts of data or complex tasks.",
+        "how_to_use": [
+          "Use context editing to clear older tool results and calls when approaching token limits",
+          "Implement strategies to automatically manage conversation context and improve overall conversation flow"
+        ]
+      }
+    },
+    {
+      "id": "a6ef8a20",
+      "title": "We've launched tool helpers in beta for the Python and TypeScript SDKs,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-17-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-17T00:00:00.000Z",
+      "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
+      "fetched_at": "2026-05-21T01:53:39.088Z",
+      "explanation": {
+        "what_it_is": "Tool helpers are a new beta feature in the Python and TypeScript SDKs that provide type-safe input validation and a tool runner for automated tool handling.",
+        "why_it_matters": "This simplifies the process of creating and executing tools, making it easier for developers to automate tasks and validate input data.",
+        "how_to_use": [
+          "Use the tool helpers to create tools with validated input parameters",
+          "Run tools automatically using the tool runner",
+          "Integrate tool helpers into your existing workflow to streamline tool creation and execution"
         ]
       }
     }
