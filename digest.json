@@ -1,27 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-05-21T23:45:04.923Z",
+  "generated_at": "2026-05-22T01:54:38.339Z",
   "item_count": 90,
   "items": [
-    {
-      "id": "4567a979",
-      "title": "Added the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-21T20:39:22Z",
-      "summary": "v2.1.147",
-      "fetched_at": "2026-05-21T22:07:38.915Z",
-      "explanation": {
-        "what_it_is": "The Workflow tool is a feature for deterministic multi-agent orchestration, allowing for coordinated and predictable interactions between multiple agents. It is disabled by default.",
-        "why_it_matters": "This feature matters because it enables Claude Code users to manage complex workflows with multiple agents in a deterministic way, making it easier to reproduce and debug their workflows.",
-        "how_to_use": [
-          "Set the environment variable CLAUDE_CODE_WORKFLOWS=1 to enable the Workflow tool",
-          "Use the Workflow tool to coordinate interactions between multiple agents in a deterministic way"
-        ]
-      }
-    },
     {
       "id": "de94368e",
       "title": "Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)",
@@ -1725,6 +1706,26 @@
         "how_to_use": [
           "Use context editing to clear older tool results and calls when approaching token limits",
           "Implement strategies to automatically manage conversation context and improve overall conversation flow"
+        ]
+      }
+    },
+    {
+      "id": "a6ef8a20",
+      "title": "We've launched tool helpers in beta for the Python and TypeScript SDKs,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-17-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-17T00:00:00.000Z",
+      "summary": "We've launched tool helpers in beta for the Python and TypeScript SDKs, simplifying tool creation and execution with type-safe input validation and a tool runner for automated tool handling in…",
+      "fetched_at": "2026-05-22T01:54:40.370Z",
+      "explanation": {
+        "what_it_is": "Tool helpers are a new beta feature in the Python and TypeScript SDKs that provide type-safe input validation and a tool runner for automated tool handling.",
+        "why_it_matters": "This simplifies the process of creating and executing tools, making it easier for developers to automate tasks and validate input data.",
+        "how_to_use": [
+          "Use the tool helpers to create tools with validated input parameters",
+          "Run tools automatically using the tool runner",
+          "Integrate tool helpers into your existing workflow to streamline tool creation and execution"
         ]
       }
     }
