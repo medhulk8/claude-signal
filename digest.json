@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-22T21:53:24.161Z",
+  "generated_at": "2026-05-22T22:45:21.446Z",
   "item_count": 90,
   "items": [
     {
@@ -384,141 +384,6 @@
         "how_to_use": [
           "Set speed: 'fast' with model: 'claude-opus-4-7' to enable fast mode",
           "Include the fast-mode-2026-02-01 beta header in your API requests"
-        ]
-      }
-    },
-    {
-      "id": "a497ff1e",
-      "title": "Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run claude agents to get started.…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "The agent view is a single list that displays all Claude Code sessions, including running, blocked, and completed sessions. This view is currently in Research Preview.",
-        "why_it_matters": "This feature allows Claude Code users to easily track and manage all their sessions from one place, simplifying workflow and reducing the need to switch between multiple views.",
-        "how_to_use": [
-          "Run the command 'claude agents' to access the agent view",
-          "Use the agent view to monitor running sessions and identify blocked sessions that require user input"
-        ]
-      }
-    },
-    {
-      "id": "6452239e",
-      "title": "Added /goal command: set a completion condition and Claude keeps working across turns until it's met. Works in interactive, -p, and Remote Control.…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "The /goal command allows you to set a completion condition for Claude to work towards, enabling it to continue working across multiple turns until the condition is met.",
-        "why_it_matters": "This update enables Claude Code users to create more complex and open-ended tasks that require multiple interactions to complete, streamlining their workflow and reducing the need for manual intervention.",
-        "how_to_use": [
-          "Use /goal to set a specific completion condition, such as 'generate 5 code snippets' or 'reach a certain accuracy threshold'",
-          "Combine /goal with interactive or -p modes to work on tasks that require multiple iterations",
-          "Utilize /goal in Remote Control to automate tasks that need to run across multiple turns without manual intervention"
-        ]
-      }
-    },
-    {
-      "id": "6d3a5b55",
-      "title": "Added /scroll-speed command to tune mouse wheel scroll speed with a live preview",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "The /scroll-speed command allows users to adjust the speed of their mouse wheel scroll in Claude Code, with a live preview to see the changes in real-time.",
-        "why_it_matters": "This update gives users more control over their workflow, enabling them to customize the scroll speed to their preference, which can be particularly useful for tasks that require precise scrolling.",
-        "how_to_use": [
-          "Use the /scroll-speed command to adjust the scroll speed, and observe the live preview to find the optimal setting for your needs.",
-          "Experiment with different scroll speeds to find the one that works best for your specific tasks, such as scrolling through long code files or navigating complex interfaces."
-        ]
-      }
-    },
-    {
-      "id": "6aac70df",
-      "title": "Added claude plugin details <name> to show a plugin's component inventory and projected per-session token cost",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "The `claude plugin details <name>` command displays a plugin's component inventory and estimated per-session token cost.",
-        "why_it_matters": "This update allows Claude Code users to better understand the composition and potential costs of their plugins, enabling more informed decisions about plugin usage.",
-        "how_to_use": [
-          "Run `claude plugin details my_plugin` to view the component inventory and projected token cost for a specific plugin.",
-          "Use this command to compare the costs of different plugins and optimize token usage."
-        ]
-      }
-    },
-    {
-      "id": "0c12dcaa",
-      "title": "Added transcript view navigation: ? for keyboard shortcuts, {/} to jump between user prompts, v to toggle shortcut panel",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "Transcript view navigation allows users to move through transcripts using keyboard shortcuts, including ? for shortcut lists, {/} to jump between user prompts, and v to toggle the shortcut panel.",
-        "why_it_matters": "This update streamlines the process of reviewing and navigating transcripts, making it easier for users to work with large conversations.",
-        "how_to_use": [
-          "Press ? to view available keyboard shortcuts",
-          "Use {/} to quickly jump between user prompts in a transcript",
-          "Toggle the shortcut panel with v to customize your workflow"
-        ]
-      }
-    },
-    {
-      "id": "6c452c2f",
-      "title": "Added hook args: string[] field (exec form) that spawns the command directly without a shell, so path placeholders never need quoting",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "A new hook args field that allows spawning commands directly without a shell, using an array of strings as arguments.",
-        "why_it_matters": "This change eliminates the need to quote path placeholders, simplifying command execution and reducing potential errors.",
-        "how_to_use": [
-          "Pass command arguments as an array of strings to avoid shell interpretation",
-          "Use this feature to execute commands with file paths containing special characters without quoting"
-        ]
-      }
-    },
-    {
-      "id": "a9b2e68b",
-      "title": "Added hook continueOnBlock config option for PostToolUse — set to true to feed the hook's rejection reason back to Claude and continue the turn",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-11T18:43:42Z",
-      "summary": "v2.1.139",
-      "fetched_at": "2026-05-11T19:22:19.294Z",
-      "explanation": {
-        "what_it_is": "The continueOnBlock config option for PostToolUse hooks allows you to feed the hook's rejection reason back to Claude and continue the turn when set to true.",
-        "why_it_matters": "This update enables Claude Code users to handle hook rejections more gracefully, allowing the conversation to continue even when a hook is blocked.",
-        "how_to_use": [
-          "Set continueOnBlock to true in your PostToolUse hook config to enable this behavior",
-          "Use this option to provide a better user experience by handling hook rejections and continuing the conversation"
         ]
       }
     },
@@ -1726,6 +1591,140 @@
           "Use the tool helpers to create tools with validated input parameters",
           "Run tools automatically using the tool runner",
           "Integrate tool helpers into your existing workflow to streamline tool creation and execution"
+        ]
+      }
+    },
+    {
+      "id": "1f79d078",
+      "title": "We've unified our developer offerings under the Claude brand",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-16-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-16T00:00:00.000Z",
+      "summary": "We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are…",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "The developer offerings are now unified under the Claude brand, resulting in updated naming and URLs across the platform and documentation.",
+        "why_it_matters": "This change simplifies the developer experience by providing a consistent brand identity, but does not affect the existing developer interfaces.",
+        "how_to_use": [
+          "Update bookmarks and links to reflect the new Claude branding and URLs",
+          "Verify that existing API integrations and code continue to work as expected"
+        ]
+      }
+    },
+    {
+      "id": "047cf5e1",
+      "title": "We've launched the web fetch tool in beta, allowing Claude to retrieve full…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-10T00:00:00.000Z",
+      "summary": "We've launched the web fetch tool in beta, allowing Claude to retrieve full content from specified web pages and PDF documents. Learn more in Web fetch tool.",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "The web fetch tool is a beta feature that enables Claude to retrieve full content from specified web pages and PDF documents.",
+        "why_it_matters": "This update allows Claude Code users to access and process web-based data and documents directly, streamlining workflows that rely on external data sources.",
+        "how_to_use": [
+          "Use the web fetch tool to retrieve HTML content from a webpage for text analysis or processing",
+          "Fetch PDF documents to extract and process specific information, such as text or tables"
+        ]
+      }
+    },
+    {
+      "id": "9a654a18",
+      "title": "We've launched the Claude Code Analytics API, enabling organizations to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-10T00:00:00.000Z",
+      "summary": "We've launched the Claude Code Analytics API, enabling organizations to programmatically access daily aggregated usage metrics for Claude Code, including productivity metrics, tool usage statistics,…",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "The Claude Code Analytics API provides programmatic access to daily aggregated usage metrics, including productivity metrics and tool usage statistics.",
+        "why_it_matters": "This API enables organizations to track and analyze Claude Code usage at scale, allowing for more informed decisions about tool adoption and optimization.",
+        "how_to_use": [
+          "Use the API to fetch daily usage metrics for specific teams or users",
+          "Integrate the API with internal analytics tools to track Claude Code adoption over time",
+          "Leverage the API to inform decisions about tooling and workflow optimization"
+        ]
+      }
+    },
+    {
+      "id": "4db94bfb",
+      "title": "We launched a beta version of the CSDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-8-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-08T00:00:00.000Z",
+      "summary": "We launched a beta version of the CSDK.",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "The CSDK beta version is a software development kit that allows developers to integrate Claude Code functionality into their applications.",
+        "why_it_matters": "This launch enables developers to start building custom applications with Claude Code, allowing for more tailored and integrated workflows.",
+        "how_to_use": [
+          "Use the CSDK to create custom interfaces for Claude Code",
+          "Integrate Claude Code functionality into existing developer tools and platforms"
+        ]
+      }
+    },
+    {
+      "id": "8e01098c",
+      "title": "We've launched rate limit charts in the Console Usage page, allowing you to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-5-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-05T00:00:00.000Z",
+      "summary": "We've launched rate limit charts in the Console Usage page, allowing you to monitor your API rate limit usage and caching rates over time.",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "Rate limit charts in the Console Usage page that display API rate limit usage and caching rates over time.",
+        "why_it_matters": "This allows you to monitor and track your API usage, helping you identify potential rate limit issues before they occur.",
+        "how_to_use": [
+          "Check the Console Usage page to view your current API rate limit usage",
+          "Use the charts to identify trends in your API usage and adjust your application accordingly"
+        ]
+      }
+    },
+    {
+      "id": "7ed38b19",
+      "title": "We've launched support for citable documents in client-side tool results",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-03T00:00:00.000Z",
+      "summary": "We've launched support for citable documents in client-side tool results. Learn more in Handle tool calls.",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "Citable documents are now supported in client-side tool results, allowing for more accurate and traceable outputs.",
+        "why_it_matters": "This update enables Claude Code users to provide more reliable and trustworthy results, especially in applications where data provenance is crucial.",
+        "how_to_use": [
+          "Use the Handle tool calls documentation to learn how to integrate citable documents into your client-side tool results",
+          "Update your existing tool calls to take advantage of citable documents for improved result traceability"
+        ]
+      }
+    },
+    {
+      "id": "c1a02cd0",
+      "title": "We've launched v2 of the Code Execution Tool in public beta, replacing the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-2-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-09-02T00:00:00.000Z",
+      "summary": "We've launched v2 of the Code Execution Tool in public beta, replacing the original Python-only tool with Bash command execution and direct file manipulation capabilities, including writing code in…",
+      "fetched_at": "2026-05-22T22:45:22.956Z",
+      "explanation": {
+        "what_it_is": "The Code Execution Tool v2 allows executing Bash commands and directly manipulating files, in addition to writing code in multiple languages.",
+        "why_it_matters": "This update enables Claude Code users to automate tasks and interact with the file system in a more flexible way, beyond just Python execution.",
+        "how_to_use": [
+          "Use the tool to execute Bash scripts and automate system tasks",
+          "Manipulate files directly from within your code, such as reading or writing to files"
         ]
       }
     }
