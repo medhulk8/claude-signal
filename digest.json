@@ -1,8 +1,85 @@
 {
   "version": 1,
-  "generated_at": "2026-05-26T23:59:43.898Z",
+  "generated_at": "2026-05-27T03:42:34.768Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f8600e1a",
+      "title": "Added /reload-skills command to re-scan skill directories without restarting the session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-27T01:30:59Z",
+      "summary": "v2.1.152",
+      "fetched_at": "2026-05-27T03:42:35.035Z",
+      "explanation": {
+        "what_it_is": "The /reload-skills command allows you to re-scan skill directories without having to restart your Claude Code session.",
+        "why_it_matters": "This command saves you time by eliminating the need to restart your session when updating or adding new skills, making it easier to test and iterate on your code.",
+        "how_to_use": [
+          "Use the /reload-skills command in your Claude Code session to re-scan skill directories after updating a skill",
+          "Run /reload-skills to apply changes to new skills without restarting"
+        ]
+      }
+    },
+    {
+      "id": "58defd87",
+      "title": "Added a MessageDisplay hook event that lets hooks transform or hide assistant message text as it is displayed",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-27T01:30:59Z",
+      "summary": "v2.1.152",
+      "fetched_at": "2026-05-27T03:42:35.035Z",
+      "explanation": {
+        "what_it_is": "The MessageDisplay hook event allows hooks to modify or hide assistant message text before it is displayed, enabling custom text transformations or filtering.",
+        "why_it_matters": "This update gives Claude Code users more control over the output of their assistants, allowing for tailored responses or redacted information.",
+        "how_to_use": [
+          "Use the MessageDisplay hook to replace sensitive information with placeholders",
+          "Implement a hook to translate assistant messages into different languages",
+          "Create a hook to remove unnecessary or redundant information from assistant responses"
+        ]
+      }
+    },
+    {
+      "id": "2df884c2",
+      "title": "Added pluginSuggestionMarketplaces managed setting: admins can allowlist org marketplaces whose plugins may be suggested via context-aware tips",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-27T01:30:59Z",
+      "summary": "v2.1.152",
+      "fetched_at": "2026-05-27T03:42:35.035Z",
+      "explanation": {
+        "what_it_is": "The pluginSuggestionMarketplaces managed setting allows admins to control which organization marketplaces can suggest plugins to users via context-aware tips.",
+        "why_it_matters": "This setting gives admins more control over the plugins that are suggested to their users, allowing them to prioritize trusted marketplaces and improve the overall user experience.",
+        "how_to_use": [
+          "Configure the pluginSuggestionMarketplaces setting to allowlist specific org marketplaces",
+          "Use context-aware tips to suggest plugins from allowed marketplaces to users"
+        ]
+      }
+    },
+    {
+      "id": "f7c6c2d7",
+      "title": "Added the session entrypoint as an OpenTelemetry metric attribute (app.entrypoint, opt-in via OTEL_METRICS_INCLUDE_ENTRYPOINT=true)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-27T01:30:59Z",
+      "summary": "v2.1.152",
+      "fetched_at": "2026-05-27T03:42:35.035Z",
+      "explanation": {
+        "what_it_is": "The session entrypoint is now available as an OpenTelemetry metric attribute, named 'app.entrypoint', which can be included in metrics when the environment variable OTEL_METRICS_INCLUDE_ENTRYPOINT is set to 'true'.",
+        "why_it_matters": "This change allows Claude Code users to track the entrypoint of their application sessions in their OpenTelemetry metrics, providing more detailed insights into application performance.",
+        "how_to_use": [
+          "Set OTEL_METRICS_INCLUDE_ENTRYPOINT=true in your environment variables to include the session entrypoint in your OpenTelemetry metrics.",
+          "Use the 'app.entrypoint' attribute in your OpenTelemetry metric queries to filter or group metrics by session entrypoint."
+        ]
+      }
+    },
     {
       "id": "de94368e",
       "title": "Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)",
@@ -270,82 +347,6 @@
           "Use --add-dir to specify a directory to add to the agent's scope",
           "Use --settings to override default settings with a custom configuration file",
           "Use --plugin-dir to specify a directory for plugins"
-        ]
-      }
-    },
-    {
-      "id": "782d909e",
-      "title": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-13T23:19:16Z",
-      "summary": "v2.1.141",
-      "fetched_at": "2026-05-13T23:44:53.448Z",
-      "explanation": {
-        "what_it_is": "The terminalSequence field is a new addition to hook JSON output, allowing hooks to generate specific terminal sequences, such as desktop notifications, window titles, and bells, even when not connected to a controlling terminal.",
-        "why_it_matters": "This update enables Claude Code users to create more interactive and attention-grabbing hooks, even in headless or automated environments, by providing a way to emit visual and auditory cues.",
-        "how_to_use": [
-          "Use the terminalSequence field to trigger desktop notifications when a hook completes or encounters an error",
-          "Set the terminalSequence field to change the window title of the terminal running the hook",
-          "Emit a bell sound using the terminalSequence field to draw attention to a completed hook"
-        ]
-      }
-    },
-    {
-      "id": "2dea6464",
-      "title": "Added CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-13T23:19:16Z",
-      "summary": "v2.1.141",
-      "fetched_at": "2026-05-13T23:44:53.448Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_PLUGIN_PREFER_HTTPS setting allows cloning GitHub plugin sources over HTTPS instead of SSH.",
-        "why_it_matters": "This setting is useful for environments that don't have a GitHub SSH key, enabling them to clone plugins without additional setup.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_PLUGIN_PREFER_HTTPS to true in your environment variables to clone GitHub plugins over HTTPS."
-        ]
-      }
-    },
-    {
-      "id": "c395050e",
-      "title": "Added ANTHROPIC_WORKSPACE_ID environment variable for workload identity federation — scopes the minted token to a specific workspace when the…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-13T23:19:16Z",
-      "summary": "v2.1.141",
-      "fetched_at": "2026-05-13T23:44:53.448Z",
-      "explanation": {
-        "what_it_is": "The ANTHROPIC_WORKSPACE_ID environment variable allows scoping of minted tokens to a specific workspace for workload identity federation.",
-        "why_it_matters": "This update enables more fine-grained control over access and authentication within Claude Code, particularly in multi-workspace environments.",
-        "how_to_use": [
-          "Set the ANTHROPIC_WORKSPACE_ID environment variable to the ID of the workspace you want to scope the minted token to.",
-          "Use this variable in conjunction with workload identity federation to manage access to specific workspaces."
-        ]
-      }
-    },
-    {
-      "id": "fdc271c1",
-      "title": "Added claude agents --cwd <path> to scope the session list to a directory",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-13T23:19:16Z",
-      "summary": "v2.1.141",
-      "fetched_at": "2026-05-13T23:44:53.448Z",
-      "explanation": {
-        "what_it_is": "The claude agents command now accepts a --cwd option, which allows you to specify a directory to scope the session list to.",
-        "why_it_matters": "This change enables Claude Code users to filter the session list by a specific directory, making it easier to manage sessions for projects with multiple directories.",
-        "how_to_use": [
-          "Run `claude agents --cwd /path/to/project` to list sessions only for the specified project directory",
-          "Use `--cwd` to narrow down the session list when working with multiple projects in different directories"
         ]
       }
     },
