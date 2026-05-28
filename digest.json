@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-05-27T23:05:59.913Z",
+  "generated_at": "2026-05-28T01:29:59.111Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "22040d0d",
+      "title": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-28T00:52:08Z",
+      "summary": "v2.1.153",
+      "fetched_at": "2026-05-28T01:29:59.360Z",
+      "explanation": {
+        "what_it_is": "The skipLfs option allows you to skip downloading Git Large File Storage (LFS) files when cloning or updating a repository from the GitHub/git plugin marketplace sources.",
+        "why_it_matters": "This option can significantly reduce the time and bandwidth required to clone or update large repositories that contain LFS files, making it easier to work with repositories that contain large files.",
+        "how_to_use": [
+          "Add the skipLfs option to your github/git plugin marketplace source configuration to skip LFS downloads",
+          "Use this option when working with large repositories that contain LFS files to improve clone and update performance"
+        ]
+      }
+    },
     {
       "id": "f8600e1a",
       "title": "Added /reload-skills command to re-scan skill directories without restarting the session",
@@ -327,26 +346,6 @@
         "how_to_use": [
           "Set worktree.bgIsolation to 'none' in your repository settings to enable direct editing by background sessions.",
           "Use this setting for repos where worktrees are used to manage multiple working copies."
-        ]
-      }
-    },
-    {
-      "id": "f3a893cf",
-      "title": "Added new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-14T22:55:10Z",
-      "summary": "v2.1.142",
-      "fetched_at": "2026-05-14T23:42:53.472Z",
-      "explanation": {
-        "what_it_is": "New command-line flags for Claude agents, including options to specify directories, settings, and configuration files.",
-        "why_it_matters": "These flags provide more fine-grained control over Claude agent behavior, allowing for customized setups and configurations.",
-        "how_to_use": [
-          "Use --add-dir to specify a directory to add to the agent's scope",
-          "Use --settings to override default settings with a custom configuration file",
-          "Use --plugin-dir to specify a directory for plugins"
         ]
       }
     },
