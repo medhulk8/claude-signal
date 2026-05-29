@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-28T23:03:54.432Z",
+  "generated_at": "2026-05-29T01:51:55.048Z",
   "item_count": 90,
   "items": [
     {
@@ -517,44 +517,6 @@
         "how_to_use": [
           "Use the /review command on a repository with Classic Projects to verify that project cards are displayed correctly.",
           "Test the /review feature on multiple repositories with different project configurations to ensure compatibility."
-        ]
-      }
-    },
-    {
-      "id": "f7381621",
-      "title": "Added /resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-19T00:48:51Z",
-      "summary": "v2.1.144",
-      "fetched_at": "2026-05-19T01:54:31.965Z",
-      "explanation": {
-        "what_it_is": "The /resume command now supports background sessions, allowing users to resume sessions started via 'claude --bg' or the agent view.",
-        "why_it_matters": "This update enables users to easily resume and manage background sessions alongside interactive ones, with background sessions marked as 'bg' for identification.",
-        "how_to_use": [
-          "Use 'claude --bg' to start a background session and then resume it with /resume",
-          "Start a session from the agent view and resume it later with /resume, where it will be marked as 'bg'"
-        ]
-      }
-    },
-    {
-      "id": "b90c92ab",
-      "title": "Added elapsed duration to background subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\")",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-19T00:48:51Z",
-      "summary": "v2.1.144",
-      "fetched_at": "2026-05-19T01:54:31.965Z",
-      "explanation": {
-        "what_it_is": "The elapsed duration is now included in background subagent completion notifications, displaying the time taken to complete a task.",
-        "why_it_matters": "This update allows Claude Code users to better track the time spent on tasks and monitor the efficiency of their subagents.",
-        "how_to_use": [
-          "Check the notification message for the elapsed duration after a subagent completes a task, e.g. 'Agent completed · 3h 2m 5s'",
-          "Use this information to optimize subagent workflows and identify potential bottlenecks"
         ]
       }
     },
@@ -1724,6 +1686,44 @@
         "how_to_use": [
           "Update your API requests to use a different model version",
           "Review and modify any code or workflows that reference the retired models"
+        ]
+      }
+    },
+    {
+      "id": "4df22af5",
+      "title": "We've expanded context editing with thinking block clearing…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We've expanded context editing with thinking block clearing (clear_thinking_20251015), enabling automatic management of thinking blocks. Learn more in Context editing.",
+      "fetched_at": "2026-05-29T01:51:56.973Z",
+      "explanation": {
+        "what_it_is": "The clear_thinking_20251015 feature allows automatic management of thinking blocks in context editing, enabling users to clear thinking blocks as needed.",
+        "why_it_matters": "This update streamlines the context editing process by automating the removal of thinking blocks, reducing manual effort and potential errors.",
+        "how_to_use": [
+          "Use the clear_thinking_20251015 command to automatically clear thinking blocks in your context editing workflow",
+          "Integrate this feature into your existing context editing scripts to automate thinking block management"
+        ]
+      }
+    },
+    {
+      "id": "8dba46a0",
+      "title": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-16-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-16T00:00:00.000Z",
+      "summary": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend Claude's capabilities. Skills are organized folders of instructions, scripts, and resources that Claude loads dynamically to…",
+      "fetched_at": "2026-05-29T01:51:56.973Z",
+      "explanation": {
+        "what_it_is": "Agent Skills is a feature that allows you to extend Claude's capabilities using organized folders of instructions, scripts, and resources that load dynamically.",
+        "why_it_matters": "This feature enables Claude Code users to create and load custom skills, which can simplify complex workflows and provide more flexibility in task automation.",
+        "how_to_use": [
+          "Create a skill folder with instructions and scripts to perform a specific task",
+          "Load the skill dynamically in Claude to execute the task"
         ]
       }
     }
