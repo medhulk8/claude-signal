@@ -1,8 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-05-29T10:35:30.041Z",
+  "generated_at": "2026-05-29T13:51:07.077Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "2033defa",
+      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-29T00:00:00.000Z",
+      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
+      "fetched_at": "2026-05-29T13:51:09.486Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
+        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and test agents in isolated environments, all within the AWS ecosystem.",
+        "how_to_use": [
+          "Use webhooks to receive notifications when agent events occur, such as agent updates or failures",
+          "Configure multiagent orchestration to manage complex workflows involving multiple agents",
+          "Set up self-hosted sandboxes to test and validate agent behavior in isolated environments"
+        ]
+      }
+    },
     {
       "id": "622fe817",
       "title": "Added Claude Opus 4.8 support and 4.7 → 4.8 migration guidance to the /claude-api skill",
@@ -1705,25 +1725,6 @@
         "how_to_use": [
           "Use the clear_thinking_20251015 command to automatically clear thinking blocks in your context editing workflow",
           "Integrate this feature into your existing context editing scripts to automate thinking block management"
-        ]
-      }
-    },
-    {
-      "id": "8dba46a0",
-      "title": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-16-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-10-16T00:00:00.000Z",
-      "summary": "We've launched Agent Skills (skills-2025-10-02 beta), a new way to extend Claude's capabilities. Skills are organized folders of instructions, scripts, and resources that Claude loads dynamically to…",
-      "fetched_at": "2026-05-29T01:51:56.973Z",
-      "explanation": {
-        "what_it_is": "Agent Skills is a feature that allows you to extend Claude's capabilities using organized folders of instructions, scripts, and resources that load dynamically.",
-        "why_it_matters": "This feature enables Claude Code users to create and load custom skills, which can simplify complex workflows and provide more flexibility in task automation.",
-        "how_to_use": [
-          "Create a skill folder with instructions and scripts to perform a specific task",
-          "Load the skill dynamically in Claude to execute the task"
         ]
       }
     }
