@@ -1,8 +1,66 @@
 {
   "version": 1,
-  "generated_at": "2026-05-29T20:02:15.491Z",
+  "generated_at": "2026-05-29T22:21:55.434Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "a1043968",
+      "title": "Added claude plugin init <name> to scaffold a new plugin in .claude/skills",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-29T20:20:38Z",
+      "summary": "v2.1.157",
+      "fetched_at": "2026-05-29T22:21:55.798Z",
+      "explanation": {
+        "what_it_is": "The claude plugin init command creates a new plugin template in the .claude/skills directory, allowing users to scaffold a plugin with a given name.",
+        "why_it_matters": "This update streamlines the process of creating new plugins, saving users time and effort by providing a pre-structured template.",
+        "how_to_use": [
+          "Run 'claude plugin init my_plugin' to create a new plugin template in .claude/skills/my_plugin",
+          "Use the generated template as a starting point to develop and customize your plugin"
+        ]
+      }
+    },
+    {
+      "id": "a0aee4e4",
+      "title": "Added autocomplete for /plugin arguments: subcommands, installed plugin names, and plugins from known marketplaces",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-29T20:20:38Z",
+      "summary": "v2.1.157",
+      "fetched_at": "2026-05-29T22:21:55.798Z",
+      "explanation": {
+        "what_it_is": "Autocomplete functionality for /plugin arguments, including subcommands, installed plugin names, and plugins from known marketplaces",
+        "why_it_matters": "This update streamlines the process of working with plugins in Claude Code by reducing the need for manual input and minimizing errors",
+        "how_to_use": [
+          "Type /plugin and press tab to see a list of available subcommands",
+          "Start typing a plugin name and press tab to autocomplete the name of an installed plugin",
+          "Use autocomplete to quickly find and install plugins from known marketplaces"
+        ]
+      }
+    },
+    {
+      "id": "5f7777f0",
+      "title": "Added a \"Workflow keyword trigger\" setting in /config to stop the word \"workflow\" in a prompt from triggering a dynamic workflow",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-05-29T20:20:38Z",
+      "summary": "v2.1.157",
+      "fetched_at": "2026-05-29T22:21:55.798Z",
+      "explanation": {
+        "what_it_is": "A new setting in the /config file that allows you to disable the automatic triggering of dynamic workflows when the word 'workflow' is used in a prompt.",
+        "why_it_matters": "This change gives Claude Code users more control over when dynamic workflows are triggered, preventing unintended workflow activations.",
+        "how_to_use": [
+          "Go to the /config file and set 'Workflow keyword trigger' to false to disable automatic workflow triggering",
+          "Use this setting to avoid accidental workflow triggers when using the word 'workflow' in prompts for other purposes"
+        ]
+      }
+    },
     {
       "id": "2033defa",
       "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
@@ -478,65 +536,6 @@
         "how_to_use": [
           "Set OTEL_METRICS_INCLUDE_ENTRYPOINT=true in your environment variables to include the session entrypoint in your OpenTelemetry metrics.",
           "Use the 'app.entrypoint' attribute in your OpenTelemetry metric queries to filter or group metrics by session entrypoint."
-        ]
-      }
-    },
-    {
-      "id": "de94368e",
-      "title": "Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-19T21:31:07Z",
-      "summary": "v2.1.145",
-      "fetched_at": "2026-05-19T22:54:09.434Z",
-      "explanation": {
-        "what_it_is": "The claude agents --json command lists live Claude sessions in JSON format, enabling scripting and integration with tools like tmux-resurrect, status bars, and session pickers.",
-        "why_it_matters": "This update allows Claude Code users to automate tasks and create custom workflows by accessing live session data in a machine-readable format.",
-        "how_to_use": [
-          "Use claude agents --json to generate a JSON list of live sessions for use in scripts or external tools",
-          "Integrate the JSON output with tmux-resurrect to automate session restoration",
-          "Feed the JSON output to a status bar or session picker for customized visualization and management"
-        ]
-      }
-    },
-    {
-      "id": "210b4ca9",
-      "title": "Added agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-19T21:31:07Z",
-      "summary": "v2.1.145",
-      "fetched_at": "2026-05-19T22:54:09.434Z",
-      "explanation": {
-        "what_it_is": "The claude_code.tool OTEL spans now include agent_id and parent_agent_id attributes, and trace parenting has been fixed to correctly nest background subagent spans.",
-        "why_it_matters": "This change allows for more accurate tracing and monitoring of Claude Code tool usage, particularly in scenarios involving subagents.",
-        "how_to_use": [
-          "Use the agent_id attribute to identify the specific agent responsible for a span",
-          "Use the parent_agent_id attribute to track the hierarchy of subagents",
-          "Verify that background subagent spans are now correctly nested under their parent agents in your tracing output"
-        ]
-      }
-    },
-    {
-      "id": "744eba49",
-      "title": "Fixed /review using a deprecated projectCards GraphQL query that errored on repos with Classic Projects",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-19T21:31:07Z",
-      "summary": "v2.1.145",
-      "fetched_at": "2026-05-19T22:54:09.434Z",
-      "explanation": {
-        "what_it_is": "The /review feature in Claude Code now uses a updated GraphQL query to fetch project cards, replacing a deprecated query that caused errors on repositories with Classic Projects.",
-        "why_it_matters": "This change resolves errors that occurred when trying to review projects on repositories using Classic Projects, ensuring a smoother workflow for Claude Code users.",
-        "how_to_use": [
-          "Use the /review command on a repository with Classic Projects to verify that project cards are displayed correctly.",
-          "Test the /review feature on multiple repositories with different project configurations to ensure compatibility."
         ]
       }
     },
