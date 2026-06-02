@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-06-02T00:02:11.937Z",
+  "generated_at": "2026-06-02T05:18:24.659Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "28db2c2d",
+      "title": "Added a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-02T02:10:25Z",
+      "summary": "v2.1.160",
+      "fetched_at": "2026-06-02T05:18:24.898Z",
+      "explanation": {
+        "what_it_is": "A prompt is now displayed before Claude Code writes to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/ to prevent unintended changes.",
+        "why_it_matters": "This change prevents accidental overwrites of important configuration files, giving users more control over their shell and Git settings.",
+        "how_to_use": [
+          "Review the prompt carefully before confirming writes to shell startup files",
+          "Use this feature to avoid accidentally overwriting custom Git configurations in ~/.config/git/"
+        ]
+      }
+    },
     {
       "id": "a1043968",
       "title": "Added claude plugin init <name> to scaffold a new plugin in .claude/skills",
@@ -1705,25 +1724,6 @@
         "how_to_use": [
           "Update your API requests to use a different model version",
           "Review and modify any code or workflows that reference the retired models"
-        ]
-      }
-    },
-    {
-      "id": "4df22af5",
-      "title": "We've expanded context editing with thinking block clearing…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-10-28T00:00:00.000Z",
-      "summary": "We've expanded context editing with thinking block clearing (clear_thinking_20251015), enabling automatic management of thinking blocks. Learn more in Context editing.",
-      "fetched_at": "2026-05-29T01:51:56.973Z",
-      "explanation": {
-        "what_it_is": "The clear_thinking_20251015 feature allows automatic management of thinking blocks in context editing, enabling users to clear thinking blocks as needed.",
-        "why_it_matters": "This update streamlines the context editing process by automating the removal of thinking blocks, reducing manual effort and potential errors.",
-        "how_to_use": [
-          "Use the clear_thinking_20251015 command to automatically clear thinking blocks in your context editing workflow",
-          "Integrate this feature into your existing context editing scripts to automate thinking block management"
         ]
       }
     }
