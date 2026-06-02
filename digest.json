@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-02T17:56:49.704Z",
+  "generated_at": "2026-06-02T20:34:55.269Z",
   "item_count": 90,
   "items": [
     {
@@ -19,6 +19,25 @@
         "how_to_use": [
           "Review the prompt carefully before confirming writes to shell startup files",
           "Use this feature to avoid accidentally overwriting custom Git configurations in ~/.config/git/"
+        ]
+      }
+    },
+    {
+      "id": "992683c1",
+      "title": "The advisor tool now supports a max_tokens parameter to cap the advisor model's…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-2-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-02T00:00:00.000Z",
+      "summary": "The advisor tool now supports a max_tokens parameter to cap the advisor model's output per call, reducing latency and output token cost for workloads that don't need full-length advisor responses.…",
+      "fetched_at": "2026-06-02T20:34:57.121Z",
+      "explanation": {
+        "what_it_is": "The advisor tool's max_tokens parameter limits the advisor model's output length per call, allowing for more controlled responses.",
+        "why_it_matters": "This change reduces latency and output token cost for workloads that don't require full-length advisor responses, making it more efficient for specific use cases.",
+        "how_to_use": [
+          "Set max_tokens to a lower value for applications where brief advisor responses are sufficient",
+          "Use max_tokens to optimize output token cost for large-scale workloads with limited response length requirements"
         ]
       }
     },
@@ -1705,25 +1724,6 @@
           "Review the Model deprecations documentation to understand the timeline and alternatives",
           "Update existing code to use a supported model version",
           "Test and validate new model integrations to ensure compatibility"
-        ]
-      }
-    },
-    {
-      "id": "3ccea7fb",
-      "title": "We've retired the Claude Sonnet 3.5 models",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-10-28T00:00:00.000Z",
-      "summary": "We've retired the Claude Sonnet 3.5 models. All requests to these models will now return an error.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.5 models have been removed from the Anthropic API and developer platform, resulting in an error for any requests to these models.",
-        "why_it_matters": "This change affects any existing workflows or applications that rely on the Claude Sonnet 3.5 models, which will now need to be updated to use alternative models.",
-        "how_to_use": [
-          "Update your API requests to use a different model version",
-          "Review and modify any code or workflows that reference the retired models"
         ]
       }
     }
