@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-06-02T20:34:55.269Z",
+  "generated_at": "2026-06-02T22:52:31.784Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "d6ba90ba",
+      "title": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup) to fix garbled glyphs",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-02T21:58:22Z",
+      "summary": "v2.1.161",
+      "fetched_at": "2026-06-02T22:52:32.033Z",
+      "explanation": {
+        "what_it_is": "A tip in VSCode that suggests disabling terminal GPU acceleration or running the /terminal-setup command to resolve issues with garbled glyphs in the terminal.",
+        "why_it_matters": "This tip helps Claude Code users in VSCode fix display issues that can hinder their workflow, particularly when working with terminals that have GPU acceleration enabled.",
+        "how_to_use": [
+          "Disable terminal GPU acceleration in VSCode settings to fix garbled glyphs",
+          "Run the /terminal-setup command as an alternative solution to resolve display issues"
+        ]
+      }
+    },
     {
       "id": "28db2c2d",
       "title": "Added a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended…",
@@ -38,6 +57,25 @@
         "how_to_use": [
           "Set max_tokens to a lower value for applications where brief advisor responses are sufficient",
           "Use max_tokens to optimize output token cost for large-scale workloads with limited response length requirements"
+        ]
+      }
+    },
+    {
+      "id": "924d7d9f",
+      "title": "On the Claude API, you are no longer billed for a request when it returns…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-2-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-02T00:00:00.000Z",
+      "summary": "On the Claude API, you are no longer billed for a request when it returns stop_reason: \"refusal\" without Claude having generated any output. See Streaming refusals for detecting and handling refusals.",
+      "fetched_at": "2026-06-02T22:52:33.172Z",
+      "explanation": {
+        "what_it_is": "The Claude API no longer charges for requests that return a 'refusal' stop reason without generating any output, as indicated by 'stop_reason: refusal'.",
+        "why_it_matters": "This change means Claude Code users will not incur costs for requests that are refused without producing any output, potentially reducing unnecessary expenses.",
+        "how_to_use": [
+          "Check the 'stop_reason' field in API responses to detect refusals",
+          "Use the 'Streaming refusals' documentation to handle refusals in your application"
         ]
       }
     },
@@ -1685,45 +1723,6 @@
         "how_to_use": [
           "Use Azure OAuth to authenticate and authorize access to Claude models",
           "Access the Messages API to integrate extended thinking and prompt capabilities into Azure applications"
-        ]
-      }
-    },
-    {
-      "id": "150c45ac",
-      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-11-14T00:00:00.000Z",
-      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "Structured outputs in Claude Code provide guaranteed schema conformance for responses, allowing for JSON outputs with structured data or strict tool use for validated tool interactions.",
-        "why_it_matters": "This update enables Claude Code users to rely on consistent and validated response formats, simplifying integration with other tools and workflows.",
-        "how_to_use": [
-          "Use JSON outputs to receive structured data responses from Claude",
-          "Enable strict tool use for validated interactions with specific tools"
-        ]
-      }
-    },
-    {
-      "id": "4b7efbfc",
-      "title": "We announced the deprecation of the Claude Sonnet 3.7 model",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-10-28T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in Model deprecations.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.7 model is being deprecated, meaning it will no longer be supported or maintained.",
-        "why_it_matters": "This change affects Claude Code users who currently rely on the 3.7 model, as they will need to migrate to a different model to ensure continued support and compatibility.",
-        "how_to_use": [
-          "Review the Model deprecations documentation to understand the timeline and alternatives",
-          "Update existing code to use a supported model version",
-          "Test and validate new model integrations to ensure compatibility"
         ]
       }
     }
