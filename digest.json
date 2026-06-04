@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-04T12:34:20.626Z",
+  "generated_at": "2026-06-04T16:14:00.735Z",
   "item_count": 90,
   "items": [
     {
@@ -612,6 +612,25 @@
         "how_to_use": [
           "Set OTEL_METRICS_INCLUDE_ENTRYPOINT=true in your environment variables to include the session entrypoint in your OpenTelemetry metrics.",
           "Use the 'app.entrypoint' attribute in your OpenTelemetry metric queries to filter or group metrics by session entrypoint."
+        ]
+      }
+    },
+    {
+      "id": "e767563f",
+      "title": "The Messages API response now includes…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-27-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-27T00:00:00.000Z",
+      "summary": "The Messages API response now includes usage.output_tokens_details.thinking_tokens, reporting how many of the billed output tokens were extended thinking. When streaming, the breakdown appears only…",
+      "fetched_at": "2026-06-04T16:14:02.923Z",
+      "explanation": {
+        "what_it_is": "The Messages API response now includes a breakdown of billed output tokens, specifically the number of tokens used for extended thinking, available in the usage.output_tokens_details.thinking_tokens field.",
+        "why_it_matters": "This change allows Claude Code users to track and understand the token usage for extended thinking in their API responses, enabling more accurate billing and cost estimation.",
+        "how_to_use": [
+          "Access the usage.output_tokens_details.thinking_tokens field in the Messages API response to get the number of billed output tokens used for extended thinking.",
+          "Use this information to optimize token usage and reduce costs in your applications."
         ]
       }
     },
@@ -1704,25 +1723,6 @@
         "how_to_use": [
           "Access the new documentation platform at platform.claude.com/docs to find information on using Claude Code",
           "Use the unified platform to switch between documentation and the Claude Console without navigating to separate sites"
-        ]
-      }
-    },
-    {
-      "id": "1f0d999f",
-      "title": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-11-18T00:00:00.000Z",
-      "summary": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure customers with Azure billing and OAuth authentication. Access the full Messages API including extended thinking, prompt…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "Claude models are now available in Microsoft Foundry, allowing Azure customers to access the full Messages API, including extended thinking and prompt capabilities, with Azure billing and OAuth authentication.",
-        "why_it_matters": "This integration enables Azure customers to leverage Claude models with the convenience of Azure billing and authentication, streamlining the development process.",
-        "how_to_use": [
-          "Use Azure OAuth to authenticate and authorize access to Claude models",
-          "Access the Messages API to integrate extended thinking and prompt capabilities into Azure applications"
         ]
       }
     }
