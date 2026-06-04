@@ -1,8 +1,68 @@
 {
   "version": 1,
-  "generated_at": "2026-06-04T21:19:35.038Z",
+  "generated_at": "2026-06-04T22:58:16.110Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "dc0f0a02",
+      "title": "Added requiredMinimumVersion and requiredMaximumVersion managed settings — Claude Code refuses to start if its version is outside the allowed range…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-04T21:52:51Z",
+      "summary": "v2.1.163",
+      "fetched_at": "2026-06-04T22:58:16.414Z",
+      "explanation": {
+        "what_it_is": "The requiredMinimumVersion and requiredMaximumVersion managed settings allow administrators to specify a valid version range for Claude Code, preventing it from starting if its version falls outside this range.",
+        "why_it_matters": "This feature enables administrators to enforce version control and ensure that Claude Code users are running a compatible version, which can help prevent compatibility issues and security vulnerabilities.",
+        "how_to_use": [
+          "Set requiredMinimumVersion to the lowest allowed version of Claude Code",
+          "Set requiredMaximumVersion to the highest allowed version of Claude Code",
+          "Use these settings to enforce a specific version range for your organization"
+        ]
+      }
+    },
+    {
+      "id": "c99a0ece",
+      "title": "Added /plugin list command to list installed plugins, with --enabled/--disabled filters",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-04T21:52:51Z",
+      "summary": "v2.1.163",
+      "fetched_at": "2026-06-04T22:58:16.414Z",
+      "explanation": {
+        "what_it_is": "The /plugin list command is a new feature in Claude Code that allows users to list all installed plugins, with optional filters to show only enabled or disabled plugins.",
+        "why_it_matters": "This command simplifies plugin management by providing a quick way to view and filter installed plugins, making it easier to identify and manage plugins that are currently in use or not.",
+        "how_to_use": [
+          "/plugin list to list all installed plugins",
+          "/plugin list --enabled to list only enabled plugins",
+          "/plugin list --disabled to list only disabled plugins"
+        ]
+      }
+    },
+    {
+      "id": "a718d110",
+      "title": "Added a \"c to copy\" shortcut to /btw that copies the raw markdown answer to the clipboard, preserving formatting when pasted elsewhere",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-04T21:52:51Z",
+      "summary": "v2.1.163",
+      "fetched_at": "2026-06-04T22:58:16.414Z",
+      "explanation": {
+        "what_it_is": "A 'c to copy' shortcut in the /btw command that copies the raw markdown answer to the clipboard, preserving its formatting.",
+        "why_it_matters": "This shortcut saves time when reusing markdown-formatted answers from Claude Code in other documents or applications, as it retains the original formatting.",
+        "how_to_use": [
+          "Use the /btw command to generate a markdown answer",
+          "Press 'c' to copy the answer to the clipboard",
+          "Paste the answer into another document or application to retain its formatting"
+        ]
+      }
+    },
     {
       "id": "d6ba90ba",
       "title": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup) to fix garbled glyphs",
@@ -535,83 +595,6 @@
         "how_to_use": [
           "Check the release notes for Claude Apps to stay up-to-date on the latest changes and features",
           "Use the release notes to plan and implement updates in your own applications that integrate with Claude apps"
-        ]
-      }
-    },
-    {
-      "id": "f8600e1a",
-      "title": "Added /reload-skills command to re-scan skill directories without restarting the session",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-27T01:30:59Z",
-      "summary": "v2.1.152",
-      "fetched_at": "2026-05-27T03:42:35.035Z",
-      "explanation": {
-        "what_it_is": "The /reload-skills command allows you to re-scan skill directories without having to restart your Claude Code session.",
-        "why_it_matters": "This command saves you time by eliminating the need to restart your session when updating or adding new skills, making it easier to test and iterate on your code.",
-        "how_to_use": [
-          "Use the /reload-skills command in your Claude Code session to re-scan skill directories after updating a skill",
-          "Run /reload-skills to apply changes to new skills without restarting"
-        ]
-      }
-    },
-    {
-      "id": "58defd87",
-      "title": "Added a MessageDisplay hook event that lets hooks transform or hide assistant message text as it is displayed",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-27T01:30:59Z",
-      "summary": "v2.1.152",
-      "fetched_at": "2026-05-27T03:42:35.035Z",
-      "explanation": {
-        "what_it_is": "The MessageDisplay hook event allows hooks to modify or hide assistant message text before it is displayed, enabling custom text transformations or filtering.",
-        "why_it_matters": "This update gives Claude Code users more control over the output of their assistants, allowing for tailored responses or redacted information.",
-        "how_to_use": [
-          "Use the MessageDisplay hook to replace sensitive information with placeholders",
-          "Implement a hook to translate assistant messages into different languages",
-          "Create a hook to remove unnecessary or redundant information from assistant responses"
-        ]
-      }
-    },
-    {
-      "id": "2df884c2",
-      "title": "Added pluginSuggestionMarketplaces managed setting: admins can allowlist org marketplaces whose plugins may be suggested via context-aware tips",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-27T01:30:59Z",
-      "summary": "v2.1.152",
-      "fetched_at": "2026-05-27T03:42:35.035Z",
-      "explanation": {
-        "what_it_is": "The pluginSuggestionMarketplaces managed setting allows admins to control which organization marketplaces can suggest plugins to users via context-aware tips.",
-        "why_it_matters": "This setting gives admins more control over the plugins that are suggested to their users, allowing them to prioritize trusted marketplaces and improve the overall user experience.",
-        "how_to_use": [
-          "Configure the pluginSuggestionMarketplaces setting to allowlist specific org marketplaces",
-          "Use context-aware tips to suggest plugins from allowed marketplaces to users"
-        ]
-      }
-    },
-    {
-      "id": "f7c6c2d7",
-      "title": "Added the session entrypoint as an OpenTelemetry metric attribute (app.entrypoint, opt-in via OTEL_METRICS_INCLUDE_ENTRYPOINT=true)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-27T01:30:59Z",
-      "summary": "v2.1.152",
-      "fetched_at": "2026-05-27T03:42:35.035Z",
-      "explanation": {
-        "what_it_is": "The session entrypoint is now available as an OpenTelemetry metric attribute, named 'app.entrypoint', which can be included in metrics when the environment variable OTEL_METRICS_INCLUDE_ENTRYPOINT is set to 'true'.",
-        "why_it_matters": "This change allows Claude Code users to track the entrypoint of their application sessions in their OpenTelemetry metrics, providing more detailed insights into application performance.",
-        "how_to_use": [
-          "Set OTEL_METRICS_INCLUDE_ENTRYPOINT=true in your environment variables to include the session entrypoint in your OpenTelemetry metrics.",
-          "Use the 'app.entrypoint' attribute in your OpenTelemetry metric queries to filter or group metrics by session entrypoint."
         ]
       }
     },
@@ -1723,6 +1706,25 @@
         "how_to_use": [
           "Access the new documentation platform at platform.claude.com/docs to find information on using Claude Code",
           "Use the unified platform to switch between documentation and the Claude Console without navigating to separate sites"
+        ]
+      }
+    },
+    {
+      "id": "1f0d999f",
+      "title": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-18T00:00:00.000Z",
+      "summary": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure customers with Azure billing and OAuth authentication. Access the full Messages API including extended thinking, prompt…",
+      "fetched_at": "2026-06-04T22:58:18.004Z",
+      "explanation": {
+        "what_it_is": "Claude models are now available in Microsoft Foundry, allowing Azure customers to access the full Messages API, including extended thinking and prompt capabilities, with Azure billing and OAuth authentication.",
+        "why_it_matters": "This integration enables Azure customers to leverage Claude's capabilities with the convenience of Azure billing and authentication, streamlining the development process.",
+        "how_to_use": [
+          "Use Azure OAuth to authenticate and authorize access to Claude models",
+          "Access the Messages API to integrate Claude's extended thinking and prompt capabilities into Azure-based applications"
         ]
       }
     }
