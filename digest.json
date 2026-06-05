@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-05T05:05:31.859Z",
+  "generated_at": "2026-06-05T08:58:46.053Z",
   "item_count": 90,
   "items": [
     {
@@ -251,25 +251,6 @@
         "why_it_matters": "Claude Code users who rely on fast mode for Opus 4.6 must update their workflow to use the new switch command to avoid disruption after the removal date",
         "how_to_use": [
           "/model claude-opus-4-6[1m] to switch to fast mode on Opus 4.6"
-        ]
-      }
-    },
-    {
-      "id": "22040d0d",
-      "title": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-28T00:52:08Z",
-      "summary": "v2.1.153",
-      "fetched_at": "2026-05-28T01:29:59.360Z",
-      "explanation": {
-        "what_it_is": "The skipLfs option allows you to skip downloading Git Large File Storage (LFS) files when cloning or updating a repository from the GitHub/git plugin marketplace sources.",
-        "why_it_matters": "This option can significantly reduce the time and bandwidth required to clone or update large repositories that contain LFS files, making it easier to work with repositories that contain large files.",
-        "how_to_use": [
-          "Add the skipLfs option to your github/git plugin marketplace source configuration to skip LFS downloads",
-          "Use this option when working with large repositories that contain LFS files to improve clone and update performance"
         ]
       }
     },
@@ -1725,6 +1706,25 @@
         "how_to_use": [
           "Use Azure OAuth to authenticate and authorize access to Claude models",
           "Access the Messages API to integrate Claude's extended thinking and prompt capabilities into Azure-based applications"
+        ]
+      }
+    },
+    {
+      "id": "150c45ac",
+      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-14T00:00:00.000Z",
+      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
+      "fetched_at": "2026-06-05T08:58:47.985Z",
+      "explanation": {
+        "what_it_is": "Structured outputs in Claude Code provide guaranteed schema conformance for responses, allowing for JSON outputs with structured data or strict tool use for validated tool interactions.",
+        "why_it_matters": "This update enables Claude Code users to rely on consistent and validated response formats, simplifying integration with other tools and systems.",
+        "how_to_use": [
+          "Use JSON outputs to receive structured data responses from Claude",
+          "Enable strict tool use for validated interactions with specific tools"
         ]
       }
     }
