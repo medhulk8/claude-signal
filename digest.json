@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-06-05T19:25:28.412Z",
+  "generated_at": "2026-06-05T21:13:18.959Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "a74100f7",
+      "title": "We announced the deprecation of the Claude Opus 4.1 model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-05T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Opus 4.1 model (claude-opus-4-1-20250805), with retirement on the Claude API scheduled for August 5, 2026. We recommend migrating to Claude Opus 4.8. Read…",
+      "fetched_at": "2026-06-05T21:13:21.080Z",
+      "explanation": {
+        "what_it_is": "The deprecation of the Claude Opus 4.1 model, which will be retired from the Claude API on August 5, 2026.",
+        "why_it_matters": "This change requires users to migrate to the newer Claude Opus 4.8 model to avoid disruptions to their workflows after the retirement date.",
+        "how_to_use": [
+          "Update your API requests to use the Claude Opus 4.8 model instead of the deprecated 4.1 model",
+          "Review the documentation for any changes in behavior or parameters between the two models"
+        ]
+      }
+    },
     {
       "id": "dc0f0a02",
       "title": "Added requiredMinimumVersion and requiredMaximumVersion managed settings — Claude Code refuses to start if its version is outside the allowed range…",
@@ -1706,25 +1725,6 @@
         "how_to_use": [
           "Use Azure OAuth to authenticate and authorize access to Claude models",
           "Access the Messages API to integrate Claude's extended thinking and prompt capabilities into Azure-based applications"
-        ]
-      }
-    },
-    {
-      "id": "150c45ac",
-      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-11-14T00:00:00.000Z",
-      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
-      "fetched_at": "2026-06-05T08:58:47.985Z",
-      "explanation": {
-        "what_it_is": "Structured outputs in Claude Code provide guaranteed schema conformance for responses, allowing for JSON outputs with structured data or strict tool use for validated tool interactions.",
-        "why_it_matters": "This update enables Claude Code users to rely on consistent and validated response formats, simplifying integration with other tools and systems.",
-        "how_to_use": [
-          "Use JSON outputs to receive structured data responses from Claude",
-          "Enable strict tool use for validated interactions with specific tools"
         ]
       }
     }
