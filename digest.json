@@ -1,8 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-06-05T23:55:44.222Z",
+  "generated_at": "2026-06-06T01:57:20.090Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f900a887",
+      "title": "Added fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable;…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-06T00:55:18Z",
+      "summary": "v2.1.166",
+      "fetched_at": "2026-06-06T01:57:20.452Z",
+      "explanation": {
+        "what_it_is": "The fallbackModel setting allows you to specify up to three backup models to use when the primary model is busy or offline. These fallback models are tried in sequence until one is available.",
+        "why_it_matters": "This setting helps prevent downtime by providing a clear order of operations for when the primary model is overloaded, ensuring that your application can continue to function with a secondary or tertiary model. This is particularly useful for maintaining service reliability during periods of high traffic or model maintenance.",
+        "how_to_use": [
+          "Configure the fallbackModel setting with up to three model names in your Claude Code configuration file",
+          "Use the fallback models to handle overflow traffic when the primary model reaches capacity",
+          "Test your fallback model configuration to ensure seamless failover in case of primary model unavailability"
+        ]
+      }
+    },
+    {
+      "id": "9dca8636",
+      "title": "Added glob pattern support in deny rule tool-name position (\"*\" denies all tools); allow rules reject non-MCP globs, and unknown tool names in deny…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-06T00:55:18Z",
+      "summary": "v2.1.166",
+      "fetched_at": "2026-06-06T01:57:20.452Z",
+      "explanation": {
+        "what_it_is": "Glob pattern support is now available in the deny rule tool-name position, allowing users to specify patterns for tool names, with '*' denying all tools. This also includes the ability to reject non-MCP globs and unknown tool names in deny rules.",
+        "why_it_matters": "This update gives Claude Code users more flexibility and control over their deny rules, allowing for more precise and efficient management of tool access. It also helps prevent errors by rejecting invalid glob patterns and unknown tool names.",
+        "how_to_use": [
+          "Use '*' in a deny rule to block access to all tools",
+          "Specify a glob pattern in a deny rule to restrict access to a subset of tools",
+          "Test deny rules with non-MCP globs and unknown tool names to ensure they are properly rejected"
+        ]
+      }
+    },
     {
       "id": "a74100f7",
       "title": "We announced the deprecation of the Claude Opus 4.1 model…",
@@ -233,43 +273,6 @@
           "Use webhooks to receive notifications when agent events occur, such as agent updates or failures",
           "Configure multiagent orchestration to manage complex workflows involving multiple agents",
           "Set up self-hosted sandboxes to test and validate agent behavior in isolated environments"
-        ]
-      }
-    },
-    {
-      "id": "622fe817",
-      "title": "Added Claude Opus 4.8 support and 4.7 → 4.8 migration guidance to the /claude-api skill",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-28T18:00:55Z",
-      "summary": "v2.1.154",
-      "fetched_at": "2026-05-28T19:30:40.553Z",
-      "explanation": {
-        "what_it_is": "Claude Code now supports Claude Opus 4.8 and provides guidance for migrating from version 4.7 to 4.8 through the /claude-api skill.",
-        "why_it_matters": "This update allows Claude Code users to take advantage of the new features and improvements in Claude Opus 4.8, ensuring compatibility and access to the latest functionality.",
-        "how_to_use": [
-          "Access the /claude-api skill to utilize Claude Opus 4.8 features",
-          "Follow the provided migration guidance to update from Claude Opus 4.7 to 4.8"
-        ]
-      }
-    },
-    {
-      "id": "01616057",
-      "title": "Deprecated CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE (will be removed on 06/01). To use fast mode on Opus 4.6, switch with /model claude-opus-4-6[1m]…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-28T18:00:55Z",
-      "summary": "v2.1.154",
-      "fetched_at": "2026-05-28T19:30:40.553Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE flag has been deprecated and will be removed on 06/01, replaced by a new switch command",
-        "why_it_matters": "Claude Code users who rely on fast mode for Opus 4.6 must update their workflow to use the new switch command to avoid disruption after the removal date",
-        "how_to_use": [
-          "/model claude-opus-4-6[1m] to switch to fast mode on Opus 4.6"
         ]
       }
     },
