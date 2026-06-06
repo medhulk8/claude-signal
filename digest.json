@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-06T22:50:43.687Z",
+  "generated_at": "2026-06-06T23:52:41.649Z",
   "item_count": 90,
   "items": [
     {
@@ -195,64 +195,6 @@
         "how_to_use": [
           "Check the 'stop_reason' field in API responses to detect refusals",
           "Use the 'Streaming refusals' documentation to handle refusals in your application"
-        ]
-      }
-    },
-    {
-      "id": "a1043968",
-      "title": "Added claude plugin init <name> to scaffold a new plugin in .claude/skills",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-29T20:20:38Z",
-      "summary": "v2.1.157",
-      "fetched_at": "2026-05-29T22:21:55.798Z",
-      "explanation": {
-        "what_it_is": "The claude plugin init command creates a new plugin template in the .claude/skills directory, allowing users to scaffold a plugin with a given name.",
-        "why_it_matters": "This update streamlines the process of creating new plugins, saving users time and effort by providing a pre-structured template.",
-        "how_to_use": [
-          "Run 'claude plugin init my_plugin' to create a new plugin template in .claude/skills/my_plugin",
-          "Use the generated template as a starting point to develop and customize your plugin"
-        ]
-      }
-    },
-    {
-      "id": "a0aee4e4",
-      "title": "Added autocomplete for /plugin arguments: subcommands, installed plugin names, and plugins from known marketplaces",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-29T20:20:38Z",
-      "summary": "v2.1.157",
-      "fetched_at": "2026-05-29T22:21:55.798Z",
-      "explanation": {
-        "what_it_is": "Autocomplete functionality for /plugin arguments, including subcommands, installed plugin names, and plugins from known marketplaces",
-        "why_it_matters": "This update streamlines the process of working with plugins in Claude Code by reducing the need for manual input and minimizing errors",
-        "how_to_use": [
-          "Type /plugin and press tab to see a list of available subcommands",
-          "Start typing a plugin name and press tab to autocomplete the name of an installed plugin",
-          "Use autocomplete to quickly find and install plugins from known marketplaces"
-        ]
-      }
-    },
-    {
-      "id": "5f7777f0",
-      "title": "Added a \"Workflow keyword trigger\" setting in /config to stop the word \"workflow\" in a prompt from triggering a dynamic workflow",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-05-29T20:20:38Z",
-      "summary": "v2.1.157",
-      "fetched_at": "2026-05-29T22:21:55.798Z",
-      "explanation": {
-        "what_it_is": "A new setting in the /config file that allows you to disable the automatic triggering of dynamic workflows when the word 'workflow' is used in a prompt.",
-        "why_it_matters": "This change gives Claude Code users more control over when dynamic workflows are triggered, preventing unintended workflow activations.",
-        "how_to_use": [
-          "Go to the /config file and set 'Workflow keyword trigger' to false to disable automatic workflow triggering",
-          "Use this setting to avoid accidental workflow triggers when using the word 'workflow' in prompts for other purposes"
         ]
       }
     },
@@ -1728,6 +1670,63 @@
         "how_to_use": [
           "Use Azure OAuth to authenticate and authorize access to Claude models",
           "Access the Messages API to integrate Claude's extended thinking and prompt capabilities into Azure-based applications"
+        ]
+      }
+    },
+    {
+      "id": "150c45ac",
+      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-14T00:00:00.000Z",
+      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
+      "fetched_at": "2026-06-06T23:52:43.230Z",
+      "explanation": {
+        "what_it_is": "Structured outputs in Claude Code provide guaranteed schema conformance for responses, allowing for JSON outputs with structured data or strict tool use for validated tool interactions.",
+        "why_it_matters": "This update enables Claude Code users to rely on consistent and validated response formats, simplifying integration with other tools and workflows.",
+        "how_to_use": [
+          "Use JSON outputs to receive structured data responses from Claude",
+          "Enable strict tool use for validated interactions with specific tools"
+        ]
+      }
+    },
+    {
+      "id": "4b7efbfc",
+      "title": "We announced the deprecation of the Claude Sonnet 3.7 model",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in Model deprecations.",
+      "fetched_at": "2026-06-06T23:52:43.230Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.7 model is being deprecated, meaning it will no longer be supported or maintained.",
+        "why_it_matters": "This change affects Claude Code users who currently rely on the 3.7 model, as they will need to migrate to a newer model to ensure continued support and compatibility.",
+        "how_to_use": [
+          "Review the Model deprecations documentation to understand the timeline and alternatives",
+          "Update existing code to use a supported Claude model version"
+        ]
+      }
+    },
+    {
+      "id": "3ccea7fb",
+      "title": "We've retired the Claude Sonnet 3.5 models",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We've retired the Claude Sonnet 3.5 models. All requests to these models will now return an error.",
+      "fetched_at": "2026-06-06T23:52:43.230Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.5 models have been removed from the Anthropic API and developer platform, resulting in an error for any requests to these models.",
+        "why_it_matters": "This change affects any existing workflows or applications that rely on the Claude Sonnet 3.5 models, which will now need to be updated to use alternative models.",
+        "how_to_use": [
+          "Update API requests to use a supported model version",
+          "Review and modify existing code to handle the error response from retired models"
         ]
       }
     }
