@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-06-08T21:40:37.308Z",
+  "generated_at": "2026-06-08T23:04:39.318Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "e4809b46",
+      "title": "Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers)…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-08T21:57:18Z",
+      "summary": "v2.1.169",
+      "fetched_at": "2026-06-08T23:04:39.719Z",
+      "explanation": {
+        "what_it_is": "The --safe-mode flag and CLAUDE_CODE_SAFE_MODE environment variable allow Claude Code to start with all customizations disabled, including CLAUDE.md, plugins, skills, hooks, and MCP servers.",
+        "why_it_matters": "This flag enables users to troubleshoot issues with their customizations or start with a clean slate, making it easier to identify and resolve problems.",
+        "how_to_use": [
+          "Run Claude Code with the --safe-mode flag to disable all customizations",
+          "Set the CLAUDE_CODE_SAFE_MODE environment variable to enable safe mode"
+        ]
+      }
+    },
+    {
+      "id": "9fd88ad2",
+      "title": "Added /cd command to move a session to a new working directory without breaking the prompt cache mid-session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-08T21:57:18Z",
+      "summary": "v2.1.169",
+      "fetched_at": "2026-06-08T23:04:39.719Z",
+      "explanation": {
+        "what_it_is": "The /cd command allows you to change the working directory of a session without losing the prompt cache, which stores the history of prompts and responses. This command enables you to switch directories mid-session.",
+        "why_it_matters": "This update matters because it lets you navigate to different directories without having to restart the session or lose the context of your previous prompts. This can be particularly useful when working on projects that span multiple directories.",
+        "how_to_use": [
+          "Use /cd followed by a directory path to change the working directory, e.g., /cd ~/projects",
+          "Switch between directories mid-session to access different files or resources without interrupting your workflow"
+        ]
+      }
+    },
+    {
+      "id": "82bdc6aa",
+      "title": "Added a disableBundledSkills setting and CLAUDE_CODE_DISABLE_BUNDLED_SKILLS environment variable to hide bundled skills, workflows, and built-in…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-08T21:57:18Z",
+      "summary": "v2.1.169",
+      "fetched_at": "2026-06-08T23:04:39.719Z",
+      "explanation": {
+        "what_it_is": "The disableBundledSkills setting and CLAUDE_CODE_DISABLE_BUNDLED_SKILLS environment variable allow you to hide bundled skills, workflows, and built-in features in Claude Code.",
+        "why_it_matters": "This update gives Claude Code users more control over their workflow by allowing them to remove clutter and focus on custom skills and workflows.",
+        "how_to_use": [
+          "Set the disableBundledSkills setting to true in your Claude Code configuration to hide bundled skills and workflows.",
+          "Use the CLAUDE_CODE_DISABLE_BUNDLED_SKILLS environment variable to disable bundled skills and workflows at the environment level."
+        ]
+      }
+    },
+    {
+      "id": "3470bb93",
+      "title": "Added a tip suggesting claude agents when running multiple concurrent sessions",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-08T21:57:18Z",
+      "summary": "v2.1.169",
+      "fetched_at": "2026-06-08T23:04:39.719Z",
+      "explanation": {
+        "what_it_is": "A tip that suggests using Claude agents when running multiple sessions at the same time.",
+        "why_it_matters": "This tip helps users optimize their workflow by leveraging Claude agents to manage concurrent sessions more efficiently.",
+        "how_to_use": [
+          "Run multiple concurrent sessions in Claude Code to trigger the tip.",
+          "Follow the suggestion to set up Claude agents for improved session management."
+        ]
+      }
+    },
     {
       "id": "f900a887",
       "title": "Added fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable;…",
@@ -1651,82 +1727,6 @@
         "how_to_use": [
           "Access the new documentation platform at platform.claude.com/docs to find information on using Claude Code",
           "Use the unified platform to switch between documentation and the Claude Console without navigating to separate sites"
-        ]
-      }
-    },
-    {
-      "id": "1f0d999f",
-      "title": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-18-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-11-18T00:00:00.000Z",
-      "summary": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure customers with Azure billing and OAuth authentication. Access the full Messages API including extended thinking, prompt…",
-      "fetched_at": "2026-06-04T22:58:18.004Z",
-      "explanation": {
-        "what_it_is": "Claude models are now available in Microsoft Foundry, allowing Azure customers to access the full Messages API, including extended thinking and prompt capabilities, with Azure billing and OAuth authentication.",
-        "why_it_matters": "This integration enables Azure customers to leverage Claude's capabilities with the convenience of Azure billing and authentication, streamlining the development process.",
-        "how_to_use": [
-          "Use Azure OAuth to authenticate and authorize access to Claude models",
-          "Access the Messages API to integrate Claude's extended thinking and prompt capabilities into Azure-based applications"
-        ]
-      }
-    },
-    {
-      "id": "150c45ac",
-      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-11-14T00:00:00.000Z",
-      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
-      "fetched_at": "2026-06-06T23:52:43.230Z",
-      "explanation": {
-        "what_it_is": "Structured outputs in Claude Code provide guaranteed schema conformance for responses, allowing for JSON outputs with structured data or strict tool use for validated tool interactions.",
-        "why_it_matters": "This update enables Claude Code users to rely on consistent and validated response formats, simplifying integration with other tools and workflows.",
-        "how_to_use": [
-          "Use JSON outputs to receive structured data responses from Claude",
-          "Enable strict tool use for validated interactions with specific tools"
-        ]
-      }
-    },
-    {
-      "id": "4b7efbfc",
-      "title": "We announced the deprecation of the Claude Sonnet 3.7 model",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-10-28T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in Model deprecations.",
-      "fetched_at": "2026-06-06T23:52:43.230Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.7 model is being deprecated, meaning it will no longer be supported or maintained.",
-        "why_it_matters": "This change affects Claude Code users who currently rely on the 3.7 model, as they will need to migrate to a newer model to ensure continued support and compatibility.",
-        "how_to_use": [
-          "Review the Model deprecations documentation to understand the timeline and alternatives",
-          "Update existing code to use a supported Claude model version"
-        ]
-      }
-    },
-    {
-      "id": "3ccea7fb",
-      "title": "We've retired the Claude Sonnet 3.5 models",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-10-28T00:00:00.000Z",
-      "summary": "We've retired the Claude Sonnet 3.5 models. All requests to these models will now return an error.",
-      "fetched_at": "2026-06-06T23:52:43.230Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 3.5 models have been removed from the Anthropic API and developer platform, resulting in an error for any requests to these models.",
-        "why_it_matters": "This change affects any existing workflows or applications that rely on the Claude Sonnet 3.5 models, which will now need to be updated to use alternative models.",
-        "how_to_use": [
-          "Update API requests to use a supported model version",
-          "Review and modify existing code to handle the error response from retired models"
         ]
       }
     }
