@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-08T17:40:53.259Z",
+  "generated_at": "2026-06-08T19:55:57.670Z",
   "item_count": 90,
   "items": [
     {
@@ -563,21 +563,21 @@
       }
     },
     {
-      "id": "f1e3a522",
-      "title": "MCP tunnels is now available as a Research Preview, so you can connect to MCP…",
+      "id": "b15133d6",
+      "title": "MCP tunnels is now available as a research preview, so you can connect to MCP…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-19T00:00:00.000Z",
-      "summary": "MCP tunnels is now available as a Research Preview, so you can connect to MCP servers in your private network.",
-      "fetched_at": "2026-05-19T08:53:06.374Z",
+      "summary": "MCP tunnels is now available as a research preview, so you can connect to MCP servers in your private network.",
+      "fetched_at": "2026-06-08T19:55:59.704Z",
       "explanation": {
-        "what_it_is": "MCP tunnels is a feature that allows connecting to MCP servers within a private network.",
-        "why_it_matters": "This enables Claude Code users to access MCP servers that are not publicly exposed, expanding the range of potential use cases and integrations.",
+        "what_it_is": "MCP tunnels is a research preview feature that allows connecting to MCP servers within a private network.",
+        "why_it_matters": "This feature enables Claude Code users to access MCP servers that are not publicly exposed, expanding the range of potential use cases and integrations.",
         "how_to_use": [
-          "Connect to MCP servers in your private network using the MCP tunnels Research Preview",
-          "Integrate MCP tunnels with your existing private network infrastructure to leverage Claude Code capabilities"
+          "Connect to MCP servers in your private network using the MCP tunnels feature",
+          "Test and evaluate the MCP tunnels feature for potential production use"
         ]
       }
     },
