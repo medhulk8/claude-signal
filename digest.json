@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-09T19:50:54.578Z",
+  "generated_at": "2026-06-09T21:26:07.601Z",
   "item_count": 90,
   "items": [
     {
@@ -133,6 +133,64 @@
         "how_to_use": [
           "Update your Claude API settings to retain data for at least 30 days to continue using Claude Fable 5",
           "Review model-specific data retention requirements to ensure compliance with the new policy"
+        ]
+      }
+    },
+    {
+      "id": "c9cbe4aa",
+      "title": "Claude Managed Agents now supports scheduled deployments, letting you run…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-09T00:00:00.000Z",
+      "summary": "Claude Managed Agents now supports scheduled deployments, letting you run sessions on a cron schedule without managing your own scheduler.",
+      "fetched_at": "2026-06-09T21:26:09.398Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents now allows you to schedule deployments using a cron schedule, eliminating the need to manage your own scheduler.",
+        "why_it_matters": "This update saves you time and effort by automating the process of running sessions at specific intervals, such as daily or weekly, without requiring manual intervention or a separate scheduler.",
+        "how_to_use": [
+          "Set up a cron schedule to run a session daily at 8am",
+          "Configure a weekly session to run every Sunday at 12am"
+        ]
+      }
+    },
+    {
+      "id": "5997747b",
+      "title": "Claude Managed Agents vaults now support environment variable credentials, so…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-09T00:00:00.000Z",
+      "summary": "Claude Managed Agents vaults now support environment variable credentials, so you can securely inject secrets into the agent's sandbox for CLIs, SDKs, and other services that authenticate through…",
+      "fetched_at": "2026-06-09T21:26:09.398Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents vaults can now store credentials as environment variables, allowing for secure injection of secrets into the agent's sandbox.",
+        "why_it_matters": "This change enables Claude Code users to authenticate with CLIs, SDKs, and other services that require credentials, without having to hardcode sensitive information.",
+        "how_to_use": [
+          "Set environment variable credentials in your Managed Agents vault to securely authenticate with external services",
+          "Use the vault to inject secrets into your agent's sandbox for CLIs and SDKs",
+          "Configure your agent to use environment variable credentials for services that require authentication"
+        ]
+      }
+    },
+    {
+      "id": "b115aa87",
+      "title": "The session.thread_* webhook events now include a session_thread_id field…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-09T00:00:00.000Z",
+      "summary": "The session.thread_* webhook events now include a session_thread_id field identifying the multi-agent thread that triggered the event.",
+      "fetched_at": "2026-06-09T21:26:09.398Z",
+      "explanation": {
+        "what_it_is": "The session.thread_* webhook events in the Anthropic API now include a session_thread_id field, which identifies the specific multi-agent thread that triggered the event.",
+        "why_it_matters": "This addition allows Claude Code users to more accurately track and manage conversations across multiple threads, enabling better context and state management in their applications.",
+        "how_to_use": [
+          "Use the session_thread_id field to correlate related events and maintain conversation state",
+          "Update existing webhook event handlers to parse and utilize the new session_thread_id field"
         ]
       }
     },
@@ -408,22 +466,22 @@
       }
     },
     {
-      "id": "2033defa",
-      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
+      "id": "67c1257d",
+      "title": "Claude Managed Agents webhooks, multi-agent orchestration, and self-hosted…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-29T00:00:00.000Z",
-      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
-      "fetched_at": "2026-05-29T13:51:09.486Z",
+      "summary": "Claude Managed Agents webhooks, multi-agent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions…",
+      "fetched_at": "2026-06-09T21:26:09.398Z",
       "explanation": {
-        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
-        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and test agents in isolated environments, all within the AWS ecosystem.",
+        "what_it_is": "Claude Managed Agents now support webhooks, multi-agent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
+        "why_it_matters": "This update enables Claude Code users to automate workflows and integrate Claude Agents with other AWS services, and to manage multiple agents in a single orchestration, streamlining their development and deployment processes.",
         "how_to_use": [
-          "Use webhooks to receive notifications when agent events occur, such as agent updates or failures",
-          "Configure multiagent orchestration to manage complex workflows involving multiple agents",
-          "Set up self-hosted sandboxes to test and validate agent behavior in isolated environments"
+          "Use webhooks to trigger actions in response to Claude Agent events, such as completing a task or encountering an error",
+          "Orchestrate multiple Claude Agents to work together on complex tasks, such as data processing or content generation",
+          "Set up self-hosted sandboxes to test and develop Claude Agents in a controlled, isolated environment"
         ]
       }
     },
@@ -926,22 +984,22 @@
       }
     },
     {
-      "id": "91d9718c",
-      "title": "Multiagent sessions and Outcomes are now in public beta under the standard…",
+      "id": "1f226973",
+      "title": "Multi-agent sessions and Outcomes are now in public beta under the standard…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Multiagent sessions and Outcomes are now in public beta under the standard managed-agents-2026-04-01 beta header.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
+      "summary": "Multi-agent sessions and Outcomes are now in public beta under the standard managed-agents-2026-04-01 beta header.",
+      "fetched_at": "2026-06-09T21:26:09.398Z",
       "explanation": {
-        "what_it_is": "Multiagent sessions and Outcomes are now available in public beta, accessible under the standard managed-agents-2026-04-01 beta header in the Anthropic API.",
-        "why_it_matters": "This update allows Claude Code users to leverage multiagent capabilities and outcome-based functionality in their applications, potentially enabling more complex and interactive workflows.",
+        "what_it_is": "Multi-agent sessions and Outcomes are now available in public beta, allowing developers to create and manage multiple agents and track outcomes in their applications.",
+        "why_it_matters": "This update enables developers to build more complex and interactive applications, such as conversational AI systems or simulations, by managing multiple agents and tracking outcomes.",
         "how_to_use": [
-          "Include the managed-agents-2026-04-01 beta header in API requests to access multiagent sessions and Outcomes",
-          "Use multiagent sessions to simulate conversations between multiple agents in a single API call",
-          "Integrate Outcomes with existing workflows to handle and process the results of multiagent interactions"
+          "Use the managed-agents-2026-04-01 beta header to access multi-agent sessions and Outcomes in your Anthropic API requests",
+          "Create multiple agents with unique roles or personalities to interact with users or each other",
+          "Track outcomes from these interactions to inform decision-making or improve application performance"
         ]
       }
     },
@@ -1670,63 +1728,6 @@
         "how_to_use": [
           "Update existing bookmarks to point to platform.claude.com",
           "Verify that existing links to console.anthropic.com still work as expected"
-        ]
-      }
-    },
-    {
-      "id": "eebca330",
-      "title": "We've retired the Claude Opus 3 model (claude-3-opus-20240229)",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-01-05T00:00:00.000Z",
-      "summary": "We've retired the Claude Opus 3 model (claude-3-opus-20240229). All requests to this model will now return an error. We recommend upgrading to Claude Opus 4.5, which offers significantly improved…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The Claude Opus 3 model (claude-3-opus-20240229) has been retired and is no longer available for use, with all requests to this model now returning an error.",
-        "why_it_matters": "This change requires users to upgrade to Claude Opus 4.5 to continue using the service, which offers improved capabilities compared to the retired model.",
-        "how_to_use": [
-          "Update your API requests to use the Claude Opus 4.5 model instead of claude-3-opus-20240229",
-          "Test your application with the new model to ensure compatibility and take advantage of its improved features"
-        ]
-      }
-    },
-    {
-      "id": "4d87b8e1",
-      "title": "We announced the deprecation of the Claude Haiku 3.5 model",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#december-19-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-12-19T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Haiku 3.5 model. Read more in Model deprecations.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "The Claude Haiku 3.5 model is being deprecated, meaning it will no longer be supported or maintained.",
-        "why_it_matters": "This change affects Claude Code users who currently rely on the Haiku 3.5 model, as they will need to migrate to a different model to ensure continued support and compatibility.",
-        "how_to_use": [
-          "Review the Model deprecations documentation to understand the timeline and alternatives",
-          "Assess your current projects that use the Haiku 3.5 model and plan for migration"
-        ]
-      }
-    },
-    {
-      "id": "911dca35",
-      "title": "Structured outputs now supports Claude Haiku 4.5",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#december-4-2025",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2025-12-04T00:00:00.000Z",
-      "summary": "Structured outputs now supports Claude Haiku 4.5.",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "Structured outputs in Claude Code now support the Claude Haiku 4.5 format, allowing for more organized and formatted output.",
-        "why_it_matters": "This update enables Claude Code users to take advantage of the features and improvements in Claude Haiku 4.5, such as enhanced output formatting and structure.",
-        "how_to_use": [
-          "Use the updated structured outputs to generate more readable and organized Haiku 4.5-formatted text",
-          "Test existing code with the new Haiku 4.5 support to ensure compatibility and take advantage of new features"
         ]
       }
     }
