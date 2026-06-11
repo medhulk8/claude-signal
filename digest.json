@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-11T05:16:33.692Z",
+  "generated_at": "2026-06-11T09:57:25.826Z",
   "item_count": 90,
   "items": [
     {
@@ -424,25 +424,6 @@
           "Use the /btw command to generate a markdown answer",
           "Press 'c' to copy the answer to the clipboard",
           "Paste the answer into another document or application to retain its formatting"
-        ]
-      }
-    },
-    {
-      "id": "d6ba90ba",
-      "title": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup) to fix garbled glyphs",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-02T21:58:22Z",
-      "summary": "v2.1.161",
-      "fetched_at": "2026-06-02T22:52:32.033Z",
-      "explanation": {
-        "what_it_is": "A tip in VSCode that suggests disabling terminal GPU acceleration or running the /terminal-setup command to resolve issues with garbled glyphs in the terminal.",
-        "why_it_matters": "This tip helps Claude Code users in VSCode fix display issues that can hinder their workflow, particularly when working with terminals that have GPU acceleration enabled.",
-        "how_to_use": [
-          "Disable terminal GPU acceleration in VSCode settings to fix garbled glyphs",
-          "Run the /terminal-setup command as an alternative solution to resolve display issues"
         ]
       }
     },
@@ -1729,6 +1710,25 @@
           "Use the Claude API to generate structured outputs for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5 models",
           "Take advantage of expanded schema support to define custom output formats",
           "Leverage improved grammar compilation for more accurate and readable responses"
+        ]
+      }
+    },
+    {
+      "id": "8e40f631",
+      "title": "console.anthropic.com now redirects to platform.claude.com",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-12-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-01-12T00:00:00.000Z",
+      "summary": "console.anthropic.com now redirects to platform.claude.com. The Claude Console has moved to its new home as part of our Claude brand consolidation. Existing bookmarks and links will continue working…",
+      "fetched_at": "2026-06-11T09:57:27.461Z",
+      "explanation": {
+        "what_it_is": "The console.anthropic.com URL now redirects to platform.claude.com, indicating a change in the location of the Claude Console.",
+        "why_it_matters": "This change affects bookmarks and links to the old URL, which will still work due to the redirect, but users should update them to the new URL for future consistency.",
+        "how_to_use": [
+          "Update existing bookmarks to point to platform.claude.com",
+          "Verify that existing links to console.anthropic.com still work as expected"
         ]
       }
     }
