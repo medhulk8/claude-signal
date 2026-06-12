@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-06-12T20:57:05.979Z",
+  "generated_at": "2026-06-12T22:18:20.145Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "53ab6c91",
+      "title": "Added footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-12T21:53:27Z",
+      "summary": "v2.1.176",
+      "fetched_at": "2026-06-12T22:18:20.418Z",
+      "explanation": {
+        "what_it_is": "The footerLinksRegexes setting allows you to specify regular expressions for matching link badges in the footer row of Claude Code, enabling customizable link display.",
+        "why_it_matters": "This setting gives users more control over the appearance of links in the footer, allowing for more tailored and organized displays of relevant information.",
+        "how_to_use": [
+          "Configure the footerLinksRegexes setting via user settings to display specific links in the footer",
+          "Use managed settings to apply the footerLinksRegexes configuration across multiple users or teams"
+        ]
+      }
+    },
     {
       "id": "ad93db7e",
       "title": "Added enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would…",
@@ -1704,26 +1723,6 @@
         "how_to_use": [
           "Use fine-grained tool streaming to optimize data processing pipelines on any model or platform",
           "Leverage this feature to improve the performance of complex workflows by streaming tools and data in a more controlled manner"
-        ]
-      }
-    },
-    {
-      "id": "4e863825",
-      "title": "Structured outputs are now generally available on the Claude API for Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-01-29T00:00:00.000Z",
-      "summary": "Structured outputs are now generally available on the Claude API for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5. GA includes expanded schema support, improved grammar compilation…",
-      "fetched_at": "2026-05-14T08:21:19.732Z",
-      "explanation": {
-        "what_it_is": "Structured outputs are now available on the Claude API, allowing for more organized and formatted responses from Claude models, including expanded schema support and improved grammar compilation.",
-        "why_it_matters": "This update enables Claude Code users to receive more structured and grammatically correct outputs from the API, making it easier to integrate and process the responses in their applications.",
-        "how_to_use": [
-          "Use the Claude API to generate structured outputs for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5 models",
-          "Take advantage of expanded schema support to define custom output formats",
-          "Leverage improved grammar compilation for more accurate and readable responses"
         ]
       }
     }
