@@ -173,10 +173,14 @@ export async function fetchChangelog() {
   $('h3').each((_, el) => {
     const headingText = $(el).text().trim();
 
-    // Parse date — expected format: "February 19, 2026" or "February 19th, 2025"
-    const cleanedDate = headingText.replace(/(\d+)(st|nd|rd|th)/, '$1');
+    // Parse date — extract from heading text via regex (h3 may contain extra UI elements like copy-link buttons)
+    const dateMatch = headingText.match(
+      /(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:st|nd|rd|th)?,?\s+\d{4}/
+    );
+    if (!dateMatch) return; // skip non-date h3s
+    const cleanedDate = dateMatch[0].replace(/(\d+)(st|nd|rd|th)/, '$1');
     const parsedDate = new Date(cleanedDate);
-    if (isNaN(parsedDate.getTime())) return; // skip non-date h3s
+    if (isNaN(parsedDate.getTime())) return;
 
     const published_at = parsedDate.toISOString();
 

@@ -8,7 +8,11 @@
 
 import Groq from 'groq-sdk';
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+let groq;
+function getGroq() {
+  if (!groq) groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+  return groq;
+}
 
 function buildPrompt(item) {
   const sourceLabel =
@@ -89,7 +93,7 @@ No explanation outside JSON.`;
 }
 
 async function explainItem(item) {
-  const response = await groq.chat.completions.create({
+  const response = await getGroq().chat.completions.create({
     model: 'llama-3.3-70b-versatile',
     messages: [{ role: 'user', content: buildPrompt(item) }],
     temperature: 0.2,
