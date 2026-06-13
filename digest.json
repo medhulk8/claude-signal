@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-12T22:18:20.145Z",
+  "generated_at": "2026-06-13T00:09:43.301Z",
   "item_count": 90,
   "items": [
     {
@@ -574,273 +574,6 @@
         "how_to_use": [
           "Check the stop_details field in refusal responses to determine the category of refusal (cyber, bio, or null).",
           "Use the human-readable explanation to log or display informative error messages to users."
-        ]
-      }
-    },
-    {
-      "id": "d0d4a794",
-      "title": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces, including Claude Code and the Messages API.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "The effort parameter in Claude Opus 4.8 now defaults to 'high' for all surfaces, including Claude Code and the Messages API.",
-        "why_it_matters": "This change affects the default behavior of Claude Opus 4.8, potentially altering the output or performance of applications that rely on the default effort parameter setting.",
-        "how_to_use": [
-          "Review existing applications to ensure the new default effort parameter does not impact performance or output",
-          "Explicitly set the effort parameter if a different setting is required for a specific use case"
-        ]
-      }
-    },
-    {
-      "id": "4df24d94",
-      "title": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "The minimum cacheable prompt length for prompt caching on Claude Opus 4.8 is 1,024 tokens, allowing for shorter prompts to be cached compared to previous versions.",
-        "why_it_matters": "This change enables Claude Code users to cache and reuse shorter prompts, which can improve performance and reduce latency in certain workflows.",
-        "how_to_use": [
-          "Use prompt caching for shorter prompts (1,024 tokens or more) to reduce the overhead of repeated queries",
-          "Optimize workflows that rely on caching by taking advantage of the lower token threshold"
-        ]
-      }
-    },
-    {
-      "id": "2bd14674",
-      "title": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.8's adaptive thinking feature triggers reasoning only when a turn requires it, rather than always triggering reasoning.",
-        "why_it_matters": "This change reduces the number of wasted thinking tokens, making the model more efficient at the same effort level compared to Claude Opus 4.7.",
-        "how_to_use": [
-          "Enable adaptive thinking in your Claude Opus 4.8 configuration to optimize thinking token usage.",
-          "Monitor your thinking token usage to see the reduction in waste compared to previous versions."
-        ]
-      }
-    },
-    {
-      "id": "a4e2f106",
-      "title": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.8 can now process images with a resolution of up to 2576 pixels on the long edge, matching the capabilities of Claude Opus 4.7.",
-        "why_it_matters": "This update allows Claude Code users to work with higher-quality images, potentially leading to more accurate image analysis and processing results.",
-        "how_to_use": [
-          "Pass high-resolution images (up to 2576 pixels on the long edge) to Claude Opus 4.8 for processing",
-          "Use the increased image resolution to improve the accuracy of image-based tasks, such as object detection or image classification"
-        ]
-      }
-    },
-    {
-      "id": "c0de9998",
-      "title": "Task budgets now support Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Task budgets now support Claude Opus 4.8.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Task budgets in Claude Code now support the latest version of Claude Opus, specifically version 4.8.",
-        "why_it_matters": "This update allows Claude Code users to utilize the features and improvements of Claude Opus 4.8 when working with task budgets, potentially enabling more efficient and effective task management.",
-        "how_to_use": [
-          "Update your task budgets to take advantage of Claude Opus 4.8 features by specifying the version in your Claude Code configuration.",
-          "Test your existing task budgets with Claude Opus 4.8 to ensure compatibility and identify any potential issues."
-        ]
-      }
-    },
-    {
-      "id": "970b26a9",
-      "title": "The advisor tool now supports Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "The advisor tool now supports Claude Opus 4.8.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "The advisor tool in the Anthropic API developer platform now supports version 4.8 of Claude Opus, allowing for compatibility with the latest features and updates.",
-        "why_it_matters": "This update enables Claude Code users to leverage the newest capabilities of Claude Opus 4.8 within the advisor tool, ensuring they can take advantage of the latest improvements and enhancements.",
-        "how_to_use": [
-          "Update your advisor tool to utilize Claude Opus 4.8 features",
-          "Test your existing workflows with the new version to ensure compatibility"
-        ]
-      }
-    },
-    {
-      "id": "e1eca32e",
-      "title": "Computer use now supports Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Computer use now supports Claude Opus 4.8.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Claude Code now supports Claude Opus version 4.8 for computer use, allowing for compatibility with the latest features and updates of the Opus platform.",
-        "why_it_matters": "This update enables Claude Code users to leverage the newest capabilities and improvements of Claude Opus 4.8, ensuring they have access to the most current and refined tools for their tasks.",
-        "how_to_use": [
-          "Update your Claude Code environment to utilize the latest Opus 4.8 features",
-          "Test your existing workflows with the new Opus version to identify potential improvements or required adjustments"
-        ]
-      }
-    },
-    {
-      "id": "35ef8985",
-      "title": "Fast mode for Claude Opus 4.8 is available as a research preview on the Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Fast mode for Claude Opus 4.8 is available as a research preview on the Claude API only.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Fast mode for Claude Opus 4.8 is a research preview feature that allows for faster processing on the Claude API",
-        "why_it_matters": "This feature enables developers to test and optimize their applications with faster response times, specifically on the Claude API platform",
-        "how_to_use": [
-          "Enable fast mode in your Claude API requests to take advantage of the performance boost",
-          "Test your application's performance with fast mode to identify potential bottlenecks"
-        ]
-      }
-    },
-    {
-      "id": "a07ceac3",
-      "title": "Setting the sampling parameters temperature, top_p, or top_k to a non-default…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Setting the sampling parameters temperature, top_p, or top_k to a non-default value returns a 400 error on Claude Opus 4.8, same as on Claude Opus 4.7. See the migration guide for details.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Setting non-default values for sampling parameters temperature, top_p, or top_k now returns a 400 error in Claude Opus 4.8, similar to Claude Opus 4.7.",
-        "why_it_matters": "This change affects users who previously relied on custom sampling parameters, as they will now need to adjust their code to avoid the 400 error.",
-        "how_to_use": [
-          "Check the migration guide for details on updating your code to comply with the new sampling parameter requirements.",
-          "Use default sampling parameter values to avoid the 400 error."
-        ]
-      }
-    },
-    {
-      "id": "752c6ecd",
-      "title": "In Claude Code, we've expanded Auto mode to more users for long-running tasks",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, we've expanded Auto mode to more users for long-running tasks. See the Claude Code documentation.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Auto mode in Claude Code now supports more users for tasks that take a long time to complete.",
-        "why_it_matters": "This change allows more Claude Code users to leverage Auto mode for lengthy tasks, potentially streamlining their workflow.",
-        "how_to_use": [
-          "Check the Claude Code documentation to see if your account is eligible for the expanded Auto mode",
-          "Try using Auto mode for long-running tasks to see how it can simplify your workflow"
-        ]
-      }
-    },
-    {
-      "id": "b0ca5b69",
-      "title": "In Claude Code, Max plan users now default to fast mode on Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, Max plan users now default to fast mode on Claude Opus 4.8. See the Claude Code documentation.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Max plan users in Claude Code now have fast mode enabled by default when using Claude Opus 4.8, which affects the execution speed of their code.",
-        "why_it_matters": "This change means Max plan users can expect faster execution times for their code on Claude Opus 4.8 without needing to manually enable fast mode.",
-        "how_to_use": [
-          "Verify that your Claude Code project is set up to use Claude Opus 4.8",
-          "Review your code's performance to take full advantage of the default fast mode"
-        ]
-      }
-    },
-    {
-      "id": "0bd175d0",
-      "title": "In Claude Code, Workflows are available as a research preview, letting you…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, Workflows are available as a research preview, letting you define and run multi-step agentic plans. See the Claude Code documentation.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "Workflows in Claude Code allow you to define and run multi-step agentic plans, enabling more complex and sequential task automation.",
-        "why_it_matters": "This update matters because it lets Claude Code users create more sophisticated automated processes, going beyond single-step tasks and enabling more nuanced interactions with the API.",
-        "how_to_use": [
-          "Define a workflow that involves multiple API calls to achieve a specific goal, such as data processing and analysis",
-          "Use the Claude Code documentation to learn about the available workflow features and limitations",
-          "Experiment with running multi-step plans to automate tasks that previously required manual intervention"
-        ]
-      }
-    },
-    {
-      "id": "15c34e30",
-      "title": "We've deprecated fast mode for Claude Opus 4.6, with removal approximately 30…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've deprecated fast mode for Claude Opus 4.6, with removal approximately 30 days after launch. Migrate to fast mode for Claude Opus 4.8 or Claude Opus 4.7. Read more in Fast mode.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "The fast mode for Claude Opus 4.6 has been deprecated, meaning it will be removed approximately 30 days after launch.",
-        "why_it_matters": "Claude Code users need to migrate to fast mode for Claude Opus 4.8 or Claude Opus 4.7 to avoid disruptions after the removal.",
-        "how_to_use": [
-          "Migrate existing workflows to use fast mode for Claude Opus 4.8",
-          "Update code to use fast mode for Claude Opus 4.7 as an alternative"
-        ]
-      }
-    },
-    {
-      "id": "0e3f2c96",
-      "title": "For updates to claude.ai, Cowork, Claude for Microsoft 365, and other Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "For updates to claude.ai, Cowork, Claude for Microsoft 365, and other Claude apps in this release, see the release notes for Claude Apps.",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
-      "explanation": {
-        "what_it_is": "A centralized location for release notes on updates to various Claude applications, including claude.ai, Cowork, and Claude for Microsoft 365.",
-        "why_it_matters": "This change allows developers to find updates for all Claude apps in one place, making it easier to track changes and plan development.",
-        "how_to_use": [
-          "Check the release notes for Claude Apps to stay up-to-date on the latest features and changes.",
-          "Use the release notes to identify potential breaking changes or deprecations that may affect your integration."
         ]
       }
     },
@@ -1708,21 +1441,287 @@
       }
     },
     {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
+      "id": "4e863825",
+      "title": "Structured outputs are now generally available on the Claude API for Claude…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required).",
-      "fetched_at": "2026-06-12T20:57:07.840Z",
+      "published_at": "2026-01-29T00:00:00.000Z",
+      "summary": "Structured outputs are now generally available on the Claude API for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5. GA includes expanded schema support, improved grammar compilation…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
       "explanation": {
-        "what_it_is": "Fine-grained tool streaming allows for more precise control over the flow of tools and data in Claude Code, enabling more efficient and flexible workflows.",
-        "why_it_matters": "This update removes the beta restriction, making fine-grained tool streaming a stable feature available on all models and platforms, which means Claude Code users can now rely on it for production workflows.",
+        "what_it_is": "Structured outputs are now available on the Claude API, allowing for more organized and formatted responses from Claude models, including expanded schema support and improved grammar compilation.",
+        "why_it_matters": "This update enables Claude Code users to receive more structured and grammatically correct output from the API, making it easier to integrate and process the results in their applications.",
         "how_to_use": [
-          "Use fine-grained tool streaming to optimize data processing pipelines on any model or platform",
-          "Leverage this feature to improve the performance of complex workflows by streaming tools and data in a more controlled manner"
+          "Use the Claude API to generate structured outputs for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5 models",
+          "Leverage the expanded schema support to define custom output formats for specific use cases"
+        ]
+      }
+    },
+    {
+      "id": "8e40f631",
+      "title": "console.anthropic.com now redirects to platform.claude.com",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-12-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-01-12T00:00:00.000Z",
+      "summary": "console.anthropic.com now redirects to platform.claude.com. The Claude Console has moved to its new home as part of our Claude brand consolidation. Existing bookmarks and links will continue working…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "The console.anthropic.com URL now redirects to platform.claude.com, indicating a change in the location of the Claude Console as part of the Claude brand consolidation.",
+        "why_it_matters": "This change affects users who have existing bookmarks or links to the old console location, but they will continue to work due to the redirect.",
+        "how_to_use": [
+          "Update your bookmarks to point to platform.claude.com for direct access to the Claude Console",
+          "Verify that existing links and integrations still work as expected after the redirect"
+        ]
+      }
+    },
+    {
+      "id": "eebca330",
+      "title": "We've retired the Claude Opus 3 model (claude-3-opus-20240229)",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-01-05T00:00:00.000Z",
+      "summary": "We've retired the Claude Opus 3 model (claude-3-opus-20240229). All requests to this model will now return an error. We recommend upgrading to Claude Opus 4.5, which offers significantly improved…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "The Claude Opus 3 model (claude-3-opus-20240229) has been retired and is no longer available for use, with all requests to this model now returning an error.",
+        "why_it_matters": "This change requires users to upgrade to Claude Opus 4.5 to continue using the service, which offers improved capabilities compared to the retired model.",
+        "how_to_use": [
+          "Update your API requests to use the Claude Opus 4.5 model instead of claude-3-opus-20240229",
+          "Test your application with the new model to ensure compatibility and take advantage of its improved features"
+        ]
+      }
+    },
+    {
+      "id": "4d87b8e1",
+      "title": "We announced the deprecation of the Claude Haiku 3.5 model",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#december-19-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-12-19T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Haiku 3.5 model. Read more in Model deprecations.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "The Claude Haiku 3.5 model is being deprecated, meaning it will no longer be supported or maintained.",
+        "why_it_matters": "This change affects Claude Code users who currently rely on the Haiku 3.5 model, as they will need to migrate to a different model to ensure continued support and compatibility.",
+        "how_to_use": [
+          "Review the Model deprecations documentation to understand the timeline and alternatives",
+          "Assess your current projects that use the Haiku 3.5 model and plan for migration"
+        ]
+      }
+    },
+    {
+      "id": "911dca35",
+      "title": "Structured outputs now supports Claude Haiku 4.5",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#december-4-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-12-04T00:00:00.000Z",
+      "summary": "Structured outputs now supports Claude Haiku 4.5.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Structured outputs in Claude Code now support the Claude Haiku 4.5 format, allowing for more organized and standardized output.",
+        "why_it_matters": "This update enables Claude Code users to take advantage of the features and improvements in Claude Haiku 4.5, such as enhanced output formatting and structure.",
+        "how_to_use": [
+          "Use the updated structured outputs to generate Haiku 4.5-formatted text in your Claude Code applications",
+          "Test your existing code with the new Haiku 4.5 support to ensure compatibility and take advantage of new features"
+        ]
+      }
+    },
+    {
+      "id": "a64fffb3",
+      "title": "We've launched Claude Opus 4.5, our most intelligent model combining maximum…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-24T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.5, our most intelligent model combining maximum capability with practical performance. Ideal for complex specialized tasks, professional software engineering, and…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.5 is a new model that combines high capability with practical performance, suitable for complex and specialized tasks.",
+        "why_it_matters": "This update matters because it enables Claude Code users to tackle more complex tasks, such as professional software engineering, with improved performance.",
+        "how_to_use": [
+          "Use Claude Opus 4.5 for complex software engineering tasks that require high capability and practical performance",
+          "Leverage the model's capabilities for specialized tasks that require advanced intelligence and performance"
+        ]
+      }
+    },
+    {
+      "id": "0ca7c8f2",
+      "title": "We've launched programmatic tool calling in public beta, allowing Claude to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-24T00:00:00.000Z",
+      "summary": "We've launched programmatic tool calling in public beta, allowing Claude to call tools from within code execution to reduce latency and token usage in multi-tool workflows.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Programmatic tool calling allows Claude to invoke tools from within code execution, reducing the need for sequential tool calls.",
+        "why_it_matters": "This feature reduces latency and token usage in multi-tool workflows, making it more efficient to execute complex tasks.",
+        "how_to_use": [
+          "Call a tool from within a Claude code block to minimize sequential calls",
+          "Use programmatic tool calling to optimize workflows with multiple tool dependencies"
+        ]
+      }
+    },
+    {
+      "id": "29a545d6",
+      "title": "We've launched the tool search tool in public beta, enabling Claude to…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-24T00:00:00.000Z",
+      "summary": "We've launched the tool search tool in public beta, enabling Claude to dynamically discover and load tools on-demand from large tool catalogs.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "The tool search tool is a feature that allows Claude to dynamically discover and load tools on-demand from large tool catalogs.",
+        "why_it_matters": "This feature enables Claude to access a wider range of tools without requiring manual configuration, making it easier to integrate new tools into workflows.",
+        "how_to_use": [
+          "Use the tool search tool to find and load specific tools from a catalog",
+          "Configure Claude to automatically load tools on-demand based on workflow requirements"
+        ]
+      }
+    },
+    {
+      "id": "dbc9703b",
+      "title": "We've launched the effort parameter in public beta for Claude Opus 4.5,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-24T00:00:00.000Z",
+      "summary": "We've launched the effort parameter in public beta for Claude Opus 4.5, allowing you to control token usage by trading off between response thoroughness and efficiency.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "The effort parameter is a new control in Claude Opus 4.5 that allows you to balance response thoroughness and efficiency by adjusting token usage.",
+        "why_it_matters": "This parameter gives Claude Code users more fine-grained control over the trade-off between response quality and computational resources, enabling more efficient use of the API.",
+        "how_to_use": [
+          "Set a low effort value to generate quick, high-level responses for exploratory or low-stakes tasks",
+          "Set a high effort value to produce more detailed, thorough responses for critical or high-stakes tasks"
+        ]
+      }
+    },
+    {
+      "id": "54487083",
+      "title": "We've added client-side compaction to our Python and TypeScript SDKs,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-24-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-24T00:00:00.000Z",
+      "summary": "We've added client-side compaction to our Python and TypeScript SDKs, automatically managing conversation context through summarization when using tool_runner.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Client-side compaction is a feature in the Python and TypeScript SDKs that automatically manages conversation context by summarizing it when using tool_runner.",
+        "why_it_matters": "This change allows Claude Code users to more efficiently manage conversation context, reducing the need for manual context management and potential errors.",
+        "how_to_use": [
+          "Use the tool_runner function in your Python or TypeScript code to automatically summarize conversation context.",
+          "Enable client-side compaction in your SDK configuration to take advantage of automatic context management."
+        ]
+      }
+    },
+    {
+      "id": "85f658a3",
+      "title": "Search result content blocks are now generally available on Amazon Bedrock",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-21-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-21T00:00:00.000Z",
+      "summary": "Search result content blocks are now generally available on Amazon Bedrock. Learn more in Search results.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Search result content blocks are now available for general use on the Amazon Bedrock platform, allowing for more flexible content display in search results.",
+        "why_it_matters": "This update enables Claude Code users to leverage search result content blocks on Amazon Bedrock, potentially improving the organization and presentation of search result content.",
+        "how_to_use": [
+          "Use search result content blocks to customize the display of search results on Amazon Bedrock",
+          "Integrate search result content blocks into existing Claude Code workflows to enhance search result presentation"
+        ]
+      }
+    },
+    {
+      "id": "755df7b8",
+      "title": "We've launched a new documentation platform at platform.claude.com/docs",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-19-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-19T00:00:00.000Z",
+      "summary": "We've launched a new documentation platform at platform.claude.com/docs. Our documentation now lives side by side with the Claude Console, providing a unified developer experience. The previous docs…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "A new documentation platform for Claude Code, hosted at platform.claude.com/docs, where all documentation now resides alongside the Claude Console.",
+        "why_it_matters": "This change streamlines the developer experience by providing a single location for both documentation and console access, making it easier to find information and work with Claude Code.",
+        "how_to_use": [
+          "Access the new documentation platform directly at platform.claude.com/docs",
+          "Use the unified platform to switch between documentation and the Claude Console as needed"
+        ]
+      }
+    },
+    {
+      "id": "1f0d999f",
+      "title": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-18-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-18T00:00:00.000Z",
+      "summary": "We've launched Claude in Microsoft Foundry, bringing Claude models to Azure customers with Azure billing and OAuth authentication. Access the full Messages API including extended thinking, prompt…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Claude models are now available in Microsoft Foundry, allowing Azure customers to access the full Messages API, including extended thinking and prompt capabilities, with Azure billing and OAuth authentication.",
+        "why_it_matters": "This integration enables Azure customers to leverage Claude's capabilities with the convenience of Azure billing and authentication, streamlining the development process.",
+        "how_to_use": [
+          "Access Claude models through the Microsoft Foundry platform",
+          "Use Azure billing to manage costs and OAuth authentication for secure integration"
+        ]
+      }
+    },
+    {
+      "id": "150c45ac",
+      "title": "We've launched structured outputs in public beta, providing guaranteed schema…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-14-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-11-14T00:00:00.000Z",
+      "summary": "We've launched structured outputs in public beta, providing guaranteed schema conformance for Claude's responses. Use JSON outputs for structured data responses or strict tool use for validated tool…",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "Structured outputs in Claude Code provide guaranteed schema conformance for responses, allowing for JSON outputs with structured data or strict tool use for validated tool interactions.",
+        "why_it_matters": "This update enables Claude Code users to rely on consistent and validated data structures in their workflows, simplifying integration and processing of responses.",
+        "how_to_use": [
+          "Use JSON outputs to receive structured data responses from Claude",
+          "Enable strict tool use for validated interactions with specific tools"
+        ]
+      }
+    },
+    {
+      "id": "4b7efbfc",
+      "title": "We announced the deprecation of the Claude Sonnet 3.7 model",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2025",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2025-10-28T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 3.7 model. Read more in Model deprecations.",
+      "fetched_at": "2026-06-13T00:09:44.862Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 3.7 model has been deprecated, meaning it will no longer be supported or maintained.",
+        "why_it_matters": "This change affects Claude Code users who rely on the 3.7 model, as they will need to migrate to a newer model to ensure continued support and compatibility.",
+        "how_to_use": [
+          "Review the Model deprecations documentation to understand the timeline and alternatives",
+          "Update code to use a supported Claude model version"
         ]
       }
     }
