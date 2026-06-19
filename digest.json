@@ -1,8 +1,66 @@
 {
   "version": 1,
-  "generated_at": "2026-06-19T00:17:00.854Z",
+  "generated_at": "2026-06-19T06:03:16.668Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "c7bbe199",
+      "title": "Added a warning when the requested model is deprecated or automatically updated to a newer model, shown on stderr in print mode (-p) and now also…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-19T01:20:50Z",
+      "summary": "v2.1.183",
+      "fetched_at": "2026-06-19T06:03:16.925Z",
+      "explanation": {
+        "what_it_is": "A warning is now displayed when a requested model is deprecated or has been automatically updated to a newer version.",
+        "why_it_matters": "This change helps Claude Code users stay informed about model updates and deprecations, allowing them to adjust their workflows accordingly.",
+        "how_to_use": [
+          "Run Claude Code with the print mode flag (-p) to see the warning on stderr.",
+          "Check the warning to determine if your requested model has been updated or deprecated."
+        ]
+      }
+    },
+    {
+      "id": "9b6ae64d",
+      "title": "Added attribution.sessionUrl setting to omit the claude.ai session link from commits and PRs in web and Remote Control sessions",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-19T01:20:50Z",
+      "summary": "v2.1.183",
+      "fetched_at": "2026-06-19T06:03:16.925Z",
+      "explanation": {
+        "what_it_is": "The attribution.sessionUrl setting allows you to control whether the Claude Code session link is included in commits and pull requests. This setting applies to both web and Remote Control sessions.",
+        "why_it_matters": "This setting gives you more control over the information included in your commits and PRs, which can be useful for maintaining a clean and organized project history.",
+        "how_to_use": [
+          "Set attribution.sessionUrl to false to omit the session link from commits and PRs",
+          "Use this setting in web sessions to keep your project history free of unnecessary links",
+          "Apply this setting in Remote Control sessions to maintain consistency with your web session settings"
+        ]
+      }
+    },
+    {
+      "id": "3ef1c178",
+      "title": "Added /config --help to list all available shorthand keys for /config key=value",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-19T01:20:50Z",
+      "summary": "v2.1.183",
+      "fetched_at": "2026-06-19T06:03:16.925Z",
+      "explanation": {
+        "what_it_is": "The /config command now supports a --help option, which lists all available shorthand keys for configuring key-value pairs.",
+        "why_it_matters": "This update makes it easier for users to discover and use the available shorthand keys, streamlining their configuration workflow.",
+        "how_to_use": [
+          "Run /config --help to view a list of all supported shorthand keys",
+          "Use the listed shorthand keys to configure key-value pairs, e.g., /config k=v"
+        ]
+      }
+    },
     {
       "id": "dbf01dfe",
       "title": "Added /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control",
@@ -1663,63 +1721,6 @@
         "how_to_use": [
           "Use the effort parameter in place of budget_tokens for new models to control thinking depth.",
           "Update existing API calls to utilize the effort parameter for more precise control over model outputs."
-        ]
-      }
-    },
-    {
-      "id": "41612a31",
-      "title": "We've launched the compaction API in beta, providing server-side context…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "We've launched the compaction API in beta, providing server-side context summarization for effectively infinite conversations. Available on Opus 4.6.",
-      "fetched_at": "2026-06-18T14:36:30.368Z",
-      "explanation": {
-        "what_it_is": "The compaction API is a server-side context summarization tool that enables effective conversation summarization, even for very long conversations.",
-        "why_it_matters": "This API allows Claude Code users to handle conversations of virtually any length, without having to manage complex conversation state on the client-side.",
-        "how_to_use": [
-          "Use the compaction API to summarize long conversations and reduce the amount of context that needs to be sent to the client",
-          "Integrate the compaction API with Opus 4.6 to leverage server-side context summarization"
-        ]
-      }
-    },
-    {
-      "id": "6b919a99",
-      "title": "We've introduced data residency controls, allowing you to specify where model…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "We've introduced data residency controls, allowing you to specify where model inference runs with the inference_geo parameter. US-only inference is available at 1.1x pricing for models released after…",
-      "fetched_at": "2026-06-18T14:36:30.368Z",
-      "explanation": {
-        "what_it_is": "Data residency controls allow you to specify the geographic location where model inference runs using the inference_geo parameter.",
-        "why_it_matters": "This change enables Claude Code users to comply with data sovereignty requirements and ensures that model inference is performed within a specific region, such as the US.",
-        "how_to_use": [
-          "Use the inference_geo parameter to specify the region where model inference should run, for example 'US' for US-only inference.",
-          "Note that US-only inference is available at 1.1x pricing for models released after the introduction of this feature."
-        ]
-      }
-    },
-    {
-      "id": "85884ade",
-      "title": "The 1M token context window is now available in beta for Claude Opus 4.6, in…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "The 1M token context window is now available in beta for Claude Opus 4.6, in addition to Sonnet 4.5 and Sonnet 4. Long context pricing applies to requests exceeding 200k input tokens.",
-      "fetched_at": "2026-06-18T14:36:30.368Z",
-      "explanation": {
-        "what_it_is": "The 1M token context window is a feature that allows Claude Opus 4.6 to process and understand longer input sequences, up to 1 million tokens. This increases the amount of text that can be considered when generating responses.",
-        "why_it_matters": "This change enables Claude Code users to work with larger documents or longer conversations, allowing for more accurate and informative responses. However, requests exceeding 200k input tokens will incur long context pricing.",
-        "how_to_use": [
-          "Use the 1M token context window to process large documents, such as books or research papers, and generate summaries or analyses.",
-          "Apply this feature to long conversations or dialogues to better understand context and generate more accurate responses."
         ]
       }
     }
