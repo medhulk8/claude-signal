@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-18T22:48:01.283Z",
+  "generated_at": "2026-06-19T00:17:00.854Z",
   "item_count": 90,
   "items": [
     {
@@ -172,6 +172,44 @@
           "Open the Account & usage dialog (/usage) to view detailed usage attribution",
           "Use the per-skill/agent/plugin/MCP usage data to identify which components are driving usage",
           "Analyze cache misses and long context usage to optimize your workflow"
+        ]
+      }
+    },
+    {
+      "id": "e517f6d8",
+      "title": "The code execution tool now supports code_execution_20260521, which discloses…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-11T00:00:00.000Z",
+      "summary": "The code execution tool now supports code_execution_20260521, which discloses the 90-second per-cell execution time limit in the tool description so Claude can budget long-running cells. No beta…",
+      "fetched_at": "2026-06-19T00:17:03.047Z",
+      "explanation": {
+        "what_it_is": "The code execution tool now supports a feature that discloses the 90-second per-cell execution time limit, allowing Claude to manage long-running cells more effectively.",
+        "why_it_matters": "This update helps Claude Code users avoid unexpected timeouts and plan their code execution more efficiently by providing clear information about the execution time limits.",
+        "how_to_use": [
+          "Check the tool description for the 90-second per-cell execution time limit when planning code execution",
+          "Use this information to budget time for long-running cells and avoid timeouts"
+        ]
+      }
+    },
+    {
+      "id": "e8d5996a",
+      "title": "The web search tool and web fetch tool now support web_search_20260318 and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-11T00:00:00.000Z",
+      "summary": "The web search tool and web fetch tool now support web_search_20260318 and web_fetch_20260318, adding a response_inclusion parameter to drop consumed result blocks from the API response for agentic…",
+      "fetched_at": "2026-06-19T00:17:03.047Z",
+      "explanation": {
+        "what_it_is": "The web search and web fetch tools in the Anthropic API now support two new models, web_search_20260318 and web_fetch_20260318, which include a response_inclusion parameter to control the inclusion of consumed result blocks in the API response.",
+        "why_it_matters": "This update allows Claude Code users to have more control over the output of web searches and fetches, potentially reducing unnecessary data and improving workflow efficiency.",
+        "how_to_use": [
+          "Use the response_inclusion parameter to drop consumed result blocks from API responses for more efficient data processing",
+          "Test the new web_search_20260318 and web_fetch_20260318 models to see if they improve search and fetch results for your specific use cases"
         ]
       }
     },
@@ -1682,45 +1720,6 @@
         "how_to_use": [
           "Use the 1M token context window to process large documents, such as books or research papers, and generate summaries or analyses.",
           "Apply this feature to long conversations or dialogues to better understand context and generate more accurate responses."
-        ]
-      }
-    },
-    {
-      "id": "ce773463",
-      "title": "Fine-grained tool streaming is now generally available on all models and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#february-5-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-02-05T00:00:00.000Z",
-      "summary": "Fine-grained tool streaming is now generally available on all models and platforms (no beta header required).",
-      "fetched_at": "2026-06-18T20:02:46.365Z",
-      "explanation": {
-        "what_it_is": "Fine-grained tool streaming allows for more precise control over tool usage in Claude Code, enabling more efficient and targeted use of tools.",
-        "why_it_matters": "This update removes the beta restriction, making fine-grained tool streaming a stable feature available on all models and platforms, which can lead to more reliable and consistent workflow outcomes.",
-        "how_to_use": [
-          "Use fine-grained tool streaming to selectively enable or disable tools for specific tasks or models",
-          "Leverage this feature to optimize tool usage and reduce unnecessary overhead in your Claude Code workflows"
-        ]
-      }
-    },
-    {
-      "id": "4e863825",
-      "title": "Structured outputs are now generally available on the Claude API for Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#january-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-01-29T00:00:00.000Z",
-      "summary": "Structured outputs are now generally available on the Claude API for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5. GA includes expanded schema support, improved grammar compilation…",
-      "fetched_at": "2026-06-18T14:36:30.368Z",
-      "explanation": {
-        "what_it_is": "Structured outputs are now available on the Claude API, allowing for more organized and formatted responses from Claude models, including expanded schema support and improved grammar compilation.",
-        "why_it_matters": "This update enables Claude Code users to receive more structured and readable output from the API, making it easier to integrate and process the results in their applications.",
-        "how_to_use": [
-          "Use the Claude API to generate structured outputs for Claude Sonnet 4.5, Claude Opus 4.5, and Claude Haiku 4.5 models",
-          "Take advantage of expanded schema support to define custom output formats",
-          "Leverage improved grammar compilation for more accurate and consistent output"
         ]
       }
     }
