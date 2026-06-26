@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-06-26T20:24:00.380Z",
+  "generated_at": "2026-06-26T21:58:21.209Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f3949e16",
+      "title": "Added CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-26T21:29:42Z",
+      "summary": "v2.1.195",
+      "fetched_at": "2026-06-26T21:58:21.608Z",
+      "explanation": {
+        "what_it_is": "A new environment variable CLAUDE_CODE_DISABLE_MOUSE_CLICKS that prevents mouse clicks, drags, and hovers from interfering with Claude Code in fullscreen mode, while still allowing wheel scrolling.",
+        "why_it_matters": "This update matters because it allows users to work in fullscreen mode without accidental mouse interactions disrupting their workflow, making it particularly useful for presentations or focused coding sessions.",
+        "how_to_use": [
+          "Set CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse interactions in fullscreen mode",
+          "Use wheel scroll to navigate through code while mouse clicks and drags are disabled"
+        ]
+      }
+    },
     {
       "id": "de39ba44",
       "title": "We've raised rate limits across the Claude API",
@@ -462,25 +481,6 @@
         "how_to_use": [
           "Set the CLAUDE_CLIENT_PRESENCE_FILE environment variable to point to a marker file on your machine, such as a hidden file in your home directory.",
           "Ensure the marker file is updated or touched when you're actively using the machine, so that Claude Code can detect your presence and suppress mobile push notifications."
-        ]
-      }
-    },
-    {
-      "id": "357649cf",
-      "title": "Added Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-15T21:35:55Z",
-      "summary": "v2.1.178",
-      "fetched_at": "2026-06-15T21:40:20.809Z",
-      "explanation": {
-        "what_it_is": "The Tool(param:value) syntax allows you to specify permission rules based on a tool's input parameters, with support for wildcard matching using the * character.",
-        "why_it_matters": "This update enables more fine-grained control over tool permissions, allowing you to block or allow specific tools based on their input parameters.",
-        "how_to_use": [
-          "Use Agent(model:opus) to block the Opus model",
-          "Use Tool(param:*) to match any tool with a specific parameter"
         ]
       }
     },
