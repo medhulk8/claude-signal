@@ -1,8 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-06-26T18:19:04.499Z",
+  "generated_at": "2026-06-26T20:24:00.380Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "de39ba44",
+      "title": "We've raised rate limits across the Claude API",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-26-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-26T00:00:00.000Z",
+      "summary": "We've raised rate limits across the Claude API. Claude Sonnet and Claude Haiku rate limits now match Claude Opus at every usage tier, and usage tiers have been consolidated into three: Start, Build,…",
+      "fetched_at": "2026-06-26T20:24:03.037Z",
+      "explanation": {
+        "what_it_is": "The Claude API has increased its rate limits, allowing for more requests across all usage tiers. This change applies to all Claude models, including Claude Sonnet, Claude Haiku, and Claude Opus.",
+        "why_it_matters": "This update enables Claude Code users to make more API requests without hitting rate limits, reducing the need for workarounds or tier upgrades. It simplifies the usage tiers into three categories: Start, Build, and another unnamed tier.",
+        "how_to_use": [
+          "Check the updated rate limits for your usage tier to determine how many more requests you can make",
+          "Review your existing API integrations to identify opportunities to take advantage of the increased rate limits",
+          "Plan for potential increases in API usage without worrying about hitting previous rate limits"
+        ]
+      }
+    },
     {
       "id": "132409c0",
       "title": "Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only…",
@@ -115,6 +135,25 @@
         "how_to_use": [
           "Run background shell commands as usual, and Claude Code will automatically reap memory when they are idle.",
           "Disable this feature by setting the environment variable CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 if needed."
+        ]
+      }
+    },
+    {
+      "id": "aa16d049",
+      "title": "We've deprecated fast mode for Claude Opus 4.7, with removal on July 24, 2026",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-25-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-25T00:00:00.000Z",
+      "summary": "We've deprecated fast mode for Claude Opus 4.7, with removal on July 24, 2026. After removal, requests to claude-opus-4-7 with speed: \"fast\" will return an error. Migrate to fast mode for Claude Opus…",
+      "fetched_at": "2026-06-26T20:24:03.037Z",
+      "explanation": {
+        "what_it_is": "The 'fast mode' option for Claude Opus 4.7 has been deprecated and will be removed on July 24, 2026, after which requests with 'speed: fast' will return an error.",
+        "why_it_matters": "Claude Code users need to migrate to a different version of fast mode to avoid errors and ensure uninterrupted service after the removal date.",
+        "how_to_use": [
+          "Migrate to fast mode for a newer version of Claude Opus before July 24, 2026",
+          "Update API requests to remove 'speed: fast' for Claude Opus 4.7 after the removal date"
         ]
       }
     },
@@ -1687,44 +1726,6 @@
         "how_to_use": [
           "Use the ant CLI to manage API resources and version them in YAML files",
           "Integrate the ant CLI with Claude Code for seamless development and testing"
-        ]
-      }
-    },
-    {
-      "id": "919a8889",
-      "title": "We announced Claude Mythos Preview is available as a gated research preview for…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-07T00:00:00.000Z",
-      "summary": "We announced Claude Mythos Preview is available as a gated research preview for defensive cybersecurity work as part of Project Glasswing. Access is invitation-only.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Mythos Preview is a gated research preview for defensive cybersecurity work, available as part of Project Glasswing.",
-        "why_it_matters": "This preview provides Claude Code users with access to a new set of capabilities for defensive cybersecurity, but access is limited to invitation-only.",
-        "how_to_use": [
-          "Apply for invitation-only access to explore defensive cybersecurity capabilities",
-          "Utilize Claude Mythos Preview as part of Project Glasswing for specific research projects"
-        ]
-      }
-    },
-    {
-      "id": "284a3d70",
-      "title": "The Messages API is now available on Amazon Bedrock as a research preview",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-07T00:00:00.000Z",
-      "summary": "The Messages API is now available on Amazon Bedrock as a research preview. The new Claude in Amazon Bedrock endpoint at /anthropic/v1/messages uses the same request shape as the first-party Claude…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The Messages API is now available on Amazon Bedrock, allowing Claude Code users to integrate the Messages API with Amazon Bedrock services. The endpoint at /anthropic/v1/messages uses the same request shape as the first-party Claude API.",
-        "why_it_matters": "This update enables Claude Code users to leverage Amazon Bedrock's capabilities in their applications, expanding the potential use cases for the Messages API. It also provides a consistent API experience across different platforms.",
-        "how_to_use": [
-          "Use the /anthropic/v1/messages endpoint to send messages in Amazon Bedrock, following the same request format as the first-party Claude API",
-          "Integrate the Messages API with other Amazon Bedrock services to build more comprehensive applications"
         ]
       }
     }
