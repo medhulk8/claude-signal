@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-06-29T22:01:07.343Z",
+  "generated_at": "2026-06-29T23:47:39.816Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "2082aecd",
+      "title": "Added support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-29T23:27:32Z",
+      "summary": "v2.1.196",
+      "fetched_at": "2026-06-29T23:47:39.966Z",
+      "explanation": {
+        "what_it_is": "Organization default models can now be set by admins in the org console, which are then labeled as 'Org default' or 'Role default' in the /model section.",
+        "why_it_matters": "This change allows admins to establish a standard model for their organization, streamlining the workflow for users who can then easily identify and use the default model.",
+        "how_to_use": [
+          "Admins can set the organization default model in the org console.",
+          "Users can identify the default model as 'Org default' or 'Role default' in the /model section."
+        ]
+      }
+    },
+    {
+      "id": "e2f0d4ee",
+      "title": "Added readable default names for sessions at start, making them easier to identify and message",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-29T23:27:32Z",
+      "summary": "v2.1.196",
+      "fetched_at": "2026-06-29T23:47:39.966Z",
+      "explanation": {
+        "what_it_is": "Claude Code now automatically assigns readable default names to sessions when they start, making it easier to distinguish between them.",
+        "why_it_matters": "This change simplifies session identification and messaging, reducing the need for manual naming and potential confusion.",
+        "how_to_use": [
+          "Start a new session to see the automatically assigned default name",
+          "Use the default name to easily identify and message specific sessions"
+        ]
+      }
+    },
+    {
+      "id": "bb922d38",
+      "title": "Added clickable file attachments in chat — Cmd/Ctrl-click reveals the file in Finder/Explorer",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-06-29T23:27:32Z",
+      "summary": "v2.1.196",
+      "fetched_at": "2026-06-29T23:47:39.966Z",
+      "explanation": {
+        "what_it_is": "Clickable file attachments in chat allow you to access the attached files directly from the chat window. Cmd/Ctrl-clicking on an attachment reveals the file in Finder on Mac or Explorer on Windows.",
+        "why_it_matters": "This update streamlines file access and management within Claude Code, saving time when working with attachments in chat conversations. It eliminates the need to download or manually locate files.",
+        "how_to_use": [
+          "Click on a file attachment in chat to download or open it",
+          "Cmd/Ctrl-click on an attachment to reveal its location in Finder/Explorer"
+        ]
+      }
+    },
+    {
+      "id": "97c8fbc5",
+      "title": "We've removed fast mode for Claude Opus 4.6",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-29-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-29T00:00:00.000Z",
+      "summary": "We've removed fast mode for Claude Opus 4.6. Requests to claude-opus-4-6 with speed: \"fast\" no longer run at fast speed or premium pricing: they run at standard speed, are billed at standard rates,…",
+      "fetched_at": "2026-06-29T23:47:40.699Z",
+      "explanation": {
+        "what_it_is": "The 'fast mode' option has been removed for Claude Opus 4.6, meaning requests to this model will now run at standard speed regardless of the speed parameter set.",
+        "why_it_matters": "This change affects billing, as requests that previously would have been billed at premium rates for fast mode will now be billed at standard rates, potentially altering cost estimates for Claude Code users.",
+        "how_to_use": [
+          "Update your code to remove 'speed: fast' parameters for Claude Opus 4.6 requests, as they will have no effect.",
+          "Review your billing expectations, as the removal of fast mode and its associated premium pricing may reduce costs."
+        ]
+      }
+    },
     {
       "id": "f3949e16",
       "title": "Added CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll",
@@ -1649,83 +1725,6 @@
         "how_to_use": [
           "Use the xhigh effort level for long-running coding tasks that require a large number of tokens, such as code generation or complex data processing.",
           "Select xhigh for tasks where the high effort level is insufficient but the max effort level would be too resource-intensive."
-        ]
-      }
-    },
-    {
-      "id": "0fc54559",
-      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-14T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The deprecation of the Claude Sonnet 4 and Claude Opus 4 models, specifically the claud-sonnet-4-20250514 and claud-opus-4-20250514 versions, which will be retired from the Claude API.",
-        "why_it_matters": "This change requires users to update their code to use alternative models before June 15, to avoid disruptions to their applications.",
-        "how_to_use": [
-          "Update your API requests to use a non-deprecated model, such as claud-sonnet-5 or claud-opus-5",
-          "Review your existing code to identify and replace any references to the deprecated models"
-        ]
-      }
-    },
-    {
-      "id": "a6b71809",
-      "title": "We've launched the advisor tool in public beta",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-09T00:00:00.000Z",
-      "summary": "We've launched the advisor tool in public beta. Pair a faster executor model with a higher-intelligence advisor model that provides strategic guidance mid-generation, so long-horizon agentic…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The advisor tool is a feature that pairs a faster executor model with a higher-intelligence advisor model, providing strategic guidance mid-generation for long-horizon tasks.",
-        "why_it_matters": "This tool allows Claude Code users to generate more coherent and effective outputs, especially for tasks that require planning and strategic decision-making.",
-        "how_to_use": [
-          "Use the advisor tool to guide the generation of content that requires a high-level understanding of the task, such as writing articles or creating dialogues.",
-          "Experiment with the advisor tool to improve the performance of your existing models on long-horizon tasks, such as text summarization or question-answering."
-        ]
-      }
-    },
-    {
-      "id": "7a98ba10",
-      "title": "We've launched Claude Managed Agents in public beta, a fully managed agent…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-08T00:00:00.000Z",
-      "summary": "We've launched Claude Managed Agents in public beta, a fully managed agent harness for running Claude as an autonomous agent with secure sandboxing, built-in tools, and server-sent event streaming.…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents is a fully managed agent harness that allows running Claude as an autonomous agent with secure sandboxing and built-in tools.",
-        "why_it_matters": "This update enables Claude Code users to deploy and manage autonomous agents more easily, with built-in security and streaming capabilities.",
-        "how_to_use": [
-          "Use Claude Managed Agents to deploy autonomous agents with secure sandboxing",
-          "Leverage built-in tools for agent management and monitoring",
-          "Utilize server-sent event streaming for real-time agent output"
-        ]
-      }
-    },
-    {
-      "id": "8141029c",
-      "title": "We've launched the ant CLI, a command-line client for the Claude API that…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-08T00:00:00.000Z",
-      "summary": "We've launched the ant CLI, a command-line client for the Claude API that enables faster interaction with the Claude API, native integration with Claude Code, and versioning of API resources in YAML…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The ant CLI is a command-line client for the Claude API, allowing users to interact with the API directly from their terminal.",
-        "why_it_matters": "This enables faster interaction with the Claude API and native integration with Claude Code, streamlining workflows and development processes.",
-        "how_to_use": [
-          "Use the ant CLI to manage API resources and version them in YAML files",
-          "Integrate the ant CLI with Claude Code for seamless development and testing"
         ]
       }
     }
