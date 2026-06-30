@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-30T19:26:36.604Z",
+  "generated_at": "2026-06-30T21:20:21.712Z",
   "item_count": 90,
   "items": [
     {
@@ -19,6 +19,101 @@
         "how_to_use": [
           "Use the Claude Sonnet 5 model in your applications through the Anthropic API to take advantage of the introductory pricing.",
           "Update your existing Sonnet model integrations to use Claude Sonnet 5 for potential performance improvements."
+        ]
+      }
+    },
+    {
+      "id": "50998744",
+      "title": "Claude Managed Agents session event streams now support event deltas",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-30T00:00:00.000Z",
+      "summary": "Claude Managed Agents session event streams now support event deltas. Opt in with the event_deltas[] query parameter on GET /v1/sessions/{session_id}/events/stream. The event_start and event_delta…",
+      "fetched_at": "2026-06-30T21:20:22.754Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents session event streams can now provide event deltas, which are the changes between events, rather than the full event data. This is enabled by adding the event_deltas query parameter to the GET /v1/sessions/{session_id}/events/stream API call.",
+        "why_it_matters": "This change allows for more efficient processing of event streams, as only the changes between events need to be transmitted and processed. This can reduce the amount of data that needs to be handled, making it easier to work with large event streams.",
+        "how_to_use": [
+          "Add the event_deltas query parameter to the GET /v1/sessions/{session_id}/events/stream API call to opt in to event deltas.",
+          "Use the event_start and event_delta fields in the response to process the event deltas."
+        ]
+      }
+    },
+    {
+      "id": "b51bd454",
+      "title": "Listing sessions for Claude Managed Agents now supports backward pagination",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-30T00:00:00.000Z",
+      "summary": "Listing sessions for Claude Managed Agents now supports backward pagination. GET /v1/sessions returns a prev_page cursor alongside next_page; pass it as the page parameter to return to the previous…",
+      "fetched_at": "2026-06-30T21:20:22.754Z",
+      "explanation": {
+        "what_it_is": "The ability to list sessions for Claude Managed Agents now includes backward pagination, allowing you to retrieve previous pages of results.",
+        "why_it_matters": "This update enables Claude Code users to more easily navigate and retrieve large lists of sessions, without having to start from the beginning every time.",
+        "how_to_use": [
+          "Use the prev_page cursor returned by GET /v1/sessions to fetch the previous page of results by passing it as the page parameter."
+        ]
+      }
+    },
+    {
+      "id": "54b6c6fd",
+      "title": "When creating a Claude Managed Agents session, you can now override the agent's…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-30T00:00:00.000Z",
+      "summary": "When creating a Claude Managed Agents session, you can now override the agent's configuration for that session. Pass agent with type: \"agent_with_overrides\" to replace the model, system prompt,…",
+      "fetched_at": "2026-06-30T21:20:22.754Z",
+      "explanation": {
+        "what_it_is": "The ability to override an agent's configuration when creating a Claude Managed Agents session, allowing for customization of the model and system prompt on a per-session basis.",
+        "why_it_matters": "This update gives Claude Code users more control over their agent sessions, enabling them to tailor the agent's behavior to specific use cases or experiments without modifying the underlying agent configuration.",
+        "how_to_use": [
+          "Pass 'agent' with type: 'agent_with_overrides' to replace the model",
+          "Use the 'agent_with_overrides' type to customize the system prompt for a session"
+        ]
+      }
+    },
+    {
+      "id": "3ed8133b",
+      "title": "Claude Managed Agents vaults now support an injection_location setting on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-30T00:00:00.000Z",
+      "summary": "Claude Managed Agents vaults now support an injection_location setting on environment variable credentials (the Environment variable tab). It controls whether the credential's value is substituted,…",
+      "fetched_at": "2026-06-30T21:20:22.754Z",
+      "explanation": {
+        "what_it_is": "The injection_location setting in Claude Managed Agents vaults controls where environment variable credentials are substituted, allowing for more flexible credential management.",
+        "why_it_matters": "This update gives Claude Code users more control over how credentials are handled in their environments, making it easier to manage sensitive information.",
+        "how_to_use": [
+          "Set injection_location to 'header' to substitute credentials in HTTP request headers",
+          "Set injection_location to 'env' to substitute credentials as environment variables"
+        ]
+      }
+    },
+    {
+      "id": "72a4c230",
+      "title": "Webhooks for Claude Managed Agents now cover the agent, deployment, and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-30T00:00:00.000Z",
+      "summary": "Webhooks for Claude Managed Agents now cover the agent, deployment, and deployment run lifecycle. You can react to a newly published agent version, a paused deployment, or a failed scheduled run…",
+      "fetched_at": "2026-06-30T21:20:22.754Z",
+      "explanation": {
+        "what_it_is": "Webhooks for Claude Managed Agents now provide notifications for events across the agent, deployment, and deployment run lifecycle, including new agent versions, paused deployments, and failed scheduled runs.",
+        "why_it_matters": "This update allows Claude Code users to automate reactions to specific events in their agent and deployment workflows, enabling more dynamic and responsive management of their applications.",
+        "how_to_use": [
+          "Set up a webhook to trigger an alert when a new agent version is published",
+          "Use a webhook to pause dependent deployments when a scheduled run fails",
+          "Configure a webhook to notify your team when a deployment is paused"
         ]
       }
     },
@@ -1629,101 +1724,6 @@
         "how_to_use": [
           "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code.",
           "Take advantage of the same pricing as Opus 4.6 to integrate Opus 4.7 into your existing workflows and applications."
-        ]
-      }
-    },
-    {
-      "id": "9bdf5c12",
-      "title": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers. Claude Opus 4.7 and Claude Haiku 4.5 are available self-serve from the Bedrock console through the Messages API endpoint at…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude in Amazon Bedrock is a self-serve integration that allows customers to access Claude Opus 4.7 and Claude Haiku 4.5 through the Messages API endpoint in the Bedrock console.",
-        "why_it_matters": "This change makes Claude available to all Amazon Bedrock customers, simplifying access to these models without requiring special arrangements.",
-        "how_to_use": [
-          "Access Claude Opus 4.7 and Claude Haiku 4.5 through the Messages API endpoint in the Bedrock console",
-          "Use the self-serve integration to start using Claude models in your Amazon Bedrock workflows"
-        ]
-      }
-    },
-    {
-      "id": "384986bb",
-      "title": "We've launched task budgets in beta on Claude Opus 4.7",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've launched task budgets in beta on Claude Opus 4.7. Give Claude an advisory token budget for a full agentic loop (thinking, tool calls, tool results, and output) and the model sees a running…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Task budgets allow you to set an advisory token budget for a full agentic loop in Claude Opus 4.7, giving you more control over the model's resource usage.",
-        "why_it_matters": "This feature enables more efficient use of resources and allows for more complex tasks to be completed within a specified budget, making it easier to manage and optimize your workflows.",
-        "how_to_use": [
-          "Set a task budget for a specific agentic loop to limit the number of tokens used",
-          "Monitor the model's token usage and adjust the budget as needed to optimize performance"
-        ]
-      }
-    },
-    {
-      "id": "88a61ae6",
-      "title": "Claude Opus 4.7 supports high-resolution image input, raising the maximum image…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "Claude Opus 4.7 supports high-resolution image input, raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.7 now accepts high-resolution images with a maximum resolution of 2576 pixels on the long edge, up from 1568 pixels.",
-        "why_it_matters": "This change allows Claude Code users to process higher-quality images, particularly useful for tasks involving detailed screenshots or high-resolution computer-generated images.",
-        "how_to_use": [
-          "Pass high-resolution screenshots to Claude Opus 4.7 for more accurate image analysis",
-          "Use the increased resolution limit to process detailed computer-generated images"
-        ]
-      }
-    },
-    {
-      "id": "81b6717f",
-      "title": "We've added the xhigh effort level on Claude Opus 4.7",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've added the xhigh effort level on Claude Opus 4.7. xhigh sits between high and max and is tuned for long-running agentic and coding tasks (over 30 minutes) with token budgets in the millions. No…",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "The xhigh effort level is a new setting on Claude Opus 4.7 that offers a balance between the high and max effort levels, optimized for tasks that require over 30 minutes to complete and have large token budgets.",
-        "why_it_matters": "This addition provides Claude Code users with more fine-grained control over the trade-off between computation time and resource usage, particularly for lengthy and complex tasks like agentic and coding tasks.",
-        "how_to_use": [
-          "Use the xhigh effort level for long-running coding tasks that require a large number of tokens, such as code generation or complex data processing.",
-          "Select xhigh for tasks where the high effort level is insufficient but the max effort level would be too resource-intensive."
-        ]
-      }
-    },
-    {
-      "id": "0fc54559",
-      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-14T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
-      "fetched_at": "2026-06-30T19:26:37.477Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models are being deprecated, with the specific models being claud-sonnet-4-20250514 and claud-opus-4-20250514.",
-        "why_it_matters": "This deprecation means that Claude Code users will no longer be able to use these models after the scheduled retirement date of June 15, and should plan to migrate to alternative models.",
-        "how_to_use": [
-          "Review your current Claude Code projects to identify any usage of the deprecated models",
-          "Update your code to use alternative models before the retirement date to avoid disruptions"
         ]
       }
     }
