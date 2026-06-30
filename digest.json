@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-06-30T17:44:13.351Z",
+  "generated_at": "2026-06-30T19:26:36.604Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "241417a9",
+      "title": "We've launched Claude Sonnet 5 (claude-sonnet-5), the next generation of our…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-30T00:00:00.000Z",
+      "summary": "We've launched Claude Sonnet 5 (claude-sonnet-5), the next generation of our Sonnet model family, at introductory pricing of $2 / $10 per MTok through August 31, 2026 (standard $3 / $15 thereafter).…",
+      "fetched_at": "2026-06-30T19:26:37.477Z",
+      "explanation": {
+        "what_it_is": "Claude Sonnet 5 is the next generation of the Sonnet model family, available through the Anthropic API and developer platform.",
+        "why_it_matters": "Claude Sonnet 5 offers introductory pricing of $2/$10 per MTok until August 31, 2026, which can reduce costs for developers using the model.",
+        "how_to_use": [
+          "Use the Claude Sonnet 5 model in your applications through the Anthropic API to take advantage of the introductory pricing.",
+          "Update your existing Sonnet model integrations to use Claude Sonnet 5 for potential performance improvements."
+        ]
+      }
+    },
     {
       "id": "2082aecd",
       "title": "Added support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you…",
@@ -426,6 +445,25 @@
       }
     },
     {
+      "id": "cf4007ae",
+      "title": "MCP tunnels (research preview): the management API moved from…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-22-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-22T00:00:00.000Z",
+      "summary": "MCP tunnels (research preview): the management API moved from /v1/organizations/tunnels on the Admin API to /v1/tunnels on the Claude API. The new surface uses the anthropic-beta:…",
+      "fetched_at": "2026-06-30T19:26:37.477Z",
+      "explanation": {
+        "what_it_is": "The management API for MCP tunnels has been relocated from the Admin API to the Claude API, changing the endpoint from /v1/organizations/tunnels to /v1/tunnels.",
+        "why_it_matters": "This change affects how developers interact with the API for managing MCP tunnels, requiring updates to API calls to use the new endpoint.",
+        "how_to_use": [
+          "Update API requests to use the new /v1/tunnels endpoint on the Claude API",
+          "Ensure API calls include the anthropic-beta header to access the new API surface"
+        ]
+      }
+    },
+    {
       "id": "c7bbe199",
       "title": "Added a warning when the requested model is deprecated or automatically updated to a newer model, shown on stderr in print mode (-p) and now also…",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
@@ -499,64 +537,6 @@
         "how_to_use": [
           "Update your SDK to the latest version to start using code_execution_20260120",
           "Run your REPL sessions with the new version to take advantage of state persistence"
-        ]
-      }
-    },
-    {
-      "id": "dbf01dfe",
-      "title": "Added /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-17T22:07:41Z",
-      "summary": "v2.1.181",
-      "fetched_at": "2026-06-17T23:12:27.296Z",
-      "explanation": {
-        "what_it_is": "The /config key=value syntax allows you to set any Claude Code setting directly from the prompt. This syntax can be used in interactive mode, with the -p flag, or in Remote Control.",
-        "why_it_matters": "This update gives you more flexibility and control over your Claude Code settings, as you can now change them on the fly without having to navigate through menus or configuration files. This can streamline your workflow and reduce the time spent on configuration.",
-        "how_to_use": [
-          "/config thinking=false to disable thinking mode",
-          "/config verbose=true to enable verbose output",
-          "/config timeout=300 to set a 5-minute timeout"
-        ]
-      }
-    },
-    {
-      "id": "69f8583d",
-      "title": "Added sandbox.allowAppleEvents opt-in setting that lets sandboxed commands send Apple Events on macOS",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-17T22:07:41Z",
-      "summary": "v2.1.181",
-      "fetched_at": "2026-06-17T23:12:27.296Z",
-      "explanation": {
-        "what_it_is": "The sandbox.allowAppleEvents setting is an opt-in feature that allows sandboxed commands in Claude Code to send Apple Events on macOS, enabling interaction with other applications on the system.",
-        "why_it_matters": "This update matters because it gives developers more control over how their sandboxed commands interact with the macOS environment, allowing for more complex automation workflows.",
-        "how_to_use": [
-          "Enable the sandbox.allowAppleEvents setting in your Claude Code configuration to allow a sandboxed command to send Apple Events to other macOS applications.",
-          "Use this setting to automate tasks that require interaction with other applications on the system, such as scripting or automation workflows."
-        ]
-      }
-    },
-    {
-      "id": "ef1dd634",
-      "title": "Added CLAUDE_CLIENT_PRESENCE_FILE environment variable: point it at a marker file to suppress mobile push notifications while you're at the machine",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-17T22:07:41Z",
-      "summary": "v2.1.181",
-      "fetched_at": "2026-06-17T23:12:27.296Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CLIENT_PRESENCE_FILE environment variable allows you to specify a marker file that indicates your presence at a machine, which can be used to suppress mobile push notifications.",
-        "why_it_matters": "This feature matters because it enables you to avoid receiving redundant mobile push notifications when you're already actively working on a machine, reducing notification noise and potential distractions.",
-        "how_to_use": [
-          "Set the CLAUDE_CLIENT_PRESENCE_FILE environment variable to point to a marker file on your machine, such as a hidden file in your home directory.",
-          "Ensure the marker file is updated or touched when you're actively using the machine, so that Claude Code can detect your presence and suppress mobile push notifications."
         ]
       }
     },
@@ -1725,6 +1705,25 @@
         "how_to_use": [
           "Use the xhigh effort level for long-running coding tasks that require a large number of tokens, such as code generation or complex data processing.",
           "Select xhigh for tasks where the high effort level is insufficient but the max effort level would be too resource-intensive."
+        ]
+      }
+    },
+    {
+      "id": "0fc54559",
+      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-14T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
+      "fetched_at": "2026-06-30T19:26:37.477Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models are being deprecated, with the specific models being claud-sonnet-4-20250514 and claud-opus-4-20250514.",
+        "why_it_matters": "This deprecation means that Claude Code users will no longer be able to use these models after the scheduled retirement date of June 15, and should plan to migrate to alternative models.",
+        "how_to_use": [
+          "Review your current Claude Code projects to identify any usage of the deprecated models",
+          "Update your code to use alternative models before the retirement date to avoid disruptions"
         ]
       }
     }
