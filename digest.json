@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-07-01T18:52:08.535Z",
+  "generated_at": "2026-07-01T20:30:53.564Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "63dc001c",
+      "title": "We've restored access to Claude Fable 5 and Claude Mythos 5",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-01T00:00:00.000Z",
+      "summary": "We've restored access to Claude Fable 5 and Claude Mythos 5. See our statement for more information.",
+      "fetched_at": "2026-07-01T20:30:54.615Z",
+      "explanation": {
+        "what_it_is": "Access to Claude Fable 5 and Claude Mythos 5 has been restored, allowing developers to utilize these models in their applications again.",
+        "why_it_matters": "This restoration enables developers to resume projects that rely on these models and provides an expanded range of options for natural language processing tasks.",
+        "how_to_use": [
+          "Use Claude Fable 5 for tasks that require a specific tone or style, such as generating creative content.",
+          "Utilize Claude Mythos 5 for applications that need a model with a distinct personality or voice."
+        ]
+      }
+    },
     {
       "id": "241417a9",
       "title": "We've launched Claude Sonnet 5 (claude-sonnet-5), the next generation of our…",
@@ -826,21 +845,21 @@
       }
     },
     {
-      "id": "24e7c894",
-      "title": "Claude Fable 5 requires 30-day data retention on the Claude API and is not…",
+      "id": "27f1770b",
+      "title": "Claude Fable 5 requires 30-day data retention and is not available under zero…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "Claude Fable 5 requires 30-day data retention on the Claude API and is not available under zero data retention. See Model-specific data retention requirements.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
+      "summary": "Claude Fable 5 requires 30-day data retention and is not available under zero data retention. See Model-specific data retention requirements.",
+      "fetched_at": "2026-07-01T20:30:54.615Z",
       "explanation": {
-        "what_it_is": "Claude Fable 5 requires that all data used with the model be stored on the Claude API for at least 30 days, which is a change from previous models that allowed for zero data retention.",
-        "why_it_matters": "This change affects how Claude Code users manage data for projects using Claude Fable 5, as they must now ensure that their data retention settings comply with the 30-day requirement.",
+        "what_it_is": "Claude Fable 5 now requires a minimum of 30-day data retention, meaning that users must store their data for at least 30 days to use this model.",
+        "why_it_matters": "This change affects users who previously used zero data retention, as they will no longer be able to use Claude Fable 5 without adjusting their data retention settings.",
         "how_to_use": [
-          "Check your current data retention settings on the Claude API to ensure they meet the 30-day requirement for Claude Fable 5.",
-          "Update your data retention settings if necessary to avoid any disruptions to your projects using Claude Fable 5."
+          "Check your current data retention settings to ensure they meet the 30-day minimum requirement",
+          "Update your data retention settings if necessary to continue using Claude Fable 5"
         ]
       }
     },
@@ -1705,25 +1724,6 @@
         "how_to_use": [
           "Update your API requests to use the Claude Haiku 4.5 model instead of Claude Haiku 3",
           "Test your applications to ensure compatibility with the new model"
-        ]
-      }
-    },
-    {
-      "id": "a9fa5e48",
-      "title": "We've launched Claude Opus 4.7, our most capable generally available model for…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.7, our most capable generally available model for complex reasoning and agentic coding, at the same $5 / $25 per MTok pricing as Opus 4.6. See What's new in Claude Opus…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.7 is a generally available model that supports complex reasoning and agentic coding, available at the same pricing as Opus 4.6.",
-        "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
-        "how_to_use": [
-          "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code.",
-          "Take advantage of the same pricing as Opus 4.6 to integrate Opus 4.7 into your existing workflows and applications."
         ]
       }
     }
