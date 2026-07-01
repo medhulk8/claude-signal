@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-07-01T20:30:53.564Z",
+  "generated_at": "2026-07-01T22:09:40.151Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "c0adf8f1",
+      "title": "Added background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input /…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-01T20:45:36Z",
+      "summary": "v2.1.198",
+      "fetched_at": "2026-07-01T22:09:40.276Z",
+      "explanation": {
+        "what_it_is": "Background agent notifications in Claude agents trigger the Notification hook when a session needs input or finishes, using hooks like agent_needs_input.",
+        "why_it_matters": "This update allows Claude Code users to receive notifications when their agent sessions require input or have completed, enabling more efficient workflow management.",
+        "how_to_use": [
+          "Use the agent_needs_input hook to trigger custom actions when an agent session needs input",
+          "Implement the Notification hook to handle finished sessions and streamline your workflow"
+        ]
+      }
+    },
+    {
+      "id": "33161d9e",
+      "title": "Added /dataviz skill for chart and dashboard design guidance with a runnable color-palette validator",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-01T20:45:36Z",
+      "summary": "v2.1.198",
+      "fetched_at": "2026-07-01T22:09:40.276Z",
+      "explanation": {
+        "what_it_is": "The /dataviz skill provides guidance on designing charts and dashboards, including a runnable color-palette validator to ensure effective visualizations.",
+        "why_it_matters": "This update enables Claude Code users to create more effective and visually appealing data visualizations, with the validator helping to ensure color palettes are accessible and readable.",
+        "how_to_use": [
+          "Use the /dataviz skill to get design guidance for charts and dashboards",
+          "Run the color-palette validator to test color schemes for readability and accessibility"
+        ]
+      }
+    },
     {
       "id": "63dc001c",
       "title": "We've restored access to Claude Fable 5 and Claude Mythos 5",
@@ -574,64 +612,6 @@
         "how_to_use": [
           "Update API requests to use the new /v1/tunnels endpoint on the Claude API",
           "Ensure API calls include the anthropic-beta header to access the new API surface"
-        ]
-      }
-    },
-    {
-      "id": "c7bbe199",
-      "title": "Added a warning when the requested model is deprecated or automatically updated to a newer model, shown on stderr in print mode (-p) and now also…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-19T01:20:50Z",
-      "summary": "v2.1.183",
-      "fetched_at": "2026-06-19T06:03:16.925Z",
-      "explanation": {
-        "what_it_is": "A warning is now displayed when a requested model is deprecated or has been automatically updated to a newer version.",
-        "why_it_matters": "This change helps Claude Code users stay informed about model updates and deprecations, allowing them to adjust their workflows accordingly.",
-        "how_to_use": [
-          "Run Claude Code with the print mode flag (-p) to see the warning on stderr.",
-          "Check the warning to determine if your requested model has been updated or deprecated."
-        ]
-      }
-    },
-    {
-      "id": "9b6ae64d",
-      "title": "Added attribution.sessionUrl setting to omit the claude.ai session link from commits and PRs in web and Remote Control sessions",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-19T01:20:50Z",
-      "summary": "v2.1.183",
-      "fetched_at": "2026-06-19T06:03:16.925Z",
-      "explanation": {
-        "what_it_is": "The attribution.sessionUrl setting allows you to control whether the Claude Code session link is included in commits and pull requests. This setting applies to both web and Remote Control sessions.",
-        "why_it_matters": "This setting gives you more control over the information included in your commits and PRs, which can be useful for maintaining a clean and organized project history.",
-        "how_to_use": [
-          "Set attribution.sessionUrl to false to omit the session link from commits and PRs",
-          "Use this setting in web sessions to keep your project history free of unnecessary links",
-          "Apply this setting in Remote Control sessions to maintain consistency with your web session settings"
-        ]
-      }
-    },
-    {
-      "id": "3ef1c178",
-      "title": "Added /config --help to list all available shorthand keys for /config key=value",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-19T01:20:50Z",
-      "summary": "v2.1.183",
-      "fetched_at": "2026-06-19T06:03:16.925Z",
-      "explanation": {
-        "what_it_is": "The /config command now supports a --help option, which lists all available shorthand keys for configuring key-value pairs.",
-        "why_it_matters": "This update makes it easier for users to discover and use the available shorthand keys, streamlining their configuration workflow.",
-        "how_to_use": [
-          "Run /config --help to view a list of all supported shorthand keys",
-          "Use the listed shorthand keys to configure key-value pairs, e.g., /config k=v"
         ]
       }
     },
@@ -1724,6 +1704,24 @@
         "how_to_use": [
           "Update your API requests to use the Claude Haiku 4.5 model instead of Claude Haiku 3",
           "Test your applications to ensure compatibility with the new model"
+        ]
+      }
+    },
+    {
+      "id": "a9fa5e48",
+      "title": "We've launched Claude Opus 4.7, our most capable generally available model for…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.7, our most capable generally available model for complex reasoning and agentic coding, at the same $5 / $25 per MTok pricing as Opus 4.6. See What's new in Claude Opus…",
+      "fetched_at": "2026-07-01T22:09:40.996Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.7 is a generally available model that supports complex reasoning and agentic coding, available at the same pricing as Opus 4.6.",
+        "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
+        "how_to_use": [
+          "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code."
         ]
       }
     }
