@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-03T15:45:41.143Z",
+  "generated_at": "2026-07-03T17:07:18.086Z",
   "item_count": 90,
   "items": [
     {
@@ -498,101 +498,6 @@
           "Click on menu options in permission prompts to grant or deny access",
           "Use your mouse to select models in the /model menu",
           "Configure settings in the /config menu with mouse clicks"
-        ]
-      }
-    },
-    {
-      "id": "aa62158d",
-      "title": "Added claude mcp login <name> and claude mcp logout <name> to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-22T20:37:34Z",
-      "summary": "v2.1.186",
-      "fetched_at": "2026-06-22T22:28:07.092Z",
-      "explanation": {
-        "what_it_is": "Two new CLI commands, 'claude mcp login <name>' and 'claude mcp logout <name>', allow users to authenticate MCP servers directly from the command line without needing to open the interactive /mcp menu.",
-        "why_it_matters": "This change streamlines the workflow for users who need to frequently log in and out of MCP servers, saving time and reducing the number of steps required to manage server connections.",
-        "how_to_use": [
-          "Use 'claude mcp login <name>' to authenticate with an MCP server from the CLI",
-          "Use 'claude mcp logout <name>' to log out of an MCP server from the CLI"
-        ]
-      }
-    },
-    {
-      "id": "60a10566",
-      "title": "Added status filtering (press f) to the /workflows agent detail view",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-22T20:37:34Z",
-      "summary": "v2.1.186",
-      "fetched_at": "2026-06-22T22:28:07.092Z",
-      "explanation": {
-        "what_it_is": "A new status filtering feature in the /workflows agent detail view, accessible by pressing the 'f' key, allowing users to filter agents by their status.",
-        "why_it_matters": "This feature enables Claude Code users to quickly narrow down the list of agents to those with a specific status, streamlining workflow management and troubleshooting.",
-        "how_to_use": [
-          "Press 'f' in the /workflows agent detail view to toggle status filtering",
-          "Select a status filter to view only agents with that status"
-        ]
-      }
-    },
-    {
-      "id": "9340de52",
-      "title": "Added a \"Skills\" section to the /plugin Installed tab",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-22T20:37:34Z",
-      "summary": "v2.1.186",
-      "fetched_at": "2026-06-22T22:28:07.092Z",
-      "explanation": {
-        "what_it_is": "A new 'Skills' section has been added to the Installed tab in the /plugin section of Claude Code, which provides information about the capabilities of installed plugins.",
-        "why_it_matters": "This change allows users to easily view and understand the skills and capabilities of their installed plugins, making it simpler to manage and utilize them effectively.",
-        "how_to_use": [
-          "Navigate to the /plugin Installed tab to view the new Skills section",
-          "Use the Skills section to identify the specific capabilities of each installed plugin"
-        ]
-      }
-    },
-    {
-      "id": "7c435ab4",
-      "title": "Added teammateMode: \"iterm2\" setting with a warning when auto mode cannot find the it2 CLI",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-22T20:37:34Z",
-      "summary": "v2.1.186",
-      "fetched_at": "2026-06-22T22:28:07.092Z",
-      "explanation": {
-        "what_it_is": "The teammateMode setting now has an 'iterm2' option, which allows Claude Code to integrate with the iTerm2 terminal emulator. This setting also includes a warning when auto mode fails to detect the it2 command-line interface.",
-        "why_it_matters": "This update matters because it enables Claude Code users to explicitly configure their integration with iTerm2, potentially resolving issues with auto-detection. The warning for missing it2 CLI also helps users troubleshoot configuration problems.",
-        "how_to_use": [
-          "Set teammateMode to 'iterm2' in your Claude Code settings to use the iTerm2 integration.",
-          "Verify that the it2 CLI is installed and accessible to avoid warnings when using auto mode."
-        ]
-      }
-    },
-    {
-      "id": "bae2cbb1",
-      "title": "Added \"Claude Platform on AWS - refresh credentials\" option to /login when awsAuthRefresh is configured",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-22T20:37:34Z",
-      "summary": "v2.1.186",
-      "fetched_at": "2026-06-22T22:28:07.092Z",
-      "explanation": {
-        "what_it_is": "A new option to refresh AWS credentials when logging in to the Claude Platform, available when awsAuthRefresh is configured.",
-        "why_it_matters": "This update allows users to easily renew their AWS credentials without having to reconfigure their setup, streamlining the login process for Claude Platform on AWS.",
-        "how_to_use": [
-          "Go to the /login page with awsAuthRefresh configured to see the 'Claude Platform on AWS - refresh credentials' option",
-          "Select the option to refresh your AWS credentials and complete the login process"
         ]
       }
     },
@@ -1722,6 +1627,101 @@
         "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
         "how_to_use": [
           "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code."
+        ]
+      }
+    },
+    {
+      "id": "9bdf5c12",
+      "title": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers. Claude Opus 4.7 and Claude Haiku 4.5 are available self-serve from the Bedrock console through the Messages API endpoint at…",
+      "fetched_at": "2026-07-03T17:07:18.962Z",
+      "explanation": {
+        "what_it_is": "Claude integration in Amazon Bedrock is now available to all customers, allowing access to Claude Opus 4.7 and Claude Haiku 4.5 through the Messages API endpoint.",
+        "why_it_matters": "This change enables all Amazon Bedrock customers to leverage Claude's capabilities without requiring special access or setup, streamlining the integration process.",
+        "how_to_use": [
+          "Access Claude Opus 4.7 and Claude Haiku 4.5 from the Bedrock console",
+          "Use the Messages API endpoint to integrate Claude into your Amazon Bedrock workflow"
+        ]
+      }
+    },
+    {
+      "id": "384986bb",
+      "title": "We've launched task budgets in beta on Claude Opus 4.7",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "We've launched task budgets in beta on Claude Opus 4.7. Give Claude an advisory token budget for a full agentic loop (thinking, tool calls, tool results, and output) and the model sees a running…",
+      "fetched_at": "2026-07-03T17:07:18.962Z",
+      "explanation": {
+        "what_it_is": "Task budgets allow you to set an advisory token budget for a full agentic loop in Claude Opus 4.7, controlling the model's thinking, tool calls, tool results, and output.",
+        "why_it_matters": "This feature gives you more control over the resources used by Claude, enabling more efficient and cost-effective task execution.",
+        "how_to_use": [
+          "Set a task budget when initiating a task to limit the number of tokens used",
+          "Monitor the running token count to adjust the budget as needed"
+        ]
+      }
+    },
+    {
+      "id": "88a61ae6",
+      "title": "Claude Opus 4.7 supports high-resolution image input, raising the maximum image…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "Claude Opus 4.7 supports high-resolution image input, raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot…",
+      "fetched_at": "2026-07-03T17:07:18.962Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.7 now accepts high-resolution images with a maximum resolution of 2576 pixels on the long edge, up from 1568 pixels previously.",
+        "why_it_matters": "This change allows Claude Code users to process larger, more detailed images, which is particularly useful for tasks involving screenshots or high-resolution computer-generated images.",
+        "how_to_use": [
+          "Pass high-resolution screenshots to Claude Opus 4.7 for more accurate image analysis",
+          "Use the increased resolution limit to process larger images from computer-generated sources"
+        ]
+      }
+    },
+    {
+      "id": "81b6717f",
+      "title": "We've added the xhigh effort level on Claude Opus 4.7",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "We've added the xhigh effort level on Claude Opus 4.7. xhigh sits between high and max and is tuned for long-running agentic and coding tasks (over 30 minutes) with token budgets in the millions. No…",
+      "fetched_at": "2026-07-03T17:07:18.962Z",
+      "explanation": {
+        "what_it_is": "The xhigh effort level is a new setting on Claude Opus 4.7 that falls between the high and max effort levels, optimized for tasks that require over 30 minutes to complete and have large token budgets.",
+        "why_it_matters": "This addition provides Claude Code users with more fine-grained control over resource allocation for long-running tasks, allowing for more efficient use of resources.",
+        "how_to_use": [
+          "Use the xhigh effort level for complex coding tasks that require extended execution times and large token budgets",
+          "Select xhigh for agentic tasks that need to run for over 30 minutes, such as data processing or simulation tasks"
+        ]
+      }
+    },
+    {
+      "id": "0fc54559",
+      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-14T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
+      "fetched_at": "2026-07-03T17:07:18.962Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models have been deprecated, with the specific model versions being claud-sonnet-4-20250514 and claud-opus-4-20250514.",
+        "why_it_matters": "This deprecation means that Claude API users will no longer be able to use these models after the scheduled retirement date of June 15, and should plan to migrate to alternative models.",
+        "how_to_use": [
+          "Review your current model usage to identify any dependencies on the deprecated Claude Sonnet 4 or Opus 4 models",
+          "Update your code to use alternative models before the June 15 retirement date to avoid service disruptions"
         ]
       }
     }
