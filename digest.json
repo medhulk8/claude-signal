@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-03T22:50:04.221Z",
+  "generated_at": "2026-07-03T23:52:04.784Z",
   "item_count": 90,
   "items": [
     {
@@ -439,65 +439,6 @@
         "how_to_use": [
           "Use /rewind to revert a conversation to its state before the last /clear command",
           "Run /rewind immediately after /clear to resume the conversation from the previous point"
-        ]
-      }
-    },
-    {
-      "id": "34cd26b1",
-      "title": "Added sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-23T21:03:48Z",
-      "summary": "v2.1.187",
-      "fetched_at": "2026-06-23T22:08:33.435Z",
-      "explanation": {
-        "what_it_is": "The sandbox.credentials setting is a new configuration option that prevents sandboxed commands from accessing credential files and secret environment variables.",
-        "why_it_matters": "This change allows Claude Code users to better secure their sensitive information by restricting sandboxed commands from reading credentials and secrets.",
-        "how_to_use": [
-          "Set sandbox.credentials to false to block sandboxed commands from reading credential files and secret environment variables",
-          "Use this setting to enhance security when running untrusted code in a sandboxed environment"
-        ]
-      }
-    },
-    {
-      "id": "bd8b0893",
-      "title": "Added org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-23T21:03:48Z",
-      "summary": "v2.1.187",
-      "fetched_at": "2026-06-23T22:08:33.435Z",
-      "explanation": {
-        "what_it_is": "Org-configured model restrictions have been added to the model picker, command line flags --model and /model, and the ANTHROPIC_MODEL environment variable. These restrictions are now clearly labeled as 'restricted by your organization' when they apply.",
-        "why_it_matters": "This change allows organizations to control which models their users can access, providing an additional layer of security and compliance. It also gives users clear visibility into which models are restricted by their organization.",
-        "how_to_use": [
-          "Use the model picker to see which models are restricted by your organization",
-          "Check the --model and /model command line flags for restricted model notifications",
-          "Verify that the ANTHROPIC_MODEL environment variable respects org-configured model restrictions"
-        ]
-      }
-    },
-    {
-      "id": "5049ffe8",
-      "title": "Added mouse click support to select menus (permission prompts, /model, /config, etc.) in fullscreen mode",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-23T21:03:48Z",
-      "summary": "v2.1.187",
-      "fetched_at": "2026-06-23T22:08:33.435Z",
-      "explanation": {
-        "what_it_is": "Mouse click support has been added to select menus in fullscreen mode, allowing users to interact with menus like permission prompts, /model, and /config using their mouse.",
-        "why_it_matters": "This update makes it easier to navigate and configure Claude Code in fullscreen mode, reducing the need to switch between mouse and keyboard input.",
-        "how_to_use": [
-          "Click on menu options in permission prompts to grant or deny access",
-          "Use your mouse to select models in the /model menu",
-          "Configure settings in the /config menu with mouse clicks"
         ]
       }
     },
@@ -1722,6 +1663,63 @@
         "how_to_use": [
           "Review your current model usage to identify any dependencies on the deprecated Claude Sonnet 4 or Opus 4 models",
           "Update your code to use alternative models before the June 15 retirement date to avoid service disruptions"
+        ]
+      }
+    },
+    {
+      "id": "a6b71809",
+      "title": "We've launched the advisor tool in public beta",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-09T00:00:00.000Z",
+      "summary": "We've launched the advisor tool in public beta. Pair a faster executor model with a higher-intelligence advisor model that provides strategic guidance mid-generation, so long-horizon agentic…",
+      "fetched_at": "2026-07-03T23:52:05.795Z",
+      "explanation": {
+        "what_it_is": "The advisor tool is a higher-intelligence model that provides strategic guidance mid-generation, allowing for long-horizon agentic tasks to be completed more effectively.",
+        "why_it_matters": "This update enables Claude Code users to generate more coherent and effective long-term plans, by leveraging the advisor tool's strategic guidance capabilities.",
+        "how_to_use": [
+          "Pair the advisor tool with a faster executor model to generate more effective plans",
+          "Use the advisor tool to provide mid-generation guidance for complex, long-horizon tasks"
+        ]
+      }
+    },
+    {
+      "id": "7a98ba10",
+      "title": "We've launched Claude Managed Agents in public beta, a fully managed agent…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-08T00:00:00.000Z",
+      "summary": "We've launched Claude Managed Agents in public beta, a fully managed agent harness for running Claude as an autonomous agent with secure sandboxing, built-in tools, and server-sent event streaming.…",
+      "fetched_at": "2026-07-03T23:52:05.795Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents is a fully managed agent harness that allows running Claude as an autonomous agent with secure sandboxing and built-in tools.",
+        "why_it_matters": "This update enables Claude Code users to run autonomous agents with secure sandboxing, reducing the need for manual setup and management of agents.",
+        "how_to_use": [
+          "Use Claude Managed Agents to deploy autonomous agents with built-in tools and secure sandboxing",
+          "Leverage server-sent event streaming for real-time updates from your autonomous agents"
+        ]
+      }
+    },
+    {
+      "id": "8141029c",
+      "title": "We've launched the ant CLI, a command-line client for the Claude API that…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-08T00:00:00.000Z",
+      "summary": "We've launched the ant CLI, a command-line client for the Claude API that enables faster interaction with the Claude API, native integration with Claude Code, and versioning of API resources in YAML…",
+      "fetched_at": "2026-07-03T23:52:05.795Z",
+      "explanation": {
+        "what_it_is": "The ant CLI is a command-line client for the Claude API, allowing users to interact with the API more efficiently and integrate it with Claude Code. It also enables versioning of API resources in YAML.",
+        "why_it_matters": "This update streamlines the development workflow for Claude Code users, providing a more native and efficient way to work with the Claude API. It simplifies tasks such as testing and deploying API integrations.",
+        "how_to_use": [
+          "Use the ant CLI to quickly test and iterate on Claude API requests from the command line",
+          "Integrate the ant CLI with Claude Code to manage and version API resources in YAML"
         ]
       }
     }
