@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-07-07T20:42:19.966Z",
+  "generated_at": "2026-07-07T22:02:06.541Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "604f12eb",
+      "title": "Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-07T21:06:12Z",
+      "summary": "v2.1.203",
+      "fetched_at": "2026-07-07T22:02:07.028Z",
+      "explanation": {
+        "what_it_is": "A warning notification is now displayed when your Claude Code login session is about to expire.",
+        "why_it_matters": "This warning allows you to re-authenticate and prevent interruptions to your background sessions, ensuring uninterrupted workflow.",
+        "how_to_use": [
+          "Look for the warning notification when your login is about to expire",
+          "Re-authenticate promptly to maintain active background sessions"
+        ]
+      }
+    },
+    {
+      "id": "e3164166",
+      "title": "Added a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-07T21:06:12Z",
+      "summary": "v2.1.203",
+      "fetched_at": "2026-07-07T22:02:07.028Z",
+      "explanation": {
+        "what_it_is": "A grey ⏸ badge is now displayed in the footer when Claude Code is in manual permission mode, indicating the active mode.",
+        "why_it_matters": "This change ensures that the active mode is always visible to the user, reducing potential confusion about the current permission mode.",
+        "how_to_use": [
+          "Look for the grey ⏸ badge in the footer to confirm that Claude Code is in manual permission mode.",
+          "Use this visual cue to switch between manual and automatic permission modes as needed."
+        ]
+      }
+    },
+    {
+      "id": "f9177dfb",
+      "title": "Added the session's additional working directories to MCP roots/list, with notifications/roots/list_changed sent when the set changes",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-07T21:06:12Z",
+      "summary": "v2.1.203",
+      "fetched_at": "2026-07-07T22:02:07.028Z",
+      "explanation": {
+        "what_it_is": "The session's additional working directories are now included in the MCP roots/list, allowing for a more comprehensive view of the project's directory structure. This update also triggers a 'list_changed' notification when the set of working directories changes.",
+        "why_it_matters": "This update provides a more accurate representation of the project's directory structure, enabling users to better manage their workspace. It also ensures that users are notified when changes occur, helping them stay up-to-date with the latest project developments.",
+        "how_to_use": [
+          "Use the MCP roots/list command to view the updated list of working directories",
+          "Monitor 'list_changed' notifications to stay informed about changes to the working directory set"
+        ]
+      }
+    },
+    {
+      "id": "fb523fe2",
+      "title": "[VSCode] Added a Settings toggle for \"Enable Remote Control for all sessions\"",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-07T21:06:12Z",
+      "summary": "v2.1.203",
+      "fetched_at": "2026-07-07T22:02:07.028Z",
+      "explanation": {
+        "what_it_is": "A new Settings toggle in VSCode that allows users to enable remote control for all sessions",
+        "why_it_matters": "This toggle provides a convenient way to control all sessions remotely, streamlining workflow and reducing the need for individual session configuration",
+        "how_to_use": [
+          "Go to Settings in VSCode and toggle 'Enable Remote Control for all sessions' to enable or disable remote control for all sessions",
+          "Use this feature to simplify remote debugging and collaboration across multiple sessions"
+        ]
+      }
+    },
     {
       "id": "33fca8f7",
       "title": "Added a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent…",
@@ -459,25 +535,6 @@
         "how_to_use": [
           "Migrate to fast mode for a newer version of Claude Opus before July 24, 2026",
           "Update API requests to remove 'speed: fast' for Claude Opus 4.7 after the removal date"
-        ]
-      }
-    },
-    {
-      "id": "617646d8",
-      "title": "Added /rewind support for resuming a conversation from before /clear was run",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-24T21:58:12Z",
-      "summary": "v2.1.191",
-      "fetched_at": "2026-06-24T22:04:07.318Z",
-      "explanation": {
-        "what_it_is": "The /rewind command allows you to resume a conversation from a point before the /clear command was last run, effectively undoing the conversation reset.",
-        "why_it_matters": "This change enables Claude Code users to recover conversation context that was previously lost when using /clear, making it easier to pick up where they left off.",
-        "how_to_use": [
-          "Use /rewind to revert a conversation to its state before the last /clear command",
-          "Run /rewind immediately after /clear to resume the conversation from the previous point"
         ]
       }
     },
@@ -1664,63 +1721,6 @@
         "how_to_use": [
           "Pass high-resolution screenshots to Claude Opus 4.7 for more accurate image analysis",
           "Use the increased resolution limit to process larger images from computer-generated sources"
-        ]
-      }
-    },
-    {
-      "id": "81b6717f",
-      "title": "We've added the xhigh effort level on Claude Opus 4.7",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've added the xhigh effort level on Claude Opus 4.7. xhigh sits between high and max and is tuned for long-running agentic and coding tasks (over 30 minutes) with token budgets in the millions. No…",
-      "fetched_at": "2026-07-03T17:07:18.962Z",
-      "explanation": {
-        "what_it_is": "The xhigh effort level is a new setting on Claude Opus 4.7 that falls between the high and max effort levels, optimized for tasks that require over 30 minutes to complete and have large token budgets.",
-        "why_it_matters": "This addition provides Claude Code users with more fine-grained control over resource allocation for long-running tasks, allowing for more efficient use of resources.",
-        "how_to_use": [
-          "Use the xhigh effort level for complex coding tasks that require extended execution times and large token budgets",
-          "Select xhigh for agentic tasks that need to run for over 30 minutes, such as data processing or simulation tasks"
-        ]
-      }
-    },
-    {
-      "id": "0fc54559",
-      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-14T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
-      "fetched_at": "2026-07-03T17:07:18.962Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models have been deprecated, with the specific model versions being claud-sonnet-4-20250514 and claud-opus-4-20250514.",
-        "why_it_matters": "This deprecation means that Claude API users will no longer be able to use these models after the scheduled retirement date of June 15, and should plan to migrate to alternative models.",
-        "how_to_use": [
-          "Review your current model usage to identify any dependencies on the deprecated Claude Sonnet 4 or Opus 4 models",
-          "Update your code to use alternative models before the June 15 retirement date to avoid service disruptions"
-        ]
-      }
-    },
-    {
-      "id": "a6b71809",
-      "title": "We've launched the advisor tool in public beta",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-09T00:00:00.000Z",
-      "summary": "We've launched the advisor tool in public beta. Pair a faster executor model with a higher-intelligence advisor model that provides strategic guidance mid-generation, so long-horizon agentic…",
-      "fetched_at": "2026-07-03T23:52:05.795Z",
-      "explanation": {
-        "what_it_is": "The advisor tool is a higher-intelligence model that provides strategic guidance mid-generation, allowing for long-horizon agentic tasks to be completed more effectively.",
-        "why_it_matters": "This update enables Claude Code users to generate more coherent and effective long-term plans, by leveraging the advisor tool's strategic guidance capabilities.",
-        "how_to_use": [
-          "Pair the advisor tool with a faster executor model to generate more effective plans",
-          "Use the advisor tool to provide mid-generation guidance for complex, long-horizon tasks"
         ]
       }
     }
