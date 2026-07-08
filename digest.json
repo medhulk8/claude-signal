@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-07-08T20:18:55.265Z",
+  "generated_at": "2026-07-08T21:54:43.932Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "9085b56a",
+      "title": "Added an auto mode rule that blocks tampering with session transcript files",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-08T21:22:06Z",
+      "summary": "v2.1.205",
+      "fetched_at": "2026-07-08T21:54:44.184Z",
+      "explanation": {
+        "what_it_is": "An auto mode rule that prevents modifications to session transcript files",
+        "why_it_matters": "This change ensures the integrity of session transcripts, preventing unintended or malicious changes",
+        "how_to_use": [
+          "Enable auto mode to automatically block tampering with session transcript files",
+          "Verify that session transcripts remain unchanged after enabling auto mode"
+        ]
+      }
+    },
     {
       "id": "604f12eb",
       "title": "Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted",
@@ -362,25 +381,6 @@
         "how_to_use": [
           "Update your code to remove 'speed: fast' parameters for Claude Opus 4.6 requests, as they will have no effect.",
           "Review your billing expectations, as the removal of fast mode and its associated premium pricing may reduce costs."
-        ]
-      }
-    },
-    {
-      "id": "f3949e16",
-      "title": "Added CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-26T21:29:42Z",
-      "summary": "v2.1.195",
-      "fetched_at": "2026-06-26T21:58:21.608Z",
-      "explanation": {
-        "what_it_is": "A new environment variable CLAUDE_CODE_DISABLE_MOUSE_CLICKS that prevents mouse clicks, drags, and hovers from interfering with Claude Code in fullscreen mode, while still allowing wheel scrolling.",
-        "why_it_matters": "This update matters because it allows users to work in fullscreen mode without accidental mouse interactions disrupting their workflow, making it particularly useful for presentations or focused coding sessions.",
-        "how_to_use": [
-          "Set CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse interactions in fullscreen mode",
-          "Use wheel scroll to navigate through code while mouse clicks and drags are disabled"
         ]
       }
     },
