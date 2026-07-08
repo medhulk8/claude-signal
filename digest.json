@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-07T23:42:10.722Z",
+  "generated_at": "2026-07-08T01:16:36.604Z",
   "item_count": 90,
   "items": [
     {
@@ -401,121 +401,6 @@
           "Check the updated rate limits for your usage tier to determine how many more requests you can make",
           "Review your existing API integrations to identify opportunities to take advantage of the increased rate limits",
           "Plan for potential increases in API usage without worrying about hitting previous rate limits"
-        ]
-      }
-    },
-    {
-      "id": "132409c0",
-      "title": "Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "v2.1.193",
-      "fetched_at": "2026-06-25T22:12:50.322Z",
-      "explanation": {
-        "what_it_is": "The autoMode.classifyAllShell setting allows all Bash and PowerShell commands to be routed through the auto-mode classifier, expanding its scope beyond the previous limitations.",
-        "why_it_matters": "This change enables more comprehensive command classification, potentially improving the accuracy of auto-mode suggestions for Bash and PowerShell users.",
-        "how_to_use": [
-          "Set autoMode.classifyAllShell to true in your Claude Code settings to enable the feature.",
-          "Use the setting to classify and suggest corrections or improvements for all Bash and PowerShell commands."
-        ]
-      }
-    },
-    {
-      "id": "33b9166e",
-      "title": "Added auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "v2.1.193",
-      "fetched_at": "2026-06-25T22:12:50.322Z",
-      "explanation": {
-        "what_it_is": "Auto-mode denial reasons are now included in three locations: the transcript, the denial toast notification, and the /permissions recent denials log.",
-        "why_it_matters": "This update provides more transparency into why auto-mode requests are being denied, allowing users to diagnose and address issues more effectively.",
-        "how_to_use": [
-          "Check the transcript for auto-mode denial reasons to understand why a specific request was denied.",
-          "View the denial toast notification for a brief explanation of the denial reason.",
-          "Use the /permissions recent denials log to track and investigate repeated denials."
-        ]
-      }
-    },
-    {
-      "id": "040afed7",
-      "title": "Added claude_code.assistant_response OpenTelemetry log event containing the model's response text. Redacted unless OTEL_LOG_ASSISTANT_RESPONSES=1;…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "v2.1.193",
-      "fetched_at": "2026-06-25T22:12:50.322Z",
-      "explanation": {
-        "what_it_is": "A new OpenTelemetry log event called claude_code.assistant_response, which contains the model's response text. This event is redacted by default.",
-        "why_it_matters": "This update allows for more detailed logging and debugging of Claude Code interactions, but only if the OTEL_LOG_ASSISTANT_RESPONSES environment variable is set to 1.",
-        "how_to_use": [
-          "Set OTEL_LOG_ASSISTANT_RESPONSES=1 to enable logging of assistant response text",
-          "Use the claude_code.assistant_response log event to debug and troubleshoot model responses"
-        ]
-      }
-    },
-    {
-      "id": "590e8686",
-      "title": "Added live file path autocomplete to bash mode (!)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "v2.1.193",
-      "fetched_at": "2026-06-25T22:12:50.322Z",
-      "explanation": {
-        "what_it_is": "Live file path autocomplete in bash mode allows Claude Code users to automatically complete file paths as they type in the bash terminal.",
-        "why_it_matters": "This feature saves time and reduces errors when working with files in the bash terminal, making it easier to navigate and manage files.",
-        "how_to_use": [
-          "Start typing a file path in bash mode and press the autocomplete key to complete the path",
-          "Use the autocomplete feature to quickly switch between directories and files"
-        ]
-      }
-    },
-    {
-      "id": "37b76e06",
-      "title": "Added a startup notice when MCP servers need authentication, pointing at /mcp",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "v2.1.193",
-      "fetched_at": "2026-06-25T22:12:50.322Z",
-      "explanation": {
-        "what_it_is": "A startup notice is now displayed when MCP servers require authentication, directing users to the /mcp path for configuration.",
-        "why_it_matters": "This change helps prevent unexpected authentication issues by proactively informing users of MCP server authentication requirements, allowing them to take corrective action sooner.",
-        "how_to_use": [
-          "Check the startup notice for MCP server authentication requirements",
-          "Follow the notice's direction to /mcp for authentication configuration"
-        ]
-      }
-    },
-    {
-      "id": "cfcca8dd",
-      "title": "Added automatic memory-pressure reaping for idle background shell commands (disable with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "v2.1.193",
-      "fetched_at": "2026-06-25T22:12:50.322Z",
-      "explanation": {
-        "what_it_is": "Automatic memory-pressure reaping for idle background shell commands, which frees up memory when these commands are not in use.",
-        "why_it_matters": "This change helps prevent memory usage from growing indefinitely when running multiple background shell commands, reducing the likelihood of performance issues or crashes.",
-        "how_to_use": [
-          "Run background shell commands as usual, and Claude Code will automatically reap memory when they are idle.",
-          "Disable this feature by setting the environment variable CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 if needed."
         ]
       }
     },
@@ -1721,6 +1606,123 @@
         "how_to_use": [
           "Pass high-resolution screenshots to Claude Opus 4.7 for more accurate image analysis",
           "Use the increased resolution limit to process larger images from computer-generated sources"
+        ]
+      }
+    },
+    {
+      "id": "81b6717f",
+      "title": "We've added the xhigh effort level on Claude Opus 4.7",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-16T00:00:00.000Z",
+      "summary": "We've added the xhigh effort level on Claude Opus 4.7. xhigh sits between high and max and is tuned for long-running agentic and coding tasks (over 30 minutes) with token budgets in the millions. No…",
+      "fetched_at": "2026-07-08T01:16:37.663Z",
+      "explanation": {
+        "what_it_is": "The xhigh effort level is a new setting on Claude Opus 4.7 that offers a balance between the high and max effort levels, optimized for tasks that require over 30 minutes to complete and have large token budgets.",
+        "why_it_matters": "This addition provides Claude Code users with more fine-grained control over the effort level for long-running tasks, allowing for more efficient use of resources.",
+        "how_to_use": [
+          "Use the xhigh effort level for agentic tasks that require extended runtime and large token budgets",
+          "Select xhigh for coding tasks that need more computational resources than the high effort level can provide, but do not require the maximum effort level"
+        ]
+      }
+    },
+    {
+      "id": "0fc54559",
+      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-14T00:00:00.000Z",
+      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
+      "fetched_at": "2026-07-08T01:16:37.663Z",
+      "explanation": {
+        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models are being deprecated, with the model IDs claud-sonnet-4-20250514 and claud-opus-4-20250514 being retired from the Claude API.",
+        "why_it_matters": "This change affects users who have integrated these models into their applications, as they will need to update to newer models before June 15 to avoid disruptions.",
+        "how_to_use": [
+          "Update your API requests to use newer model IDs",
+          "Review your application's dependencies on the deprecated models",
+          "Test your application with the new models before the retirement date"
+        ]
+      }
+    },
+    {
+      "id": "a6b71809",
+      "title": "We've launched the advisor tool in public beta",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-09T00:00:00.000Z",
+      "summary": "We've launched the advisor tool in public beta. Pair a faster executor model with a higher-intelligence advisor model that provides strategic guidance mid-generation, so long-horizon agentic…",
+      "fetched_at": "2026-07-08T01:16:37.663Z",
+      "explanation": {
+        "what_it_is": "The advisor tool is a higher-intelligence model that provides strategic guidance mid-generation, allowing for long-horizon agentic tasks to be completed more effectively.",
+        "why_it_matters": "This update enables Claude Code users to generate more coherent and effective long-term plans, by leveraging the advisor tool's strategic guidance capabilities.",
+        "how_to_use": [
+          "Pair the advisor tool with a faster executor model to generate more effective plans",
+          "Use the advisor tool to provide mid-generation guidance for complex, long-horizon tasks"
+        ]
+      }
+    },
+    {
+      "id": "7a98ba10",
+      "title": "We've launched Claude Managed Agents in public beta, a fully managed agent…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-08T00:00:00.000Z",
+      "summary": "We've launched Claude Managed Agents in public beta, a fully managed agent harness for running Claude as an autonomous agent with secure sandboxing, built-in tools, and server-sent event streaming.…",
+      "fetched_at": "2026-07-08T01:16:37.663Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents is a fully managed agent harness that allows running Claude as an autonomous agent with secure sandboxing and built-in tools.",
+        "why_it_matters": "This update enables developers to deploy and manage Claude agents more easily and securely, with features like server-sent event streaming.",
+        "how_to_use": [
+          "Use Claude Managed Agents to deploy autonomous agents with secure sandboxing",
+          "Leverage built-in tools for agent management and monitoring",
+          "Utilize server-sent event streaming for real-time updates from your agents"
+        ]
+      }
+    },
+    {
+      "id": "8141029c",
+      "title": "We've launched the ant CLI, a command-line client for the Claude API that…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-08T00:00:00.000Z",
+      "summary": "We've launched the ant CLI, a command-line client for the Claude API that enables faster interaction with the Claude API, native integration with Claude Code, and versioning of API resources in YAML…",
+      "fetched_at": "2026-07-08T01:16:37.663Z",
+      "explanation": {
+        "what_it_is": "The ant CLI is a command-line client for the Claude API, allowing users to interact with the API directly from their terminal. It enables native integration with Claude Code and versioning of API resources in YAML.",
+        "why_it_matters": "This update streamlines the development workflow by providing a faster and more integrated way to work with the Claude API, especially for users already using Claude Code. It also allows for versioning of API resources, making it easier to track changes.",
+        "how_to_use": [
+          "Use the ant CLI to create and manage Claude API resources from the command line",
+          "Integrate the ant CLI with Claude Code to automate tasks and workflows",
+          "Version API resources in YAML using the ant CLI for easier change tracking"
+        ]
+      }
+    },
+    {
+      "id": "919a8889",
+      "title": "We announced Claude Mythos Preview is available as a gated research preview for…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-04-07T00:00:00.000Z",
+      "summary": "We announced Claude Mythos Preview is available as a gated research preview for defensive cybersecurity work as part of Project Glasswing. Access is invitation-only.",
+      "fetched_at": "2026-07-08T01:16:37.663Z",
+      "explanation": {
+        "what_it_is": "Claude Mythos Preview is a gated research preview for defensive cybersecurity work, available as part of Project Glasswing.",
+        "why_it_matters": "This preview provides Claude Code users with access to new cybersecurity capabilities, but access is limited to invitation-only.",
+        "how_to_use": [
+          "Apply for invitation-only access to explore defensive cybersecurity features",
+          "Utilize Claude Mythos Preview as part of Project Glasswing for advanced cybersecurity research"
         ]
       }
     }
