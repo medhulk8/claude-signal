@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-10T16:09:45.704Z",
+  "generated_at": "2026-07-10T18:14:05.762Z",
   "item_count": 90,
   "items": [
     {
@@ -38,6 +38,26 @@
         "how_to_use": [
           "Run the /doctor command to identify CLAUDE.md files with derivable content",
           "Review and apply the suggested trims to reduce file size and improve documentation clarity"
+        ]
+      }
+    },
+    {
+      "id": "459c5cc1",
+      "title": "We've expanded the Access Transparency documentation of cmek_preserve events…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-10-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-10T00:00:00.000Z",
+      "summary": "We've expanded the Access Transparency documentation of cmek_preserve events with a filter example, an example event payload, and two preservation reason codes (policy_violation_investigation,…",
+      "fetched_at": "2026-07-10T18:14:07.035Z",
+      "explanation": {
+        "what_it_is": "The Access Transparency documentation for cmek_preserve events now includes a filter example, an example event payload, and two preservation reason codes.",
+        "why_it_matters": "This update provides more detailed information for developers to understand and work with cmek_preserve events, making it easier to implement and troubleshoot access transparency in their applications.",
+        "how_to_use": [
+          "Use the filter example to narrow down cmek_preserve events based on specific conditions",
+          "Reference the example event payload to parse and handle cmek_preserve events in your code",
+          "Check the preservation reason codes, such as policy_violation_investigation, to determine why a resource was preserved"
         ]
       }
     },
@@ -1702,26 +1722,6 @@
         "how_to_use": [
           "Pair the advisor tool with a faster executor model to generate more effective plans",
           "Use the advisor tool to provide mid-generation guidance for complex, long-horizon tasks"
-        ]
-      }
-    },
-    {
-      "id": "7a98ba10",
-      "title": "We've launched Claude Managed Agents in public beta, a fully managed agent…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-8-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-08T00:00:00.000Z",
-      "summary": "We've launched Claude Managed Agents in public beta, a fully managed agent harness for running Claude as an autonomous agent with secure sandboxing, built-in tools, and server-sent event streaming.…",
-      "fetched_at": "2026-07-08T01:16:37.663Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents is a fully managed agent harness that allows running Claude as an autonomous agent with secure sandboxing and built-in tools.",
-        "why_it_matters": "This update enables developers to deploy and manage Claude agents more easily and securely, with features like server-sent event streaming.",
-        "how_to_use": [
-          "Use Claude Managed Agents to deploy autonomous agents with secure sandboxing",
-          "Leverage built-in tools for agent management and monitoring",
-          "Utilize server-sent event streaming for real-time updates from your agents"
         ]
       }
     }
