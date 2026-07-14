@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-07-14T01:08:04.316Z",
+  "generated_at": "2026-07-14T04:35:42.679Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "431ebfe3",
+      "title": "Added screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-14T01:10:42Z",
+      "summary": "v2.1.208",
+      "fetched_at": "2026-07-14T04:35:43.138Z",
+      "explanation": {
+        "what_it_is": "A new screen reader mode that renders Claude Code output in plain text, making it compatible with screen readers.",
+        "why_it_matters": "This update allows users who rely on screen readers to effectively use Claude Code, improving accessibility.",
+        "how_to_use": [
+          "Run `claude --ax-screen-reader` to enable screen reader mode",
+          "Set the `CLAUDE_AX_SCREEN_READER=1` environment variable to opt-in to plain-text rendering"
+        ]
+      }
+    },
+    {
+      "id": "3cf1a775",
+      "title": "Added vimInsertModeRemaps setting: map two-key insert-mode sequences like jj to Escape in vim mode",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-14T01:10:42Z",
+      "summary": "v2.1.208",
+      "fetched_at": "2026-07-14T04:35:43.138Z",
+      "explanation": {
+        "what_it_is": "The vimInsertModeRemaps setting allows mapping two-key sequences in insert mode to the Escape key in vim mode, enabling custom shortcuts like 'jj' to exit insert mode.",
+        "why_it_matters": "This setting matters because it provides a way for vim users to customize their editing experience in Claude Code, making it easier to switch between insert and normal modes.",
+        "how_to_use": [
+          "Set 'vimInsertModeRemaps': {'jj': '<Escape>'} in your settings to map 'jj' to Escape",
+          "Use the setting to create custom two-key sequences for exiting insert mode"
+        ]
+      }
+    },
+    {
+      "id": "a61a0ef9",
+      "title": "Added CLAUDE_CODE_PROCESS_WRAPPER: agent view and the background service now honor a corporate launcher by running every Claude Code self-spawn…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-14T01:10:42Z",
+      "summary": "v2.1.208",
+      "fetched_at": "2026-07-14T04:35:43.138Z",
+      "explanation": {
+        "what_it_is": "The CLAUDE_CODE_PROCESS_WRAPPER environment variable allows Claude Code to run self-spawned processes through a corporate launcher, enabling integration with custom launchers.",
+        "why_it_matters": "This update enables organizations to enforce their own process launch policies and auditing, providing better control over how Claude Code runs in their environment.",
+        "how_to_use": [
+          "Set the CLAUDE_CODE_PROCESS_WRAPPER environment variable to the path of your corporate launcher executable",
+          "Verify that the agent view and background service are using the specified launcher for self-spawned processes"
+        ]
+      }
+    },
+    {
+      "id": "e98914f8",
+      "title": "Added mouse-click support for multi-select menus and \"Other\" input rows in fullscreen mode",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-14T01:10:42Z",
+      "summary": "v2.1.208",
+      "fetched_at": "2026-07-14T04:35:43.138Z",
+      "explanation": {
+        "what_it_is": "Mouse-click support has been added for multi-select menus and 'Other' input rows when using Claude Code in fullscreen mode.",
+        "why_it_matters": "This update allows users to interact with multi-select menus and 'Other' input rows more easily in fullscreen mode, without having to rely on keyboard navigation or exit fullscreen mode.",
+        "how_to_use": [
+          "Click on multiple options in a multi-select menu to select them while in fullscreen mode",
+          "Use mouse clicks to edit 'Other' input rows in fullscreen mode"
+        ]
+      }
+    },
     {
       "id": "7fbe381d",
       "title": "Added directory path suggestions to /cd, matching /add-dir behavior",
@@ -232,44 +308,6 @@
         "how_to_use": [
           "Use the workflow.run_id attribute to correlate telemetry data with specific workflow runs",
           "Utilize the workflow.name attribute to filter or group telemetry data by workflow name"
-        ]
-      }
-    },
-    {
-      "id": "c0adf8f1",
-      "title": "Added background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input /…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-01T20:45:36Z",
-      "summary": "v2.1.198",
-      "fetched_at": "2026-07-01T22:09:40.276Z",
-      "explanation": {
-        "what_it_is": "Background agent notifications in Claude agents trigger the Notification hook when a session needs input or finishes, using hooks like agent_needs_input.",
-        "why_it_matters": "This update allows Claude Code users to receive notifications when their agent sessions require input or have completed, enabling more efficient workflow management.",
-        "how_to_use": [
-          "Use the agent_needs_input hook to trigger custom actions when an agent session needs input",
-          "Implement the Notification hook to handle finished sessions and streamline your workflow"
-        ]
-      }
-    },
-    {
-      "id": "33161d9e",
-      "title": "Added /dataviz skill for chart and dashboard design guidance with a runnable color-palette validator",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-01T20:45:36Z",
-      "summary": "v2.1.198",
-      "fetched_at": "2026-07-01T22:09:40.276Z",
-      "explanation": {
-        "what_it_is": "The /dataviz skill provides guidance on designing charts and dashboards, including a runnable color-palette validator to ensure effective visualizations.",
-        "why_it_matters": "This update enables Claude Code users to create more effective and visually appealing data visualizations, with the validator helping to ensure color palettes are accessible and readable.",
-        "how_to_use": [
-          "Use the /dataviz skill to get design guidance for charts and dashboards",
-          "Run the color-palette validator to test color schemes for readability and accessibility"
         ]
       }
     },
@@ -1684,45 +1722,6 @@
         "how_to_use": [
           "Pass high-resolution screenshots to Claude Opus 4.7 for more accurate image analysis",
           "Use the increased resolution limit to process larger images from computer-generated sources"
-        ]
-      }
-    },
-    {
-      "id": "81b6717f",
-      "title": "We've added the xhigh effort level on Claude Opus 4.7",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've added the xhigh effort level on Claude Opus 4.7. xhigh sits between high and max and is tuned for long-running agentic and coding tasks (over 30 minutes) with token budgets in the millions. No…",
-      "fetched_at": "2026-07-08T01:16:37.663Z",
-      "explanation": {
-        "what_it_is": "The xhigh effort level is a new setting on Claude Opus 4.7 that offers a balance between the high and max effort levels, optimized for tasks that require over 30 minutes to complete and have large token budgets.",
-        "why_it_matters": "This addition provides Claude Code users with more fine-grained control over the effort level for long-running tasks, allowing for more efficient use of resources.",
-        "how_to_use": [
-          "Use the xhigh effort level for agentic tasks that require extended runtime and large token budgets",
-          "Select xhigh for coding tasks that need more computational resources than the high effort level can provide, but do not require the maximum effort level"
-        ]
-      }
-    },
-    {
-      "id": "0fc54559",
-      "title": "We announced the deprecation of the Claude Sonnet 4 model…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-14-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-14T00:00:00.000Z",
-      "summary": "We announced the deprecation of the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514), with retirement on the Claude API scheduled for June 15,…",
-      "fetched_at": "2026-07-08T01:16:37.663Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models are being deprecated, with the model IDs claud-sonnet-4-20250514 and claud-opus-4-20250514 being retired from the Claude API.",
-        "why_it_matters": "This change affects users who have integrated these models into their applications, as they will need to update to newer models before June 15 to avoid disruptions.",
-        "how_to_use": [
-          "Update your API requests to use newer model IDs",
-          "Review your application's dependencies on the deprecated models",
-          "Test your application with the new models before the retirement date"
         ]
       }
     }
