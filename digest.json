@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-14T22:42:49.592Z",
+  "generated_at": "2026-07-14T23:38:46.873Z",
   "item_count": 90,
   "items": [
     {
@@ -76,6 +76,25 @@
         "how_to_use": [
           "Click on multiple options in a multi-select menu to select them while in fullscreen mode",
           "Use mouse clicks to edit 'Other' input rows in fullscreen mode"
+        ]
+      }
+    },
+    {
+      "id": "6a69b756",
+      "title": "You can now manage the people in your Claude Enterprise (claude.ai)…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-14-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-14T00:00:00.000Z",
+      "summary": "You can now manage the people in your Claude Enterprise (claude.ai) organization with the Admin API, in beta for all Claude Enterprise organizations: list members and look them up by email address,…",
+      "fetched_at": "2026-07-14T23:38:48.014Z",
+      "explanation": {
+        "what_it_is": "The Admin API now allows management of people within a Claude Enterprise organization, including listing members and searching by email address.",
+        "why_it_matters": "This update enables administrators to programmatically manage their organization's members, streamlining user management tasks.",
+        "how_to_use": [
+          "Use the Admin API to list all members in your organization",
+          "Look up a specific member by their email address using the API"
         ]
       }
     },
@@ -1703,25 +1722,6 @@
         "how_to_use": [
           "Set a task budget when initiating a task to limit the number of tokens used",
           "Monitor the running token count to adjust the budget as needed"
-        ]
-      }
-    },
-    {
-      "id": "88a61ae6",
-      "title": "Claude Opus 4.7 supports high-resolution image input, raising the maximum image…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "Claude Opus 4.7 supports high-resolution image input, raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot…",
-      "fetched_at": "2026-07-03T17:07:18.962Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.7 now accepts high-resolution images with a maximum resolution of 2576 pixels on the long edge, up from 1568 pixels previously.",
-        "why_it_matters": "This change allows Claude Code users to process larger, more detailed images, which is particularly useful for tasks involving screenshots or high-resolution computer-generated images.",
-        "how_to_use": [
-          "Pass high-resolution screenshots to Claude Opus 4.7 for more accurate image analysis",
-          "Use the increased resolution limit to process larger images from computer-generated sources"
         ]
       }
     }
