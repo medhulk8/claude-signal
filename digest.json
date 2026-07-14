@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-14T16:05:27.954Z",
+  "generated_at": "2026-07-14T17:53:46.711Z",
   "item_count": 90,
   "items": [
     {
@@ -825,21 +825,21 @@
       }
     },
     {
-      "id": "b115aa87",
+      "id": "2ac335da",
       "title": "The session.thread_* webhook events now include a session_thread_id field…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "The session.thread_* webhook events now include a session_thread_id field identifying the multi-agent thread that triggered the event.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
+      "summary": "The session.thread_* webhook events now include a session_thread_id field identifying the multiagent thread that triggered the event.",
+      "fetched_at": "2026-07-14T17:53:47.829Z",
       "explanation": {
-        "what_it_is": "The session.thread_* webhook events in the Anthropic API now include a session_thread_id field, which identifies the specific multi-agent thread that triggered the event.",
-        "why_it_matters": "This addition allows Claude Code users to more accurately track and manage conversations across multiple threads, enabling better handling of complex interactions.",
+        "what_it_is": "The session.thread_* webhook events in the Anthropic API now include a session_thread_id field, which identifies the specific multiagent thread that triggered the event.",
+        "why_it_matters": "This addition allows Claude Code users to more accurately track and manage conversations involving multiple agents, enabling better handling of complex interactions.",
         "how_to_use": [
-          "Use the session_thread_id field to correlate related events and maintain context in multi-threaded conversations.",
-          "Update existing webhook event handlers to parse and utilize the new session_thread_id field for improved thread management."
+          "Use the session_thread_id to correlate related events and maintain context in multiagent conversations",
+          "Update existing webhook event handlers to parse and utilize the new session_thread_id field"
         ]
       }
     },
@@ -920,22 +920,22 @@
       }
     },
     {
-      "id": "67c1257d",
-      "title": "Claude Managed Agents webhooks, multi-agent orchestration, and self-hosted…",
+      "id": "2033defa",
+      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-29T00:00:00.000Z",
-      "summary": "Claude Managed Agents webhooks, multi-agent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
+      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
+      "fetched_at": "2026-07-14T17:53:47.829Z",
       "explanation": {
-        "what_it_is": "Claude Managed Agents now support webhooks, multi-agent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and scalable agent management.",
-        "why_it_matters": "This update enables Claude Code users to automate workflows and integrate with other AWS services more easily, and to manage multiple agents in a more coordinated way.",
+        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
+        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and test agents in isolated environments, all within the AWS ecosystem.",
         "how_to_use": [
-          "Use webhooks to trigger actions in response to agent events, such as completing a task or encountering an error",
-          "Orchestrate multiple agents to work together on complex tasks, using the new multi-agent orchestration features",
-          "Set up self-hosted sandboxes to test and develop agent workflows in a isolated environment"
+          "Use webhooks to receive notifications when agent events occur, such as when an agent completes a task or encounters an error.",
+          "Configure multiagent orchestration to coordinate the actions of multiple agents, enabling more complex workflows and scenarios.",
+          "Set up self-hosted sandboxes to test and validate agent behavior in a controlled, isolated environment before deploying to production."
         ]
       }
     },
@@ -1208,22 +1208,21 @@
       }
     },
     {
-      "id": "0bd175d0",
+      "id": "2063147c",
       "title": "In Claude Code, Workflows are available as a research preview, letting you…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, Workflows are available as a research preview, letting you define and run multi-step agentic plans. See the Claude Code documentation.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
+      "summary": "In Claude Code, Workflows are available as a research preview, letting you define and run multistep agentic plans. See the Claude Code documentation.",
+      "fetched_at": "2026-07-14T17:53:47.829Z",
       "explanation": {
-        "what_it_is": "Workflows in Claude Code allow you to define and run multi-step agentic plans, enabling more complex and sequential task automation.",
-        "why_it_matters": "This update matters because it lets Claude Code users create and execute more sophisticated plans, potentially streamlining their workflow and reducing manual intervention.",
+        "what_it_is": "Workflows in Claude Code allow you to define and run multistep agentic plans, enabling the creation of complex, sequential tasks.",
+        "why_it_matters": "This feature matters because it lets Claude Code users break down intricate processes into manageable, automated steps, potentially streamlining their development workflows.",
         "how_to_use": [
-          "Define a multi-step plan using the Claude Code API",
-          "Run the plan sequentially to automate tasks",
-          "Refer to the Claude Code documentation for implementation details"
+          "Define a workflow by specifying a series of tasks and their dependencies",
+          "Run the workflow using the Claude Code API, allowing for automated execution of the defined plan"
         ]
       }
     },
@@ -1440,21 +1439,22 @@
       }
     },
     {
-      "id": "1f226973",
-      "title": "Multi-agent sessions and Outcomes are now in public beta under the standard…",
+      "id": "1644d4ad",
+      "title": "Multiagent orchestration and Outcomes are now in public beta under the standard…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Multi-agent sessions and Outcomes are now in public beta under the standard managed-agents-2026-04-01 beta header.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
+      "summary": "Multiagent orchestration and Outcomes are now in public beta under the standard managed-agents-2026-04-01 beta header.",
+      "fetched_at": "2026-07-14T17:53:47.829Z",
       "explanation": {
-        "what_it_is": "Multi-agent sessions and Outcomes are now available in public beta, accessible under the standard managed-agents-2026-04-01 beta header in the Anthropic API.",
-        "why_it_matters": "This update allows Claude Code users to leverage multi-agent sessions and Outcomes in their applications, enabling more complex and dynamic interactions.",
+        "what_it_is": "Multiagent orchestration and Outcomes are now available in public beta, allowing for more complex interactions between agents and the ability to track specific outcomes.",
+        "why_it_matters": "This update enables Claude Code users to create more sophisticated workflows and measure the effectiveness of their agent-based systems.",
         "how_to_use": [
-          "Use the managed-agents-2026-04-01 beta header to access multi-agent sessions and Outcomes in your API requests",
-          "Integrate multi-agent sessions into your existing workflows to handle multiple agents and outcomes"
+          "Use the managed-agents-2026-04-01 beta header to access multiagent orchestration and Outcomes in your API requests",
+          "Design workflows that involve multiple agents interacting with each other to achieve specific outcomes",
+          "Track and analyze the outcomes of your agent-based systems to refine and improve their performance"
         ]
       }
     },
