@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-07-15T22:44:03.065Z",
+  "generated_at": "2026-07-15T23:44:57.630Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "af80c8d7",
+      "title": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-15T23:02:35Z",
+      "summary": "v2.1.211",
+      "fetched_at": "2026-07-15T23:44:57.892Z",
+      "explanation": {
+        "what_it_is": "The --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable allow subagent text and thinking to be included in stream-json output. This provides more detailed information about the decision-making process of subagents.",
+        "why_it_matters": "This update matters because it gives Claude Code users more visibility into the thought process of subagents, which can be useful for debugging and understanding complex workflows. It changes the practice of users by providing them with more detailed output to work with.",
+        "how_to_use": [
+          "Use the --forward-subagent-text flag when running Claude Code to include subagent text and thinking in the output.",
+          "Set the CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to enable this feature by default."
+        ]
+      }
+    },
     {
       "id": "ed4393cc",
       "title": "Added a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck",
@@ -1704,24 +1723,6 @@
         "how_to_use": [
           "Update your API requests to use the Claude Haiku 4.5 model instead of Claude Haiku 3",
           "Test your applications to ensure compatibility with the new model"
-        ]
-      }
-    },
-    {
-      "id": "a9fa5e48",
-      "title": "We've launched Claude Opus 4.7, our most capable generally available model for…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.7, our most capable generally available model for complex reasoning and agentic coding, at the same $5 / $25 per MTok pricing as Opus 4.6. See What's new in Claude Opus…",
-      "fetched_at": "2026-07-01T22:09:40.996Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.7 is a generally available model that supports complex reasoning and agentic coding, available at the same pricing as Opus 4.6.",
-        "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
-        "how_to_use": [
-          "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code."
         ]
       }
     }
