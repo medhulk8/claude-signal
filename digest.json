@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-07-14T23:38:46.873Z",
+  "generated_at": "2026-07-15T01:05:24.677Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "ed4393cc",
+      "title": "Added a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-14T23:45:25Z",
+      "summary": "v2.1.210",
+      "fetched_at": "2026-07-15T01:05:24.916Z",
+      "explanation": {
+        "what_it_is": "A live elapsed-time counter has been added to the collapsed tool summary line, displaying the time elapsed for long-running tool calls.",
+        "why_it_matters": "This change helps users identify that a tool call is still running, even if it takes a long time, instead of appearing stuck or unresponsive.",
+        "how_to_use": [
+          "Run a long-running tool call and observe the elapsed time counter in the collapsed tool summary line.",
+          "Use this feature to monitor the progress of tasks that typically take a long time to complete."
+        ]
+      }
+    },
+    {
+      "id": "52cfdc91",
+      "title": "Added a startup warning for Write(path), NotebookEdit(path), and Glob(path) permission rules — use Edit(path) or Read(path) instead",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-14T23:45:25Z",
+      "summary": "v2.1.210",
+      "fetched_at": "2026-07-15T01:05:24.916Z",
+      "explanation": {
+        "what_it_is": "A startup warning has been added for Write(path), NotebookEdit(path), and Glob(path) permission rules to notify users of their usage.",
+        "why_it_matters": "This warning matters because it prompts users to switch to Edit(path) or Read(path) instead, which may better fit their intended use cases and avoid potential security issues.",
+        "how_to_use": [
+          "Replace Write(path) with Edit(path) for files that need to be modified",
+          "Use Read(path) for files that only require read access"
+        ]
+      }
+    },
     {
       "id": "431ebfe3",
       "title": "Added screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add…",
@@ -1684,44 +1722,6 @@
         "why_it_matters": "This update provides Claude Code users with a more capable model for handling complex tasks without incurring additional costs.",
         "how_to_use": [
           "Use Claude Opus 4.7 for tasks that require advanced reasoning and coding capabilities, such as generating complex code snippets or debugging existing code."
-        ]
-      }
-    },
-    {
-      "id": "9bdf5c12",
-      "title": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "Claude in Amazon Bedrock is now open to all Amazon Bedrock customers. Claude Opus 4.7 and Claude Haiku 4.5 are available self-serve from the Bedrock console through the Messages API endpoint at…",
-      "fetched_at": "2026-07-03T17:07:18.962Z",
-      "explanation": {
-        "what_it_is": "Claude integration in Amazon Bedrock is now available to all customers, allowing access to Claude Opus 4.7 and Claude Haiku 4.5 through the Messages API endpoint.",
-        "why_it_matters": "This change enables all Amazon Bedrock customers to leverage Claude's capabilities without requiring special access or setup, streamlining the integration process.",
-        "how_to_use": [
-          "Access Claude Opus 4.7 and Claude Haiku 4.5 from the Bedrock console",
-          "Use the Messages API endpoint to integrate Claude into your Amazon Bedrock workflow"
-        ]
-      }
-    },
-    {
-      "id": "384986bb",
-      "title": "We've launched task budgets in beta on Claude Opus 4.7",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-16-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-16T00:00:00.000Z",
-      "summary": "We've launched task budgets in beta on Claude Opus 4.7. Give Claude an advisory token budget for a full agentic loop (thinking, tool calls, tool results, and output) and the model sees a running…",
-      "fetched_at": "2026-07-03T17:07:18.962Z",
-      "explanation": {
-        "what_it_is": "Task budgets allow you to set an advisory token budget for a full agentic loop in Claude Opus 4.7, controlling the model's thinking, tool calls, tool results, and output.",
-        "why_it_matters": "This feature gives you more control over the resources used by Claude, enabling more efficient and cost-effective task execution.",
-        "how_to_use": [
-          "Set a task budget when initiating a task to limit the number of tokens used",
-          "Monitor the running token count to adjust the budget as needed"
         ]
       }
     }
