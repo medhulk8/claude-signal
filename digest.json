@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-16T16:58:08.619Z",
+  "generated_at": "2026-07-16T18:01:23.074Z",
   "item_count": 90,
   "items": [
     {
@@ -19,6 +19,26 @@
         "how_to_use": [
           "Use the --forward-subagent-text flag when running Claude Code to include subagent text and thinking in the output.",
           "Set the CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to enable this feature by default."
+        ]
+      }
+    },
+    {
+      "id": "6c7dade0",
+      "title": "Mid-conversation system messages are available on Claude Fable 5, Claude Mythos…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-15-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-15T00:00:00.000Z",
+      "summary": "Mid-conversation system messages are available on Claude Fable 5, Claude Mythos 5, and Claude Opus 4.8, on the Claude API, Claude in Amazon Bedrock, and Google Cloud. No beta header is required. This…",
+      "fetched_at": "2026-07-16T18:01:24.530Z",
+      "explanation": {
+        "what_it_is": "Mid-conversation system messages allow developers to send messages to users in the middle of a conversation, without requiring a beta header, on specific Claude models and platforms.",
+        "why_it_matters": "This update enables more flexible and dynamic conversations, as developers can now interrupt or add to the conversation flow as needed, on Claude Fable 5, Claude Mythos 5, and Claude Opus 4.8, across the Claude API, Amazon Bedrock, and Google Cloud.",
+        "how_to_use": [
+          "Use mid-conversation system messages to provide timely updates or corrections in a conversation",
+          "Send messages to users on Claude Fable 5, Claude Mythos 5, or Claude Opus 4.8 without a beta header",
+          "Integrate mid-conversation system messages into your conversation flow on the Claude API, Amazon Bedrock, or Google Cloud"
         ]
       }
     },
@@ -1704,25 +1724,6 @@
         "how_to_use": [
           "Use the managed-agents-2026-04-01 header to enable memory for your Claude Managed Agents",
           "Follow the integration guide at 'Using agent memory' to implement memory in your conversational workflows"
-        ]
-      }
-    },
-    {
-      "id": "5374dd90",
-      "title": "We've retired the Claude Haiku 3 model (claude-3-haiku-20240307)",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-20-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-20T00:00:00.000Z",
-      "summary": "We've retired the Claude Haiku 3 model (claude-3-haiku-20240307). All requests to this model will now return an error. We recommend upgrading to Claude Haiku 4.5.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The Claude Haiku 3 model has been retired and is no longer available for use, with all requests to this model now returning an error.",
-        "why_it_matters": "This change requires users to upgrade to Claude Haiku 4.5 to continue using the platform without errors.",
-        "how_to_use": [
-          "Update your API requests to use the Claude Haiku 4.5 model instead of Claude Haiku 3",
-          "Test your applications to ensure compatibility with the new model"
         ]
       }
     }
