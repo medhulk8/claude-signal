@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-07-16T23:44:02.195Z",
+  "generated_at": "2026-07-17T01:17:42.370Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "dd948498",
+      "title": "Added claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes to skip)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-17T00:26:27Z",
+      "summary": "v2.1.212",
+      "fetched_at": "2026-07-17T01:17:42.622Z",
+      "explanation": {
+        "what_it_is": "A new command to reset the auto-mode configuration to its default state, with an optional confirmation prompt that can be skipped using the --yes flag.",
+        "why_it_matters": "This update allows users to easily revert changes made to the auto-mode configuration, providing a convenient way to restore default settings when needed.",
+        "how_to_use": [
+          "Run `claude auto-mode reset` to reset the auto-mode configuration with a confirmation prompt",
+          "Use `claude auto-mode reset --yes` to skip the confirmation prompt and reset immediately"
+        ]
+      }
+    },
+    {
+      "id": "60b6dc5e",
+      "title": "Added a session-wide limit on WebSearch tool calls (default 200, tunable via CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION) to stop runaway search loops",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-17T00:26:27Z",
+      "summary": "v2.1.212",
+      "fetched_at": "2026-07-17T01:17:42.622Z",
+      "explanation": {
+        "what_it_is": "A session-wide limit on WebSearch tool calls, defaulting to 200 calls per session, that can be adjusted using the CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION variable.",
+        "why_it_matters": "This limit prevents runaway search loops from consuming excessive resources, allowing for more stable and predictable Claude Code sessions.",
+        "how_to_use": [
+          "Set the CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION variable to a custom value to adjust the limit according to your specific needs.",
+          "Monitor your WebSearch tool calls to avoid hitting the limit and adjust your code accordingly."
+        ]
+      }
+    },
+    {
+      "id": "eb4682f5",
+      "title": "Added a per-session cap on subagent spawns (default 200, override with CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION) to stop runaway delegation loops;…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-17T00:26:27Z",
+      "summary": "v2.1.212",
+      "fetched_at": "2026-07-17T01:17:42.622Z",
+      "explanation": {
+        "what_it_is": "A per-session cap on subagent spawns, limiting the number of subagents that can be spawned in a single session to 200 by default.",
+        "why_it_matters": "This cap prevents runaway delegation loops, which can cause performance issues or crashes, by limiting the number of subagents that can be spawned.",
+        "how_to_use": [
+          "Use the default cap of 200 subagent spawns per session for most use cases",
+          "Override the default cap by setting the CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION environment variable for sessions that require more subagents"
+        ]
+      }
+    },
+    {
+      "id": "73639526",
+      "title": "Deprecated the Task tool's mode parameter (now ignored); subagents inherit the parent session's permission mode by default",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-17T00:26:27Z",
+      "summary": "v2.1.212",
+      "fetched_at": "2026-07-17T01:17:42.622Z",
+      "explanation": {
+        "what_it_is": "The Task tool's mode parameter is now deprecated and ignored, and subagents automatically inherit the parent session's permission mode by default.",
+        "why_it_matters": "This change simplifies task configuration and ensures consistent permission modes between parent sessions and subagents, reducing potential permission mismatches.",
+        "how_to_use": [
+          "Update existing Task tool configurations to remove the mode parameter",
+          "Verify that subagents are inheriting the expected permission mode from their parent sessions"
+        ]
+      }
+    },
     {
       "id": "af80c8d7",
       "title": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json…",
@@ -365,45 +441,6 @@
         "how_to_use": [
           "Go to Settings in VSCode and toggle 'Enable Remote Control for all sessions' to enable or disable remote control for all sessions",
           "Use this feature to simplify remote debugging and collaboration across multiple sessions"
-        ]
-      }
-    },
-    {
-      "id": "33fca8f7",
-      "title": "Added a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-06T22:51:16Z",
-      "summary": "v2.1.202",
-      "fetched_at": "2026-07-06T22:53:24.736Z",
-      "explanation": {
-        "what_it_is": "A new setting in the /config file that allows users to control the size of dynamic workflows generated by Claude, with options for small, medium, or large agent sizes.",
-        "why_it_matters": "This setting gives users more control over the complexity and resource usage of their dynamic workflows, allowing them to tailor the workflow size to their specific needs.",
-        "how_to_use": [
-          "Set the 'Dynamic workflow size' to 'small' for simple workflows with limited steps",
-          "Use the 'medium' setting for typical workflows that require a balance between complexity and resource usage",
-          "Configure the setting to 'large' for complex workflows that require multiple agents and extensive resources"
-        ]
-      }
-    },
-    {
-      "id": "2707b324",
-      "title": "Added workflow.run_id and workflow.name OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a workflow run's activity can be…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-06T22:51:16Z",
-      "summary": "v2.1.202",
-      "fetched_at": "2026-07-06T22:53:24.736Z",
-      "explanation": {
-        "what_it_is": "The addition of workflow.run_id and workflow.name OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, allowing for more detailed tracking of workflow activity.",
-        "why_it_matters": "This update enables better monitoring and debugging of workflow runs by providing more context about the workflow's activity, making it easier to identify and resolve issues.",
-        "how_to_use": [
-          "Use the workflow.run_id attribute to correlate telemetry data with specific workflow runs",
-          "Utilize the workflow.name attribute to filter or group telemetry data by workflow name"
         ]
       }
     },
@@ -1686,44 +1723,6 @@
         "how_to_use": [
           "Use the Claude API skill to access the latest Messages API documentation",
           "Integrate the skill into your Claude Managed Agents to improve multilingual support"
-        ]
-      }
-    },
-    {
-      "id": "aedab74c",
-      "title": "We've released the Rate Limits API, allowing administrators to programmatically…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-24-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-24T00:00:00.000Z",
-      "summary": "We've released the Rate Limits API, allowing administrators to programmatically query the rate limits configured for their organization and workspaces.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The Rate Limits API allows administrators to programmatically query the rate limits configured for their organization and workspaces.",
-        "why_it_matters": "This API enables administrators to automate the process of checking rate limits, making it easier to manage and monitor usage across their organization.",
-        "how_to_use": [
-          "Use the API to query rate limits for a specific workspace",
-          "Integrate the API with your organization's monitoring tools to receive alerts when rate limits are approached"
-        ]
-      }
-    },
-    {
-      "id": "73c13b1c",
-      "title": "Memory for Claude Managed Agents is now in public beta under the standard…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#april-23-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-04-23T00:00:00.000Z",
-      "summary": "Memory for Claude Managed Agents is now in public beta under the standard managed-agents-2026-04-01 header. See Using agent memory for the full integration guide.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Memory for Claude Managed Agents allows agents to store and recall information, enabling more complex and context-aware interactions. This feature is now available in public beta.",
-        "why_it_matters": "With agent memory, Claude Code users can build more sophisticated conversational workflows that retain information across multiple exchanges, leading to more realistic and effective interactions. This feature is accessible under the standard managed-agents-2026-04-01 header.",
-        "how_to_use": [
-          "Use the managed-agents-2026-04-01 header to enable memory for your Claude Managed Agents",
-          "Follow the integration guide at 'Using agent memory' to implement memory in your conversational workflows"
         ]
       }
     }
