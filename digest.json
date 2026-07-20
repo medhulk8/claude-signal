@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-20T17:12:30.521Z",
+  "generated_at": "2026-07-20T19:18:48.510Z",
   "item_count": 90,
   "items": [
     {
@@ -209,6 +209,45 @@
         "how_to_use": [
           "Update existing Task tool configurations to remove the mode parameter",
           "Verify that subagents are inheriting the expected permission mode from their parent sessions"
+        ]
+      }
+    },
+    {
+      "id": "2daa5fa6",
+      "title": "The legacy Workbench (platform.claude.com/workbench) in the Claude Console is…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-17T00:00:00.000Z",
+      "summary": "The legacy Workbench (platform.claude.com/workbench) in the Claude Console is being sunset with access ending on August 17, 2026. Saved prompts, variables, and evals are not supported in the updated…",
+      "fetched_at": "2026-07-20T19:18:51.981Z",
+      "explanation": {
+        "what_it_is": "The legacy Workbench at platform.claude.com/workbench in the Claude Console is being discontinued, with access ending on August 17, 2026. This means that users will no longer be able to access the legacy Workbench after this date.",
+        "why_it_matters": "Saved prompts, variables, and evals from the legacy Workbench are not compatible with the updated platform, so users need to migrate their workflows before access ends. This change affects users who rely on the legacy Workbench for their development workflows.",
+        "how_to_use": [
+          "Migrate saved prompts, variables, and evals to the updated platform before August 17, 2026",
+          "Update workflows to use the new platform features, which do not support legacy Workbench functionality"
+        ]
+      }
+    },
+    {
+      "id": "2759e97b",
+      "title": "The experimental prompt tools APIs for generating, improving, and templatizing…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-17T00:00:00.000Z",
+      "summary": "The experimental prompt tools APIs for generating, improving, and templatizing prompts (/v1/experimental/generate_prompt, /v1/experimental/improve_prompt, and /v1/experimental/templatize_prompt) are…",
+      "fetched_at": "2026-07-20T19:18:51.981Z",
+      "explanation": {
+        "what_it_is": "The experimental prompt tools APIs provide endpoints for generating, improving, and templatizing prompts, specifically /v1/experimental/generate_prompt, /v1/experimental/improve_prompt, and /v1/experimental/templatize_prompt.",
+        "why_it_matters": "These APIs allow Claude Code users to programmatically create, refine, and template prompts, potentially streamlining their workflow and reducing manual effort.",
+        "how_to_use": [
+          "Use /v1/experimental/generate_prompt to automatically create prompts for common tasks",
+          "Leverage /v1/experimental/improve_prompt to refine existing prompts based on performance data",
+          "Utilize /v1/experimental/templatize_prompt to create reusable prompt templates for frequent use cases"
         ]
       }
     },
@@ -1683,45 +1722,6 @@
         "how_to_use": [
           "Subscribe to webhooks to receive notifications when a session is created or updated",
           "Use webhook events to automate vault lifecycle management, such as archiving or deleting vaults when they are no longer needed"
-        ]
-      }
-    },
-    {
-      "id": "90acd5c7",
-      "title": "Additional filtering and sorting options are now supported for Claude Managed…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Additional filtering and sorting options are now supported for Claude Managed Agents. Sessions can be filtered by status, and events can be filtered by type. Events can now be filtered by creation…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Additional filtering and sorting options for Claude Managed Agents, including filtering sessions by status and events by type or creation time.",
-        "why_it_matters": "This update allows for more precise management and analysis of sessions and events within Claude Managed Agents, enabling more efficient workflow and decision-making.",
-        "how_to_use": [
-          "Filter sessions by status to track active or completed sessions",
-          "Filter events by type to focus on specific event categories",
-          "Filter events by creation time to analyze recent activity"
-        ]
-      }
-    },
-    {
-      "id": "3c8db0c6",
-      "title": "Dreams for Claude Managed Agents are now available as a research preview",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Dreams for Claude Managed Agents are now available as a research preview. A dream reads an existing memory store alongside past session transcripts and produces a reorganized output memory store with…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Dreams for Claude Managed Agents is a research preview feature that reorganizes output memory stores by reading existing memory stores and past session transcripts.",
-        "why_it_matters": "This feature allows Claude Managed Agents to potentially improve their knowledge retention and recall by reorganizing their memory stores, which can lead to more accurate and informative responses.",
-        "how_to_use": [
-          "Use the Dreams feature to reorganize an agent's memory store after a series of sessions to improve knowledge retention",
-          "Test the Dreams feature with different types of session transcripts to see how it affects the agent's output memory store"
         ]
       }
     }
