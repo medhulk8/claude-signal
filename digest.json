@@ -1,8 +1,66 @@
 {
   "version": 1,
-  "generated_at": "2026-07-21T20:09:04.206Z",
+  "generated_at": "2026-07-21T21:49:50.638Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "ac2700c8",
+      "title": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-21T21:35:10Z",
+      "summary": "v2.1.217",
+      "fetched_at": "2026-07-21T21:49:50.731Z",
+      "explanation": {
+        "what_it_is": "Emoji shortcode autocomplete allows you to insert emojis into the prompt input by typing a colon followed by a shortcode, such as :heart: for ❤️.",
+        "why_it_matters": "This feature saves time and effort when inserting emojis into your prompts, making it easier to add tone and personality to your input.",
+        "how_to_use": [
+          "Type :heart: to insert ❤️",
+          "Type :hea and select from suggestions to insert a heart-related emoji",
+          "Disable emoji autocomplete by setting emojiCompletionEnabled to false"
+        ]
+      }
+    },
+    {
+      "id": "038ffb2d",
+      "title": "Added warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-21T21:35:10Z",
+      "summary": "v2.1.217",
+      "fetched_at": "2026-07-21T21:49:50.731Z",
+      "explanation": {
+        "what_it_is": "Claude Code now displays warnings when it fails to write transcripts, such as when the disk is full, or when session saving is disabled due to an inherited environment variable.",
+        "why_it_matters": "This change helps users identify and address issues that might cause data loss or inconsistencies, allowing them to take corrective action to ensure their work is saved.",
+        "how_to_use": [
+          "Check the warnings to determine if transcript writes are failing due to disk space issues and free up space as needed",
+          "Review environment variables to ensure session saving is enabled when required"
+        ]
+      }
+    },
+    {
+      "id": "a8ca14a0",
+      "title": "Added a cap on concurrently-running subagents (default 20, override with CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS) so one message can't fan out unbounded…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-21T21:35:10Z",
+      "summary": "v2.1.217",
+      "fetched_at": "2026-07-21T21:49:50.731Z",
+      "explanation": {
+        "what_it_is": "A cap on the number of subagents that can run concurrently, with a default limit of 20, to prevent unbounded fan-out from a single message.",
+        "why_it_matters": "This cap prevents a single message from overloading the system with too many concurrent subagent executions, reducing the risk of performance issues and crashes.",
+        "how_to_use": [
+          "Set the default limit of 20 subagents per message",
+          "Override the default limit by setting the CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS environment variable"
+        ]
+      }
+    },
     {
       "id": "c4b317dc",
       "title": "Added sandbox.filesystem.disabled setting to skip filesystem isolation while keeping network egress control",
@@ -439,44 +497,6 @@
         "how_to_use": [
           "Use the Admin API to list all members in your organization",
           "Look up a specific member by their email address using the API"
-        ]
-      }
-    },
-    {
-      "id": "7fbe381d",
-      "title": "Added directory path suggestions to /cd, matching /add-dir behavior",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-10T01:45:26Z",
-      "summary": "v2.1.206",
-      "fetched_at": "2026-07-10T04:40:58.055Z",
-      "explanation": {
-        "what_it_is": "The /cd command in Claude Code now provides directory path suggestions, similar to the /add-dir command.",
-        "why_it_matters": "This change streamlines navigation by allowing users to quickly identify and switch to desired directories.",
-        "how_to_use": [
-          "Type /cd and press tab to view suggested directory paths",
-          "Use the suggested paths to quickly change directories"
-        ]
-      }
-    },
-    {
-      "id": "1993fe81",
-      "title": "Added a /doctor check that proposes trimming checked-in CLAUDE.md files by cutting content Claude could derive from the codebase",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-10T01:45:26Z",
-      "summary": "v2.1.206",
-      "fetched_at": "2026-07-10T04:40:58.055Z",
-      "explanation": {
-        "what_it_is": "A new /doctor check that analyzes checked-in CLAUDE.md files and suggests removing content that can be automatically generated by Claude from the codebase.",
-        "why_it_matters": "This check helps keep CLAUDE.md files concise and up-to-date by eliminating redundant information, making it easier to maintain accurate documentation.",
-        "how_to_use": [
-          "Run the /doctor command to identify CLAUDE.md files with derivable content",
-          "Review and apply the suggested trims to reduce file size and improve documentation clarity"
         ]
       }
     },
@@ -1703,25 +1723,6 @@
         "how_to_use": [
           "Use the Authenticate with vaults documentation to configure mcp_oauth credentials for background refresh.",
           "Verify that your Claude Managed Agents are set up to use mcp_oauth credentials to take advantage of the background refresh feature."
-        ]
-      }
-    },
-    {
-      "id": "ce68d3c5",
-      "title": "Webhooks for Claude Managed Agents are now supported",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Webhooks for Claude Managed Agents are now supported. Webhook event types include session and vault lifecycle events. See Subscribe to webhooks.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Webhooks for Claude Managed Agents allow you to receive notifications for specific events, such as session and vault lifecycle events, enabling real-time updates and automation.",
-        "why_it_matters": "This update enables Claude Code users to integrate their applications with Claude Managed Agents in a more seamless and automated way, allowing for more efficient workflows and better event handling.",
-        "how_to_use": [
-          "Subscribe to webhooks to receive notifications when a session is created or updated",
-          "Use webhook events to automate vault lifecycle management, such as archiving or deleting vaults when they are no longer needed"
         ]
       }
     }
