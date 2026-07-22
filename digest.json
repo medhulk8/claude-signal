@@ -1,8 +1,85 @@
 {
   "version": 1,
-  "generated_at": "2026-07-22T20:50:37.635Z",
+  "generated_at": "2026-07-22T21:53:55.532Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "da0bf2fc",
+      "title": "Added screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+K) in…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-22T21:24:56Z",
+      "summary": "v2.1.218",
+      "fetched_at": "2026-07-22T21:53:55.874Z",
+      "explanation": {
+        "what_it_is": "Claude Code now announces deleted text to screen readers when using specific keyboard shortcuts, such as Option+Delete or Ctrl+W, for word and line deletions.",
+        "why_it_matters": "This update improves accessibility for visually impaired users, providing them with auditory feedback when deleting text.",
+        "how_to_use": [
+          "Use Option+Delete to delete a word and hear the announcement of the deleted text.",
+          "Press Ctrl+W to delete a line and receive an auditory confirmation of the deletion."
+        ]
+      }
+    },
+    {
+      "id": "1e8a9ce4",
+      "title": "Added HTTP status and error text to claude mcp list and /mcp when a server fails to connect, and a warning for MCP config values with hidden leading…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-22T21:24:56Z",
+      "summary": "v2.1.218",
+      "fetched_at": "2026-07-22T21:53:55.874Z",
+      "explanation": {
+        "what_it_is": "The Claude Code 'claude mcp list' and '/mcp' commands now display HTTP status and error text when a server connection fails, and issue warnings for MCP config values with hidden leading characters.",
+        "why_it_matters": "This update helps Claude Code users diagnose connection issues and identify potential configuration problems more easily, allowing for faster troubleshooting and resolution.",
+        "how_to_use": [
+          "Run 'claude mcp list' to see detailed error information for failed server connections",
+          "Check '/mcp' output for warnings about MCP config values with hidden leading characters"
+        ]
+      }
+    },
+    {
+      "id": "50e7aa2f",
+      "title": "Added an announcement when fast mode changes as a result of switching models via /config model=<x> or Remote Control",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-22T21:24:56Z",
+      "summary": "v2.1.218",
+      "fetched_at": "2026-07-22T21:53:55.874Z",
+      "explanation": {
+        "what_it_is": "An announcement is now displayed when the fast mode changes after switching models using the /config model=<x> command or Remote Control.",
+        "why_it_matters": "This update informs users of changes to fast mode, which can impact performance and behavior, allowing them to adjust their workflow accordingly.",
+        "how_to_use": [
+          "Use the /config model=<x> command to switch models and observe the announcement when fast mode changes.",
+          "Switch models via Remote Control and notice the announcement when fast mode is updated."
+        ]
+      }
+    },
+    {
+      "id": "4c3f8f5b",
+      "title": "Added yes/no/on/off/1/0 (case-insensitive) as accepted values for skill and plugin frontmatter booleans, alongside true/false",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-22T21:24:56Z",
+      "summary": "v2.1.218",
+      "fetched_at": "2026-07-22T21:53:55.874Z",
+      "explanation": {
+        "what_it_is": "The frontmatter booleans in skill and plugin configurations now accept yes/no, on/off, and 1/0 as valid values, in addition to true/false, and are case-insensitive.",
+        "why_it_matters": "This update provides more flexibility in how you configure your skills and plugins, allowing you to use a variety of boolean formats that may be more convenient or consistent with your existing workflows.",
+        "how_to_use": [
+          "Use 'yes' or 'no' instead of 'true' or 'false' in your frontmatter to enable or disable a feature",
+          "Configure a plugin with 'on' or 'off' to toggle its functionality",
+          "Use '1' or '0' for boolean values in your skill configurations"
+        ]
+      }
+    },
     {
       "id": "4650ae49",
       "title": "You can now set an effort level on a Claude Managed Agents agent's model…",
@@ -1643,84 +1720,6 @@
         "how_to_use": [
           "Use MCP tunnels to connect to MCP servers hosted on-premises or in a private cloud",
           "Configure MCP tunnels to access MCP servers that require private network connectivity"
-        ]
-      }
-    },
-    {
-      "id": "f70e3c48",
-      "title": "Self-hosted sandboxes are now available for Claude Managed Agents, as an…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-19T00:00:00.000Z",
-      "summary": "Self-hosted sandboxes are now available for Claude Managed Agents, as an alternative to running tool execution in Anthropic's infrastructure. See Self-hosted sandboxes.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Self-hosted sandboxes allow you to run Claude Managed Agents on your own infrastructure, rather than relying on Anthropic's infrastructure for tool execution.",
-        "why_it_matters": "This change gives you more control over the environment in which your agents run, and can be useful for security, compliance, or customization reasons.",
-        "how_to_use": [
-          "Set up a self-hosted sandbox on your own infrastructure to run Claude Managed Agents",
-          "Migrate existing agents from Anthropic's infrastructure to your self-hosted sandbox",
-          "Use self-hosted sandboxes to test and deploy custom agent configurations"
-        ]
-      }
-    },
-    {
-      "id": "b93868cf",
-      "title": "With Claude Managed Agents, you can now update the agent's MCP server and tool…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-19T00:00:00.000Z",
-      "summary": "With Claude Managed Agents, you can now update the agent's MCP server and tool configurations associated with an active session.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The ability to update an agent's MCP server and tool configurations while an active session is in progress, using Claude Managed Agents.",
-        "why_it_matters": "This update allows for more flexibility in managing agent configurations without having to interrupt or terminate active sessions, streamlining workflow and reducing potential downtime.",
-        "how_to_use": [
-          "Use the Claude API to update MCP server configurations for an active agent session",
-          "Modify tool configurations associated with an active session using the developer platform"
-        ]
-      }
-    },
-    {
-      "id": "ffee79ea",
-      "title": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-19T00:00:00.000Z",
-      "summary": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools exceeding 100K characters (about 25K tokens) are now automatically spilled to a file in the sandbox. The model receives a…",
-      "fetched_at": "2026-07-22T17:58:28.006Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents now automatically save large outputs from agent_toolset and MCP tools to a file in the sandbox when they exceed 100K characters or 25K tokens.",
-        "why_it_matters": "This change prevents output truncation for large results, allowing users to access complete data from their tools.",
-        "how_to_use": [
-          "Run agent_toolset or MCP tools with large output expectations to automatically save results to a sandbox file.",
-          "Access the saved file in the sandbox to retrieve complete output data."
-        ]
-      }
-    },
-    {
-      "id": "f910a11d",
-      "title": "The web search tool now returns richer SEC filing data, making it easier to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-18-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-18T00:00:00.000Z",
-      "summary": "The web search tool now returns richer SEC filing data, making it easier to ground financial research agents, earnings analysis, and due-diligence workflows in primary sources with citations.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The web search tool now returns more detailed SEC filing data, including primary sources with citations.",
-        "why_it_matters": "This update enables Claude Code users to more easily verify financial information and create more accurate financial research agents, earnings analysis, and due-diligence workflows.",
-        "how_to_use": [
-          "Use the web search tool to retrieve detailed SEC filing data for a specific company",
-          "Ground financial research agents in primary sources with citations to increase accuracy",
-          "Integrate the web search tool into due-diligence workflows to verify financial information"
         ]
       }
     }
