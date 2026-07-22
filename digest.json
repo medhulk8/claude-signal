@@ -1,8 +1,103 @@
 {
   "version": 1,
-  "generated_at": "2026-07-22T16:10:17.107Z",
+  "generated_at": "2026-07-22T17:58:26.802Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "4650ae49",
+      "title": "You can now set an effort level on a Claude Managed Agents agent's model…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-22T00:00:00.000Z",
+      "summary": "You can now set an effort level on a Claude Managed Agents agent's model configuration. Pass effort inside the model object when you create the agent. See Effort levels for what each level does.",
+      "fetched_at": "2026-07-22T17:58:28.006Z",
+      "explanation": {
+        "what_it_is": "The effort level on a Claude Managed Agents agent's model can now be set, allowing for customization of the agent's behavior through the model configuration.",
+        "why_it_matters": "This change gives Claude Code users more control over the agent's performance, enabling them to tailor the effort level to their specific use case.",
+        "how_to_use": [
+          "Pass the effort level inside the model object when creating the agent, e.g. {model: {effort: 'level'}}",
+          "Refer to the Effort levels documentation to determine the appropriate effort level for your agent"
+        ]
+      }
+    },
+    {
+      "id": "806f67cf",
+      "title": "Webhooks for Claude Managed Agents now cover the environment and memory store…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-22T00:00:00.000Z",
+      "summary": "Webhooks for Claude Managed Agents now cover the environment and memory store lifecycle: four environment. event types and three memory_store. event types. You can react to environment and memory…",
+      "fetched_at": "2026-07-22T17:58:28.006Z",
+      "explanation": {
+        "what_it_is": "Webhooks for Claude Managed Agents now provide notifications for environment and memory store lifecycle events, including four environment event types and three memory store event types.",
+        "why_it_matters": "This update allows Claude Code users to react to changes in the environment and memory store, enabling more dynamic and responsive agent behavior.",
+        "how_to_use": [
+          "Use the new webhooks to trigger agent restarts when the environment changes",
+          "React to memory store updates to synchronize agent state",
+          "Set up notifications for environment and memory store errors to improve debugging"
+        ]
+      }
+    },
+    {
+      "id": "5a894046",
+      "title": "When creating a Claude Managed Agents session, you can now seed it with initial…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-22T00:00:00.000Z",
+      "summary": "When creating a Claude Managed Agents session, you can now seed it with initial events. Pass initial_events on POST /v1/sessions with up to 50 user.message and user.define_outcome events. A non-empty…",
+      "fetched_at": "2026-07-22T17:58:28.006Z",
+      "explanation": {
+        "what_it_is": "The ability to seed a Claude Managed Agents session with initial events, allowing for predefined user messages and outcome definitions to be set at the start of a session.",
+        "why_it_matters": "This update enables Claude Code users to establish context and guide the conversation flow from the beginning of a session, potentially improving the accuracy and relevance of agent responses.",
+        "how_to_use": [
+          "Pass initial_events in the request body of a POST /v1/sessions call, including up to 50 user.message events to provide initial context.",
+          "Use user.define_outcome events to predefine specific outcomes or intents, helping to focus the agent's responses."
+        ]
+      }
+    },
+    {
+      "id": "f2cae616",
+      "title": "The version field is now optional when updating a Claude Managed Agents agent",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-22T00:00:00.000Z",
+      "summary": "The version field is now optional when updating a Claude Managed Agents agent. Supply it for optimistic concurrency (a mismatch returns a 409 error), or omit it to apply the update unconditionally.…",
+      "fetched_at": "2026-07-22T17:58:28.006Z",
+      "explanation": {
+        "what_it_is": "The version field is no longer required when updating a Claude Managed Agents agent, allowing for unconditional updates.",
+        "why_it_matters": "This change gives users more flexibility in how they update agents, as they can choose to supply the version for optimistic concurrency or omit it for unconditional updates.",
+        "how_to_use": [
+          "Omit the version field to apply an update unconditionally",
+          "Supply the version field to enable optimistic concurrency and receive a 409 error if the version mismatch occurs"
+        ]
+      }
+    },
+    {
+      "id": "61e71948",
+      "title": "Claude Managed Agents session thread event streams now support event deltas",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-22T00:00:00.000Z",
+      "summary": "Claude Managed Agents session thread event streams now support event deltas. GET /v1/sessions/{session_id}/threads/{thread_id}/stream accepts the same event_deltas[] query parameter as the…",
+      "fetched_at": "2026-07-22T17:58:28.006Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents session thread event streams can now provide event deltas, which are the differences between successive events in a stream.",
+        "why_it_matters": "This update allows developers to reduce the amount of data transferred and processed when consuming event streams, as they can now receive only the changes since the last event.",
+        "how_to_use": [
+          "Use the event_deltas[] query parameter with the GET /v1/sessions/{session_id}/threads/{thread_id}/stream endpoint to receive event deltas in the response."
+        ]
+      }
+    },
     {
       "id": "ac2700c8",
       "title": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled…",
@@ -1591,21 +1686,21 @@
       }
     },
     {
-      "id": "ae2528f9",
+      "id": "ffee79ea",
       "title": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-05-19T00:00:00.000Z",
-      "summary": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools exceeding 100K tokens are now automatically spilled to a file in the sandbox. The model receives a truncated preview with…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
+      "summary": "With Claude Managed Agents, large outputs from agent_toolset and MCP tools exceeding 100K characters (about 25K tokens) are now automatically spilled to a file in the sandbox. The model receives a…",
+      "fetched_at": "2026-07-22T17:58:28.006Z",
       "explanation": {
-        "what_it_is": "Claude Managed Agents now automatically spill large outputs from agent_toolset and MCP tools to a file in the sandbox when they exceed 100K tokens, providing a truncated preview to the model.",
-        "why_it_matters": "This change allows Claude Code users to handle large outputs more efficiently, as they no longer need to manually manage output sizes, and can instead focus on processing the truncated preview and accessing the full output from the sandbox file.",
+        "what_it_is": "Claude Managed Agents now automatically save large outputs from agent_toolset and MCP tools to a file in the sandbox when they exceed 100K characters or 25K tokens.",
+        "why_it_matters": "This change prevents output truncation for large results, allowing users to access complete data from their tools.",
         "how_to_use": [
-          "Use agent_toolset and MCP tools as usual, and access the full output from the sandbox file when the output exceeds 100K tokens.",
-          "Check the sandbox file for large outputs, and use the truncated preview provided to the model for initial processing or debugging."
+          "Run agent_toolset or MCP tools with large output expectations to automatically save results to a sandbox file.",
+          "Access the saved file in the sandbox to retrieve complete output data."
         ]
       }
     },
@@ -1626,103 +1721,6 @@
           "Use the web search tool to retrieve detailed SEC filing data for a specific company",
           "Ground financial research agents in primary sources with citations to increase accuracy",
           "Integrate the web search tool into due-diligence workflows to verify financial information"
-        ]
-      }
-    },
-    {
-      "id": "51fb9812",
-      "title": "We've launched cache diagnostics in public beta",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-13-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-13T00:00:00.000Z",
-      "summary": "We've launched cache diagnostics in public beta. Pass diagnostics.previous_message_id on a Messages request and the API reports a cache_miss_reason explaining where the prompt cache prefix diverged…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Cache diagnostics is a feature that allows you to pass a previous message ID on a Messages request to receive a cache_miss_reason, explaining where the prompt cache prefix diverged.",
-        "why_it_matters": "This feature helps Claude Code users identify and troubleshoot cache-related issues, allowing for more efficient debugging and optimization of their applications.",
-        "how_to_use": [
-          "Pass diagnostics.previous_message_id on a Messages request to receive cache diagnostics information",
-          "Use the cache_miss_reason response to identify where the prompt cache prefix diverged and adjust your application accordingly"
-        ]
-      }
-    },
-    {
-      "id": "0c46d801",
-      "title": "Fast mode (research preview) now supports Claude Opus 4.7",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-12-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-12T00:00:00.000Z",
-      "summary": "Fast mode (research preview) now supports Claude Opus 4.7. Set speed: \"fast\" with model: \"claude-opus-4-7\" and the fast-mode-2026-02-01 beta header for significantly faster output token generation at…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Fast mode is a research preview feature that allows for significantly faster output token generation in Claude Code, now compatible with Claude Opus 4.7.",
-        "why_it_matters": "This update enables Claude Code users to generate output tokens more quickly when using Claude Opus 4.7, potentially accelerating development and testing workflows.",
-        "how_to_use": [
-          "Set speed: 'fast' with model: 'claude-opus-4-7' to enable fast mode",
-          "Include the fast-mode-2026-02-01 beta header in your requests"
-        ]
-      }
-    },
-    {
-      "id": "383d29f2",
-      "title": "We've launched Claude Platform on AWS, bringing the Claude API to…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-11-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-11T00:00:00.000Z",
-      "summary": "We've launched Claude Platform on AWS, bringing the Claude API to Anthropic-managed infrastructure accessible through AWS, with AWS billing and IAM authentication. Access the full Messages API, Files…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The Claude Platform is now available on AWS, allowing access to the Claude API through Anthropic-managed infrastructure with AWS billing and IAM authentication.",
-        "why_it_matters": "This change allows Claude Code users to leverage AWS's infrastructure and authentication capabilities, streamlining their workflow and potentially reducing costs.",
-        "how_to_use": [
-          "Access the full Messages API through the AWS infrastructure",
-          "Use AWS billing to manage costs for Claude API usage",
-          "Authenticate with IAM to secure access to Claude API resources"
-        ]
-      }
-    },
-    {
-      "id": "1644d4ad",
-      "title": "Multiagent orchestration and Outcomes are now in public beta under the standard…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Multiagent orchestration and Outcomes are now in public beta under the standard managed-agents-2026-04-01 beta header.",
-      "fetched_at": "2026-07-14T17:53:47.829Z",
-      "explanation": {
-        "what_it_is": "Multiagent orchestration and Outcomes are now available in public beta, allowing for more complex interactions between agents and the ability to track specific outcomes.",
-        "why_it_matters": "This update enables Claude Code users to create more sophisticated workflows and measure the effectiveness of their agent-based systems.",
-        "how_to_use": [
-          "Use the managed-agents-2026-04-01 beta header to access multiagent orchestration and Outcomes in your API requests",
-          "Design workflows that involve multiple agents interacting with each other to achieve specific outcomes",
-          "Track and analyze the outcomes of your agent-based systems to refine and improve their performance"
-        ]
-      }
-    },
-    {
-      "id": "b9170b2c",
-      "title": "Claude Managed Agents vault credential background refresh is now supported for…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-6-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-06T00:00:00.000Z",
-      "summary": "Claude Managed Agents vault credential background refresh is now supported for mcp_oauth credentials. See Authenticate with vaults.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents now supports background refresh of vault credentials for mcp_oauth credentials, allowing for automatic updates of authentication tokens.",
-        "why_it_matters": "This update simplifies the process of managing vault credentials, reducing the need for manual token updates and minimizing potential authentication issues.",
-        "how_to_use": [
-          "Use the Authenticate with vaults documentation to configure mcp_oauth credentials for background refresh.",
-          "Verify that your Claude Managed Agents are set up to use mcp_oauth credentials to take advantage of the background refresh feature."
         ]
       }
     }
