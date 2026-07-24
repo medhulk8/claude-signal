@@ -1,8 +1,274 @@
 {
   "version": 1,
-  "generated_at": "2026-07-24T14:29:56.832Z",
+  "generated_at": "2026-07-24T18:07:32.468Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "0c3a38a8",
+      "title": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 5 is a new default Opus model that supports 1M context and has a fast mode, priced at $10/$50 per Mtok.",
+        "why_it_matters": "This update changes the default model used in Claude Code, potentially affecting the performance and cost of tasks that rely on the Opus model.",
+        "how_to_use": [
+          "Use the claude-opus-5 model for tasks that require a large context window, such as long-form text generation.",
+          "Enable fast mode for claude-opus-5 to reduce processing time, while considering the associated cost."
+        ]
+      }
+    },
+    {
+      "id": "4237e148",
+      "title": "Added sandbox.network.strictAllowlist setting to deny non-allowlisted hosts for sandboxed commands without prompting",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "The sandbox.network.strictAllowlist setting is a new configuration option that allows you to restrict sandboxed commands to only interact with allowlisted hosts, without prompting for permission.",
+        "why_it_matters": "This setting matters because it provides an additional layer of security for Claude Code users, preventing potential security risks by limiting interactions to trusted hosts.",
+        "how_to_use": [
+          "Set sandbox.network.strictAllowlist to true in your Claude Code configuration to enable strict allowlisting for sandboxed commands.",
+          "Configure your allowlist to include only trusted hosts that your sandboxed commands need to interact with."
+        ]
+      }
+    },
+    {
+      "id": "caa9f753",
+      "title": "Added DirectoryAdded hook that fires after /add-dir or the SDK register_repo_root control request registers a new working directory mid-session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "The DirectoryAdded hook is a new event that triggers after a new working directory is registered mid-session using either the /add-dir command or the SDK's register_repo_root control request.",
+        "why_it_matters": "This hook allows Claude Code users to execute custom actions or logic immediately after a new directory is added to their project, enabling better integration with other tools or workflows.",
+        "how_to_use": [
+          "Use the DirectoryAdded hook to automatically update project dependencies after adding a new directory.",
+          "Configure the hook to trigger a build or deployment process when a new directory is registered."
+        ]
+      }
+    },
+    {
+      "id": "2472445d",
+      "title": "Added mcp_server_errors to the headless stream-json init event, listing --mcp-config entries skipped by config validation; terminal runs print a…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "The headless stream-json init event in Claude Code now includes an 'mcp_server_errors' field, which lists --mcp-config entries that were skipped during config validation. This field provides additional error information when initializing the stream-json event.",
+        "why_it_matters": "This update allows Claude Code users to diagnose and troubleshoot configuration issues more effectively, by providing explicit information about which config entries were skipped. This can help users identify and fix configuration problems more quickly.",
+        "how_to_use": [
+          "Check the 'mcp_server_errors' field in the headless stream-json init event to see which --mcp-config entries were skipped",
+          "Use this information to adjust your config entries and ensure they are valid"
+        ]
+      }
+    },
+    {
+      "id": "c9d710af",
+      "title": "Added the workflowSizeGuideline settings key so the advisory Dynamic workflow size guideline can be set from any settings file; the /config row is…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "The workflowSizeGuideline settings key allows you to set the advisory Dynamic workflow size guideline from any settings file.",
+        "why_it_matters": "This change enables you to configure the Dynamic workflow size guideline without relying on the /config row, providing more flexibility in managing your workflows.",
+        "how_to_use": [
+          "Add the workflowSizeGuideline key to your settings file to set a custom guideline value.",
+          "Use this setting to enforce workflow size limits across your projects."
+        ]
+      }
+    },
+    {
+      "id": "1d97bc2c",
+      "title": "Added nested subagent forwarding in stream-json: subagents spawned at depth-2+ now appear when --forward-subagent-text is set, keyed by their…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "Nested subagent forwarding in stream-json allows subagents spawned at depth-2 or greater to be forwarded when the --forward-subagent-text flag is set, with their output keyed by their identifier.",
+        "why_it_matters": "This update enables more detailed and organized output from nested subagents, making it easier to track and debug complex workflows in Claude Code.",
+        "how_to_use": [
+          "Run a Claude Code workflow with the --forward-subagent-text flag to see output from nested subagents",
+          "Use the keyed output to track specific subagents and their results in your workflow"
+        ]
+      }
+    },
+    {
+      "id": "08b559de",
+      "title": "Added HTTP status and error text to claude mcp list and /mcp when a server fails to connect, and a warning for MCP config values with hidden leading…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "The Claude Code 'claude mcp list' and '/mcp' commands now display HTTP status and error text when a server connection fails, and issue warnings for MCP config values with hidden leading characters.",
+        "why_it_matters": "This update provides more detailed error information, helping users diagnose and resolve connection issues and config value problems more efficiently.",
+        "how_to_use": [
+          "Run 'claude mcp list' to see detailed error messages for failed server connections",
+          "Use '/mcp' to check for warnings about MCP config values with hidden leading characters"
+        ]
+      }
+    },
+    {
+      "id": "7d87c3ec",
+      "title": "Added structured failure categories to self-hosted runner spawn and session failures, so hook errors, runner crashes and config errors can be told…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "Structured failure categories have been added to self-hosted runner spawn and session failures, allowing for distinction between hook errors, runner crashes, and config errors.",
+        "why_it_matters": "This change enables more precise error identification and debugging for self-hosted runners, making it easier to diagnose and resolve issues.",
+        "how_to_use": [
+          "Check the failure category to determine if a self-hosted runner issue is due to a hook error, runner crash, or config error",
+          "Use the failure category information to inform debugging and troubleshooting efforts"
+        ]
+      }
+    },
+    {
+      "id": "683b54d4",
+      "title": "Added the current default workflow size to the running-workflow status line, with a pointer to /config for changing it",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-07-24T17:14:23Z",
+      "summary": "v2.1.219",
+      "fetched_at": "2026-07-24T18:07:32.721Z",
+      "explanation": {
+        "what_it_is": "The current default workflow size is now displayed in the running-workflow status line, along with a link to the /config page where it can be modified.",
+        "why_it_matters": "This update makes it easier for users to be aware of and adjust their workflow size, which can impact performance and resource usage.",
+        "how_to_use": [
+          "Check the running-workflow status line to see the current default workflow size",
+          "Click the /config link to change the default workflow size as needed"
+        ]
+      }
+    },
+    {
+      "id": "ca1cf279",
+      "title": "We've launched Claude Opus 5 (claude-opus-5), a step-change improvement over…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-24T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 5 (claude-opus-5), a step-change improvement over Claude Opus 4.8. Claude Opus 5 supports a 1M token context window (both the default and the maximum), 128k max output…",
+      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 5 is an updated model that supports a 1M token context window, both as the default and the maximum, and increases the max output to 128k.",
+        "why_it_matters": "This update allows Claude Code users to process and respond to longer input sequences, enabling more complex and nuanced interactions.",
+        "how_to_use": [
+          "Use Claude Opus 5 to handle longer user inputs or conversations without truncation",
+          "Take advantage of the increased max output to generate more detailed and informative responses"
+        ]
+      }
+    },
+    {
+      "id": "949e5b55",
+      "title": "On Claude Opus 5, disabling thinking is allowed only at effort high or below:…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-24T00:00:00.000Z",
+      "summary": "On Claude Opus 5, disabling thinking is allowed only at effort high or below: thinking: {\"type\": \"disabled\"} with effort xhigh or max returns a 400 error, a breaking change from Claude Opus 4.8. See…",
+      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "explanation": {
+        "what_it_is": "In Claude Opus 5, disabling thinking is restricted to effort levels 'high' or below, and attempting to disable thinking at 'xhigh' or 'max' effort levels will result in a 400 error.",
+        "why_it_matters": "This change affects existing workflows that relied on disabling thinking at higher effort levels in Claude Opus 4.8, requiring updates to accommodate the new restriction.",
+        "how_to_use": [
+          "Use thinking: {\"type\": \"disabled\"} with effort levels 'high' or below to disable thinking without encountering a 400 error",
+          "Update existing code to handle the 400 error response when attempting to disable thinking at 'xhigh' or 'max' effort levels"
+        ]
+      }
+    },
+    {
+      "id": "36fc575b",
+      "title": "Claude Opus 5 supports the full effort ladder (low, medium, high, xhigh, max),…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-24T00:00:00.000Z",
+      "summary": "Claude Opus 5 supports the full effort ladder (low, medium, high, xhigh, max), including the max level for capability-critical work.",
+      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 5 now supports all levels of the effort ladder, including low, medium, high, xhigh, and max, allowing for more fine-grained control over the model's output.",
+        "why_it_matters": "This update enables Claude Code users to specify the exact level of effort required for capability-critical tasks, potentially leading to more accurate and relevant results.",
+        "how_to_use": [
+          "Use the 'max' level for tasks that require the highest level of accuracy and detail, such as critical code reviews or complex problem-solving.",
+          "Specify 'xhigh' or 'high' levels for tasks that require a high degree of accuracy but may not necessitate the maximum level of effort."
+        ]
+      }
+    },
+    {
+      "id": "c0f34d61",
+      "title": "Mid-conversation tool changes are now in beta on Claude Opus 5: add or remove…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-24T00:00:00.000Z",
+      "summary": "Mid-conversation tool changes are now in beta on Claude Opus 5: add or remove tools between turns of a conversation while preserving the prompt cache. Include the…",
+      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "explanation": {
+        "what_it_is": "The ability to add or remove tools between turns of a conversation on Claude Opus 5 while preserving the prompt cache.",
+        "why_it_matters": "This change allows Claude Code users to dynamically adjust their toolset during a conversation, potentially improving the accuracy or relevance of their outputs.",
+        "how_to_use": [
+          "Use the updated API to add a tool that provides additional context after the initial prompt",
+          "Remove a tool that is no longer relevant to the conversation to reduce noise or improve performance"
+        ]
+      }
+    },
+    {
+      "id": "bfbdcf3a",
+      "title": "The fallbacks parameter now supports a \"default\" mode, which applies…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-24T00:00:00.000Z",
+      "summary": "The fallbacks parameter now supports a \"default\" mode, which applies Anthropic's recommended fallback models by refusal category. Server-side fallback is in beta, and the \"default\" mode requires the…",
+      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "explanation": {
+        "what_it_is": "The fallbacks parameter now has a 'default' mode that automatically applies Anthropic's recommended fallback models based on refusal category.",
+        "why_it_matters": "This change simplifies the process of setting up fallback models, as users no longer need to manually specify them for each refusal category.",
+        "how_to_use": [
+          "Set the fallbacks parameter to 'default' to enable automatic fallback model selection",
+          "Use the 'default' mode to streamline server-side fallback configuration, currently in beta"
+        ]
+      }
+    },
     {
       "id": "da0bf2fc",
       "title": "Added screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+K) in…",
@@ -574,82 +840,6 @@
         "how_to_use": [
           "Replace Write(path) with Edit(path) for files that need to be modified",
           "Use Read(path) for files that only require read access"
-        ]
-      }
-    },
-    {
-      "id": "431ebfe3",
-      "title": "Added screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-14T01:10:42Z",
-      "summary": "v2.1.208",
-      "fetched_at": "2026-07-14T04:35:43.138Z",
-      "explanation": {
-        "what_it_is": "A new screen reader mode that renders Claude Code output in plain text, making it compatible with screen readers.",
-        "why_it_matters": "This update allows users who rely on screen readers to effectively use Claude Code, improving accessibility.",
-        "how_to_use": [
-          "Run `claude --ax-screen-reader` to enable screen reader mode",
-          "Set the `CLAUDE_AX_SCREEN_READER=1` environment variable to opt-in to plain-text rendering"
-        ]
-      }
-    },
-    {
-      "id": "3cf1a775",
-      "title": "Added vimInsertModeRemaps setting: map two-key insert-mode sequences like jj to Escape in vim mode",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-14T01:10:42Z",
-      "summary": "v2.1.208",
-      "fetched_at": "2026-07-14T04:35:43.138Z",
-      "explanation": {
-        "what_it_is": "The vimInsertModeRemaps setting allows mapping two-key sequences in insert mode to the Escape key in vim mode, enabling custom shortcuts like 'jj' to exit insert mode.",
-        "why_it_matters": "This setting matters because it provides a way for vim users to customize their editing experience in Claude Code, making it easier to switch between insert and normal modes.",
-        "how_to_use": [
-          "Set 'vimInsertModeRemaps': {'jj': '<Escape>'} in your settings to map 'jj' to Escape",
-          "Use the setting to create custom two-key sequences for exiting insert mode"
-        ]
-      }
-    },
-    {
-      "id": "a61a0ef9",
-      "title": "Added CLAUDE_CODE_PROCESS_WRAPPER: agent view and the background service now honor a corporate launcher by running every Claude Code self-spawn…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-14T01:10:42Z",
-      "summary": "v2.1.208",
-      "fetched_at": "2026-07-14T04:35:43.138Z",
-      "explanation": {
-        "what_it_is": "The CLAUDE_CODE_PROCESS_WRAPPER environment variable allows Claude Code to run self-spawned processes through a corporate launcher, enabling integration with custom launchers.",
-        "why_it_matters": "This update enables organizations to enforce their own process launch policies and auditing, providing better control over how Claude Code runs in their environment.",
-        "how_to_use": [
-          "Set the CLAUDE_CODE_PROCESS_WRAPPER environment variable to the path of your corporate launcher executable",
-          "Verify that the agent view and background service are using the specified launcher for self-spawned processes"
-        ]
-      }
-    },
-    {
-      "id": "e98914f8",
-      "title": "Added mouse-click support for multi-select menus and \"Other\" input rows in fullscreen mode",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-14T01:10:42Z",
-      "summary": "v2.1.208",
-      "fetched_at": "2026-07-14T04:35:43.138Z",
-      "explanation": {
-        "what_it_is": "Mouse-click support has been added for multi-select menus and 'Other' input rows when using Claude Code in fullscreen mode.",
-        "why_it_matters": "This update allows users to interact with multi-select menus and 'Other' input rows more easily in fullscreen mode, without having to rely on keyboard navigation or exit fullscreen mode.",
-        "how_to_use": [
-          "Click on multiple options in a multi-select menu to select them while in fullscreen mode",
-          "Use mouse clicks to edit 'Other' input rows in fullscreen mode"
         ]
       }
     },
@@ -1529,197 +1719,6 @@
         "how_to_use": [
           "Update your Claude Opus version to 4.8 to access new features within the advisor tool",
           "Test your existing workflows with Claude Opus 4.8 to ensure compatibility and identify potential improvements"
-        ]
-      }
-    },
-    {
-      "id": "e1eca32e",
-      "title": "Computer use now supports Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Computer use now supports Claude Opus 4.8.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Claude Code now supports Claude Opus version 4.8 for computer use, allowing for compatibility with the latest features and updates of the Opus platform.",
-        "why_it_matters": "This update enables Claude Code users to leverage the newest capabilities and improvements of Claude Opus 4.8, ensuring they have access to the most current and advanced functionality.",
-        "how_to_use": [
-          "Update your Claude Code environment to utilize the latest Claude Opus 4.8 features",
-          "Test your existing workflows and scripts for compatibility with Claude Opus 4.8"
-        ]
-      }
-    },
-    {
-      "id": "35ef8985",
-      "title": "Fast mode for Claude Opus 4.8 is available as a research preview on the Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Fast mode for Claude Opus 4.8 is available as a research preview on the Claude API only.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Fast mode for Claude Opus 4.8 is a research preview feature available on the Claude API, allowing for potentially faster processing times.",
-        "why_it_matters": "This feature matters because it gives developers access to a potentially faster version of Claude Opus 4.8, which can be useful for testing and optimizing applications that rely on the Claude API.",
-        "how_to_use": [
-          "Enable fast mode in your Claude API requests to take advantage of potentially faster processing times.",
-          "Test your applications with fast mode to see if it improves performance in your specific use case."
-        ]
-      }
-    },
-    {
-      "id": "a07ceac3",
-      "title": "Setting the sampling parameters temperature, top_p, or top_k to a non-default…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Setting the sampling parameters temperature, top_p, or top_k to a non-default value returns a 400 error on Claude Opus 4.8, same as on Claude Opus 4.7. See the migration guide for details.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Setting non-default values for sampling parameters temperature, top_p, or top_k now returns a 400 error in Claude Opus 4.8, similar to Claude Opus 4.7.",
-        "why_it_matters": "This change affects users who previously relied on custom sampling parameters, as they will now need to adjust their code to avoid the 400 error.",
-        "how_to_use": [
-          "Check the migration guide for instructions on updating your code to comply with the new sampling parameter defaults.",
-          "Review your existing code to identify where non-default sampling parameters are being used.",
-          "Update your code to use default sampling parameters or alternative approaches recommended in the migration guide."
-        ]
-      }
-    },
-    {
-      "id": "752c6ecd",
-      "title": "In Claude Code, we've expanded Auto mode to more users for long-running tasks",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, we've expanded Auto mode to more users for long-running tasks. See the Claude Code documentation.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Auto mode in Claude Code now supports more users for tasks that take a long time to complete.",
-        "why_it_matters": "This change allows more users to take advantage of Auto mode's automated task handling for lengthy tasks, potentially streamlining their workflow.",
-        "how_to_use": [
-          "Check the Claude Code documentation to see if your account is eligible for the expanded Auto mode",
-          "Try using Auto mode for long-running tasks to automate task handling"
-        ]
-      }
-    },
-    {
-      "id": "b0ca5b69",
-      "title": "In Claude Code, Max plan users now default to fast mode on Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, Max plan users now default to fast mode on Claude Opus 4.8. See the Claude Code documentation.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Max plan users in Claude Code are now automatically set to fast mode when using Claude Opus version 4.8, which affects the speed of certain operations.",
-        "why_it_matters": "This change means that Max plan users can expect faster performance by default, without needing to manually enable fast mode, potentially speeding up development and testing workflows.",
-        "how_to_use": [
-          "Verify that your Claude Opus version is 4.8 to take advantage of the default fast mode.",
-          "Review the Claude Code documentation for any updated best practices or recommendations related to fast mode."
-        ]
-      }
-    },
-    {
-      "id": "2063147c",
-      "title": "In Claude Code, Workflows are available as a research preview, letting you…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "In Claude Code, Workflows are available as a research preview, letting you define and run multistep agentic plans. See the Claude Code documentation.",
-      "fetched_at": "2026-07-14T17:53:47.829Z",
-      "explanation": {
-        "what_it_is": "Workflows in Claude Code allow you to define and run multistep agentic plans, enabling the creation of complex, sequential tasks.",
-        "why_it_matters": "This feature matters because it lets Claude Code users break down intricate processes into manageable, automated steps, potentially streamlining their development workflows.",
-        "how_to_use": [
-          "Define a workflow by specifying a series of tasks and their dependencies",
-          "Run the workflow using the Claude Code API, allowing for automated execution of the defined plan"
-        ]
-      }
-    },
-    {
-      "id": "15c34e30",
-      "title": "We've deprecated fast mode for Claude Opus 4.6, with removal approximately 30…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've deprecated fast mode for Claude Opus 4.6, with removal approximately 30 days after launch. Migrate to fast mode for Claude Opus 4.8 or Claude Opus 4.7. Read more in Fast mode.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "The 'fast mode' feature in Claude Opus 4.6 has been deprecated, meaning it will be removed approximately 30 days after launch.",
-        "why_it_matters": "Claude Code users need to migrate to fast mode in Claude Opus 4.7 or 4.8 to avoid disruption when the feature is removed.",
-        "how_to_use": [
-          "Migrate existing workflows to use fast mode in Claude Opus 4.7 or 4.8",
-          "Update code to target Claude Opus 4.7 or 4.8 for continued fast mode support"
-        ]
-      }
-    },
-    {
-      "id": "0e3f2c96",
-      "title": "For updates to claude.ai, Cowork, Claude for Microsoft 365, and other Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "For updates to claude.ai, Cowork, Claude for Microsoft 365, and other Claude apps in this release, see the release notes for Claude Apps.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "A changelog update for various Claude applications, including claude.ai, Cowork, and Claude for Microsoft 365.",
-        "why_it_matters": "This update provides a centralized location for release notes, making it easier for developers to track changes across multiple Claude apps.",
-        "how_to_use": [
-          "Check the release notes for Claude Apps to stay informed about new features and updates.",
-          "Use the release notes to plan and test updates for integrations with Claude apps."
-        ]
-      }
-    },
-    {
-      "id": "e767563f",
-      "title": "The Messages API response now includes…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-27-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-27T00:00:00.000Z",
-      "summary": "The Messages API response now includes usage.output_tokens_details.thinking_tokens, reporting how many of the billed output tokens were extended thinking. When streaming, the breakdown appears only…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The Messages API response now includes a breakdown of billed output tokens, specifically the number of tokens used for extended thinking, available in the usage.output_tokens_details.thinking_tokens field.",
-        "why_it_matters": "This change allows Claude Code users to track and understand the token usage for extended thinking in their API responses, enabling more accurate billing and cost estimation.",
-        "how_to_use": [
-          "Access the usage.output_tokens_details.thinking_tokens field in the Messages API response to get the number of billed output tokens used for extended thinking.",
-          "Use this information to optimize token usage and reduce costs in your applications."
-        ]
-      }
-    },
-    {
-      "id": "b15133d6",
-      "title": "MCP tunnels is now available as a research preview, so you can connect to MCP…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-19T00:00:00.000Z",
-      "summary": "MCP tunnels is now available as a research preview, so you can connect to MCP servers in your private network.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "MCP tunnels is a feature that allows connecting to MCP servers within a private network.",
-        "why_it_matters": "This enables Claude Code users to access MCP servers that are not publicly exposed, expanding the range of potential use cases and integrations.",
-        "how_to_use": [
-          "Use MCP tunnels to connect to MCP servers hosted on-premises or in a private cloud",
-          "Configure MCP tunnels to access MCP servers that require private network connectivity"
         ]
       }
     }
