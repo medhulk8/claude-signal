@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-24T20:07:06.891Z",
+  "generated_at": "2026-07-24T21:50:53.011Z",
   "item_count": 90,
   "items": [
     {
@@ -266,6 +266,25 @@
         "how_to_use": [
           "Set the fallbacks parameter to 'default' to enable automatic fallback model selection",
           "Use the 'default' mode to streamline server-side fallback configuration, currently in beta"
+        ]
+      }
+    },
+    {
+      "id": "d13ae002",
+      "title": "We've removed fast mode for Claude Opus 4.7",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-07-24T00:00:00.000Z",
+      "summary": "We've removed fast mode for Claude Opus 4.7. Requests to claude-opus-4-7 with speed: \"fast\" now return an error; unlike Claude Opus 4.6, they do not fall back to standard speed. Claude Opus 4.7…",
+      "fetched_at": "2026-07-24T21:50:53.873Z",
+      "explanation": {
+        "what_it_is": "The 'fast mode' option has been removed from Claude Opus 4.7, and requests with 'speed: fast' now return an error instead of falling back to standard speed.",
+        "why_it_matters": "This change affects Claude Code users who relied on the 'fast mode' option for Claude Opus 4.7, as they will need to update their requests to use the standard speed or handle the error response.",
+        "how_to_use": [
+          "Update requests to remove 'speed: fast' and use the standard speed by default",
+          "Handle the error response for requests that still specify 'speed: fast'"
         ]
       }
     },
@@ -1700,25 +1719,6 @@
         "how_to_use": [
           "Update your task budgets to utilize the new features in Claude Opus 4.8",
           "Review your existing budgets to ensure compatibility with the updated Claude Opus version"
-        ]
-      }
-    },
-    {
-      "id": "970b26a9",
-      "title": "The advisor tool now supports Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "The advisor tool now supports Claude Opus 4.8.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "The advisor tool in the Anthropic API developer platform now supports version 4.8 of Claude Opus, allowing for compatibility with the latest features and updates in Claude Opus.",
-        "why_it_matters": "This update enables Claude Code users to leverage the newest capabilities of Claude Opus 4.8 within the advisor tool, ensuring they can utilize the most current and advanced functionalities.",
-        "how_to_use": [
-          "Update your Claude Opus version to 4.8 to access new features within the advisor tool",
-          "Test your existing workflows with Claude Opus 4.8 to ensure compatibility and identify potential improvements"
         ]
       }
     }
