@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-24T23:50:43.261Z",
+  "generated_at": "2026-07-25T01:18:01.264Z",
   "item_count": 90,
   "items": [
     {
@@ -213,40 +213,40 @@
       }
     },
     {
-      "id": "36fc575b",
-      "title": "Claude Opus 5 supports the full effort ladder (low, medium, high, xhigh, max),…",
+      "id": "ee5e2bbe",
+      "title": "Effort is the primary control for steering Claude Opus 5: the model supports…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-07-24T00:00:00.000Z",
-      "summary": "Claude Opus 5 supports the full effort ladder (low, medium, high, xhigh, max), including the max level for capability-critical work.",
-      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "summary": "Effort is the primary control for steering Claude Opus 5: the model supports the full ladder (low, medium, high, xhigh, max), with max for capability-critical work.",
+      "fetched_at": "2026-07-25T01:18:02.144Z",
       "explanation": {
-        "what_it_is": "Claude Opus 5 now supports all levels of the effort ladder, including low, medium, high, xhigh, and max, allowing for more fine-grained control over the model's output.",
-        "why_it_matters": "This update enables Claude Code users to specify the exact level of effort required for capability-critical tasks, potentially leading to more accurate and relevant results.",
+        "what_it_is": "The Effort control in Claude Opus 5 allows you to specify the level of complexity or detail in the model's output, with options ranging from low to max.",
+        "why_it_matters": "This change gives Claude Code users more fine-grained control over the model's behavior, particularly for tasks that require high levels of accuracy or detail.",
         "how_to_use": [
-          "Use the 'max' level for tasks that require the highest level of accuracy and detail, such as critical code reviews or complex problem-solving.",
-          "Specify 'xhigh' or 'high' levels for tasks that require a high degree of accuracy but may not necessitate the maximum level of effort."
+          "Set Effort to 'max' for tasks that are critical to the capability of your application, such as generating high-stakes text or making complex decisions.",
+          "Use lower Effort settings (e.g. 'low', 'medium') for less critical tasks or when speed is a priority."
         ]
       }
     },
     {
-      "id": "c0f34d61",
-      "title": "Mid-conversation tool changes are now in beta on Claude Opus 5: add or remove…",
+      "id": "d380854b",
+      "title": "Mid-conversation tool changes are now in beta on Claude Fable 5, Claude Mythos…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#july-24-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-07-24T00:00:00.000Z",
-      "summary": "Mid-conversation tool changes are now in beta on Claude Opus 5: add or remove tools between turns of a conversation while preserving the prompt cache. Include the…",
-      "fetched_at": "2026-07-24T18:07:33.324Z",
+      "summary": "Mid-conversation tool changes are now in beta on Claude Fable 5, Claude Mythos 5, Claude Opus 4.8, and Claude Opus 5: add or remove tools between turns of a conversation while preserving the prompt…",
+      "fetched_at": "2026-07-25T01:18:02.144Z",
       "explanation": {
-        "what_it_is": "The ability to add or remove tools between turns of a conversation on Claude Opus 5 while preserving the prompt cache.",
-        "why_it_matters": "This change allows Claude Code users to dynamically adjust their toolset during a conversation, potentially improving the accuracy or relevance of their outputs.",
+        "what_it_is": "The ability to add or remove tools between turns of a conversation in Claude Code, while preserving the prompt, is now available in beta on specific Claude platforms.",
+        "why_it_matters": "This update allows developers to dynamically adjust the tools used in a conversation, enabling more flexible and adaptive conversational workflows.",
         "how_to_use": [
-          "Use the updated API to add a tool that provides additional context after the initial prompt",
-          "Remove a tool that is no longer relevant to the conversation to reduce noise or improve performance"
+          "Use the updated API to add a tool to a conversation after the initial prompt has been set",
+          "Remove a tool from a conversation mid-turn to change the conversation's context or direction"
         ]
       }
     },
