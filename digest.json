@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T20:49:24.685Z",
+  "generated_at": "2026-08-03T21:54:38.292Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "52d35b1c",
+      "title": "Dreams (research preview) now supports Claude Opus 5",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-01T00:00:00.000Z",
+      "summary": "Dreams (research preview) now supports Claude Opus 5. See Supported models.",
+      "fetched_at": "2026-08-03T21:54:39.991Z",
+      "explanation": {
+        "what_it_is": "Dreams, a research preview feature, has been updated to support Claude Opus 5, a specific model in the Anthropic API",
+        "why_it_matters": "This update allows Claude Code users to leverage the capabilities of Claude Opus 5 within the Dreams research preview, potentially enabling new use cases or improving existing ones",
+        "how_to_use": [
+          "Check the Supported models documentation to learn more about Claude Opus 5 and its capabilities",
+          "Experiment with Claude Opus 5 in the Dreams research preview to explore its applications"
+        ]
+      }
+    },
     {
       "id": "0c3a38a8",
       "title": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok",
@@ -1455,6 +1474,25 @@
       }
     },
     {
+      "id": "8e9808b6",
+      "title": "The Compliance API Activity Feed (GET /v1/compliance/activities) is now…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-06-09T00:00:00.000Z",
+      "summary": "The Compliance API Activity Feed (GET /v1/compliance/activities) is now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the ListComplianceActivities action that…",
+      "fetched_at": "2026-08-03T21:54:39.991Z",
+      "explanation": {
+        "what_it_is": "The Compliance API Activity Feed is a GET endpoint at /v1/compliance/activities that provides a feed of compliance-related activities on the Claude Platform on AWS.",
+        "why_it_matters": "This update allows Claude Code users to programmatically retrieve compliance activities on AWS, enabling better monitoring and auditing of their platform usage.",
+        "how_to_use": [
+          "Use the GET /v1/compliance/activities endpoint to fetch a list of compliance activities",
+          "Reference the ListComplianceActivities action in IAM actions for Claude Platform on AWS to manage access to the activity feed"
+        ]
+      }
+    },
+    {
       "id": "2ac335da",
       "title": "The session.thread_* webhook events now include a session_thread_id field…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
@@ -1681,44 +1719,6 @@
         "how_to_use": [
           "Enable adaptive thinking in Claude Opus 4.8 to optimize thinking token usage",
           "Compare the performance of Claude Opus 4.8 with adaptive thinking to Claude Opus 4.7 to see the reduction in wasted thinking tokens"
-        ]
-      }
-    },
-    {
-      "id": "a4e2f106",
-      "title": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.8 now accepts high-resolution images with a maximum size of 2576 pixels on the long edge, matching the capabilities of Claude Opus 4.7.",
-        "why_it_matters": "This update allows Claude Code users to process larger and more detailed images, potentially improving the accuracy of image-related tasks.",
-        "how_to_use": [
-          "Pass high-resolution images to Claude Opus 4.8 for more detailed image analysis",
-          "Use the increased image size limit to process larger images without downsampling"
-        ]
-      }
-    },
-    {
-      "id": "c0de9998",
-      "title": "Task budgets now support Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Task budgets now support Claude Opus 4.8.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Task budgets in Claude Code now support the latest version of Claude Opus, specifically version 4.8, allowing for more precise budgeting and resource allocation.",
-        "why_it_matters": "This update enables Claude Code users to take advantage of the new features and improvements in Claude Opus 4.8, such as enhanced model performance and efficiency, when working with task budgets.",
-        "how_to_use": [
-          "Update your task budgets to utilize the new features in Claude Opus 4.8",
-          "Review your existing budgets to ensure compatibility with the updated Claude Opus version"
         ]
       }
     }
