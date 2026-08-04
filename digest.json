@@ -1,8 +1,84 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T23:55:49.679Z",
+  "generated_at": "2026-08-04T01:18:20.385Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "ece1e1d6",
+      "title": "[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator,…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-04T00:14:23Z",
+      "summary": "v2.1.221",
+      "fetched_at": "2026-08-04T01:18:20.679Z",
+      "explanation": {
+        "what_it_is": "A new 'Focus view' toggle in the chat menu of VSCode that hides tool activity, showing only a summary of each turn with a live indicator of running tools.",
+        "why_it_matters": "This feature helps reduce visual clutter in the Claude Code interface, making it easier to focus on the conversation flow and key information from each turn.",
+        "how_to_use": [
+          "Toggle 'Focus view' on to hide tool activity and show turn summaries",
+          "Click on a turn summary to expand and view detailed tool activity"
+        ]
+      }
+    },
+    {
+      "id": "cc292ccb",
+      "title": "Added mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-04T00:14:23Z",
+      "summary": "v2.1.221",
+      "fetched_at": "2026-08-04T01:18:20.679Z",
+      "explanation": {
+        "what_it_is": "The 'mask' mode for sandbox credential files on Linux and WSL allows sandboxed commands to read a sentinel copy of the credential file, either the whole file or specific spans.",
+        "why_it_matters": "This update enables more secure handling of sensitive credential files in sandboxed environments, reducing the risk of exposure.",
+        "how_to_use": [
+          "Use the 'mask' mode when working with sensitive credential files in Linux or WSL sandboxed environments to limit access to the files.",
+          "Specify the spans of the credential file to be read by sandboxed commands to further restrict access."
+        ]
+      }
+    },
+    {
+      "id": "9c58a679",
+      "title": "Added warnings to claude plugin validate when a marketplace or plugin name would be rejected by Claude Desktop's managed marketplace sync",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-04T00:14:23Z",
+      "summary": "v2.1.221",
+      "fetched_at": "2026-08-04T01:18:20.679Z",
+      "explanation": {
+        "what_it_is": "The Claude Code plugin validate command now includes warnings for marketplace or plugin names that would be rejected by Claude Desktop's managed marketplace sync.",
+        "why_it_matters": "This change helps developers catch and fix naming issues early, avoiding potential rejections when syncing with Claude Desktop.",
+        "how_to_use": [
+          "Run 'claude plugin validate' to check your plugin's name for potential sync issues",
+          "Review warnings for naming conflicts or invalid characters"
+        ]
+      }
+    },
+    {
+      "id": "7510487e",
+      "title": "Added a prompt-audit subcommand to the claude-api skill for auditing prompts and tool descriptions for patterns written for older models",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-04T00:14:23Z",
+      "summary": "v2.1.221",
+      "fetched_at": "2026-08-04T01:18:20.679Z",
+      "explanation": {
+        "what_it_is": "The prompt-audit subcommand is a new feature in the claude-api skill that audits prompts and tool descriptions to identify patterns written for older models.",
+        "why_it_matters": "This update matters because it helps Claude Code users ensure their prompts and tool descriptions are compatible with the latest models, potentially improving performance and accuracy.",
+        "how_to_use": [
+          "Run the prompt-audit subcommand to scan your prompts and tool descriptions for outdated patterns",
+          "Use the audit results to update your prompts and tool descriptions to work seamlessly with newer models"
+        ]
+      }
+    },
     {
       "id": "52d35b1c",
       "title": "Dreams (research preview) now supports Claude Opus 5",
@@ -844,44 +920,6 @@
       }
     },
     {
-      "id": "ed4393cc",
-      "title": "Added a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-14T23:45:25Z",
-      "summary": "v2.1.210",
-      "fetched_at": "2026-07-15T01:05:24.916Z",
-      "explanation": {
-        "what_it_is": "A live elapsed-time counter has been added to the collapsed tool summary line, displaying the time elapsed for long-running tool calls.",
-        "why_it_matters": "This change helps users identify that a tool call is still running, even if it takes a long time, instead of appearing stuck or unresponsive.",
-        "how_to_use": [
-          "Run a long-running tool call and observe the elapsed time counter in the collapsed tool summary line.",
-          "Use this feature to monitor the progress of tasks that typically take a long time to complete."
-        ]
-      }
-    },
-    {
-      "id": "52cfdc91",
-      "title": "Added a startup warning for Write(path), NotebookEdit(path), and Glob(path) permission rules — use Edit(path) or Read(path) instead",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-14T23:45:25Z",
-      "summary": "v2.1.210",
-      "fetched_at": "2026-07-15T01:05:24.916Z",
-      "explanation": {
-        "what_it_is": "A startup warning has been added for Write(path), NotebookEdit(path), and Glob(path) permission rules to notify users of their usage.",
-        "why_it_matters": "This warning matters because it prompts users to switch to Edit(path) or Read(path) instead, which may better fit their intended use cases and avoid potential security issues.",
-        "how_to_use": [
-          "Replace Write(path) with Edit(path) for files that need to be modified",
-          "Use Read(path) for files that only require read access"
-        ]
-      }
-    },
-    {
       "id": "6a69b756",
       "title": "You can now manage the people in your Claude Enterprise (claude.ai)…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#july-14-2026",
@@ -1681,44 +1719,6 @@
         "how_to_use": [
           "Review existing applications to ensure the new default effort parameter does not impact performance or output",
           "Explicitly set the effort parameter if a different setting is required for a specific use case"
-        ]
-      }
-    },
-    {
-      "id": "4df24d94",
-      "title": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "The minimum cacheable prompt length for prompt caching on Claude Opus 4.8 is 1,024 tokens, allowing for shorter prompts to be cached.",
-        "why_it_matters": "This change enables caching for more prompts, reducing the number of redundant computations and potentially improving performance for Claude Code users with shorter prompts.",
-        "how_to_use": [
-          "Use prompt caching for prompts with 1,024 tokens or more to reduce redundant computations",
-          "Test the performance impact of caching shorter prompts on Claude Opus 4.8 compared to previous versions"
-        ]
-      }
-    },
-    {
-      "id": "2bd14674",
-      "title": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.8's adaptive thinking feature triggers reasoning only when a turn requires it, rather than always triggering reasoning.",
-        "why_it_matters": "This update reduces the number of wasted thinking tokens compared to the previous version, making it more efficient at the same effort level.",
-        "how_to_use": [
-          "Enable adaptive thinking in Claude Opus 4.8 to optimize thinking token usage",
-          "Compare the performance of Claude Opus 4.8 with adaptive thinking to Claude Opus 4.7 to see the reduction in wasted thinking tokens"
         ]
       }
     }
