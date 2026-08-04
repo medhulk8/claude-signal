@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-04T22:06:57.425Z",
+  "generated_at": "2026-08-04T23:50:11.045Z",
   "item_count": 90,
   "items": [
     {
@@ -881,25 +881,6 @@
       }
     },
     {
-      "id": "af80c8d7",
-      "title": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-15T23:02:35Z",
-      "summary": "v2.1.211",
-      "fetched_at": "2026-07-15T23:44:57.892Z",
-      "explanation": {
-        "what_it_is": "The --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable allow subagent text and thinking to be included in stream-json output. This provides more detailed information about the decision-making process of subagents.",
-        "why_it_matters": "This update matters because it gives Claude Code users more visibility into the thought process of subagents, which can be useful for debugging and understanding complex workflows. It changes the practice of users by providing them with more detailed output to work with.",
-        "how_to_use": [
-          "Use the --forward-subagent-text flag when running Claude Code to include subagent text and thinking in the output.",
-          "Set the CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to enable this feature by default."
-        ]
-      }
-    },
-    {
       "id": "6c7dade0",
       "title": "Mid-conversation system messages are available on Claude Fable 5, Claude Mythos…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#july-15-2026",
@@ -1719,6 +1700,25 @@
         "how_to_use": [
           "Review existing applications to ensure the new default effort parameter does not impact performance or output",
           "Explicitly set the effort parameter if a different setting is required for a specific use case"
+        ]
+      }
+    },
+    {
+      "id": "4df24d94",
+      "title": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
+      "fetched_at": "2026-08-04T23:50:11.991Z",
+      "explanation": {
+        "what_it_is": "The minimum cacheable prompt length for prompt caching on Claude Opus 4.8 is 1,024 tokens, allowing for shorter prompts to be cached.",
+        "why_it_matters": "This change enables caching for a wider range of prompts, potentially reducing the number of redundant computations and improving overall performance for Claude Code users.",
+        "how_to_use": [
+          "Use prompt caching for shorter prompts (>= 1,024 tokens) to reduce redundant computations",
+          "Update existing workflows to take advantage of the new minimum cacheable prompt length"
         ]
       }
     }
