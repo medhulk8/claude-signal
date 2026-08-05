@@ -1,8 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-08-05T15:04:29.087Z",
+  "generated_at": "2026-08-05T17:14:45.136Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "b9cb99a7",
+      "title": "Inference hooks are now in beta for Claude Enterprise organizations",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-05T00:00:00.000Z",
+      "summary": "Inference hooks are now in beta for Claude Enterprise organizations. Point Claude at your organization's AI security server, and each governed prompt across claude.ai, Cowork, and Claude Code is held…",
+      "fetched_at": "2026-08-05T17:14:45.989Z",
+      "explanation": {
+        "what_it_is": "Inference hooks allow Claude Enterprise organizations to integrate their AI security server with Claude Code, enabling security checks on governed prompts across claude.ai, Cowork, and Claude Code.",
+        "why_it_matters": "This integration enables organizations to enforce their AI security policies on Claude Code, ensuring that prompts are held for security checks before being processed.",
+        "how_to_use": [
+          "Point Claude at your organization's AI security server to enable inference hooks",
+          "Use inference hooks to hold governed prompts for security checks across claude.ai, Cowork, and Claude Code"
+        ]
+      }
+    },
     {
       "id": "ece1e1d6",
       "title": "[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator,…",
@@ -1700,25 +1719,6 @@
         "how_to_use": [
           "Review existing applications to ensure the new default effort parameter does not impact performance or output",
           "Explicitly set the effort parameter if a different setting is required for a specific use case"
-        ]
-      }
-    },
-    {
-      "id": "4df24d94",
-      "title": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
-      "fetched_at": "2026-08-04T23:50:11.991Z",
-      "explanation": {
-        "what_it_is": "The minimum cacheable prompt length for prompt caching on Claude Opus 4.8 is 1,024 tokens, allowing for shorter prompts to be cached.",
-        "why_it_matters": "This change enables caching for a wider range of prompts, potentially reducing the number of redundant computations and improving overall performance for Claude Code users.",
-        "how_to_use": [
-          "Use prompt caching for shorter prompts (>= 1,024 tokens) to reduce redundant computations",
-          "Update existing workflows to take advantage of the new minimum cacheable prompt length"
         ]
       }
     }
