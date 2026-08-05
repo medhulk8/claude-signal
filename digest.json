@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-05T19:07:07.523Z",
+  "generated_at": "2026-08-05T20:52:09.252Z",
   "item_count": 90,
   "items": [
     {
@@ -19,6 +19,25 @@
         "how_to_use": [
           "Point Claude at your organization's AI security server to enable inference hooks",
           "Use inference hooks to hold governed prompts for security checks across claude.ai, Cowork, and Claude Code"
+        ]
+      }
+    },
+    {
+      "id": "56c78234",
+      "title": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805)",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-05T00:00:00.000Z",
+      "summary": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805). All requests to this model will now return an error. We recommend upgrading to Claude Opus 5. Researchers can request ongoing…",
+      "fetched_at": "2026-08-05T20:52:10.284Z",
+      "explanation": {
+        "what_it_is": "The Claude Opus 4.1 model has been retired and is no longer available for use, with all requests to this model now returning an error.",
+        "why_it_matters": "This change requires users to upgrade to the Claude Opus 5 model to continue using the service without interruption.",
+        "how_to_use": [
+          "Update your API requests to use the Claude Opus 5 model instead of the retired Claude Opus 4.1 model",
+          "Test your application with the new model to ensure compatibility and handle any differences in behavior or output"
         ]
       }
     },
@@ -1700,25 +1719,6 @@
           "Check the stop_details field in refusal responses to determine the category of the refusal (cyber, bio, or null).",
           "Use the human-readable explanation to log or display the reason for the refusal.",
           "Route different classes of refusals based on the category and explanation provided in the stop_details field."
-        ]
-      }
-    },
-    {
-      "id": "d0d4a794",
-      "title": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces, including Claude Code and the Messages API.",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "The effort parameter in Claude Opus 4.8 now defaults to 'high' for all surfaces, including Claude Code and the Messages API.",
-        "why_it_matters": "This change affects the default behavior of Claude Opus 4.8, potentially altering the output or performance of applications that rely on the default effort parameter setting.",
-        "how_to_use": [
-          "Review existing applications to ensure the new default effort parameter does not impact performance or output",
-          "Explicitly set the effort parameter if a different setting is required for a specific use case"
         ]
       }
     }
