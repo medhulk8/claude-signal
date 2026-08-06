@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "generated_at": "2026-08-05T23:43:41.693Z",
+  "generated_at": "2026-08-06T01:11:06.259Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "89820670",
+      "title": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-06T00:52:37Z",
+      "summary": "v2.1.223",
+      "fetched_at": "2026-08-06T01:11:06.630Z",
+      "explanation": {
+        "what_it_is": "The owner wildcard entry ('owner/*') is a new pattern that can be used in the strictKnownMarketplaces and blockedMarketplaces settings to match all marketplaces owned by a specific owner.",
+        "why_it_matters": "This update allows Claude Code users to easily manage access to all marketplaces owned by a particular owner, simplifying configuration and reducing the need for individual marketplace entries.",
+        "how_to_use": [
+          "Add 'owner/*' to strictKnownMarketplaces to allow access to all marketplaces owned by the specified owner",
+          "Add 'owner/*' to blockedMarketplaces to block access to all marketplaces owned by the specified owner"
+        ]
+      }
+    },
+    {
+      "id": "494fea4e",
+      "title": "Added a warning when workflow agents, forked skills, slash commands, or resumed background agents' requested subagent model is restricted and the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-06T00:52:37Z",
+      "summary": "v2.1.223",
+      "fetched_at": "2026-08-06T01:11:06.630Z",
+      "explanation": {
+        "what_it_is": "A warning is now displayed when a workflow agent, forked skill, slash command, or resumed background agent requests a subagent model that is restricted.",
+        "why_it_matters": "This warning helps Claude Code users identify potential issues with their workflows and skills, allowing them to take corrective action before errors occur.",
+        "how_to_use": [
+          "Check the warning message to determine which subagent model is restricted and adjust your workflow or skill accordingly.",
+          "Review your workflow and skill configurations to ensure they are compatible with the available subagent models."
+        ]
+      }
+    },
+    {
+      "id": "22d72b2b",
+      "title": "Added a /teleport hint in cloud sessions showing how to continue locally with claude --teleport <session id>",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-06T00:52:37Z",
+      "summary": "v2.1.223",
+      "fetched_at": "2026-08-06T01:11:06.630Z",
+      "explanation": {
+        "what_it_is": "A /teleport hint in cloud sessions that displays instructions on how to continue working locally with a specific command.",
+        "why_it_matters": "This hint allows users to easily transition their work from cloud sessions to local environments, streamlining their workflow.",
+        "how_to_use": [
+          "Run the command 'claude --teleport <session id>' to continue a cloud session locally",
+          "Use the /teleport hint in cloud sessions to find the session ID and command syntax"
+        ]
+      }
+    },
     {
       "id": "b9cb99a7",
       "title": "Inference hooks are now in beta for Claude Enterprise organizations",
@@ -800,82 +857,6 @@
         "how_to_use": [
           "Run a Docker command with the --url flag to trigger a permission prompt, e.g., 'docker --url=<daemon_url> run -it ubuntu'",
           "Use the Podman Docker shim with a daemon-redirect flag to see the permission prompt, e.g., 'podman --connection=<daemon_connection> run -it ubuntu'"
-        ]
-      }
-    },
-    {
-      "id": "dd948498",
-      "title": "Added claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes to skip)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-17T00:26:27Z",
-      "summary": "v2.1.212",
-      "fetched_at": "2026-07-17T01:17:42.622Z",
-      "explanation": {
-        "what_it_is": "A new command to reset the auto-mode configuration to its default state, with an optional confirmation prompt that can be skipped using the --yes flag.",
-        "why_it_matters": "This update allows users to easily revert changes made to the auto-mode configuration, providing a convenient way to restore default settings when needed.",
-        "how_to_use": [
-          "Run `claude auto-mode reset` to reset the auto-mode configuration with a confirmation prompt",
-          "Use `claude auto-mode reset --yes` to skip the confirmation prompt and reset immediately"
-        ]
-      }
-    },
-    {
-      "id": "60b6dc5e",
-      "title": "Added a session-wide limit on WebSearch tool calls (default 200, tunable via CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION) to stop runaway search loops",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-17T00:26:27Z",
-      "summary": "v2.1.212",
-      "fetched_at": "2026-07-17T01:17:42.622Z",
-      "explanation": {
-        "what_it_is": "A session-wide limit on WebSearch tool calls, defaulting to 200 calls per session, that can be adjusted using the CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION variable.",
-        "why_it_matters": "This limit prevents runaway search loops from consuming excessive resources, allowing for more stable and predictable Claude Code sessions.",
-        "how_to_use": [
-          "Set the CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION variable to a custom value to adjust the limit according to your specific needs.",
-          "Monitor your WebSearch tool calls to avoid hitting the limit and adjust your code accordingly."
-        ]
-      }
-    },
-    {
-      "id": "eb4682f5",
-      "title": "Added a per-session cap on subagent spawns (default 200, override with CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION) to stop runaway delegation loops;…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-17T00:26:27Z",
-      "summary": "v2.1.212",
-      "fetched_at": "2026-07-17T01:17:42.622Z",
-      "explanation": {
-        "what_it_is": "A per-session cap on subagent spawns, limiting the number of subagents that can be spawned in a single session to 200 by default.",
-        "why_it_matters": "This cap prevents runaway delegation loops, which can cause performance issues or crashes, by limiting the number of subagents that can be spawned.",
-        "how_to_use": [
-          "Use the default cap of 200 subagent spawns per session for most use cases",
-          "Override the default cap by setting the CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION environment variable for sessions that require more subagents"
-        ]
-      }
-    },
-    {
-      "id": "73639526",
-      "title": "Deprecated the Task tool's mode parameter (now ignored); subagents inherit the parent session's permission mode by default",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-17T00:26:27Z",
-      "summary": "v2.1.212",
-      "fetched_at": "2026-07-17T01:17:42.622Z",
-      "explanation": {
-        "what_it_is": "The Task tool's mode parameter is now deprecated and ignored, and subagents automatically inherit the parent session's permission mode by default.",
-        "why_it_matters": "This change simplifies task configuration and ensures consistent permission modes between parent sessions and subagents, reducing potential permission mismatches.",
-        "how_to_use": [
-          "Update existing Task tool configurations to remove the mode parameter",
-          "Verify that subagents are inheriting the expected permission mode from their parent sessions"
         ]
       }
     },
@@ -1719,6 +1700,25 @@
           "Check the stop_details field in refusal responses to determine the category of the refusal (cyber, bio, or null).",
           "Use the human-readable explanation to log or display the reason for the refusal.",
           "Route different classes of refusals based on the category and explanation provided in the stop_details field."
+        ]
+      }
+    },
+    {
+      "id": "d0d4a794",
+      "title": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces, including Claude Code and the Messages API.",
+      "fetched_at": "2026-08-06T01:11:07.326Z",
+      "explanation": {
+        "what_it_is": "The effort parameter in Claude Opus 4.8 now defaults to 'high' for all surfaces, including Claude Code and the Messages API.",
+        "why_it_matters": "This change affects the default behavior of Claude Opus 4.8, potentially altering the output or performance of applications that rely on the default effort parameter setting.",
+        "how_to_use": [
+          "Review existing applications to ensure the new default effort parameter does not impact performance or output",
+          "Explicitly set the effort parameter if a different setting is required for a specific use case"
         ]
       }
     }
