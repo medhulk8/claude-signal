@@ -1,8 +1,141 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T01:38:46.571Z",
+  "generated_at": "2026-08-07T04:15:39.276Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "3eaabeef",
+      "title": "Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "The claude self-hosted-runner command allows you to turn your own machines or containers into environments for running Claude Code web, mobile, and desktop applications.",
+        "why_it_matters": "This update enables Claude Code users to run their applications in self-managed environments, giving them more control over their infrastructure and potentially improving security and performance.",
+        "how_to_use": [
+          "Run 'claude self-hosted-runner' to initialize a self-hosted environment on your machine or container",
+          "Use the self-hosted environment to deploy and test Claude Code web, mobile, and desktop applications"
+        ]
+      }
+    },
+    {
+      "id": "8228f735",
+      "title": "Added archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "The archive plugin source allows installing plugins from a zip file over HTTPS, without requiring git or npm, and optionally verifies the plugin's integrity using SHA-256 pinning.",
+        "why_it_matters": "This update enables Claude Code users to install plugins from zip files, providing an alternative to git or npm, and adds an extra layer of security with optional SHA-256 pinning to ensure plugin authenticity.",
+        "how_to_use": [
+          "Download a plugin zip file from a trusted source",
+          "Install the plugin using the archive plugin source, specifying the zip file URL and optional SHA-256 hash"
+        ]
+      }
+    },
+    {
+      "id": "286adc9d",
+      "title": "Added a cancel-and-confirm step when removing an unavailable paste changes a command's text",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "A new confirmation step is added when removing an unavailable paste that alters a command's text, allowing users to review changes before they are applied.",
+        "why_it_matters": "This change prevents accidental modifications to commands when removing unavailable pastes, ensuring that users intentionally make changes to their code.",
+        "how_to_use": [
+          "When removing an unavailable paste that changes a command's text, review the changes in the confirmation prompt before confirming.",
+          "Use this feature to safely remove unnecessary pastes without inadvertently altering command text."
+        ]
+      }
+    },
+    {
+      "id": "03ab978c",
+      "title": "Added ANTHROPIC_BEDROCK_REGION_PREFIX env var for Bedrock to prefer a specific cross-region inference profile over the AWS_REGION-derived one",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "The ANTHROPIC_BEDROCK_REGION_PREFIX environment variable allows Bedrock to prioritize a specific cross-region inference profile over the one derived from the AWS_REGION setting.",
+        "why_it_matters": "This update gives Claude Code users more control over inference profiles in Bedrock, enabling them to override the default AWS region-based profile when needed.",
+        "how_to_use": [
+          "Set the ANTHROPIC_BEDROCK_REGION_PREFIX env var to a preferred region prefix to override the AWS_REGION-derived inference profile",
+          "Use this variable in Bedrock deployments on AWS to customize cross-region inference behavior"
+        ]
+      }
+    },
+    {
+      "id": "1ed21fbf",
+      "title": "Added crossSessionInbound and dialogExpiry settings: cross-session messages sent to a session running with bypassed permissions are held for your…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "The crossSessionInbound and dialogExpiry settings allow for more control over cross-session messages, specifically when a session has bypassed permissions. These settings hold cross-session messages until they can be safely processed.",
+        "why_it_matters": "This update matters because it provides a way to handle cross-session messages in a more secure and controlled manner, particularly in situations where permissions have been bypassed. This can help prevent potential security issues or data inconsistencies.",
+        "how_to_use": [
+          "Use the crossSessionInbound setting to configure how cross-session messages are handled when a session has bypassed permissions.",
+          "Set the dialogExpiry setting to determine how long cross-session messages are held before being processed or discarded."
+        ]
+      }
+    },
+    {
+      "id": "dc0f6499",
+      "title": "Added sandbox credential-masking options: extract and onExtractNoMatch for structured env values, decode: \"jwt\" with maskClaims for JWT-aware…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "Credential-masking options have been added to the sandbox, allowing for the extraction and masking of sensitive information from structured environment values and JSON Web Tokens (JWTs).",
+        "why_it_matters": "This update enables Claude Code users to better protect sensitive credentials and data in their sandbox environments, reducing the risk of exposure or unauthorized access.",
+        "how_to_use": [
+          "Use the 'extract' option to mask specific values in structured environment variables",
+          "Utilize the 'decode: jwt' option with 'maskClaims' to mask sensitive claims in JWTs"
+        ]
+      }
+    },
+    {
+      "id": "47ae324d",
+      "title": "Added cross-session SendMessage: Claude Code sessions can now message each other, on any of your machines, with ListAgents to discover them (macOS…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-07T04:00:59Z",
+      "summary": "v2.1.224",
+      "fetched_at": "2026-08-07T04:15:39.526Z",
+      "explanation": {
+        "what_it_is": "Claude Code sessions can now send messages to each other across different sessions and machines, using the ListAgents feature to discover available agents.",
+        "why_it_matters": "This update enables communication between multiple Claude Code sessions, allowing for more flexible and distributed workflows, particularly on macOS devices.",
+        "how_to_use": [
+          "Use ListAgents to discover available Claude Code sessions on your machines",
+          "Send messages between sessions using the SendMessage feature"
+        ]
+      }
+    },
     {
       "id": "89820670",
       "title": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all…",
@@ -724,139 +857,6 @@
         "how_to_use": [
           "Set sandbox.filesystem.disabled to true in your configuration to disable filesystem isolation",
           "Use this setting when you need to access the host filesystem from within a sandboxed environment"
-        ]
-      }
-    },
-    {
-      "id": "616b9a8d",
-      "title": "Added the EndConversation tool: Claude can end sessions with highly abusive users or jailbreak attempts, as on claude.ai since 2025 — see…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "The EndConversation tool allows Claude to terminate sessions with users who are highly abusive or attempting to jailbreak the system.",
-        "why_it_matters": "This feature helps prevent misuse of Claude and maintains a safe interaction environment, aligning with the functionality available on claude.ai since 2025.",
-        "how_to_use": [
-          "Use the EndConversation tool to stop sessions with users who violate community guidelines or attempt to exploit system vulnerabilities."
-        ]
-      }
-    },
-    {
-      "id": "157056b6",
-      "title": "Added a periodic progress heartbeat for long-running tool calls that previously went silent",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "A periodic progress heartbeat that sends regular updates for long-running tool calls in Claude Code, preventing them from appearing silent or unresponsive.",
-        "why_it_matters": "This change helps users monitor the status of long-running tasks more effectively, reducing uncertainty and allowing for better workflow management.",
-        "how_to_use": [
-          "Run a long-running tool call and observe the regular progress updates.",
-          "Use the heartbeat to diagnose potential issues or delays in your workflow."
-        ]
-      }
-    },
-    {
-      "id": "7af491e1",
-      "title": "Added an ISO modified timestamp to memory file frontmatter",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "The memory file frontmatter in Claude Code now includes an ISO modified timestamp, which records when the file was last modified in ISO format.",
-        "why_it_matters": "This addition allows users to track changes to their memory files more precisely and consistently, which can be useful for version control and collaboration.",
-        "how_to_use": [
-          "Use the ISO modified timestamp to sort or filter memory files by their last modification date.",
-          "Include the timestamp in custom workflows or scripts that rely on memory file metadata."
-        ]
-      }
-    },
-    {
-      "id": "b522c4ad",
-      "title": "Added message.uuid, client_request_id, and tool_source attributes to OpenTelemetry log events for message-level correlation and tool provenance",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "The OpenTelemetry log events in Claude Code now include message.uuid, client_request_id, and tool_source attributes, allowing for more detailed tracking of messages and their origins.",
-        "why_it_matters": "This update enables better correlation of log events at the message level and provides more information about the tools used to generate messages, making it easier to diagnose issues and understand system behavior.",
-        "how_to_use": [
-          "Use the message.uuid attribute to track the flow of specific messages through your system",
-          "Include the client_request_id attribute in log event queries to correlate messages with client requests",
-          "Filter log events by tool_source to analyze messages generated by specific tools"
-        ]
-      }
-    },
-    {
-      "id": "23bbc8de",
-      "title": "Added CLAUDE_CODE_OTEL_CONTENT_MAX_LENGTH to configure the 60 KB truncation limit on OpenTelemetry content attributes",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "A new configuration option, CLAUDE_CODE_OTEL_CONTENT_MAX_LENGTH, that allows users to adjust the 60 KB truncation limit on OpenTelemetry content attributes.",
-        "why_it_matters": "This change gives users control over the truncation limit, which can help prevent data loss when working with large OpenTelemetry content attributes.",
-        "how_to_use": [
-          "Set the CLAUDE_CODE_OTEL_CONTENT_MAX_LENGTH environment variable to a custom value, e.g., 120KB, to increase the truncation limit.",
-          "Use this configuration option to ensure that critical data is not truncated in OpenTelemetry content attributes."
-        ]
-      }
-    },
-    {
-      "id": "3b43f2dc",
-      "title": "Added reasoning effort to the subagentStatusLine payload, so custom agent rows can render model and effort",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "The subagentStatusLine payload now includes reasoning effort, allowing custom agent rows to display model and effort information.",
-        "why_it_matters": "This update enables Claude Code users to render more detailed information about their custom agents, providing better insights into model performance and effort.",
-        "how_to_use": [
-          "Access the updated subagentStatusLine payload to retrieve reasoning effort data",
-          "Use the payload data to customize agent row displays in your Claude Code application"
-        ]
-      }
-    },
-    {
-      "id": "d9ac219f",
-      "title": "Added permission prompts for docker commands (including the Podman docker shim) carrying daemon-redirect flags (--url, --connection, --identity, and…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-18T01:20:30Z",
-      "summary": "v2.1.214",
-      "fetched_at": "2026-07-18T04:33:51.658Z",
-      "explanation": {
-        "what_it_is": "Claude Code now displays permission prompts for Docker commands that use daemon-redirect flags, including --url, --connection, and --identity, when using the Podman Docker shim or native Docker.",
-        "why_it_matters": "This change helps prevent unintended access to Docker daemons by requiring explicit user approval for commands that redirect to a daemon, enhancing security and reducing potential attack vectors.",
-        "how_to_use": [
-          "Run a Docker command with the --url flag to trigger a permission prompt, e.g., 'docker --url=<daemon_url> run -it ubuntu'",
-          "Use the Podman Docker shim with a daemon-redirect flag to see the permission prompt, e.g., 'podman --connection=<daemon_connection> run -it ubuntu'"
         ]
       }
     },
