@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T16:37:13.087Z",
+  "generated_at": "2026-08-07T17:37:03.494Z",
   "item_count": 90,
   "items": [
     {
@@ -133,6 +133,82 @@
         "how_to_use": [
           "Use ListAgents to discover available Claude Code sessions on your machines",
           "Send messages between sessions using the SendMessage feature"
+        ]
+      }
+    },
+    {
+      "id": "db102422",
+      "title": "You can now set a budget on a Claude Managed Agents session: a hard cap on the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-07T00:00:00.000Z",
+      "summary": "You can now set a budget on a Claude Managed Agents session: a hard cap on the session's spend, priced at public list rates. A session that reaches its budget pauses with the budget_reached stop…",
+      "fetched_at": "2026-08-07T17:37:04.517Z",
+      "explanation": {
+        "what_it_is": "A hard cap on the spend for a Claude Managed Agents session, priced at public list rates, which pauses the session when the budget is reached.",
+        "why_it_matters": "This allows Claude Code users to better control costs and prevent unexpected expenses, by setting a maximum spend for each session.",
+        "how_to_use": [
+          "Set a budget when creating a new Claude Managed Agents session to limit its spend",
+          "Use the budget_reached stop signal to trigger actions when a session reaches its budget cap"
+        ]
+      }
+    },
+    {
+      "id": "9c6aba85",
+      "title": "You can now give a Claude Managed Agents session an advisor: a model at least…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-07T00:00:00.000Z",
+      "summary": "You can now give a Claude Managed Agents session an advisor: a model at least as capable as the agent's own that the session's primary thread can consult mid-turn for strategic guidance. Configure it…",
+      "fetched_at": "2026-08-07T17:37:04.517Z",
+      "explanation": {
+        "what_it_is": "A Claude Managed Agents session can now be assigned an advisor, which is a model that provides strategic guidance to the session's primary thread during its turn.",
+        "why_it_matters": "This allows for more informed decision-making within the session, as the advisor can offer guidance based on its capabilities, which are at least as strong as the agent's own.",
+        "how_to_use": [
+          "Configure an advisor model for a Claude Managed Agents session to provide mid-turn strategic guidance",
+          "Use the advisor to inform the agent's decisions, such as evaluating potential actions or predicting outcomes"
+        ]
+      }
+    },
+    {
+      "id": "5516131d",
+      "title": "You can now control where model inference runs for a Claude Managed Agents agent",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-07T00:00:00.000Z",
+      "summary": "You can now control where model inference runs for a Claude Managed Agents agent. Set inference_geo inside the model object when you create the agent, or override it for a single session. See Data…",
+      "fetched_at": "2026-08-07T17:37:04.517Z",
+      "explanation": {
+        "what_it_is": "The ability to specify the geographic location where model inference is run for a Claude Managed Agents agent, configurable through the 'inference_geo' parameter in the model object.",
+        "why_it_matters": "This update allows Claude Code users to have more control over data residency and compliance, as they can now choose where their model inference runs, which may be necessary for certain regulatory or security requirements.",
+        "how_to_use": [
+          "Set 'inference_geo' when creating a new agent to specify the default inference location",
+          "Override 'inference_geo' for a single session to run inference in a different location"
+        ]
+      }
+    },
+    {
+      "id": "1f9cc55e",
+      "title": "Claude Managed Agents sessions can now load skills from a GitHub repository",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-7-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-07T00:00:00.000Z",
+      "summary": "Claude Managed Agents sessions can now load skills from a GitHub repository. When a session mounts a repository, any skills in its root .claude/skills directory are discovered automatically at…",
+      "fetched_at": "2026-08-07T17:37:04.517Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents sessions can now load skills from a GitHub repository by automatically discovering skills in the repository's .claude/skills directory.",
+        "why_it_matters": "This update allows developers to manage and version their skills using GitHub, making it easier to collaborate and track changes to their skills.",
+        "how_to_use": [
+          "Mount a GitHub repository to a Claude Managed Agents session to automatically discover skills in the .claude/skills directory",
+          "Store skills in the .claude/skills directory of a GitHub repository to load them into a Claude Managed Agents session"
         ]
       }
     },
@@ -1642,83 +1718,6 @@
           "Use webhooks to receive notifications when agent events occur, such as when an agent completes a task or encounters an error.",
           "Configure multiagent orchestration to coordinate the actions of multiple agents, enabling more complex workflows and scenarios.",
           "Set up self-hosted sandboxes to test and validate agent behavior in a controlled, isolated environment before deploying to production."
-        ]
-      }
-    },
-    {
-      "id": "c92e9d6e",
-      "title": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, and…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.8 is a generally available model that supports a 1M token context window by default.",
-        "why_it_matters": "This update increases the amount of text that can be processed in a single request, allowing for more complex and longer-form inputs to be handled.",
-        "how_to_use": [
-          "Use the Claude API to send requests with up to 1M tokens of context",
-          "Leverage Amazon Bedrock integration for large-scale applications with extended context windows"
-        ]
-      }
-    },
-    {
-      "id": "e96121da",
-      "title": "We've launched mid-conversation system messages",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've launched mid-conversation system messages. On Claude Opus 4.8, you can send role: \"system\" messages after a user turn (subject to placement rules) in the messages array, preserving prompt cache…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Mid-conversation system messages allow you to send system messages after a user turn in the conversation, preserving the prompt cache. This is achieved by sending a message with the role 'system' in the messages array.",
-        "why_it_matters": "This update enables more flexible conversation flows, as you can now inject system messages at specific points in the conversation without resetting the context. This can be useful for providing additional information or guidance to the user.",
-        "how_to_use": [
-          "Send a message with the role 'system' in the messages array after a user turn, like {\"role\": \"system\", \"content\": \"Your system message\"}",
-          "Use this feature to provide feedback or hints to the user, such as 'Please provide more context' or 'You can ask me follow-up questions'"
-        ]
-      }
-    },
-    {
-      "id": "83c56063",
-      "title": "The stop_details field on refusal responses is now publicly documented; it…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "The stop_details field on refusal responses is now publicly documented; it returns a category (cyber, bio, or null) and a human-readable explanation, so your application can route different classes…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The stop_details field on refusal responses in the Anthropic API now provides a category (cyber, bio, or null) and a human-readable explanation for why a request was refused.",
-        "why_it_matters": "This change allows Claude Code users to better understand and handle refused requests, enabling more informed routing decisions within their applications.",
-        "how_to_use": [
-          "Check the stop_details field in refusal responses to determine the category of the refusal (cyber, bio, or null).",
-          "Use the human-readable explanation to log or display the reason for the refusal.",
-          "Route different classes of refusals based on the category and explanation provided in the stop_details field."
-        ]
-      }
-    },
-    {
-      "id": "d0d4a794",
-      "title": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces, including Claude Code and the Messages API.",
-      "fetched_at": "2026-08-06T01:11:07.326Z",
-      "explanation": {
-        "what_it_is": "The effort parameter in Claude Opus 4.8 now defaults to 'high' for all surfaces, including Claude Code and the Messages API.",
-        "why_it_matters": "This change affects the default behavior of Claude Opus 4.8, potentially altering the output or performance of applications that rely on the default effort parameter setting.",
-        "how_to_use": [
-          "Review existing applications to ensure the new default effort parameter does not impact performance or output",
-          "Explicitly set the effort parameter if a different setting is required for a specific use case"
         ]
       }
     }
