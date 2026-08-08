@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-08-08T00:37:35.351Z",
+  "generated_at": "2026-08-08T02:46:34.371Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "09c50af1",
+      "title": "Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-08T01:09:26Z",
+      "summary": "v2.1.225",
+      "fetched_at": "2026-08-08T02:46:34.891Z",
+      "explanation": {
+        "what_it_is": "Gateway spend-limit support has been added to Claude Code's usage warning, providing more detailed information when the limit is reached.",
+        "why_it_matters": "This update allows Claude Code users to better understand their usage limits and plan accordingly, with clear details on the cap, reset time, and operator.",
+        "how_to_use": [
+          "Check the usage warning message for specific details on the spend limit cap and reset time.",
+          "Use this information to adjust your usage and avoid unexpected costs."
+        ]
+      }
+    },
+    {
+      "id": "4f5b41a6",
+      "title": "Added a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-08T01:09:26Z",
+      "summary": "v2.1.225",
+      "fetched_at": "2026-08-08T02:46:34.891Z",
+      "explanation": {
+        "what_it_is": "A workspace trust prompt has been added to Claude agents for untrusted directories, which will prompt users to confirm trust before proceeding.",
+        "why_it_matters": "This change brings the behavior of Claude agents in line with the main Claude application, providing a consistent security experience for users working with untrusted directories.",
+        "how_to_use": [
+          "When working with an untrusted directory, expect a prompt to confirm trust before the Claude agent can access the directory.",
+          "Review the directory's contents and origin to determine if it's safe to trust, then confirm or decline the prompt accordingly."
+        ]
+      }
+    },
     {
       "id": "3eaabeef",
       "title": "Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop…",
@@ -1679,45 +1717,6 @@
         "how_to_use": [
           "Set max_tokens to a lower value for applications where brief advisor responses are sufficient",
           "Use max_tokens to optimize output token cost for large-scale workloads with limited response length requirements"
-        ]
-      }
-    },
-    {
-      "id": "924d7d9f",
-      "title": "On the Claude API, you are no longer billed for a request when it returns…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-2-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-02T00:00:00.000Z",
-      "summary": "On the Claude API, you are no longer billed for a request when it returns stop_reason: \"refusal\" without Claude having generated any output. See Streaming refusals for detecting and handling refusals.",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The Claude API no longer charges for requests that return a 'refusal' stop reason without generating any output.",
-        "why_it_matters": "This change prevents unnecessary billing for requests that were refused by Claude, allowing for more accurate cost tracking and prediction.",
-        "how_to_use": [
-          "Check the 'stop_reason' field in the API response to detect refusals",
-          "Use the 'Streaming refusals' documentation to handle refusals in your application"
-        ]
-      }
-    },
-    {
-      "id": "2033defa",
-      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-29T00:00:00.000Z",
-      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
-      "fetched_at": "2026-07-14T17:53:47.829Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
-        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and test agents in isolated environments, all within the AWS ecosystem.",
-        "how_to_use": [
-          "Use webhooks to receive notifications when agent events occur, such as when an agent completes a task or encounters an error.",
-          "Configure multiagent orchestration to coordinate the actions of multiple agents, enabling more complex workflows and scenarios.",
-          "Set up self-hosted sandboxes to test and validate agent behavior in a controlled, isolated environment before deploying to production."
         ]
       }
     }
