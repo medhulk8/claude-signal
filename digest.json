@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-10T22:22:47.515Z",
+  "generated_at": "2026-08-10T23:22:01.135Z",
   "item_count": 90,
   "items": [
     {
@@ -898,64 +898,6 @@
       }
     },
     {
-      "id": "ac2700c8",
-      "title": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-21T21:35:10Z",
-      "summary": "v2.1.217",
-      "fetched_at": "2026-07-21T21:49:50.731Z",
-      "explanation": {
-        "what_it_is": "Emoji shortcode autocomplete allows you to insert emojis into the prompt input by typing a colon followed by a shortcode, such as :heart: for ❤️.",
-        "why_it_matters": "This feature saves time and effort when inserting emojis into your prompts, making it easier to add tone and personality to your input.",
-        "how_to_use": [
-          "Type :heart: to insert ❤️",
-          "Type :hea and select from suggestions to insert a heart-related emoji",
-          "Disable emoji autocomplete by setting emojiCompletionEnabled to false"
-        ]
-      }
-    },
-    {
-      "id": "038ffb2d",
-      "title": "Added warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-21T21:35:10Z",
-      "summary": "v2.1.217",
-      "fetched_at": "2026-07-21T21:49:50.731Z",
-      "explanation": {
-        "what_it_is": "Claude Code now displays warnings when it fails to write transcripts, such as when the disk is full, or when session saving is disabled due to an inherited environment variable.",
-        "why_it_matters": "This change helps users identify and address issues that might cause data loss or inconsistencies, allowing them to take corrective action to ensure their work is saved.",
-        "how_to_use": [
-          "Check the warnings to determine if transcript writes are failing due to disk space issues and free up space as needed",
-          "Review environment variables to ensure session saving is enabled when required"
-        ]
-      }
-    },
-    {
-      "id": "a8ca14a0",
-      "title": "Added a cap on concurrently-running subagents (default 20, override with CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS) so one message can't fan out unbounded…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-21T21:35:10Z",
-      "summary": "v2.1.217",
-      "fetched_at": "2026-07-21T21:49:50.731Z",
-      "explanation": {
-        "what_it_is": "A cap on the number of subagents that can run concurrently, with a default limit of 20, to prevent unbounded fan-out from a single message.",
-        "why_it_matters": "This cap prevents a single message from overloading the system with too many concurrent subagent executions, reducing the risk of performance issues and crashes.",
-        "how_to_use": [
-          "Set the default limit of 20 subagents per message",
-          "Override the default limit by setting the CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS environment variable"
-        ]
-      }
-    },
-    {
       "id": "2daa5fa6",
       "title": "The legacy Workbench (platform.claude.com/workbench) in the Claude Console is…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2026",
@@ -1717,6 +1659,65 @@
         "how_to_use": [
           "Check the 'stop_reason' field in the API response to detect refusals",
           "Use the 'Streaming refusals' documentation to handle refusals in your application"
+        ]
+      }
+    },
+    {
+      "id": "2033defa",
+      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-29T00:00:00.000Z",
+      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
+      "fetched_at": "2026-08-10T23:22:02.263Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
+        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and run agents in isolated environments, which can simplify workflows and improve security.",
+        "how_to_use": [
+          "Use webhooks to receive notifications when an agent completes a task or reaches a specific state",
+          "Configure multiagent orchestration to run multiple agents in parallel or sequence, enabling more complex workflows",
+          "Set up self-hosted sandboxes to run agents in isolated environments, improving security and reducing dependencies on external services"
+        ]
+      }
+    },
+    {
+      "id": "c92e9d6e",
+      "title": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, Google…",
+      "fetched_at": "2026-08-10T23:22:02.263Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.8 is a generally available model that supports a 1M token context window by default on the Claude API, Amazon Bedrock, and Google platforms.",
+        "why_it_matters": "This update increases the amount of text that can be processed in a single request, allowing for more complex and longer-form tasks to be handled.",
+        "how_to_use": [
+          "Use the Claude API to process large documents or conversations with a single request",
+          "Leverage Amazon Bedrock to integrate Claude Opus 4.8 into your existing workflows and applications",
+          "Utilize Google platforms to deploy Claude Opus 4.8 in cloud-based environments"
+        ]
+      }
+    },
+    {
+      "id": "e96121da",
+      "title": "We've launched mid-conversation system messages",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "We've launched mid-conversation system messages. On Claude Opus 4.8, you can send role: \"system\" messages after a user turn (subject to placement rules) in the messages array, preserving prompt cache…",
+      "fetched_at": "2026-08-10T23:22:02.263Z",
+      "explanation": {
+        "what_it_is": "Mid-conversation system messages allow you to send system messages after a user turn in the conversation, preserving the prompt cache. These messages are sent with a 'role' of 'system' in the messages array.",
+        "why_it_matters": "This update enables more flexible conversation flows, as you can now inject system messages at specific points in the conversation without resetting the context. This can be useful for providing additional information or guidance to the user.",
+        "how_to_use": [
+          "Send a message with 'role': 'system' after a user turn to provide additional context or instructions",
+          "Use mid-conversation system messages to correct user input or provide feedback without restarting the conversation"
         ]
       }
     }
