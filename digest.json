@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-11T18:40:52.670Z",
+  "generated_at": "2026-08-11T19:51:06.728Z",
   "item_count": 90,
   "items": [
     {
@@ -365,21 +365,21 @@
       }
     },
     {
-      "id": "56c78234",
+      "id": "84d4c280",
       "title": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805)",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-08-05T00:00:00.000Z",
-      "summary": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805). All requests to this model will now return an error. We recommend upgrading to Claude Opus 5. Researchers can request ongoing…",
-      "fetched_at": "2026-08-05T20:52:10.284Z",
+      "summary": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805). All requests to this model on the Claude API will now return an error. We recommend upgrading to Claude Opus 5. Researchers can…",
+      "fetched_at": "2026-08-11T19:51:07.941Z",
       "explanation": {
-        "what_it_is": "The Claude Opus 4.1 model has been retired and is no longer available for use, with all requests to this model now returning an error.",
-        "why_it_matters": "This change requires users to upgrade to the Claude Opus 5 model to continue using the service without interruption.",
+        "what_it_is": "The Claude Opus 4.1 model has been retired and is no longer available for use through the Claude API.",
+        "why_it_matters": "Any existing code or workflows that rely on the Claude Opus 4.1 model will now return an error and need to be updated to use a different model, such as Claude Opus 5.",
         "how_to_use": [
-          "Update your API requests to use the Claude Opus 5 model instead of the retired Claude Opus 4.1 model",
-          "Test your application with the new model to ensure compatibility and handle any differences in behavior or output"
+          "Update API requests to use the Claude Opus 5 model instead of Claude Opus 4.1",
+          "Test existing workflows to identify and replace any references to the retired model"
         ]
       }
     },
@@ -779,83 +779,6 @@
         "how_to_use": [
           "Update requests to remove 'speed: fast' and use the standard speed by default",
           "Handle the error response for requests that still specify 'speed: fast'"
-        ]
-      }
-    },
-    {
-      "id": "da0bf2fc",
-      "title": "Added screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+K) in…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-22T21:24:56Z",
-      "summary": "v2.1.218",
-      "fetched_at": "2026-07-22T21:53:55.874Z",
-      "explanation": {
-        "what_it_is": "Claude Code now announces deleted text to screen readers when using specific keyboard shortcuts, such as Option+Delete or Ctrl+W, for word and line deletions.",
-        "why_it_matters": "This update improves accessibility for visually impaired users, providing them with auditory feedback when deleting text.",
-        "how_to_use": [
-          "Use Option+Delete to delete a word and hear the announcement of the deleted text.",
-          "Press Ctrl+W to delete a line and receive an auditory confirmation of the deletion."
-        ]
-      }
-    },
-    {
-      "id": "1e8a9ce4",
-      "title": "Added HTTP status and error text to claude mcp list and /mcp when a server fails to connect, and a warning for MCP config values with hidden leading…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-22T21:24:56Z",
-      "summary": "v2.1.218",
-      "fetched_at": "2026-07-22T21:53:55.874Z",
-      "explanation": {
-        "what_it_is": "The Claude Code 'claude mcp list' and '/mcp' commands now display HTTP status and error text when a server connection fails, and issue warnings for MCP config values with hidden leading characters.",
-        "why_it_matters": "This update helps Claude Code users diagnose connection issues and identify potential configuration problems more easily, allowing for faster troubleshooting and resolution.",
-        "how_to_use": [
-          "Run 'claude mcp list' to see detailed error information for failed server connections",
-          "Check '/mcp' output for warnings about MCP config values with hidden leading characters"
-        ]
-      }
-    },
-    {
-      "id": "50e7aa2f",
-      "title": "Added an announcement when fast mode changes as a result of switching models via /config model=<x> or Remote Control",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-22T21:24:56Z",
-      "summary": "v2.1.218",
-      "fetched_at": "2026-07-22T21:53:55.874Z",
-      "explanation": {
-        "what_it_is": "An announcement is now displayed when the fast mode changes after switching models using the /config model=<x> command or Remote Control.",
-        "why_it_matters": "This update informs users of changes to fast mode, which can impact performance and behavior, allowing them to adjust their workflow accordingly.",
-        "how_to_use": [
-          "Use the /config model=<x> command to switch models and observe the announcement when fast mode changes.",
-          "Switch models via Remote Control and notice the announcement when fast mode is updated."
-        ]
-      }
-    },
-    {
-      "id": "4c3f8f5b",
-      "title": "Added yes/no/on/off/1/0 (case-insensitive) as accepted values for skill and plugin frontmatter booleans, alongside true/false",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-07-22T21:24:56Z",
-      "summary": "v2.1.218",
-      "fetched_at": "2026-07-22T21:53:55.874Z",
-      "explanation": {
-        "what_it_is": "The frontmatter booleans in skill and plugin configurations now accept yes/no, on/off, and 1/0 as valid values, in addition to true/false, and are case-insensitive.",
-        "why_it_matters": "This update provides more flexibility in how you configure your skills and plugins, allowing you to use a variety of boolean formats that may be more convenient or consistent with your existing workflows.",
-        "how_to_use": [
-          "Use 'yes' or 'no' instead of 'true' or 'false' in your frontmatter to enable or disable a feature",
-          "Configure a plugin with 'on' or 'off' to toggle its functionality",
-          "Use '1' or '0' for boolean values in your skill configurations"
         ]
       }
     },
@@ -1716,6 +1639,84 @@
         "how_to_use": [
           "Check the 'stop_reason' field in the API response to detect refusals",
           "Use the 'Streaming refusals' documentation to handle refusals in your application"
+        ]
+      }
+    },
+    {
+      "id": "2033defa",
+      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-29T00:00:00.000Z",
+      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
+      "fetched_at": "2026-08-11T19:51:07.941Z",
+      "explanation": {
+        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
+        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and run agents in isolated environments, all within the AWS ecosystem.",
+        "how_to_use": [
+          "Use webhooks to receive notifications when agent events occur, such as when an agent completes a task",
+          "Configure multiagent orchestration to coordinate the actions of multiple agents in a single workflow",
+          "Set up self-hosted sandboxes to test and deploy agents in isolated environments on AWS"
+        ]
+      }
+    },
+    {
+      "id": "c92e9d6e",
+      "title": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, Google…",
+      "fetched_at": "2026-08-11T19:51:07.941Z",
+      "explanation": {
+        "what_it_is": "Claude Opus 4.8 is a generally available model that supports a 1M token context window by default on the Claude API, Amazon Bedrock, and Google platforms.",
+        "why_it_matters": "This update increases the amount of text that can be processed in a single request, allowing for more complex and longer-form tasks to be handled by the model.",
+        "how_to_use": [
+          "Use the Claude API to send requests with up to 1M tokens of context for more accurate and informative responses.",
+          "Integrate Claude Opus 4.8 with Amazon Bedrock for large-scale natural language processing tasks.",
+          "Leverage the increased context window on Google platforms for more effective language understanding and generation."
+        ]
+      }
+    },
+    {
+      "id": "e96121da",
+      "title": "We've launched mid-conversation system messages",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "We've launched mid-conversation system messages. On Claude Opus 4.8, you can send role: \"system\" messages after a user turn (subject to placement rules) in the messages array, preserving prompt cache…",
+      "fetched_at": "2026-08-11T19:51:07.941Z",
+      "explanation": {
+        "what_it_is": "Mid-conversation system messages allow you to send system messages after a user turn in the conversation, preserving the prompt cache. These messages are sent with a 'role' of 'system' in the messages array.",
+        "why_it_matters": "This update enables more flexible conversation flows, as you can now inject system messages at specific points in the conversation without disrupting the context. This can be useful for providing additional information or guidance to the user.",
+        "how_to_use": [
+          "Send a message with 'role': 'system' after a user turn to provide additional context or instructions",
+          "Use mid-conversation system messages to correct user input or provide feedback without restarting the conversation"
+        ]
+      }
+    },
+    {
+      "id": "83c56063",
+      "title": "The stop_details field on refusal responses is now publicly documented; it…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "The stop_details field on refusal responses is now publicly documented; it returns a category (cyber, bio, or null) and a human-readable explanation, so your application can route different classes…",
+      "fetched_at": "2026-08-11T19:51:07.941Z",
+      "explanation": {
+        "what_it_is": "The stop_details field on refusal responses in the Anthropic API now provides a category (cyber, bio, or null) and a human-readable explanation for why a request was refused.",
+        "why_it_matters": "This change allows your application to differentiate between types of refusals and handle them accordingly, enabling more nuanced error handling and routing.",
+        "how_to_use": [
+          "Check the stop_details field in refusal responses to determine the category of refusal",
+          "Use the category to route different classes of refusals to specific error handling paths"
         ]
       }
     }
