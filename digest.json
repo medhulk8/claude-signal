@@ -1,8 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-08-11T15:44:42.715Z",
+  "generated_at": "2026-08-11T16:41:56.677Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "f4bd0510",
+      "title": "The Compliance API now returns transcripts of Cowork and Claude Code sessions…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-11T00:00:00.000Z",
+      "summary": "The Compliance API now returns transcripts of Cowork and Claude Code sessions that run on your users' machines, in beta for Claude Enterprise organizations. GET /v1/compliance/apps/sessions/local…",
+      "fetched_at": "2026-08-11T16:41:57.943Z",
+      "explanation": {
+        "what_it_is": "The Compliance API now returns transcripts of Cowork and Claude Code sessions that run on users' machines, allowing for the retrieval of conversation records.",
+        "why_it_matters": "This update enables Claude Enterprise organizations to access and review transcripts of local sessions, which can be useful for auditing, logging, or compliance purposes.",
+        "how_to_use": [
+          "Use the GET /v1/compliance/apps/sessions/local endpoint to retrieve transcripts of local Cowork and Claude Code sessions",
+          "Integrate the Compliance API with your organization's logging or auditing tools to automatically store and review session transcripts"
+        ]
+      }
+    },
+    {
+      "id": "80f838b4",
+      "title": "The introductory pricing for Claude Sonnet 5 ($2 / $10 per MTok) is now the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-10-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-10T00:00:00.000Z",
+      "summary": "The introductory pricing for Claude Sonnet 5 ($2 / $10 per MTok) is now the standard price: the previously scheduled increase to $3 / $15 per MTok on September 1, 2026 will not occur. See Pricing.",
+      "fetched_at": "2026-08-11T16:41:57.943Z",
+      "explanation": {
+        "what_it_is": "The introductory pricing for Claude Sonnet 5, previously $2 / $10 per MTok, is now the standard price and will not increase to $3 / $15 per MTok as previously scheduled.",
+        "why_it_matters": "This change means that Claude Code users will not see a price increase for Claude Sonnet 5 on September 1, 2026, allowing them to continue using the service at the current rate.",
+        "how_to_use": [
+          "Continue using Claude Sonnet 5 without expecting a price increase on September 1, 2026",
+          "Review the updated pricing information on the Anthropic API developer platform for planning and budgeting purposes"
+        ]
+      }
+    },
     {
       "id": "09c50af1",
       "title": "Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's…",
@@ -418,6 +456,25 @@
         "how_to_use": [
           "Run the prompt-audit subcommand to scan your prompts and tool descriptions for outdated patterns",
           "Use the audit results to update your prompts and tool descriptions to work seamlessly with newer models"
+        ]
+      }
+    },
+    {
+      "id": "af997685",
+      "title": "The Compliance API now returns transcripts of Cowork sessions started on…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-3-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-03T00:00:00.000Z",
+      "summary": "The Compliance API now returns transcripts of Cowork sessions started on claude.ai web or mobile, in beta for Claude Enterprise organizations. GET /v1/compliance/apps/sessions/remote lists sessions…",
+      "fetched_at": "2026-08-11T16:41:57.943Z",
+      "explanation": {
+        "what_it_is": "The Compliance API now returns transcripts of Cowork sessions initiated on claude.ai web or mobile platforms.",
+        "why_it_matters": "This update allows Claude Enterprise organizations to access and review transcripts of remote Cowork sessions, which can be useful for auditing, compliance, or training purposes.",
+        "how_to_use": [
+          "Use the GET /v1/compliance/apps/sessions/remote endpoint to retrieve a list of remote Cowork sessions",
+          "Access transcripts of specific sessions to review conversation content"
         ]
       }
     },
@@ -1659,65 +1716,6 @@
         "how_to_use": [
           "Check the 'stop_reason' field in the API response to detect refusals",
           "Use the 'Streaming refusals' documentation to handle refusals in your application"
-        ]
-      }
-    },
-    {
-      "id": "2033defa",
-      "title": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-29T00:00:00.000Z",
-      "summary": "Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and…",
-      "fetched_at": "2026-08-10T23:22:02.263Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents now support webhooks, multiagent orchestration, and self-hosted sandboxes on the Claude Platform on AWS, allowing for more flexible and customizable agent deployments.",
-        "why_it_matters": "This update enables Claude Code users to integrate their agents with external systems, orchestrate multiple agents, and run agents in isolated environments, which can simplify workflows and improve security.",
-        "how_to_use": [
-          "Use webhooks to receive notifications when an agent completes a task or reaches a specific state",
-          "Configure multiagent orchestration to run multiple agents in parallel or sequence, enabling more complex workflows",
-          "Set up self-hosted sandboxes to run agents in isolated environments, improving security and reducing dependencies on external services"
-        ]
-      }
-    },
-    {
-      "id": "c92e9d6e",
-      "title": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, Google…",
-      "fetched_at": "2026-08-10T23:22:02.263Z",
-      "explanation": {
-        "what_it_is": "Claude Opus 4.8 is a generally available model that supports a 1M token context window by default on the Claude API, Amazon Bedrock, and Google platforms.",
-        "why_it_matters": "This update increases the amount of text that can be processed in a single request, allowing for more complex and longer-form tasks to be handled.",
-        "how_to_use": [
-          "Use the Claude API to process large documents or conversations with a single request",
-          "Leverage Amazon Bedrock to integrate Claude Opus 4.8 into your existing workflows and applications",
-          "Utilize Google platforms to deploy Claude Opus 4.8 in cloud-based environments"
-        ]
-      }
-    },
-    {
-      "id": "e96121da",
-      "title": "We've launched mid-conversation system messages",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've launched mid-conversation system messages. On Claude Opus 4.8, you can send role: \"system\" messages after a user turn (subject to placement rules) in the messages array, preserving prompt cache…",
-      "fetched_at": "2026-08-10T23:22:02.263Z",
-      "explanation": {
-        "what_it_is": "Mid-conversation system messages allow you to send system messages after a user turn in the conversation, preserving the prompt cache. These messages are sent with a 'role' of 'system' in the messages array.",
-        "why_it_matters": "This update enables more flexible conversation flows, as you can now inject system messages at specific points in the conversation without resetting the context. This can be useful for providing additional information or guidance to the user.",
-        "how_to_use": [
-          "Send a message with 'role': 'system' after a user turn to provide additional context or instructions",
-          "Use mid-conversation system messages to correct user input or provide feedback without restarting the conversation"
         ]
       }
     }
