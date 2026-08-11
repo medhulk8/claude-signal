@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-11T19:51:06.728Z",
+  "generated_at": "2026-08-11T20:30:02.173Z",
   "item_count": 90,
   "items": [
     {
@@ -365,21 +365,21 @@
       }
     },
     {
-      "id": "84d4c280",
+      "id": "56c78234",
       "title": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805)",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-08-05T00:00:00.000Z",
-      "summary": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805). All requests to this model on the Claude API will now return an error. We recommend upgrading to Claude Opus 5. Researchers can…",
-      "fetched_at": "2026-08-11T19:51:07.941Z",
+      "summary": "We've retired the Claude Opus 4.1 model (claude-opus-4-1-20250805). All requests to this model will now return an error. We recommend upgrading to Claude Opus 5. Researchers can request ongoing…",
+      "fetched_at": "2026-08-11T20:30:03.319Z",
       "explanation": {
-        "what_it_is": "The Claude Opus 4.1 model has been retired and is no longer available for use through the Claude API.",
-        "why_it_matters": "Any existing code or workflows that rely on the Claude Opus 4.1 model will now return an error and need to be updated to use a different model, such as Claude Opus 5.",
+        "what_it_is": "The Claude Opus 4.1 model has been retired, meaning it is no longer available for use and will return an error for all requests.",
+        "why_it_matters": "This change requires users to upgrade to the Claude Opus 5 model to continue using the service without interruption.",
         "how_to_use": [
-          "Update API requests to use the Claude Opus 5 model instead of Claude Opus 4.1",
-          "Test existing workflows to identify and replace any references to the retired model"
+          "Update your API requests to use the Claude Opus 5 model",
+          "Test your workflows with the new model to ensure compatibility"
         ]
       }
     },
