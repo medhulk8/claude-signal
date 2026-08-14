@@ -1,8 +1,66 @@
 {
   "version": 1,
-  "generated_at": "2026-08-13T23:27:41.577Z",
+  "generated_at": "2026-08-14T00:49:10.651Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "300d224c",
+      "title": "Added /config rows for \"Dialog expiry\" and \"Messages from your other sessions\" (cross-session inbound accept/hold/refuse)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-13T23:29:59Z",
+      "summary": "v2.1.232",
+      "fetched_at": "2026-08-14T00:49:11.148Z",
+      "explanation": {
+        "what_it_is": "Two new configuration rows have been added to control dialog expiry and cross-session message handling, allowing for more fine-grained control over conversation management.",
+        "why_it_matters": "This update gives Claude Code users more flexibility in managing conversations across multiple sessions, enabling better handling of incoming messages and expired dialogs.",
+        "how_to_use": [
+          "Use the 'Dialog expiry' row to set a custom timeout for conversations",
+          "Configure 'Messages from your other sessions' to accept, hold, or refuse incoming messages from other sessions"
+        ]
+      }
+    },
+    {
+      "id": "9d1ddb26",
+      "title": "Added secret redaction for GitLab token families (glrt-, gloas-, glptt-, glagent-, glimt-, glsoat-, glcbt-, glft-, glffct-) and full redaction of…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-13T23:29:59Z",
+      "summary": "v2.1.232",
+      "fetched_at": "2026-08-14T00:49:11.148Z",
+      "explanation": {
+        "what_it_is": "Secret redaction for specific GitLab token families, including glrt-, gloas-, glptt-, glagent-, glimt-, glsoat-, glcbt-, glft-, and glffct-, to hide sensitive information.",
+        "why_it_matters": "This update helps protect sensitive GitLab tokens from being exposed in Claude Code, reducing the risk of unauthorized access.",
+        "how_to_use": [
+          "Use the updated Claude Code version to automatically redact GitLab tokens in your workflows",
+          "Verify that your GitLab token families are properly redacted in Claude Code logs and outputs"
+        ]
+      }
+    },
+    {
+      "id": "8210cfe1",
+      "title": "Added GitLab support to plugin marketplaces: bare gitlab.com repo URLs (including nested subgroups) now clone like github.com URLs, and clone…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-13T23:29:59Z",
+      "summary": "v2.1.232",
+      "fetched_at": "2026-08-14T00:49:11.148Z",
+      "explanation": {
+        "what_it_is": "The plugin marketplaces in Claude Code now support GitLab repositories, allowing users to clone repositories using bare gitlab.com URLs, including those with nested subgroups.",
+        "why_it_matters": "This update enables Claude Code users to easily integrate plugins from GitLab repositories, expanding the range of available plugins and streamlining the development workflow.",
+        "how_to_use": [
+          "Clone a GitLab repository by providing its bare URL, such as https://gitlab.com/user/repo",
+          "Use nested subgroups in GitLab repository URLs, like https://gitlab.com/user/subgroup/repo",
+          "Search for and install plugins from GitLab repositories in the plugin marketplaces"
+        ]
+      }
+    },
     {
       "id": "5820478f",
       "title": "Added server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior",
@@ -478,82 +536,6 @@
         "how_to_use": [
           "Update API requests to use the Claude Opus 5 model instead of claude-opus-4-1-20250805",
           "Test existing workflows to identify and replace any references to the retired model"
-        ]
-      }
-    },
-    {
-      "id": "ece1e1d6",
-      "title": "[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator,…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-04T00:14:23Z",
-      "summary": "v2.1.221",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "A new 'Focus view' toggle in the chat menu that hides tool activity, showing only a summary of each turn with a live indicator of running tools.",
-        "why_it_matters": "This feature helps reduce clutter in the Claude Code interface, making it easier to focus on the conversation flow and tool outputs.",
-        "how_to_use": [
-          "Toggle 'Focus view' on to hide tool activity and show turn summaries",
-          "Click on a turn summary to expand and view detailed tool activity"
-        ]
-      }
-    },
-    {
-      "id": "cc292ccb",
-      "title": "Added mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-04T00:14:23Z",
-      "summary": "v2.1.221",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The 'mask' mode for sandbox credential files on Linux and WSL allows sandboxed commands to read a sentinel copy of the credential file, which can be either the whole file or specific spans.",
-        "why_it_matters": "This update enables more secure handling of sensitive credential files in sandboxed environments, reducing the risk of exposure.",
-        "how_to_use": [
-          "Use the 'mask' mode when working with sensitive credential files in Linux or WSL sandboxed environments to limit access to the files",
-          "Specify the spans of the credential file to be read by sandboxed commands for more fine-grained control"
-        ]
-      }
-    },
-    {
-      "id": "9c58a679",
-      "title": "Added warnings to claude plugin validate when a marketplace or plugin name would be rejected by Claude Desktop's managed marketplace sync",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-04T00:14:23Z",
-      "summary": "v2.1.221",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The Claude Code plugin validate command now issues warnings when a marketplace or plugin name would be rejected by Claude Desktop's managed marketplace sync.",
-        "why_it_matters": "This change helps developers catch and fix naming issues earlier, avoiding potential rejections when syncing with Claude Desktop.",
-        "how_to_use": [
-          "Run 'claude plugin validate' to check your marketplace or plugin name for potential sync issues",
-          "Review warnings to ensure your name complies with Claude Desktop's managed marketplace sync requirements"
-        ]
-      }
-    },
-    {
-      "id": "7510487e",
-      "title": "Added a prompt-audit subcommand to the claude-api skill for auditing prompts and tool descriptions for patterns written for older models",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-04T00:14:23Z",
-      "summary": "v2.1.221",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The prompt-audit subcommand is a new feature in the claude-api skill that audits prompts and tool descriptions to identify patterns written for older models.",
-        "why_it_matters": "This update matters because it helps Claude Code users ensure their prompts and tool descriptions are compatible with the latest models, potentially improving their performance and accuracy.",
-        "how_to_use": [
-          "Run the prompt-audit subcommand to scan your existing prompts and tool descriptions for outdated patterns",
-          "Use the audit results to update your prompts and tool descriptions to be compatible with the latest models"
         ]
       }
     },
@@ -1720,6 +1702,25 @@
         "how_to_use": [
           "Pass high-resolution images to Claude Opus 4.8 for more detailed image analysis",
           "Use the increased resolution limit to process larger images without downsampling"
+        ]
+      }
+    },
+    {
+      "id": "c0de9998",
+      "title": "Task budgets now support Claude Opus 4.8",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "Task budgets now support Claude Opus 4.8.",
+      "fetched_at": "2026-08-14T00:49:12.078Z",
+      "explanation": {
+        "what_it_is": "Task budgets in Claude Code now support the latest version of Claude Opus, specifically version 4.8.",
+        "why_it_matters": "This update allows Claude Code users to utilize the features and improvements of Claude Opus 4.8 when working with task budgets, potentially enabling more complex and efficient task management.",
+        "how_to_use": [
+          "Update your Claude Opus version to 4.8 to take advantage of the new features in task budgets",
+          "Review your existing task budgets to ensure compatibility with Claude Opus 4.8"
         ]
       }
     }
