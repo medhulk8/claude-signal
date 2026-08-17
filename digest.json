@@ -1,8 +1,41 @@
 {
   "version": 1,
-  "generated_at": "2026-08-17T20:11:03.385Z",
+  "generated_at": "2026-08-17T21:12:55.420Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "436d104b",
+      "title": "Added the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-17T20:20:58Z",
+      "summary": "v2.1.234",
+      "fetched_at": "2026-08-17T21:12:55.926Z"
+    },
+    {
+      "id": "9461053e",
+      "title": "Added the selection:clear keybinding action, so a key can be bound to clear an in-app text selection; also works in the agents view",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-17T20:20:58Z",
+      "summary": "v2.1.234",
+      "fetched_at": "2026-08-17T21:12:55.926Z"
+    },
+    {
+      "id": "cbe96a3a",
+      "title": "Added a GitLab merge request badge to the footer and statusline: repos with a GitLab remote and an authenticated glab CLI show MR !N with…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-17T20:20:58Z",
+      "summary": "v2.1.234",
+      "fetched_at": "2026-08-17T21:12:55.926Z"
+    },
     {
       "id": "81b616ca",
       "title": "Added GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N)",
@@ -516,64 +549,6 @@
         "how_to_use": [
           "Mount a GitHub repository to a Claude Managed Agents session to automatically discover skills in the .claude/skills directory",
           "Store skills in the .claude/skills directory of a GitHub repository to load them into a Claude Managed Agents session"
-        ]
-      }
-    },
-    {
-      "id": "89820670",
-      "title": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-06T00:52:37Z",
-      "summary": "v2.1.223",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The ability to use wildcard entries (owner/*) in the strictKnownMarketplaces and blockedMarketplaces settings, allowing or blocking all marketplaces owned by a specific owner.",
-        "why_it_matters": "This update simplifies the process of managing multiple marketplaces owned by the same entity, as users can now apply settings to all marketplaces owned by a specific owner with a single entry.",
-        "how_to_use": [
-          "Add 'owner/*' to strictKnownMarketplaces to allow all marketplaces owned by a specific owner",
-          "Add 'owner/*' to blockedMarketplaces to block all marketplaces owned by a specific owner"
-        ]
-      }
-    },
-    {
-      "id": "494fea4e",
-      "title": "Added a warning when workflow agents, forked skills, slash commands, or resumed background agents' requested subagent model is restricted and the…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-06T00:52:37Z",
-      "summary": "v2.1.223",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "A warning is now displayed when a workflow agent, forked skill, slash command, or resumed background agent requests a subagent model that is restricted.",
-        "why_it_matters": "This warning helps Claude Code users identify potential issues with their workflows and skills, allowing them to take corrective action before errors occur.",
-        "how_to_use": [
-          "Check the warning message to see which subagent model is restricted and why",
-          "Update your workflow or skill to use an allowed subagent model",
-          "Test your workflow or skill again to ensure it works as expected"
-        ]
-      }
-    },
-    {
-      "id": "22d72b2b",
-      "title": "Added a /teleport hint in cloud sessions showing how to continue locally with claude --teleport <session id>",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-06T00:52:37Z",
-      "summary": "v2.1.223",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "A /teleport hint in cloud sessions that provides instructions on how to continue working locally with a specific command.",
-        "why_it_matters": "This hint allows users to easily transition their work from cloud sessions to local environments, streamlining their workflow.",
-        "how_to_use": [
-          "Run the command 'claude --teleport <session id>' to continue a cloud session locally",
-          "Use the /teleport hint in cloud sessions to find the session ID and command syntax"
         ]
       }
     },
