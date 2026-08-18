@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-18T17:14:15.990Z",
+  "generated_at": "2026-08-18T18:16:39.058Z",
   "item_count": 90,
   "items": [
     {
@@ -12,7 +12,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-18T17:14:16.411Z"
+      "fetched_at": "2026-08-18T18:16:39.306Z"
     },
     {
       "id": "9461053e",
@@ -23,7 +23,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-18T17:14:16.411Z"
+      "fetched_at": "2026-08-18T18:16:39.306Z"
     },
     {
       "id": "cbe96a3a",
@@ -34,7 +34,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-18T17:14:16.411Z"
+      "fetched_at": "2026-08-18T18:16:39.306Z"
     },
     {
       "id": "81b616ca",
