@@ -1,8 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-08-18T20:08:26.931Z",
+  "generated_at": "2026-08-18T21:10:26.853Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "66584c57",
+      "title": "Added an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell, hunspell, or…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-18T20:38:54Z",
+      "summary": "v2.1.235",
+      "fetched_at": "2026-08-18T21:10:27.083Z"
+    },
     {
       "id": "436d104b",
       "title": "Added the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name…",
@@ -12,7 +23,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-18T20:08:27.440Z"
+      "fetched_at": "2026-08-18T21:10:27.083Z"
     },
     {
       "id": "9461053e",
@@ -23,7 +34,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-18T20:08:27.440Z"
+      "fetched_at": "2026-08-18T21:10:27.083Z"
     },
     {
       "id": "cbe96a3a",
@@ -34,7 +45,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-18T20:08:27.440Z"
+      "fetched_at": "2026-08-18T21:10:27.083Z"
     },
     {
       "id": "81b616ca",
@@ -339,140 +350,6 @@
         "how_to_use": [
           "When working in an untrusted directory, expect a prompt to confirm trust before Claude agents can execute code.",
           "Review and confirm trust for directories that are safe to work with, allowing Claude agents to function as intended."
-        ]
-      }
-    },
-    {
-      "id": "3eaabeef",
-      "title": "Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The claude self-hosted-runner command allows you to turn your own machines or containers into environments for running Claude Code web, mobile, and desktop applications.",
-        "why_it_matters": "This update gives Claude Code users more control over their development environments, allowing them to run applications on their own infrastructure.",
-        "how_to_use": [
-          "Run 'claude self-hosted-runner' to initialize a self-hosted environment on a local machine",
-          "Use the command to spin up a containerized environment for testing and development"
-        ]
-      }
-    },
-    {
-      "id": "8228f735",
-      "title": "Added archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The archive plugin source allows installing plugins from a zip file over HTTPS, without requiring git or npm, and optionally verifies the plugin's integrity using SHA-256 pinning.",
-        "why_it_matters": "This update enables Claude Code users to install plugins from sources that may not be available on git or npm, and provides an additional layer of security through optional SHA-256 pinning.",
-        "how_to_use": [
-          "Download a plugin zip file from a trusted source",
-          "Install the plugin using the archive plugin source, specifying the zip file URL and optional SHA-256 hash"
-        ]
-      }
-    },
-    {
-      "id": "286adc9d",
-      "title": "Added a cancel-and-confirm step when removing an unavailable paste changes a command's text",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "A new confirmation step has been added when removing an unavailable paste that alters a command's text, requiring users to cancel and confirm the change.",
-        "why_it_matters": "This change prevents accidental modifications to commands when removing unavailable pastes, ensuring that users intentionally make changes to their code.",
-        "how_to_use": [
-          "When removing an unavailable paste that changes a command's text, confirm the change to intentionally update the command.",
-          "Cancel the removal if you want to preserve the original command text."
-        ]
-      }
-    },
-    {
-      "id": "03ab978c",
-      "title": "Added ANTHROPIC_BEDROCK_REGION_PREFIX env var for Bedrock to prefer a specific cross-region inference profile over the AWS_REGION-derived one",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The ANTHROPIC_BEDROCK_REGION_PREFIX environment variable allows Bedrock to prioritize a specific cross-region inference profile over the one derived from the AWS_REGION setting.",
-        "why_it_matters": "This update gives Claude Code users more control over inference profiles in Bedrock, particularly in multi-region setups where the default AWS_REGION-derived profile may not be optimal.",
-        "how_to_use": [
-          "Set the ANTHROPIC_BEDROCK_REGION_PREFIX env var to a preferred region prefix to override the AWS_REGION-derived inference profile",
-          "Use this variable in Bedrock configurations where cross-region inference needs to be customized"
-        ]
-      }
-    },
-    {
-      "id": "1ed21fbf",
-      "title": "Added crossSessionInbound and dialogExpiry settings: cross-session messages sent to a session running with bypassed permissions are held for your…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "The crossSessionInbound and dialogExpiry settings allow for cross-session messages to be held when sent to a session with bypassed permissions.",
-        "why_it_matters": "This change gives developers more control over how cross-session messages are handled in sessions with bypassed permissions, potentially improving security and message management.",
-        "how_to_use": [
-          "Use the crossSessionInbound setting to configure how cross-session messages are handled when permissions are bypassed.",
-          "Set the dialogExpiry setting to determine how long held messages are stored before expiring."
-        ]
-      }
-    },
-    {
-      "id": "dc0f6499",
-      "title": "Added sandbox credential-masking options: extract and onExtractNoMatch for structured env values, decode: \"jwt\" with maskClaims for JWT-aware…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "Credential-masking options for sandbox environments, including extract and onExtractNoMatch for structured environment values and decode: 'jwt' with maskClaims for JWT-aware credentials.",
-        "why_it_matters": "This update allows Claude Code users to better protect sensitive credentials in sandbox environments, particularly when working with structured data or JSON Web Tokens (JWT).",
-        "how_to_use": [
-          "Use the extract option to mask specific credentials in structured environment values.",
-          "Apply the onExtractNoMatch option to handle cases where credential extraction does not match expected patterns.",
-          "Enable decode: 'jwt' with maskClaims to mask claims in JWT-aware credentials."
-        ]
-      }
-    },
-    {
-      "id": "47ae324d",
-      "title": "Added cross-session SendMessage: Claude Code sessions can now message each other, on any of your machines, with ListAgents to discover them (macOS…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-07T04:00:59Z",
-      "summary": "v2.1.224",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "Cross-session SendMessage allows different Claude Code sessions to exchange messages with each other, even if they're running on different machines.",
-        "why_it_matters": "This enables coordination and communication between multiple Claude Code sessions, making it easier to manage complex workflows and automate tasks across multiple machines.",
-        "how_to_use": [
-          "Use ListAgents to discover available Claude Code sessions on your machines",
-          "Send messages between sessions using the SendMessage command"
         ]
       }
     },
@@ -1698,6 +1575,72 @@
           "Explicitly set the effort parameter if a different setting is required for a specific use case"
         ]
       }
+    },
+    {
+      "id": "4df24d94",
+      "title": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
+      "fetched_at": "2026-08-18T21:10:27.894Z"
+    },
+    {
+      "id": "2bd14674",
+      "title": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.",
+      "fetched_at": "2026-08-18T21:10:27.894Z"
+    },
+    {
+      "id": "a4e2f106",
+      "title": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.",
+      "fetched_at": "2026-08-18T21:10:27.894Z"
+    },
+    {
+      "id": "c0de9998",
+      "title": "Task budgets now support Claude Opus 4.8",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "Task budgets now support Claude Opus 4.8.",
+      "fetched_at": "2026-08-18T21:10:27.894Z"
+    },
+    {
+      "id": "970b26a9",
+      "title": "The advisor tool now supports Claude Opus 4.8",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "The advisor tool now supports Claude Opus 4.8.",
+      "fetched_at": "2026-08-18T21:10:27.894Z"
+    },
+    {
+      "id": "e1eca32e",
+      "title": "Computer use now supports Claude Opus 4.8",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-05-28T00:00:00.000Z",
+      "summary": "Computer use now supports Claude Opus 4.8.",
+      "fetched_at": "2026-08-18T21:10:27.894Z"
     }
   ]
 }
