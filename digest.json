@@ -1,8 +1,41 @@
 {
   "version": 1,
-  "generated_at": "2026-08-19T19:15:11.663Z",
+  "generated_at": "2026-08-19T20:11:09.036Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "ef890747",
+      "title": "Added ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-19T20:02:05Z",
+      "summary": "v2.1.236",
+      "fetched_at": "2026-08-19T20:11:09.369Z"
+    },
+    {
+      "id": "a93637cc",
+      "title": "Added notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send one notice when it next goes idle —…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-19T20:02:05Z",
+      "summary": "v2.1.236",
+      "fetched_at": "2026-08-19T20:11:09.369Z"
+    },
+    {
+      "id": "d0c78378",
+      "title": "[VSCode] Added screen reader support for the transcript: live announcements for replies, permission requests, errors, and status changes, plus…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-19T20:02:05Z",
+      "summary": "v2.1.236",
+      "fetched_at": "2026-08-19T20:11:09.369Z"
+    },
     {
       "id": "2bf1f415",
       "title": "The Admin API user-management endpoints for Claude Enterprise (claude.ai)…",
@@ -12,7 +45,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are now generally available. The anthropic-beta:…",
-      "fetched_at": "2026-08-19T19:15:12.852Z"
+      "fetched_at": "2026-08-19T20:11:10.113Z"
     },
     {
       "id": "66584c57",
@@ -23,7 +56,7 @@
       "type": "release",
       "published_at": "2026-08-18T20:38:54Z",
       "summary": "v2.1.235",
-      "fetched_at": "2026-08-19T19:15:11.914Z"
+      "fetched_at": "2026-08-19T20:11:09.369Z"
     },
     {
       "id": "08522c6f",
@@ -34,7 +67,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now Playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-08-19T19:15:12.852Z"
+      "fetched_at": "2026-08-19T20:11:10.113Z"
     },
     {
       "id": "436d104b",
@@ -45,7 +78,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T19:15:11.914Z"
+      "fetched_at": "2026-08-19T20:11:09.369Z"
     },
     {
       "id": "9461053e",
@@ -56,7 +89,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T19:15:11.914Z"
+      "fetched_at": "2026-08-19T20:11:09.369Z"
     },
     {
       "id": "cbe96a3a",
@@ -67,7 +100,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T19:15:11.914Z"
+      "fetched_at": "2026-08-19T20:11:09.369Z"
     },
     {
       "id": "81b616ca",
@@ -334,44 +367,6 @@
         "how_to_use": [
           "Continue using Claude Sonnet 5 without expecting a price increase on September 1, 2026",
           "Review the updated pricing information on the Anthropic API developer platform for planning and budgeting purposes"
-        ]
-      }
-    },
-    {
-      "id": "09c50af1",
-      "title": "Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-08T01:09:26Z",
-      "summary": "v2.1.225",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "Gateway spend-limit support has been added to Claude Code's usage warning, providing more detailed information when the limit is reached.",
-        "why_it_matters": "This update allows Claude Code users to better understand and manage their usage, as the limit-reached message now includes the cap, reset time, and operator's information.",
-        "how_to_use": [
-          "Check the usage warning message for the specific spend limit and reset time to plan your usage accordingly",
-          "Use the detailed information in the limit-reached message to adjust your gateway spend limits and avoid unexpected usage interruptions"
-        ]
-      }
-    },
-    {
-      "id": "4f5b41a6",
-      "title": "Added a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-08-08T01:09:26Z",
-      "summary": "v2.1.225",
-      "fetched_at": "2026-08-12T21:31:18.562Z",
-      "explanation": {
-        "what_it_is": "A workspace trust prompt has been added to Claude agents for untrusted directories, which will prompt users to confirm trust before executing code.",
-        "why_it_matters": "This change brings the behavior of Claude agents in line with the main Claude application, providing a consistent security experience across the platform.",
-        "how_to_use": [
-          "When working in an untrusted directory, expect a prompt to confirm trust before Claude agents can execute code.",
-          "Review and confirm trust for directories that are safe to work with, allowing Claude agents to function as intended."
         ]
       }
     },
@@ -1607,7 +1602,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
-      "fetched_at": "2026-08-19T19:15:12.852Z"
+      "fetched_at": "2026-08-19T20:11:10.113Z"
     },
     {
       "id": "2bd14674",
@@ -1618,7 +1613,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.",
-      "fetched_at": "2026-08-19T19:15:12.852Z"
+      "fetched_at": "2026-08-19T20:11:10.113Z"
     },
     {
       "id": "a4e2f106",
@@ -1629,18 +1624,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.",
-      "fetched_at": "2026-08-19T19:15:12.852Z"
-    },
-    {
-      "id": "c0de9998",
-      "title": "Task budgets now support Claude Opus 4.8",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Task budgets now support Claude Opus 4.8.",
-      "fetched_at": "2026-08-19T19:15:12.852Z"
+      "fetched_at": "2026-08-19T20:11:10.113Z"
     }
   ]
 }
