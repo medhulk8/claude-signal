@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-19T16:14:57.619Z",
+  "generated_at": "2026-08-19T17:14:16.429Z",
   "item_count": 90,
   "items": [
     {
@@ -12,7 +12,7 @@
       "type": "release",
       "published_at": "2026-08-18T20:38:54Z",
       "summary": "v2.1.235",
-      "fetched_at": "2026-08-19T16:14:57.856Z"
+      "fetched_at": "2026-08-19T17:14:16.802Z"
     },
     {
       "id": "08522c6f",
@@ -23,7 +23,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now Playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-08-19T16:14:58.604Z"
+      "fetched_at": "2026-08-19T17:14:17.994Z"
     },
     {
       "id": "436d104b",
@@ -34,7 +34,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T16:14:57.856Z"
+      "fetched_at": "2026-08-19T17:14:16.802Z"
     },
     {
       "id": "9461053e",
@@ -45,7 +45,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T16:14:57.856Z"
+      "fetched_at": "2026-08-19T17:14:16.802Z"
     },
     {
       "id": "cbe96a3a",
@@ -56,7 +56,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T16:14:57.856Z"
+      "fetched_at": "2026-08-19T17:14:16.802Z"
     },
     {
       "id": "81b616ca",
@@ -1596,7 +1596,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
-      "fetched_at": "2026-08-19T16:14:58.604Z"
+      "fetched_at": "2026-08-19T17:14:17.994Z"
     },
     {
       "id": "2bd14674",
@@ -1607,7 +1607,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.",
-      "fetched_at": "2026-08-19T16:14:58.604Z"
+      "fetched_at": "2026-08-19T17:14:17.994Z"
     },
     {
       "id": "a4e2f106",
@@ -1618,7 +1618,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.",
-      "fetched_at": "2026-08-19T16:14:58.604Z"
+      "fetched_at": "2026-08-19T17:14:17.994Z"
     },
     {
       "id": "c0de9998",
@@ -1629,7 +1629,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "Task budgets now support Claude Opus 4.8.",
-      "fetched_at": "2026-08-19T16:14:58.604Z"
+      "fetched_at": "2026-08-19T17:14:17.994Z"
     },
     {
       "id": "970b26a9",
@@ -1640,7 +1640,7 @@
       "type": "changelog",
       "published_at": "2026-05-28T00:00:00.000Z",
       "summary": "The advisor tool now supports Claude Opus 4.8.",
-      "fetched_at": "2026-08-19T16:14:58.604Z"
+      "fetched_at": "2026-08-19T17:14:17.994Z"
     }
   ]
 }
