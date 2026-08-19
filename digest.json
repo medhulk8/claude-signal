@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-19T21:13:15.379Z",
+  "generated_at": "2026-08-19T22:10:46.194Z",
   "item_count": 90,
   "items": [
     {
@@ -12,7 +12,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "a93637cc",
@@ -23,7 +23,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "d0c78378",
@@ -34,7 +34,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "2bf1f415",
@@ -45,7 +45,62 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are now generally available. The anthropic-beta:…",
-      "fetched_at": "2026-08-19T21:13:16.539Z"
+      "fetched_at": "2026-08-19T22:10:47.569Z"
+    },
+    {
+      "id": "ebc0d596",
+      "title": "The Files API is now generally available on the Claude API",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-19T00:00:00.000Z",
+      "summary": "The Files API is now generally available on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14…",
+      "fetched_at": "2026-08-19T22:10:47.569Z"
+    },
+    {
+      "id": "348c80a4",
+      "title": "Agent Skills and the Skills API (/v1/skills) are now generally available on the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-19T00:00:00.000Z",
+      "summary": "Agent Skills and the Skills API (/v1/skills) are now generally available on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load…",
+      "fetched_at": "2026-08-19T22:10:47.569Z"
+    },
+    {
+      "id": "8a2e28a7",
+      "title": "You can now restrict which sites a Claude Managed Agents agent's web_search and…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-19T00:00:00.000Z",
+      "summary": "You can now restrict which sites a Claude Managed Agents agent's web_search and web_fetch tools can reach. Set allowed_domains or blocked_domains on the tool's entry in the agent_toolset_20260401…",
+      "fetched_at": "2026-08-19T22:10:47.569Z"
+    },
+    {
+      "id": "fab51da2",
+      "title": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-19T00:00:00.000Z",
+      "summary": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its…",
+      "fetched_at": "2026-08-19T22:10:47.569Z"
+    },
+    {
+      "id": "9d0b9426",
+      "title": "The session viewer in the Claude Console has been redesigned with a timeline…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-19T00:00:00.000Z",
+      "summary": "The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool…",
+      "fetched_at": "2026-08-19T22:10:47.569Z"
     },
     {
       "id": "66584c57",
@@ -56,7 +111,7 @@
       "type": "release",
       "published_at": "2026-08-18T20:38:54Z",
       "summary": "v2.1.235",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "08522c6f",
@@ -67,7 +122,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now Playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-08-19T21:13:16.539Z"
+      "fetched_at": "2026-08-19T22:10:47.569Z"
     },
     {
       "id": "436d104b",
@@ -78,7 +133,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "9461053e",
@@ -89,7 +144,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "cbe96a3a",
@@ -100,7 +155,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-19T21:13:15.719Z"
+      "fetched_at": "2026-08-19T22:10:46.340Z"
     },
     {
       "id": "81b616ca",
@@ -1554,77 +1609,6 @@
           "Use mid-conversation system messages to correct user input or provide feedback without restarting the conversation"
         ]
       }
-    },
-    {
-      "id": "83c56063",
-      "title": "The stop_details field on refusal responses is now publicly documented; it…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "The stop_details field on refusal responses is now publicly documented; it returns a category (cyber, bio, or null) and a human-readable explanation, so your application can route different classes…",
-      "fetched_at": "2026-08-11T19:51:07.941Z",
-      "explanation": {
-        "what_it_is": "The stop_details field on refusal responses in the Anthropic API now provides a category (cyber, bio, or null) and a human-readable explanation for why a request was refused.",
-        "why_it_matters": "This change allows your application to differentiate between types of refusals and handle them accordingly, enabling more nuanced error handling and routing.",
-        "how_to_use": [
-          "Check the stop_details field in refusal responses to determine the category of refusal",
-          "Use the category to route different classes of refusals to specific error handling paths"
-        ]
-      }
-    },
-    {
-      "id": "d0d4a794",
-      "title": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the effort parameter defaults to high across all surfaces, including Claude Code and the Messages API.",
-      "fetched_at": "2026-08-12T20:27:55.183Z",
-      "explanation": {
-        "what_it_is": "The effort parameter in Claude Opus 4.8 now defaults to 'high' for all surfaces, including Claude Code and the Messages API.",
-        "why_it_matters": "This change affects the default behavior of Claude Opus 4.8, potentially altering the output or performance of applications that rely on the default effort parameter setting.",
-        "how_to_use": [
-          "Review existing applications to ensure the new default effort parameter does not impact performance or output",
-          "Explicitly set the effort parameter if a different setting is required for a specific use case"
-        ]
-      }
-    },
-    {
-      "id": "4df24d94",
-      "title": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.",
-      "fetched_at": "2026-08-19T21:13:16.539Z"
-    },
-    {
-      "id": "2bd14674",
-      "title": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.",
-      "fetched_at": "2026-08-19T21:13:16.539Z"
-    },
-    {
-      "id": "a4e2f106",
-      "title": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.",
-      "fetched_at": "2026-08-19T21:13:16.539Z"
     }
   ]
 }
