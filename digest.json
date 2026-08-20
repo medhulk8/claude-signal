@@ -1,8 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-08-20T00:26:12.133Z",
+  "generated_at": "2026-08-20T02:08:18.159Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "12504290",
+      "title": "Added a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-20T00:54:41Z",
+      "summary": "v2.1.237",
+      "fetched_at": "2026-08-20T02:08:18.501Z"
+    },
     {
       "id": "ef890747",
       "title": "Added ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across…",
@@ -12,7 +23,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "a93637cc",
@@ -23,7 +34,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "d0c78378",
@@ -34,7 +45,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "2bf1f415",
@@ -45,7 +56,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are now generally available. The anthropic-beta:…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "ebc0d596",
@@ -56,7 +67,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Files API is now generally available on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "348c80a4",
@@ -67,7 +78,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Agent Skills and the Skills API (/v1/skills) are now generally available on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "8a2e28a7",
@@ -78,7 +89,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "You can now restrict which sites a Claude Managed Agents agent's web_search and web_fetch tools can reach. Set allowed_domains or blocked_domains on the tool's entry in the agent_toolset_20260401…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "fab51da2",
@@ -89,7 +100,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "9d0b9426",
@@ -100,7 +111,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "66584c57",
@@ -111,7 +122,7 @@
       "type": "release",
       "published_at": "2026-08-18T20:38:54Z",
       "summary": "v2.1.235",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "08522c6f",
@@ -122,7 +133,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now Playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-08-20T00:26:13.163Z"
+      "fetched_at": "2026-08-20T02:08:19.187Z"
     },
     {
       "id": "436d104b",
@@ -133,7 +144,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "9461053e",
@@ -144,7 +155,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "cbe96a3a",
@@ -155,7 +166,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-20T00:26:12.378Z"
+      "fetched_at": "2026-08-20T02:08:18.501Z"
     },
     {
       "id": "81b616ca",
@@ -1588,25 +1599,6 @@
           "Use the Claude API to send requests with up to 1M tokens of context for more accurate and informative responses.",
           "Integrate Claude Opus 4.8 with Amazon Bedrock for large-scale natural language processing tasks.",
           "Leverage the increased context window on Google platforms for more effective language understanding and generation."
-        ]
-      }
-    },
-    {
-      "id": "e96121da",
-      "title": "We've launched mid-conversation system messages",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#may-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-05-28T00:00:00.000Z",
-      "summary": "We've launched mid-conversation system messages. On Claude Opus 4.8, you can send role: \"system\" messages after a user turn (subject to placement rules) in the messages array, preserving prompt cache…",
-      "fetched_at": "2026-08-11T19:51:07.941Z",
-      "explanation": {
-        "what_it_is": "Mid-conversation system messages allow you to send system messages after a user turn in the conversation, preserving the prompt cache. These messages are sent with a 'role' of 'system' in the messages array.",
-        "why_it_matters": "This update enables more flexible conversation flows, as you can now inject system messages at specific points in the conversation without disrupting the context. This can be useful for providing additional information or guidance to the user.",
-        "how_to_use": [
-          "Send a message with 'role': 'system' after a user turn to provide additional context or instructions",
-          "Use mid-conversation system messages to correct user input or provide feedback without restarting the conversation"
         ]
       }
     }
