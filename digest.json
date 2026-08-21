@@ -1,8 +1,30 @@
 {
   "version": 1,
-  "generated_at": "2026-08-21T19:16:59.574Z",
+  "generated_at": "2026-08-21T20:10:00.284Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "6568e89c",
+      "title": "Added the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-21T19:54:23Z",
+      "summary": "v2.1.239",
+      "fetched_at": "2026-08-21T20:10:00.622Z"
+    },
+    {
+      "id": "5897e605",
+      "title": "Added /claude-api upgrade to migrate Python projects from anthropic 0.x to 1.x, and updated the skill's Python reference for 1.x (timeouts use…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-08-21T19:54:23Z",
+      "summary": "v2.1.239",
+      "fetched_at": "2026-08-21T20:10:00.622Z"
+    },
     {
       "id": "30fa454d",
       "title": "Added a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default…",
@@ -12,7 +34,7 @@
       "type": "release",
       "published_at": "2026-08-20T20:33:51Z",
       "summary": "v2.1.238",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "25121158",
@@ -23,7 +45,7 @@
       "type": "release",
       "published_at": "2026-08-20T20:33:51Z",
       "summary": "v2.1.238",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "5b663a68",
@@ -34,7 +56,7 @@
       "type": "release",
       "published_at": "2026-08-20T20:33:51Z",
       "summary": "v2.1.238",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "12504290",
@@ -45,7 +67,18 @@
       "type": "release",
       "published_at": "2026-08-20T00:54:41Z",
       "summary": "v2.1.237",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
+    },
+    {
+      "id": "030a8307",
+      "title": "We've released v1.0 of the Python SDK",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-20-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-08-20T00:00:00.000Z",
+      "summary": "We've released v1.0 of the Python SDK. The SDK's HTTP layer moves from httpx to httpx2, a maintained, API-compatible fork: build custom http_client, Timeout, and transport objects from httpx2 (the…",
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "ef890747",
@@ -56,7 +89,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "a93637cc",
@@ -67,7 +100,7 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "d0c78378",
@@ -78,18 +111,18 @@
       "type": "release",
       "published_at": "2026-08-19T20:02:05Z",
       "summary": "v2.1.236",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
-      "id": "6e40fff5",
-      "title": "The computer use tool is now generally available on the Claude API as the…",
+      "id": "e7c76eb2",
+      "title": "The computer use tool is out of beta on the Claude API as the…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "The computer use tool is now generally available on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (several actions in one turn), zoom enabled by default, and…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "summary": "The computer use tool is out of beta on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (several actions in one turn), zoom enabled by default, and per-member…",
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "05e6bfe8",
@@ -100,7 +133,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "We've launched the browser use tool (browser_toolset_20260801), a client toolset for driving a browser that your application hosts. It works inside a browser viewport rather than a whole desktop,…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "999729e8",
@@ -111,29 +144,29 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Both toolsets are available for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet 5, and Claude Opus 4.8 on the Claude API.",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
-      "id": "ebc0d596",
-      "title": "The Files API is now generally available on the Claude API",
+      "id": "0ec30a0a",
+      "title": "The Files API is out of beta on the Claude API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "The Files API is now generally available on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "summary": "The Files API is out of beta on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14 beta header.…",
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
-      "id": "348c80a4",
-      "title": "Agent Skills and the Skills API (/v1/skills) are now generally available on the…",
+      "id": "9cf2084d",
+      "title": "Agent Skills and the Skills API (/v1/skills) are out of beta on the Claude API",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "Agent Skills and the Skills API (/v1/skills) are now generally available on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "summary": "Agent Skills and the Skills API (/v1/skills) are out of beta on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load Skills through…",
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "2bf1f415",
@@ -143,8 +176,8 @@
       "source_label": "Anthropic Changelog",
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are now generally available. The anthropic-beta:…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are out of beta. The anthropic-beta: ce-user-management-2026-07-13…",
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "8a2e28a7",
@@ -155,7 +188,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "You can now restrict which sites a Claude Managed Agents agent's web_search and web_fetch tools can reach. Set allowed_domains or blocked_domains on the tool's entry in the agent_toolset_20260401…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "fab51da2",
@@ -166,7 +199,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "9d0b9426",
@@ -177,7 +210,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "66584c57",
@@ -188,7 +221,7 @@
       "type": "release",
       "published_at": "2026-08-18T20:38:54Z",
       "summary": "v2.1.235",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "08522c6f",
@@ -199,7 +232,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now Playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-08-21T19:17:00.625Z"
+      "fetched_at": "2026-08-21T20:10:01.872Z"
     },
     {
       "id": "436d104b",
@@ -210,7 +243,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "9461053e",
@@ -221,7 +254,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "cbe96a3a",
@@ -232,7 +265,7 @@
       "type": "release",
       "published_at": "2026-08-17T20:20:58Z",
       "summary": "v2.1.234",
-      "fetched_at": "2026-08-21T19:16:59.919Z"
+      "fetched_at": "2026-08-21T20:10:00.622Z"
     },
     {
       "id": "81b616ca",
@@ -1492,63 +1525,6 @@
         "how_to_use": [
           "Run daily data processing tasks on a scheduled cron schedule",
           "Automate weekly report generation using Claude Managed Agents"
-        ]
-      }
-    },
-    {
-      "id": "5997747b",
-      "title": "Claude Managed Agents vaults now support environment variable credentials, so…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "Claude Managed Agents vaults now support environment variable credentials, so you can securely inject secrets into the agent's sandbox for CLIs, SDKs, and other services that authenticate through…",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents vaults can now store credentials as environment variables, allowing for secure injection of secrets into the agent's sandbox.",
-        "why_it_matters": "This update enables Claude Code users to authenticate with CLIs, SDKs, and other services that require credentials, without having to hardcode sensitive information.",
-        "how_to_use": [
-          "Set environment variable credentials in your Managed Agents vault to authenticate with external services",
-          "Use the vault to securely store and inject API keys, tokens, or other sensitive credentials into your agent's sandbox"
-        ]
-      }
-    },
-    {
-      "id": "8e9808b6",
-      "title": "The Compliance API Activity Feed (GET /v1/compliance/activities) is now…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "The Compliance API Activity Feed (GET /v1/compliance/activities) is now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the ListComplianceActivities action that…",
-      "fetched_at": "2026-08-03T21:54:39.991Z",
-      "explanation": {
-        "what_it_is": "The Compliance API Activity Feed is a GET endpoint at /v1/compliance/activities that provides a feed of compliance-related activities on the Claude Platform on AWS.",
-        "why_it_matters": "This update allows Claude Code users to programmatically retrieve compliance activities on AWS, enabling better monitoring and auditing of their platform usage.",
-        "how_to_use": [
-          "Use the GET /v1/compliance/activities endpoint to fetch a list of compliance activities",
-          "Reference the ListComplianceActivities action in IAM actions for Claude Platform on AWS to manage access to the activity feed"
-        ]
-      }
-    },
-    {
-      "id": "2ac335da",
-      "title": "The session.thread_* webhook events now include a session_thread_id field…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "The session.thread_* webhook events now include a session_thread_id field identifying the multiagent thread that triggered the event.",
-      "fetched_at": "2026-07-14T17:53:47.829Z",
-      "explanation": {
-        "what_it_is": "The session.thread_* webhook events in the Anthropic API now include a session_thread_id field, which identifies the specific multiagent thread that triggered the event.",
-        "why_it_matters": "This addition allows Claude Code users to more accurately track and manage conversations involving multiple agents, enabling better handling of complex interactions.",
-        "how_to_use": [
-          "Use the session_thread_id to correlate related events and maintain context in multiagent conversations",
-          "Update existing webhook event handlers to parse and utilize the new session_thread_id field"
         ]
       }
     }
