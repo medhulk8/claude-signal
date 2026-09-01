@@ -1,8 +1,239 @@
 {
   "version": 1,
-  "generated_at": "2026-09-01T15:14:51.224Z",
+  "generated_at": "2026-09-01T18:54:00.273Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "dffc9102",
+      "title": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "8e6b1b56",
+      "title": "Added \"Time format\" (timeFormat) and timeZone settings: 12-hour, 24-hour, 24-hour UTC, or a strftime pattern for the turn-end clock and…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "01384c20",
+      "title": "Added a Containment Escape rule to auto mode so cloud metadata-credential fetches, egress evasion, and cross-tenant reach are no longer auto-approved…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "a432207f",
+      "title": "Added CLAUDE_CODE_SUBAGENT_MODEL_FORCE to apply CLAUDE_CODE_SUBAGENT_MODEL (or the main model) to every subagent, ignoring per-spawn and…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "43bda684",
+      "title": "Added s in /effort to change effort for the current session only, matching /model",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "3da13175",
+      "title": "Added a /doctor warning for stale sandbox mask files left by a killed session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "b96b5485",
+      "title": "Added a one-time prompt in auto mode before the first file read outside the working directories, with the option to block such reads…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "f0fa421c",
+      "title": "Added support for a gateway-supplied description on discovered /model picker entries (CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY); entries without…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "896492de",
+      "title": "[VSCode] Added collapsible ACCOUNT & USAGE and SESSION MANAGER section headers to the session list panel, with the account email, the usage meter,…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "e55691da",
+      "title": "[VSCode] Added a model pill to the input footer that shows the current model and opens the model picker, with an Effort row and a \"More models\" page",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "5e41fc98",
+      "title": "[VSCode] Added a collapse toggle to the Ungrouped section of the session list",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "3e5d906d",
+      "title": "[VSCode] Added output style selection to the command menu, including custom styles",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-01T17:53:52Z",
+      "summary": "v2.1.257",
+      "fetched_at": "2026-09-01T18:54:00.786Z"
+    },
+    {
+      "id": "04cbcc2b",
+      "title": "We've launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "We've launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude Mythos 5.1 (claude-mythos-5-1) for…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "756ad5f9",
+      "title": "Prompt cache reads on Claude Fable 5.1 and Claude Mythos 5.1 cost $0.25 USD per…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "Prompt cache reads on Claude Fable 5.1 and Claude Mythos 5.1 cost $0.25 USD per million tokens: 0.025x the base input price, compared with 0.1x on other models. Cache writes are unchanged. See Prompt…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "02bef1e2",
+      "title": "On Claude Fable 5.1 and Claude Mythos 5.1, tool_choice types any and tool…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "On Claude Fable 5.1 and Claude Mythos 5.1, tool_choice types any and tool aren't supported and return a 400 error. auto and none are unchanged. To guarantee schema-conformant tool inputs, use strict…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "2d1441a2",
+      "title": "Thinking blocks produced by Claude Fable 5.1 and Claude Mythos 5.1 are…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "Thinking blocks produced by Claude Fable 5.1 and Claude Mythos 5.1 are preserved only for the model that produced them or a newer one: earlier models can't read them, and the API drops one replayed…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "806f3c8b",
+      "title": "Per-message effort changes are in beta on Claude Fable 5.1, Claude Mythos 5.1,…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "Per-message effort changes are in beta on Claude Fable 5.1, Claude Mythos 5.1, and Claude Opus 5 on the Claude API. Add a role: \"system\" message with output_config.effort inside messages to change…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "18d63b5f",
+      "title": "Turn-scoped system messages are in beta…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "Turn-scoped system messages are in beta (mid-conversation-system-clear-at-2026-08-21 header). Set clear_at: \"next_user_message\" on a mid-conversation role: \"system\" message and it renders for the…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "cca14eac",
+      "title": "thinking.display accepts a third value, \"updates\", in beta…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "thinking.display accepts a third value, \"updates\", in beta (thinking-display-updates-2026-08-18 header). Reasoning comes back with an empty thinking field, as under \"omitted\", and the short progress…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "15fcbeb9",
+      "title": "Text generated by Claude Fable 5.1 and Claude Mythos 5.1 carries Anthropic's…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "Text generated by Claude Fable 5.1 and Claude Mythos 5.1 carries Anthropic's text watermark, and supported image and video files that Claude produces through the code execution tool carry C2PA…",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
+    {
+      "id": "3ecc9b90",
+      "title": "Like Claude Fable 5, both models require 30-day data retention and aren't…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-01T00:00:00.000Z",
+      "summary": "Like Claude Fable 5, both models require 30-day data retention and aren't available under zero data retention unless expressly authorized by Anthropic. See Model-specific data retention requirements.",
+      "fetched_at": "2026-09-01T18:54:01.397Z"
+    },
     {
       "id": "4eeb1c40",
       "title": "Added PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session…",
@@ -12,7 +243,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "3cfc314c",
@@ -23,7 +254,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "da2eb4a4",
@@ -34,7 +265,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "1b535e79",
@@ -45,7 +276,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "3b37991e",
@@ -56,7 +287,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "d0c997ee",
@@ -67,7 +298,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "f024321e",
@@ -78,7 +309,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "8bad4a43",
@@ -89,7 +320,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "862f8733",
@@ -100,7 +331,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "5d7e1780",
@@ -111,7 +342,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "5a2c1a65",
@@ -122,7 +353,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "391b0d63",
@@ -133,7 +364,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "0bdb18d8",
@@ -144,7 +375,7 @@
       "type": "changelog",
       "published_at": "2026-08-27T00:00:00.000Z",
       "summary": "In Python SDK 1.2.0, TypeScript SDK 0.122.0, Go SDK 1.68.0, Java SDK 2.59.0, Ruby SDK 1.67.0, and CSDK 12.44.0, client.beta.files and client.beta.skills no longer send the files-api-2025-04-14 and…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "aa8c97b2",
@@ -155,7 +386,7 @@
       "type": "changelog",
       "published_at": "2026-08-27T00:00:00.000Z",
       "summary": "You can now create personal keys and service account keys in the Claude Console. They act as you or as a service account, with the same permissions, and stop working when the linked account is…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "a29f2d1a",
@@ -166,7 +397,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "0d091675",
@@ -177,7 +408,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "76cc50d7",
@@ -188,7 +419,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "1aa367d9",
@@ -199,7 +430,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "9182ea76",
@@ -210,7 +441,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Compliance API session endpoints are out of beta for Cowork and Claude Code sessions. See Retrieve session transcripts.",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "1a733582",
@@ -221,7 +452,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Compliance API local session endpoints now also return transcripts of Claude Science sessions (product_surface value claude_science) and Claude for Microsoft 365 sessions in Excel, PowerPoint,…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "90912f40",
@@ -232,7 +463,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Admin API is now available in the ant CLI and the Python, TypeScript, C#, Go, Java, PHP, and Ruby SDKs under client.beta.organization. They cover organization info, members, invites, workspaces…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "ad31bd8f",
@@ -243,7 +474,7 @@
       "type": "release",
       "published_at": "2026-08-25T22:31:52Z",
       "summary": "v2.1.246",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "25684d0d",
@@ -254,7 +485,7 @@
       "type": "release",
       "published_at": "2026-08-25T22:31:52Z",
       "summary": "v2.1.246",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "9d41c3a4",
@@ -265,7 +496,7 @@
       "type": "release",
       "published_at": "2026-08-25T22:31:52Z",
       "summary": "v2.1.246",
-      "fetched_at": "2026-09-01T15:14:51.660Z"
+      "fetched_at": "2026-09-01T18:54:00.786Z"
     },
     {
       "id": "030a8307",
@@ -276,7 +507,7 @@
       "type": "changelog",
       "published_at": "2026-08-20T00:00:00.000Z",
       "summary": "We've released v1.0 of the Python SDK. The SDK's HTTP layer moves from httpx to httpx2, a maintained, API-compatible fork: build custom http_client, Timeout, and transport objects from httpx2 (the…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "fead9216",
@@ -287,7 +518,7 @@
       "type": "changelog",
       "published_at": "2026-08-20T00:00:00.000Z",
       "summary": "The computer use and browser use toolsets (computer_toolset_20260801 and browser_toolset_20260801) are now available on Google Cloud for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "e7c76eb2",
@@ -298,7 +529,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The computer use tool is out of beta on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (several actions in one turn), zoom enabled by default, and per-member…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "05e6bfe8",
@@ -309,7 +540,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "We've launched the browser use tool (browser_toolset_20260801), a client toolset for driving a browser that your application hosts. It works inside a browser viewport rather than a whole desktop,…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "999729e8",
@@ -320,7 +551,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Both toolsets are available for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet 5, and Claude Opus 4.8 on the Claude API.",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "0ec30a0a",
@@ -331,7 +562,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Files API is out of beta on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14 beta header.…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "9cf2084d",
@@ -342,7 +573,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Agent Skills and the Skills API (/v1/skills) are out of beta on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load Skills through…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "2bf1f415",
@@ -353,7 +584,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are out of beta. The anthropic-beta: ce-user-management-2026-07-13…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "8a2e28a7",
@@ -364,7 +595,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "You can now restrict which sites a Claude Managed Agents agent's web_search and web_fetch tools can reach. Set allowed_domains or blocked_domains on the tool's entry in the agent_toolset_20260401…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "fab51da2",
@@ -375,7 +606,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "9d0b9426",
@@ -386,7 +617,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "fc02ef15",
@@ -397,7 +628,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
+      "fetched_at": "2026-09-01T18:54:01.397Z"
     },
     {
       "id": "f4bd0510",
@@ -1029,390 +1260,6 @@
           "Update your existing Sonnet model integrations to use Claude Sonnet 5 for potential performance improvements."
         ]
       }
-    },
-    {
-      "id": "50998744",
-      "title": "Claude Managed Agents session event streams now support event deltas",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-30T00:00:00.000Z",
-      "summary": "Claude Managed Agents session event streams now support event deltas. Opt in with the event_deltas[] query parameter on GET /v1/sessions/{session_id}/events/stream. The event_start and event_delta…",
-      "fetched_at": "2026-06-30T21:20:22.754Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents session event streams can now provide event deltas, which are the changes between events, rather than the full event data. This is enabled by adding the event_deltas query parameter to the GET /v1/sessions/{session_id}/events/stream API call.",
-        "why_it_matters": "This change allows for more efficient processing of event streams, as only the changes between events need to be transmitted and processed. This can reduce the amount of data that needs to be handled, making it easier to work with large event streams.",
-        "how_to_use": [
-          "Add the event_deltas query parameter to the GET /v1/sessions/{session_id}/events/stream API call to opt in to event deltas.",
-          "Use the event_start and event_delta fields in the response to process the event deltas."
-        ]
-      }
-    },
-    {
-      "id": "b51bd454",
-      "title": "Listing sessions for Claude Managed Agents now supports backward pagination",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-30T00:00:00.000Z",
-      "summary": "Listing sessions for Claude Managed Agents now supports backward pagination. GET /v1/sessions returns a prev_page cursor alongside next_page; pass it as the page parameter to return to the previous…",
-      "fetched_at": "2026-06-30T21:20:22.754Z",
-      "explanation": {
-        "what_it_is": "The ability to list sessions for Claude Managed Agents now includes backward pagination, allowing you to retrieve previous pages of results.",
-        "why_it_matters": "This update enables Claude Code users to more easily navigate and retrieve large lists of sessions, without having to start from the beginning every time.",
-        "how_to_use": [
-          "Use the prev_page cursor returned by GET /v1/sessions to fetch the previous page of results by passing it as the page parameter."
-        ]
-      }
-    },
-    {
-      "id": "54b6c6fd",
-      "title": "When creating a Claude Managed Agents session, you can now override the agent's…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-30T00:00:00.000Z",
-      "summary": "When creating a Claude Managed Agents session, you can now override the agent's configuration for that session. Pass agent with type: \"agent_with_overrides\" to replace the model, system prompt,…",
-      "fetched_at": "2026-06-30T21:20:22.754Z",
-      "explanation": {
-        "what_it_is": "The ability to override an agent's configuration when creating a Claude Managed Agents session, allowing for customization of the model and system prompt on a per-session basis.",
-        "why_it_matters": "This update gives Claude Code users more control over their agent sessions, enabling them to tailor the agent's behavior to specific use cases or experiments without modifying the underlying agent configuration.",
-        "how_to_use": [
-          "Pass 'agent' with type: 'agent_with_overrides' to replace the model",
-          "Use the 'agent_with_overrides' type to customize the system prompt for a session"
-        ]
-      }
-    },
-    {
-      "id": "3ed8133b",
-      "title": "Claude Managed Agents vaults now support an injection_location setting on…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-30T00:00:00.000Z",
-      "summary": "Claude Managed Agents vaults now support an injection_location setting on environment variable credentials (the Environment variable tab). It controls whether the credential's value is substituted,…",
-      "fetched_at": "2026-06-30T21:20:22.754Z",
-      "explanation": {
-        "what_it_is": "The injection_location setting in Claude Managed Agents vaults controls where environment variable credentials are substituted, allowing for more flexible credential management.",
-        "why_it_matters": "This update gives Claude Code users more control over how credentials are handled in their environments, making it easier to manage sensitive information.",
-        "how_to_use": [
-          "Set injection_location to 'header' to substitute credentials in HTTP request headers",
-          "Set injection_location to 'env' to substitute credentials as environment variables"
-        ]
-      }
-    },
-    {
-      "id": "72a4c230",
-      "title": "Webhooks for Claude Managed Agents now cover the agent, deployment, and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-30-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-30T00:00:00.000Z",
-      "summary": "Webhooks for Claude Managed Agents now cover the agent, deployment, and deployment run lifecycle. You can react to a newly published agent version, a paused deployment, or a failed scheduled run…",
-      "fetched_at": "2026-06-30T21:20:22.754Z",
-      "explanation": {
-        "what_it_is": "Webhooks for Claude Managed Agents now provide notifications for events across the agent, deployment, and deployment run lifecycle, including new agent versions, paused deployments, and failed scheduled runs.",
-        "why_it_matters": "This update allows Claude Code users to automate reactions to specific events in their agent and deployment workflows, enabling more dynamic and responsive management of their applications.",
-        "how_to_use": [
-          "Set up a webhook to trigger an alert when a new agent version is published",
-          "Use a webhook to pause dependent deployments when a scheduled run fails",
-          "Configure a webhook to notify your team when a deployment is paused"
-        ]
-      }
-    },
-    {
-      "id": "97c8fbc5",
-      "title": "We've removed fast mode for Claude Opus 4.6",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-29T00:00:00.000Z",
-      "summary": "We've removed fast mode for Claude Opus 4.6. Requests to claude-opus-4-6 with speed: \"fast\" no longer run at fast speed or premium pricing: they run at standard speed, are billed at standard rates,…",
-      "fetched_at": "2026-06-29T23:47:40.699Z",
-      "explanation": {
-        "what_it_is": "The 'fast mode' option has been removed for Claude Opus 4.6, meaning requests to this model will now run at standard speed regardless of the speed parameter set.",
-        "why_it_matters": "This change affects billing, as requests that previously would have been billed at premium rates for fast mode will now be billed at standard rates, potentially altering cost estimates for Claude Code users.",
-        "how_to_use": [
-          "Update your code to remove 'speed: fast' parameters for Claude Opus 4.6 requests, as they will have no effect.",
-          "Review your billing expectations, as the removal of fast mode and its associated premium pricing may reduce costs."
-        ]
-      }
-    },
-    {
-      "id": "de39ba44",
-      "title": "We've raised rate limits across the Claude API",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-26-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-26T00:00:00.000Z",
-      "summary": "We've raised rate limits across the Claude API. Claude Sonnet and Claude Haiku rate limits now match Claude Opus at every usage tier, and usage tiers have been consolidated into three: Start, Build,…",
-      "fetched_at": "2026-06-26T20:24:03.037Z",
-      "explanation": {
-        "what_it_is": "The Claude API has increased its rate limits, allowing for more requests across all usage tiers. This change applies to all Claude models, including Claude Sonnet, Claude Haiku, and Claude Opus.",
-        "why_it_matters": "This update enables Claude Code users to make more API requests without hitting rate limits, reducing the need for workarounds or tier upgrades. It simplifies the usage tiers into three categories: Start, Build, and another unnamed tier.",
-        "how_to_use": [
-          "Check the updated rate limits for your usage tier to determine how many more requests you can make",
-          "Review your existing API integrations to identify opportunities to take advantage of the increased rate limits",
-          "Plan for potential increases in API usage without worrying about hitting previous rate limits"
-        ]
-      }
-    },
-    {
-      "id": "aa16d049",
-      "title": "We've deprecated fast mode for Claude Opus 4.7, with removal on July 24, 2026",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-25-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-25T00:00:00.000Z",
-      "summary": "We've deprecated fast mode for Claude Opus 4.7, with removal on July 24, 2026. After removal, requests to claude-opus-4-7 with speed: \"fast\" will return an error. Migrate to fast mode for Claude Opus…",
-      "fetched_at": "2026-06-26T20:24:03.037Z",
-      "explanation": {
-        "what_it_is": "The 'fast mode' option for Claude Opus 4.7 has been deprecated and will be removed on July 24, 2026, after which requests with 'speed: fast' will return an error.",
-        "why_it_matters": "Claude Code users need to migrate to a different version of fast mode to avoid errors and ensure uninterrupted service after the removal date.",
-        "how_to_use": [
-          "Migrate to fast mode for a newer version of Claude Opus before July 24, 2026",
-          "Update API requests to remove 'speed: fast' for Claude Opus 4.7 after the removal date"
-        ]
-      }
-    },
-    {
-      "id": "cf4007ae",
-      "title": "MCP tunnels (research preview): the management API moved from…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-22-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-22T00:00:00.000Z",
-      "summary": "MCP tunnels (research preview): the management API moved from /v1/organizations/tunnels on the Admin API to /v1/tunnels on the Claude API. The new surface uses the anthropic-beta:…",
-      "fetched_at": "2026-06-30T19:26:37.477Z",
-      "explanation": {
-        "what_it_is": "The management API for MCP tunnels has been relocated from the Admin API to the Claude API, changing the endpoint from /v1/organizations/tunnels to /v1/tunnels.",
-        "why_it_matters": "This change affects how developers interact with the API for managing MCP tunnels, requiring updates to API calls to use the new endpoint.",
-        "how_to_use": [
-          "Update API requests to use the new /v1/tunnels endpoint on the Claude API",
-          "Ensure API calls include the anthropic-beta header to access the new API surface"
-        ]
-      }
-    },
-    {
-      "id": "f47225a5",
-      "title": "The Python, TypeScript, Go, Java, Ruby, PHP, and CSDKs now include support for…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-18-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-18T00:00:00.000Z",
-      "summary": "The Python, TypeScript, Go, Java, Ruby, PHP, and CSDKs now include support for code_execution_20260120, the code execution tool version that adds REPL state persistence and is the minimum version for…",
-      "fetched_at": "2026-06-25T20:53:51.455Z",
-      "explanation": {
-        "what_it_is": "The code execution tool version code_execution_20260120 adds REPL state persistence, allowing you to retain the state of your REPL session. This version is now supported in the Python, TypeScript, Go, Java, Ruby, PHP, and C SDKs.",
-        "why_it_matters": "With REPL state persistence, you can pick up where you left off in a previous REPL session, streamlining your development workflow. This is a required version for certain features, so updating to this version ensures you have access to the latest functionality.",
-        "how_to_use": [
-          "Update your SDK to the latest version to start using code_execution_20260120",
-          "Run your REPL sessions with the new version to take advantage of state persistence"
-        ]
-      }
-    },
-    {
-      "id": "4522df0c",
-      "title": "We've retired the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-15-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-15T00:00:00.000Z",
-      "summary": "We've retired the Claude Sonnet 4 model (claude-sonnet-4-20250514) and the Claude Opus 4 model (claude-opus-4-20250514). All requests to these models will now return an error. We recommend upgrading…",
-      "fetched_at": "2026-06-15T18:58:08.916Z",
-      "explanation": {
-        "what_it_is": "The Claude Sonnet 4 and Claude Opus 4 models have been retired, and any requests to these models will now return an error.",
-        "why_it_matters": "This change requires users to upgrade to newer models to continue using the Claude API, as the retired models are no longer supported.",
-        "how_to_use": [
-          "Update your API requests to use the latest available models",
-          "Check the Anthropic API documentation for recommended replacement models"
-        ]
-      }
-    },
-    {
-      "id": "e517f6d8",
-      "title": "The code execution tool now supports code_execution_20260521, which discloses…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-11T00:00:00.000Z",
-      "summary": "The code execution tool now supports code_execution_20260521, which discloses the 90-second per-cell execution time limit in the tool description so Claude can budget long-running cells. No beta…",
-      "fetched_at": "2026-06-19T00:17:03.047Z",
-      "explanation": {
-        "what_it_is": "The code execution tool now supports a feature that discloses the 90-second per-cell execution time limit, allowing Claude to manage long-running cells more effectively.",
-        "why_it_matters": "This update helps Claude Code users avoid unexpected timeouts and plan their code execution more efficiently by providing clear information about the execution time limits.",
-        "how_to_use": [
-          "Check the tool description for the 90-second per-cell execution time limit when planning code execution",
-          "Use this information to budget time for long-running cells and avoid timeouts"
-        ]
-      }
-    },
-    {
-      "id": "e8d5996a",
-      "title": "The web search tool and web fetch tool now support web_search_20260318 and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-11-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-11T00:00:00.000Z",
-      "summary": "The web search tool and web fetch tool now support web_search_20260318 and web_fetch_20260318, adding a response_inclusion parameter to drop consumed result blocks from the API response for agentic…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The web search and web fetch tools in the Anthropic API now support models web_search_20260318 and web_fetch_20260318, which include a response_inclusion parameter to control the inclusion of consumed result blocks in API responses.",
-        "why_it_matters": "This update allows Claude Code users to reduce the amount of data returned in API responses, potentially improving performance and reducing unnecessary data processing.",
-        "how_to_use": [
-          "Use the response_inclusion parameter to exclude consumed result blocks from API responses for more efficient data handling.",
-          "Test the new models web_search_20260318 and web_fetch_20260318 to see how they impact your specific use cases."
-        ]
-      }
-    },
-    {
-      "id": "03fcb88e",
-      "title": "The GET /v1/environments/{id}/work endpoint, which lists pending work for a…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-10-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-10T00:00:00.000Z",
-      "summary": "The GET /v1/environments/{id}/work endpoint, which lists pending work for a self-hosted sandbox, is now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The GET /v1/environments/{id}/work endpoint is an API call that lists pending work for a self-hosted sandbox on Claude Platform.",
-        "why_it_matters": "This update allows Claude Code users to programmatically retrieve pending work for their self-hosted sandboxes on AWS, enabling better workflow automation and monitoring.",
-        "how_to_use": [
-          "Use the GET /v1/environments/{id}/work endpoint to fetch pending work items for a specific sandbox environment",
-          "Integrate this endpoint into your workflow automation scripts to track and manage pending work on AWS"
-        ]
-      }
-    },
-    {
-      "id": "b29c06c3",
-      "title": "We've launched Claude Fable 5 (claude-fable-5), our most capable widely…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "We've launched Claude Fable 5 (claude-fable-5), our most capable widely released model, alongside Claude Mythos 5 (claude-mythos-5) for Project Glasswing participants. Both models support a 1M token…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Fable 5 is a widely released model that supports up to 1M tokens, offering increased capability for Claude Code users. It is launched alongside Claude Mythos 5, which is available for Project Glasswing participants.",
-        "why_it_matters": "This update matters because it provides Claude Code users with access to a more capable model, allowing them to process and generate larger amounts of text. This can be particularly useful for tasks that require longer input or output sequences.",
-        "how_to_use": [
-          "Use Claude Fable 5 to generate longer-form content, such as articles or stories, by providing a prompt and allowing the model to produce up to 1M tokens of output.",
-          "Take advantage of the increased token limit to fine-tune the model on larger datasets, potentially leading to improved performance on specific tasks."
-        ]
-      }
-    },
-    {
-      "id": "2dd9adb0",
-      "title": "Claude Fable 5 and Claude Mythos 5 use the tokenizer introduced with Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "Claude Fable 5 and Claude Mythos 5 use the tokenizer introduced with Claude Opus 4.7. Compared to models before Claude Opus 4.7, the same text produces roughly 30% more tokens. Use the token counting…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "The tokenizer from Claude Opus 4.7 is now used in Claude Fable 5 and Claude Mythos 5, which increases the number of tokens produced for the same text by about 30%.",
-        "why_it_matters": "This change affects how you count tokens for these models, as the same input text will now consume more tokens than it did with previous models.",
-        "how_to_use": [
-          "Use the token counting tool to get an accurate count of tokens for your input text with Claude Fable 5 and Claude Mythos 5.",
-          "Adjust your token budgets accordingly to account for the increased token count."
-        ]
-      }
-    },
-    {
-      "id": "df50a286",
-      "title": "Claude Fable 5 runs safety classifiers on requests and during response…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "Claude Fable 5 runs safety classifiers on requests and during response generation. When a classifier declines a request, the Messages API returns stop_reason: \"refusal\". You are not billed for a…",
-      "fetched_at": "2026-06-24T18:25:02.352Z",
-      "explanation": {
-        "what_it_is": "Claude Fable 5 now runs safety classifiers on both incoming requests and during the generation of responses, allowing for more controlled and safe interactions.",
-        "why_it_matters": "This update changes how developers interact with the API, as requests that are deemed unsafe will be declined and return a 'refusal' stop reason, and users won't be billed for such declined requests.",
-        "how_to_use": [
-          "Check the Messages API response for 'stop_reason: refusal' to handle declined requests",
-          "Use this feature to ensure compliance with safety guidelines in your application"
-        ]
-      }
-    },
-    {
-      "id": "b6b47783",
-      "title": "The stop_details.category field on refusal responses now includes…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "The stop_details.category field on refusal responses now includes \"reasoning_extraction\" on Claude Fable 5, returned when a request is blocked under Anthropic's Terms of Service restrictions on…",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "The stop_details.category field in refusal responses now includes 'reasoning_extraction' for blocked requests on Claude Fable 5, indicating a violation of Anthropic's Terms of Service.",
-        "why_it_matters": "This change provides more specific information about why a request was blocked, allowing developers to better understand and handle refusals.",
-        "how_to_use": [
-          "Check the stop_details.category field in refusal responses to handle 'reasoning_extraction' cases",
-          "Use this information to implement custom error handling or logging for blocked requests"
-        ]
-      }
-    },
-    {
-      "id": "2c779259",
-      "title": "On Claude Fable 5 and Claude Mythos 5, adaptive thinking is the only thinking…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "On Claude Fable 5 and Claude Mythos 5, adaptive thinking is the only thinking mode: thinking: {\"type\": \"disabled\"} is not supported, and manual extended thinking budgets and assistant prefill are not…",
-      "fetched_at": "2026-06-27T05:42:08.679Z",
-      "explanation": {
-        "what_it_is": "On Claude Fable 5 and Claude Mythos 5, adaptive thinking is now the sole thinking mode, with manual thinking mode and extended thinking budgets no longer supported.",
-        "why_it_matters": "This change means Claude Code users can no longer disable thinking or manually set thinking budgets on these models, and must rely on adaptive thinking for all interactions.",
-        "how_to_use": [
-          "Use adaptive thinking as the default thinking mode for all interactions with Claude Fable 5 and Claude Mythos 5",
-          "Remove any existing code that sets manual thinking modes or extended thinking budgets for these models"
-        ]
-      }
-    },
-    {
-      "id": "777808c1",
-      "title": "On Claude Fable 5 and Claude Mythos 5, thinking.display defaults to \"omitted\",…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "On Claude Fable 5 and Claude Mythos 5, thinking.display defaults to \"omitted\", the same as Claude Opus 4.8, Claude Opus 4.7, and Claude Mythos Preview; set display: \"summarized\" to receive readable…",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
-    },
-    {
-      "id": "27f1770b",
-      "title": "Claude Fable 5 requires 30-day data retention and is not available under zero…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#june-9-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-06-09T00:00:00.000Z",
-      "summary": "Claude Fable 5 requires 30-day data retention and is not available under zero data retention. See Model-specific data retention requirements.",
-      "fetched_at": "2026-09-01T15:14:52.299Z"
     }
   ]
 }
