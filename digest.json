@@ -1,8 +1,96 @@
 {
   "version": 1,
-  "generated_at": "2026-09-03T23:34:53.017Z",
+  "generated_at": "2026-09-04T01:33:00.143Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "b43ef4c0",
+      "title": "Added a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "d8787a87",
+      "title": "Added a likely cause for prompt-cache misses (e.g. tool definitions or system prompt changed, idle past the TTL) to /cost and the status line's…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "9117a414",
+      "title": "Added /reload-plugins to headless sessions, so it appears in the Claude Code Desktop and SDK command lists",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "afe2af01",
+      "title": "Added a text form of /advisor (/advisor, /advisor <model>, /advisor off) for the desktop app, Remote Control, and other headless (-p/Agent SDK)…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "6701c6f0",
+      "title": "Added oidc.scope_on_refresh to the Claude apps gateway for IdPs that return an id_token on refresh only when asked for openid again",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "07167769",
+      "title": "Added Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including userPluginMarketplacesEnabled and…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "ce1c9cac",
+      "title": "[VSCode] Added the selected effort level to the footer model pill, fixed a stale effort level after switching models, and returned the footer pills…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
+    {
+      "id": "02dfb85c",
+      "title": "[VSCode] Added Open and Closed to the session list's status filter menu",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-03T23:48:12Z",
+      "summary": "v2.1.260",
+      "fetched_at": "2026-09-04T01:33:00.543Z"
+    },
     {
       "id": "845d80fc",
       "title": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that…",
@@ -12,7 +100,7 @@
       "type": "release",
       "published_at": "2026-09-02T22:33:51Z",
       "summary": "v2.1.259",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "9040b5a3",
@@ -23,7 +111,7 @@
       "type": "release",
       "published_at": "2026-09-02T22:33:51Z",
       "summary": "v2.1.259",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "9c68fb64",
@@ -34,7 +122,7 @@
       "type": "release",
       "published_at": "2026-09-02T22:33:51Z",
       "summary": "v2.1.259",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "228feb4c",
@@ -45,7 +133,7 @@
       "type": "release",
       "published_at": "2026-09-02T22:33:51Z",
       "summary": "v2.1.259",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "206a2908",
@@ -56,7 +144,7 @@
       "type": "release",
       "published_at": "2026-09-02T22:33:51Z",
       "summary": "v2.1.259",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "dffc9102",
@@ -67,7 +155,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "8e6b1b56",
@@ -78,7 +166,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "01384c20",
@@ -89,7 +177,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "a432207f",
@@ -100,7 +188,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "43bda684",
@@ -111,7 +199,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "3da13175",
@@ -122,7 +210,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "b96b5485",
@@ -133,7 +221,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "f0fa421c",
@@ -144,7 +232,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "896492de",
@@ -155,7 +243,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "e55691da",
@@ -166,7 +254,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "5e41fc98",
@@ -177,7 +265,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "3e5d906d",
@@ -188,7 +276,7 @@
       "type": "release",
       "published_at": "2026-09-01T17:53:52Z",
       "summary": "v2.1.257",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "04cbcc2b",
@@ -199,7 +287,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "We've launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude Mythos 5.1 (claude-mythos-5-1) for…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "756ad5f9",
@@ -210,7 +298,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Prompt cache reads on Claude Fable 5.1 and Claude Mythos 5.1 cost $0.25 USD per million tokens: 0.025x the base input price, compared with 0.1x on other models. Cache writes are unchanged. See Prompt…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "02bef1e2",
@@ -221,7 +309,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "On Claude Fable 5.1 and Claude Mythos 5.1, tool_choice types any and tool aren't supported and return a 400 error. auto and none are unchanged. To guarantee schema-conformant tool inputs, use strict…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "2d1441a2",
@@ -232,7 +320,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Thinking blocks produced by Claude Fable 5.1 and Claude Mythos 5.1 are preserved only for the model that produced them or a newer one: earlier models can't read them, and the API drops one replayed…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "806f3c8b",
@@ -243,7 +331,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Per-message effort changes are in beta on Claude Fable 5.1, Claude Mythos 5.1, and Claude Opus 5 on the Claude API. Add a role: \"system\" message with output_config.effort inside messages to change…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "18d63b5f",
@@ -254,7 +342,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Turn-scoped system messages are in beta (mid-conversation-system-clear-at-2026-08-21 header). Set clear_at: \"next_user_message\" on a mid-conversation role: \"system\" message and it renders for the…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "cca14eac",
@@ -265,7 +353,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "thinking.display accepts a third value, \"updates\", in beta (thinking-display-updates-2026-08-18 header). Reasoning comes back with an empty thinking field, as under \"omitted\", and the short progress…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "15fcbeb9",
@@ -276,7 +364,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Text generated by Claude Fable 5.1 and Claude Mythos 5.1 carries Anthropic's text watermark, and supported image, video, and audio files that Claude produces through the code execution tool carry…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "3ecc9b90",
@@ -287,7 +375,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Like Claude Fable 5, both models require 30-day data retention and aren't available under zero data retention unless expressly authorized by Anthropic. See Model-specific data retention requirements.",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "0130f101",
@@ -298,7 +386,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "The guides for the Claude Enterprise endpoints of the Admin API (user management and spend limits), the Claude Enterprise Analytics API, and the Compliance API now show the anthropic-version header;…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "4eeb1c40",
@@ -309,7 +397,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "3cfc314c",
@@ -320,7 +408,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "da2eb4a4",
@@ -331,7 +419,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "1b535e79",
@@ -342,7 +430,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "3b37991e",
@@ -353,7 +441,7 @@
       "type": "release",
       "published_at": "2026-08-28T18:19:32Z",
       "summary": "v2.1.251",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "d0c997ee",
@@ -364,7 +452,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "f024321e",
@@ -375,7 +463,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "8bad4a43",
@@ -386,7 +474,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "862f8733",
@@ -397,7 +485,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "5d7e1780",
@@ -408,7 +496,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "5a2c1a65",
@@ -419,7 +507,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "391b0d63",
@@ -430,7 +518,7 @@
       "type": "release",
       "published_at": "2026-08-27T22:12:20Z",
       "summary": "v2.1.248",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "0bdb18d8",
@@ -441,7 +529,7 @@
       "type": "changelog",
       "published_at": "2026-08-27T00:00:00.000Z",
       "summary": "In Python SDK 1.2.0, TypeScript SDK 0.122.0, Go SDK 1.68.0, Java SDK 2.59.0, Ruby SDK 1.67.0, and CSDK 12.44.0, client.beta.files and client.beta.skills no longer send the files-api-2025-04-14 and…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "aa8c97b2",
@@ -452,7 +540,7 @@
       "type": "changelog",
       "published_at": "2026-08-27T00:00:00.000Z",
       "summary": "You can now create personal keys and service account keys in the Claude Console. They act as you or as a service account, with the same permissions, and stop working when the linked account is…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "a29f2d1a",
@@ -463,7 +551,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "0d091675",
@@ -474,7 +562,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "76cc50d7",
@@ -485,7 +573,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "1aa367d9",
@@ -496,7 +584,7 @@
       "type": "release",
       "published_at": "2026-08-26T23:06:39Z",
       "summary": "v2.1.247",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "9182ea76",
@@ -507,7 +595,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Compliance API session endpoints are out of beta for Cowork and Claude Code sessions. See Retrieve session transcripts.",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "1a733582",
@@ -518,7 +606,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Compliance API local session endpoints now also return transcripts of Claude Science sessions (product_surface value claude_science) and Claude for Microsoft 365 sessions in Excel, PowerPoint,…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "90912f40",
@@ -529,7 +617,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Admin API is now available in the ant CLI and the Python, TypeScript, C#, Go, Java, PHP, and Ruby SDKs under client.beta.organization. They cover organization info, members, invites, workspaces…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "ad31bd8f",
@@ -540,7 +628,7 @@
       "type": "release",
       "published_at": "2026-08-25T22:31:52Z",
       "summary": "v2.1.246",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "25684d0d",
@@ -551,7 +639,7 @@
       "type": "release",
       "published_at": "2026-08-25T22:31:52Z",
       "summary": "v2.1.246",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "9d41c3a4",
@@ -562,7 +650,7 @@
       "type": "release",
       "published_at": "2026-08-25T22:31:52Z",
       "summary": "v2.1.246",
-      "fetched_at": "2026-09-03T23:34:53.287Z"
+      "fetched_at": "2026-09-04T01:33:00.543Z"
     },
     {
       "id": "030a8307",
@@ -573,7 +661,7 @@
       "type": "changelog",
       "published_at": "2026-08-20T00:00:00.000Z",
       "summary": "We've released v1.0 of the Python SDK. The SDK's HTTP layer moves from httpx to httpx2, a maintained, API-compatible fork: build custom http_client, Timeout, and transport objects from httpx2 (the…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "fead9216",
@@ -584,7 +672,7 @@
       "type": "changelog",
       "published_at": "2026-08-20T00:00:00.000Z",
       "summary": "The computer use and browser use toolsets (computer_toolset_20260801 and browser_toolset_20260801) are now available on Google Cloud for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "e7c76eb2",
@@ -595,7 +683,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The computer use tool is out of beta on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (several actions in one turn), zoom enabled by default, and per-member…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "05e6bfe8",
@@ -606,7 +694,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "We've launched the browser use tool (browser_toolset_20260801), a client toolset for driving a browser that your application hosts. It works inside a browser viewport rather than a whole desktop,…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "999729e8",
@@ -617,7 +705,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Both toolsets are available for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet 5, and Claude Opus 4.8 on the Claude API.",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "0ec30a0a",
@@ -628,7 +716,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Files API is out of beta on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14 beta header.…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "9cf2084d",
@@ -639,7 +727,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Agent Skills and the Skills API (/v1/skills) are out of beta on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load Skills through…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "2bf1f415",
@@ -650,7 +738,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are out of beta. The anthropic-beta: ce-user-management-2026-07-13…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "8a2e28a7",
@@ -661,7 +749,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "You can now restrict which sites a Claude Managed Agents agent's web_search and web_fetch tools can reach. Set allowed_domains or blocked_domains on the tool's entry in the agent_toolset_20260401…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "fab51da2",
@@ -672,7 +760,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "9d0b9426",
@@ -683,7 +771,7 @@
       "type": "changelog",
       "published_at": "2026-08-19T00:00:00.000Z",
       "summary": "The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "fc02ef15",
@@ -694,7 +782,7 @@
       "type": "changelog",
       "published_at": "2026-08-18T00:00:00.000Z",
       "summary": "Workbench is now playground in the Claude Console. Playground supports every Messages API parameter and includes templates that demonstrate API features such as code execution and web search. It…",
-      "fetched_at": "2026-09-03T23:34:54.088Z"
+      "fetched_at": "2026-09-04T01:33:01.143Z"
     },
     {
       "id": "f4bd0510",
@@ -1055,160 +1143,6 @@
           "Use the new webhooks to trigger agent restarts when the environment changes",
           "React to memory store updates to synchronize agent state",
           "Set up notifications for environment and memory store errors to improve debugging"
-        ]
-      }
-    },
-    {
-      "id": "5a894046",
-      "title": "When creating a Claude Managed Agents session, you can now seed it with initial…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-22T00:00:00.000Z",
-      "summary": "When creating a Claude Managed Agents session, you can now seed it with initial events. Pass initial_events on POST /v1/sessions with up to 50 user.message and user.define_outcome events. A non-empty…",
-      "fetched_at": "2026-07-22T17:58:28.006Z",
-      "explanation": {
-        "what_it_is": "The ability to seed a Claude Managed Agents session with initial events, allowing for predefined user messages and outcome definitions to be set at the start of a session.",
-        "why_it_matters": "This update enables Claude Code users to establish context and guide the conversation flow from the beginning of a session, potentially improving the accuracy and relevance of agent responses.",
-        "how_to_use": [
-          "Pass initial_events in the request body of a POST /v1/sessions call, including up to 50 user.message events to provide initial context.",
-          "Use user.define_outcome events to predefine specific outcomes or intents, helping to focus the agent's responses."
-        ]
-      }
-    },
-    {
-      "id": "f2cae616",
-      "title": "The version field is now optional when updating a Claude Managed Agents agent",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-22T00:00:00.000Z",
-      "summary": "The version field is now optional when updating a Claude Managed Agents agent. Supply it for optimistic concurrency (a mismatch returns a 409 error), or omit it to apply the update unconditionally.…",
-      "fetched_at": "2026-07-22T17:58:28.006Z",
-      "explanation": {
-        "what_it_is": "The version field is no longer required when updating a Claude Managed Agents agent, allowing for unconditional updates.",
-        "why_it_matters": "This change gives users more flexibility in how they update agents, as they can choose to supply the version for optimistic concurrency or omit it for unconditional updates.",
-        "how_to_use": [
-          "Omit the version field to apply an update unconditionally",
-          "Supply the version field to enable optimistic concurrency and receive a 409 error if the version mismatch occurs"
-        ]
-      }
-    },
-    {
-      "id": "61e71948",
-      "title": "Claude Managed Agents session thread event streams now support event deltas",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-22-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-22T00:00:00.000Z",
-      "summary": "Claude Managed Agents session thread event streams now support event deltas. GET /v1/sessions/{session_id}/threads/{thread_id}/stream accepts the same event_deltas[] query parameter as the…",
-      "fetched_at": "2026-07-22T17:58:28.006Z",
-      "explanation": {
-        "what_it_is": "Claude Managed Agents session thread event streams can now provide event deltas, which are the differences between successive events in a stream.",
-        "why_it_matters": "This update allows developers to reduce the amount of data transferred and processed when consuming event streams, as they can now receive only the changes since the last event.",
-        "how_to_use": [
-          "Use the event_deltas[] query parameter with the GET /v1/sessions/{session_id}/threads/{thread_id}/stream endpoint to receive event deltas in the response."
-        ]
-      }
-    },
-    {
-      "id": "2daa5fa6",
-      "title": "The legacy Workbench (platform.claude.com/workbench) in the Claude Console is…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-17T00:00:00.000Z",
-      "summary": "The legacy Workbench (platform.claude.com/workbench) in the Claude Console is being sunset with access ending on August 17, 2026. Saved prompts, variables, and evals are not supported in the updated…",
-      "fetched_at": "2026-07-20T19:18:51.981Z",
-      "explanation": {
-        "what_it_is": "The legacy Workbench at platform.claude.com/workbench in the Claude Console is being discontinued, with access ending on August 17, 2026. This means that users will no longer be able to access the legacy Workbench after this date.",
-        "why_it_matters": "Saved prompts, variables, and evals from the legacy Workbench are not compatible with the updated platform, so users need to migrate their workflows before access ends. This change affects users who rely on the legacy Workbench for their development workflows.",
-        "how_to_use": [
-          "Migrate saved prompts, variables, and evals to the updated platform before August 17, 2026",
-          "Update workflows to use the new platform features, which do not support legacy Workbench functionality"
-        ]
-      }
-    },
-    {
-      "id": "2759e97b",
-      "title": "The experimental prompt tools APIs for generating, improving, and templatizing…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-17-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-17T00:00:00.000Z",
-      "summary": "The experimental prompt tools APIs for generating, improving, and templatizing prompts (/v1/experimental/generate_prompt, /v1/experimental/improve_prompt, and /v1/experimental/templatize_prompt) are…",
-      "fetched_at": "2026-07-20T19:18:51.981Z",
-      "explanation": {
-        "what_it_is": "The experimental prompt tools APIs provide endpoints for generating, improving, and templatizing prompts, specifically /v1/experimental/generate_prompt, /v1/experimental/improve_prompt, and /v1/experimental/templatize_prompt.",
-        "why_it_matters": "These APIs allow Claude Code users to programmatically create, refine, and template prompts, potentially streamlining their workflow and reducing manual effort.",
-        "how_to_use": [
-          "Use /v1/experimental/generate_prompt to automatically create prompts for common tasks",
-          "Leverage /v1/experimental/improve_prompt to refine existing prompts based on performance data",
-          "Utilize /v1/experimental/templatize_prompt to create reusable prompt templates for frequent use cases"
-        ]
-      }
-    },
-    {
-      "id": "6c7dade0",
-      "title": "Mid-conversation system messages are available on Claude Fable 5, Claude Mythos…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-15-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-15T00:00:00.000Z",
-      "summary": "Mid-conversation system messages are available on Claude Fable 5, Claude Mythos 5, and Claude Opus 4.8, on the Claude API, Claude in Amazon Bedrock, and Google Cloud. No beta header is required. This…",
-      "fetched_at": "2026-07-16T18:01:24.530Z",
-      "explanation": {
-        "what_it_is": "Mid-conversation system messages allow developers to send messages to users in the middle of a conversation, without requiring a beta header, on specific Claude models and platforms.",
-        "why_it_matters": "This update enables more flexible and dynamic conversations, as developers can now interrupt or add to the conversation flow as needed, on Claude Fable 5, Claude Mythos 5, and Claude Opus 4.8, across the Claude API, Amazon Bedrock, and Google Cloud.",
-        "how_to_use": [
-          "Use mid-conversation system messages to provide timely updates or corrections in a conversation",
-          "Send messages to users on Claude Fable 5, Claude Mythos 5, or Claude Opus 4.8 without a beta header",
-          "Integrate mid-conversation system messages into your conversation flow on the Claude API, Amazon Bedrock, or Google Cloud"
-        ]
-      }
-    },
-    {
-      "id": "6a69b756",
-      "title": "You can now manage the people in your Claude Enterprise (claude.ai)…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-14-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-14T00:00:00.000Z",
-      "summary": "You can now manage the people in your Claude Enterprise (claude.ai) organization with the Admin API, in beta for all Claude Enterprise organizations: list members and look them up by email address,…",
-      "fetched_at": "2026-07-14T23:38:48.014Z",
-      "explanation": {
-        "what_it_is": "The Admin API now allows management of people within a Claude Enterprise organization, including listing members and searching by email address.",
-        "why_it_matters": "This update enables administrators to programmatically manage their organization's members, streamlining user management tasks.",
-        "how_to_use": [
-          "Use the Admin API to list all members in your organization",
-          "Look up a specific member by their email address using the API"
-        ]
-      }
-    },
-    {
-      "id": "7b6a393f",
-      "title": "Dreams (research preview) now supports Claude Fable 5 and Claude Sonnet 5",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#july-10-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-07-10T00:00:00.000Z",
-      "summary": "Dreams (research preview) now supports Claude Fable 5 and Claude Sonnet 5. See Supported models.",
-      "fetched_at": "2026-07-13T20:03:41.643Z",
-      "explanation": {
-        "what_it_is": "Dreams, a research preview feature, has been updated to support two new models: Claude Fable 5 and Claude Sonnet 5.",
-        "why_it_matters": "This update allows Claude Code users to leverage the capabilities of these new models in their Dreams projects, potentially enabling new use cases or improving existing ones.",
-        "how_to_use": [
-          "Access the Dreams feature through the Anthropic API or developer platform",
-          "Select either Claude Fable 5 or Claude Sonnet 5 as the model for your Dreams project",
-          "Refer to the Supported models documentation for more information on using these models"
         ]
       }
     }
