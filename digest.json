@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-17T20:36:05.213Z",
+  "generated_at": "2026-09-17T23:09:14.664Z",
   "item_count": 90,
   "items": [
     {
@@ -12,7 +12,150 @@
       "type": "changelog",
       "published_at": "2026-09-18T00:00:00.000Z",
       "summary": "The Compliance API local session endpoints now also return transcripts of Claude in Chrome sessions (product_surface value claude_in_chrome), in beta for Claude Enterprise organizations, with your…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
+    },
+    {
+      "id": "62dbbb75",
+      "title": "Added the signed-in account to Claude apps gateway sign-in: when the gateway names it, you confirm it before the credential is saved, and /status…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "d5eac269",
+      "title": "Added a send-now key (ctrl+enter, or ctrl+x ctrl+s) that interrupts the current turn and sends all queued messages at once; sent and queued messages…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "5f389b18",
+      "title": "Added a startup warning when a configured otelHeadersHelper fails, so sessions that silently export no telemetry are noticed",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "de2183bd",
+      "title": "Added syncing of the skills and plugins enabled on your claude.ai account to terminal sessions signed in with it; opt out with syncClaudeAiSkills:…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "2f3def9d",
+      "title": "Added /plugin install <plugin> --marketplace <source>, which offers to add the marketplace before installing the plugin",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "2260dd30",
+      "title": "[VSCode] Added viewing, editing and deleting a saved memory inside the Memory dialog",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "fe0d9767",
+      "title": "[VSCode] Added sending an attached image without typing any text",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "1b7c951b",
+      "title": "[VSCode] Added a Retry link to the MCP servers dialog when the server list fails to load",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "3f358512",
+      "title": "[VSCode] Added accept and reject buttons under each change in the proposed-change diff tab, so an edit can be reviewed change by change",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "a8fcf5a7",
+      "title": "[Claude Code on the web] Added a \"New routine\" button to the page shown when a routine link no longer resolves, next to the link back to your…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "eb984209",
+      "title": "[Claude Tag] Added attach conditions for access bundles in Claude Tag settings: an Owner can let a bundle also apply in channels with guests or Slack…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "14cad3c6",
+      "title": "[Claude Tag] Added Amazon CloudWatch, CloudWatch Logs, Amazon SNS, Google Cloud Monitoring and Cloud Logging presets to an access bundle's…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
+    },
+    {
+      "id": "8601b69c",
+      "title": "[Claude Tag] Added Datadog presets for the US3, AP1, AP2 and US1-FED sites; new Datadog connections are now limited to Datadog's read and query API…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-09-17T22:33:17Z",
+      "summary": "v2.1.275",
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "0b1d241b",
@@ -23,7 +166,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "1b0f5d4e",
@@ -34,7 +177,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "adf8c122",
@@ -45,7 +188,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "3e225188",
@@ -56,7 +199,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "3073defe",
@@ -67,7 +210,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "15d11b6b",
@@ -78,7 +221,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "11ac9a6f",
@@ -89,7 +232,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "beb9a220",
@@ -100,7 +243,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "6f6acf0f",
@@ -111,7 +254,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "a087330a",
@@ -122,7 +265,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "66da820a",
@@ -133,7 +276,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "3c3a0996",
@@ -144,7 +287,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "d7b9e9b4",
@@ -155,7 +298,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "9b94cf27",
@@ -166,7 +309,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "abf8aba3",
@@ -177,7 +320,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "fb2c99fb",
@@ -188,7 +331,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "23d44dc7",
@@ -199,7 +342,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "8d888a40",
@@ -210,7 +353,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "f17c13ca",
@@ -221,7 +364,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "a6c5b413",
@@ -232,7 +375,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "8cdb317d",
@@ -243,7 +386,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "85fcc398",
@@ -254,7 +397,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "3972466b",
@@ -265,7 +408,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "b12104fa",
@@ -276,7 +419,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "1d122a87",
@@ -287,7 +430,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "c4162572",
@@ -298,7 +441,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "5f015668",
@@ -309,7 +452,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "f16dcfa3",
@@ -320,7 +463,7 @@
       "type": "changelog",
       "published_at": "2026-09-14T00:00:00.000Z",
       "summary": "The Messages API can now compact a conversation on demand on the Claude API, in beta with the compact-2026-09-04 beta header. Send the top-level compaction parameter, and the API returns a signed…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "9b7f95ad",
@@ -331,7 +474,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "1057dd06",
@@ -342,7 +485,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "123a3299",
@@ -353,7 +496,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "2e2e5e6e",
@@ -364,7 +507,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "aa1c40db",
@@ -375,7 +518,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "03bb4565",
@@ -386,7 +529,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "3bfb52ad",
@@ -397,7 +540,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "047e3259",
@@ -408,7 +551,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "95d0fc4f",
@@ -419,7 +562,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "bed189e0",
@@ -430,7 +573,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "072211f3",
@@ -441,7 +584,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "897c5117",
@@ -452,7 +595,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "8cb60671",
@@ -463,7 +606,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "4a9752f5",
@@ -474,7 +617,7 @@
       "type": "release",
       "published_at": "2026-09-11T19:17:55Z",
       "summary": "v2.1.269",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "a1a963c7",
@@ -485,7 +628,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "5741d7b8",
@@ -496,7 +639,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "efddfbd3",
@@ -507,7 +650,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "6bfe9ef2",
@@ -518,7 +661,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "a2186dbe",
@@ -529,7 +672,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "e8bb8e4a",
@@ -540,7 +683,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "16e25b58",
@@ -551,7 +694,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "cae0964b",
@@ -562,7 +705,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "eebadfa0",
@@ -573,7 +716,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "4026a3a7",
@@ -584,7 +727,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "e62b08f0",
@@ -595,7 +738,7 @@
       "type": "release",
       "published_at": "2026-09-10T20:30:54Z",
       "summary": "v2.1.268",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "83ceff76",
@@ -606,7 +749,7 @@
       "type": "changelog",
       "published_at": "2026-09-10T00:00:00.000Z",
       "summary": "Claude Managed Agents permission policies now include auto: the server evaluates each agent or MCP tool call and runs it, denies it, or pauses for your approval. agent.tool_use and agent.mcp_tool_use…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "78e99e6c",
@@ -617,7 +760,7 @@
       "type": "changelog",
       "published_at": "2026-09-10T00:00:00.000Z",
       "summary": "Version 1.32.0 of the ant CLI adds ant beta:sessions connect, which attaches your terminal to a Claude Managed Agents session. You can follow the session live, send messages, and allow or deny tool…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "aa156c81",
@@ -628,7 +771,7 @@
       "type": "release",
       "published_at": "2026-09-09T19:58:14Z",
       "summary": "v2.1.267",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "8020bb93",
@@ -639,7 +782,7 @@
       "type": "release",
       "published_at": "2026-09-09T19:58:14Z",
       "summary": "v2.1.267",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "43fd168e",
@@ -650,51 +793,7 @@
       "type": "release",
       "published_at": "2026-09-09T19:58:14Z",
       "summary": "v2.1.267",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
-    },
-    {
-      "id": "d6c8c0a4",
-      "title": "Added user.email and user.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-09-08T20:37:31Z",
-      "summary": "v2.1.265",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
-    },
-    {
-      "id": "620ca4ea",
-      "title": "Added support for pointing --plugin-dir at a folder of plugins: each child folder with a manifest loads, and children added or removed while running…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-09-08T20:37:31Z",
-      "summary": "v2.1.265",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
-    },
-    {
-      "id": "63d6cc70",
-      "title": "Added a 1 GB cap on tool results saved to disk; the in-conversation preview says when a saved file was truncated",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-09-08T20:37:31Z",
-      "summary": "v2.1.265",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
-    },
-    {
-      "id": "f1160007",
-      "title": "[VSCode] Added automatic archiving of sessions inactive for a set period (new \"Archive inactive sessions\" setting, default 14 days)",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-09-08T20:37:31Z",
-      "summary": "v2.1.265",
-      "fetched_at": "2026-09-17T20:36:05.444Z"
+      "fetched_at": "2026-09-17T23:09:15.176Z"
     },
     {
       "id": "e5bdf0b4",
@@ -705,7 +804,7 @@
       "type": "changelog",
       "published_at": "2026-09-03T00:00:00.000Z",
       "summary": "Version 1.30.0 of the ant CLI adds ant apply, which creates and updates agents, environments, skills, memory stores, and deployments from files in your repository. Describe each resource in a file,…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "9c8a9220",
@@ -716,7 +815,7 @@
       "type": "changelog",
       "published_at": "2026-09-03T00:00:00.000Z",
       "summary": "Per-message effort changes, in beta, are also available on Google Cloud for Claude Fable 5.1, Claude Mythos 5.1, and Claude Opus 5, with the same mid-conversation-output-config-2026-07-01 beta header.",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "04cbcc2b",
@@ -727,7 +826,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "We've launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude Mythos 5.1 (claude-mythos-5-1) for…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "756ad5f9",
@@ -738,7 +837,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Prompt cache reads on Claude Fable 5.1 and Claude Mythos 5.1 cost $0.25 USD per million tokens: 0.025x the base input price, compared with 0.1x on other models. Cache writes are unchanged. See Prompt…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "02bef1e2",
@@ -749,7 +848,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "On Claude Fable 5.1 and Claude Mythos 5.1, tool_choice types any and tool aren't supported and return a 400 error. auto and none are unchanged. To guarantee schema-conformant tool inputs, use strict…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "2d1441a2",
@@ -760,7 +859,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Thinking blocks produced by Claude Fable 5.1 and Claude Mythos 5.1 are preserved only for the model that produced them or a newer one: earlier models can't read them, and the API drops one replayed…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "806f3c8b",
@@ -771,7 +870,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Per-message effort changes are in beta on Claude Fable 5.1, Claude Mythos 5.1, and Claude Opus 5 on the Claude API. Add a role: \"system\" message with output_config.effort inside messages to change…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "18d63b5f",
@@ -782,7 +881,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Turn-scoped system messages are in beta (mid-conversation-system-clear-at-2026-08-21 header). Set clear_at: \"next_user_message\" on a mid-conversation role: \"system\" message and it renders for the…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "cca14eac",
@@ -793,7 +892,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "thinking.display accepts a third value, \"updates\", in beta (thinking-display-updates-2026-08-18 header). Reasoning comes back with an empty thinking field, as under \"omitted\", and the short progress…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "15fcbeb9",
@@ -804,7 +903,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Text generated by Claude Fable 5.1 and Claude Mythos 5.1 carries Anthropic's text watermark, and supported image, video, and audio files that Claude produces through the code execution tool carry…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "3ecc9b90",
@@ -815,7 +914,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "Like Claude Fable 5, both models require 30-day data retention and aren't available under zero data retention unless expressly authorized by Anthropic. See Model-specific data retention requirements.",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "0130f101",
@@ -826,7 +925,7 @@
       "type": "changelog",
       "published_at": "2026-09-01T00:00:00.000Z",
       "summary": "The guides for the Claude Enterprise endpoints of the Admin API (user management and spend limits), the Claude Enterprise Analytics API, and the Compliance API now show the anthropic-version header;…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "0bdb18d8",
@@ -837,7 +936,7 @@
       "type": "changelog",
       "published_at": "2026-08-27T00:00:00.000Z",
       "summary": "In Python SDK 1.2.0, TypeScript SDK 0.122.0, Go SDK 1.68.0, Java SDK 2.59.0, Ruby SDK 1.67.0, and CSDK 12.44.0, client.beta.files and client.beta.skills no longer send the files-api-2025-04-14 and…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "aa8c97b2",
@@ -848,7 +947,7 @@
       "type": "changelog",
       "published_at": "2026-08-27T00:00:00.000Z",
       "summary": "You can now create personal keys and service account keys in the Claude Console. They act as you or as a service account, with the same permissions, and stop working when the linked account is…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "9182ea76",
@@ -859,7 +958,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Compliance API session endpoints are out of beta for Cowork and Claude Code sessions. See Retrieve session transcripts.",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "1a733582",
@@ -870,7 +969,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Compliance API local session endpoints now also return transcripts of Claude Science sessions (product_surface value claude_science) and Claude for Microsoft 365 sessions in Excel, PowerPoint,…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "90912f40",
@@ -881,7 +980,7 @@
       "type": "changelog",
       "published_at": "2026-08-26T00:00:00.000Z",
       "summary": "The Admin API is now available in the ant CLI and the Python, TypeScript, C#, Go, Java, PHP, and Ruby SDKs under client.beta.organization. They cover organization info, members, invites, workspaces…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     },
     {
       "id": "030a8307",
@@ -892,106 +991,7 @@
       "type": "changelog",
       "published_at": "2026-08-20T00:00:00.000Z",
       "summary": "We've released v1.0 of the Python SDK. The SDK's HTTP layer moves from httpx to httpx2, a maintained, API-compatible fork: build custom http_client, Timeout, and transport objects from httpx2 (the…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "fead9216",
-      "title": "The computer use and browser use toolsets (computer_toolset_20260801 and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-20-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-20T00:00:00.000Z",
-      "summary": "The computer use and browser use toolsets (computer_toolset_20260801 and browser_toolset_20260801) are now available on Google Cloud for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "e7c76eb2",
-      "title": "The computer use tool is out of beta on the Claude API as the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "The computer use tool is out of beta on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (several actions in one turn), zoom enabled by default, and per-member…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "05e6bfe8",
-      "title": "We've launched the browser use tool (browser_toolset_20260801), a client…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "We've launched the browser use tool (browser_toolset_20260801), a client toolset for driving a browser that your application hosts. It works inside a browser viewport rather than a whole desktop,…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "999729e8",
-      "title": "Both toolsets are available for Claude Fable 5, Claude Mythos 5, Claude Opus 5,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "Both toolsets are available for Claude Fable 5, Claude Mythos 5, Claude Opus 5, Claude Sonnet 5, and Claude Opus 4.8 on the Claude API.",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "0ec30a0a",
-      "title": "The Files API is out of beta on the Claude API",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "The Files API is out of beta on the Claude API. Requests to the /v1/files endpoints, and Messages API requests that reference an uploaded file, no longer require the files-api-2025-04-14 beta header.…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "9cf2084d",
-      "title": "Agent Skills and the Skills API (/v1/skills) are out of beta on the Claude API",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "Agent Skills and the Skills API (/v1/skills) are out of beta on the Claude API. Requests no longer require the skills-2025-10-02 beta header, including Messages API requests that load Skills through…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "2bf1f415",
-      "title": "The Admin API user-management endpoints for Claude Enterprise (claude.ai)…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are out of beta. The anthropic-beta: ce-user-management-2026-07-13…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "8a2e28a7",
-      "title": "You can now restrict which sites a Claude Managed Agents agent's web_search and…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "You can now restrict which sites a Claude Managed Agents agent's web_search and web_fetch tools can reach. Set allowed_domains or blocked_domains on the tool's entry in the agent_toolset_20260401…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
-    },
-    {
-      "id": "fab51da2",
-      "title": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-08-19T00:00:00.000Z",
-      "summary": "Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its…",
-      "fetched_at": "2026-09-17T20:36:05.985Z"
+      "fetched_at": "2026-09-17T23:09:15.911Z"
     }
   ]
 }
