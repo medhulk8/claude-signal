@@ -1,8 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-09-24T12:20:48.626Z",
+  "generated_at": "2026-09-24T17:35:50.535Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "c655fcb6",
+      "title": "We're expanding which refusals are billed to include refusals that arrive…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-24-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-24T00:00:00.000Z",
+      "summary": "We're expanding which refusals are billed to include refusals that arrive before any output when stop_details.category is \"bio\", \"frontier_llm\", or \"reasoning_extraction\", the categories where we…",
+      "fetched_at": "2026-09-24T17:35:51.930Z"
+    },
     {
       "id": "7831054b",
       "title": "Added Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and…",
@@ -12,7 +23,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "1e9e4a2c",
@@ -23,7 +34,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "08876582",
@@ -34,7 +45,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "95feb6f6",
@@ -45,7 +56,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "ac8d42da",
@@ -56,7 +67,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "0d40d6b7",
@@ -67,7 +78,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "55b4a554",
@@ -78,7 +89,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "900730d0",
@@ -89,7 +100,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "11b9e451",
@@ -100,7 +111,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "8539d7a7",
@@ -111,7 +122,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "8a6728f2",
@@ -122,7 +133,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "afeca1cb",
@@ -133,7 +144,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "a3731b40",
@@ -144,7 +155,18 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
+    },
+    {
+      "id": "59553702",
+      "title": "Cache diagnostics is out of beta on the Claude API and no longer requires the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-23-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-23T00:00:00.000Z",
+      "summary": "Cache diagnostics is out of beta on the Claude API and no longer requires the cache-diagnosis-2026-04-07 beta header. Include the diagnostics object on a Messages request to opt in; requests that…",
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "d040259b",
@@ -155,7 +177,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "ebc4ffc3",
@@ -166,7 +188,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "23d43e19",
@@ -177,7 +199,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "2f24a23d",
@@ -188,7 +210,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "b54be21a",
@@ -199,7 +221,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "dde98bb1",
@@ -210,7 +232,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "a0030602",
@@ -221,7 +243,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "9923e3fb",
@@ -232,7 +254,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "ee4b6857",
@@ -243,7 +265,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "fca5b130",
@@ -254,7 +276,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "1da567f4",
@@ -265,7 +287,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "a22fc818",
@@ -276,7 +298,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "f170c693",
@@ -287,7 +309,7 @@
       "type": "changelog",
       "published_at": "2026-09-22T00:00:00.000Z",
       "summary": "We've launched Claude Opus 5.5 (claude-opus-5-5), a model for long-running agentic coding and knowledge work. It has a 1M token context window by default, 128k max output tokens, and always-on…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "154a15cd",
@@ -298,7 +320,7 @@
       "type": "changelog",
       "published_at": "2026-09-22T00:00:00.000Z",
       "summary": "On Claude Opus 5.5, thinking can't be disabled: thinking: {\"type\": \"disabled\"} and thinking: {\"type\": \"enabled\", ...} return a 400 error. Omit the thinking field and control thinking depth with the…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "7be4f74b",
@@ -309,7 +331,7 @@
       "type": "changelog",
       "published_at": "2026-09-22T00:00:00.000Z",
       "summary": "Fast mode (research preview) is available for Claude Opus 5.5 on the Claude API.",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "fdc43c23",
@@ -320,7 +342,7 @@
       "type": "changelog",
       "published_at": "2026-09-22T00:00:00.000Z",
       "summary": "Tools can now be defined inside a mid-conversation system message, in beta on the Claude API with the inline-tools-2026-09-15 beta header. A tool_addition block can carry the tool's full definition…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "da6b483c",
@@ -331,7 +353,7 @@
       "type": "release",
       "published_at": "2026-09-19T03:10:40Z",
       "summary": "v2.1.278",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "5879c2fd",
@@ -342,7 +364,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "211b4d9f",
@@ -353,7 +375,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "df5d29e8",
@@ -364,7 +386,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "dcbb1292",
@@ -375,7 +397,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "bb6970ef",
@@ -386,7 +408,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "4dbc20a2",
@@ -397,7 +419,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "5dfd8ffc",
@@ -408,7 +430,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "3d4c2c65",
@@ -419,7 +441,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "190b2417",
@@ -430,7 +452,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "d4646cf9",
@@ -441,7 +463,7 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "47c5c71d",
@@ -452,7 +474,18 @@
       "type": "release",
       "published_at": "2026-09-18T18:06:32Z",
       "summary": "v2.1.277",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
+    },
+    {
+      "id": "095761f3",
+      "title": "For cache diagnostics, a response to a request that sends the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-18-2026",
+      "source": "anthropic_changelog",
+      "source_label": "Anthropic Changelog",
+      "type": "changelog",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "summary": "For cache diagnostics, a response to a request that sends the cache-diagnosis-2026-04-07 beta header now always includes the diagnostics field. The field is null when the request did not include the…",
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "37475ca1",
@@ -463,7 +496,7 @@
       "type": "changelog",
       "published_at": "2026-09-18T00:00:00.000Z",
       "summary": "The Compliance API local session endpoints now also return transcripts of Claude in Chrome sessions (product_surface value claude_in_chrome), in beta for Claude Enterprise organizations, with your…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "62dbbb75",
@@ -474,7 +507,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "d5eac269",
@@ -485,7 +518,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "5f389b18",
@@ -496,7 +529,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "de2183bd",
@@ -507,7 +540,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "2f3def9d",
@@ -518,7 +551,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "2260dd30",
@@ -529,7 +562,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "fe0d9767",
@@ -540,7 +573,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "1b7c951b",
@@ -551,7 +584,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "3f358512",
@@ -562,7 +595,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "a8fcf5a7",
@@ -573,7 +606,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "eb984209",
@@ -584,7 +617,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "14cad3c6",
@@ -595,7 +628,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "8601b69c",
@@ -606,7 +639,7 @@
       "type": "release",
       "published_at": "2026-09-17T22:33:17Z",
       "summary": "v2.1.275",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "0b1d241b",
@@ -617,7 +650,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "1b0f5d4e",
@@ -628,7 +661,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "adf8c122",
@@ -639,7 +672,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "3e225188",
@@ -650,7 +683,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "3073defe",
@@ -661,7 +694,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "15d11b6b",
@@ -672,7 +705,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "11ac9a6f",
@@ -683,7 +716,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "beb9a220",
@@ -694,7 +727,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "6f6acf0f",
@@ -705,7 +738,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "a087330a",
@@ -716,7 +749,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "66da820a",
@@ -727,7 +760,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "3c3a0996",
@@ -738,7 +771,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "d7b9e9b4",
@@ -749,7 +782,7 @@
       "type": "release",
       "published_at": "2026-09-17T00:12:02Z",
       "summary": "v2.1.274",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "9b94cf27",
@@ -760,7 +793,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "abf8aba3",
@@ -771,7 +804,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "fb2c99fb",
@@ -782,7 +815,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "23d44dc7",
@@ -793,7 +826,7 @@
       "type": "release",
       "published_at": "2026-09-15T20:23:03Z",
       "summary": "v2.1.273",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "8d888a40",
@@ -804,7 +837,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "f17c13ca",
@@ -815,7 +848,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "a6c5b413",
@@ -826,7 +859,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "8cdb317d",
@@ -837,7 +870,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "85fcc398",
@@ -848,7 +881,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "3972466b",
@@ -859,7 +892,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "b12104fa",
@@ -870,7 +903,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "1d122a87",
@@ -881,7 +914,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "c4162572",
@@ -892,7 +925,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "5f015668",
@@ -903,7 +936,7 @@
       "type": "release",
       "published_at": "2026-09-14T22:12:54Z",
       "summary": "v2.1.271",
-      "fetched_at": "2026-09-24T12:20:48.908Z"
+      "fetched_at": "2026-09-24T17:35:51.163Z"
     },
     {
       "id": "f16dcfa3",
@@ -914,7 +947,7 @@
       "type": "changelog",
       "published_at": "2026-09-14T00:00:00.000Z",
       "summary": "The Messages API can now compact a conversation on demand on the Claude API, in beta with the compact-2026-09-04 beta header. Send the top-level compaction parameter, and the API returns a signed…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "37dc5672",
@@ -925,7 +958,7 @@
       "type": "changelog",
       "published_at": "2026-09-14T00:00:00.000Z",
       "summary": "With the thinking-binding-controls-2026-08-01 beta header, the input_transformations response field gains a second entry type, thinking_mismatch_allowed. It names a thinking block that failed the…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "83ceff76",
@@ -936,7 +969,7 @@
       "type": "changelog",
       "published_at": "2026-09-10T00:00:00.000Z",
       "summary": "Claude Managed Agents permission policies now include auto: the server evaluates each agent or MCP tool call and runs it, denies it, or pauses for your approval. agent.tool_use and agent.mcp_tool_use…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
       "id": "78e99e6c",
@@ -947,51 +980,18 @@
       "type": "changelog",
       "published_at": "2026-09-10T00:00:00.000Z",
       "summary": "Version 1.32.0 of the ant CLI adds ant beta:sessions connect, which attaches your terminal to a Claude Managed Agents session. You can follow the session live, send messages, and allow or deny tool…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     },
     {
-      "id": "e5bdf0b4",
-      "title": "Version 1.30.0 of the ant CLI adds ant apply, which creates and updates agents,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2026",
+      "id": "f072dd22",
+      "title": "For cache diagnostics, the API now stores a request's fingerprint only when the…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-9-2026",
       "source": "anthropic_changelog",
       "source_label": "Anthropic Changelog",
       "type": "changelog",
-      "published_at": "2026-09-03T00:00:00.000Z",
-      "summary": "Version 1.30.0 of the ant CLI adds ant apply, which creates and updates agents, environments, skills, memory stores, and deployments from files in your repository. Describe each resource in a file,…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
-    },
-    {
-      "id": "9c8a9220",
-      "title": "Per-message effort changes, in beta, are also available on Google Cloud for…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-3-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-09-03T00:00:00.000Z",
-      "summary": "Per-message effort changes, in beta, are also available on Google Cloud for Claude Fable 5.1, Claude Mythos 5.1, and Claude Opus 5, with the same mid-conversation-output-config-2026-07-01 beta header.",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
-    },
-    {
-      "id": "04cbcc2b",
-      "title": "We've launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-09-01T00:00:00.000Z",
-      "summary": "We've launched Claude Fable 5.1 (claude-fable-5-1), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude Mythos 5.1 (claude-mythos-5-1) for…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
-    },
-    {
-      "id": "756ad5f9",
-      "title": "Prompt cache reads on Claude Fable 5.1 and Claude Mythos 5.1 cost $0.25 USD per…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-09-01T00:00:00.000Z",
-      "summary": "Prompt cache reads on Claude Fable 5.1 and Claude Mythos 5.1 cost $0.25 USD per million tokens: 0.025x the base input price, compared with 0.1x on other models. Cache writes are unchanged. See Prompt…",
-      "fetched_at": "2026-09-24T12:20:49.427Z"
+      "published_at": "2026-09-09T00:00:00.000Z",
+      "summary": "For cache diagnostics, the API now stores a request's fingerprint only when the request includes the diagnostics object. A request that sends only the cache-diagnosis-2026-04-07 beta header is still…",
+      "fetched_at": "2026-09-24T17:35:51.930Z"
     }
   ]
 }
