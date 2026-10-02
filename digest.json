@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-01T21:26:00.234Z",
+  "generated_at": "2026-10-02T01:06:53.164Z",
   "item_count": 90,
   "items": [
     {
@@ -12,7 +12,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "2b9b4aaa",
@@ -23,7 +23,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "07313c7f",
@@ -34,7 +34,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "83efcc59",
@@ -45,7 +45,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "ba141b6f",
@@ -56,7 +56,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "6db309d0",
@@ -67,7 +67,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "2a47939e",
@@ -78,7 +78,7 @@
       "type": "release",
       "published_at": "2026-10-01T18:43:19Z",
       "summary": "v2.1.287",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "e75c90d6",
@@ -89,7 +89,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "8631d6cf",
@@ -100,7 +100,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "4e0be3a7",
@@ -111,7 +111,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "6fd2177b",
@@ -122,7 +122,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "45bcc9ff",
@@ -133,7 +133,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "de4a2f42",
@@ -144,7 +144,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "244ccd4f",
@@ -155,7 +155,7 @@
       "type": "release",
       "published_at": "2026-09-30T19:10:13Z",
       "summary": "v2.1.286",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "23ef37c7",
@@ -166,7 +166,7 @@
       "type": "changelog",
       "published_at": "2026-09-30T00:00:00.000Z",
       "summary": "We announced the deprecation of the Claude Sonnet 4.5 model (claude-sonnet-4-5-20250929), with retirement on the Claude API scheduled for November 30, 2026. We recommend migrating to Claude Sonnet…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "7f709da6",
@@ -177,7 +177,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "8f97df18",
@@ -188,7 +188,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "464240ee",
@@ -199,7 +199,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "2077b9db",
@@ -210,7 +210,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "40a6da6d",
@@ -221,7 +221,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "17cfbb5d",
@@ -232,7 +232,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "bfeaaebe",
@@ -243,7 +243,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "d15b1384",
@@ -254,7 +254,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "d8bb5f3b",
@@ -265,7 +265,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "6cfcabad",
@@ -276,7 +276,7 @@
       "type": "release",
       "published_at": "2026-09-29T19:27:30Z",
       "summary": "v2.1.285",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "ac6e8312",
@@ -287,7 +287,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "e8cd16ea",
@@ -298,7 +298,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "5a87bfd6",
@@ -309,7 +309,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "49d994eb",
@@ -320,7 +320,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "b7572dd5",
@@ -331,7 +331,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "22ed84e7",
@@ -342,7 +342,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "f6d841e6",
@@ -353,7 +353,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "706c4934",
@@ -364,7 +364,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "2c70bb17",
@@ -375,7 +375,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "1e6ab930",
@@ -386,7 +386,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "85c398fe",
@@ -397,7 +397,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "0c185bb7",
@@ -408,7 +408,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "c65a08f3",
@@ -419,7 +419,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "a9a5c0a7",
@@ -430,7 +430,7 @@
       "type": "release",
       "published_at": "2026-09-28T18:02:03Z",
       "summary": "v2.1.284",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "32a5c6b0",
@@ -441,7 +441,7 @@
       "type": "changelog",
       "published_at": "2026-09-28T00:00:00.000Z",
       "summary": "We've launched Claude Sonnet 5.5 (claude-sonnet-5-5). It's available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude on Google Cloud, and Claude in Microsoft Foundry. For…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "1d47793b",
@@ -452,7 +452,7 @@
       "type": "changelog",
       "published_at": "2026-09-28T00:00:00.000Z",
       "summary": "Code written for Claude Sonnet 5 can break on Claude Sonnet 5.5 in five ways. To turn off up-front thinking, send thinking: {\"type\": \"between_tools\"} instead of \"disabled\", at high effort or below.…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "96defbcb",
@@ -463,7 +463,7 @@
       "type": "changelog",
       "published_at": "2026-09-28T00:00:00.000Z",
       "summary": "Thinking blocks that Claude Sonnet 5.5 produces work only in the account that produced them, or in an account linked to it. When another account sends one of these blocks, the API drops the block…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "00b6ffe0",
@@ -474,7 +474,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "aaa453f4",
@@ -485,7 +485,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "c33ef9d7",
@@ -496,7 +496,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "ca93453a",
@@ -507,7 +507,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "3dd2d230",
@@ -518,7 +518,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "5ccf9376",
@@ -529,7 +529,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "952ab51c",
@@ -540,7 +540,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "7e4e767d",
@@ -551,7 +551,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "3baae5e1",
@@ -562,7 +562,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "1e9e8a9b",
@@ -573,7 +573,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "6d0933af",
@@ -584,7 +584,7 @@
       "type": "release",
       "published_at": "2026-09-25T21:50:12Z",
       "summary": "v2.1.283",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "f0f18df0",
@@ -595,7 +595,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "b71b9fab",
@@ -606,7 +606,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "f1d512e4",
@@ -617,7 +617,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "007673ca",
@@ -628,7 +628,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "62953230",
@@ -639,7 +639,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "c87c39e8",
@@ -650,7 +650,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "d6173adc",
@@ -661,7 +661,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "1b8bd762",
@@ -672,7 +672,7 @@
       "type": "release",
       "published_at": "2026-09-24T18:38:05Z",
       "summary": "v2.1.282",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "7e4079a5",
@@ -683,7 +683,7 @@
       "type": "changelog",
       "published_at": "2026-09-24T00:00:00.000Z",
       "summary": "We're resuming billing for refusals that arrive before any output when stop_details.category is \"bio\", \"frontier_llm\", or \"reasoning_extraction\", the categories where we measure low volumes of false…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "7b5c1374",
@@ -694,7 +694,7 @@
       "type": "changelog",
       "published_at": "2026-09-24T00:00:00.000Z",
       "summary": "The Compliance API local session endpoints are out of beta for Claude for Microsoft 365 sessions in Excel, PowerPoint, Word, and Outlook (product_surface values beginning with office_agents). See…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "82e4da71",
@@ -705,7 +705,7 @@
       "type": "changelog",
       "published_at": "2026-09-24T00:00:00.000Z",
       "summary": "The Compliance API Activity Feed no longer returns file names, project document names, or artifact titles. The filename and title fields on file, project document, and artifact activities are now…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "7831054b",
@@ -716,7 +716,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "1e9e4a2c",
@@ -727,7 +727,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "08876582",
@@ -738,7 +738,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "95feb6f6",
@@ -749,7 +749,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "ac8d42da",
@@ -760,7 +760,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "0d40d6b7",
@@ -771,7 +771,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "55b4a554",
@@ -782,7 +782,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "900730d0",
@@ -793,7 +793,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "11b9e451",
@@ -804,7 +804,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "8539d7a7",
@@ -815,7 +815,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "8a6728f2",
@@ -826,7 +826,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "afeca1cb",
@@ -837,7 +837,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "a3731b40",
@@ -848,7 +848,7 @@
       "type": "release",
       "published_at": "2026-09-23T19:19:15Z",
       "summary": "v2.1.281",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "59553702",
@@ -859,7 +859,7 @@
       "type": "changelog",
       "published_at": "2026-09-23T00:00:00.000Z",
       "summary": "Cache diagnostics is out of beta on the Claude API and no longer requires the cache-diagnosis-2026-04-07 beta header. Include the diagnostics object on a Messages request to opt in; requests that…",
-      "fetched_at": "2026-10-01T21:26:01.594Z"
+      "fetched_at": "2026-10-02T01:06:54.244Z"
     },
     {
       "id": "d040259b",
@@ -870,7 +870,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "ebc4ffc3",
@@ -881,7 +881,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "23d43e19",
@@ -892,7 +892,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "2f24a23d",
@@ -903,7 +903,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "b54be21a",
@@ -914,7 +914,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "dde98bb1",
@@ -925,7 +925,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "a0030602",
@@ -936,7 +936,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "9923e3fb",
@@ -947,7 +947,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "ee4b6857",
@@ -958,7 +958,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "fca5b130",
@@ -969,7 +969,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "1da567f4",
@@ -980,7 +980,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     },
     {
       "id": "a22fc818",
@@ -991,7 +991,7 @@
       "type": "release",
       "published_at": "2026-09-22T16:38:14Z",
       "summary": "v2.1.280",
-      "fetched_at": "2026-10-01T21:26:00.862Z"
+      "fetched_at": "2026-10-02T01:06:53.564Z"
     }
   ]
 }
