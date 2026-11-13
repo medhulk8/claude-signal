@@ -1,8 +1,316 @@
 {
   "version": 1,
-  "generated_at": "2026-11-12T21:09:34.016Z",
+  "generated_at": "2026-11-13T02:11:04.404Z",
   "item_count": 90,
   "items": [
+    {
+      "id": "9cbe9729",
+      "title": "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "33247b43",
+      "title": "Added engines[\"claude-code\"] to plugin.json: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "6e50d852",
+      "title": "Added type checking of a plugin's TypeScript hooks module to claude plugin validate; each finding is a warning, and --strict fails on it",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "754548ac",
+      "title": "Added to claude plugin validate the $ nouns a mod's engine.create hook adds, withholds or replaces",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "c3ad1dc9",
+      "title": "Added support for CLAUDE_CODE_AUTO_MODE_MODEL in managed settings for Claude Desktop sessions on third-party providers (takes effect once Claude…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "ab638101",
+      "title": "Added an options menu (stop, switch to usage credits, upgrade) when a model needs usage credits that are turned off or used up",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "6aeabfdc",
+      "title": "Added a progress heartbeat every 30 seconds while hooks run long in claude -p and SDK sessions, so a host such as Claude Desktop won't end the turn…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "c1783eaa",
+      "title": "Added .docx support to Artifact tool asset uploads",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "985f5f57",
+      "title": "Added a /diff to close hint to the diff panel, and the keys that focus and close a panel to the ? shortcut guide",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "5b4254cd",
+      "title": "Added a start-up warning for Bash allow rules with a * in a variable's value, such as Bash(PORT=* npm run dev)",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "0037c7a4",
+      "title": "Added a warning when a plugin's language server can't start, naming the server and what to check",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "8d9b2479",
+      "title": "Added a one-time startup notice naming CLAUDE_CODE_PERFORCE_MODE when Perforce settings are found and the mode is off",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "605dcf60",
+      "title": "Added CLAUDE_CODE_DISABLE_AGENT_PROGRESS_SUMMARIES (available since 2.1.318): set it to 1 to turn off subagent progress summaries and the requests…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "ef4d77c7",
+      "title": "Added CLAUDE_CODE_RESUME_HINT_COMMAND, which a program that starts Claude Code can set to have the exit hint name its own resume command",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "01739f33",
+      "title": "Added unsetOptionCount to the claude plugin install --json result: how many userConfig options are not yet set",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "c4db089c",
+      "title": "Added isPromptCovered to the props a mod's pane is drawn with, telling it when a dialog or a field above the prompt covers the prompt",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "ec1b0011",
+      "title": "Deprecated a plugin's agent setting: it still applies, and now warns at startup, in claude plugin list and in claude plugin validate",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "52b61062",
+      "title": "[VSCode] Added a Claude Code trust prompt before the first session in a folder you haven't trusted; declining leaves the folder's settings and MCP…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "b0bff795",
+      "title": "[VSCode] Added the live output of a running Bash or PowerShell command to the chat, under the command's card",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "94e7d0a3",
+      "title": "[Claude Code on the web] Added a failure notification when a scheduled task's run can't start because its settings require a sandbox that isn't…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "538c93ed",
+      "title": "[Claude Code on the web] Added the No repository option to the repository picker for new sessions on a self-hosted environment",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "6b832ba7",
+      "title": "[Claude Code on the web] Added a warning to a cloud session's Delete dialog when deleting it will pause scheduled tasks that run in that session",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "08fc485a",
+      "title": "[Remote Control] Added a Try again button to the error shown when the computer running your session is signed out of Claude Code",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "d24107b6",
+      "title": "[Claude Tag] Added Claude Tag sessions started in Slack to the Compliance API on Enterprise plans, in beta: list the sessions and read their…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "57213689",
+      "title": "[Claude Tag] Added a confirmation step when an admin turns off Claude Tag for the organization, with a dialog that says what stops",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "1cd2b95d",
+      "title": "[Claude Tag] Added a Retry button to a Slack channel's Configure page for when its settings fail to load",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "5c2f9650",
+      "title": "[Claude Tag] Added a Scope filter to the Network events tab of Claude Tag's Activity page, so admins can download one scope's events instead of the…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
+    {
+      "id": "293cd408",
+      "title": "[Code Review] Added a Download CSV button to Code Review admin settings: export review costs per repository by month, week or day, for one…",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "source": "github_releases",
+      "source_label": "Claude Code",
+      "type": "release",
+      "published_at": "2026-11-12T22:12:13Z",
+      "summary": "v2.1.323",
+      "fetched_at": "2026-11-13T02:11:04.726Z"
+    },
     {
       "id": "dd069d12",
       "title": "We’ve launched self-hosted Claude Managed Agents",
@@ -12,7 +320,7 @@
       "type": "changelog",
       "published_at": "2026-11-12T00:00:00.000Z",
       "summary": "We’ve launched self-hosted Claude Managed Agents. You run the whole Managed Agents service, not only self-hosted sandboxes, on your own infrastructure, and you store agents, sessions, and session…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "21bd904e",
@@ -23,7 +331,7 @@
       "type": "release",
       "published_at": "2026-11-10T02:29:43Z",
       "summary": "v2.1.322",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "2e05f0ac",
@@ -34,7 +342,7 @@
       "type": "release",
       "published_at": "2026-11-09T19:22:30Z",
       "summary": "v2.1.321",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "77e82af9",
@@ -45,7 +353,7 @@
       "type": "release",
       "published_at": "2026-11-09T19:22:30Z",
       "summary": "v2.1.321",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "7b5bb41e",
@@ -56,7 +364,7 @@
       "type": "release",
       "published_at": "2026-11-09T19:22:30Z",
       "summary": "v2.1.321",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "dbbdaf20",
@@ -67,7 +375,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "We’ve launched Claude Fable 5.2 (claude-fable-5-2), built for demanding reasoning and long-horizon agentic work. Claude Mythos 5.2 (claude-mythos-5-2) offers the same capabilities only to…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "a6b82467",
@@ -78,7 +386,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "Claude Fable 5.2 and Claude Mythos 5.2 enforce the prefix check for every account, whatever its age. Claude Fable 5.1 returns the error by default on accounts created on or after August 31, 2026 (see…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "6369df0e",
@@ -89,7 +397,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "Claude Fable 5.2 and Claude Mythos 5.2 read other models’ thinking blocks on the Claude API and Claude Models on Google Cloud (Google managed). So on those platforms, a conversation that moves onto…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "d003d56e",
@@ -100,7 +408,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "No other model reads thinking blocks from Claude Fable 5.2 or Claude Mythos 5.2. When a conversation moves from either one to a model outside this pair, the API drops those blocks. That includes a…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "9cf22377",
@@ -111,7 +419,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "Claude Fable 5.2 and Claude Mythos 5.2 support computer use through the computer_toolset_20260801 toolset. A request that declares the earlier computer_20251124 tool returns a 400 error on every…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "bab757d8",
@@ -122,7 +430,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "With the advisor tool, which is in beta, a Claude Fable 5.2 or Claude Mythos 5.2 executor accepts only Claude Fable 5.2 or Claude Mythos 5.2 as its advisor. Any other advisor returns a 400 error, so…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "9413082b",
@@ -133,7 +441,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "Both models require 30-day data retention, like Claude Fable 5.1 and Claude Mythos 5.1. They aren’t available under zero data retention unless expressly authorized by Anthropic. See Model-specific…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "e360d3b2",
@@ -144,7 +452,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "Thinking blocks that Claude Fable 5.2 and Claude Mythos 5.2 produce work only in the account that produced them, or in an account linked to it. See Preserved thinking.",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "82f2c8cd",
@@ -155,7 +463,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "Dreams (research preview) now supports Claude Fable 5.2. See Supported models.",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "e71a13e1",
@@ -166,7 +474,7 @@
       "type": "changelog",
       "published_at": "2026-11-09T00:00:00.000Z",
       "summary": "We’ve launched fast mode for Claude Fable 5.2 in Messages API requests on the Claude API. Fast mode delivers up to 2.5x higher output tokens per second, at $16 USD per MTok of input and $80 USD per…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "3ff178a6",
@@ -177,7 +485,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "9edfbf83",
@@ -188,7 +496,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "6039860d",
@@ -199,7 +507,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "970f0439",
@@ -210,7 +518,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "3c04213c",
@@ -221,7 +529,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "e5f087c1",
@@ -232,7 +540,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "32b10c6f",
@@ -243,7 +551,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "77435db6",
@@ -254,7 +562,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "f01df03a",
@@ -265,7 +573,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "55628237",
@@ -276,7 +584,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "e8257b6c",
@@ -287,7 +595,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "6a75519b",
@@ -298,7 +606,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "37b12ea7",
@@ -309,7 +617,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "3554eb55",
@@ -320,7 +628,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "046470cb",
@@ -331,7 +639,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "ab969dcf",
@@ -342,7 +650,7 @@
       "type": "release",
       "published_at": "2026-11-06T17:04:01Z",
       "summary": "v2.1.319",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "cdab539f",
@@ -353,7 +661,7 @@
       "type": "changelog",
       "published_at": "2026-11-05T00:00:00.000Z",
       "summary": "The Compliance API now includes Security posture data, in beta for Claude Enterprise organizations. The Activity Feed records changes to attestations on the Security posture page in claude.ai…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "2368f92c",
@@ -364,7 +672,7 @@
       "type": "changelog",
       "published_at": "2026-11-05T00:00:00.000Z",
       "summary": "You can now set up an IP allowlist for your organization in the Claude Console, in beta. Requests to covered services from addresses not on your list are refused, which limits where a leaked API key…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "e3699699",
@@ -375,7 +683,7 @@
       "type": "changelog",
       "published_at": "2026-11-05T00:00:00.000Z",
       "summary": "You can now sign a member of your Claude Enterprise (claude.ai) organization out of Claude everywhere with the Admin API. This capability is in beta. See the Admin API reference. The member stays in…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "3c3931b3",
@@ -386,7 +694,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "960bb975",
@@ -397,7 +705,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "4c8c7894",
@@ -408,7 +716,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "1b50c8b9",
@@ -419,7 +727,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "b823f07e",
@@ -430,7 +738,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "30a07fcf",
@@ -441,7 +749,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "12bcb4df",
@@ -452,7 +760,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "02675d2f",
@@ -463,7 +771,7 @@
       "type": "release",
       "published_at": "2026-11-04T00:01:03Z",
       "summary": "v2.1.318",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "88495a36",
@@ -474,7 +782,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "d7940795",
@@ -485,7 +793,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "f36e7b01",
@@ -496,7 +804,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "49e5027e",
@@ -507,7 +815,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "c67bed36",
@@ -518,7 +826,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "13a987ec",
@@ -529,7 +837,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "d0063f56",
@@ -540,7 +848,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "e2e13333",
@@ -551,7 +859,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "f6302d84",
@@ -562,7 +870,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "89dd134b",
@@ -573,7 +881,7 @@
       "type": "release",
       "published_at": "2026-11-03T01:25:46Z",
       "summary": "v2.1.317",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "833eff5d",
@@ -584,7 +892,7 @@
       "type": "changelog",
       "published_at": "2026-11-03T00:00:00.000Z",
       "summary": "Text generated by Claude Mythos 5, Claude Opus 4.7, and Claude Sonnet 4.6 carries Anthropic’s text watermark on the platforms listed in How Claude marks AI-generated content. On Claude Sonnet 4.6,…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "a021acfc",
@@ -595,7 +903,7 @@
       "type": "changelog",
       "published_at": "2026-11-02T00:00:00.000Z",
       "summary": "Long conversations and agent loops on the Messages API can now send smaller requests and get a lower time to first token with message threads, in beta with the message-threads-2026-08-12 beta header.…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:05.589Z"
     },
     {
       "id": "75c1954c",
@@ -606,7 +914,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "19dfe3cf",
@@ -617,7 +925,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "3fadfb7a",
@@ -628,7 +936,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "31c4a734",
@@ -639,7 +947,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "49a9b739",
@@ -650,7 +958,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "b61711b7",
@@ -661,7 +969,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "91768084",
@@ -672,7 +980,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     },
     {
       "id": "d42f314a",
@@ -683,315 +991,7 @@
       "type": "release",
       "published_at": "2026-10-31T01:01:35Z",
       "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "6fa2bd4d",
-      "title": "[Cloud sessions] Added a form card to cloud sessions, so you can fill in or decline a form an MCP server asks for instead of the request being…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-31T01:01:35Z",
-      "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "7d960bc0",
-      "title": "[Cloud sessions] Added a \"Catching up…\" line that shows while a cloud or Remote Control session you switch back to is still bringing its messages up…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-31T01:01:35Z",
-      "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "8269ebae",
-      "title": "[Code Review] Added a findings-by-severity card to the Code Review analytics page, showing the period's total findings, a daily chart stacked by…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-31T01:01:35Z",
-      "summary": "v2.1.316",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "e511fcad",
-      "title": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "9c4b3578",
-      "title": "Added an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "3ba14d35",
-      "title": "Added guardrail_trace to Claude apps gateway Bedrock upstreams, to log which Amazon Bedrock guardrail filter fired on a request, without the matched…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "78ccf2cf",
-      "title": "Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "9a3ecc2f",
-      "title": "Fixed the Claude apps gateway's start-up warning for a deprecated Claude Desktop key that it still serves as written saying \"stops being accepted\"…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "3018404f",
-      "title": "[Cloud sessions] Added an Include completed button to the Scheduled tasks page when finished one-off tasks are the only ones hidden, so you can show…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "888242f0",
-      "title": "[Claude Tag] Added a dismissible link to the Claude Tag API docs on the Bundles and Channels tabs in admin settings, for Enterprise organizations…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-30T01:06:26Z",
-      "summary": "v2.1.314",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "03dd29b6",
-      "title": "We’ve deprecated fast mode for Claude Opus 4.8, with removal on November 30,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-30-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-10-30T00:00:00.000Z",
-      "summary": "We’ve deprecated fast mode for Claude Opus 4.8, with removal on November 30, 2026. After removal, requests to claude-opus-4-8 with speed: \"fast\" will return an error. To continue using fast mode,…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
-    },
-    {
-      "id": "1231e867",
-      "title": "We’ve launched the Usage and Cost Analytics API in beta with the…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "summary": "We’ve launched the Usage and Cost Analytics API in beta with the analytics-usage-cost-2026-08-24 beta header. Its /v1/organizations/analytics/usage and /v1/organizations/analytics/cost endpoints…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
-    },
-    {
-      "id": "65db7714",
-      "title": "The Usage and Cost API is now a legacy API, and so are the usage_report,…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-29-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "summary": "The Usage and Cost API is now a legacy API, and so are the usage_report, cost_report, user_usage_report, and user_cost_report endpoints of the Claude Enterprise Analytics API. All of them remain…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
-    },
-    {
-      "id": "acffe8e4",
-      "title": "We’ve raised the maximum request size for the Messages API and the Token…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-10-28T00:00:00.000Z",
-      "summary": "We’ve raised the maximum request size for the Messages API and the Token Counting API from 32 MB to 128 MB on the first-party Claude API.",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
-    },
-    {
-      "id": "70206102",
-      "title": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-27T20:24:20Z",
-      "summary": "v2.1.312",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "139345e9",
-      "title": "Added click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-27T20:24:20Z",
-      "summary": "v2.1.312",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "70b99cc1",
-      "title": "[Cloud sessions] Added an effort level to the model picker when you create or edit a routine that runs in the cloud",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-27T20:24:20Z",
-      "summary": "v2.1.312",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "9c8bd484",
-      "title": "[Cloud sessions] Added a Bash editor with colors, line numbers and a Copy button to the setup script box in cloud environment settings",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-27T20:24:20Z",
-      "summary": "v2.1.312",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "991a3c91",
-      "title": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-26T21:51:23Z",
-      "summary": "v2.1.311",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "90e43707",
-      "title": "Added a tip for the Explanatory output style, shown when you ask Claude for explanations",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-26T21:51:23Z",
-      "summary": "v2.1.311",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "e95de28f",
-      "title": "[VSCode] Added syntax coloring to code blocks in Claude's replies, in light, dark and high contrast dark themes",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-26T21:51:23Z",
-      "summary": "v2.1.311",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "e352a67f",
-      "title": "[VSCode] Added a \"Running UserPromptSubmit hooks\" spinner status and screen reader announcement for slow UserPromptSubmit hooks",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-26T21:51:23Z",
-      "summary": "v2.1.311",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "9d3d6746",
-      "title": "[Claude Tag] Added a Skills view to Claude Tag analytics showing how often Claude runs each attached skill in Slack channels and which go unused,…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-26T21:51:23Z",
-      "summary": "v2.1.311",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "8021b372",
-      "title": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-23T23:39:00Z",
-      "summary": "v2.1.310",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "b4056209",
-      "title": "[Cloud sessions] Added Claude Code cloud sessions and Remote Control permissions to Enterprise custom roles, so Owners can control access to each by…",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-23T23:39:00Z",
-      "summary": "v2.1.310",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "83ba562e",
-      "title": "[Cloud sessions] Added a Choose file button to load a cloud environment's setup script from a file",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "source": "github_releases",
-      "source_label": "Claude Code",
-      "type": "release",
-      "published_at": "2026-10-23T23:39:00Z",
-      "summary": "v2.1.310",
-      "fetched_at": "2026-11-12T21:09:34.401Z"
-    },
-    {
-      "id": "e5ca5f6e",
-      "title": "The Claude Tag API is available in beta for Claude Enterprise organizations…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-23-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "summary": "The Claude Tag API is available in beta for Claude Enterprise organizations with the experimental-claude-tag-2026-10-21 beta header. Its /v1/organizations/claude_tag/ endpoints read and change Claude…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
-    },
-    {
-      "id": "1558bde4",
-      "title": "We’ve launched Claude Models on Google Cloud (Anthropic managed), the Claude…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
-      "source": "anthropic_changelog",
-      "source_label": "Anthropic Changelog",
-      "type": "changelog",
-      "published_at": "2026-10-22T00:00:00.000Z",
-      "summary": "We’ve launched Claude Models on Google Cloud (Anthropic managed), the Claude API operated by Anthropic and reached through your Google Cloud project. Google Cloud IAM controls access. Google Cloud…",
-      "fetched_at": "2026-11-12T21:09:35.205Z"
+      "fetched_at": "2026-11-13T02:11:04.726Z"
     }
   ]
 }
