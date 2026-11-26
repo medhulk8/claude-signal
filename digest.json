@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-25T16:13:22.872Z",
+  "generated_at": "2026-11-26T00:43:46.407Z",
   "item_count": 90,
   "items": [
     {
@@ -12,7 +12,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "ec17bad4",
@@ -23,7 +23,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "c406e1a1",
@@ -34,7 +34,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "30b2b11e",
@@ -45,7 +45,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "48e6345b",
@@ -56,7 +56,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "5171627c",
@@ -67,7 +67,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "f0efb48d",
@@ -78,7 +78,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "fb87ca5f",
@@ -89,7 +89,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "a3f1b7fd",
@@ -100,7 +100,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "8ebf23b2",
@@ -111,7 +111,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "a0196d61",
@@ -122,7 +122,7 @@
       "type": "release",
       "published_at": "2026-11-25T01:32:14Z",
       "summary": "v2.1.332",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "a9f19260",
@@ -133,7 +133,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "f71d17e1",
@@ -144,7 +144,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "2330dac3",
@@ -155,7 +155,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "67e527f2",
@@ -166,7 +166,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "f74842ea",
@@ -177,7 +177,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "e5f2aead",
@@ -188,7 +188,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "f700922d",
@@ -199,7 +199,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "c3461ecd",
@@ -210,7 +210,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "e9ac9096",
@@ -221,7 +221,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "7beee3ae",
@@ -232,7 +232,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "8b9e05b9",
@@ -243,7 +243,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "079cc6f5",
@@ -254,7 +254,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "efde6759",
@@ -265,7 +265,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "6a0d2ded",
@@ -276,7 +276,7 @@
       "type": "release",
       "published_at": "2026-11-23T21:34:41Z",
       "summary": "v2.1.331",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "dd941249",
@@ -287,7 +287,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "A fix is live for an undercount of web searches in the List User ActivityPreview with links to the API reference available — press Tab until focus enters the card, Escape to return. endpoint of the…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "32dfbd28",
@@ -298,7 +298,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "The web search fix applies to data for November 17, 2026 (UTC), and later, so counts that you already pulled for those days can change. It does not recount earlier days.",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "992b29d5",
@@ -309,7 +309,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "A fix is live for an undercount in the Get Connector UsagePreview with links to the API reference available — press Tab until focus enters the card, Escape to return. endpoint of the Claude…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "64fe0cef",
@@ -320,7 +320,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "The connector fix applies to data for November 19, 2026 (UTC), and later, so counts that you already pulled for those days can change. It does not recount earlier days.",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "dd535c8c",
@@ -331,7 +331,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "On November 24, 2026, a fix for an undercount of project activity in the Claude Enterprise Analytics API will go live. The Get Chat Project UsagePreview with links to the API reference available —…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "d7492d1b",
@@ -342,7 +342,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "The List User ActivityPreview with links to the API reference available — press Tab until focus enters the card, Escape to return. endpoint will change in the same way when you filter by project_id.…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "c863be73",
@@ -353,7 +353,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "The project fix will apply to data for November 20, 2026 (UTC), and later, so counts that you already pulled for those days can change. It does not recount earlier days.",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "12ed3c2f",
@@ -364,7 +364,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "We announced the deprecation of the Claude Opus 4.5 model (claude-opus-4-5-20251101 and claude-opus-4-5), with retirement on the Claude API scheduled for January 22, 2027. We recommend migrating to…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "dc2b6789",
@@ -375,7 +375,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "We’ve launched Enterprise Frontier Safeguards (EFS) in beta on Claude Platform, Claude Platform on AWS, and Claude Models on Google Cloud (Anthropic managed). EFS is Zero Data Retention (ZDR) for…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "5046fd80",
@@ -386,7 +386,7 @@
       "type": "changelog",
       "published_at": "2026-11-23T00:00:00.000Z",
       "summary": "We’ve added two event types to organization webhooks, which are in beta. We send external_storage.failed when a bucket that you use as customer-owned storage fails our daily check, and…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "0a960a81",
@@ -397,7 +397,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "57e9e9f8",
@@ -408,7 +408,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "7a4edca9",
@@ -419,7 +419,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "98f580cd",
@@ -430,7 +430,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "58d83601",
@@ -441,7 +441,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "87afc390",
@@ -452,7 +452,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "014c0b82",
@@ -463,7 +463,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "f7aec033",
@@ -474,7 +474,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "309c77c3",
@@ -485,7 +485,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "5a0b7a5c",
@@ -496,7 +496,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "be30e95d",
@@ -507,7 +507,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "55bce430",
@@ -518,7 +518,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "a6b1e3ae",
@@ -529,7 +529,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "a30c6c9c",
@@ -540,7 +540,7 @@
       "type": "release",
       "published_at": "2026-11-20T22:32:56Z",
       "summary": "v2.1.330",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "3892c21d",
@@ -551,7 +551,7 @@
       "type": "changelog",
       "published_at": "2026-11-20T00:00:00.000Z",
       "summary": "The Claude Enterprise Analytics API has a new rule for when a chat in Chat and Cowork unified counts as a session. New rule: A session starts the first time on a UTC day that Claude successfully runs…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "b6f0f967",
@@ -562,7 +562,7 @@
       "type": "changelog",
       "published_at": "2026-11-20T00:00:00.000Z",
       "summary": "In List User ActivityPreview with links to the API reference available — press Tab until focus enters the card, Escape to return., these counts can change. chat and sessions are the objects in…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "0cb8f42f",
@@ -573,7 +573,7 @@
       "type": "changelog",
       "published_at": "2026-11-20T00:00:00.000Z",
       "summary": "For chats that the change reached, the API does not get the names of some skills and plugins that Anthropic did not make, such as your own. List User Activity: distinct_skills_used_count can leave…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "3890ee01",
@@ -584,7 +584,7 @@
       "type": "changelog",
       "published_at": "2026-11-20T00:00:00.000Z",
       "summary": "In Get Connector UsagePreview with links to the API reference available — press Tab until focus enters the card, Escape to return., individual_auth_distinct_user_count and…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "7ffdcdde",
@@ -595,7 +595,7 @@
       "type": "changelog",
       "published_at": "2026-11-20T00:00:00.000Z",
       "summary": "Other counts from the connector, skill, and plugin usage endpoints can be higher or lower.",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "2e8d21f2",
@@ -606,7 +606,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "887483a1",
@@ -617,7 +617,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "8ad0e7aa",
@@ -628,7 +628,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "9a655599",
@@ -639,7 +639,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "b0594355",
@@ -650,7 +650,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "70b9f3d3",
@@ -661,7 +661,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "0d803a4a",
@@ -672,7 +672,7 @@
       "type": "release",
       "published_at": "2026-11-19T22:14:41Z",
       "summary": "v2.1.329",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "360da32a",
@@ -683,7 +683,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "889baeb7",
@@ -694,7 +694,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "2d872119",
@@ -705,7 +705,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "5a984987",
@@ -716,7 +716,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "0a8bc97b",
@@ -727,7 +727,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "f83879fa",
@@ -738,7 +738,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "3a3038e7",
@@ -749,7 +749,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "44962513",
@@ -760,7 +760,7 @@
       "type": "release",
       "published_at": "2026-11-19T01:14:04Z",
       "summary": "v2.1.328",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "3315c3b7",
@@ -771,7 +771,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "10e59e3b",
@@ -782,7 +782,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "0fe867ea",
@@ -793,7 +793,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "3b3b9399",
@@ -804,7 +804,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "8635b25d",
@@ -815,7 +815,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "099ced96",
@@ -826,7 +826,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "b78d9932",
@@ -837,7 +837,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "8bfc3630",
@@ -848,7 +848,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "d50f7bf0",
@@ -859,7 +859,7 @@
       "type": "release",
       "published_at": "2026-11-17T23:17:45Z",
       "summary": "v2.1.327",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "e62316e3",
@@ -870,7 +870,7 @@
       "type": "changelog",
       "published_at": "2026-11-17T00:00:00.000Z",
       "summary": "We’ve launched Linked billing in beta with the user-profiles-billing-2026-10-01 beta header. Your customers can now pay for the Claude usage in your app through their own Claude organization. Once a…",
-      "fetched_at": "2026-11-25T16:13:24.828Z"
+      "fetched_at": "2026-11-26T00:43:47.087Z"
     },
     {
       "id": "0bab0e14",
@@ -881,7 +881,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "473a2aa1",
@@ -892,7 +892,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "ff00d427",
@@ -903,7 +903,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "5b9bb336",
@@ -914,7 +914,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "0f8349fd",
@@ -925,7 +925,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "9d90b97c",
@@ -936,7 +936,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "93b7cb66",
@@ -947,7 +947,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "a5b41bf9",
@@ -958,7 +958,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "581cea70",
@@ -969,7 +969,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "89fba544",
@@ -980,7 +980,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     },
     {
       "id": "ab6977b5",
@@ -991,7 +991,7 @@
       "type": "release",
       "published_at": "2026-11-16T22:11:05Z",
       "summary": "v2.1.326",
-      "fetched_at": "2026-11-25T16:13:23.483Z"
+      "fetched_at": "2026-11-26T00:43:46.544Z"
     }
   ]
 }
